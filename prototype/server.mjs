@@ -50,7 +50,7 @@ const REJOIN_WINDOW = 120 * 1000;
 // so a stale cached HTML = old behaviours (field-observed: static countdown,
 // no ascent reveal). Clients announce their version; mismatches get an 'update'
 // nudge and are logged.
-const CLIENT_VERSION = 11;
+const CLIENT_VERSION = 12;
 
 const JUDGE_URL = process.env.LLM_JUDGE_URL || null;
 const JUDGE_TIMEOUT_MS = 2500;

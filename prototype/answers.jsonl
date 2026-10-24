@@ -118,3 +118,21 @@
 {"ts":"2026-10-24T09:52:53.843Z","promptId":"geo-currencies","canonical":"European Monetary Unit","tier":"RARE BIRD"}
 {"ts":"2026-10-24T09:53:06.860Z","promptId":"test-fruits","canonical":"Miracle fruit","tier":"RARE BIRD"}
 {"ts":"2026-10-24T09:53:19.876Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:03:45.773Z","promptId":"test-colors","canonical":"Cerise","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:03:58.787Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:04:11.820Z","promptId":"test-capitals","canonical":"Longyearbyen","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:04:24.835Z","promptId":"geo-currencies","canonical":"European Monetary Unit","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:04:37.966Z","promptId":"test-toppings","canonical":"Gold leaf","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:05:19.272Z","promptId":"test-sports","canonical":"Tennis","tier":"PIGEON"}
+{"ts":"2026-10-24T10:05:19.701Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T10:05:20.118Z","promptId":"test-sports","canonical":"Fencing","tier":"STARLING"}
+{"ts":"2026-10-24T10:05:33.198Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T10:05:33.600Z","promptId":"test-fruits","canonical":"Mangosteen","tier":"MEGA"}
+{"ts":"2026-10-24T10:05:34.003Z","promptId":"test-fruits","canonical":"Durian","tier":"KINGFISHER"}
+{"ts":"2026-10-24T10:06:40.491Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T10:08:04.076Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T10:08:04.525Z","promptId":"test-animals","canonical":"Saiga","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:11:56.351Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T10:11:56.822Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:14:54.865Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T10:15:08.430Z","promptId":"test-toppings","canonical":"Gold leaf","tier":"RARE BIRD"}
