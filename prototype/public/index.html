@@ -260,7 +260,7 @@
 </div>
 <script type="module">
 import * as FX from "./fx.js?v=8";
-const V = 9; // client version — must match server CLIENT_VERSION
+const V = 10; // client version — must match server CLIENT_VERSION
 FX.ambient('birds');
 
 // ---- theme engine: canonical tier names stay; flavor/labels/scene swap ----
@@ -350,6 +350,7 @@ function handle(m) {
 }
 
 function applyTheme(id) {
+  themeOpt = THEMES[id] ? id : 'birds';
   theme = THEMES[id] ?? THEMES.birds;
   document.body.dataset.theme = theme.id;
   FX.setTheme(theme.id, my.room || 'rarebird');
@@ -376,6 +377,7 @@ function openChat(open) {
   if (open) { chatUnread = 0; $('chat-toggle').innerHTML = '💬'; $('chat-input').focus(); }
 }
 
+let lastRoomState = null;
 let cdHandle = null;
 function showCountdown(m) {
   const ov = $('countdown-overlay');
@@ -391,6 +393,7 @@ function showCountdown(m) {
 function hideCountdown() { const ov = $('countdown-overlay'); if (ov) ov.classList.remove('on'); cdHandle?.cancel(); }
 
 function renderState(room) {
+  lastRoomState = room;
   if (room.phase === 'countdown' && room.phaseEndsAt) {
     showCountdown({ endsAt: room.phaseEndsAt, nextRound: room.roundIndex, totalRounds: room.totalRounds });
   }
@@ -402,7 +405,15 @@ function renderState(room) {
     const me = me0;
     $('btn-lock').textContent = room.locked ? 'Room: locked 🔒' : 'Room: open 🔓';
     $('host-controls').style.display = me?.isHost ? 'block' : 'none';
-    $('lobby-hint').textContent = me?.isHost ? 'Pick settings, then start when everyone is in.' : 'Waiting for the host…';
+    $('lobby-hint').textContent = me?.isHost ? 'Pick theme + settings, then start when everyone is in.' : 'Waiting for the host…';
+    // theme chip visible to everyone; host owns the switch
+    const themeChip = $('btn-theme');
+    if (themeChip) {
+      themeChip.style.display = 'block';
+      themeChip.disabled = !me?.isHost;
+      themeChip.style.opacity = me?.isHost ? '1' : '0.6';
+      themeChip.textContent = `Theme: ${theme.id === 'cosmos' ? 'Cosmos 🚀' : 'Birds 🦜'}${me?.isHost ? '' : ' (host picks)'}`;
+    }
     show('lobby');
   } else if (room.phase === 'results') {
     /* stay on podium */
@@ -603,7 +614,7 @@ $('btn-wager').onclick = () => send({ type: 'wager' });
 $('btn-lock').onclick = () => { const el = $('btn-lock'); send({ type: 'lockRoom', locked: !/locked/.test(el.textContent) }); };
 $('lobby-players').addEventListener('click', e => { const k = e.target.closest('.kick'); if (k) { e.preventDefault(); if (confirm(`Remove ${k.dataset.nick}?`)) send({ type: 'kick', nick: k.dataset.nick }); } });
 let themeOpt = 'birds';
-$('btn-theme').onclick = () => { themeOpt = themeOpt === 'birds' ? 'cosmos' : 'birds'; $('btn-theme').textContent = `Theme: ${themeOpt === 'birds' ? 'Birds 🦜' : 'Cosmos 🚀'}`; applyTheme(themeOpt); };
+$('btn-theme').onclick = () => { if ($('btn-theme').disabled) return; themeOpt = themeOpt === 'birds' ? 'cosmos' : 'birds'; applyTheme(themeOpt); if (lastRoomState) renderState(lastRoomState); };
 $('chat-toggle').onclick = () => openChat(!$('chat-drawer').classList.contains('open'));
 $('chat-close').onclick = () => openChat(false);
 $('chat-backdrop').onclick = () => openChat(false);
