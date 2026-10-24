@@ -1,0 +1,569 @@
+{
+ "id": "consoles",
+ "text": "Name a video game console.",
+ "example": "like the PlayStation",
+ "catalogueSize": 52,
+ "catalogue": [
+  {
+   "canonical": "PlayStation",
+   "aliases": [
+    "PS",
+    "PS1",
+    "PS2",
+    "PS3",
+    "PS4",
+    "PS5",
+    "PlayStation 5"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The most universally recognized console, frequently mentioned by teens in casual conversation and media."
+   }
+  },
+  {
+   "canonical": "Xbox",
+   "aliases": [
+    "Xbox One",
+    "Xbox Series X",
+    "Xbox Series S",
+    "Xbox 360"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dominant name in gaming culture, especially among teens who play multiplayer or online games."
+   }
+  },
+  {
+   "canonical": "Nintendo Switch",
+   "aliases": [
+    "Switch",
+    "Nintendo Switch OLED"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely popular among teens for both local and online play, especially with games like Mario Kart and Animal Crossing."
+   }
+  },
+  {
+   "canonical": "PlayStation 5",
+   "aliases": [
+    "PS5",
+    "PS5 Digital Edition"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The latest flagship console, widely discussed in gaming circles and media."
+   }
+  },
+  {
+   "canonical": "Xbox Series X",
+   "aliases": [
+    "Xbox Series X|S"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Top-tier modern console with strong marketing; commonly referenced in gaming communities."
+   }
+  },
+  {
+   "canonical": "Game Boy",
+   "aliases": [
+    "Game Boy Advance",
+    "Game Boy Color",
+    "Game Boy Pocket"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A nostalgic handheld icon, still recognizable and frequently mentioned in retro gaming discussions."
+   }
+  },
+  {
+   "canonical": "Nintendo DS",
+   "aliases": [
+    "DS Lite",
+    "DSi",
+    "DSi XL"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple of early 2000s teen gaming; known for titles like Pok\u00e9mon and Mario Kart DS."
+   }
+  },
+  {
+   "canonical": "PlayStation Portable",
+   "aliases": [
+    "PSP",
+    "PSP Go",
+    "PSP-1000"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular handheld console in the mid-2000s, still fondly remembered by many teens."
+   }
+  },
+  {
+   "canonical": "Sega Dreamcast",
+   "aliases": [
+    "Dreamcast"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cult favorite with a strong legacy; often brought up in retro gaming debates."
+   }
+  },
+  {
+   "canonical": "Atari 2600",
+   "aliases": [
+    "Atari",
+    "Atari VCS"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The console that defined home gaming in the 1970s and 80s, frequently referenced in pop culture."
+   }
+  },
+  {
+   "canonical": "Super Nintendo",
+   "aliases": [
+    "SNES",
+    "Super NES"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A beloved console for many teens who grew up with classic games like Super Mario World and The Legend of Zelda."
+   }
+  },
+  {
+   "canonical": "Nintendo 64",
+   "aliases": [
+    "N64"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for groundbreaking titles like Super Mario 64 and The Legend of Zelda: Ocarina of Time."
+   }
+  },
+  {
+   "canonical": "PlayStation 2",
+   "aliases": [
+    "PS2"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Best-selling console of all time, still recognized by teens through retrospectives and media."
+   }
+  },
+  {
+   "canonical": "Xbox 360",
+   "aliases": [
+    "Xbox 360 S",
+    "Xbox 360 E"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major console in the 2000s, central to online gaming and franchises like Halo."
+   }
+  },
+  {
+   "canonical": "Nintendo Wii",
+   "aliases": [
+    "Wii U",
+    "Wii Mini"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Revolutionary motion controls made it a household name, especially in family and party games."
+   }
+  },
+  {
+   "canonical": "PlayStation 4",
+   "aliases": [
+    "PS4",
+    "PS4 Pro"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major console generation, widely played and discussed among teens during its lifespan."
+   }
+  },
+  {
+   "canonical": "Game Boy Advance",
+   "aliases": [
+    "GBA",
+    "GBA SP"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most successful handhelds, known for Pok\u00e9mon and Mario & Luigi titles."
+   }
+  },
+  {
+   "canonical": "Sega Genesis",
+   "aliases": [
+    "Mega Drive",
+    "Genesis"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic 16-bit console with classics like Sonic the Hedgehog and Streets of Rage."
+   }
+  },
+  {
+   "canonical": "Commodore 64",
+   "aliases": [
+    "C64"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A legendary home computer that doubled as a console in many homes; referenced in retro nostalgia."
+   }
+  },
+  {
+   "canonical": "Neo Geo Pocket",
+   "aliases": [
+    "NGP"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A niche but respected handheld with a cult following and strong game library."
+   }
+  },
+  {
+   "canonical": "PlayStation Vita",
+   "aliases": [
+    "PS Vita"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern handheld with strong graphics and indie support, known among dedicated gamers."
+   }
+  },
+  {
+   "canonical": "Nintendo 3DS",
+   "aliases": [
+    "3DS XL",
+    "New 3DS"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular handheld with 3D visuals and exclusive Mario and Zelda games."
+   }
+  },
+  {
+   "canonical": "PlayStation 1",
+   "aliases": [
+    "PS1",
+    "PSX"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A foundational console for many teens' gaming memories, especially with iconic titles."
+   }
+  },
+  {
+   "canonical": "Xbox One",
+   "aliases": [
+    "Xbox One S",
+    "Xbox One X"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A mainstay in the 2010s, known for backward compatibility and Kinect integration."
+   }
+  },
+  {
+   "canonical": "Atari 5200",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An underrated Atari console, known among retro enthusiasts and occasionally referenced."
+   }
+  },
+  {
+   "canonical": "Sega Saturn",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A technically advanced but commercially underperforming console, admired in gaming history circles."
+   }
+  },
+  {
+   "canonical": "Nintendo Entertainment System",
+   "aliases": [
+    "NES",
+    "Famicom"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The console that launched global video game culture; deeply embedded in pop culture."
+   }
+  },
+  {
+   "canonical": "TurboGrafx-16",
+   "aliases": [
+    "PC Engine",
+    "PCE"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese console with a cult following, often mentioned in retro gaming communities."
+   }
+  },
+  {
+   "canonical": "Vectrex",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique vector graphics console with a distinctive aesthetic; known among hardcore retro fans."
+   }
+  },
+  {
+   "canonical": "Intellivision",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A 1980s competitor to Atari, remembered for its advanced graphics and sports games."
+   }
+  },
+  {
+   "canonical": "Philips CD-i",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A multimedia console with failed gaming ambitions, often cited as a cult curiosity."
+   }
+  },
+  {
+   "canonical": "WonderSwan",
+   "aliases": [
+    "WonderSwan Color"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese handheld with unique design and a loyal fanbase."
+   }
+  },
+  {
+   "canonical": "Game Boy Micro",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A tiny, sleek Game Boy variant; recognized by collectors and retro enthusiasts."
+   }
+  },
+  {
+   "canonical": "Neo Geo AES",
+   "aliases": [
+    "Neo Geo CD"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-end arcade-style console with premium pricing; known among serious collectors."
+   }
+  },
+  {
+   "canonical": "Amiga CD32",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A multimedia console from the Amiga brand, ahead of its time but underappreciated."
+   }
+  },
+  {
+   "canonical": "Sega CD",
+   "aliases": [
+    "Sega CD Model 1",
+    "Sega CD2"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A CD add-on for Genesis, known for enhanced games and quirky design."
+   }
+  },
+  {
+   "canonical": "3DO Interactive Multiplayer",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-cost, early multimedia console with niche appeal and a short lifespan."
+   }
+  },
+  {
+   "canonical": "Atari Jaguar",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A technically ambitious console that failed commercially; known among gaming historians."
+   }
+  },
+  {
+   "canonical": "Microsoft Zune",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A failed media player with console-like features; remembered as a curious footnote."
+   }
+  },
+  {
+   "canonical": "Neo Geo Pocket Color",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A color-capable successor to the Neo Geo Pocket, beloved for its game library."
+   }
+  },
+  {
+   "canonical": "Tiger Electronics Game.com",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare handheld with a unique design and limited library, known to hardcore collectors."
+   }
+  },
+  {
+   "canonical": "Handheld PC",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A generic term for early portable computers with game capabilities, known only to enthusiasts."
+   }
+  },
+  {
+   "canonical": "Odyssey 2",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An early home console from the 1970s with limited success but historical significance."
+   }
+  },
+  {
+   "canonical": "Fairchild Channel F",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The first console with interchangeable cartridges; a true pioneer but obscure to most teens."
+   }
+  },
+  {
+   "canonical": "ColecoVision",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A 1980s console with arcade-quality ports, respected in retro circles."
+   }
+  },
+  {
+   "canonical": "GP2X",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An open-source handheld Linux-based console for indie games; known only to tinkerers."
+   }
+  },
+  {
+   "canonical": "Ouya",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Kickstarter-funded Android console that failed commercially but gained cult status."
+   }
+  },
+  {
+   "canonical": "Playdate",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern handheld with a unique crank interface and indie focus; surprises players with its novelty."
+   }
+  },
+  {
+   "canonical": "Pandora",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Linux-based handheld console with powerful hardware, known only to hardcore tech and gaming enthusiasts."
+   }
+  },
+  {
+   "canonical": "Evercade",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern retro console that plays cartridges of classic games; a niche favorite among collectors."
+   }
+  },
+  {
+   "canonical": "Casio Loopy",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese handheld with a unique design and limited game library; unknown to most teens."
+   }
+  },
+  {
+   "canonical": "Intellivision Amico",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern revival of Intellivision, released with little fanfare and minimal awareness."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 0,
+  "seconds": 87
+ }
+}

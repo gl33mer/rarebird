@@ -1,0 +1,463 @@
+{
+ "id": "compounds",
+ "text": "Name a chemical compound.",
+ "example": "like water",
+ "catalogueSize": 39,
+ "catalogue": [
+  {
+   "canonical": "Water",
+   "aliases": [
+    "H2O",
+    "Hydrogen oxide"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The most universally recognized chemical compound, instantly familiar to all teens; the quintessential example in trivia"
+   }
+  },
+  {
+   "canonical": "Sugar",
+   "aliases": [
+    "Glucose",
+    "Sucrose",
+    "C12H22O11"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A household name with direct relevance to food and pop culture, frequently mentioned in health and diet discussions."
+   }
+  },
+  {
+   "canonical": "Salt",
+   "aliases": [
+    "Sodium chloride",
+    "NaCl"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ubiquitous in cooking and science, often referenced in memes and health debates."
+   }
+  },
+  {
+   "canonical": "Carbon dioxide",
+   "aliases": [
+    "CO2",
+    "Dry ice"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized from soda, breathing, and climate change\u2014highly visible in pop science."
+   }
+  },
+  {
+   "canonical": "Ethanol",
+   "aliases": [
+    "Alcohol",
+    "C2H5OH"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly known through drinks, hand sanitizer, and health warnings\u2014highly relevant to teen life."
+   }
+  },
+  {
+   "canonical": "Benzene",
+   "aliases": [
+    "C6H6"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from chemistry class and environmental discussions, though less common in casual talk."
+   }
+  },
+  {
+   "canonical": "Aspirin",
+   "aliases": [
+    "Acetylsalicylic acid",
+    "ASA"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A widely used medicine with a recognizable name, often referenced in health and wellness content."
+   }
+  },
+  {
+   "canonical": "Vinegar",
+   "aliases": [
+    "Acetic acid",
+    "CH3COOH"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A common kitchen ingredient with chemical identity known to many from cooking and science experiments."
+   }
+  },
+  {
+   "canonical": "Ammonia",
+   "aliases": [
+    "NH3"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from cleaning products and household smells, frequently mentioned in DIY and safety videos."
+   }
+  },
+  {
+   "canonical": "Hydrogen peroxide",
+   "aliases": [
+    "H2O2"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in first aid kits and bleach alternatives, well-known for its bubbling reaction."
+   }
+  },
+  {
+   "canonical": "Methane",
+   "aliases": [
+    "CH4"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized from natural gas, global warming, and environmental campaigns."
+   }
+  },
+  {
+   "canonical": "Caffeine",
+   "aliases": [
+    "1,3,7-trimethylxanthine"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in energy drinks and coffee; teens often know it\u2019s a stimulant with a chemical name."
+   }
+  },
+  {
+   "canonical": "Naproxen",
+   "aliases": [
+    "Aleve",
+    "C14H14O3"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A common over-the-counter painkiller with a recognizable brand name and chemical structure."
+   }
+  },
+  {
+   "canonical": "Melatonin",
+   "aliases": [
+    "C13H16N2O2"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for sleep aids and wellness trends, frequently discussed in teen health forums."
+   }
+  },
+  {
+   "canonical": "Formaldehyde",
+   "aliases": [
+    "HCHO"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from preservation, embalming, and household product warnings, often mentioned in viral safety posts."
+   }
+  },
+  {
+   "canonical": "Acetaminophen",
+   "aliases": [
+    "Tylenol",
+    "Paracetamol",
+    "C8H9NO2"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A top painkiller brand with widespread use, especially in teen health routines."
+   }
+  },
+  {
+   "canonical": "Lactose",
+   "aliases": [
+    "C12H22O11"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known from milk intolerance and food labels, frequently discussed in dietary content."
+   }
+  },
+  {
+   "canonical": "Glutamic acid",
+   "aliases": [
+    "MSG",
+    "C5H9NO4"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its role in flavor enhancers and food culture controversies."
+   }
+  },
+  {
+   "canonical": "Cannabidiol",
+   "aliases": [
+    "CBD",
+    "C21H30O2"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in wellness products and social media, often associated with relaxation and health trends."
+   }
+  },
+  {
+   "canonical": "Lithium carbonate",
+   "aliases": [
+    "Li2CO3"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known in mental health contexts and mood-stabilizing medications; less common but recognized by teens in health discussi"
+   }
+  },
+  {
+   "canonical": "Oxygen",
+   "aliases": [
+    "O2"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential for life and widely discussed in science and environmental topics, though sometimes overlooked as a compound."
+   }
+  },
+  {
+   "canonical": "Nitrogen",
+   "aliases": [
+    "N2"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major component of air and often mentioned in science, despite being an element, its presence in compounds like nitric a"
+   }
+  },
+  {
+   "canonical": "Sodium bicarbonate",
+   "aliases": [
+    "Baking soda",
+    "NaHCO3"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A household staple with multiple uses, well-known in baking and DIY projects."
+   }
+  },
+  {
+   "canonical": "Calcium carbonate",
+   "aliases": [
+    "CaCO3",
+    "Chalk"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Found in antacids, chalk, and shells\u2014commonly taught in school science."
+   }
+  },
+  {
+   "canonical": "Ammonium nitrate",
+   "aliases": [
+    "NH4NO3"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from fertilizer and explosive incidents; known in news and viral videos, but not commonly named by teens."
+   }
+  },
+  {
+   "canonical": "Tetrahydrocannabinol",
+   "aliases": [
+    "THC",
+    "C21H30O2"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The psychoactive compound in cannabis, widely referenced in media and music, though not always recognized by name."
+   }
+  },
+  {
+   "canonical": "Phosphine",
+   "aliases": [
+    "PH3"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A toxic gas used in pest control and mining; known in niche science and viral safety warnings."
+   }
+  },
+  {
+   "canonical": "Sulfur dioxide",
+   "aliases": [
+    "SO2"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known from air pollution, volcanic gases, and food preservation (e.g., dried fruit), appearing in environmental content."
+   }
+  },
+  {
+   "canonical": "Barium sulfate",
+   "aliases": [
+    "BaSO4"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in medical imaging (barium meals); known in healthcare contexts but obscure to most teens."
+   }
+  },
+  {
+   "canonical": "Caffeine citrate",
+   "aliases": [
+    "C8H10N4O2\u00b7C6H6O7"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A pharmaceutical form of caffeine used in neonatal care; extremely niche, rarely mentioned outside medical literature."
+   }
+  },
+  {
+   "canonical": "Dihydrogen monoxide",
+   "aliases": [
+    "H2O",
+    "Water"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A playful but valid name used in science education to teach chemical nomenclature; often surprises players with its lite"
+   }
+  },
+  {
+   "canonical": "Ethylene glycol",
+   "aliases": [
+    "C2H6O2"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The main ingredient in antifreeze; known from car safety and viral prank videos where it\u2019s disguised as water."
+   }
+  },
+  {
+   "canonical": "N,N-Dimethyltryptamine",
+   "aliases": [
+    "DMT",
+    "C12H16N2"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A psychedelic compound often referenced in music, philosophy, and online deep dives; known to enthusiasts."
+   }
+  },
+  {
+   "canonical": "Methylphenidate",
+   "aliases": [
+    "Ritalin",
+    "C14H19NO2"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A prescription ADHD medication with high recognition among teens in academic and mental health discussions."
+   }
+  },
+  {
+   "canonical": "Hydroxychloroquine",
+   "aliases": [
+    "C18H26ClN3O"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous during pandemic debates and political discussions, though its chemical name is rarely used casually."
+   }
+  },
+  {
+   "canonical": "Tetrachloroethylene",
+   "aliases": [
+    "Perchloroethylene",
+    "Perc",
+    "C2Cl4"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dry-cleaning solvent known in environmental health discussions and industrial safety."
+   }
+  },
+  {
+   "canonical": "Oxalic acid",
+   "aliases": [
+    "C2H2O4"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Found in rhubarb and known for its toxicity; occasionally mentioned in food safety and science challenges."
+   }
+  },
+  {
+   "canonical": "Morphine",
+   "aliases": [
+    "C17H19NO3"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A powerful opioid with medical and cultural significance; known through health content and music references."
+   }
+  },
+  {
+   "canonical": "Cisplatin",
+   "aliases": [
+    "C12H18N2Pt"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A chemotherapy drug used in cancer treatment; recognized in medical and science documentaries."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 1,
+  "seconds": 77
+ }
+}

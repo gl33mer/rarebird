@@ -1,0 +1,447 @@
+{
+ "id": "school-subjects",
+ "text": "Name a school subject.",
+ "example": "like mathematics",
+ "catalogueSize": 35,
+ "catalogue": [
+  {
+   "canonical": "Mathematics",
+   "aliases": [
+    "Math",
+    "Algebra",
+    "Calculus",
+    "Geometry"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most universally recognized school subjects, frequently mentioned in casual conversation and widely taught gl"
+   }
+  },
+  {
+   "canonical": "English",
+   "aliases": [
+    "Language Arts",
+    "Literature",
+    "Grammar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A core subject in most school curricula, often the first language-based class students take."
+   }
+  },
+  {
+   "canonical": "Science",
+   "aliases": [
+    "Biology",
+    "Chemistry",
+    "Physics",
+    "Earth Science"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fundamental subject category taught in nearly every school system, covering natural phenomena and experimentation."
+   }
+  },
+  {
+   "canonical": "History",
+   "aliases": [
+    "World History",
+    "Ancient History",
+    "US History"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in secondary education, commonly studied across countries and cultures."
+   }
+  },
+  {
+   "canonical": "Art",
+   "aliases": [
+    "Drawing",
+    "Painting",
+    "Visual Arts"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A standard elective in most schools, frequently part of the arts curriculum."
+   }
+  },
+  {
+   "canonical": "Music",
+   "aliases": [
+    "Band",
+    "Orchestra",
+    "Singing",
+    "Music Theory"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A popular subject in schools, often tied to extracurricular activities and performance."
+   }
+  },
+  {
+   "canonical": "Physical Education",
+   "aliases": [
+    "PE",
+    "Gym",
+    "Sports"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A required subject in most school systems, focusing on physical activity and health."
+   }
+  },
+  {
+   "canonical": "Computer Science",
+   "aliases": [
+    "Coding",
+    "Programming",
+    "ICT"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Increasingly common in curricula, especially in tech-inclined schools and global education trends."
+   }
+  },
+  {
+   "canonical": "Geography",
+   "aliases": [
+    "World Geography",
+    "Physical Geography"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A frequently taught subject that blends science and history, known to many teens through maps and travel topics."
+   }
+  },
+  {
+   "canonical": "Chemistry",
+   "aliases": [
+    "Chem",
+    "Chemistry Lab"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A core science subject, widely taught in high school, though less universally mentioned than broader 'Science'."
+   }
+  },
+  {
+   "canonical": "Biology",
+   "aliases": [
+    "Bio",
+    "Life Science"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A common science subject covering living organisms, often studied in middle and high school."
+   }
+  },
+  {
+   "canonical": "Physics",
+   "aliases": [
+    "Phy",
+    "Mechanics"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A standard science subject involving motion, energy, and forces, frequently taught in upper secondary schools."
+   }
+  },
+  {
+   "canonical": "Psychology",
+   "aliases": [
+    "Intro to Psychology"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A moderately uncommon subject, often offered as an elective, known to teens interested in mental health or social behavi"
+   }
+  },
+  {
+   "canonical": "Economics",
+   "aliases": [
+    "Econ",
+    "Microeconomics"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Taught in many high schools, especially in Western and global education systems, covering money, markets, and decision-m"
+   }
+  },
+  {
+   "canonical": "Sociology",
+   "aliases": [
+    "Social Studies",
+    "Social Sciences"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An academic subject studying society and human behavior, popular in liberal arts-focused schools."
+   }
+  },
+  {
+   "canonical": "Foreign Language",
+   "aliases": [
+    "Spanish",
+    "French",
+    "Mandarin",
+    "German",
+    "Italian"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A common elective subject, with many teens taking at least one language course in school."
+   }
+  },
+  {
+   "canonical": "Drama",
+   "aliases": [
+    "Theater",
+    "Acting",
+    "Performing Arts"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An arts-based subject often offered in schools with strong performing arts programs."
+   }
+  },
+  {
+   "canonical": "Media Studies",
+   "aliases": [
+    "Film Studies",
+    "Digital Media"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A growing subject in modern curricula, focused on film, social media, and communication technologies."
+   }
+  },
+  {
+   "canonical": "Environmental Science",
+   "aliases": [
+    "Eco Science",
+    "Sustainability"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A newer interdisciplinary subject combining biology, chemistry, and geography, gaining popularity in schools worldwide."
+   }
+  },
+  {
+   "canonical": "Nutrition",
+   "aliases": [
+    "Health Education",
+    "Food Science"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An uncommon but valid subject in some schools, focusing on diet, wellness, and bodily function."
+   }
+  },
+  {
+   "canonical": "Anthropology",
+   "aliases": [
+    "Cultural Studies",
+    "Human Origins"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A social science subject studying human societies and cultures, rarely taught in standard high schools but known to acad"
+   }
+  },
+  {
+   "canonical": "Philosophy",
+   "aliases": [
+    "Ethics",
+    "Logic"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare but valid subject in some international or advanced curricula, appealing to teens interested in deep thinking and"
+   }
+  },
+  {
+   "canonical": "Criminology",
+   "aliases": [
+    "Crime Studies",
+    "Justice Studies"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An interdisciplinary subject examining crime and justice systems, taught in select schools and often associated with tru"
+   }
+  },
+  {
+   "canonical": "Astronomy",
+   "aliases": [
+    "Space Science",
+    "Stellar Science"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A science subject focused on celestial bodies, sometimes taught as an elective, especially in STEM-oriented schools."
+   }
+  },
+  {
+   "canonical": "Robotics",
+   "aliases": [
+    "RoboTech",
+    "Automation"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An emerging subject in tech-focused schools, combining engineering, programming, and design."
+   }
+  },
+  {
+   "canonical": "Forensics",
+   "aliases": [
+    "Crime Scene Science",
+    "Investigative Science"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A niche subject blending science and law enforcement, often taught in specialized programs or science fairs."
+   }
+  },
+  {
+   "canonical": "Game Design",
+   "aliases": [
+    "Digital Game Development",
+    "Interactive Media"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern, interdisciplinary subject focused on creating video games, taught in some tech or arts schools."
+   }
+  },
+  {
+   "canonical": "Urban Planning",
+   "aliases": [
+    "City Design",
+    "Sustainable Cities"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare subject in high schools, often found in advanced or international curricula, appealing to teens interested in arc"
+   }
+  },
+  {
+   "canonical": "Cryptocurrency and Blockchain",
+   "aliases": [
+    "Digital Finance",
+    "Web3"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An emerging topic in some schools\u2019 tech or economics courses, reflecting current global trends in finance and technology"
+   }
+  },
+  {
+   "canonical": "Linguistics",
+   "aliases": [
+    "Language Science",
+    "Phonetics"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A highly academic subject analyzing the structure and evolution of language, known mainly to language enthusiasts and ad"
+   }
+  },
+  {
+   "canonical": "Ethnomusicology",
+   "aliases": [
+    "Cultural Music",
+    "Music Anthropology"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specialized study of music across cultures, rarely taught in standard school curricula but valid and intellectually ri"
+   }
+  },
+  {
+   "canonical": "Parapsychology",
+   "aliases": [
+    "Psi Studies",
+    "Supernatural Science"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A controversial and fringe subject exploring phenomena like telepathy and psychic abilities, known only to very curious "
+   }
+  },
+  {
+   "canonical": "Virology",
+   "aliases": [
+    "Viral Science",
+    "Pathogen Studies"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specialized branch of biology focused on viruses, taught in advanced science programs and highly relevant post-pandemi"
+   }
+  },
+  {
+   "canonical": "Quantum Physics",
+   "aliases": [
+    "Quantum Mechanics",
+    "Subatomic Science"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A complex and advanced subject, occasionally offered in elite or gifted programs, known to science enthusiasts and STEM-"
+   }
+  },
+  {
+   "canonical": "Neuroaesthetics",
+   "aliases": [
+    "Art and the Brain",
+    "Brain Science of Art"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cutting-edge interdisciplinary subject exploring how the brain responds to art and beauty, extremely rare but valid in"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 0,
+  "seconds": 65
+ }
+}

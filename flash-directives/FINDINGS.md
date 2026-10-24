@@ -66,3 +66,27 @@
 
 ## Verdict
 Bold mode ships (flagged): both themes gain a painted climb-ruler world with camera glide, living ambient layers, and choreographed reveals at 60fps. Dusk Birds reads warmer; Cosmic Voyage is the standout. Recommend owner review with `?bold=1`, then default-on promotion.
+
+---
+
+# Flash run 2026-10-24 — MoLab generator (flash/llm-content-v1)
+
+## What I did
+- Step 0 diagnosis: **vLLM is unusable on the notebook** — its runtime kernel JIT fails on the gVisor/cu13 toolchain (DeepGemm header assert; retry without DeepGemm then died on a Ninja build). Pivoted to **transformers + Qwen/Qwen3-30B-A3B-Instruct-2507 (bf16, device_map=auto)** — no JIT, ~60GB weights on the 96GB card, loads clean. Fixes along the way: `accelerate` install; chat-template returns BatchEncoding → stringify-then-tokenize; decode via `size(1)`.
+- Built the batch generator (16 categories, JSON contract, tier rubric 25/25/25/15/7/3, in-notebook validation: tier whitelist + dedupe + self-resolution + safety regexes + per-category checkpoints). Script transferred md5-verified via chunked base64 through the marimo-pair bridge; run detached with `setsid` (nohup alone was SIGINT-killed by a bridge stream drop).
+- **Generation: 16/16 categories, 818 entries** (insects needed one retry; ~3-4 min/category).
+- Retrieved the drafts tarball md5-verified over the stdout channel; validated **again locally** against `validation/rules-engine.mjs` + `content-pipeline/safety-screen.mjs`.
+- Judge probe: N/A this run — generation is in-process transformers, no OpenAI server to expose; probe re-armed for a future vLLM-served run.
+
+## Test results (exact numbers)
+- 16 packs in `prototype/pack-expansions/drafts/`, **818 entries total**, sizes 35-95 per category.
+- Local validation: **0 bad tiers, 0 hard safety flags, 1 soft flag** ("Death Valley"-class terms in storms); 29 AMBIGUOUS flags = synonym/alias collisions that the candidate-chips UX handles by design (blizzard/snowstorm, Gorgonzola/Blue cheese) — with ~8 over-broad aliases flagged for editorial trim (e.g. bare "Xbox" alias vs "Xbox Series X" entry; "Science" parent vs Chemistry/Biology/Physics children).
+- Tier histograms: mostly on-rubric; two skews for editorial review — world-rivers has NO entries above STARLING (rare rivers missing) and insects has a PIGEON/SPARROW gap (20/0/14).
+
+## Not fixed / open questions
+1. Drafts are MAX-merge material: wrap single-prompt files into pack schema, trim over-broad aliases (the 8 flagged), optionally backfill rare tiers for rivers/insects.
+2. vLLM on MoLab needs a non-gVisor host or `--enforce-eager`-style no-JIT config to come back; transformers path is proven and fast enough (≈90s/category).
+3. Model writes "RARE BIRD" sometimes as "RAREBIRD" — normalize already handles it.
+
+## Verdict
+The MoLab generator path works end-to-end: notebook LLM → validated drafts in our schema. 818 draft entries await editorial merge. Recommend MAX merges the clean 15 and schedules a small editorial pass on the flagged aliases + histogram skews.

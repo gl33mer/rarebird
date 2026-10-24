@@ -1,0 +1,456 @@
+{
+ "id": "insects",
+ "text": "Name an insect or bug.",
+ "example": "like a ladybug",
+ "catalogueSize": 40,
+ "catalogue": [
+  {
+   "canonical": "ant",
+   "aliases": [
+    "ants"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A universally recognized insect, frequently cited by teens in casual settings; extremely common and instantly recognizab"
+   }
+  },
+  {
+   "canonical": "bee",
+   "aliases": [
+    "bees"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in pop culture and nature discussions; nearly every teen knows bees and their role in pollination."
+   }
+  },
+  {
+   "canonical": "ladybug",
+   "aliases": [
+    "ladybird",
+    "lady beetle"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from childhood stories, cartoons, and games; a go-to answer in trivia contexts."
+   }
+  },
+  {
+   "canonical": "grasshopper",
+   "aliases": [
+    "grasshoppers"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic insect from movies like *A Bug's Life* and common in outdoor settings; widely recognized by teens."
+   }
+  },
+  {
+   "canonical": "beetle",
+   "aliases": [
+    "beetles"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A broad category but instantly understood; common in nature shows and video games."
+   }
+  },
+  {
+   "canonical": "wasp",
+   "aliases": [
+    "wasps"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently mentioned in danger warnings and pop culture; a familiar insect to most teens."
+   }
+  },
+  {
+   "canonical": "mosquito",
+   "aliases": [
+    "mosquitoes"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ubiquitous in media, real-life experience, and health discussions; a top-tier answer for most teens."
+   }
+  },
+  {
+   "canonical": "dragonfly",
+   "aliases": [
+    "dragonflies"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in nature documentaries and games; visually striking and widely known."
+   }
+  },
+  {
+   "canonical": "cockroach",
+   "aliases": [
+    "cockroaches"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in horror and gross-out humor; nearly every teen has seen or heard of them."
+   }
+  },
+  {
+   "canonical": "cricket",
+   "aliases": [
+    "crickets"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known from songs, games, and the phrase 'crickets' for silence; popular in pop culture references."
+   }
+  },
+  {
+   "canonical": "fly",
+   "aliases": [
+    "flies"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A basic, instantly recognizable insect; commonly referenced in jokes and science class."
+   }
+  },
+  {
+   "canonical": "butterfly",
+   "aliases": [
+    "butterflies"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in school projects, nature themes, and metaphors; widely taught and admired."
+   }
+  },
+  {
+   "canonical": "spider",
+   "aliases": [
+    "spiders"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Though technically not an insect, often grouped with bugs in casual talk; a top-of-mind answer for teens."
+   }
+  },
+  {
+   "canonical": "praying mantis",
+   "aliases": [
+    "mantises"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from movies, school lessons, and viral videos; a standout insect with a distinct appearance."
+   }
+  },
+  {
+   "canonical": "tick",
+   "aliases": [
+    "ticks"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly referenced in health and outdoor safety contexts; widely known even if disliked."
+   }
+  },
+  {
+   "canonical": "moth",
+   "aliases": [
+    "moths"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently seen around lights and featured in stories and songs; familiar to most teens."
+   }
+  },
+  {
+   "canonical": "termite",
+   "aliases": [
+    "termites"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized from damage reports and horror stories; known through media and home safety talks."
+   }
+  },
+  {
+   "canonical": "caterpillar",
+   "aliases": [
+    "caterpillars"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic stage of a butterfly's life; taught in schools and seen in children's media."
+   }
+  },
+  {
+   "canonical": "firefly",
+   "aliases": [
+    "fireflies",
+    "lightning bugs"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for glowing; a nostalgic and magical insect in pop culture and summer memories."
+   }
+  },
+  {
+   "canonical": "aphid",
+   "aliases": [
+    "aphids"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly seen on plants and referenced in gardening and science; known to teens with basic plant exposure."
+   }
+  },
+  {
+   "canonical": "stink bug",
+   "aliases": [
+    "stink bugs"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for odor and appearance; recognized by teens with experience in gardening or pest control."
+   }
+  },
+  {
+   "canonical": "lacewing",
+   "aliases": [
+    "lacewings"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known beneficial insect; known to some teens through science class or eco-conscious media."
+   }
+  },
+  {
+   "canonical": "leafhopper",
+   "aliases": [
+    "leafhoppers"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized in plant biology and agriculture contexts; known to teens with environmental interest."
+   }
+  },
+  {
+   "canonical": "harvestman",
+   "aliases": [
+    "harvestmen",
+    "daddy longlegs"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently mistaken for spiders, but known to some teens from online content and biology lessons."
+   }
+  },
+  {
+   "canonical": "rove beetle",
+   "aliases": [
+    "rove beetles"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A common but obscure beetle species; recognized by teens interested in entomology or nature walks."
+   }
+  },
+  {
+   "canonical": "giant water bug",
+   "aliases": [
+    "giant water bugs"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A striking and unusual insect; known to teens through documentaries or aquatic ecosystems."
+   }
+  },
+  {
+   "canonical": "cicada",
+   "aliases": [
+    "cicadas"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for loud sounds and periodic emergence; a memorable insect in pop culture and science."
+   }
+  },
+  {
+   "canonical": "bark beetle",
+   "aliases": [
+    "bark beetles"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized in forestry and environmental news; known to teens with ecological awareness."
+   }
+  },
+  {
+   "canonical": "ground beetle",
+   "aliases": [
+    "ground beetles"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in soil and under rocks; known to teens with outdoor or science interests."
+   }
+  },
+  {
+   "canonical": "earwig",
+   "aliases": [
+    "earwigs"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for myth and appearance; known from viral content and school biology."
+   }
+  },
+  {
+   "canonical": "dung beetle",
+   "aliases": [
+    "dung beetles"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for rolling dung balls; known to teens through documentaries and nature shows."
+   }
+  },
+  {
+   "canonical": "weevil",
+   "aliases": [
+    "weevils"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A type of beetle with a long snout; recognized in agricultural and gardening contexts."
+   }
+  },
+  {
+   "canonical": "thrips",
+   "aliases": [
+    "thrips"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Tiny but impactful pests; known to teens studying plants or working in agriculture."
+   }
+  },
+  {
+   "canonical": "sawfly",
+   "aliases": [
+    "sawflies"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Often mistaken for wasps but distinct; known to teens with entomology interest."
+   }
+  },
+  {
+   "canonical": "mantis shrimp",
+   "aliases": [
+    "mantis shrimps"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A highly unusual and powerful marine crustacean; known to enthusiasts and marine biology fans."
+   }
+  },
+  {
+   "canonical": "bombardier beetle",
+   "aliases": [
+    "bombardier beetles"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its chemical defense mechanism; a standout insect known in scientific circles and pop-science."
+   }
+  },
+  {
+   "canonical": "dead leaf mantis",
+   "aliases": [
+    "dead leaf mantises"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A master of camouflage; known to teens interested in animal mimicry and rare species."
+   }
+  },
+  {
+   "canonical": "Goliath beetle",
+   "aliases": [
+    "Goliath beetles"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the largest insects; a favorite in zoos and nature documentaries; known to bug enthusiasts."
+   }
+  },
+  {
+   "canonical": "blue morpho butterfly",
+   "aliases": [
+    "blue morpho butterflies"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A stunning, iridescent butterfly; visually iconic and known to art and nature lovers, surprising even experienced player"
+   }
+  },
+  {
+   "canonical": "Giant Jurassic cockroach",
+   "aliases": [
+    "giant prehistoric cockroaches"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A prehistoric insect with a dramatic name; known only to fans of paleontology or speculative biology, a true surprise."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 20,
+  "safetyFlagged": 0,
+  "seconds": 97
+ }
+}

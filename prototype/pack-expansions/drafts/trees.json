@@ -1,0 +1,725 @@
+{
+ "id": "trees",
+ "text": "Name a type of tree.",
+ "example": "like an oak",
+ "catalogueSize": 58,
+ "catalogue": [
+  {
+   "canonical": "oak",
+   "aliases": [
+    "red oak",
+    "white oak",
+    "black oak"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most universally recognized trees, frequently mentioned in nature education and pop culture."
+   }
+  },
+  {
+   "canonical": "pine",
+   "aliases": [
+    "white pine",
+    "red pine",
+    "jack pine"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely common in forests and widely referenced in media, especially in winter and holiday contexts."
+   }
+  },
+  {
+   "canonical": "maple",
+   "aliases": [
+    "sugar maple",
+    "red maple",
+    "silver maple"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic in North America, especially known for maple syrup and fall foliage."
+   }
+  },
+  {
+   "canonical": "birch",
+   "aliases": [
+    "white birch",
+    "black birch",
+    "paper birch"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently seen in literature, films, and art; associated with Nordic and forest imagery."
+   }
+  },
+  {
+   "canonical": "willow",
+   "aliases": [
+    "weeping willow",
+    "goat willow"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable by its drooping branches; often featured in poetry and garden designs."
+   }
+  },
+  {
+   "canonical": "cedar",
+   "aliases": [
+    "red cedar",
+    "Eastern red cedar",
+    "Atlas cedar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famously aromatic and used in outdoor furniture and essential oils; well-known in global contexts."
+   }
+  },
+  {
+   "canonical": "elm",
+   "aliases": [
+    "American elm",
+    "English elm",
+    "wych elm"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Historically significant in urban landscapes and literature, despite Dutch elm disease."
+   }
+  },
+  {
+   "canonical": "poplar",
+   "aliases": [
+    "cottonwood",
+    "trembling poplar",
+    "balsam poplar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in North American woodlands and often confused with aspens; recognizable by fluttering leaves."
+   }
+  },
+  {
+   "canonical": "spruce",
+   "aliases": [
+    "Norway spruce",
+    "blue spruce",
+    "Engelmann spruce"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently used as Christmas trees; a staple in winter imagery and forest ecosystems."
+   }
+  },
+  {
+   "canonical": "beech",
+   "aliases": [
+    "American beech",
+    "European beech"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its smooth bark and dense forests; often appears in children's books and fairy tales."
+   }
+  },
+  {
+   "canonical": "hemlock",
+   "aliases": [
+    "Eastern hemlock",
+    "western hemlock"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently associated with coniferous forests and used in landscaping; commonly taught in biology classes."
+   }
+  },
+  {
+   "canonical": "larch",
+   "aliases": [
+    "European larch",
+    "tamarack"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Distinctive for being deciduous conifers; known to nature enthusiasts and hikers."
+   }
+  },
+  {
+   "canonical": "cypress",
+   "aliases": [
+    "bald cypress",
+    "Mediterranean cypress"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable for swampy habitats and dramatic silhouettes; seen in Southern U.S. and European landscapes."
+   }
+  },
+  {
+   "canonical": "acacia",
+   "aliases": [
+    "golden wattle",
+    "jacaranda (often mistaken)",
+    "black acacia"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in Australia and Africa; frequently seen in movies and plant-based art."
+   }
+  },
+  {
+   "canonical": "eucalyptus",
+   "aliases": [
+    "blue gum",
+    "stringybark",
+    "river red gum"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic in Australian culture; associated with koalas and strong scent."
+   }
+  },
+  {
+   "canonical": "sequoia",
+   "aliases": [
+    "giant sequoia",
+    "coast redwood"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for massive size and longevity; a staple in documentaries and geography classes."
+   }
+  },
+  {
+   "canonical": "magnolia",
+   "aliases": [
+    "southern magnolia",
+    "star magnolia"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for large, fragrant flowers; commonly grown in gardens and featured in Southern U.S. culture."
+   }
+  },
+  {
+   "canonical": "walnut",
+   "aliases": [
+    "black walnut",
+    "English walnut"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its nuts and hardwood; appears in cooking, design, and literature."
+   }
+  },
+  {
+   "canonical": "cherry",
+   "aliases": [
+    "sweet cherry",
+    "tart cherry",
+    "wild cherry"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely recognized from fruit, blossoms, and symbolic meanings in art and music."
+   }
+  },
+  {
+   "canonical": "fig",
+   "aliases": [
+    "common fig",
+    "sycamore fig"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its fruit and symbolic use in mythology and religion."
+   }
+  },
+  {
+   "canonical": "plane",
+   "aliases": [
+    "London plane",
+    "American sycamore"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in city parks and known for peeling bark; frequently seen in urban settings worldwide."
+   }
+  },
+  {
+   "canonical": "linden",
+   "aliases": [
+    "basswood",
+    "tilia"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for fragrant flowers and use in traditional medicine; found in European and North American forests."
+   }
+  },
+  {
+   "canonical": "sycamore",
+   "aliases": [
+    "American sycamore",
+    "London plane (sometimes confused"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable by mottled bark; often associated with childhood games and folklore."
+   }
+  },
+  {
+   "canonical": "hickory",
+   "aliases": [
+    "shagbark hickory",
+    "pignut hickory"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for strong wood and edible nuts; common in U.S. forests and folk stories."
+   }
+  },
+  {
+   "canonical": "dogwood",
+   "aliases": [
+    "flowering dogwood",
+    "cornelian dogwood"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for spring blooms and symbolic use in Christian art and American culture."
+   }
+  },
+  {
+   "canonical": "yew",
+   "aliases": [
+    "English yew",
+    "Pacific yew"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Toxic but iconic; often seen in medieval gardens and fantasy settings."
+   }
+  },
+  {
+   "canonical": "cottonwood",
+   "aliases": [
+    "big cottonwood",
+    "black cottonwood"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable by fluffy seeds; common in Western U.S. and Canadian landscapes."
+   }
+  },
+  {
+   "canonical": "aspen",
+   "aliases": [
+    "quaking aspen",
+    "trembling poplar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for leaves that shimmer in the wind; widely used in literature and music."
+   }
+  },
+  {
+   "canonical": "alder",
+   "aliases": [
+    "red alder",
+    "European alder"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in wetlands; often seen in Pacific Northwest ecosystems and environmental education."
+   }
+  },
+  {
+   "canonical": "juniper",
+   "aliases": [
+    "common juniper",
+    "blue juniper"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in gin and known for aromatic berries; often recognized by older teens and nature lovers."
+   }
+  },
+  {
+   "canonical": "ginkgo",
+   "aliases": [
+    "maidenhair tree",
+    "Ginkgo biloba"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient tree with fan-shaped leaves; widely planted in cities and studied in biology."
+   }
+  },
+  {
+   "canonical": "baobab",
+   "aliases": [
+    "upside-down tree",
+    "Adansonia"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Striking appearance; popular in travel media and children\u2019s books about Africa."
+   }
+  },
+  {
+   "canonical": "jacaranda",
+   "aliases": [
+    "blue jacaranda",
+    "South American jacaranda"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for purple flowers; popular in Australian and Southern California landscapes."
+   }
+  },
+  {
+   "canonical": "palm",
+   "aliases": [
+    "coconut palm",
+    "date palm",
+    "sago palm"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ubiquitous in tropical imagery; frequently seen in movies and vacation photos."
+   }
+  },
+  {
+   "canonical": "banyan",
+   "aliases": [
+    "Indian banyan",
+    "Ficus benghalensis"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for aerial roots and vast canopies; iconic in South Asian culture and mythology."
+   }
+  },
+  {
+   "canonical": "saguaro",
+   "aliases": [
+    "Saguaro cactus (often mistaken)",
+    "Carnegiea gigantea"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Symbol of the American Southwest; instantly recognizable in Westerns and cartoons."
+   }
+  },
+  {
+   "canonical": "cactus",
+   "aliases": [
+    "prickly pear",
+    "saguaro (overlap)",
+    "cholla"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely recognized in desert imagery; common in pop culture and video games."
+   }
+  },
+  {
+   "canonical": "date",
+   "aliases": [
+    "date palm",
+    "Phoenix dactylifera"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Well-known fruit tree; culturally significant in Middle Eastern and North African regions."
+   }
+  },
+  {
+   "canonical": "dragon blood",
+   "aliases": [
+    "Dracaena cinnabari",
+    "Socotra dragon tree"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "Named for red sap; visually striking and known through fantasy and natural history."
+   }
+  },
+  {
+   "canonical": "giant sequoia",
+   "aliases": [
+    "Sequoiadendron giganteum",
+    "Wawona Tree"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Massive size and ancient age; often featured in National Geographic and science shows."
+   }
+  },
+  {
+   "canonical": "kauri",
+   "aliases": [
+    "Agathis australis",
+    "New Zealand kauri"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Giant conifer from New Zealand; culturally significant and featured in documentaries."
+   }
+  },
+  {
+   "canonical": "paper birch",
+   "aliases": [
+    "white birch",
+    "birch bark"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Distinctive peeling white bark; often used in Native American and Nordic symbolism."
+   }
+  },
+  {
+   "canonical": "hawthorn",
+   "aliases": [
+    "May tree",
+    "quickthorn",
+    "crab haw"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Folklore-heavy tree; associated with Celtic myths and medieval stories."
+   }
+  },
+  {
+   "canonical": "eaglewood",
+   "aliases": [
+    "agarwood",
+    "gaharu",
+    "Aquilaria"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Rare and fragrant wood; used in perfumes and incense; known in Asian cultures and luxury markets."
+   }
+  },
+  {
+   "canonical": "dragon tree",
+   "aliases": [
+    "Dracaena draco",
+    "Socotra dragon tree"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely unique appearance; appears in fantasy literature and is rarely named by casual players."
+   }
+  },
+  {
+   "canonical": "douglas fir",
+   "aliases": [
+    "Pseudotsuga menziesii",
+    "Oregon pine"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in Pacific Northwest; known to forestry students and outdoor enthusiasts."
+   }
+  },
+  {
+   "canonical": "black spruce",
+   "aliases": [
+    "Picea mariana",
+    "balsam spruce"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Found in boreal forests; known in environmental science and northern cultures."
+   }
+  },
+  {
+   "canonical": "sugar maple",
+   "aliases": [
+    "Acer saccharum",
+    "hard maple"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Not just any maple\u2014specifically known for syrup; recognized by food and science fans."
+   }
+  },
+  {
+   "canonical": "lodgepole pine",
+   "aliases": [
+    "Pinus contorta",
+    "shore pine"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Found in fire-prone areas; known in ecology and Western U.S. natural history."
+   }
+  },
+  {
+   "canonical": "ironwood",
+   "aliases": [
+    "Olneya tesota",
+    "California ironwood"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely hard wood; a desert specialist; known in botany and conservation circles."
+   }
+  },
+  {
+   "canonical": "mimosa",
+   "aliases": [
+    "Albizia julibrissin",
+    "silk tree"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Fluffy pink flowers; popular in gardens and Japanese-inspired art."
+   }
+  },
+  {
+   "canonical": "silk oak",
+   "aliases": [
+    "Grevillea robusta",
+    "Australian silk oak"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Rare, showy tree with silky leaves; mainly known in Australia and tropical horticulture."
+   }
+  },
+  {
+   "canonical": "monkey puzzle",
+   "aliases": [
+    "Araucaria araucana",
+    "Chile pine"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Uniquely spiky appearance; known only to botany buffs and eco-enthusiasts."
+   }
+  },
+  {
+   "canonical": "cycad",
+   "aliases": [
+    "sago palm (misnomer)",
+    "Zamia",
+    "Encephalartos"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient, prehistoric-looking plants; often confused with palms but botanically distinct."
+   }
+  },
+  {
+   "canonical": "dragon\u2019s blood tree",
+   "aliases": [
+    "Dracaena cinnabari",
+    "Socotra tree"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "Extremely rare and visually dramatic; known only to deep nature enthusiasts and fantasy fans."
+   }
+  },
+  {
+   "canonical": "katsura",
+   "aliases": [
+    "Cercidiphyllum japonicum",
+    "Japanese katsura"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely uncommon, known for sweet-smelling leaves; recognized only by advanced botany students and Japanese culture fa"
+   }
+  },
+  {
+   "canonical": "giant bamboo",
+   "aliases": [
+    "Dendrocalamus giganteus",
+    "Moso bamboo"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Not a tree but often mistaken; extremely rare in trivia contexts and known only to plant geeks and Asian culture experts"
+   }
+  },
+  {
+   "canonical": "wollemi pine",
+   "aliases": [
+    "Wollemia nobilis",
+    "living fossil"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Only discovered in 1994; one of the rarest trees on Earth; genuine surprise for most teens."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 5,
+  "safetyFlagged": 0,
+  "seconds": 118
+ }
+}

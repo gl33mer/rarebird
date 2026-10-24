@@ -1,0 +1,661 @@
+{
+ "id": "mythical-creatures",
+ "text": "Name a mythical creature.",
+ "example": "like a dragon",
+ "catalogueSize": 54,
+ "catalogue": [
+  {
+   "canonical": "dragon",
+   "aliases": [
+    "fire dragon",
+    "Chinese dragon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most universally recognized mythical creatures, frequently named by teens in trivia games due to pop culture "
+   }
+  },
+  {
+   "canonical": "unicorn",
+   "aliases": [
+    "white unicorn",
+    "horse with a horn"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in fantasy, commonly referenced in media, fashion, and school projects, making it a top-tier instant answer."
+   }
+  },
+  {
+   "canonical": "phoenix",
+   "aliases": [
+    "fire bird",
+    "rebirth bird"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently appears in mythology, Harry Potter, and modern symbols of resilience, making it instantly recognizable to tee"
+   }
+  },
+  {
+   "canonical": "griffin",
+   "aliases": [
+    "eagle-lion hybrid",
+    "gryphon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A classic mythical creature with strong visual identity; widely known from mythology and fantasy franchises like Percy J"
+   }
+  },
+  {
+   "canonical": "centaur",
+   "aliases": [
+    "half-horse, half-man",
+    "centaur warrior"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A well-known hybrid creature from Greek mythology, frequently featured in books, games, and films."
+   }
+  },
+  {
+   "canonical": "mermaid",
+   "aliases": [
+    "sea nymph",
+    "fish-tailed woman"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Deeply embedded in global folklore and modern pop culture, especially through Disney and TV shows."
+   }
+  },
+  {
+   "canonical": "minotaur",
+   "aliases": [
+    "bull-headed man",
+    "labyrinth creature"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic from Greek myth, popularized by Percy Jackson and video games, making it instantly familiar to teens."
+   }
+  },
+  {
+   "canonical": "leviathan",
+   "aliases": [
+    "sea monster",
+    "biblical beast"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized from biblical texts and modern fantasy, with strong presence in games like Dungeons & Dragons and The Witcher"
+   }
+  },
+  {
+   "canonical": "banshee",
+   "aliases": [
+    "wailing spirit",
+    "Irish ghost"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple of Irish folklore, frequently referenced in horror media and teen horror series."
+   }
+  },
+  {
+   "canonical": "kraken",
+   "aliases": [
+    "giant squid monster",
+    "sea leviathan"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A legendary sea monster with widespread recognition in pop culture, especially through Pirates of the Caribbean and gami"
+   }
+  },
+  {
+   "canonical": "sphinx",
+   "aliases": [
+    "lion with a human head",
+    "riddle keeper"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from Egyptian mythology and The Lion King, with recurring appearances in puzzles and games."
+   }
+  },
+  {
+   "canonical": "hydra",
+   "aliases": [
+    "multi-headed serpent",
+    "Greek monster"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A well-known creature from Greek mythology, commonly referenced in comics, video games, and educational content."
+   }
+  },
+  {
+   "canonical": "chimera",
+   "aliases": [
+    "lion-goat-serpent",
+    "fire-breathing monster"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous Greek monster with a distinct visual, often mentioned in mythology lessons and fantasy media."
+   }
+  },
+  {
+   "canonical": "werewolf",
+   "aliases": [
+    "lycanthrope",
+    "wolf man"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A core figure in horror and teen vampire romance genres, with massive popularity in Twilight and Netflix shows."
+   }
+  },
+  {
+   "canonical": "vampire",
+   "aliases": [
+    "bloodsucker",
+    "undead noble"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dominant figure in teen fantasy, with widespread appeal in books, movies, and music culture."
+   }
+  },
+  {
+   "canonical": "ghost",
+   "aliases": [
+    "spirit",
+    "apparition"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The most basic supernatural entity, universally recognized and frequently used in games, stories, and memes."
+   }
+  },
+  {
+   "canonical": "gargoyle",
+   "aliases": [
+    "stone guardian",
+    "architectural monster"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from Gothic architecture and modern fantasy, often mistaken for real creatures but well-known in pop culture."
+   }
+  },
+  {
+   "canonical": "demon",
+   "aliases": [
+    "evil spirit",
+    "hellish creature"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A common trope in fantasy and horror, referenced in games, anime, and music, making it a top-tier answer."
+   }
+  },
+  {
+   "canonical": "elf",
+   "aliases": [
+    "forest dweller",
+    "long-eared being"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cornerstone of fantasy worlds, popularized by Lord of the Rings, The Hobbit, and video games like The Elder Scrolls."
+   }
+  },
+  {
+   "canonical": "troll",
+   "aliases": [
+    "bridge-dwelling monster",
+    "grumpy giant"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from Norse myth and modern video games like Minecraft, often used in jokes and casual references."
+   }
+  },
+  {
+   "canonical": "basilisk",
+   "aliases": [
+    "snake king",
+    "death gaze creature"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known but still widely recognized monster from medieval bestiaries and Harry Potter, appealing to fantasy fans."
+   }
+  },
+  {
+   "canonical": "salamander",
+   "aliases": [
+    "fire lizard",
+    "flame creature"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known from alchemy and Harry Potter, often remembered as a fire elemental, though less common than dragons."
+   }
+  },
+  {
+   "canonical": "cyclops",
+   "aliases": [
+    "one-eyed giant",
+    "Greek monster"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from Greek myth and Percy Jackson series, known for its striking image and recurring presence in media."
+   }
+  },
+  {
+   "canonical": "gorgon",
+   "aliases": [
+    "Medusa",
+    "snake-haired woman"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major mythological figure, often linked to Medusa, with high recognition due to pop culture references."
+   }
+  },
+  {
+   "canonical": "harpy",
+   "aliases": [
+    "bird-woman",
+    "storm spirit"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known Greek creature with visual appeal, referenced in video games and fantasy literature."
+   }
+  },
+  {
+   "canonical": "nymph",
+   "aliases": [
+    "nature spirit",
+    "forest maiden"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly associated with Greek myth and nature, often mentioned in literature and school curricula."
+   }
+  },
+  {
+   "canonical": "dryad",
+   "aliases": [
+    "tree spirit",
+    "wood nymph"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A type of nymph tied to trees, known through Percy Jackson and modern fantasy, recognizable to fantasy fans."
+   }
+  },
+  {
+   "canonical": "pegasus",
+   "aliases": [
+    "winged horse",
+    "horse with wings"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A beloved mythical creature from Greek myth, frequently seen in art, books, and games like Percy Jackson."
+   }
+  },
+  {
+   "canonical": "lamia",
+   "aliases": [
+    "snake-woman",
+    "Greek monster"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known but notable creature from Greek mythology, often mentioned in horror and fantasy contexts."
+   }
+  },
+  {
+   "canonical": "succubus",
+   "aliases": [
+    "night demon",
+    "seductive spirit"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A demon that appears in dreams, known from folklore and modern media like Supernatural and video games."
+   }
+  },
+  {
+   "canonical": "incubus",
+   "aliases": [
+    "male demon",
+    "dream demon"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The male counterpart to succubus, frequently referenced in fantasy and horror genres."
+   }
+  },
+  {
+   "canonical": "bogeyman",
+   "aliases": [
+    "monster under the bed",
+    "scary figure"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cultural archetype, widely recognized in stories and jokes, though not a traditional mythical creature."
+   }
+  },
+  {
+   "canonical": "kappa",
+   "aliases": [
+    "river spirit",
+    "Japanese water demon"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese folk creature with a turtle-like appearance and unique cultural backstory, known to anime and manga fans."
+   }
+  },
+  {
+   "canonical": "yokai",
+   "aliases": [
+    "Japanese spirit",
+    "supernatural entity"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A broad category of supernatural beings in Japanese folklore, with specific creatures like kitsune and oni known to anim"
+   }
+  },
+  {
+   "canonical": "oni",
+   "aliases": [
+    "demon",
+    "Japanese goblin"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A well-known Japanese demon with red or blue skin, featured in video games and anime such as Demon Slayer."
+   }
+  },
+  {
+   "canonical": "kitsune",
+   "aliases": [
+    "fox spirit",
+    "nine-tailed fox"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A prominent figure in Japanese folklore, popularized by anime and games like Persona and Naruto."
+   }
+  },
+  {
+   "canonical": "tengu",
+   "aliases": [
+    "bird-like demon",
+    "forest spirit"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A supernatural creature with a long nose and wings, known in Japanese mythology and modern fantasy media."
+   }
+  },
+  {
+   "canonical": "kobold",
+   "aliases": [
+    "dwarf-like creature",
+    "mining spirit"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A creature from Germanic folklore, recognized by fans of fantasy games like D&D and video games such as Skyrim."
+   }
+  },
+  {
+   "canonical": "leprechaun",
+   "aliases": [
+    "Irish fairy",
+    "shoe-making elf"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A well-known Irish mythical figure, popularized by St. Patrick\u2019s Day and Irish folklore, but less universal than dragons"
+   }
+  },
+  {
+   "canonical": "naiad",
+   "aliases": [
+    "river nymph",
+    "water spirit"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A type of nymph associated with freshwater, recognized by mythology enthusiasts and fantasy readers."
+   }
+  },
+  {
+   "canonical": "sylph",
+   "aliases": [
+    "air spirit",
+    "gentle breeze"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A classical elemental spirit of air, mentioned in alchemy and fantasy literature, known to older fantasy fans."
+   }
+  },
+  {
+   "canonical": "undine",
+   "aliases": [
+    "water spirit",
+    "river nymph"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A water elemental from European folklore, referenced in fantasy novels and games, less common than major creatures."
+   }
+  },
+  {
+   "canonical": "goblin",
+   "aliases": [
+    "small monster",
+    "trickster"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple of fantasy, known from games and books, but not as instantly recognizable as trolls or goblins in D&D."
+   }
+  },
+  {
+   "canonical": "fairy",
+   "aliases": [
+    "magical being",
+    "winged spirit"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A classic mythical being, known from Disney and literature, though slightly less specific than other entries."
+   }
+  },
+  {
+   "canonical": "boggart",
+   "aliases": [
+    "shape-shifter",
+    "fear creature"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A British folklore creature that takes the form of one's worst fear, known to fans of Harry Potter and British mythology"
+   }
+  },
+  {
+   "canonical": "selkie",
+   "aliases": [
+    "seal person",
+    "seal-woman"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A creature from Celtic and Norse mythology that shifts between seal and human form, recognized in fantasy literature and"
+   }
+  },
+  {
+   "canonical": "manticore",
+   "aliases": [
+    "lion with a tail of spines",
+    "beast of Persia"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A legendary creature from Persian myth, known in D&D and fantasy art, with a distinctive appearance and fearsome reputat"
+   }
+  },
+  {
+   "canonical": "nuckelavee",
+   "aliases": [
+    "horse demon",
+    "Scottish sea monster"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare and terrifying creature from Scottish folklore, a horse-like demon that appears in storms; known only to dedicate"
+   }
+  },
+  {
+   "canonical": "baku",
+   "aliases": [
+    "dream eater",
+    "Japanese spirit"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese creature that eats nightmares; highly obscure but valid and culturally rich, surprising most teens."
+   }
+  },
+  {
+   "canonical": "kraal",
+   "aliases": [
+    "southern African spirit",
+    "night creature"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known entity from Southern African folklore, believed to haunt the night; rarely mentioned outside academic or "
+   }
+  },
+  {
+   "canonical": "ziz",
+   "aliases": [
+    "biblical bird",
+    "giant flier"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare creature mentioned in Jewish mythology as a massive bird that flies above the clouds; known only to mythology sch"
+   }
+  },
+  {
+   "canonical": "ammit",
+   "aliases": [
+    "devourer of the dead",
+    "Egyptian monster"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An Egyptian mythological creature that consumes the hearts of the unworthy; extremely obscure, known only to hardcore my"
+   }
+  },
+  {
+   "canonical": "tatzelwurm",
+   "aliases": [
+    "Swiss serpent",
+    "dragon-like lizard"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A legendary creature from the Alps said to resemble a lizard with legs, often mistaken for a dragon; rarely mentioned ou"
+   }
+  },
+  {
+   "canonical": "mok\u00e8l\u00e9-mb\u00e8mbo",
+   "aliases": [
+    "living dinosaur",
+    "Congo creature"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cryptid said to inhabit the Congo Basin, described as a large, dinosaur-like creature; known only to fans of cryptozoo"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 5,
+  "safetyFlagged": 0,
+  "seconds": 114
+ }
+}

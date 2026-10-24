@@ -1,0 +1,503 @@
+{
+ "id": "cheeses",
+ "text": "Name a type of cheese.",
+ "example": "like cheddar",
+ "catalogueSize": 43,
+ "catalogue": [
+  {
+   "canonical": "Cheddar",
+   "aliases": [
+    "Cheddar cheese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most universally recognized cheeses, frequently mentioned in casual conversation and media; nearly every teen"
+   }
+  },
+  {
+   "canonical": "Mozzarella",
+   "aliases": [
+    "Mozzarella cheese",
+    "fresh mozzarella"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in pizza and caprese salads; extremely common in global pop culture and teen food discussions."
+   }
+  },
+  {
+   "canonical": "Swiss",
+   "aliases": [
+    "Swiss cheese",
+    "Emmental"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its holes and iconic use in sandwiches and fondue; instantly recognizable to most teens."
+   }
+  },
+  {
+   "canonical": "Brie",
+   "aliases": [
+    "Brie de Meaux",
+    "Brie cheese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly found in cheese platters and movies; a go-to choice for teens exploring gourmet foods."
+   }
+  },
+  {
+   "canonical": "Gouda",
+   "aliases": [
+    "Gouda cheese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in snacks, school lunches, and international cuisine; frequently seen in global food trends."
+   }
+  },
+  {
+   "canonical": "Feta",
+   "aliases": [
+    "Feta cheese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ubiquitous in Mediterranean dishes and Greek salads; widely featured in food content and social media."
+   }
+  },
+  {
+   "canonical": "Blue",
+   "aliases": [
+    "Blue cheese",
+    "Roquefort",
+    "Gorgonzola",
+    "Stilton"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A household name for pungent cheese; referenced in memes and teen food challenges."
+   }
+  },
+  {
+   "canonical": "Parmesan",
+   "aliases": [
+    "Parmigiano-Reggiano",
+    "Parmesan cheese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly used in pasta dishes and seen in every kitchen; deeply embedded in teen food culture."
+   }
+  },
+  {
+   "canonical": "Gruy\u00e8re",
+   "aliases": [
+    "Gruy\u00e8re cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently used in French onion soup and grilled cheese; known to many teens from school meals and cooking shows."
+   }
+  },
+  {
+   "canonical": "Monterey Jack",
+   "aliases": [
+    "Jack cheese",
+    "Monterey Jack cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in Mexican-American cuisine and quick snacks; a staple in American teen households."
+   }
+  },
+  {
+   "canonical": "Colby",
+   "aliases": [
+    "Colby cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A mild, meltable cheese often used in sandwiches; commonly found in grocery stores and school lunches."
+   }
+  },
+  {
+   "canonical": "Havarti",
+   "aliases": [
+    "Havarti cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its creamy texture and mild flavor; a common choice in cheese boards and lunch boxes."
+   }
+  },
+  {
+   "canonical": "Cottage cheese",
+   "aliases": [
+    "Cottage cheese",
+    "curds and whey"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from health food trends and fitness culture; frequently consumed by teens for protein."
+   }
+  },
+  {
+   "canonical": "Ricotta",
+   "aliases": [
+    "Ricotta cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in lasagna, stuffed pasta, and pancakes; widely known through cooking videos and recipes."
+   }
+  },
+  {
+   "canonical": "Provolone",
+   "aliases": [
+    "Provolone cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in subs and sandwiches; frequently seen in fast food and deli items."
+   }
+  },
+  {
+   "canonical": "Pepper Jack",
+   "aliases": [
+    "Pepper Jack cheese",
+    "Spicy Jack"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in spicy snacks and fusion foods; a favorite among teens who like bold flavors."
+   }
+  },
+  {
+   "canonical": "Manchego",
+   "aliases": [
+    "Manchego cheese"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Spanish cheese often featured in food vlogs and international cuisine content; recognizable to teens with travel or fo"
+   }
+  },
+  {
+   "canonical": "Gorgonzola",
+   "aliases": [
+    "Gorgonzola cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A well-known blue cheese with a distinct flavor; referenced in food challenges and YouTube reviews."
+   }
+  },
+  {
+   "canonical": "Camembert",
+   "aliases": [
+    "Camembert cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its soft texture and French origin; seen in movies and food documentaries."
+   }
+  },
+  {
+   "canonical": "Mascarpone",
+   "aliases": [
+    "Mascarpone cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in tiramisu and desserts; associated with Italian cuisine and foodie trends."
+   }
+  },
+  {
+   "canonical": "Edam",
+   "aliases": [
+    "Edam cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its red wax coating and small size; often seen in international cheese boards and school snacks."
+   }
+  },
+  {
+   "canonical": "Fontina",
+   "aliases": [
+    "Fontina cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in fondue and risottos; known through cooking shows and gourmet food content."
+   }
+  },
+  {
+   "canonical": "Pecorino Romano",
+   "aliases": [
+    "Pecorino cheese",
+    "Romano cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A salty, sharp cheese common in Italian dishes; frequently mentioned in cooking tutorials."
+   }
+  },
+  {
+   "canonical": "Asiago",
+   "aliases": [
+    "Asiago cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Often used in grating and sandwiches; recognized in Italian-American cuisine and food blogs."
+   }
+  },
+  {
+   "canonical": "Raclette",
+   "aliases": [
+    "Raclette cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A melting cheese popular in Swiss and European cuisine; featured in food challenges and party themes."
+   }
+  },
+  {
+   "canonical": "Boursin",
+   "aliases": [
+    "Boursin cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A creamy garlic and herb cheese; widely known through snack spreads and party food."
+   }
+  },
+  {
+   "canonical": "Taleggio",
+   "aliases": [
+    "Taleggio cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A soft Italian cheese with a mild, buttery flavor; known to food enthusiasts and culinary learners."
+   }
+  },
+  {
+   "canonical": "Mozzarella di Bufala",
+   "aliases": [
+    "Buffalo mozzarella",
+    "Bufala cheese"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Premium mozzarella from Italy; popularized by high-end restaurants and food influencers."
+   }
+  },
+  {
+   "canonical": "Limburger",
+   "aliases": [
+    "Limburger cheese"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its strong smell and cult status; referenced in memes and pop culture jokes."
+   }
+  },
+  {
+   "canonical": "Tulum",
+   "aliases": [
+    "Tulum cheese",
+    "Turkish cheese"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A traditional Turkish cheese with a unique texture; gaining attention in global food content."
+   }
+  },
+  {
+   "canonical": "Chevre",
+   "aliases": [
+    "Goat cheese",
+    "Ch\u00e8vre cheese"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely used in salads and spreads; a staple in health and gourmet food culture."
+   }
+  },
+  {
+   "canonical": "Reblochon",
+   "aliases": [
+    "Reblochon cheese"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A French alpine cheese with a rich flavor; known through cheese boards and food documentaries."
+   }
+  },
+  {
+   "canonical": "Casu Marzu",
+   "aliases": [
+    "Case marzu",
+    "Maggot cheese"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A controversial Sardinian cheese with live insects; infamous in viral food videos and shock content."
+   }
+  },
+  {
+   "canonical": "Stilton",
+   "aliases": [
+    "Stilton cheese"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An English blue cheese with a long tradition; known to cheese connoisseurs and niche food fans."
+   }
+  },
+  {
+   "canonical": "Pouligny-Saint-Pierre",
+   "aliases": [
+    "Pouligny cheese",
+    "Saint-Pierre cheese"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A French goat cheese with a distinctive shape and flavor; recognized by cheese aficionados and food educators."
+   }
+  },
+  {
+   "canonical": "Mimolette",
+   "aliases": [
+    "Mimolette cheese",
+    "Dutch cheese"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A bright orange cheese with a nutty flavor; unique in appearance and known in specialty shops."
+   }
+  },
+  {
+   "canonical": "Appenzeller",
+   "aliases": [
+    "Appenzeller cheese"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Swiss cheese with a strong aroma and complex flavor; favored by cheese enthusiasts and European food lovers."
+   }
+  },
+  {
+   "canonical": "Bergk\u00e4se",
+   "aliases": [
+    "Bergk\u00e4se cheese"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A German alpine cheese with a firm texture; recognized in European food circles and gourmet content."
+   }
+  },
+  {
+   "canonical": "Caciocavallo",
+   "aliases": [
+    "Caciocavallo cheese"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An Italian stretched-curd cheese with a unique shape; rarely mentioned but valid and known in Mediterranean food circles"
+   }
+  },
+  {
+   "canonical": "Lancashire",
+   "aliases": [
+    "Lancashire cheese"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A British cheese with a crumbly texture; historical and regional, known only to food historians and British culture fans"
+   }
+  },
+  {
+   "canonical": "Sapsago",
+   "aliases": [
+    "Sapsago cheese"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare Swiss cheese made from goat's milk and cow's milk; extremely uncommon outside niche cheese markets."
+   }
+  },
+  {
+   "canonical": "Suluguni",
+   "aliases": [
+    "Suluguni cheese"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Georgian cheese with a salty, stretchy texture; popular in Caucasus cuisine and rare outside that region."
+   }
+  },
+  {
+   "canonical": "Quark",
+   "aliases": [
+    "Quark cheese"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A soft, fresh cheese common in German and Eastern European diets; known in culinary schools and international food commu"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 0,
+  "seconds": 75
+ }
+}

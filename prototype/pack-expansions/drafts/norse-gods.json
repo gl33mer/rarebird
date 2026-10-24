@@ -1,0 +1,433 @@
+{
+ "id": "norse-gods",
+ "text": "Name a god or goddess from Norse mythology.",
+ "example": "like Thor",
+ "catalogueSize": 35,
+ "catalogue": [
+  {
+   "canonical": "Thor",
+   "aliases": [
+    "God of Thunder",
+    "Son of Odin"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most iconic Norse gods, frequently referenced in Marvel movies and pop culture, making him instantly recogniz"
+   }
+  },
+  {
+   "canonical": "Odin",
+   "aliases": [
+    "Allfather",
+    "Father of the Gods"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Central figure in Norse mythology, widely known through comics, video games, and TV shows like 'Vikings' and 'American G"
+   }
+  },
+  {
+   "canonical": "Loki",
+   "aliases": [
+    "Trickster God",
+    "God of Mischief"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely popular due to Marvel's Loki series and films, and known for his chaotic nature and cunning."
+   }
+  },
+  {
+   "canonical": "Freyja",
+   "aliases": [
+    "Goddess of Love",
+    "Goddess of Fertility"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major goddess with strong cultural and mythological presence, frequently highlighted in modern media and feminist rein"
+   }
+  },
+  {
+   "canonical": "Baldr",
+   "aliases": [
+    "God of Light",
+    "Son of Odin and Frigg"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Well-known for his tragic death in Norse myth, often referenced in books and games like 'God of War' and 'Assassin's Cre"
+   }
+  },
+  {
+   "canonical": "Freyr",
+   "aliases": [
+    "God of Peace",
+    "God of Rain and Fertility"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Important in Norse cosmology and frequently mentioned in mythology books and educational content for teens."
+   }
+  },
+  {
+   "canonical": "Heimdall",
+   "aliases": [
+    "Guardian of the Bifrost",
+    "Watcher at the Gate"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known as the watchful guardian of Asgard, popularized by Marvel and referenced in many video games and fantasy stories."
+   }
+  },
+  {
+   "canonical": "Tyr",
+   "aliases": [
+    "God of War",
+    "One-Handed God"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for sacrificing his hand to bind Fenrir, a story that's often taught in schools and featured in retellings of Nor"
+   }
+  },
+  {
+   "canonical": "Njord",
+   "aliases": [
+    "God of the Sea",
+    "God of Wind"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Vanir god with strong ties to seafaring cultures, mentioned in academic texts and myth retellings aimed at younger aud"
+   }
+  },
+  {
+   "canonical": "Idun",
+   "aliases": [
+    "Goddess of Youth",
+    "Keeper of the Apples"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for her magic apples that keep the gods youthful; less common in pop culture but recognized in mythology quizzes a"
+   }
+  },
+  {
+   "canonical": "Skadi",
+   "aliases": [
+    "Goddess of Winter",
+    "Hunter of the Mountains"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A powerful female figure associated with skiing and winter, gaining attention through modern retellings and feminist Nor"
+   }
+  },
+  {
+   "canonical": "Ullr",
+   "aliases": [
+    "God of Skiing",
+    "God of Archery"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Lesser-known but increasingly referenced in modern Norse revivals and winter sports culture, especially in Nordic countr"
+   }
+  },
+  {
+   "canonical": "Gefjon",
+   "aliases": [
+    "Goddess of Fertility",
+    "Creator of Zealand"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for pulling a plow with oxen to create the island of Zealand; known in academic circles and Norse lore websites."
+   }
+  },
+  {
+   "canonical": "Baldur",
+   "aliases": [
+    "Baldr",
+    "Son of Odin"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common spelling variation of Baldr, often confused in pop culture but valid; appears in 'God of War' and other myth-base"
+   }
+  },
+  {
+   "canonical": "Hoder",
+   "aliases": [
+    "God of Darkness",
+    "Blind God"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Brother of Baldr, infamous for killing him with a mistletoe arrow; known in mythological narratives but less popular in "
+   }
+  },
+  {
+   "canonical": "Forseti",
+   "aliases": [
+    "God of Justice",
+    "Peacekeeper"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "God of law and reconciliation, mentioned in Edda texts and educational materials, but rarely discussed in casual convers"
+   }
+  },
+  {
+   "canonical": "Vidar",
+   "aliases": [
+    "God of Vengeance",
+    "Son of Odin"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for avenging Odin by slaying Fenrir, a figure with a dramatic role in Ragnarok, referenced in games and books."
+   }
+  },
+  {
+   "canonical": "Vali",
+   "aliases": [
+    "God of Reckoning",
+    "Son of Odin"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Lesser-known but appears in Norse texts as a son of Odin, linked to the prophecy of Ragnarok."
+   }
+  },
+  {
+   "canonical": "Hoenir",
+   "aliases": [
+    "God of Wisdom",
+    "Vanir Envoy"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the Vanir gods sent to Asgard as a hostage, known in mythological sources but obscure to most teens."
+   }
+  },
+  {
+   "canonical": "Mimir",
+   "aliases": [
+    "Wisest of All",
+    "Keeper of the Well"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for his wisdom and the well of knowledge; referenced in 'God of War' and Norse lore circles."
+   }
+  },
+  {
+   "canonical": "Sif",
+   "aliases": [
+    "Goddess of Earth",
+    "Wife of Thor"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for her golden hair and role as Thor's wife, often mentioned in mythological retellings and comic adaptations."
+   }
+  },
+  {
+   "canonical": "Eostre",
+   "aliases": [
+    "Goddess of Spring",
+    "Germanic Goddess"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Though technically Germanic, she's often grouped with Norse mythology in modern pop culture and referenced in pagan and "
+   }
+  },
+  {
+   "canonical": "Nerthus",
+   "aliases": [
+    "Earth Goddess",
+    "Mother of the Gods"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A pre-Germanic earth goddess mentioned by Tacitus, occasionally referenced in Norse-themed fantasy and modern pagan circ"
+   }
+  },
+  {
+   "canonical": "Gullveig",
+   "aliases": [
+    "Golden Woman",
+    "Goddess of Lust"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A mysterious figure involved in the first war among the gods; referenced in 'God of War' and scholarly discussions of No"
+   }
+  },
+  {
+   "canonical": "Gangleri",
+   "aliases": [
+    "King Gylfi",
+    "Human King"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The human protagonist in the Prose Edda who questions the gods; known in academic circles and mythological literature bu"
+   }
+  },
+  {
+   "canonical": "Gefjun",
+   "aliases": [
+    "Goddess of Fertility",
+    "Creator of Zealand"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Not to be confused with other gods, she\u2019s a unique figure known for her mythic plow-legend, often cited in Nordic cultur"
+   }
+  },
+  {
+   "canonical": "Fj\u00f6rgyn",
+   "aliases": [
+    "Mother of Thor",
+    "Earth Goddess"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Mother of Thor in some sources, linked to the earth; a rare but valid name in Eddic texts, known to mythology enthusiast"
+   }
+  },
+  {
+   "canonical": "J\u00f6r\u00f0",
+   "aliases": [
+    "Earth Mother",
+    "Mother of Thor"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Personification of the Earth, mother of Thor; appears in Edda and is increasingly recognized in modern Norse revival cir"
+   }
+  },
+  {
+   "canonical": "Hl\u00edn",
+   "aliases": [
+    "Goddess of Protection",
+    "Guardian of the Gods"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known protective goddess mentioned in the Poetic Edda; known only to dedicated fans of Norse lore."
+   }
+  },
+  {
+   "canonical": "V\u00e1r",
+   "aliases": [
+    "Goddess of Vows",
+    "Keeper of Promises"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "God of oaths and truth, mentioned in the Poetic Edda and associated with marriage vows; extremely rare in pop culture, k"
+   }
+  },
+  {
+   "canonical": "Snotra",
+   "aliases": [
+    "Goddess of Wisdom",
+    "Wise Woman"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A minor goddess associated with prudence and modesty, appearing in the Prose Edda and Norse poetic traditions, rarely me"
+   }
+  },
+  {
+   "canonical": "Syn",
+   "aliases": [
+    "Goddess of Justice",
+    "Guardian of Doors"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with law and the threshold; a rare and obscure figure, only referenced in ancient texts and specialized mytho"
+   }
+  },
+  {
+   "canonical": "Eir",
+   "aliases": [
+    "Goddess of Healing",
+    "Healer of the Gods"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A goddess of medicine and healing, mentioned in the Poetic Edda and linked to healthcare in Norse mythology; very rarely"
+   }
+  },
+  {
+   "canonical": "R\u00e1n",
+   "aliases": [
+    "Goddess of the Sea",
+    "Wife of Njord"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A powerful sea goddess who drowns sailors; a valid, non-metaphorical figure in Norse myth, yet rarely named by teens due"
+   }
+  },
+  {
+   "canonical": "N\u00f3tt",
+   "aliases": [
+    "Goddess of Night",
+    "Mother of the Moon"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Personification of night, mother of the moon and the giant Audumla; a poetic and rare name in the mythological canon, ra"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 5,
+  "safetyFlagged": 0,
+  "seconds": 173
+ }
+}

@@ -1,0 +1,666 @@
+{
+ "id": "world-rivers",
+ "text": "Name a river.",
+ "example": "like the Amazon",
+ "catalogueSize": 59,
+ "catalogue": [
+  {
+   "canonical": "Amazon",
+   "aliases": [
+    "River Amazon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most iconic rivers globally, frequently cited in pop culture and geography education, making it a top-tier in"
+   }
+  },
+  {
+   "canonical": "Nile",
+   "aliases": [
+    "River Nile"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The world's longest river, heavily featured in history, documentaries, and media, making it a universal first response."
+   }
+  },
+  {
+   "canonical": "Mississippi",
+   "aliases": [
+    "River Mississippi"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major U.S. river deeply embedded in American music, literature, and education; widely known by teens."
+   }
+  },
+  {
+   "canonical": "Yangtze",
+   "aliases": [
+    "Yangtze River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The longest river in Asia, frequently referenced in global news and cultural content, commonly known by teens."
+   }
+  },
+  {
+   "canonical": "Ganges",
+   "aliases": [
+    "Ganges River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A sacred river in Hinduism, widely recognized in global media and spiritual discussions."
+   }
+  },
+  {
+   "canonical": "Danube",
+   "aliases": [
+    "Danube River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major European river, featured in classical music (e.g., Strauss\u2019s waltz) and travel content."
+   }
+  },
+  {
+   "canonical": "Rhine",
+   "aliases": [
+    "River Rhine"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its scenic beauty and historical significance in Europe, often seen in travel and media."
+   }
+  },
+  {
+   "canonical": "Volga",
+   "aliases": [
+    "Volga River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The longest river in Europe, well-known due to Russian culture and geography studies."
+   }
+  },
+  {
+   "canonical": "Mekong",
+   "aliases": [
+    "Mekong River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A key river in Southeast Asia, referenced in travel, environmental news, and regional culture."
+   }
+  },
+  {
+   "canonical": "Niger",
+   "aliases": [
+    "River Niger"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major African river, frequently mentioned in African history and geography lessons."
+   }
+  },
+  {
+   "canonical": "Congo",
+   "aliases": [
+    "Congo River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Second-largest river by discharge volume, often highlighted in environmental and scientific media."
+   }
+  },
+  {
+   "canonical": "Ob",
+   "aliases": [
+    "Ob River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major Siberian river, known in geography and climate discussions."
+   }
+  },
+  {
+   "canonical": "Yenisei",
+   "aliases": [
+    "Yenisei River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of Russia\u2019s largest rivers, notable for its length and ecological significance."
+   }
+  },
+  {
+   "canonical": "Amur",
+   "aliases": [
+    "Amur River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A key river between Russia and China, referenced in geopolitics and regional studies."
+   }
+  },
+  {
+   "canonical": "Tigris",
+   "aliases": [
+    "River Tigris"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the two rivers of ancient Mesopotamia, frequently taught in world history."
+   }
+  },
+  {
+   "canonical": "Euphrates",
+   "aliases": [
+    "River Euphrates"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Historical river in the Middle East, central to ancient civilizations and religious texts."
+   }
+  },
+  {
+   "canonical": "Rio Grande",
+   "aliases": [
+    "Rio Grande River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major U.S.-Mexico border river, frequently discussed in current events and news."
+   }
+  },
+  {
+   "canonical": "Missouri",
+   "aliases": [
+    "River Missouri"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Longest river in North America, a staple in U.S. geography education."
+   }
+  },
+  {
+   "canonical": "Parana",
+   "aliases": [
+    "Parana River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of South America\u2019s largest rivers, known from travel content and sports (e.g., football in Argentina)."
+   }
+  },
+  {
+   "canonical": "Orinoco",
+   "aliases": [
+    "Orinoco River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major South American river, featured in documentaries and ecological discussions."
+   }
+  },
+  {
+   "canonical": "Murray",
+   "aliases": [
+    "Murray River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Australia\u2019s longest river, well-known in geography and environmental stories."
+   }
+  },
+  {
+   "canonical": "Indus",
+   "aliases": [
+    "Indus River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient river of the Indus Valley Civilization, referenced in history and archaeology."
+   }
+  },
+  {
+   "canonical": "Lena",
+   "aliases": [
+    "Lena River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major Siberian river, often mentioned in climate and geography contexts."
+   }
+  },
+  {
+   "canonical": "Yukon",
+   "aliases": [
+    "Yukon River"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous Alaskan river, tied to gold rush history and adventure culture."
+   }
+  },
+  {
+   "canonical": "Columbia",
+   "aliases": [
+    "Columbia River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major river in the Pacific Northwest, known for hydroelectric power and outdoor recreation."
+   }
+  },
+  {
+   "canonical": "Zambesi",
+   "aliases": [
+    "Zambesi River",
+    "Zambezi River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for Victoria Falls, widely featured in travel shows and wildlife documentaries."
+   }
+  },
+  {
+   "canonical": "Dnieper",
+   "aliases": [
+    "Dnieper River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A key river in Eastern Europe, important in Ukrainian history and culture."
+   }
+  },
+  {
+   "canonical": "Daugava",
+   "aliases": [
+    "Daugava River",
+    "Western Dvina"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Historic river in the Baltics, relevant in regional history and music (e.g., Latvia)."
+   }
+  },
+  {
+   "canonical": "Seine",
+   "aliases": [
+    "River Seine"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic river in Paris, central to art, film, and tourism."
+   }
+  },
+  {
+   "canonical": "Thames",
+   "aliases": [
+    "River Thames"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "London's famous river, a symbol of British culture and history."
+   }
+  },
+  {
+   "canonical": "Po",
+   "aliases": [
+    "River Po"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Italy\u2019s longest river, known in European geography and cultural references."
+   }
+  },
+  {
+   "canonical": "Tiber",
+   "aliases": [
+    "River Tiber"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient river of Rome, deeply tied to mythology and European history."
+   }
+  },
+  {
+   "canonical": "Ebro",
+   "aliases": [
+    "Ebro River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major river in Spain, known in European geography and sports (e.g., cycling routes)."
+   }
+  },
+  {
+   "canonical": "Niagara",
+   "aliases": [
+    "Niagara River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for the falls, a top tourist destination and pop culture staple."
+   }
+  },
+  {
+   "canonical": "Rhone",
+   "aliases": [
+    "Rhone River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major river in France and Switzerland, featured in travel and adventure content."
+   }
+  },
+  {
+   "canonical": "Elbe",
+   "aliases": [
+    "Elbe River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Important German river, linked to history and environmental issues."
+   }
+  },
+  {
+   "canonical": "Oder",
+   "aliases": [
+    "Oder River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "River between Germany and Poland, relevant in European history and geopolitics."
+   }
+  },
+  {
+   "canonical": "Sava",
+   "aliases": [
+    "Sava River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Key tributary of the Danube, known in Balkan geography and culture."
+   }
+  },
+  {
+   "canonical": "Don",
+   "aliases": [
+    "Don River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Historic Russian river, famous for its role in military and cultural stories."
+   }
+  },
+  {
+   "canonical": "Syr Darya",
+   "aliases": [
+    "Syr Darya River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major Central Asian river, linked to ancient trade and modern water disputes."
+   }
+  },
+  {
+   "canonical": "Amu Darya",
+   "aliases": [
+    "Amu Darya River"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient river of Central Asia, known from historical texts and regional studies."
+   }
+  },
+  {
+   "canonical": "Purus",
+   "aliases": [
+    "Purus River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major tributary of the Amazon, known in ecological and scientific discussions."
+   }
+  },
+  {
+   "canonical": "Citarum",
+   "aliases": [
+    "Citarum River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Indonesia\u2019s most polluted river, frequently cited in environmental news and documentaries."
+   }
+  },
+  {
+   "canonical": "Kaveri",
+   "aliases": [
+    "Kaveri River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Sacred river in southern India, referenced in South Asian culture and religion."
+   }
+  },
+  {
+   "canonical": "Godavari",
+   "aliases": [
+    "Godavari River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Second-longest river in India, important in Hindu mythology and regional culture."
+   }
+  },
+  {
+   "canonical": "Brahmaputra",
+   "aliases": [
+    "Brahmaputra River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major river in South Asia, known for its size and cultural significance in India and Bangladesh."
+   }
+  },
+  {
+   "canonical": "Kazan",
+   "aliases": [
+    "Kazan River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known river in Russia, but known to geography enthusiasts and travelers."
+   }
+  },
+  {
+   "canonical": "Sakha",
+   "aliases": [
+    "Sakha River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A river in Siberia, associated with indigenous cultures and remote regions."
+   }
+  },
+  {
+   "canonical": "Mura",
+   "aliases": [
+    "Mura River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A river in Central Europe, less known but recognized in regional geography and travel."
+   }
+  },
+  {
+   "canonical": "Drina",
+   "aliases": [
+    "Drina River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A scenic river in the Balkans, famous for its deep canyon and historical significance."
+   }
+  },
+  {
+   "canonical": "Vistula",
+   "aliases": [
+    "Vistula River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Poland\u2019s longest river, known in European geography and history."
+   }
+  },
+  {
+   "canonical": "Neman",
+   "aliases": [
+    "Neman River",
+    "Niemen River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Important river in the Baltics, linked to regional history and culture."
+   }
+  },
+  {
+   "canonical": "Lule",
+   "aliases": [
+    "Lule River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A river in northern Sweden, known to outdoor enthusiasts and Nordic culture fans."
+   }
+  },
+  {
+   "canonical": "Tana",
+   "aliases": [
+    "Tana River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Kenya\u2019s longest river, featured in African wildlife documentaries."
+   }
+  },
+  {
+   "canonical": "Zambezi",
+   "aliases": [
+    "Zambesi River",
+    "Zambezi River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Repeated for depth; known from Victoria Falls and adventure tourism."
+   }
+  },
+  {
+   "canonical": "Kolyma",
+   "aliases": [
+    "Kolyma River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A remote Siberian river, associated with forced labor camps and harsh climate."
+   }
+  },
+  {
+   "canonical": "Tunguska",
+   "aliases": [
+    "Tunguska River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for the 1908 explosion, known in science and conspiracy culture."
+   }
+  },
+  {
+   "canonical": "Pechora",
+   "aliases": [
+    "Pechora River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major river in northern Russia, known in Arctic and environmental discussions."
+   }
+  },
+  {
+   "canonical": "Neva",
+   "aliases": [
+    "Neva River"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "River in St. Petersburg, central to Russian culture and art."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 42,
+  "safetyFlagged": 0,
+  "seconds": 167
+ }
+}

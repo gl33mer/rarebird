@@ -1,0 +1,460 @@
+{
+ "id": "storms",
+ "text": "Name a type of storm or weather event.",
+ "example": "like a hurricane",
+ "catalogueSize": 40,
+ "catalogue": [
+  {
+   "canonical": "hurricane",
+   "aliases": [
+    "typhoon",
+    "cyclone"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most immediately recognized and frequently mentioned storms globally, especially in pop culture and news; nea"
+   }
+  },
+  {
+   "canonical": "tornado",
+   "aliases": [
+    "twister"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely common in American media and weather education; instantly recognizable and frequently referenced in teen pop c"
+   }
+  },
+  {
+   "canonical": "blizzard",
+   "aliases": [
+    "snowstorm"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major winter storm widely taught in schools and featured in movies and games, making it a top-tier answer for teens."
+   }
+  },
+  {
+   "canonical": "thunderstorm",
+   "aliases": [
+    "storm",
+    "rainstorm"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A universal weather event that teens experience regularly and hear about constantly in media and daily life."
+   }
+  },
+  {
+   "canonical": "monsoon",
+   "aliases": [
+    "summer storm",
+    "rainy season"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major weather pattern in South and Southeast Asia, widely discussed in global news and geography curricula, known to m"
+   }
+  },
+  {
+   "canonical": "dust storm",
+   "aliases": [
+    "sandstorm"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from desert regions and survival-themed games/movies; common in teen pop culture references like video games an"
+   }
+  },
+  {
+   "canonical": "heat wave",
+   "aliases": [
+    "heat spell"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently covered in news and social media; teens are often aware of extreme heat events through climate discussions an"
+   }
+  },
+  {
+   "canonical": "flood",
+   "aliases": [
+    "flash flood"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A widely reported weather-related disaster; frequently featured in news, games, and survival-themed content popular with"
+   }
+  },
+  {
+   "canonical": "lightning",
+   "aliases": [
+    "lightning strike"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A key component of thunderstorms, often referenced in music, video games, and memes, making it a common second-tier answ"
+   }
+  },
+  {
+   "canonical": "snowstorm",
+   "aliases": [
+    "blizzard",
+    "whiteout"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in winter-themed media and school experiences, especially in colder regions, making it a frequent answer among te"
+   }
+  },
+  {
+   "canonical": "cold front",
+   "aliases": [
+    "cold snap"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A meteorological term often used in weather reports and news; teens may recognize it from weather apps and forecasts."
+   }
+  },
+  {
+   "canonical": "hailstorm",
+   "aliases": [
+    "hail",
+    "hail shower"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Less common than thunderstorms but still widely known through viral videos and weather reports, especially in the U.S. M"
+   }
+  },
+  {
+   "canonical": "derecho",
+   "aliases": [
+    "straight-line storm"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fast-moving storm system with damaging winds; known to weather enthusiasts and in educational content, recognized by s"
+   }
+  },
+  {
+   "canonical": "sleet",
+   "aliases": [
+    "ice pellets"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known form of winter precipitation, but familiar through weather reports and school science topics."
+   }
+  },
+  {
+   "canonical": "microburst",
+   "aliases": [
+    "downburst"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A strong, localized wind event; known in advanced weather education and occasionally referenced in documentaries or game"
+   }
+  },
+  {
+   "canonical": "nor'easter",
+   "aliases": [
+    "northeaster"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major winter storm affecting the U.S. East Coast; popular in news and weather education, known to teens in coastal reg"
+   }
+  },
+  {
+   "canonical": "squall line",
+   "aliases": [
+    "storm line"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A line of storms with strong winds; recognized in weather reports and seen in disaster films, known to some teens."
+   }
+  },
+  {
+   "canonical": "tropical storm",
+   "aliases": [
+    "tropical depression"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A precursor to hurricanes; commonly discussed during hurricane season, familiar from news and weather apps."
+   }
+  },
+  {
+   "canonical": "wind shear",
+   "aliases": [
+    "air shear"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A meteorological phenomenon important in aviation and storm formation; known to teens interested in science or flying ga"
+   }
+  },
+  {
+   "canonical": "gustnado",
+   "aliases": [
+    "gust tornado"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare, short-lived vortex from a gust front; recognized by weather nerds and in storm-chasing content popular with teen"
+   }
+  },
+  {
+   "canonical": "waterspout",
+   "aliases": [
+    "water tornado"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A tornado over water; visually striking and featured in travel and adventure media, known to many teens from documentari"
+   }
+  },
+  {
+   "canonical": "snow squall",
+   "aliases": [
+    "white squall"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A sudden, intense snowstorm; recognized in cold-climate regions and weather apps, less common than blizzards but known t"
+   }
+  },
+  {
+   "canonical": "lake effect snow",
+   "aliases": [
+    "lake snow"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A regional weather phenomenon; taught in geography and seen in news from the Great Lakes, known to teens in those areas."
+   }
+  },
+  {
+   "canonical": "sunstorm",
+   "aliases": [
+    "solar storm"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A space weather event affecting Earth; popularized by sci-fi and tech news, known to teens interested in astronomy and s"
+   }
+  },
+  {
+   "canonical": "firestorm",
+   "aliases": [
+    "urban firestorm"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A massive fire fueled by its own heat and wind; known from historical events and disaster games, recognized by teens wit"
+   }
+  },
+  {
+   "canonical": "haboob",
+   "aliases": [
+    "sand wall"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A powerful dust storm common in arid regions; featured in travel shows and survival games, known to teens via global med"
+   }
+  },
+  {
+   "canonical": "thundersnow",
+   "aliases": [
+    "snow thunderstorm"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare phenomenon combining snow and thunder; widely shared in viral videos and weather enthusiast circles, known to som"
+   }
+  },
+  {
+   "canonical": "apocalypse storm",
+   "aliases": [
+    "doomsday storm"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fictional or metaphorical term used in games, movies, and memes; not a real weather event but accepted in pop culture "
+   }
+  },
+  {
+   "canonical": "mushroom cloud",
+   "aliases": [
+    "nuclear storm",
+    "atomic storm"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Not a natural storm, but a visual symbol of extreme atmospheric events; widely used in games and films, known to teens f"
+   }
+  },
+  {
+   "canonical": "aurora borealis",
+   "aliases": [
+    "northern lights"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A light display caused by solar storms; popular in travel and fantasy media, often mistaken for a storm by teens."
+   }
+  },
+  {
+   "canonical": "solar flare",
+   "aliases": [
+    "solar explosion"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A powerful burst of radiation from the sun; known to teens via sci-fi, space apps, and viral science content."
+   }
+  },
+  {
+   "canonical": "plasma storm",
+   "aliases": [
+    "electromagnetic storm"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A speculative or sci-fi term for space weather; used in games and animations, recognized by teens in fantasy tech settin"
+   }
+  },
+  {
+   "canonical": "black storm",
+   "aliases": [
+    "blackout storm"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A stylized, dramatic term used in gaming and music; not a real weather event but used in pop culture to describe intense"
+   }
+  },
+  {
+   "canonical": "storm of the century",
+   "aliases": [
+    "historic storm",
+    "mega-storm"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A colloquial term for extreme weather events; used in media and news, familiar to teens from documentaries and viral cli"
+   }
+  },
+  {
+   "canonical": "storm surge",
+   "aliases": [
+    "tidal surge"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rise in sea level during storms; known to teens from hurricane coverage and survival games, often confused with other "
+   }
+  },
+  {
+   "canonical": "tropical depression",
+   "aliases": [
+    "tropi-dep"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The weakest stage of tropical cyclones; known only to weather enthusiasts and students of meteorology, genuinely surpris"
+   }
+  },
+  {
+   "canonical": "mesocyclone",
+   "aliases": [
+    "rotating storm core"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rotating updraft within a thunderstorm, key to tornado formation; a technical term known only to advanced weather lear"
+   }
+  },
+  {
+   "canonical": "gust front",
+   "aliases": [
+    "leading edge of storm"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The boundary of cool air spreading out from a storm; a niche meteorological concept, unfamiliar to most teens but valid "
+   }
+  },
+  {
+   "canonical": "shelf cloud",
+   "aliases": [
+    "frontal shelf"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A low, horizontal cloud formation associated with thunderstorms; visually distinctive and studied in storm photography, "
+   }
+  },
+  {
+   "canonical": "anvil cloud",
+   "aliases": [
+    "cumulonimbus anvil"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The flat, spreading top of a thunderstorm cloud; a technical term in cloud classification, rarely named outside weather "
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 0,
+  "seconds": 75
+ }
+}

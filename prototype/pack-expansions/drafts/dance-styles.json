@@ -1,0 +1,467 @@
+{
+ "id": "dance-styles",
+ "text": "Name a dance style.",
+ "example": "like ballet",
+ "catalogueSize": 41,
+ "catalogue": [
+  {
+   "canonical": "Ballet",
+   "aliases": [
+    "Classical ballet"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ballet is a foundational dance form frequently cited in pop culture and school programs; nearly every teen recognizes it"
+   }
+  },
+  {
+   "canonical": "Hip-Hop",
+   "aliases": [
+    "Hip-hop dance",
+    "Street dance"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Hip-hop is a dominant global youth dance style with massive presence in music videos, TikTok, and dance challenges."
+   }
+  },
+  {
+   "canonical": "Salsa",
+   "aliases": [
+    "Latin salsa"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Salsa is a staple of dance culture, widely taught and referenced in music and media across teen audiences."
+   }
+  },
+  {
+   "canonical": "Jazz",
+   "aliases": [
+    "Jazz dance"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Jazz dance is common in school performances, dance studios, and music videos, making it instantly recognizable to teens."
+   }
+  },
+  {
+   "canonical": "Breakdancing",
+   "aliases": [
+    "B-boying",
+    "Breaking"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Breakdancing is iconic in pop culture, especially through movies, YouTube, and competitive dance scenes."
+   }
+  },
+  {
+   "canonical": "Tango",
+   "aliases": [
+    "Argentine tango"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Tango is a well-known partner dance often referenced in films, TV, and dance competitions."
+   }
+  },
+  {
+   "canonical": "Contemporary",
+   "aliases": [
+    "Contemporary dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Contemporary dance is widely taught in dance schools and seen in music videos and stage performances."
+   }
+  },
+  {
+   "canonical": "Waacking",
+   "aliases": [
+    "Wacking"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Waacking, a vibrant 1970s dance style, has seen a resurgence via TikTok and queer dance culture."
+   }
+  },
+  {
+   "canonical": "Locking",
+   "aliases": [
+    "Lock dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Locking is a recognizable funk dance style with clear, signature moves, known through music videos and dance crews."
+   }
+  },
+  {
+   "canonical": "Popping",
+   "aliases": [
+    "Poppin'"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popping is a staple of urban dance culture and frequently seen in music videos and dance battles."
+   }
+  },
+  {
+   "canonical": "Funk",
+   "aliases": [
+    "Funk dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Funk dance styles are inspired by funk music and often appear in dance challenges and viral videos."
+   }
+  },
+  {
+   "canonical": "Swing",
+   "aliases": [
+    "Lindy Hop"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Swing dance, especially Lindy Hop, is popular at themed parties and has a strong revival in youth culture."
+   }
+  },
+  {
+   "canonical": "Reggaeton",
+   "aliases": [
+    "Reggaeton dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Reggaeton is a global hit with distinctive dance moves, commonly performed in parties and on social media."
+   }
+  },
+  {
+   "canonical": "Afrobeats",
+   "aliases": [
+    "Afrobeats dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Afrobeats is a rising global genre with dance moves that have gone viral on TikTok and Instagram."
+   }
+  },
+  {
+   "canonical": "K-pop",
+   "aliases": [
+    "K-pop dance"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "K-pop choreography is highly structured and widely imitated by teens worldwide."
+   }
+  },
+  {
+   "canonical": "Bollywood",
+   "aliases": [
+    "Indian dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Bollywood dance blends classical and folk elements and is popular among teens via music videos and dance covers."
+   }
+  },
+  {
+   "canonical": "Capoeira",
+   "aliases": [
+    "Capoeira dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Capoeira is a Brazilian martial art with dance-like movement, gaining visibility in global youth culture."
+   }
+  },
+  {
+   "canonical": "Folk Dance",
+   "aliases": [
+    "Traditional folk dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Folk dances from various cultures are taught in schools and celebrated in cultural festivals."
+   }
+  },
+  {
+   "canonical": "Flamenco",
+   "aliases": [
+    "Flamenco dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Flamenco is a dramatic, expressive dance with strong cultural roots and frequent appearances in media."
+   }
+  },
+  {
+   "canonical": "Samba",
+   "aliases": [
+    "Brazilian samba"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Samba is iconic in Carnival and dance competitions, recognized by many teens through global events."
+   }
+  },
+  {
+   "canonical": "Zumba",
+   "aliases": [
+    "Zumba dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Zumba combines dance and exercise, popular in teen fitness classes and social media challenges."
+   }
+  },
+  {
+   "canonical": "Dancehall",
+   "aliases": [
+    "Dancehall style"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Dancehall is a Jamaican dance form with a strong presence in global pop music and youth culture."
+   }
+  },
+  {
+   "canonical": "Bounce",
+   "aliases": [
+    "Bounce dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Bounce is a Southern U.S. music and dance style with a unique, rhythmic style gaining teen popularity."
+   }
+  },
+  {
+   "canonical": "House",
+   "aliases": [
+    "House dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "House dance is a foundational electronic dance style with roots in Chicago and strong global appeal."
+   }
+  },
+  {
+   "canonical": "Garba",
+   "aliases": [
+    "Rajasthani dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Garba is a traditional Indian dance often performed at festivals and taught in cultural programs."
+   }
+  },
+  {
+   "canonical": "Krump",
+   "aliases": [
+    "Krump dance"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Krump is a high-energy street dance with emotional expression, gaining traction in youth dance communities."
+   }
+  },
+  {
+   "canonical": "Vogue",
+   "aliases": [
+    "Vogueing",
+    "Ballroom vogue"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Vogue, popularized by ballroom culture and LGBTQ+ communities, is widely known through 'Pose' and social media."
+   }
+  },
+  {
+   "canonical": "Butoh",
+   "aliases": [
+    "Butoh dance"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Butoh is a avant-garde Japanese dance form that challenges norms; known to arts-oriented teens."
+   }
+  },
+  {
+   "canonical": "Kathak",
+   "aliases": [
+    "Indian classical dance"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Kathak is a traditional Indian dance with intricate footwork, taught in cultural schools worldwide."
+   }
+  },
+  {
+   "canonical": "Cumbia",
+   "aliases": [
+    "Colombian cumbia"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Cumbia is a Latin American dance with deep roots and global influence, recognized by many teens."
+   }
+  },
+  {
+   "canonical": "TikTok Dance",
+   "aliases": [
+    "TikTok choreo"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "TikTok dances are ephemeral but widely known; teens often reference them by name."
+   }
+  },
+  {
+   "canonical": "Makossa",
+   "aliases": [
+    "Cameroonian makossa"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Makossa is a West African dance music genre with distinct movements, known through viral clips."
+   }
+  },
+  {
+   "canonical": "Dubstep Dance",
+   "aliases": [
+    "Dubstep choreo"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Dubstep dance styles emerged from electronic music scenes and are sometimes mimicked in dance challenges."
+   }
+  },
+  {
+   "canonical": "Afrobeats Dance",
+   "aliases": [
+    "Afrobeats choreo"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Afrobeats dance is a growing subgenre with unique regional styles, recognized by dance enthusiasts."
+   }
+  },
+  {
+   "canonical": "Fidgeting Dance",
+   "aliases": [
+    "Fidget dance"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Fidgeting is a niche, expressive dance form rooted in improvisation and online culture."
+   }
+  },
+  {
+   "canonical": "Popping Style",
+   "aliases": [
+    "Poppin' style"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popping has distinct substyles like 'tutting' and 'wave', known to dedicated dance learners."
+   }
+  },
+  {
+   "canonical": "Stepping",
+   "aliases": [
+    "Stepping dance"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Stepping is a rhythmic, percussive dance from African American fraternities and sororities."
+   }
+  },
+  {
+   "canonical": "Kizomba",
+   "aliases": [
+    "Angolan kizomba"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Kizomba is a sensual, slow-tempo partner dance from Angola with a growing international following."
+   }
+  },
+  {
+   "canonical": "Cape Verdean Dance",
+   "aliases": [
+    "Cape Verdean folk dance"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Cape Verdean dance styles like morna and batuque are unique and known only to culturally curious teens."
+   }
+  },
+  {
+   "canonical": "K-pop Dance Challenge",
+   "aliases": [
+    "K-pop choreo challenge"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Specific K-pop choreo challenges are often named and circulated, known only to dedicated fans."
+   }
+  },
+  {
+   "canonical": "Ragga Jam",
+   "aliases": [
+    "Jamaican ragga dance"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ragga Jam is a lesser-known Jamaican dance style blending dancehall and reggae with unique rhythms."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 1,
+  "safetyFlagged": 0,
+  "seconds": 76
+ }
+}

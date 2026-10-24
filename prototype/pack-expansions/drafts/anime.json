@@ -1,0 +1,602 @@
+{
+ "id": "anime",
+ "text": "Name a popular anime series.",
+ "example": "like Naruto",
+ "catalogueSize": 49,
+ "catalogue": [
+  {
+   "canonical": "Naruto",
+   "aliases": [
+    "Naruto Uzumaki",
+    "Naruto Shippuden"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most iconic and widely recognized anime series globally, especially among teens; consistently ranks as a top "
+   }
+  },
+  {
+   "canonical": "One Piece",
+   "aliases": [
+    "Monkey D. Luffy",
+    "The Pirate King"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Massively popular worldwide with a long-running series and strong fanbase across all age groups, especially teens."
+   }
+  },
+  {
+   "canonical": "Dragon Ball Z",
+   "aliases": [
+    "DBZ",
+    "Goku",
+    "Son Goku"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A foundational shonen anime with immense global recognition, frequently referenced in pop culture and a staple in teen m"
+   }
+  },
+  {
+   "canonical": "My Hero Academia",
+   "aliases": [
+    "Boku no Hero Academia",
+    "MHA"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Highly popular in recent years with strong streaming presence and widespread schoolyard discussion among teens."
+   }
+  },
+  {
+   "canonical": "Demon Slayer",
+   "aliases": [
+    "Demon Slayer: Kimetsu no Yaiba",
+    "Tanjiro Kamado"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A cultural phenomenon in the past few years with massive merchandising, viral moments, and widespread teen enthusiasm."
+   }
+  },
+  {
+   "canonical": "Attack on Titan",
+   "aliases": [
+    "Shingeki no Kyojin",
+    "Eren Yeager"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Consistently ranked among top anime globally, known for intense storytelling and massive teen fanbase."
+   }
+  },
+  {
+   "canonical": "Jujutsu Kaisen",
+   "aliases": [
+    "Jujutsu Sorcerer",
+    "Yuji Itadori"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Hugely popular since its 2020 debut, with strong animation, viral themes, and deep fan engagement."
+   }
+  },
+  {
+   "canonical": "Tokyo Revengers",
+   "aliases": [
+    "Tokyo R",
+    "Takemichi Hanagaki"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A viral hit in recent years with time-travel themes and dramatic appeal, widely discussed among teens."
+   }
+  },
+  {
+   "canonical": "One Punch Man",
+   "aliases": [
+    "Saitama",
+    "The Hero with One Punch"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its satirical tone and meme-worthy protagonist, it's a staple in teen anime discussions."
+   }
+  },
+  {
+   "canonical": "Hunter x Hunter",
+   "aliases": [
+    "Gon Freecss",
+    "Killua Zoldyck"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Highly regarded for its complex worldbuilding and deep themes; known by many teens but less universally mentioned than P"
+   }
+  },
+  {
+   "canonical": "Soul Eater",
+   "aliases": [
+    "Maka Albarn",
+    "Death the Kid"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cult favorite from the 2010s with strong visual style and dedicated fanbase among teens."
+   }
+  },
+  {
+   "canonical": "Fullmetal Alchemist: Brotherhood",
+   "aliases": [
+    "FMA: Brotherhood",
+    "Edward Elric"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently hailed as one of the greatest anime ever made, known to many teens through word-of-mouth and streaming."
+   }
+  },
+  {
+   "canonical": "Death Note",
+   "aliases": [
+    "Light Yagami",
+    "L"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A classic psychological thriller with global recognition, often referenced in teen conversations and online debates."
+   }
+  },
+  {
+   "canonical": "Steins;Gate",
+   "aliases": [
+    "Okabe Rintarou",
+    "The Radio of the World"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Highly influential in the sci-fi genre with a cult following and frequent mentions in teen geek circles."
+   }
+  },
+  {
+   "canonical": "Fate/Zero",
+   "aliases": [
+    "Saber",
+    "Kiritsugu Emiya"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A prequel to a major franchise with intense storytelling; known to many teens via social media and streaming."
+   }
+  },
+  {
+   "canonical": "Cowboy Bebop",
+   "aliases": [
+    "Spike Spiegel",
+    "Jet Black"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A timeless classic with a jazz-inspired aesthetic, often recommended to new anime fans and known in teen circles."
+   }
+  },
+  {
+   "canonical": "Black Clover",
+   "aliases": [
+    "Asta",
+    "Yuno"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A long-running shonen series with strong early popularity and consistent presence in teen media."
+   }
+  },
+  {
+   "canonical": "Bleach",
+   "aliases": [
+    "Ichigo Kurosaki",
+    "Zanpakut\u014d"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A foundational shonen series with global reach and lasting cultural impact, still known by many teens."
+   }
+  },
+  {
+   "canonical": "Yu Yu Hakusho",
+   "aliases": [
+    "Yusuke Urameshi",
+    "Hiei"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A classic from the 90s with enduring appeal, often discovered through streaming and memes."
+   }
+  },
+  {
+   "canonical": "Clannad",
+   "aliases": [
+    "Tomoya Okazaki",
+    "Nagisa Furukawa"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A deeply emotional anime often praised for its storytelling; known to teens who enjoy slice-of-life and drama."
+   }
+  },
+  {
+   "canonical": "Fate/Stay Night",
+   "aliases": [
+    "Saber",
+    "Shirou Emiya"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A landmark visual novel adaptation with a strong teen fanbase and recurring themes in online discussions."
+   }
+  },
+  {
+   "canonical": "Parasyte -the maxim-",
+   "aliases": [
+    "Migi",
+    "Shinichi Izumi"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique sci-fi horror series with philosophical depth, appreciated by teens interested in mature themes."
+   }
+  },
+  {
+   "canonical": "Re:Zero",
+   "aliases": [
+    "Subaru Natsuki",
+    "Emilia"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A breakout hit with time-loop mechanics and emotional stakes, widely discussed in teen anime communities."
+   }
+  },
+  {
+   "canonical": "No Game No Life",
+   "aliases": [
+    "Sora",
+    "Shiro"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its quirky humor and unique premise, popular among teens who enjoy fantasy and strategy."
+   }
+  },
+  {
+   "canonical": "Kimi ni Todoke",
+   "aliases": [
+    "Sawako Kuronuma",
+    "Shota Kazehaya"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A beloved shoujo series with strong emotional resonance, often recommended to teens exploring romance anime."
+   }
+  },
+  {
+   "canonical": "Fruits Basket",
+   "aliases": [
+    "Tohru Honda",
+    "Kyo Sohma"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern classic with emotional depth and a popular reboot, frequently cited by teens as a favorite."
+   }
+  },
+  {
+   "canonical": "Your Lie in April",
+   "aliases": [
+    "Kousei Arima",
+    "Kaori Miyazono"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A tear-jerking emotional powerhouse often shared as a 'must-watch' among teens and fans of music-themed anime."
+   }
+  },
+  {
+   "canonical": "The Promised Neverland",
+   "aliases": [
+    "Emma",
+    "Norman"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A psychological thriller with a shocking twist, highly discussed and streamed by teens globally."
+   }
+  },
+  {
+   "canonical": "Shin Chan",
+   "aliases": [
+    "Shinnosuke Nohara",
+    "Chibiko"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A long-running comedy with international reach; known to teens through memes and streaming platforms."
+   }
+  },
+  {
+   "canonical": "Doraemon",
+   "aliases": [
+    "Nobita",
+    "Dora the Cat"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cultural icon from Japan with enduring popularity across generations, still recognized by teens today."
+   }
+  },
+  {
+   "canonical": "InuYasha",
+   "aliases": [
+    "Inuyasha",
+    "Kagome Higurashi"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A classic fantasy romance with strong appeal to teens who enjoy adventure and supernatural themes."
+   }
+  },
+  {
+   "canonical": "Gintama",
+   "aliases": [
+    "Gintoki Sakata",
+    "Shinpachi Shimura"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its absurd humor and deep emotional moments, appreciated by teens who enjoy parody and satire."
+   }
+  },
+  {
+   "canonical": "Bakemonogatari",
+   "aliases": [
+    "Koyomi Araragi",
+    "Senjougahara Hitagi"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cult favorite with complex storytelling and stylized animation; recognized by anime enthusiasts but less common in cas"
+   }
+  },
+  {
+   "canonical": "Monogatari Series",
+   "aliases": [
+    "Koyomi Araragi",
+    "Oshino Meme"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A highly niche but influential series with a unique narrative style; known to dedicated anime fans but rare in general t"
+   }
+  },
+  {
+   "canonical": "Ajin: Demi-Human",
+   "aliases": [
+    "Kei Kurono",
+    "Makoto Kikuchi"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A mature, philosophical thriller with a unique premise; recognized by teens interested in dystopian themes."
+   }
+  },
+  {
+   "canonical": "Psycho-Pass",
+   "aliases": [
+    "Shinya Kogami",
+    "Akane Tsunemori"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cyberpunk dystopia with social commentary, often discussed in teen circles interested in philosophy and politics."
+   }
+  },
+  {
+   "canonical": "Little Witch Academia",
+   "aliases": [
+    "Akko Kagari",
+    "Luna Nova"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A modern magical girl series with strong animation and positive reception, known to teens who appreciate artistic qualit"
+   }
+  },
+  {
+   "canonical": "Fate/Grand Order",
+   "aliases": [
+    "Chaldea",
+    "Ritsuka Fujimaru"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A massive franchise with a deep lore; known to hardcore fans but less familiar to casual teens."
+   }
+  },
+  {
+   "canonical": "Mushoku Tensei",
+   "aliases": [
+    "Rudeus Greyrat",
+    "Tanya"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A highly popular isekai series with mature themes and strong character arcs; known to enthusiasts but rare in general pl"
+   }
+  },
+  {
+   "canonical": "Tengen Toppa Gurren Lagann",
+   "aliases": [
+    "Simon",
+    "Kamina"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A cult classic with over-the-top action and inspirational themes; known to anime fans but not a common guess."
+   }
+  },
+  {
+   "canonical": "Mardock Scramble",
+   "aliases": [
+    "Lucy",
+    "Toma"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A visually striking cyberpunk anime with mature themes and international cult status; only known to deep fans."
+   }
+  },
+  {
+   "canonical": "The Animatrix",
+   "aliases": [
+    "Neo",
+    "The Matrix"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A standalone anthology film from The Matrix universe with anime-style animation; recognized only by enthusiasts of both "
+   }
+  },
+  {
+   "canonical": "Samurai Champloo",
+   "aliases": [
+    "Fuu",
+    "Mugen"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique blend of hip-hop and samurai themes, praised for its music and art style; known to connoisseurs but not casual "
+   }
+  },
+  {
+   "canonical": "Goblin Slayer",
+   "aliases": [
+    "Goblin Slayer",
+    "White Swordswoman"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dark fantasy series with intense themes; known to fans of grimdark anime but rare in general trivia."
+   }
+  },
+  {
+   "canonical": "Kaguya-sama: Love Is War",
+   "aliases": [
+    "Kaguya Shinomiya",
+    "Shirogane Miyuki"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A critically acclaimed romantic comedy with a unique premise; genuinely surprising in a teen trivia setting due to its n"
+   }
+  },
+  {
+   "canonical": "Lycoris Recoil",
+   "aliases": [
+    "Saya",
+    "Yukari"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A stylish, stylishly animated spy thriller with a feminist edge; a recent hit that has surprised many with its depth and"
+   }
+  },
+  {
+   "canonical": "Wandering Son",
+   "aliases": [
+    "Shuichi Nitori",
+    "Sakura Jinnai"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A groundbreaking LGBTQ+ coming-of-age story with emotional depth; rare in trivia due to its mature themes and smaller au"
+   }
+  },
+  {
+   "canonical": "A Place Further Than the Universe",
+   "aliases": [
+    "Kana",
+    "Yuzuru"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A heartfelt, character-driven story about friendship and dreams; deeply resonant with teens but rarely mentioned in casu"
+   }
+  },
+  {
+   "canonical": "Mushishi",
+   "aliases": [
+    "Ginko",
+    "The Mushi Master"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A meditative, philosophical anime about supernatural creatures; known only to fans of quiet, atmospheric storytelling."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 3,
+  "safetyFlagged": 0,
+  "seconds": 109
+ }
+}

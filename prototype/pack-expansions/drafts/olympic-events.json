@@ -1,0 +1,740 @@
+{
+ "id": "olympic-events",
+ "text": "Name an Olympic event.",
+ "example": "like the 100m sprint",
+ "catalogueSize": 60,
+ "catalogue": [
+  {
+   "canonical": "100m sprint",
+   "aliases": [
+    "100 meters",
+    "100m dash"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most iconic and frequently mentioned Olympic events, instantly recognizable to nearly every teen."
+   }
+  },
+  {
+   "canonical": "Marathon",
+   "aliases": [
+    "42.195km race",
+    "full marathon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple of the Olympics with global recognition and frequent media coverage."
+   }
+  },
+  {
+   "canonical": "Gymnastics",
+   "aliases": [
+    "artistic gymnastics",
+    "floor exercise"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A core Olympic sport with consistent presence in global pop culture and teen media."
+   }
+  },
+  {
+   "canonical": "Swimming",
+   "aliases": [
+    "freestyle",
+    "butterfly",
+    "backstroke"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most popular Olympic sports, especially with teens due to viral moments and star swimmers."
+   }
+  },
+  {
+   "canonical": "Basketball",
+   "aliases": [
+    "men's basketball",
+    "women's basketball"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major Olympic sport with massive youth appeal and frequent coverage in teen-friendly media."
+   }
+  },
+  {
+   "canonical": "Track and Field",
+   "aliases": [
+    "athletics",
+    "field events"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The overarching Olympic discipline with many sub-events, widely known and referenced."
+   }
+  },
+  {
+   "canonical": "Volleyball",
+   "aliases": [
+    "indoor volleyball",
+    "beach volleyball"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Highly popular globally, especially among teens due to social media and viral matches."
+   }
+  },
+  {
+   "canonical": "Diving",
+   "aliases": [
+    "platform diving",
+    "springboard diving"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dramatic and visually striking Olympic event with recurring viral moments."
+   }
+  },
+  {
+   "canonical": "Tennis",
+   "aliases": [
+    "men's singles",
+    "women's doubles"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A globally recognized Olympic sport with strong teen following due to star players and major tournaments."
+   }
+  },
+  {
+   "canonical": "Cycling",
+   "aliases": [
+    "road cycling",
+    "track cycling"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple Olympic event with exciting visuals and widespread youth interest."
+   }
+  },
+  {
+   "canonical": "Weightlifting",
+   "aliases": [
+    "Olympic weightlifting",
+    "clean and jerk"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its intensity and iconic athletes, frequently discussed in fitness and sports circles."
+   }
+  },
+  {
+   "canonical": "Boxing",
+   "aliases": [
+    "men's boxing",
+    "women's boxing"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A dramatic, high-energy combat sport with strong media presence and teen appeal."
+   }
+  },
+  {
+   "canonical": "Skiing",
+   "aliases": [
+    "alpine skiing",
+    "downhill skiing"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major winter Olympic sport with popular events and strong visual impact."
+   }
+  },
+  {
+   "canonical": "Snowboarding",
+   "aliases": [
+    "halfpipe",
+    "slopestyle"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A youth-driven sport with massive popularity in pop culture and social media."
+   }
+  },
+  {
+   "canonical": "Figure Skating",
+   "aliases": [
+    "men's singles",
+    "ice dance"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A glamorous and highly televised Olympic sport with strong appeal to teens."
+   }
+  },
+  {
+   "canonical": "Badminton",
+   "aliases": [
+    "men's singles",
+    "mixed doubles"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A globally played sport with high Olympic visibility and fast-paced action appealing to teens."
+   }
+  },
+  {
+   "canonical": "Table Tennis",
+   "aliases": [
+    "ping pong",
+    "men's singles"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fast, skill-based sport with global popularity and viral moments in teen-friendly content."
+   }
+  },
+  {
+   "canonical": "Judo",
+   "aliases": [
+    "men's 73kg",
+    "women's 57kg"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-stakes martial art sport with strong international presence and youth appeal."
+   }
+  },
+  {
+   "canonical": "Archery",
+   "aliases": [
+    "men's recurve",
+    "women's team"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A visually dramatic sport with rising popularity due to media like 'The Hunger Games' and Olympics coverage."
+   }
+  },
+  {
+   "canonical": "Equestrian",
+   "aliases": [
+    "eventing",
+    "dressage",
+    "show jumping"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique and niche sport with high prestige and frequent teen media mentions."
+   }
+  },
+  {
+   "canonical": "Rhythmic Gymnastics",
+   "aliases": [
+    "group rhythmic",
+    "individual rhythmic"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A visually beautiful and stylized gymnastics event, known to many teens via viral clips and routines."
+   }
+  },
+  {
+   "canonical": "Trampoline",
+   "aliases": [
+    "trampoline gymnastics",
+    "double mini trampoline"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-flying event with viral moments and strong appeal due to acrobatic moves and YouTube content."
+   }
+  },
+  {
+   "canonical": "Modern Pentathlon",
+   "aliases": [
+    "five events",
+    "combined event"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A lesser-known but unique multi-sport event with growing curiosity among teens due to its variety."
+   }
+  },
+  {
+   "canonical": "Handball",
+   "aliases": [
+    "men's handball",
+    "women's handball"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fast-paced, team-based sport popular in Europe and growing in global awareness among teens."
+   }
+  },
+  {
+   "canonical": "Fencing",
+   "aliases": [
+    "sabre",
+    "foil",
+    "\u00e9p\u00e9e"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A stylish and dramatic combat sport with rising popularity due to Netflix's 'The Queen's Gambit' and 'The Hunger Games' "
+   }
+  },
+  {
+   "canonical": "Synchronized Swimming",
+   "aliases": [
+    "artistic swimming",
+    "team routine"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A highly choreographed and artistic event with strong visual appeal and viral potential."
+   }
+  },
+  {
+   "canonical": "Wrestling",
+   "aliases": [
+    "freestyle",
+    "Greco-Roman"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A physically intense and globally popular sport with major Olympic moments and fan following."
+   }
+  },
+  {
+   "canonical": "Canoe Sprint",
+   "aliases": [
+    "canoeing",
+    "C1 1000m"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fast and dynamic water sport with growing visibility in youth sports media."
+   }
+  },
+  {
+   "canonical": "Rowing",
+   "aliases": [
+    "men's eight",
+    "coxless four"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A team-based water sport with strong athletic appeal and frequent Olympic coverage."
+   }
+  },
+  {
+   "canonical": "Biathlon",
+   "aliases": [
+    "cross-country skiing",
+    "rifle shooting"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique blend of endurance and precision, gaining popularity through Olympic drama and storytelling."
+   }
+  },
+  {
+   "canonical": "Short Track Speed Skating",
+   "aliases": [
+    "short track",
+    "500m"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fast and intense skating event with high stakes and frequent teen interest due to close finishes."
+   }
+  },
+  {
+   "canonical": "Ice Hockey",
+   "aliases": [
+    "men's ice hockey",
+    "women's ice hockey"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major winter sport with strong fanbases in North America and Europe, especially among teens."
+   }
+  },
+  {
+   "canonical": "Skateboarding",
+   "aliases": [
+    "men's park",
+    "women's street"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A youth-centric Olympic sport introduced recently, with massive appeal among teens and social media virality."
+   }
+  },
+  {
+   "canonical": "Breakdancing",
+   "aliases": [
+    "breaking",
+    "B-boy",
+    "B-girl"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A culturally rich dance sport added to the Olympics in 2024, extremely popular with teens and youth culture."
+   }
+  },
+  {
+   "canonical": "Sport Climbing",
+   "aliases": [
+    "lead climbing",
+    "bouldering",
+    "speed climbing"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A thrilling and visually dynamic new Olympic sport with rising popularity in youth fitness and media."
+   }
+  },
+  {
+   "canonical": "Surfing",
+   "aliases": [
+    "men's shortboard",
+    "women's longboard"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A beach culture sport with global youth appeal, frequently featured in viral videos and social media."
+   }
+  },
+  {
+   "canonical": "Skicross",
+   "aliases": [
+    "snowboard cross",
+    "ski cross"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-speed, action-packed winter event with strong visual drama and teen-friendly energy."
+   }
+  },
+  {
+   "canonical": "Freestyle Skiing",
+   "aliases": [
+    "aerials",
+    "moguls",
+    "slopestyle"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A high-flying, creative winter sport with major appeal to teens due to extreme stunts and viral moments."
+   }
+  },
+  {
+   "canonical": "Curling",
+   "aliases": [
+    "men's curling",
+    "mixed doubles"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A strategic and quirky team sport with growing international appeal, especially among teens via media and comedy referen"
+   }
+  },
+  {
+   "canonical": "Mountain Biking",
+   "aliases": [
+    "cross-country",
+    "downhill"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rugged and adventurous sport with strong youth interest and visual appeal in action footage."
+   }
+  },
+  {
+   "canonical": "Triathlon",
+   "aliases": [
+    "Olympic distance",
+    "mixed relay"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A multi-sport endurance challenge with rising popularity in youth fitness and wellness culture."
+   }
+  },
+  {
+   "canonical": "Beach Volleyball",
+   "aliases": [
+    "men's beach",
+    "women's beach"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A summer favorite with strong pop culture ties, viral moments, and beach-party energy appealing to teens."
+   }
+  },
+  {
+   "canonical": "Rowing Lightweight",
+   "aliases": [
+    "lightweight men's four"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A niche category within rowing that few teens know but is valid and officially recognized in the Olympics."
+   }
+  },
+  {
+   "canonical": "Artistic Swimming Team Routine",
+   "aliases": [
+    "synchronized swimming team",
+    "free routine"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specific event within the sport with complex choreography, recognized as a distinct competition category."
+   }
+  },
+  {
+   "canonical": "Men's 50km Race Walk",
+   "aliases": [
+    "race walking",
+    "50km walk"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A grueling and unique endurance event with a distinct niche, known to sports enthusiasts and teens interested in unusual"
+   }
+  },
+  {
+   "canonical": "Women's 10,000m Run",
+   "aliases": [
+    "long-distance track",
+    "10k"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A major endurance event with Olympic significance, known to teens via documentaries and athlete stories."
+   }
+  },
+  {
+   "canonical": "Men's 400m Hurdles",
+   "aliases": [
+    "400m hurdles",
+    "hurdle race"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A technically demanding track event with strong media presence and standout performances by elite athletes."
+   }
+  },
+  {
+   "canonical": "Men's Greco-Roman Wrestling 130kg",
+   "aliases": [
+    "heavyweight wrestling",
+    "Greco-Roman 130kg"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specific weight class in a niche combat sport, valid and officially contested at the Olympics."
+   }
+  },
+  {
+   "canonical": "Women's 3m Springboard Diving",
+   "aliases": [
+    "3m diving",
+    "springboard"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A precise and iconic diving event with high technical difficulty and global viewership."
+   }
+  },
+  {
+   "canonical": "Men's 10m Platform Diving",
+   "aliases": [
+    "10m platform",
+    "platform diving"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most dramatic and visually stunning diving events, with consistent Olympic coverage."
+   }
+  },
+  {
+   "canonical": "Mixed Team Relay in Biathlon",
+   "aliases": [
+    "biathlon mixed relay",
+    "mixed team biathlon"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A newer, high-octane Olympic event with team dynamics and fast pacing, known only to dedicated fans and sports trivia en"
+   }
+  },
+  {
+   "canonical": "Men's 4x100m Medley Relay",
+   "aliases": [
+    "medley relay",
+    "4x100m medley"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A complex and highly strategic swimming event requiring four different strokes, celebrated in Olympic history and media."
+   }
+  },
+  {
+   "canonical": "Women's 4x400m Relay",
+   "aliases": [
+    "4x400m relay",
+    "women's track relay"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A key track event with legendary performances, recognized for its teamwork and intensity, known to sports fans and teens"
+   }
+  },
+  {
+   "canonical": "Men's Individual Archery",
+   "aliases": [
+    "archery men's individual",
+    "recurve archery"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specific discipline within archery that emphasizes precision and focus, valid and officially contested in the Olympics"
+   }
+  },
+  {
+   "canonical": "Women's Team Foil Fencing",
+   "aliases": [
+    "team foil",
+    "women's foil"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specific fencing event with deep strategy and team coordination, known to enthusiasts and Olympic followers."
+   }
+  },
+  {
+   "canonical": "Men's 10m Air Rifle Shooting",
+   "aliases": [
+    "air rifle",
+    "10m rifle"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=1",
+    "rationale": "A precision shooting event with high technical difficulty, recognized as a distinct Olympic competition."
+   }
+  },
+  {
+   "canonical": "Women's 1500m Run",
+   "aliases": [
+    "1500m",
+    "metric mile"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A middle-distance track event known for its tactical racing and dramatic finishes, appealing to sports fans and teens wh"
+   }
+  },
+  {
+   "canonical": "Men's 100m Backstroke",
+   "aliases": [
+    "backstroke",
+    "100m back",
+    "backstroke swim"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A specific, technically demanding swimming event with a niche but highly valid place in Olympic history, rarely named by"
+   }
+  },
+  {
+   "canonical": "Women's 20km Race Walk",
+   "aliases": [
+    "20km race walk",
+    "women's race walking"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A long-distance endurance event with strict technique rules, rarely mentioned but officially part of the Olympics and kn"
+   }
+  },
+  {
+   "canonical": "Men's 200m Breaststroke",
+   "aliases": [
+    "breaststroke",
+    "200m breast",
+    "men's breaststroke"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A technically challenging swimming discipline with precise form and strong competitive history, known only to enthusiast"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 0,
+  "safetyFlagged": 0,
+  "seconds": 113
+ }
+}

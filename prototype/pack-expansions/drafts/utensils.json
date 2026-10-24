@@ -1,0 +1,531 @@
+{
+ "id": "utensils",
+ "text": "Name a kitchen utensil.",
+ "example": "like a whisk",
+ "catalogueSize": 43,
+ "catalogue": [
+  {
+   "canonical": "whisk",
+   "aliases": [
+    "wire whisk",
+    "egg whisk"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most immediately recognizable kitchen tools, frequently used in baking and cooking; nearly every teen would n"
+   }
+  },
+  {
+   "canonical": "knife",
+   "aliases": [
+    "chef's knife",
+    "paring knife",
+    "bread knife"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The most fundamental kitchen tool; essential for cutting and prep, instantly recognizable to all teens."
+   }
+  },
+  {
+   "canonical": "spatula",
+   "aliases": [
+    "turning spatula",
+    "rubber spatula"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in cooking and baking, especially for scraping bowls; frequently used and instantly recognizable."
+   }
+  },
+  {
+   "canonical": "ladle",
+   "aliases": [
+    "soup ladle",
+    "serving ladle"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Standard tool for serving soups and stews; widely used and commonly seen in kitchens."
+   }
+  },
+  {
+   "canonical": "measuring cup",
+   "aliases": [
+    "liquid measuring cup",
+    "dry measuring cup"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential for recipes; teens often use this in cooking challenges or baking shows."
+   }
+  },
+  {
+   "canonical": "mixing bowl",
+   "aliases": [
+    "large bowl",
+    "bowl"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple container for mixing ingredients; universally used in kitchens."
+   }
+  },
+  {
+   "canonical": "peeler",
+   "aliases": [
+    "potato peeler",
+    "vegetable peeler"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly used to remove skins from fruits and vegetables; familiar from cooking videos and home kitchens."
+   }
+  },
+  {
+   "canonical": "colander",
+   "aliases": [
+    "draining sieve",
+    "strainer"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for rinsing and draining pasta or vegetables; a standard kitchen item."
+   }
+  },
+  {
+   "canonical": "can opener",
+   "aliases": [
+    "electric can opener",
+    "manual can opener"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to open canned goods; a basic kitchen necessity."
+   }
+  },
+  {
+   "canonical": "tongs",
+   "aliases": [
+    "kitchen tongs",
+    "grilling tongs"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for picking up or turning food; common in grilling and cooking."
+   }
+  },
+  {
+   "canonical": "grater",
+   "aliases": [
+    "box grater",
+    "microplane"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for shredding cheese, vegetables, or citrus zest; frequently seen in cooking."
+   }
+  },
+  {
+   "canonical": "pepper mill",
+   "aliases": [
+    "salt and pepper mill",
+    "peppermill"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Commonly used for grinding pepper; often part of a kitchen setup."
+   }
+  },
+  {
+   "canonical": "baking sheet",
+   "aliases": [
+    "cookie sheet",
+    "oven tray"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for baking cookies, roasting vegetables, and more; common in home kitchens."
+   }
+  },
+  {
+   "canonical": "cutting board",
+   "aliases": [
+    "chopping board",
+    "wooden board"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential surface for cutting; nearly every teen has seen or used one."
+   }
+  },
+  {
+   "canonical": "slotted spoon",
+   "aliases": [
+    "serving spoon",
+    "sauce spoon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to remove solids from liquids; common in soups and sauces."
+   }
+  },
+  {
+   "canonical": "timer",
+   "aliases": [
+    "kitchen timer",
+    "oven timer"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to keep track of cooking time; frequently used in cooking videos and real kitchens."
+   }
+  },
+  {
+   "canonical": "wooden spoon",
+   "aliases": [
+    "spoon",
+    "mixing spoon"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Classic tool for stirring; iconic in cooking shows and home kitchens."
+   }
+  },
+  {
+   "canonical": "masher",
+   "aliases": [
+    "potato masher",
+    "hand masher"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to mash potatoes or other soft foods; widely known."
+   }
+  },
+  {
+   "canonical": "baster",
+   "aliases": [
+    "meat baster",
+    "sauce baster"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to baste meat or transfer liquids; common in grilling and roasting, but less immediately obvious than basic tools."
+   }
+  },
+  {
+   "canonical": "measuring spoons",
+   "aliases": [
+    "teaspoon",
+    "tablespoon",
+    "spoon set"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for small measurements; essential in baking but not as visually prominent as larger tools."
+   }
+  },
+  {
+   "canonical": "strainer",
+   "aliases": [
+    "sieve",
+    "fine mesh strainer"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to sift flour or strain liquids; commonly seen but not always named first."
+   }
+  },
+  {
+   "canonical": "mixer",
+   "aliases": [
+    "stand mixer",
+    "hand mixer"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for mixing doughs and batters; popular in baking videos and kitchens."
+   }
+  },
+  {
+   "canonical": "chopping board",
+   "aliases": [
+    "cutting board",
+    "wooden board"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential surface for cutting; nearly every teen has seen or used one."
+   }
+  },
+  {
+   "canonical": "zester",
+   "aliases": [
+    "citrus zester",
+    "grater zester"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to remove citrus zest; known to teens who follow cooking or baking content."
+   }
+  },
+  {
+   "canonical": "mandoline",
+   "aliases": [
+    "mandoline slicer",
+    "slicer"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for uniform slicing; popular in gourmet cooking and cooking show props."
+   }
+  },
+  {
+   "canonical": "baking mat",
+   "aliases": [
+    "silicone mat",
+    "non-stick mat"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in baking for non-stick surfaces; increasingly common in home kitchens."
+   }
+  },
+  {
+   "canonical": "sauce pan",
+   "aliases": [
+    "sauce pot",
+    "small pot"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for making sauces and small meals; familiar in cooking contexts."
+   }
+  },
+  {
+   "canonical": "ravioli press",
+   "aliases": [
+    "pasta press",
+    "ravioli mold"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to make stuffed pasta; known to fans of Italian cooking and foodie trends."
+   }
+  },
+  {
+   "canonical": "pastry brush",
+   "aliases": [
+    "butter brush",
+    "egg wash brush"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to apply glazes or egg wash; seen in baking tutorials and recipes."
+   }
+  },
+  {
+   "canonical": "cake tester",
+   "aliases": [
+    "toothpick",
+    "cake skewer"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to check if cakes are done; commonly used and recognized in baking."
+   }
+  },
+  {
+   "canonical": "melon baller",
+   "aliases": [
+    "melon scoop",
+    "fruit baller"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to scoop fruit into balls; popular in fruit platters and party prep."
+   }
+  },
+  {
+   "canonical": "crab fork",
+   "aliases": [
+    "crab picker",
+    "shell fork"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for eating shellfish; known from seafood restaurants and cooking shows."
+   }
+  },
+  {
+   "canonical": "egg separator",
+   "aliases": [
+    "egg yolk separator",
+    "egg separator tool"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to separate egg whites from yolks; known to baking enthusiasts."
+   }
+  },
+  {
+   "canonical": "sous vide precision cooker",
+   "aliases": [
+    "sous vide machine",
+    "water oven"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for precise temperature cooking; recognized in foodie circles and advanced cooking trends."
+   }
+  },
+  {
+   "canonical": "immersion circulator",
+   "aliases": [
+    "stick blender",
+    "hand blender"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for blending in containers; known to teens who follow kitchen gadget trends."
+   }
+  },
+  {
+   "canonical": "kitchen shears",
+   "aliases": [
+    "scissors",
+    "cooking scissors"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for cutting herbs, meat, or packaging; versatile and increasingly popular."
+   }
+  },
+  {
+   "canonical": "cast iron skillet",
+   "aliases": [
+    "cast iron pan",
+    "skillet"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Highly popular in cooking communities; known from viral cooking videos and home kitchens."
+   }
+  },
+  {
+   "canonical": "candy thermometer",
+   "aliases": [
+    "sugar thermometer",
+    "cooking thermometer"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for checking candy or syrup temperatures; essential in confectionery but less common in casual kitchens."
+   }
+  },
+  {
+   "canonical": "pasta server",
+   "aliases": [
+    "pasta fork",
+    "tongs"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used to serve pasta; a niche but valid utensil known from cooking shows."
+   }
+  },
+  {
+   "canonical": "crab cracker",
+   "aliases": [
+    "shell cracker",
+    "crab opener"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used specifically for cracking crab shells; a specialized tool known only to food enthusiasts."
+   }
+  },
+  {
+   "canonical": "chinois",
+   "aliases": [
+    "china cap",
+    "fine sieve"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A conical sieve used for straining sauces and soups; a professional-grade tool recognized in culinary circles."
+   }
+  },
+  {
+   "canonical": "bain-marie",
+   "aliases": [
+    "water bath",
+    "double boiler"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used for gentle cooking; known to teens who follow advanced baking or cooking tutorials."
+   }
+  },
+  {
+   "canonical": "corkscrew",
+   "aliases": [
+    "wine opener",
+    "bottle opener"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Though technically for wine, it's a kitchen tool used in dining; rarely named by teens but valid and surprising."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 18,
+  "safetyFlagged": 0,
+  "seconds": 112
+ }
+}

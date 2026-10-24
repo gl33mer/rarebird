@@ -1,0 +1,1082 @@
+{
+ "id": "languages",
+ "text": "Name a language spoken on Earth.",
+ "example": "like Spanish",
+ "catalogueSize": 95,
+ "catalogue": [
+  {
+   "canonical": "Spanish",
+   "aliases": [
+    "Espa\u00f1ol"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most widely spoken languages in the world, frequently referenced in pop culture and taught in schools; nearly"
+   }
+  },
+  {
+   "canonical": "English",
+   "aliases": [
+    "Anglo",
+    "the language of the internet"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "The dominant global language in media, music, and online content; teens use it daily and recognize it instantly."
+   }
+  },
+  {
+   "canonical": "Mandarin",
+   "aliases": [
+    "Chinese",
+    "Putonghua",
+    "Standard Chinese"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Most spoken native language in the world; commonly taught in global education and referenced in K-pop and anime."
+   }
+  },
+  {
+   "canonical": "French",
+   "aliases": [
+    "Fran\u00e7ais"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in school curricula, used in international diplomacy, and featured in fashion, film, and music globally."
+   }
+  },
+  {
+   "canonical": "Arabic",
+   "aliases": [
+    "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+    "Modern Standard Arabic"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely spoken across the Middle East and North Africa; prominent in global news, music, and social media."
+   }
+  },
+  {
+   "canonical": "German",
+   "aliases": [
+    "Deutsch"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Important in European culture and technology; frequently studied in schools and seen in anime and video game localizatio"
+   }
+  },
+  {
+   "canonical": "Japanese",
+   "aliases": [
+    "\u65e5\u672c\u8a9e"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Massively influential in anime, manga, video games, and J-pop; teens are highly exposed to it through media."
+   }
+  },
+  {
+   "canonical": "Korean",
+   "aliases": [
+    "\ud55c\uad6d\uc5b4",
+    "Hangugeo"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Central to K-pop, K-dramas, and global internet culture; extremely popular among teens worldwide."
+   }
+  },
+  {
+   "canonical": "Italian",
+   "aliases": [
+    "Italiano"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with fashion, food, and music; widely recognized due to pop culture exposure and travel tourism."
+   }
+  },
+  {
+   "canonical": "Portuguese",
+   "aliases": [
+    "Portugu\u00eas"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Brazil, a major cultural exporter of music and TV; common in global sports and entertainment."
+   }
+  },
+  {
+   "canonical": "Russian",
+   "aliases": [
+    "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely studied due to geopolitical importance; referenced in video games, spy thrillers, and music."
+   }
+  },
+  {
+   "canonical": "Hindi",
+   "aliases": [
+    "\u0939\u093f\u0928\u094d\u0926\u0940",
+    "Indian",
+    "Bollywood language"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major language of Indian cinema and music, which has massive global reach via streaming platforms."
+   }
+  },
+  {
+   "canonical": "Turkish",
+   "aliases": [
+    "T\u00fcrk\u00e7e"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Growing influence in regional media and internet culture; used in popular Turkish dramas and music."
+   }
+  },
+  {
+   "canonical": "Dutch",
+   "aliases": [
+    "Nederlands"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar through Flemish pop culture and historical presence in global trade; known from video games and comics."
+   }
+  },
+  {
+   "canonical": "Swedish",
+   "aliases": [
+    "Svenska"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with ABBA, Spotify, and Nordic design; frequently referenced in internet and music culture."
+   }
+  },
+  {
+   "canonical": "Thai",
+   "aliases": [
+    "\u0e44\u0e17\u0e22"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in a popular tourist destination; known through Thai cuisine, music, and viral internet content."
+   }
+  },
+  {
+   "canonical": "Vietnamese",
+   "aliases": [
+    "Ti\u1ebfng Vi\u1ec7t"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Growing diaspora and cultural influence in music and food; increasingly seen in global internet trends."
+   }
+  },
+  {
+   "canonical": "Indonesian",
+   "aliases": [
+    "Bahasa Indonesia"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Most spoken language in Southeast Asia; known through Indonesian pop culture and online content."
+   }
+  },
+  {
+   "canonical": "Filipino",
+   "aliases": [
+    "Tagalog",
+    "Pilipino"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Closely tied to global Filipino diaspora and social media influencers; widely recognized in pop culture."
+   }
+  },
+  {
+   "canonical": "Polish",
+   "aliases": [
+    "Polski"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Important in Central European culture; known through gaming, historical references, and music."
+   }
+  },
+  {
+   "canonical": "Czech",
+   "aliases": [
+    "\u010ce\u0161tina"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with the Czech Republic\u2019s design and gaming culture; known among teen gamers and creative communities."
+   }
+  },
+  {
+   "canonical": "Greek",
+   "aliases": [
+    "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from mythology, ancient history, and modern Mediterranean music; recognized through school and pop culture."
+   }
+  },
+  {
+   "canonical": "Finnish",
+   "aliases": [
+    "Suomi"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known through Finnish design, music (like metal and synth-pop), and internet memes."
+   }
+  },
+  {
+   "canonical": "Norwegian",
+   "aliases": [
+    "Norsk"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar via Nordic noir, music, and the popularity of Scandinavian content on streaming services."
+   }
+  },
+  {
+   "canonical": "Danish",
+   "aliases": [
+    "Dansk"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with Nordic design, hygge culture, and popular TV dramas like 'The Bridge'."
+   }
+  },
+  {
+   "canonical": "Ukrainian",
+   "aliases": [
+    "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Gaining global awareness due to recent geopolitical events and social media presence; teens recognize it from news and a"
+   }
+  },
+  {
+   "canonical": "Romanian",
+   "aliases": [
+    "Rom\u00e2n\u0103"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Eastern Europe; known through Romanian internet culture and some viral content."
+   }
+  },
+  {
+   "canonical": "Hungarian",
+   "aliases": [
+    "Magyar"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Distinctive language with unique grammar; known through online communities and puzzle games."
+   }
+  },
+  {
+   "canonical": "Bulgarian",
+   "aliases": [
+    "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in a Balkan country with growing internet visibility; referenced in gaming and music."
+   }
+  },
+  {
+   "canonical": "Serbian",
+   "aliases": [
+    "\u0421\u0440\u043f\u0441\u043a\u0438",
+    "Srpski"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in former Yugoslavia; recognized through Balkan music and historical internet memes."
+   }
+  },
+  {
+   "canonical": "Croatian",
+   "aliases": [
+    "Hrvatski"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Shared language base with Serbian; known through regional sports and music."
+   }
+  },
+  {
+   "canonical": "Slovak",
+   "aliases": [
+    "Sloven\u010dina"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Related to Czech; known through Central European travel and gaming communities."
+   }
+  },
+  {
+   "canonical": "Lithuanian",
+   "aliases": [
+    "Lietuvi\u0173 kalba"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the oldest Indo-European languages; recognized in internet circles and language enthusiasts."
+   }
+  },
+  {
+   "canonical": "Latvian",
+   "aliases": [
+    "Latvie\u0161u valoda"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known for its distinct sound and presence in Baltic gaming and music scenes."
+   }
+  },
+  {
+   "canonical": "Estonian",
+   "aliases": [
+    "Eesti keel"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for digital governance and tech culture; popular among teen coders and digital natives."
+   }
+  },
+  {
+   "canonical": "Malay",
+   "aliases": [
+    "Bahasa Melayu",
+    "Bahasa Malaysia"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language in Malaysia and Brunei; known through regional music and online content."
+   }
+  },
+  {
+   "canonical": "Persian",
+   "aliases": [
+    "\u0641\u0627\u0631\u0633\u06cc",
+    "Farsi"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Iran; recognized through Persian poetry, music, and internet culture."
+   }
+  },
+  {
+   "canonical": "Swahili",
+   "aliases": [
+    "Kiswahili"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major language in East Africa; popularized via African music, social media, and global brands."
+   }
+  },
+  {
+   "canonical": "Amharic",
+   "aliases": [
+    "\u12a0\u121b\u122d\u129b"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language of Ethiopia; known through Ethiopian music, cuisine, and global diaspora."
+   }
+  },
+  {
+   "canonical": "Yoruba",
+   "aliases": [
+    "\u00c8d\u00e8 Yor\u00f9b\u00e1"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of Nigeria\u2019s major languages; recognized through Afrobeats and viral internet content."
+   }
+  },
+  {
+   "canonical": "Zulu",
+   "aliases": [
+    "isiZulu"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of South Africa\u2019s official languages; known through Zulu music, dances, and global media."
+   }
+  },
+  {
+   "canonical": "Xhosa",
+   "aliases": [
+    "isiXhosa"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Also a South African language; featured in global pop culture via music and film."
+   }
+  },
+  {
+   "canonical": "Igbo",
+   "aliases": [
+    "\u00c8d\u00e8 Igbo"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major language in Nigeria; known through music and online African content."
+   }
+  },
+  {
+   "canonical": "Hausa",
+   "aliases": [
+    "\u0647\u064e\u0648\u064f\u0633\u064e",
+    "Arewa"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Widely spoken in West Africa; recognized through Nollywood and music."
+   }
+  },
+  {
+   "canonical": "Oromo",
+   "aliases": [
+    "Afaan Oromoo"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of Ethiopia\u2019s largest languages; gaining attention through digital activism and media."
+   }
+  },
+  {
+   "canonical": "Tigrinya",
+   "aliases": [
+    "\u1275\u130d\u122d\u129b"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Eritrea and northern Ethiopia; known through regional politics and refugee narratives."
+   }
+  },
+  {
+   "canonical": "Georgian",
+   "aliases": [
+    "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Unique alphabet and language; recognized through internet curiosity and puzzle games."
+   }
+  },
+  {
+   "canonical": "Armenian",
+   "aliases": [
+    "\u0570\u0561\u0575\u0565\u0580\u0565\u0576"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient language with a unique script; known through diaspora communities and cultural pride."
+   }
+  },
+  {
+   "canonical": "Azeri",
+   "aliases": [
+    "Az\u0259rbaycan dili",
+    "Azerbaijani"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Azerbaijan; known through regional music and geopolitical interest."
+   }
+  },
+  {
+   "canonical": "Uzbek",
+   "aliases": [
+    "O'zbekcha",
+    "Uzbek"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language of Uzbekistan; recognized through Central Asian internet culture."
+   }
+  },
+  {
+   "canonical": "Kazakh",
+   "aliases": [
+    "\u049a\u0430\u0437\u0430\u049b\u0448\u0430"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Language of Kazakhstan; known through national pride and recent digital reforms."
+   }
+  },
+  {
+   "canonical": "Kyrgyz",
+   "aliases": [
+    "\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Kyrgyzstan; known through mountain culture and regional music."
+   }
+  },
+  {
+   "canonical": "Tajik",
+   "aliases": [
+    "\u0422\u043e\u04b7\u0438\u043a\u04e3"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Persian-based language in Tajikistan; recognized through Central Asian identity."
+   }
+  },
+  {
+   "canonical": "Pashto",
+   "aliases": [
+    "\u067e\u069a\u062a\u0648"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Afghanistan and Pakistan; known through war media and refugee stories."
+   }
+  },
+  {
+   "canonical": "Sindhi",
+   "aliases": [
+    "\u0633\u0646\u068c\u064a"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Major language in Pakistan\u2019s Sindh province; recognized through regional pride and online forums."
+   }
+  },
+  {
+   "canonical": "Punjabi",
+   "aliases": [
+    "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+    "Eastern Punjabi"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in India and Pakistan; massive global presence through music and diaspora."
+   }
+  },
+  {
+   "canonical": "Sinhala",
+   "aliases": [
+    "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language of Sri Lanka; known through Buddhist culture and regional music."
+   }
+  },
+  {
+   "canonical": "Burmese",
+   "aliases": [
+    "\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Myanmar; recognized through regional news, refugee stories, and internet activism."
+   }
+  },
+  {
+   "canonical": "Khmer",
+   "aliases": [
+    "\u1797\u17b6\u179f\u17b6\u1781\u17d2\u1798\u17c2\u179a"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language of Cambodia; known through Angkor Wat and Southeast Asian culture."
+   }
+  },
+  {
+   "canonical": "Lao",
+   "aliases": [
+    "\u0e9e\u0eb2\u0eaa\u0eb2\u0ea5\u0eb2\u0ea7"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in Laos; known through tourism, river culture, and regional cuisine."
+   }
+  },
+  {
+   "canonical": "Mongolian",
+   "aliases": [
+    "\u041c\u043e\u043d\u0433\u043e\u043b \u0445\u044d\u043b"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Unique script and nomadic heritage; recognized through historical curiosity and gaming."
+   }
+  },
+  {
+   "canonical": "Tibetan",
+   "aliases": [
+    "\u0f56\u0f7c\u0f51\u0f0b\u0f66\u0f90\u0f51\u0f0b",
+    "Tibetan"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Cultural and spiritual significance; known through Tibetan Buddhism and global advocacy."
+   }
+  },
+  {
+   "canonical": "Sanskrit",
+   "aliases": [
+    "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient Indian language; recognized through yoga, philosophy, and Hindu culture."
+   }
+  },
+  {
+   "canonical": "Maltese",
+   "aliases": [
+    "Malti"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Only Semitic language in Europe; known for its unique blend of Arabic and Romance roots."
+   }
+  },
+  {
+   "canonical": "Icelandic",
+   "aliases": [
+    "\u00cdslenska"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Isolated language with rich literary tradition; recognized through online language learning and memes."
+   }
+  },
+  {
+   "canonical": "Albanian",
+   "aliases": [
+    "Shqip"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Balkan language with unique features; known through regional identity and online communities."
+   }
+  },
+  {
+   "canonical": "Bosnian",
+   "aliases": [
+    "Bosanski"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Shared language with Serbian and Croatian; recognized through Balkan internet culture."
+   }
+  },
+  {
+   "canonical": "Montenegrin",
+   "aliases": [
+    "Crnogorski"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Newer national standard; known through Balkan sports and identity debates."
+   }
+  },
+  {
+   "canonical": "Luxembourgish",
+   "aliases": [
+    "L\u00ebtzebuergesch"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Official language of Luxembourg; known through European unity and multilingualism."
+   }
+  },
+  {
+   "canonical": "Welsh",
+   "aliases": [
+    "Cymraeg"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Revived Celtic language; popularized through music, sports, and educational efforts."
+   }
+  },
+  {
+   "canonical": "Irish",
+   "aliases": [
+    "Gaeilge"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Celtic language with strong cultural revival; known through music and heritage festivals."
+   }
+  },
+  {
+   "canonical": "Scottish Gaelic",
+   "aliases": [
+    "G\u00e0idhlig"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Distinct Celtic language; recognized through Highland culture and internet memes."
+   }
+  },
+  {
+   "canonical": "Faroese",
+   "aliases": [
+    "f\u00f8royskt"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken in the Faroe Islands; known through Nordic identity and unique dialect."
+   }
+  },
+  {
+   "canonical": "Basque",
+   "aliases": [
+    "Euskara"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Language isolate with no known relatives; famous among linguistics enthusiasts and puzzle lovers."
+   }
+  },
+  {
+   "canonical": "Kurdish",
+   "aliases": [
+    "Kurd\u00ee",
+    "Kurmanji",
+    "Soran\u00ee"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Spoken across several countries; known through Middle Eastern activism and online communities."
+   }
+  },
+  {
+   "canonical": "Uyghur",
+   "aliases": [
+    "Uyghurche"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Turkic language spoken in Xinjiang; known through global human rights discussions and linguistic curiosity."
+   }
+  },
+  {
+   "canonical": "Tuvan",
+   "aliases": [
+    "\u0422\u044b\u0432\u0430 \u0434\u044b\u043b"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Language of Siberian Tuvans; famous for throat singing and rare linguistic structure."
+   }
+  },
+  {
+   "canonical": "Nahuatl",
+   "aliases": [
+    "Nawat",
+    "Aztec language"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient language of the Aztecs; known through Mesoamerican heritage and language revival efforts."
+   }
+  },
+  {
+   "canonical": "Sami",
+   "aliases": [
+    "S\u00e1mi",
+    "Northern Sami",
+    "Inari Sami"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Indigenous language of the Arctic; recognized through reindeer herding culture and environmental advocacy."
+   }
+  },
+  {
+   "canonical": "Yiddish",
+   "aliases": [
+    "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Historical language of Ashkenazi Jews; known through Holocaust history, literature, and internet subcultures."
+   }
+  },
+  {
+   "canonical": "Manx",
+   "aliases": [
+    "Gaelg"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Celtic language of the Isle of Man; revived from near extinction, known in heritage circles."
+   }
+  },
+  {
+   "canonical": "Aramaic",
+   "aliases": [
+    "Syrjic",
+    "Mandaic",
+    "Turoyo"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Ancient Semitic language; Jesus\u2019 likely language; known through religious and historical texts."
+   }
+  },
+  {
+   "canonical": "Lepcha",
+   "aliases": [
+    "Rong"
+   ],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Sikkimese language with unique script; rare and geographically isolated, known among linguistics nerds."
+   }
+  },
+  {
+   "canonical": "Klingon",
+   "aliases": [
+    "tlhIngan Hol"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Fictional language from Star Trek; created by a linguist, taught by fans, and recognized as a real constructed language."
+   }
+  },
+  {
+   "canonical": "Esperanto",
+   "aliases": [
+    "Esperanto"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Artificial language designed for international communication; widely studied and used in global communities."
+   }
+  },
+  {
+   "canonical": "Interlingua",
+   "aliases": [
+    "Interlingua"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Constructed language based on Latin roots; known among language purists and internationalists."
+   }
+  },
+  {
+   "canonical": "Lojban",
+   "aliases": [
+    "Loglan"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Logically structured constructed language; popular among programmers and formal logic enthusiasts."
+   }
+  },
+  {
+   "canonical": "Toki Pona",
+   "aliases": [
+    "Toki Pona"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Minimalist constructed language with 137 words; known through internet philosophy and mindfulness culture."
+   }
+  },
+  {
+   "canonical": "Volap\u00fck",
+   "aliases": [
+    "Volap\u00fck"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the earliest constructed languages; recognized by language history buffs and linguists."
+   }
+  },
+  {
+   "canonical": "Ido",
+   "aliases": [
+    "Ido"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Reformed version of Esperanto; known among constructed language communities."
+   }
+  },
+  {
+   "canonical": "Glosa",
+   "aliases": [
+    "Glosa"
+   ],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "International auxiliary language based on English roots; used in academic and technical contexts."
+   }
+  },
+  {
+   "canonical": "Quenya",
+   "aliases": [
+    "Elvish"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "J.R.R. Tolkien\u2019s constructed language for elves; complex grammar and poetic structure; known only to hardcore fantasy fa"
+   }
+  },
+  {
+   "canonical": "Dothraki",
+   "aliases": [
+    "Dothraki"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Constructed language from Game of Thrones; created by a linguist, with a full grammar and real-world speakers."
+   }
+  },
+  {
+   "canonical": "Na'vi",
+   "aliases": [
+    "Na'vi"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Language from Avatar, created by a linguist with syntax and vocabulary; genuine linguistic depth, known only to fans."
+   }
+  },
+  {
+   "canonical": "Elvish",
+   "aliases": [
+    "Quenya",
+    "Sindarin"
+   ],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Tolkien\u2019s Elvish languages are fictional yet linguistically sophisticated; only true enthusiasts recognize them as disti"
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 3,
+  "safetyFlagged": 0,
+  "seconds": 169
+ }
+}

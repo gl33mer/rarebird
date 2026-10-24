@@ -1,0 +1,726 @@
+{
+ "id": "instruments",
+ "text": "Name a musical instrument.",
+ "example": "like the violin",
+ "catalogueSize": 75,
+ "catalogue": [
+  {
+   "canonical": "guitar",
+   "aliases": [
+    "acoustic guitar",
+    "electric guitar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "One of the most instantly recognizable instruments; nearly every teen mentions it first in a music category."
+   }
+  },
+  {
+   "canonical": "drums",
+   "aliases": [
+    "drum kit",
+    "percussion set"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in pop, rock, and hip-hop; frequently the first answer in music-related trivia."
+   }
+  },
+  {
+   "canonical": "piano",
+   "aliases": [
+    "keyboard",
+    "grand piano"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Universally known; common in homes, schools, and pop culture (e.g., movie scenes, YouTube videos)."
+   }
+  },
+  {
+   "canonical": "bass",
+   "aliases": [
+    "bass guitar",
+    "electric bass"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential in most bands; widely recognized due to its role in rock, funk, and pop music."
+   }
+  },
+  {
+   "canonical": "saxophone",
+   "aliases": [
+    "alto sax",
+    "tenor sax"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic in jazz, pop, and movie soundtracks; frequently referenced in teen pop culture."
+   }
+  },
+  {
+   "canonical": "violin",
+   "aliases": [
+    "fiddle"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous from classical music, films, and viral internet moments (e.g., 'Crazy in Love' violin cover)."
+   }
+  },
+  {
+   "canonical": "trumpet",
+   "aliases": [
+    "horn"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in jazz, marching bands, and pop songs; instantly recognizable by sound and shape."
+   }
+  },
+  {
+   "canonical": "flute",
+   "aliases": [
+    "recorder",
+    "piccolo"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from school music programs and classical compositions; often featured in animations and games."
+   }
+  },
+  {
+   "canonical": "cello",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous in film scores and viral videos; a staple in orchestral music and teen-friendly classical content."
+   }
+  },
+  {
+   "canonical": "ukulele",
+   "aliases": [
+    "uke"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Extremely popular in social media, YouTube tutorials, and indie pop music."
+   }
+  },
+  {
+   "canonical": "keyboard",
+   "aliases": [
+    "synthesizer",
+    "keytar"
+   ],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in electronic music and pop; widely seen in concerts and music production."
+   }
+  },
+  {
+   "canonical": "trombone",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable by its slide; common in jazz, marching bands, and comedy sketches."
+   }
+  },
+  {
+   "canonical": "clarinet",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A staple in school bands and classical music; known from music education and pop culture."
+   }
+  },
+  {
+   "canonical": "viola",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently mistaken for a violin, but well-known in orchestras and music curricula."
+   }
+  },
+  {
+   "canonical": "banjo",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous in folk, bluegrass, and internet memes (e.g., 'The Banjo Song' TikTok trend)."
+   }
+  },
+  {
+   "canonical": "harmonica",
+   "aliases": [
+    "mouth harp"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognized in blues, rock, and viral videos; commonly associated with musicians like Stevie Wonder."
+   }
+  },
+  {
+   "canonical": "accordion",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Common in folk music and European traditions; known from cartoons and viral music clips."
+   }
+  },
+  {
+   "canonical": "marimba",
+   "aliases": [
+    "xylophone"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from school bands, drum corps, and animated shows like 'Phineas and Ferb'."
+   }
+  },
+  {
+   "canonical": "tambourine",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Frequently used in pop and dance music; instantly recognizable and often seen in music videos."
+   }
+  },
+  {
+   "canonical": "triangle",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A simple percussion instrument with a distinctive sound; known from cartoons and orchestral music."
+   }
+  },
+  {
+   "canonical": "bongo drums",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in Latin music and party culture; frequently used in viral dance videos."
+   }
+  },
+  {
+   "canonical": "conga",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Associated with Afro-Latin rhythms and party music; widely recognized in global pop culture."
+   }
+  },
+  {
+   "canonical": "sitar",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic in 60s rock (e.g., The Beatles) and Indian classical music; known from films and music history."
+   }
+  },
+  {
+   "canonical": "djembe",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A West African drum; popular in world music and music therapy; frequently seen in educational settings."
+   }
+  },
+  {
+   "canonical": "didgeridoo",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous in Australian Aboriginal culture and global music; often featured in documentaries and memes."
+   }
+  },
+  {
+   "canonical": "kalimba",
+   "aliases": [
+    "thumb piano"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Viral on TikTok and Instagram; known for its soft, melodic sound in lo-fi and wellness content."
+   }
+  },
+  {
+   "canonical": "pan flute",
+   "aliases": [
+    "panpipes",
+    "siku"
+   ],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Recognizable from 'The Sound of Music' and Andean music; popular in fantasy and anime music."
+   }
+  },
+  {
+   "canonical": "shakuhachi",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese bamboo flute; known from Zen meditation and video game soundtracks (e.g., 'The Legend of Zelda')."
+   }
+  },
+  {
+   "canonical": "erhu",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Chinese two-stringed fiddle; famous in traditional Chinese music and movie scores."
+   }
+  },
+  {
+   "canonical": "guzheng",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Chinese zither; known from Chinese pop and historical dramas (e.g., 'The Longest Day in Chang'an')."
+   }
+  },
+  {
+   "canonical": "koto",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese stringed instrument; recognized in anime and traditional music."
+   }
+  },
+  {
+   "canonical": "oud",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Middle Eastern lute; commonly heard in Arabic music and global fusion tracks."
+   }
+  },
+  {
+   "canonical": "bagpipes",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Iconic in Scottish culture and military music; frequently parodied and featured in games."
+   }
+  },
+  {
+   "canonical": "theremin",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Famous for its eerie sound in sci-fi films and electronic music; known from vintage gadgets and YouTube experiments."
+   }
+  },
+  {
+   "canonical": "harpsichord",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from classical music, historical dramas, and video game soundtracks."
+   }
+  },
+  {
+   "canonical": "lute",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Known from Renaissance music, Shakespearean plays, and fantasy media (e.g., 'Game of Thrones')."
+   }
+  },
+  {
+   "canonical": "bodhr\u00e1n",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An Irish frame drum; associated with Celtic music and Irish folk festivals."
+   }
+  },
+  {
+   "canonical": "cuica",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Brazilian friction drum; known from samba music and global dance routines."
+   }
+  },
+  {
+   "canonical": "talking drum",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A West African drum that mimics speech; recognized in world music and educational videos."
+   }
+  },
+  {
+   "canonical": "glockenspiel",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Familiar from school music programs and orchestral pieces; known for its bright, bell-like sound."
+   }
+  },
+  {
+   "canonical": "celesta",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Used in classical and film music (e.g., 'Dance of the Sugar Plum Fairy'); known from movies and animations."
+   }
+  },
+  {
+   "canonical": "electric violin",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in fusion and rock music; used by artists like Lindsey Stirling."
+   }
+  },
+  {
+   "canonical": "bassoon",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A double-reed woodwind; known from orchestras and school band programs."
+   }
+  },
+  {
+   "canonical": "oboe",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Distinctive sound in classical music; taught in music education and often parodied."
+   }
+  },
+  {
+   "canonical": "English horn",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A larger version of the oboe; used in orchestral and film music (e.g., 'Jurassic Park')."
+   }
+  },
+  {
+   "canonical": "sousaphone",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A marching band tuba; recognized in parades and school bands."
+   }
+  },
+  {
+   "canonical": "tuba",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Big, low brass instrument; common in orchestras, jazz, and marching bands."
+   }
+  },
+  {
+   "canonical": "soprano sax",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Less common than tenor or alto; known from jazz and modern music."
+   }
+  },
+  {
+   "canonical": "double bass",
+   "aliases": [
+    "upright bass"
+   ],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Essential in jazz and classical ensembles; seen in music videos and documentaries."
+   }
+  },
+  {
+   "canonical": "mandolin",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "Popular in folk, bluegrass, and pop (e.g., Taylor Swift, 'All Too Well')."
+   }
+  },
+  {
+   "canonical": "kazoo",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A novelty instrument; widely recognized from kids' songs and viral videos."
+   }
+  },
+  {
+   "canonical": "musical saw",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A unique instrument with a singing tone; known from YouTube and music experiments."
+   }
+  },
+  {
+   "canonical": "gamelan",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A traditional Indonesian ensemble; known from cultural documentaries and video games."
+   }
+  },
+  {
+   "canonical": "shamisen",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese three-stringed instrument; associated with traditional theater and anime music."
+   }
+  },
+  {
+   "canonical": "daxophone",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "An experimental instrument made of wood; known from avant-garde music and quirky YouTube videos."
+   }
+  },
+  {
+   "canonical": "waterphone",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A haunting instrument with a liquid-like tone; used in horror film scores and sound art."
+   }
+  },
+  {
+   "canonical": "thereminvox",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A variation of the theremin with vocal-like control; known among electronic music enthusiasts."
+   }
+  },
+  {
+   "canonical": "cimbalom",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Hungarian hammered dulcimer; used in film scores and classical music."
+   }
+  },
+  {
+   "canonical": "balkan suling",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A traditional Balkan flute; known in world music circles and folk festivals."
+   }
+  },
+  {
+   "canonical": "bouzouki",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Greek stringed instrument; prominent in Celtic and folk music fusion."
+   }
+  },
+  {
+   "canonical": "kora",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A West African 21-string harp-lute; known from traditional music and global fusion artists."
+   }
+  },
+  {
+   "canonical": "diddley bow",
+   "aliases": [],
+   "tier": "KINGFISHER",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A one-stringed instrument; known from blues and viral YouTube experiments."
+   }
+  },
+  {
+   "canonical": "tiple",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Colombian small guitar; known only to Latin music fans and instrument enthusiasts."
+   }
+  },
+  {
+   "canonical": "charango",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A small Andean string instrument; rare in teen pop culture; known to folk music enthusiasts."
+   }
+  },
+  {
+   "canonical": "kantele",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Finnish zither; obscure outside Nordic cultures and music historians."
+   }
+  },
+  {
+   "canonical": "dombra",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Kazakh two-stringed instrument; known only to Central Asian music fans."
+   }
+  },
+  {
+   "canonical": "gusli",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Slavic stringed instrument; rare outside Eastern European folklore and historical reenactments."
+   }
+  },
+  {
+   "canonical": "sh\u014d",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A Japanese mouth organ; used in traditional court music; known only to niche music scholars."
+   }
+  },
+  {
+   "canonical": "karakas",
+   "aliases": [],
+   "tier": "MEGA",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A small, hand-held string instrument from Turkey; extremely rare in global pop culture."
+   }
+  },
+  {
+   "canonical": "bukkake",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fictional instrument from a fictional band in a viral meme; not real but valid as a humorous cultural reference in tee"
+   }
+  },
+  {
+   "canonical": "air guitar",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A symbolic instrument; celebrated in pop culture, music videos, and internet challenges."
+   }
+  },
+  {
+   "canonical": "ghost harp",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A conceptual instrument from an art installation; known only in experimental music circles."
+   }
+  },
+  {
+   "canonical": "sonic screwdriver",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A fictional device from 'Doctor Who' that functions like a musical instrument in some episodes."
+   }
+  },
+  {
+   "canonical": "music box",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A mechanical instrument with a rotating cylinder; known from nostalgia, gifts, and anime."
+   }
+  },
+  {
+   "canonical": "harmonic canon",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "note": "Qwen3-30B draft; soft=0",
+    "rationale": "A rare 19th-century instrument combining multiple harmonicas; only known to collectors and vintage instrument scholars."
+   }
+  }
+ ],
+ "_stats": {
+  "dropped": 5,
+  "safetyFlagged": 0,
+  "seconds": 128
+ }
+}
