@@ -236,6 +236,8 @@
     <p class="tapcopy" id="tap-copy">tap the code to copy invite</p>
     <div class="card">
       <div class="players" id="lobby-players"></div>
+    <p class="banner" id="last-winner" style="color:var(--acc)"></p>
+    <button class="ghost" id="btn-ready" style="display:none;margin-bottom:10px;">✓ I'm ready</button>
       <p class="banner" id="lobby-hint">Waiting…</p>
       <div id="host-controls" style="display:none;">
         <div class="row" style="margin-bottom:10px;">
@@ -299,7 +301,8 @@
     <div class="card best" id="best-card"></div>
     <div class="card"><table class="standings" id="standings"></table></div>
     <button class="ghost" id="btn-lifelist" style="margin-bottom:10px;">🃏 Life List</button>
-    <button id="btn-rematch">Rematch 🔁</button>
+    <button id="btn-rematch">✓ Ready for next game</button>
+    <p class="banner" id="tiebreak-note"></p>
     <p class="banner" id="rematch-status"></p>
     <button class="ghost" id="btn-share-result">Copy result to share</button>
   </section>
@@ -325,12 +328,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=19";
-import { ART } from "./art.js?v=19";
-import { BOLD } from "./bold.js?v=19";
-import { GD } from "./gd.js?v=19";
-import { W3D } from "./w3d.js?v=19";
-const V = 19; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=20";
+import { ART } from "./art.js?v=20";
+import { BOLD } from "./bold.js?v=20";
+import { GD } from "./gd.js?v=20";
+import { W3D } from "./w3d.js?v=20";
+const V = 20; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -486,6 +489,7 @@ function handle(m) {
     case 'rematchVote': $('rematch-status').textContent = `${m.votes}/${m.total} want a rematch…`; break;
     case 'update': showUpdateBanner(m.current); break;
     case 'chat': appendChat(m); break;
+    case 'hints': ack(m); break;
     case 'system': appendChat({ sys: true, text: m.text }); break;
     case 'error':
       if (m.code === 'no_room') {
@@ -595,8 +599,9 @@ function renderState(room) {
   if (room.phase === 'lobby') {
     $('room-code').textContent = room.code;
     const me0 = room.players.find(p => p.pid === my.pid);
+    const readySet = new Set(room.ready ?? []);
     $('lobby-players').innerHTML = room.players.map(p =>
-      `<span class="pill ${p.isHost ? 'host' : ''} ${p.connected ? '' : 'off'}">${esc(p.nick)}${me0?.isHost && !p.isHost ? ` <a href="#" class="kick" data-nick="${esc(p.nick)}" style="color:var(--bad);text-decoration:none;font-weight:900;">×</a>` : ''}</span>`).join('');
+      `<span class="pill ${p.isHost ? 'host' : ''} ${p.connected ? '' : 'off'}">${esc(p.nick)}${readySet.has(p.pid) ? ' ✓' : ''}${me0?.isHost && !p.isHost ? ` <a href="#" class="kick" data-nick="${esc(p.nick)}" style="color:var(--bad);text-decoration:none;font-weight:900;">×</a>` : ''}</span>`).join('');
     $('chat-freerow').style.display = room.freetextChat ? 'flex' : 'none';
     // economy display (D-40: theme-flavored, protocol stays feathers)
     if (room.feathersOn && room.feathers && my.pid) {
@@ -611,7 +616,20 @@ function renderState(room) {
     const me = me0;
     $('btn-lock').textContent = room.locked ? 'Room: locked 🔒' : 'Room: open 🔓';
     $('host-controls').style.display = me?.isHost ? 'block' : 'none';
-    $('lobby-hint').textContent = me?.isHost ? 'Pick theme + settings, then start when everyone is in.' : 'Waiting for the host…';
+    const majority = readySet.size >= Math.ceil(room.players.length / 2);
+    if (me?.isHost) {
+      $('btn-start').disabled = !!room.lastWinner && !majority;
+      $('btn-start').style.opacity = room.lastWinner && !majority ? 0.5 : 1;
+      $('lobby-hint').textContent = room.lastWinner
+        ? (majority ? 'Flock ready — start when you like.' : `Need ${Math.ceil(room.players.length / 2) - readySet.size} more ready ✓ vote(s).`)
+        : 'Pick theme + settings, then start when everyone is in.';
+    }
+    $('last-winner').textContent = room.lastWinner ? `👑 Last game: ${room.lastWinner}` : '';
+    const rb = $('btn-ready');
+    if (rb) {
+      rb.style.display = room.lastWinner && !me?.isHost ? 'block' : 'none';
+      rb.textContent = readySet.has(my.pid) ? '✓ Ready' : "✓ I'm ready";
+    }
     // theme chip visible to everyone; host owns the switch
     const themeChip = $('btn-theme');
     if (themeChip) {
@@ -632,6 +650,7 @@ function startRound(m) {
   $('round-count').textContent = m.totalRounds ? `Round ${m.roundIndex + 1} of ${m.totalRounds}` : `Round ${m.roundIndex + 1}`;
   $('prompt-domain').textContent = domainIcon(m.prompt.text);
   $('prompt-text').textContent = m.prompt.text;
+  window.__lastSize = m.prompt.size;
   $('prompt-example').textContent = m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
   $('answer').value = ''; $('answer').disabled = false; $('answer-feedback').textContent = '';
   $('confirm-chip').style.display = 'none'; pendingSuggest = null; $('locked-msg').textContent = '';
@@ -698,13 +717,27 @@ function ack(m) {
     $('answer-feedback').textContent = 'Close! Is this what you meant?';
   } else if (m.status === 'invalid') {
     $('answer-feedback').innerHTML = '';
-    $('answer-feedback').appendChild(document.createTextNode(m.msg || 'No echo! Try again.'));
+    $('answer-feedback').appendChild(document.createTextNode((m.msg || 'No echo! Try again.') + (window.__lastSize ? ` — ${window.__lastSize} answers out there.` : '')));
     const rep = document.createElement('a');
     rep.href = '#'; rep.className = 'report'; rep.textContent = 'Report missing bird';
     rep.onclick = ev => { ev.preventDefault(); rep.textContent = 'reported ✓'; send({ type: 'report', raw: $('answer').value.trim(), promptId: lastPromptId }); };
-    $('answer-feedback').appendChild(rep);
+    const hint = document.createElement('a');
+    hint.href = '#'; hint.className = 'report'; hint.textContent = 'show me 3 hints';
+    hint.onclick = ev => { ev.preventDefault(); hint.textContent = 'asking the flock…'; send({ type: 'hints' }); };
+    $('answer-feedback').appendChild(document.createTextNode(' · '));
+    $('answer-feedback').appendChild(hint);
     $('confirm-chip').style.display = 'none';
     chirp(300, 0.08, 0.03);
+  } else if (m.status === 'hints') {
+    const h = (m.hints ?? []).map(x => `${x.hint} (${x.len})`).join(' · ');
+    $('answer-feedback').innerHTML = '';
+    $('answer-feedback').appendChild(document.createTextNode('🔎 ' + h));
+    const rep2 = document.createElement('a');
+    rep2.href = '#'; rep2.className = 'report'; rep2.textContent = 'Report missing bird';
+    rep2.onclick = ev => { ev.preventDefault(); rep2.textContent = 'reported ✓'; send({ type: 'report', raw: $('answer').value.trim(), promptId: lastPromptId }); };
+    $('answer-feedback').appendChild(document.createTextNode(' · '));
+    $('answer-feedback').appendChild(rep2);
+    chirp(1000, 0.08);
   }
 }
 
@@ -806,15 +839,23 @@ function renderResults(m) {
   GD.podiumScene();
   const s = m.standings;
   const podium = $('podium'); podium.innerHTML = '';
-  const medals = ['🥇','🥈','🥉'];
-  s.slice(0, 3).forEach((p, i) => {
+  const medals = { 1: '🥇', 2: '🥈', 3: '🥉' };
+  const perchByPlace = { 1: 'p1', 2: 'p2', 3: 'p3' };
+  s.slice(0, 3).forEach((p) => {
+    const place = Math.min(3, Math.max(1, p.place));
     const d = document.createElement('div');
-    d.className = `perch p${i + 1}`;
-    const part = ART.enabled && ART.podiumArt(i) ? `<img class="perchArt" src="${ART.podiumArt(i)}" alt="">` : '';
-    const crown = ART.enabled && i === 0 && ART.icon('crown') ? `<img class="crownArt" src="${ART.icon('crown')}" alt="">` : '';
-    d.innerHTML = `${crown}<div class="pbird">${medals[i]}</div><div class="pnick">${esc(p.nick)}</div><div class="ppts">${p.pts}</div>${part}`;
+    d.className = `perch ${perchByPlace[place]}`;
+    const part = ART.enabled && ART.podiumArt(place - 1) ? `<img class="perchArt" src="${ART.podiumArt(place - 1)}" alt="">` : '';
+    const crown = ART.enabled && place === 1 && ART.icon('crown') ? `<img class="crownArt" src="${ART.icon('crown')}" alt="">` : '';
+    d.innerHTML = `${crown}<div class="pbird">${medals[place]}</div><div class="pnick">${esc(p.nick)}</div><div class="ppts">${p.pts}</div>${part}`;
     podium.appendChild(d);
   });
+  const top = s[0];
+  const shared = s.filter(x => x.place === top.place);
+  const note = $('tiebreak-note');
+  if (note) note.textContent = shared.length > 1
+    ? (new Set(shared.map(x => (x.tierCount?.['RARE BIRD'] ?? 0) + ':' + (x.tierCount?.MEGA ?? 0))).size > 1 ? 'Tie broken on rarest sightings 🦜' : `Shared ${top.place === 1 ? 'win' : 'place'} — dead even!`)
+    : '';
   $('standings').innerHTML = s.map(p =>
     `<tr><td class="place">${p.place}</td><td>${esc(p.nick)}</td><td style="text-align:right;font-weight:800">${p.pts}</td></tr>`).join('');
   $('best-card').innerHTML = m.bestAnswer
@@ -866,10 +907,11 @@ llBtn.className = 'ghost'; llBtn.style.marginBottom = '10px';
 llBtn.textContent = `🃏 Life List (${lifeListGet().length})`;
 llBtn.onclick = lifeListOpen;
 $('host-controls').appendChild(llBtn);
-$('btn-w3d').onclick = () => {
-  const on = localStorage.getItem('rarebird-w3d') === '1';
+$('btn-w3d').onclick = async () => {
+  const on = W3D.enabled; // read module state (storage-era reads were inverted after default-on)
   localStorage.setItem('rarebird-w3d', on ? '0' : '1');
-  location.reload();
+  if (!on) { await W3D.init(true); W3D.buildScene(theme.id); $('btn-w3d').textContent = '🌐 3D: on'; }
+  else { W3D.disable(); $('btn-w3d').textContent = '🌐 3D: off'; }
 };
 $('btn-audio').onclick = () => {
   gdAudioOn = !gdAudioOn;
@@ -883,9 +925,11 @@ $('btn-bold').onclick = () => {
   location.reload();
 };
 $('btn-art').onclick = () => {
-  const on = localStorage.getItem('rarebird-art') === '1';
+  const on = ART.enabled;
   localStorage.setItem('rarebird-art', on ? '0' : '1');
-  location.reload();
+  ART.enabled = !on;
+  applyAmbientArt();
+  $('btn-art').textContent = `🎨 Art: ${ART.enabled ? 'on' : 'off'}`;
 };
 $('lobby-players').addEventListener('click', e => { const k = e.target.closest('.kick'); if (k) { e.preventDefault(); if (confirm(`Remove ${k.dataset.nick}?`)) send({ type: 'kick', nick: k.dataset.nick }); } });
 let themeOpt = 'birds';
@@ -902,8 +946,12 @@ $('chat-presets').addEventListener('click', e => {
   const b = e.target.closest('[data-preset]');
   if (b) send({ type: 'chat', preset: b.dataset.preset });
 });
+$('btn-ready').onclick = () => send({ type: 'ready' });
 $('btn-lifelist').onclick = lifeListOpen;
-$('btn-rematch').onclick = () => send({ type: 'rematch' });
+$('btn-rematch').onclick = () => {
+  send({ type: 'rematch' }); // vote = ready; majority returns room to lobby
+  $('rematch-status').textContent = 'Voted — back to the lobby when the flock is ready…';
+};
 $('room-code').onclick = () => {
   const invite = `Join my RAREBIRD flock 🦜 ${location.origin} — code ${$('room-code').textContent}`;
   navigator.clipboard?.writeText(invite).then(() => { $('tap-copy').textContent = 'invite copied ✓'; chirp(1600, 0.08); }).catch(() => {});

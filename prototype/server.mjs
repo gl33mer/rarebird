@@ -132,6 +132,8 @@ function publicRoom(room, forPid) {
   return {
     code: room.code, phase: room.phase, settings: room.settings, locked: room.locked ?? false,
     freetextChat: process.env.RAREBIRD_FREETEXT_CHAT === '1',
+    ready: room.ready ? [...room.ready] : [],
+    lastWinner: room.lastStandings && room.lastStandings[0] ? room.lastStandings[0].nickname : null,
     feathersOn: room.settings.feathers === 'on',
     feathers: room.feathers ? Object.fromEntries(room.feathers) : null,
     players, roundIndex: room.roundIndex, totalRounds: room.prompts.length,
@@ -250,6 +252,7 @@ function nextAfterReveal(room) {
   if (room.phase !== 'reveal') return;
   if (room.roundIndex + 1 >= room.prompts.length) {
     room.phase = 'results';
+    room.lastStandings = null; // results are live now
     room.standings = standings(room.rounds, [...room.players.values()].map(p => ({ playerId: p.pid, nickname: p.nick })));
     const best = room.rounds.flat().filter(r => r.entry).sort((a, b) => b.pts - a.pts)[0];
     broadcast(room, 'results', {
@@ -268,6 +271,7 @@ function nextAfterReveal(room) {
 function rematch(room) {
   clearTimers(room);
   clearTimeout(room.tEarly); room.tEarly = null;
+  room.lastStandings = room.standings;
   room.rounds = []; room.roundIndex = 0; room.standings = null; room.rematchVotes = new Set();
   room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3]));
   room.prompts = pickPrompts(room.settings.rounds);
@@ -432,10 +436,15 @@ wss.on('connection', (socket, req) => {
     switch (type) {
       case 'start': {
         if (!me || me.pid !== room.hostId || room.phase !== 'lobby') return;
+        if (room.lastStandings) { // played before: majority ready required (playtest fix 1)
+          const readyN = room.ready ? room.ready.size : 0;
+          if (readyN < Math.ceil(room.players.size / 2)) { sendTo(me, 'error', { code: 'not_ready', msg: 'Need majority ready before starting.' }); return; }
+        }
         if ([3, 5, 7].includes(+args.rounds)) room.settings.rounds = +args.rounds;
         if ([20000, 30000, 45000].includes(+args.roundMs)) room.settings.roundMs = +args.roundMs;
         if (THEMES.has(args.theme)) room.settings.theme = args.theme;
         room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3])); // economy: 3/game (D-37)
+        room.ready = new Set();
         room.prompts = pickPrompts(room.settings.rounds);
         room.rounds = []; room.roundIndex = 0;
         glog('start', { room: room.code, by: me.nick, settings: room.settings });
@@ -528,6 +537,27 @@ wss.on('connection', (socket, req) => {
         }
         break;
       }
+      case 'hints': {
+        if (room.phase !== 'writing' || !me) return;
+        const prompt = room.prompts[room.roundIndex];
+        if (!prompt) return;
+        me._hints = me._hints || [];
+        const t0 = now();
+        me._hints = me._hints.filter(x => t0 - x < room.settings.roundMs);
+        if (me._hints.length >= 2) { sendTo(me, 'error', { code: 'rate_limited', msg: 'No more hints this round.' }); return; }
+        me._hints.push(t0);
+        const said = new Set([...room.submissions.values()].filter(x => x.status === 'locked').map(x => (x.confirmed ?? '').toLowerCase()));
+        const unsaid = prompt.catalogue.filter(e => !said.has(e.canonical.toLowerCase()));
+        const picks = [];
+        while (picks.length < 3 && unsaid.length) {
+          const i = Math.floor(Math.random() * unsaid.length);
+          const e = unsaid.splice(i, 1)[0];
+          picks.push({ hint: e.canonical.slice(0, 2).toUpperCase() + '…', len: e.canonical.length });
+        }
+        sendTo(me, 'hints', { hints: picks });
+        glog('hints', { room: room.code, round: room.roundIndex, nick: me.nick });
+        break;
+      }
       case 'report': {
         const prompt = room.prompts[room.roundIndex] ?? room.prompts[0];
         const daySalt = new Date().toISOString().slice(0, 10) + ':rarebird';
@@ -594,12 +624,24 @@ wss.on('connection', (socket, req) => {
         break;
       }
       case 'rematch': {
+        // playtest fix 1: vote = "ready for next game" → returns room to lobby (settings changeable,
+        // join re-opened); host Start is gated on majority ready once a game has been played.
         if (room.phase !== 'results' || !me) return;
-        room.rematchVotes = room.rematchVotes || new Set();
-        room.rematchVotes.add(me.pid);
-        broadcast(room, 'rematchVote', { nick: me.nick, votes: room.rematchVotes.size, total: room.players.size });
-        const majority = room.rematchVotes.size >= Math.ceil(room.players.size / 2);
-        if (majority) { room.rematchVotes = new Set(); rematch(room); }
+        room.ready = room.ready || new Set();
+        room.ready.add(me.pid);
+        broadcast(room, 'rematchVote', { nick: me.nick, votes: room.ready.size, total: room.players.size });
+        if (room.ready.size >= Math.ceil(room.players.size / 2)) {
+          room.lastStandings = room.standings; // lobby banner (playtest fix 1)
+          room.phase = 'lobby';
+          broadcast(room, 'state', { room: publicRoom(room) });
+        }
+        break;
+      }
+      case 'ready': {
+        if (!me || (room.phase !== 'lobby')) return;
+        room.ready = room.ready || new Set();
+        if (room.ready.has(me.pid)) room.ready.delete(me.pid); else room.ready.add(me.pid);
+        broadcast(room, 'state', { room: publicRoom(room) });
         break;
       }
       case 'leave': {

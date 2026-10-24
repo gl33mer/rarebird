@@ -139,3 +139,21 @@ rules **62/62** · verify-economy **4/4** · verify-lifelist **6/6** · verify-w
 
 ## Verdict
 Both runs ship. 3D is flag-gated (?w3d=1) pending owner eyeball; economy + life list default-on.
+
+---
+
+# Flash run 2026-10-24 — playtest fixes (flash/playtest-fixes-v1)
+
+## What I did
+- **Fix 1 (rematch→lobby):** rematch votes now mean "ready" — majority returns the room to lobby with players seated, last winner banner, settings changeable, join re-opened. Start gated on majority ready once a game has been played. New lobby ✓ ready button for non-hosts (join can raise the majority — the test caught this: Hinter joining made 2/3 the bar, and D needed the new button).
+- **Fix 3 (live toggles):** 🌐 3D / 🎨 Art toggles apply live — no page reloads (owner's home-screen flash gone). w3d gained a `disable()` teardown (canvas removed, scene disposed, loop stopped).
+- **Fix 4 (shared podium):** equal points → equal perch + equal medal; tiebreak reason rendered ("Tie broken on rarest sightings 🦜" / "dead even!").
+- **Fix 5 (teaching feedback):** invalid answers now show the catalogue size ("— 197 answers out there") plus a 2-per-round **3-hint nudge** (server picks 3 unsaid answers → first-2-letters + length, e.g. "VA… (7)").
+- Fixed en route: hints handler referenced a `prompt` scoped to the answer case (ReferenceError on every successful hint — found via the ws protocol test); ready-votes read a different set than rematch wrote (unified to `room.ready`).
+
+## Test results (exact numbers)
+`verify-playtest-fixes.js` **15/15** (tie engineering with equal totals → shared 1st + note; majority-of-2 lobby return; ready ticks; start gating incl. dynamic majority after join; live w3d toggle canvas on/off with no reload; art label flip; hints 3-entry + rate limit).
+
+## Not fixed / open questions
+- ready-vote UX could auto-ready players who voted on the results screen (currently the vote IS the ready) — fine as built.
+- Modifiers (Blind/Double feathers/Blacklist) from 08 FUN_IDEAS remain unimplemented — next run candidate.

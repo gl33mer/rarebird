@@ -140,6 +140,15 @@ export const W3D = {
     this._renderer.render(this._scene, this._camera);
   },
 
+  disable() { // live teardown (playtest fix 3: no page reloads)
+    this.enabled = false;
+    this._pause();
+    document.getElementById('w3d-canvas')?.remove();
+    document.body.classList.remove('w3d');
+    if (this._scene) this._scene.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); });
+    this._scene = null; this._renderer = null; this._three = null; window.__w3dInfo = null;
+  },
+
   info() {
     return this._renderer ? { ...this._info, running: this._raf > 0 || reduced() } : null;
   },

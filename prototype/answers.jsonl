@@ -332,3 +332,225 @@
 {"ts":"2026-10-24T16:33:45.421Z","promptId":"trees","canonical":"oak","tier":"PIGEON"}
 {"ts":"2026-10-24T16:35:04.226Z","promptId":"consoles","canonical":"Nintendo Entertainment System","tier":"STARLING"}
 {"ts":"2026-10-24T16:38:49.697Z","promptId":"tech-carbrands","canonical":"Renault","tier":"SPARROW"}
+{"ts":"2026-10-24T16:53:55.042Z","promptId":"consoles","canonical":"Handheld PC","tier":"MEGA"}
+{"ts":"2026-10-24T16:53:55.487Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:08.524Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:08.975Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:22.027Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:22.485Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:41.997Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:42.462Z","promptId":"anime","canonical":"Mardock Scramble","tier":"MEGA"}
+{"ts":"2026-10-24T16:54:55.527Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T16:54:55.975Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T16:55:09.013Z","promptId":"test-greekgods","canonical":"Moros","tier":"MEGA"}
+{"ts":"2026-10-24T16:55:09.457Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:09.518Z","promptId":"test-superheroes","canonical":"Saitama","tier":"MEGA"}
+{"ts":"2026-10-24T16:56:09.968Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:23.034Z","promptId":"insects","canonical":"ant","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:23.487Z","promptId":"insects","canonical":"ant","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:36.529Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:36.989Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:56.585Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T16:56:57.052Z","promptId":"test-greekgods","canonical":"Moros","tier":"MEGA"}
+{"ts":"2026-10-24T16:57:10.093Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T16:57:10.558Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T16:57:23.602Z","promptId":"trees","canonical":"silk oak","tier":"MEGA"}
+{"ts":"2026-10-24T16:57:24.047Z","promptId":"trees","canonical":"oak","tier":"PIGEON"}
+{"ts":"2026-10-24T16:59:14.862Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T16:59:15.330Z","promptId":"consoles","canonical":"Handheld PC","tier":"MEGA"}
+{"ts":"2026-10-24T16:59:28.358Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T16:59:28.814Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T16:59:41.862Z","promptId":"life-dogbreeds","canonical":"Ibizan Hound","tier":"MEGA"}
+{"ts":"2026-10-24T16:59:42.326Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:00:25.703Z","promptId":"anime","canonical":"Mardock Scramble","tier":"MEGA"}
+{"ts":"2026-10-24T17:00:26.169Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:00:39.211Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T17:00:39.660Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T17:00:52.683Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T17:00:53.146Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T17:01:12.521Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:01:12.983Z","promptId":"storms","canonical":"apocalypse storm","tier":"MEGA"}
+{"ts":"2026-10-24T17:01:26.008Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:01:26.454Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:01:39.505Z","promptId":"olympic-events","canonical":"Mixed Team Relay in Biathlon","tier":"MEGA"}
+{"ts":"2026-10-24T17:01:39.955Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
+{"ts":"2026-10-24T17:02:53.935Z","promptId":"test-sports","canonical":"Kabaddi","tier":"MEGA"}
+{"ts":"2026-10-24T17:02:54.388Z","promptId":"test-sports","canonical":"Football","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:07.418Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:07.864Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:20.883Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:21.337Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:40.726Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:41.183Z","promptId":"instruments","canonical":"tiple","tier":"MEGA"}
+{"ts":"2026-10-24T17:03:54.253Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T17:03:54.705Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T17:04:07.747Z","promptId":"life-dogbreeds","canonical":"Ibizan Hound","tier":"MEGA"}
+{"ts":"2026-10-24T17:04:08.205Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:08.294Z","promptId":"dance-styles","canonical":"Afrobeats Dance","tier":"MEGA"}
+{"ts":"2026-10-24T17:05:08.751Z","promptId":"dance-styles","canonical":"Ballet","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:21.894Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:22.352Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:35.399Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:35.858Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:55.327Z","promptId":"mythical-creatures","canonical":"dragon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:05:55.777Z","promptId":"mythical-creatures","canonical":"nuckelavee","tier":"MEGA"}
+{"ts":"2026-10-24T17:06:08.828Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:06:09.294Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:06:22.324Z","promptId":"test-capitals","canonical":"Ankara","tier":"MEGA"}
+{"ts":"2026-10-24T17:06:22.780Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:07:53.759Z","promptId":"compounds","canonical":"Ammonium nitrate","tier":"MEGA"}
+{"ts":"2026-10-24T17:07:54.244Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:07.295Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:07.758Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:20.812Z","promptId":"school-subjects","canonical":"Mathematics","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:21.274Z","promptId":"school-subjects","canonical":"Mathematics","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:40.788Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:41.244Z","promptId":"test-capitals","canonical":"Ankara","tier":"MEGA"}
+{"ts":"2026-10-24T17:08:54.313Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T17:08:54.772Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T17:09:07.834Z","promptId":"test-greekgods","canonical":"Moros","tier":"MEGA"}
+{"ts":"2026-10-24T17:09:08.283Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:07.721Z","promptId":"test-toppings","canonical":"Caviar","tier":"MEGA"}
+{"ts":"2026-10-24T17:10:08.169Z","promptId":"test-toppings","canonical":"Pepperoni","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:21.199Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:21.677Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:34.712Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:35.173Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:54.610Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:10:55.057Z","promptId":"storms","canonical":"apocalypse storm","tier":"MEGA"}
+{"ts":"2026-10-24T17:11:08.079Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:11:08.537Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:11:21.558Z","promptId":"test-sports","canonical":"Kabaddi","tier":"MEGA"}
+{"ts":"2026-10-24T17:11:22.016Z","promptId":"test-sports","canonical":"Football","tier":"PIGEON"}
+{"ts":"2026-10-24T17:12:22.248Z","promptId":"utensils","canonical":"crab cracker","tier":"MEGA"}
+{"ts":"2026-10-24T17:12:22.715Z","promptId":"utensils","canonical":"whisk","tier":"PIGEON"}
+{"ts":"2026-10-24T17:12:35.761Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:12:36.211Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:12:49.289Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T17:12:49.726Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T17:13:09.144Z","promptId":"mythical-creatures","canonical":"dragon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:13:09.614Z","promptId":"mythical-creatures","canonical":"nuckelavee","tier":"MEGA"}
+{"ts":"2026-10-24T17:13:22.660Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:13:23.140Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:13:36.188Z","promptId":"olympic-events","canonical":"Mixed Team Relay in Biathlon","tier":"MEGA"}
+{"ts":"2026-10-24T17:13:36.647Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:07.244Z","promptId":"test-greekgods","canonical":"Moros","tier":"MEGA"}
+{"ts":"2026-10-24T17:15:07.705Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:20.764Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:21.217Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:34.353Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:34.805Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:54.268Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:15:54.741Z","promptId":"anime","canonical":"Mardock Scramble","tier":"MEGA"}
+{"ts":"2026-10-24T17:16:07.783Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:16:08.228Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:16:21.258Z","promptId":"cheeses","canonical":"Stilton","tier":"MEGA"}
+{"ts":"2026-10-24T17:16:21.727Z","promptId":"cheeses","canonical":"Cheddar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:09.257Z","promptId":"instruments","canonical":"tiple","tier":"MEGA"}
+{"ts":"2026-10-24T17:17:09.717Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:22.738Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:23.185Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:36.253Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:36.698Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:56.162Z","promptId":"insects","canonical":"ant","tier":"PIGEON"}
+{"ts":"2026-10-24T17:17:56.614Z","promptId":"insects","canonical":"mantis shrimp","tier":"MEGA"}
+{"ts":"2026-10-24T17:18:09.652Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T17:18:10.123Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T17:18:23.058Z","promptId":"consoles","canonical":"Handheld PC","tier":"MEGA"}
+{"ts":"2026-10-24T17:18:23.514Z","promptId":"consoles","canonical":"PlayStation","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:02.819Z","promptId":"test-superheroes","canonical":"Saitama","tier":"MEGA"}
+{"ts":"2026-10-24T17:19:03.262Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:16.310Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:16.765Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:29.808Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:30.266Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:49.740Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T17:19:50.196Z","promptId":"test-animals","canonical":"Pangolin","tier":"MEGA"}
+{"ts":"2026-10-24T17:20:03.261Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:20:03.709Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:20:16.730Z","promptId":"languages","canonical":"Klingon","tier":"MEGA"}
+{"ts":"2026-10-24T17:20:17.184Z","promptId":"languages","canonical":"Spanish","tier":"PIGEON"}
+{"ts":"2026-10-24T17:22:56.501Z","promptId":"instruments","canonical":"tiple","tier":"MEGA"}
+{"ts":"2026-10-24T17:22:56.971Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:10.031Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:10.493Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:23.547Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:23.989Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:43.564Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:44.025Z","promptId":"tech-carbrands","canonical":"Rimac Automobili","tier":"MEGA"}
+{"ts":"2026-10-24T17:23:57.068Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:23:57.511Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:24:10.588Z","promptId":"school-subjects","canonical":"Forensics","tier":"MEGA"}
+{"ts":"2026-10-24T17:24:11.046Z","promptId":"school-subjects","canonical":"Mathematics","tier":"PIGEON"}
+{"ts":"2026-10-24T17:25:16.725Z","promptId":"test-sports","canonical":"Kabaddi","tier":"MEGA"}
+{"ts":"2026-10-24T17:25:17.179Z","promptId":"test-sports","canonical":"Football","tier":"PIGEON"}
+{"ts":"2026-10-24T17:25:30.219Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:25:30.678Z","promptId":"anime","canonical":"Naruto","tier":"PIGEON"}
+{"ts":"2026-10-24T17:25:43.696Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T17:25:44.163Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T17:26:03.585Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T17:26:04.049Z","promptId":"sci-elements","canonical":"Terbium","tier":"MEGA"}
+{"ts":"2026-10-24T17:26:17.117Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:26:17.575Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:26:30.638Z","promptId":"cheeses","canonical":"Stilton","tier":"MEGA"}
+{"ts":"2026-10-24T17:26:31.081Z","promptId":"cheeses","canonical":"Cheddar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:27:35.706Z","promptId":"insects","canonical":"mantis shrimp","tier":"MEGA"}
+{"ts":"2026-10-24T17:27:36.180Z","promptId":"insects","canonical":"ant","tier":"PIGEON"}
+{"ts":"2026-10-24T17:27:49.230Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:27:49.681Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:02.777Z","promptId":"test-boardgames","canonical":"Monopoly","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:03.214Z","promptId":"test-boardgames","canonical":"Monopoly","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:22.679Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:23.156Z","promptId":"norse-gods","canonical":"Vár","tier":"MEGA"}
+{"ts":"2026-10-24T17:28:36.212Z","promptId":"dance-styles","canonical":"Ballet","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:36.659Z","promptId":"dance-styles","canonical":"Ballet","tier":"PIGEON"}
+{"ts":"2026-10-24T17:28:49.712Z","promptId":"test-capitals","canonical":"Ankara","tier":"MEGA"}
+{"ts":"2026-10-24T17:28:50.173Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T17:30:53.351Z","promptId":"tech-carbrands","canonical":"Rimac Automobili","tier":"MEGA"}
+{"ts":"2026-10-24T17:30:53.787Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:06.924Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:07.401Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:20.580Z","promptId":"utensils","canonical":"whisk","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:21.034Z","promptId":"utensils","canonical":"whisk","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:40.380Z","promptId":"insects","canonical":"ant","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:40.832Z","promptId":"insects","canonical":"mantis shrimp","tier":"MEGA"}
+{"ts":"2026-10-24T17:31:53.865Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:31:54.322Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:32:07.369Z","promptId":"instruments","canonical":"tiple","tier":"MEGA"}
+{"ts":"2026-10-24T17:32:07.812Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:12.846Z","promptId":"life-dogbreeds","canonical":"Ibizan Hound","tier":"MEGA"}
+{"ts":"2026-10-24T17:33:13.296Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:26.337Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:26.781Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:39.812Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:40.274Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:33:59.616Z","promptId":"school-subjects","canonical":"Mathematics","tier":"PIGEON"}
+{"ts":"2026-10-24T17:34:00.060Z","promptId":"school-subjects","canonical":"Forensics","tier":"MEGA"}
+{"ts":"2026-10-24T17:34:13.115Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T17:34:13.582Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T17:34:26.608Z","promptId":"life-dogbreeds","canonical":"Ibizan Hound","tier":"MEGA"}
+{"ts":"2026-10-24T17:34:27.060Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T17:36:14.722Z","promptId":"cheeses","canonical":"Stilton","tier":"MEGA"}
+{"ts":"2026-10-24T17:36:15.184Z","promptId":"cheeses","canonical":"Cheddar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:36:28.203Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:36:28.644Z","promptId":"instruments","canonical":"guitar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:36:41.693Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:36:42.144Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:37:01.519Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T17:37:01.970Z","promptId":"geo-countries","canonical":"Dominica","tier":"MEGA"}
+{"ts":"2026-10-24T17:37:15.012Z","promptId":"test-boardgames","canonical":"Monopoly","tier":"PIGEON"}
+{"ts":"2026-10-24T17:37:15.473Z","promptId":"test-boardgames","canonical":"Monopoly","tier":"PIGEON"}
+{"ts":"2026-10-24T17:37:28.548Z","promptId":"storms","canonical":"apocalypse storm","tier":"MEGA"}
+{"ts":"2026-10-24T17:37:28.994Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T17:38:15.538Z","promptId":"tech-carbrands","canonical":"Rimac Automobili","tier":"MEGA"}
+{"ts":"2026-10-24T17:38:15.993Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T17:38:29.038Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T17:38:29.500Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T17:38:42.533Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:38:42.995Z","promptId":"geo-currencies","canonical":"United States dollar","tier":"PIGEON"}
+{"ts":"2026-10-24T17:39:02.481Z","promptId":"world-rivers","canonical":"Amazon","tier":"PIGEON"}
+{"ts":"2026-10-24T17:39:02.950Z","promptId":"world-rivers","canonical":"Fly River","tier":"MEGA"}
+{"ts":"2026-10-24T17:39:16.004Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:39:16.454Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T17:39:29.468Z","promptId":"cheeses","canonical":"Stilton","tier":"MEGA"}
+{"ts":"2026-10-24T17:39:29.913Z","promptId":"cheeses","canonical":"Cheddar","tier":"PIGEON"}
