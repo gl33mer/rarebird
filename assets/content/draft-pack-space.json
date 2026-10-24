@@ -1,0 +1,1996 @@
+{
+ "id": "draft-space-v1",
+ "generated": "2026-10-24",
+ "generator": "GLM-5.3 (MAX) — DRAFT, requires editorial pass per asset-directives/06",
+ "theme": "cosmic-voyage",
+ "prompts": [
+  {
+   "id": "space-planets",
+   "text": "Name a planet or dwarf planet.",
+   "example": "like Mars",
+   "catalogueSize": 10,
+   "catalogue": [
+    {
+     "canonical": "Mars",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft — verify tier"
+     }
+    },
+    {
+     "canonical": "Jupiter",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft — verify tier"
+     }
+    },
+    {
+     "canonical": "Saturn",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Venus",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Mercury",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Neptune",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Uranus",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; expect giggles"
+     }
+    },
+    {
+     "canonical": "Pluto",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; dwarf-planet status is the fun bit"
+     }
+    },
+    {
+     "canonical": "Ceres",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Eris",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-moons",
+   "text": "Name a moon of any planet.",
+   "example": "like our Moon",
+   "catalogueSize": 22,
+   "catalogue": [
+    {
+     "canonical": "The Moon",
+     "aliases": [
+      "Luna",
+      "the Moon"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Titan",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Europa",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ganymede",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Io",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Callisto",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Phobos",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Deimos",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Enceladus",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Triton",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Charon",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Amalthea",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Himalia",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nereid",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Larissa",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Proteus",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; also a Greek god — ambiguity check vs greek-gods prompt across packs"
+     }
+    },
+    {
+     "canonical": "Rhea",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; same cross-pack note"
+     }
+    },
+    {
+     "canonical": "Dione",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tethys",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Mimas",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hyperion",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ariel",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; also a name — check"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-constellations",
+   "text": "Name a constellation.",
+   "example": "like Orion",
+   "catalogueSize": 24,
+   "catalogue": [
+    {
+     "canonical": "Orion",
+     "aliases": [
+      "the Hunter"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Big Dipper",
+     "aliases": [
+      "the Big Dipper",
+      "Ursa Major",
+      "the Plough"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; asterism-vs-constellation nuance — keep both accepted"
+     }
+    },
+    {
+     "canonical": "Ursa Minor",
+     "aliases": [
+      "Little Dipper",
+      "the Little Dipper"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cassiopeia",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Scorpius",
+     "aliases": [
+      "Scorpio"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; accept zodiac name"
+     }
+    },
+    {
+     "canonical": "Leo",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Taurus",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Gemini",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cygnus",
+     "aliases": [
+      "the Swan"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Pegasus",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Andromeda",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; also galaxy — accept"
+     }
+    },
+    {
+     "canonical": "Canis Major",
+     "aliases": [
+      "the Great Dog"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Crux",
+     "aliases": [
+      "Southern Cross",
+      "the Southern Cross"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Draco",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Perseus",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Aquila",
+     "aliases": [
+      "the Eagle"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lyra",
+     "aliases": [
+      "the Harp"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Phoenix",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Centaurus",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Vela",
+     "aliases": [
+      "the Sails"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fornax",
+     "aliases": [
+      "the Furnace"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sextans",
+     "aliases": [
+      "the Sextant"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chamaeleon",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Volans",
+     "aliases": [
+      "the Flying Fish"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-missions",
+   "text": "Name a real space mission or telescope.",
+   "example": "like Apollo 11",
+   "catalogueSize": 26,
+   "catalogue": [
+    {
+     "canonical": "Apollo 11",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hubble",
+     "aliases": [
+      "Hubble Space Telescope",
+      "HST"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "James Webb",
+     "aliases": [
+      "James Webb Space Telescope",
+      "JWST",
+      "Webb"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Apollo 13",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Voyager 1",
+     "aliases": [
+      "Voyager"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; accept bare Voyager"
+     }
+    },
+    {
+     "canonical": "Voyager 2",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; alias collision with Voyager 1 — editorial: decide whether bare 'Voyager' locks to 1 (first submitted) — fine"
+     }
+    },
+    {
+     "canonical": "Artemis",
+     "aliases": [
+      "Artemis programme"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sputnik",
+     "aliases": [
+      "Sputnik 1"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Curiosity",
+     "aliases": [
+      "Curiosity rover"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Perseverance",
+     "aliases": [
+      "Perseverance rover"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chandra",
+     "aliases": [
+      "Chandra X-ray Observatory"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Spitzer",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cassini",
+     "aliases": [
+      "Cassini-Huygens"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "New Horizons",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Rosetta",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kepler",
+     "aliases": [
+      "Kepler Space Telescope"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Spirit",
+     "aliases": [
+      "Spirit rover"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; also generic word — with Opportunity"
+     }
+    },
+    {
+     "canonical": "Opportunity",
+     "aliases": [
+      "Opportunity rover"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ingenuity",
+     "aliases": [
+      "the Mars helicopter"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Parker Solar Probe",
+     "aliases": [
+      "Parker Probe"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Juno",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Gaia",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lucy",
+     "aliases": [
+      "Lucy mission"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "DART",
+     "aliases": [
+      "Double Asteroid Redirection Test"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "NEAR Shoemaker",
+     "aliases": [
+      "NEAR"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ulysses",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-astronauts",
+   "text": "Name a famous astronaut or astronomer.",
+   "example": "like Neil Armstrong",
+   "catalogueSize": 28,
+   "catalogue": [
+    {
+     "canonical": "Neil Armstrong",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Buzz Aldrin",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Yuri Gagarin",
+     "aliases": [
+      "Gagarin"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Galileo",
+     "aliases": [
+      "Galileo Galilei"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Isaac Newton",
+     "aliases": [
+      "Newton"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Albert Einstein",
+     "aliases": [
+      "Einstein"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Stephen Hawking",
+     "aliases": [
+      "Hawking"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sally Ride",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Valentina Tereshkova",
+     "aliases": [
+      "Tereshkova"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Michael Collins",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Edwin Hubble",
+     "aliases": [
+      "Hubble"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; collision with telescope prompt is fine — different catalogue"
+     }
+    },
+    {
+     "canonical": "Carl Sagan",
+     "aliases": [
+      "Sagan"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nicolaus Copernicus",
+     "aliases": [
+      "Copernicus"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Johannes Kepler",
+     "aliases": [
+      "Kepler"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tycho Brahe",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Christa McAuliffe",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; sensitive (Challenger) — editorial tone check"
+     }
+    },
+    {
+     "canonical": "Mae Jemison",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "John Glenn",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Alan Shepard",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Peggy Whitson",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chris Hadfield",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; Space Oddity cover fame"
+     }
+    },
+    {
+     "canonical": "Tim Peake",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Vera Rubin",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Henrietta Leavitt",
+     "aliases": [
+      "Henrietta Swan Leavitt"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Annie Jump Cannon",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Subrahmanyan Chandrasekhar",
+     "aliases": [
+      "Chandrasekhar"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Jocelyn Bell Burnell",
+     "aliases": [
+      "Jocelyn Bell"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cecilia Payne",
+     "aliases": [
+      "Cecilia Payne-Gaposchkin"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-scifi-ships",
+   "text": "Name a spaceship from science fiction.",
+   "example": "like the Millennium Falcon",
+   "catalogueSize": 24,
+   "catalogue": [
+    {
+     "canonical": "Millennium Falcon",
+     "aliases": [
+      "the Millennium Falcon"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; factual reference to fictional vessel — names only, no art"
+     }
+    },
+    {
+     "canonical": "USS Enterprise",
+     "aliases": [
+      "the Enterprise",
+      "Enterprise"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Death Star",
+     "aliases": [
+      "the Death Star"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; it's a station — editorial: keep (teens will say it)"
+     }
+    },
+    {
+     "canonical": "X-wing",
+     "aliases": [
+      "X-Wing",
+      "X wing"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "TIE Fighter",
+     "aliases": [
+      "Tie Fighter"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Star Destroyer",
+     "aliases": [
+      "Imperial Star Destroyer"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Serenity",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nostromo",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Heart of Gold",
+     "aliases": [
+      "the Heart of Gold"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Discovery One",
+     "aliases": [
+      "the Discovery"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Normandy",
+     "aliases": [
+      "SSV Normandy",
+      "the Normandy"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Slave I",
+     "aliases": [
+      "Boba Fett's ship"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; name review: renamed 'Boba Fett's Ship' in newer canon — editorial decision"
+     }
+    },
+    {
+     "canonical": "Sulaco",
+     "aliases": [
+      "USS Sulaco"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Rocinante",
+     "aliases": [
+      "the Rocinante"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; The Expanse is teen-known"
+     }
+    },
+    {
+     "canonical": "Battlestar Galactica",
+     "aliases": [
+      "BSG"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; ship-as-show-name"
+     }
+    },
+    {
+     "canonical": "Red Dwarf",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nebuchadnezzar",
+     "aliases": [
+      "the Nebuchadnezzar"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Planet Express Ship",
+     "aliases": [
+      "Planet Express"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Eagle 5",
+     "aliases": [
+      "the Eagle 5"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; Spaceballs deep cut"
+     }
+    },
+    {
+     "canonical": "Axiom",
+     "aliases": [
+      "the Axiom"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; WALL-E"
+     }
+    },
+    {
+     "canonical": "Endurance",
+     "aliases": [
+      "the Endurance"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; Interstellar"
+     }
+    },
+    {
+     "canonical": "Valley Forge",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; Silent Running deep cut"
+     }
+    },
+    {
+     "canonical": "Leonov",
+     "aliases": [
+      "Alexei Leonov"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; 2010 sequel ship — check ambiguity vs astronaut name (different pack)"
+     }
+    },
+    {
+     "canonical": "Event Horizon",
+     "aliases": [
+      "the Event Horizon"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; horror — tone check, it's a name only"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-night-sky",
+   "text": "Name something you can see in the night sky.",
+   "example": "like the Moon",
+   "catalogueSize": 40,
+   "catalogue": [
+    {
+     "canonical": "Stars",
+     "aliases": [
+      "star"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Moon",
+     "aliases": [
+      "Moon",
+      "the moon"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Sun",
+     "aliases": [
+      "Sun",
+      "the sun"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; daytime technically — teens will say it, keep"
+     }
+    },
+    {
+     "canonical": "Clouds",
+     "aliases": [
+      "cloud"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Airplanes",
+     "aliases": [
+      "plane",
+      "aeroplane",
+      "aircraft"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Birds",
+     "aliases": [
+      "bird"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Satellites",
+     "aliases": [
+      "satellite"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The International Space Station",
+     "aliases": [
+      "ISS",
+      "International Space Station"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Shooting stars",
+     "aliases": [
+      "meteor",
+      "meteors",
+      "shooting star"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Comets",
+     "aliases": [
+      "comet"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Venus",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; the evening star"
+     }
+    },
+    {
+     "canonical": "Mars",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Jupiter",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Saturn",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Milky Way",
+     "aliases": [
+      "Milky Way"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Constellations",
+     "aliases": [
+      "constellation"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Northern Lights",
+     "aliases": [
+      "aurora",
+      "aurora borealis",
+      "northern lights"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fireflies",
+     "aliases": [
+      "firefly"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Bats",
+     "aliases": [
+      "bat"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Owls",
+     "aliases": [
+      "owl"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Balloons",
+     "aliases": [
+      "balloon",
+      "hot air balloon"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fireworks",
+     "aliases": [
+      "firework"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kites",
+     "aliases": [
+      "kite"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Drones",
+     "aliases": [
+      "drone"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Rocket launches",
+     "aliases": [
+      "rocket",
+      "rockets"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Space junk",
+     "aliases": [
+      "space debris"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Andromeda Galaxy",
+     "aliases": [
+      "Andromeda galaxy"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Supernovae",
+     "aliases": [
+      "supernova"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Eclipses",
+     "aliases": [
+      "eclipse",
+      "solar eclipse",
+      "lunar eclipse"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Storm clouds",
+     "aliases": [
+      "storm"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sky lanterns",
+     "aliases": [
+      "chinese lanterns",
+      "lantern"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Weather balloons",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chinooks",
+     "aliases": [
+      "chinook clouds",
+      "roll clouds"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Noctilucent clouds",
+     "aliases": [
+      "night-shining clouds"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Satellite flares",
+     "aliases": [
+      "iridium flares"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Airglow",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Zodiacal light",
+     "aliases": [
+      "false dawn"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hang gliders",
+     "aliases": [
+      "hang glider"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "The Hubble Space Telescope",
+     "aliases": [
+      "Hubble"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Blimps",
+     "aliases": [
+      "blimp",
+      "airship",
+      "zeppelin"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "space-astro-gear",
+   "text": "Name something astronauts use or wear.",
+   "example": "like a helmet",
+   "catalogueSize": 30,
+   "catalogue": [
+    {
+     "canonical": "Helmet",
+     "aliases": [
+      "space helmet"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Spacesuit",
+     "aliases": [
+      "space suit"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Gloves",
+     "aliases": [
+      "space gloves"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Boots",
+     "aliases": [
+      "space boots"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Oxygen tank",
+     "aliases": [
+      "oxygen tanks",
+      "O2 tank"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Jetpack",
+     "aliases": [
+      "MMU",
+      "manned manoeuvring unit"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Rover",
+     "aliases": [
+      "moon rover",
+      "lunar rover"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Radio",
+     "aliases": [
+      "radio headset",
+      "comms"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Freeze-dried food",
+     "aliases": [
+      "space food",
+      "freeze dried ice cream"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tether",
+     "aliases": [
+      "safety tether"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Parachute",
+     "aliases": [
+      "chute"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Heat shield",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Telescope",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Sample tubes",
+     "aliases": [
+      "sample containers"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Solar panels",
+     "aliases": [
+      "solar array"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cameras",
+     "aliases": [
+      "camera"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Diapers",
+     "aliases": [
+      "MAG",
+      "maximum absorbency garment"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; teens find this hilarious and TRUE"
+     }
+    },
+    {
+     "canonical": "Velcro",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sleeping bag",
+     "aliases": [
+      "sleep restraint"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Toilet",
+     "aliases": [
+      "space toilet",
+      "waste collection system"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Water recycling system",
+     "aliases": [
+      "urine recycler"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Treadmill",
+     "aliases": [
+      "exercise treadmill",
+      "ARED"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tool kit",
+     "aliases": [
+      "tools",
+      "power tools"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Mission patch",
+     "aliases": [
+      "patches"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Gold foil",
+     "aliases": [
+      "multi-layer insulation",
+      "MLI"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Snoopy cap",
+     "aliases": [
+      "communications cap"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cupola",
+     "aliases": [
+      "observation dome"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Canadarm",
+     "aliases": [
+      "robotic arm"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Airlock",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Docking port",
+     "aliases": [
+      "docking mechanism"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1614 @@
+{
+ "id": "draft-birds-v1",
+ "generated": "2026-10-24",
+ "generator": "GLM-5.3 (MAX) — DRAFT, requires editorial pass per asset-directives/06",
+ "theme": "dusk-birds",
+ "prompts": [
+  {
+   "id": "birds-garden",
+   "text": "Name a bird you might see in a garden or park.",
+   "example": "like a robin",
+   "catalogueSize": 32,
+   "catalogue": [
+    {
+     "canonical": "Robin",
+     "aliases": [
+      "European robin",
+      "robin redbreast"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sparrow",
+     "aliases": [
+      "house sparrow"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Pigeon",
+     "aliases": [
+      "city pigeon",
+      "rock dove"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Crow",
+     "aliases": [
+      "carrion crow"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Blackbird",
+     "aliases": [
+      "common blackbird"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Blue tit",
+     "aliases": [
+      "tit"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Magpie",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Starling",
+     "aliases": [
+      "common starling"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Wood pigeon",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Dove",
+     "aliases": [
+      "collared dove"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Seagull",
+     "aliases": [
+      "gull",
+      "gulls"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Wren",
+     "aliases": [
+      "Eurasian wren"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Great tit",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Chaffinch",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Goldfinch",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Jackdaw",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Jay",
+     "aliases": [
+      "Eurasian jay"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Greenfinch",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Dunnock",
+     "aliases": [
+      "hedge sparrow"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Song thrush",
+     "aliases": [
+      "thrush"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Mistle thrush",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nuthatch",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Treecreeper",
+     "aliases": [
+      "tree creeper"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Goldcrest",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Long-tailed tit",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Coal tit",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fieldfare",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Redwing",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Brambling",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Waxwing",
+     "aliases": [
+      "bohemian waxwing"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Crossbill",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hawfinch",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds-raptor",
+   "text": "Name a bird of prey.",
+   "example": "like an eagle",
+   "catalogueSize": 28,
+   "catalogue": [
+    {
+     "canonical": "Eagle",
+     "aliases": [
+      "bald eagle",
+      "golden eagle"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hawk",
+     "aliases": [
+      "hawks"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Owl",
+     "aliases": [
+      "owls"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier (owls are raptors — teens say it)"
+    },
+    {
+     "canonical": "Falcon",
+     "aliases": [
+      "peregrine falcon"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Vulture",
+     "aliases": [
+      "vultures"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kestrel",
+     "aliases": [
+      "common kestrel"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Barn owl",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Osprey",
+     "aliases": [
+      "fish hawk"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Harrier",
+     "aliases": [
+      "hen harrier"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kite",
+     "aliases": [
+      "red kite"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Buzzard",
+     "aliases": [
+      "common buzzard"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier (regional: UK-common)"
+    },
+    {
+     "canonical": "Sparrowhawk",
+     "aliases": [
+      "sparrow hawk"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tawny owl",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Snowy owl",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; Hedwig effect"
+     }
+    },
+    {
+     "canonical": "Great horned owl",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Goshawk",
+     "aliases": [
+      "northern goshawk"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hobby",
+     "aliases": [
+      "Eurasian hobby"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; also a common word — with falcon qualifier risky, editorial check"
+     }
+    },
+    {
+     "canonical": "Merlin",
+     "aliases": [
+      "peregrine's cousin"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; also wizard name — accept, teens know both"
+     }
+    },
+    {
+     "canonical": "Gyrfalcon",
+     "aliases": [
+      "gyr falcon"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Condor",
+     "aliases": [
+      "California condor",
+      "Andean condor"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Secretary bird",
+     "aliases": [
+      "secretarybird"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Harpy eagle",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Caracara",
+     "aliases": [
+      "crested caracara"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kookaburra",
+     "aliases": [
+      "laughing kookaburra"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; kingfisher family — editorial: is it 'prey'? yes, but tone fits"
+     }
+    },
+    {
+     "canonical": "Shrike",
+     "aliases": [
+      "loggerhead shrike"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Honey buzzard",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Serpent eagle",
+     "aliases": [
+      "serpent eagle"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Bateleur",
+     "aliases": [
+      "bateleur eagle"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds-flightless",
+   "text": "Name a bird that cannot fly.",
+   "example": "like a penguin",
+   "catalogueSize": 18,
+   "catalogue": [
+    {
+     "canonical": "Penguin",
+     "aliases": [
+      "penguins",
+      "emperor penguin"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ostrich",
+     "aliases": [
+      "common ostrich"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kiwi",
+     "aliases": [
+      "kiwis"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; also fruit — cross-pack fine"
+     }
+    },
+    {
+     "canonical": "Emu",
+     "aliases": [
+      "emus"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cassowary",
+     "aliases": [
+      "southern cassowary"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Rhea",
+     "aliases": [
+      "greater rhea"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Kakapo",
+     "aliases": [
+      "owl parrot"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; our RARE BIRD canon bird — fun"
+     }
+    },
+    {
+     "canonical": "Takahe",
+     "aliases": [
+      "takahē"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Steamer duck",
+     "aliases": [
+      "Falkland steamer duck"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Weka",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Dodo",
+     "aliases": [
+      "dodos"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; extinct counts — editorial: keep, great stories"
+     }
+    },
+    {
+     "canonical": "Great auk",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; extinct"
+     }
+    },
+    {
+     "canonical": "Moa",
+     "aliases": [
+      "moas"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; extinct"
+     }
+    },
+    {
+     "canonical": "Elephant bird",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; extinct"
+     }
+    },
+    {
+     "canonical": "Inaccessible Island rail",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Galapagos cormorant",
+     "aliases": [
+      "flightless cormorant"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Nandu",
+     "aliases": [
+      "nandu"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; alias of rhea — editorial: dedupe or keep as accepted alias under Rhea"
+     }
+    },
+    {
+     "canonical": "Adelie penguin",
+     "aliases": [
+      "Adélie penguin"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; specific penguin — with PIGEON penguin present this is the rare pick"
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds-tropical",
+   "text": "Name a colourful tropical bird.",
+   "example": "like a toucan",
+   "catalogueSize": 30,
+   "catalogue": [
+    {
+     "canonical": "Toucan",
+     "aliases": [
+      "toucans",
+      "toco toucan"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Parrot",
+     "aliases": [
+      "parrots"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Macaw",
+     "aliases": [
+      "scarlet macaw"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Peacock",
+     "aliases": [
+      "peafowl"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Flamingo",
+     "aliases": [
+      "flamingos"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Bird of paradise",
+     "aliases": [
+      "birds of paradise"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lorikeet",
+     "aliases": [
+      "rainbow lorikeet"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Toucanet",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Quetzal",
+     "aliases": [
+      "resplendent quetzal"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Motmot",
+     "aliases": [
+      "blue-crowned motmot"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Mandarin duck",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier (duck in a tropical list?)"
+    },
+    {
+     "canonical": "Kingfisher",
+     "aliases": [
+      "kingfishers"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Bee-eater",
+     "aliases": [
+      "European bee-eater"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sunbird",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Leafbird",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Tanager",
+     "aliases": [
+      "scarlet tanager"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Cotinga",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Trogon",
+     "aliases": [],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Broadbill",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fairy bluebird",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Pitta",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier (also a name)"
+    },
+    {
+     "canonical": "Frigatebird",
+     "aliases": [
+      "frigate bird"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier (seabird?)"
+    },
+    {
+     "canonical": "Cockatoo",
+     "aliases": [
+      "cockatoos"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lovebird",
+     "aliases": [
+      "lovebirds"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Parakeet",
+     "aliases": [
+      "budgerigar",
+      "budgie"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Ibis",
+     "aliases": [
+      "scarlet ibis"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hoopoe",
+     "aliases": [
+      "Eurasian hoopoe"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lilac-breasted roller",
+     "aliases": [
+      "roller"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Paradise tanager",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Splendid fairywren",
+     "aliases": [
+      "fairy wren"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds-fiction",
+   "text": "Name a famous bird from fiction or TV.",
+   "example": "like Big Bird",
+   "catalogueSize": 26,
+   "catalogue": [
+    {
+     "canonical": "Big Bird",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; names-only factual references to well-known characters"
+     }
+    },
+    {
+     "canonical": "Hedwig",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Donald Duck",
+     "aliases": [],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; duck = bird — editorial: keep? teens will say it"
+     }
+    },
+    {
+     "canonical": "Tweety",
+     "aliases": [
+      "Tweety Bird",
+      "Tweety Pie"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Woodstock",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; Snoopy's bird"
+     }
+    },
+    {
+     "canonical": "Road Runner",
+     "aliases": [
+      "the Road Runner"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Daffy Duck",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Woody Woodpecker",
+     "aliases": [],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Iago",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; Aladdin parrot"
+     }
+    },
+    {
+     "canonical": "Scrooge McDuck",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Zazu",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; Lion King hornbill"
+     }
+    },
+    {
+     "canonical": "Kevin",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; Up's snipe — with example 'like Big Bird' it's guessable"
+     }
+    },
+    {
+     "canonical": "Heihei",
+     "aliases": [
+      "Hei Hei"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; Moana rooster"
+     }
+    },
+    {
+     "canonical": "Blu",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; Rio macaw"
+     }
+    },
+    {
+     "canonical": "Nigel",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; Rio villain — too generic a name alone? editorial: with Finding Nemo pelican collision — decide"
+     }
+    },
+    {
+     "canonical": "Rocco",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; unused — remove in editorial"
+     }
+    },
+    {
+     "canonical": "Foghorn Leghorn",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chocobo",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; Final Fantasy — gamer teens know it"
+     }
+    },
+    {
+     "canonical": "Pokémon's Lugia",
+     "aliases": [
+      "Lugia"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; canonicalize to Lugia"
+     }
+    },
+    {
+     "canonical": "Lugia",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "keep this one; remove the prefixed duplicate above in editorial"
+     }
+    },
+    {
+     "canonical": "Articuno",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Toucan Sam",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Count Duckula",
+     "aliases": [],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Birdo",
+     "aliases": [],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; Mario"
+     }
+    },
+    {
+     "canonical": "Pidgey",
+     "aliases": [],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Farfetch'd",
+     "aliases": [
+      "Farfetchd"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft; apostrophe normalization test case"
+     }
+    }
+   ]
+  },
+  {
+   "id": "birds-behaviour",
+   "text": "Name something birds famously do.",
+   "example": "like migrate",
+   "catalogueSize": 30,
+   "catalogue": [
+    {
+     "canonical": "Migrate",
+     "aliases": [
+      "migration",
+      "migrating"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft; verb prompt — catalogue of actions"
+     }
+    },
+    {
+     "canonical": "Sing",
+     "aliases": [
+      "singing",
+      "song"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Fly south",
+     "aliases": [
+      "fly south for winter"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Build nests",
+     "aliases": [
+      "nest building",
+      "build a nest",
+      "nest"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Lay eggs",
+     "aliases": [
+      "laying eggs"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Peck",
+     "aliases": [
+      "pecking"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hunt worms",
+     "aliases": [
+      "eat worms",
+      "find worms"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Preen",
+     "aliases": [
+      "preening"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Chirp",
+     "aliases": [
+      "chirping"
+     ],
+     "tier": "PIGEON",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Hover",
+     "aliases": [
+      "hovering",
+      "hummingbird hover"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Dive",
+     "aliases": [
+      "diving",
+      "dive-bomb"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Imitate speech",
+     "aliases": [
+      "talk",
+      "mimic words",
+      "say words"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft; parrots"
+     }
+    },
+    {
+     "canonical": "Mimic sounds",
+     "aliases": [
+      "copy sounds",
+      "mimicry"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; lyrebirds"
+     }
+    },
+    {
+     "canonical": "Dance",
+     "aliases": [
+      "courtship dance",
+      "dancing"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft; birds of paradise"
+     }
+    },
+    {
+     "canonical": "Swim",
+     "aliases": [
+      "swimming"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Wade",
+     "aliases": [
+      "wading"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Soar",
+     "aliases": [
+      "soaring",
+      "riding thermals"
+     ],
+     "tier": "SPARROW",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Flock",
+     "aliases": [
+      "flocking",
+      "murmuration"
+     ],
+     "tier": "STARLING",
+     "evidence": {
+      "note": "LLM draft"
+     },
+     "reviewFlag": "HAND LIST: verify tier"
+    },
+    {
+     "canonical": "Mob predators",
+     "aliases": [
+      "mobbing",
+      "gang up"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Use tools",
+     "aliases": [
+      "tool use"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; crows"
+     }
+    },
+    {
+     "canonical": "Solve puzzles",
+     "aliases": [
+      "problem solving"
+     ],
+     "tier": "MEGA",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Skate on ice",
+     "aliases": [
+      "slide on ice"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; steamer ducks/penguins belly-slide — editorial wording"
+     }
+    },
+    {
+     "canonical": "Belly-slide",
+     "aliases": [
+      "tobogganing"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; penguins"
+     }
+    },
+    {
+     "canonical": "Paint",
+     "aliases": [
+      "make art"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; bowerbirds decorate — editorial: rename 'decorate bowers'"
+     }
+    },
+    {
+     "canonical": "Decorate bowers",
+     "aliases": [
+      "build bowers"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    },
+    {
+     "canonical": "Sleep flying",
+     "aliases": [
+      "sleep mid-flight"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; swifts/frigatebirds"
+     }
+    },
+    {
+     "canonical": "Fly backwards",
+     "aliases": [
+      "fly in reverse"
+     ],
+     "tier": "KINGFISHER",
+     "evidence": {
+      "note": "LLM draft; hummingbirds"
+     }
+    },
+    {
+     "canonical": "Ride hippos",
+     "aliases": [
+      "ride on hippos",
+      "perch on hippos"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; oxpeckers"
+     }
+    },
+    {
+     "canonical": "Crack snails on stones",
+     "aliases": [
+      "use anvil stones"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft; song thrushes"
+     }
+    },
+    {
+     "canonical": "Hitchhike on ships",
+     "aliases": [
+      "follow ships"
+     ],
+     "tier": "RARE BIRD",
+     "evidence": {
+      "note": "LLM draft"
+     }
+    }
+   ]
+  }
+ ]
+}

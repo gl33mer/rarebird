@@ -39,7 +39,27 @@
 ## 4. Extras (outside the directive tree, flagged per §2.7 of the master instructions)
 
 - `tools/validate.mjs`, `tools/qa.html`, `tools/out/qa-*.png` — the self-QA harness and evidence. Kept in-repo intentionally so the buyer can rerun the gates.
-- `content/draft-pack-space.json`, `content/draft-pack-birds.json` — the `06` optional text deliverable (drafts, awaiting editorial pass).
+- `content/draft-pack-space.json` (8 prompts, 204 entries) and `content/draft-pack-birds.json` (6 prompts, 164 entries) — the `06` optional text deliverable. JSON-validated, deduped, every canonical self-resolves, every tier from the canonical set.
+
+## 6. Content-draft tiering rationale (per prompt, per 06 self-QA)
+
+**Space pack**
+- *planets (10)*: Mars/Jupiter/Saturn = PIGEON (first blurts), Pluto STARLING (dwarf-planet joke is the fun), Ceres/Eris deep — tier = "what a teen names first".
+- *moons (22)*: Titan/Europe up front (Dr Who/Teacher effect), Galilean mains mid, Himalia/Nereid RARE BIRD. Cross-pack ambiguity flagged (Rhea/Proteus also Greek gods — separate catalogues, no conflict).
+- *constellations (24)*: Orion + Big Dipper PIGEON; zodiac names SPARROW (teens know them as star signs); Fornax/Sextans/Volans RARE BIRD.
+- *missions/telescopes (26)*: Hubble/JWST/Apollo 11 PIGEON (current-events effect), rovers SPARROW, DART/NEAR/Ulysses RARE BIRD. Spirit/Opportunity flagged MEGA (common-words risk).
+- *astronauts/astronomers (28)*: Armstrong PIGEON, Galileo/Einstein/Hawking SPARROW, hidden-figure astronomers RARE BIRD (educational payoff). McAuliffe flagged for tone review.
+- *scifi ships (24)*: Falcon/Enterprise PIGEON. Names-only factual references (no art, no logos). Slave I flagged for modern-canon naming decision.
+- *night sky (40)*: things-not-objects prompt — stars/moon/planes PIGEON, ISS/shooting stars SPARROW, noctilucent clouds/airglow/zodiacal light RARE BIRD. Fun trap: teens say "clouds" → PIGEON by design.
+- *astro gear (30)*: helmet/suit PIGEON; the space-diaper entry is MEGA and kept deliberately — true, memorable, teen-comedy gold.
+
+**Birds pack**
+- *garden (32)*: robin/sparrow/pigeon/crow PIGEON, dunnock/treecreeper/waxwing rare end. UK/EU-tilted — editorial note: regionalize per audience later.
+- *raptors (28)*: eagle/hawk/owl PIGEON (owls ARE raptors — flagged), gyrfalcon/harpy eagle MEGA, bateleur RARE BIRD. Merlin/Kookaburra flagged (name collisions).
+- *flightless (18)*: penguin/ostrich PIGEON, dodo SPARROW (extinct kept — great reveal stories), Inaccessible Island rail RARE BIRD (the name alone is worth it).
+- *tropical (30)*: toucan/parrot/peacock/flamingo PIGEON, cotinga/pitta/fairywren RARE BIRD. Peacock flagged (arguably PIGEON-locked).
+- *fiction (26)*: Big Bird/Hedwig/Donald Duck PIGEON, Heihei/Count Duckula rare end. Names-only use of well-known characters (factual reference, no art). Lugia duplicate cleaned; Farfetch'd kept as normalization stress-test.
+- *behaviour (30)*: verb prompt with action catalogue — migrate/sing/nest PIGEON, belly-slide/hitchhike-on-hippos RARE BIRD. The "fun fact" tail is the session's story engine.
 - No files were skipped; nothing renamed.
 
 ## 5. Hand-off notes for integration (GLM-5.3 MAX)
