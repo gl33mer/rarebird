@@ -215,6 +215,7 @@ function startWriting(room) {
     roundIndex: room.roundIndex, roundId: prompt.id, prompt: view,
     durationMs: room.settings.roundMs, endsAt: room.phaseEndsAt, serverNow: now(),
     totalRounds: room.prompts.length, theme: room.settings.theme,
+    final: room.roundIndex === room.prompts.length - 1,
     modifier: modifier ? { type: modifier, banned: modifier === 'blacklist' ? room.bannedAnswer : null } : null,
   });
   broadcast(room, 'state', { room: publicRoom(room) });
@@ -233,6 +234,9 @@ function endWriting(room, reason = 'timer') {
   const prompt = room.prompts[room.roundIndex];
   const validSubs = [...room.submissions.values()].filter(s => s.status === 'locked').map(s => ({ playerId: s.playerId, nickname: s.nickname, raw: s.confirmed ?? s.raw, submittedAtMs: s.atMs, wager: !!s.wager }));
   const computed = scoreRound(prompt, validSubs, room.settings.roundMs, { wagers: 'topcall', split: 'on' });
+  if (room.roundIndex === room.prompts.length - 1) {
+    for (const row of computed) row.pts = row.pts * 2; // FINAL ROUND double points (LL-9)
+  }
   if (room.settings.feathers === 'on' && room.feathers) {
     for (const row of computed) {
       if (row.wagered && row.wagerOutcome === 'doubled' && room.feathers.has(row.playerId)) {
@@ -249,7 +253,7 @@ function endWriting(room, reason = 'timer') {
   room.phase = 'reveal';
   room.phaseEndsAt = now() + room.settings.revealMs;
   const revealRows = allRows.map(r => ({
-    nickname: r.nickname, typed: displayClean(r.typed), canonical: r.entry?.canonical ?? null,
+    playerId: r.playerId, nickname: r.nickname, typed: displayClean(r.typed), canonical: r.entry?.canonical ?? null,
     tier: r.entry?.tier ?? null, pts: r.pts, base: r.base ?? null, wagered: r.wagered ?? false, wagerOutcome: r.wagerOutcome ?? null,
     timedOut: r.timedOut ?? false, twins: r.twins ?? 0, splitOf: r.splitOf ?? 0,
     rarityPct: r.entry?.evidence?.rarityPct ?? null,
@@ -464,6 +468,11 @@ wss.on('connection', (socket, req) => {
         room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3])); // economy: 3/game (D-37)
         room.ready = new Set();
         room.prompts = pickPrompts(room.settings.rounds);
+        try { // final round = niche prompt (LL-5)
+          const niche = JSON.parse(readFileSync(new URL('./pack-niche.json', import.meta.url), 'utf8'));
+          const pick = niche.prompts[Math.floor(Math.random() * niche.prompts.length)];
+          room.prompts[room.prompts.length - 1] = pick;
+        } catch {}
         // mystery modifier: exactly one random non-first round (D-41)
         const mods = ['blind', 'doublefeathers', 'blacklist'];
         room.modifierRound = room.settings.rounds > 1 ? 1 + Math.floor(Math.random() * (room.settings.rounds - 1)) : -1;

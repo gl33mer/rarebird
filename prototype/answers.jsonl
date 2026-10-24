@@ -663,3 +663,9 @@
 {"ts":"2026-10-24T20:15:50.592Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
 {"ts":"2026-10-24T20:16:03.639Z","promptId":"sci-elements","canonical":"Terbium","tier":"MEGA"}
 {"ts":"2026-10-24T20:16:04.092Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T20:52:55.521Z","promptId":"cheeses","canonical":"Stilton","tier":"MEGA"}
+{"ts":"2026-10-24T20:52:55.880Z","promptId":"cheeses","canonical":"Cheddar","tier":"PIGEON"}
+{"ts":"2026-10-24T20:53:08.952Z","promptId":"school-subjects","canonical":"Forensics","tier":"MEGA"}
+{"ts":"2026-10-24T20:53:09.314Z","promptId":"school-subjects","canonical":"Mathematics","tier":"PIGEON"}
+{"ts":"2026-10-24T20:53:22.471Z","promptId":"niche-phobias","canonical":"Velcro","tier":"RARE BIRD"}
+{"ts":"2026-10-24T20:53:22.830Z","promptId":"niche-phobias","canonical":"Heights","tier":"PIGEON"}

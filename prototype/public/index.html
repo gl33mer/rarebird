@@ -448,7 +448,47 @@ function connect(cb) {
   };
 }
 const send = o => ws && ws.readyState === 1 && ws.send(JSON.stringify({ v: V, ...o }));
-// ---- Life List (local-only collection, D-37/D-30) ----
+// ---- Living Ladder (LL): right-edge scoreboard, markers climb at reveal ----
+  const LL = {
+    colors: ['#FFD166', '#43D8B0', '#6FC3DF', '#FF5D8F', '#B48CFF', '#FF8A5C'],
+    built: false,
+    build(players) {
+      const el = document.getElementById('living-ladder');
+      if (!el || !BOLD.enabled) return;
+      el.innerHTML = '';
+      const zones = ['LOW', 'OPEN', 'THERMALS', 'CLOUDS', 'STRATO', 'STARS'];
+      zones.forEach((z, i) => {
+        const d = document.createElement('div');
+        d.className = 'll-zone';
+        d.style.bottom = `${(i / 6) * 100}%`;
+        d.innerHTML = `<span>${z}</span>`;
+        el.appendChild(d);
+      });
+      players.forEach((p, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'll-dot'; dot.dataset.pid = p.pid;
+        dot.style.background = this.colors[i % 6];
+        dot.style.bottom = '2%';
+        dot.textContent = p.nick[0].toUpperCase();
+        el.appendChild(dot);
+      });
+      this.built = true;
+    },
+    update(players, altByPid) {
+      if (!this.built) return;
+      const el = document.getElementById('living-ladder');
+      players.forEach(p => {
+        const dot = el.querySelector(`.ll-dot[data-pid="${p.pid}"]`);
+        if (!dot) return;
+        const alt = altByPid[p.pid] ?? 0.02;
+        dot.style.bottom = `${Math.max(2, Math.min(96, alt * 96))}%`;
+      });
+    },
+    pulse(pid) { const d = document.getElementById('living-ladder')?.querySelector(`.ll-dot[data-pid="${pid}"]`); if (d) { d.classList.add('locked'); setTimeout(() => d.classList.remove('locked'), 2500); } },
+    shimmer(pid) { const d = document.getElementById('living-ladder')?.querySelector(`.ll-dot[data-pid="${pid}"]`); if (d) { d.classList.add('shimmer'); setTimeout(() => d.classList.remove('shimmer'), 2200); } },
+  };
+
+  // ---- Life List (local-only collection, D-37/D-30) ----
 const LIFELIST_KEY = 'rarebird-lifelist';
 function lifeListGet() { try { return JSON.parse(localStorage.getItem(LIFELIST_KEY) || '[]'); } catch { return []; } }
 function lifeListEarn(canonical, tier, promptId, promptText) {
@@ -610,6 +650,7 @@ function hideCountdown() { const ov = $('countdown-overlay'); if (ov) ov.classLi
 
 function renderState(room) {
   lastRoomState = room;
+  LL.build(room.players);
   // economy HUD: every phase (round screen shows it live)
   if (room.feathersOn && room.feathers && my.pid) {
     const [icon, name] = theme.id === 'cosmos' ? ['⭐', 'Starlight'] : ['🪶', 'Feathers'];
@@ -680,12 +721,20 @@ function startRound(m) {
   window.__lastSize = m.prompt.size;
   const chip = $('modifier-chip');
   const instr = $('modifier-instructions');
+  let finalShown = false;
+  if (m.final) {
+    finalShown = true;
+    chip.style.display = 'block';
+    chip.textContent = '🏁 FINAL ROUND — DOUBLE POINTS';
+    instr.style.display = 'block';
+    instr.textContent = 'Niche question — the rarest flight wins it all.';
+  }
   const modLines = {
     blind: ['🎲 BLIND ROUND', 'No hints, no counts — say the first true thing you believe.'],
     doublefeathers: ['🎲 DOUBLE FEATHERS', 'Doubled Top Calls refund double feathers this round.'],
     blacklist: [`🎲 BLACKLIST — ${m.modifier ? m.modifier.banned : ''} is grounded!`, `Anyone who says ${m.modifier ? m.modifier.banned : 'it'} scores nothing this round.`],
   };
-  if (m.modifier) {
+  if (m.modifier && !finalShown) {
     chip.style.display = 'block';
     const [head, body] = modLines[m.modifier.type] ?? ['🎲 SPECIAL ROUND', ''];
     chip.textContent = head;
@@ -729,6 +778,7 @@ function startRound(m) {
 function ack(m) {
   if (m.status === 'locked') {
     $('locked-msg').textContent = `✓ ${m.canonical} — locked in. Watch the sky…`;
+    LL.pulse(my.pid);
     $('answer').disabled = true; $('btn-send').disabled = true;
     $('confirm-chip').style.display = 'none'; $('answer-feedback').textContent = '';
     if ($('wager-chip') && !$('wager-chip').dataset.used) $('wager-chip').style.display = 'flex';
@@ -876,6 +926,10 @@ function renderReveal(m) {
       { transform: `translateY(${flyFrom * 0.25}px)`, opacity: 1, offset: .45 },
       { transform: 'translateY(0)', opacity: 1 },
     ], { duration: 950, delay, easing: 'cubic-bezier(.22,.9,.28,1)', fill: 'forwards' });
+    const altByPid = {};
+    group.forEach(x => { altByPid[x.playerId] = FX.TIER_LADDER[name].alt; });
+    LL.update(lastRoomState?.players ?? [], altByPid);
+    if (group.length === 1) LL.shimmer(group[0].playerId);
     for (const x of group) if (x.nickname === myNick) {
       lifeList += x.pts;
       if (lifeListEarn(first.canonical, name, lastPromptId, (document.getElementById('prompt-text')?.textContent ?? '')) && !reducedMotionCheck()) {
