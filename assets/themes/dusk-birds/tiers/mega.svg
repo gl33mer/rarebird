@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD dusk-birds MEGA (85) — original bird-of-paradise display, crest fan. Tier #FFC53D -->
+  <g stroke="#8A5A16" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- crest fan: ray feathers behind head -->
+    <g fill="#FFC53D">
+      <path d="M196 150 L150 44 L206 128 Z"/>
+      <path d="M216 140 L196 24 L244 122 Z"/>
+      <path d="M240 134 L248 18 L282 124 Z"/>
+      <path d="M264 138 L300 30 L310 132 Z"/>
+      <path d="M284 150 L344 58 L330 152 Z"/>
+    </g>
+    <g fill="#FF8A5C">
+      <path d="M206 128 L178 64 L228 130 Z"/>
+      <path d="M248 122 L258 40 L284 126 Z"/>
+      <path d="M296 146 L330 76 L324 150 Z"/>
+    </g>
+    <!-- wire tail curves -->
+    <path d="M336 330 Q428 336 452 268 Q458 250 442 262 Q420 312 340 314 Z" fill="#E8A020"/>
+    <path d="M342 352 Q436 372 470 310" stroke-width="9" fill="none" stroke="#E8A020"/>
+    <circle cx="472" cy="302" r="12" fill="#FF8A5C"/>
+    <!-- body upright, wings slightly spread -->
+    <path d="M182 306 Q182 218 262 214 Q344 218 342 306 Q340 380 260 384 Q184 380 182 306 Z" fill="#FFC53D"/>
+    <!-- breast shield -->
+    <path d="M204 288 Q216 366 262 372 Q308 366 318 288 Q290 316 262 314 Q232 316 204 288 Z" fill="#8A2F3B" stroke="none" opacity="0.92"/>
+    <!-- spread wing tips -->
+    <path d="M186 262 Q120 250 96 202 Q156 210 200 236 Z" fill="#E8A020"/>
+    <path d="M338 262 Q404 250 428 202 Q368 210 324 236 Z" fill="#E8A020"/>
+    <!-- head small, on the fan -->
+    <circle cx="262" cy="176" r="46" fill="#FFC53D"/>
+    <!-- thin curved beak -->
+    <path d="M222 178 L164 170 Q158 172 166 180 L222 190 Q216 184 222 178 Z" fill="#5C3A10"/>
+    <!-- eye confident -->
+    <circle cx="248" cy="168" r="12" fill="#FFF9EC"/>
+    <circle cx="252" cy="170" r="6" fill="#2A2F3C" stroke="none"/>
+    <!-- dancer legs -->
+    <path d="M238 382 L230 424 M230 424 L214 434 M230 424 L232 440 M230 424 L248 432" fill="none" stroke="#B0552F" stroke-width="9"/>
+    <path d="M286 382 L294 424 M294 424 L310 432 M294 424 L294 442 M294 424 L278 434" fill="none" stroke="#B0552F" stroke-width="9"/>
+  </g>
+  <!-- sparkle -->
+  <path d="M96 96 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6 Z" fill="#FFF4D6"/>
+  <path d="M436 120 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 Z" fill="#FFF4D6" opacity="0.85"/>
+</svg>

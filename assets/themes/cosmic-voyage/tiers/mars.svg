@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage STARLING (30) — rust Mars, dust devil, teal atmosphere rim. Tier #6FC3DF -->
+  <defs>
+    <radialGradient id="marsglow" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0.75" stop-color="#C4573A"/>
+      <stop offset="1" stop-color="#9E4128"/>
+    </radialGradient>
+  </defs>
+  <g stroke="#5E2A18" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- planet -->
+    <circle cx="256" cy="266" r="168" fill="url(#marsglow)"/>
+    <!-- teal atmosphere rim (tier accent) -->
+    <path d="M96 240 A168 168 0 0 1 404 218" stroke-width="10" fill="none" stroke="#6FC3DF" opacity="0.85"/>
+    <!-- polar cap -->
+    <path d="M196 122 Q226 104 258 106 Q296 108 318 128 Q286 146 252 144 Q216 142 196 122 Z" fill="#F4E9E2" stroke-width="6"/>
+    <!-- dark basalt regions -->
+    <path d="M150 250 Q196 236 224 262 Q200 292 158 288 Q144 268 150 250 Z" fill="#A34629" stroke="none" opacity="0.9"/>
+    <path d="M300 320 Q348 306 376 330 Q352 362 306 356 Q292 338 300 320 Z" fill="#A34629" stroke="none" opacity="0.9"/>
+    <path d="M232 350 Q258 344 272 358 Q254 376 230 368 Z" fill="#A34629" stroke="none" opacity="0.7"/>
+    <!-- little canyon -->
+    <path d="M282 196 L344 210 L338 224 L282 212 Z" fill="#8F3A22" stroke="none"/>
+    <!-- dust devil -->
+    <path d="M366 148 Q388 128 380 100 Q376 84 386 70" stroke-width="8" fill="none" stroke="#E8B49A" opacity="0.9"/>
+    <path d="M384 152 Q410 130 404 96" stroke-width="6" fill="none" stroke="#E8B49A" opacity="0.6"/>
+  </g>
+  <!-- passing moonlet -->
+  <circle cx="420" cy="120" r="11" fill="#9FB0CC"/>
+</svg>

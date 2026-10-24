@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage MEGA extra — tall curious alien holding a star chart. Tier #FFC53D accent -->
+  <g stroke="#3E3358" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tall body -->
+    <path d="M216 460 Q204 330 232 268 Q244 240 268 236 Q296 234 308 264 Q330 330 318 460 Z" fill="#B9A8E8"/>
+    <!-- belly swirl -->
+    <path d="M244 340 Q266 326 288 342 Q268 362 244 350 Z" fill="#9C8BD1" stroke="none"/>
+    <!-- long neck + head -->
+    <path d="M262 238 L258 200" stroke-width="9"/>
+    <path d="M222 176 Q220 128 262 122 Q304 118 302 168 Q300 204 262 206 Q226 206 222 176 Z" fill="#B9A8E8"/>
+    <!-- two antennae with bulbs -->
+    <path d="M240 128 Q228 96 210 88" stroke-width="7" fill="none"/>
+    <circle cx="204" cy="84" r="9" fill="#FFC53D"/>
+    <path d="M284 126 Q298 94 316 88" stroke-width="7" fill="none"/>
+    <circle cx="322" cy="84" r="9" fill="#FFC53D"/>
+    <!-- three curious eyes -->
+    <circle cx="244" cy="164" r="12" fill="#F2FBF8"/>
+    <circle cx="263" cy="158" r="14" fill="#F2FBF8"/>
+    <circle cx="282" cy="164" r="12" fill="#F2FBF8"/>
+    <circle cx="245" cy="166" r="5.5" fill="#20242E" stroke="none"/>
+    <circle cx="264" cy="160" r="6.5" fill="#20242E" stroke="none"/>
+    <circle cx="283" cy="166" r="5.5" fill="#20242E" stroke="none"/>
+    <!-- tiny smile -->
+    <path d="M250 190 Q262 198 276 190" stroke-width="5" fill="none"/>
+    <!-- arms: one holding the star chart, one pointing up -->
+    <path d="M232 300 Q196 300 178 274" stroke-width="10" fill="none"/>
+    <path d="M308 296 Q344 286 356 260" stroke-width="10" fill="none"/>
+    <!-- star chart scroll -->
+    <rect x="128" y="238" width="96" height="74" rx="10" fill="#FFF4D6"/>
+    <path d="M148 262 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" fill="#FFC53D" stroke="none"/>
+    <circle cx="196" cy="256" r="5" fill="#6FC3DF" stroke="none"/>
+    <circle cx="186" cy="292" r="4" fill="#FF5D8F" stroke="none"/>
+    <path d="M150 292 Q170 276 196 286" stroke-width="3.5" fill="none" stroke="#9FB0CC" stroke-dasharray="3 5"/>
+    <!-- pointing finger star -->
+    <path d="M362 244 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z" fill="#FFC53D" stroke="none"/>
+    <!-- feet -->
+    <path d="M236 458 Q236 478 256 478 Q276 478 276 458" fill="#9C8BD1"/>
+    <path d="M282 458 Q282 478 302 478 Q320 478 318 458" fill="#9C8BD1"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage ambient: Earth, approachable, perfect-round silhouette (app scales it each round) -->
+  <g stroke="#2E4A6E" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="256" cy="256" r="196" fill="#3E8EDE"/>
+    <g stroke="none">
+      <!-- continents, soft -->
+      <path d="M150 150 Q190 118 236 130 Q266 140 258 170 Q244 200 204 204 Q166 206 148 182 Q140 164 150 150 Z" fill="#5FBF7A"/>
+      <path d="M296 108 Q346 104 372 138 Q388 164 366 184 Q332 200 302 182 Q278 160 286 132 Q290 116 296 108 Z" fill="#5FBF7A"/>
+      <path d="M330 260 Q380 252 404 286 Q416 312 396 334 Q362 356 330 336 Q306 312 312 284 Q318 268 330 260 Z" fill="#5FBF7A"/>
+      <path d="M180 300 Q224 288 254 312 Q272 334 254 358 Q226 384 188 368 Q158 348 164 320 Q170 306 180 300 Z" fill="#5FBF7A"/>
+      <path d="M240 402 Q270 396 288 412 Q276 432 246 430 Q230 420 240 402 Z" fill="#5FBF7A"/>
+      <!-- clouds -->
+      <g fill="#FFFFFF" opacity="0.55">
+        <ellipse cx="200" cy="240" rx="56" ry="16"/>
+        <ellipse cx="330" cy="210" rx="44" ry="13"/>
+        <ellipse cx="280" cy="360" rx="60" ry="15"/>
+      </g>
+    </g>
+    <!-- gentle glow rim -->
+    <circle cx="256" cy="256" r="196" fill="none" stroke="#9FC3FF" stroke-width="8" opacity="0.55"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420">
+  <!-- RAREBIRD dusk-birds podium 1st: gilded branch with crest pennant -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M20 220 Q120 168 226 196 Q330 220 382 178" stroke-width="16" fill="none" stroke="#8A5A16"/>
+    <path d="M120 190 Q160 150 208 148" stroke-width="10" fill="none" stroke="#8A5A16"/>
+    <!-- leaves -->
+    <g fill="#43D8B0" stroke-width="5">
+      <path d="M96 196 q22 -26 44 -6 q-24 16 -44 6 Z"/>
+      <path d="M180 168 q24 -22 46 -4 q-26 14 -46 4 Z"/>
+      <path d="M300 208 q24 -20 46 -2 q-26 14 -46 2 Z"/>
+    </g>
+    <!-- gold pennant on twig -->
+    <path d="M208 148 L208 84" stroke-width="8" stroke="#8A5A16"/>
+    <path d="M208 84 L276 100 L208 120 Z" fill="#FFC53D"/>
+    <!-- perch cushion -->
+    <ellipse cx="200" cy="216" rx="52" ry="16" fill="#FFD166"/>
+    <!-- sparkles -->
+    <path d="M330 120 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 Z" fill="#FFC53D" stroke="none"/>
+    <circle cx="70" cy="150" r="6" fill="#FFE9A8" stroke="none"/>
+  </g>
+</svg>

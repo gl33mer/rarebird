@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420">
+  <!-- RAREBIRD dusk-birds podium 2nd: sturdy oak branch (number drawn as strokes, no baked text) -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M30 230 Q140 190 250 212 Q330 226 376 196" stroke-width="15" fill="none" stroke="#6E7A55"/>
+    <path d="M150 206 Q180 176 224 170" stroke-width="9" fill="none" stroke="#6E7A55"/>
+    <g fill="#A4B787" stroke-width="5">
+      <path d="M120 214 q20 -24 42 -6 q-22 16 -42 6 Z"/>
+      <path d="M226 184 q22 -20 44 -2 q-24 14 -44 2 Z"/>
+      <path d="M310 214 q22 -18 44 0 q-24 13 -44 0 Z"/>
+    </g>
+    <!-- silver medal tag with stroke-drawn 2 -->
+    <circle cx="224" cy="140" r="26" fill="#C7CEDB"/>
+    <path d="M212 130 Q212 120 224 120 Q236 120 236 130 Q236 138 212 152 L238 152" stroke-width="6" fill="none" stroke="#3E4658"/>
+    <!-- perch pad -->
+    <ellipse cx="210" cy="228" rx="48" ry="14" fill="#A4B787"/>
+  </g>
+</svg>

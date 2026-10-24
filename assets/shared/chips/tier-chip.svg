@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72">
+  <!-- RAREBIRD shared: parametric tier chip. App tints the notch + fill per tier; app renders all text. -->
+  <g stroke-linejoin="round">
+    <!-- body -->
+    <rect x="1.5" y="1.5" width="217" height="69" rx="16" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.16)" stroke-width="2"/>
+    <!-- tier notch (app recolours via CSS variable or <use> wrapper) -->
+    <path d="M1.5 17.5 Q1.5 1.5 17.5 1.5 L34 1.5 L34 70.5 L17.5 70.5 Q1.5 70.5 1.5 54.5 Z" fill="currentColor"/>
+    <!-- subtle inner sheen -->
+    <rect x="6" y="5" width="208" height="26" rx="12" fill="#FFFFFF" opacity="0.05"/>
+    <!-- icon slot hint (app places 24px sprite at x=44) and text zone centre-left -->
+    <circle cx="44" cy="36" r="0.5" fill="none"/>
+  </g>
+</svg>

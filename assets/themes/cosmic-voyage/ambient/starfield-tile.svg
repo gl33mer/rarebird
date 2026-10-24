@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260">
+  <!-- RAREBIRD cosmic-voyage ambient: seamless 512-tileable starfield -->
+  <!-- stars kept inside 8%-92% so edges wrap seamlessly by construction -->
+  <g fill="#EEF3F7">
+    <circle cx="60" cy="60" r="2.8"/><circle cx="200" cy="40" r="1.4" opacity="0.7"/>
+    <circle cx="330" cy="90" r="3.2"/><circle cx="450" cy="50" r="1.6" opacity="0.6"/>
+    <circle cx="120" cy="150" r="1.8" opacity="0.8"/><circle cx="260" cy="180" r="3"/>
+    <circle cx="400" cy="150" r="1.5" opacity="0.6"/><circle cx="480" cy="200" r="2.8"/>
+    <circle cx="80" cy="260" r="1.5" opacity="0.55"/><circle cx="220" cy="300" r="3.2"/>
+    <circle cx="350" cy="270" r="1.8" opacity="0.7"/><circle cx="460" cy="320" r="1.4" opacity="0.5"/>
+    <circle cx="150" cy="400" r="2.8"/><circle cx="290" cy="430" r="1.6" opacity="0.65"/>
+    <circle cx="410" cy="410" r="3"/><circle cx="40" cy="460" r="1.5" opacity="0.5"/>
+    <circle cx="240" cy="480" r="1.8" opacity="0.75"/><circle cx="370" cy="480" r="1.3" opacity="0.5"/>
+  </g>
+  <!-- two 4-point sparkles -->
+  <g fill="#EEF3F7">
+    <path d="M300 120 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" opacity="0.95"/>
+    <path d="M170 340 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z" opacity="0.8"/>
+  </g>
+  <!-- one tinted star for warmth -->
+  <circle cx="500" cy="380" r="2" fill="#FFD166" opacity="0.9"/>
+  <circle cx="100" cy="90" r="1.8" fill="#9FC3FF" opacity="0.8"/>
+</svg>

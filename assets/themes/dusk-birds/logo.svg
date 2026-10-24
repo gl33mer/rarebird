@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200">
+  <!-- RAREBIRD wordmark: RARE (ink) + BIRD (tier gold), bird perched on the final R, hand-rounded letters -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- RARE -->
+    <g fill="none" stroke="#EEF3F7" stroke-width="14">
+      <path d="M42 168 L42 56 Q42 40 58 40 L86 40 Q104 40 104 60 Q104 78 86 80 L60 80 M60 80 L104 168"/>
+      <path d="M128 168 L128 40 L172 40 Q192 40 192 62 Q192 84 172 84 L128 84 M128 84 L192 168"/>
+      <path d="M216 168 L216 40 L272 40 M216 102 L258 102 M216 40 L216 168"/>
+      <path d="M296 40 L352 168 M352 40 L296 168 M306 116 L342 116"/>
+    </g>
+    <!-- BIRD in gold -->
+    <g fill="none" stroke="#FFC53D" stroke-width="14">
+      <path d="M400 40 L400 168 M400 40 L440 40 Q462 40 462 62 Q462 84 440 84 L400 84 M400 84 L462 168"/>
+      <path d="M488 40 L488 168 M488 40 L520 40 Q548 40 548 104 Q548 168 520 168 L488 168"/>
+      <path d="M574 168 L574 40 L604 40 Q626 40 626 104 Q626 168 604 168 Z"/>
+    </g>
+    <!-- little bird perched on final D -->
+    <g stroke="#FF5D8F" stroke-width="7" fill="#FF5D8F">
+      <path d="M600 40 q2 -18 20 -18 q18 0 18 16 q0 8 -8 12 l6 10 q-16 4 -26 -4 q-12 -8 -10 -16 Z" stroke-width="5"/>
+      <circle cx="624" cy="30" r="2.6" fill="#EEF3F7" stroke="none"/>
+      <path d="M612 44 L604 48 L614 50 Z" stroke-width="4"/>
+    </g>
+    <!-- spark -->
+    <path d="M372 30 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z" fill="#FFC53D"/>
+  </g>
+</svg>

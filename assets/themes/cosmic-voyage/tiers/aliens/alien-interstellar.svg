@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage RARE BIRD extra — greeting committee: two small aliens on a rock. Tier #FF5D8F -->
+  <g stroke="#5E2437" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- small rock pedestal -->
+    <path d="M150 430 Q166 388 254 384 Q346 382 366 430 Q374 452 350 456 L166 456 Q144 450 150 430 Z" fill="#6B7689"/>
+    <!-- ALIEN 1: round pink, both arms up in welcome -->
+    <path d="M196 268 Q194 218 234 214 Q274 216 272 266 Q270 306 234 308 Q198 306 196 268 Z" fill="#FF5D8F"/>
+    <path d="M212 218 Q202 190 214 172" stroke-width="6" fill="none"/>
+    <circle cx="217" cy="166" r="8" fill="#FFD166"/>
+    <ellipse cx="230" cy="258" rx="20" ry="22" fill="#F2FBF8"/>
+    <circle cx="232" cy="261" r="10" fill="#20242E" stroke="none"/>
+    <circle cx="224" cy="252" r="3.5" fill="#FFFFFF" stroke="none"/>
+    <path d="M220 292 Q234 300 250 292" stroke-width="5" fill="none"/>
+    <path d="M198 246 Q176 226 178 204" stroke-width="9" fill="none"/>
+    <path d="M272 246 Q296 228 296 206" stroke-width="9" fill="none"/>
+    <circle cx="296" cy="198" r="10" fill="#FF5D8F"/>
+    <!-- ALIEN 2: lavender, shy wave -->
+    <path d="M296 300 Q296 258 328 254 Q360 258 360 300 Q358 330 328 332 Q298 330 296 300 Z" fill="#B9A8E8"/>
+    <path d="M312 258 Q306 236 316 224" stroke-width="6" fill="none"/>
+    <circle cx="319" cy="219" r="7" fill="#FFD166"/>
+    <ellipse cx="324" cy="292" rx="15" ry="17" fill="#F2FBF8"/>
+    <circle cx="325" cy="294" r="7.5" fill="#20242E" stroke="none"/>
+    <path d="M316 318 Q328 324 340 318" stroke-width="5" fill="none"/>
+    <path d="M358 292 Q378 280 378 262" stroke-width="8" fill="none"/>
+    <!-- shared banner between them -->
+    <path d="M204 348 Q262 330 330 350" stroke-width="8" fill="none" stroke="#FFD166"/>
+    <!-- confetti stars -->
+    <path d="M150 210 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z" fill="#DCEBF5" stroke="none"/>
+    <path d="M386 240 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 Z" fill="#FFD166" stroke="none"/>
+    <circle cx="420" cy="180" r="5" fill="#FF5D8F" stroke="none"/>
+  </g>
+</svg>

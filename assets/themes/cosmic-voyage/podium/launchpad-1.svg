@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420">
+  <!-- RAREBIRD cosmic-voyage podium 1st: full launch pad with gold gantry ring -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M60 340 L110 250 L290 250 L340 340 Z" fill="#4E6B8F"/>
+    <rect x="40" y="340" width="320" height="34" rx="12" fill="#8D99AE"/>
+    <!-- gantry tower -->
+    <path d="M320 250 L320 96 M348 250 L348 110 M320 110 L348 110 M322 150 L348 150 M324 190 L348 190 M326 230 L348 230" stroke-width="9" fill="none" stroke="#8D99AE"/>
+    <!-- gold winner ring -->
+    <ellipse cx="200" cy="248" rx="88" ry="20" fill="none" stroke="#FFC53D" stroke-width="10"/>
+    <path d="M296 226 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 Z" fill="#FFC53D" stroke="none"/>
+    <!-- pad lights -->
+    <circle cx="120" cy="332" r="8" fill="#3DDC97"/>
+    <circle cx="280" cy="332" r="8" fill="#3DDC97"/>
+  </g>
+</svg>

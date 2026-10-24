@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage MEGA (85) — icy Kuiper comet, gold tail. Tier #FFC53D -->
+  <defs>
+    <linearGradient id="comettail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFC53D" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#FFC53D" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFC53D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="comettail2" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#DCEBF5" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#DCEBF5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- twin tails: gold dust + pale ion -->
+  <path d="M180 336 Q280 300 470 74 Q480 62 474 84 Q430 260 232 368 Z" fill="url(#comettail)"/>
+  <path d="M160 322 Q240 260 420 40 Q434 28 426 52 Q380 226 208 348 Z" fill="url(#comettail2)" opacity="0.8"/>
+  <g stroke="#2F5A6E" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- icy nucleus with craters -->
+    <path d="M120 296 Q108 240 164 216 Q226 194 258 248 Q284 300 236 336 Q176 372 134 340 Q122 320 120 296 Z" fill="#DCEBF5"/>
+    <path d="M188 248 Q206 232 226 244 Q244 258 232 278 Q212 294 192 280 Q180 262 188 248 Z" fill="#B8D8EC"/>
+    <circle cx="160" cy="308" r="13" fill="#B8D8EC"/>
+    <circle cx="222" cy="312" r="8" fill="#B8D8EC"/>
+    <!-- sparkle points in tail -->
+    <path d="M330 180 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5 Z" fill="#FFC53D" stroke="none"/>
+    <path d="M392 108 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 Z" fill="#FFC53D" stroke="none" opacity="0.9"/>
+    <circle cx="288" cy="140" r="5" fill="#DCEBF5" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD dusk-birds STARLING (30) — banking mid-turn, iridescent sheen. Tier #6FC3DF -->
+  <g stroke="#2F5A6E" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- upper wing (raised) -->
+    <path d="M262 208 Q286 96 396 84 Q356 150 330 224 Z" fill="#4E93B5"/>
+    <path d="M296 176 Q330 130 376 108" stroke-width="5" stroke="#3E7A96" fill="none"/>
+    <!-- tail: short, fanned -->
+    <path d="M330 322 L426 352 Q440 358 424 368 L342 386 Z" fill="#4E93B5"/>
+    <!-- body: tilted banking -->
+    <path d="M160 300 Q176 218 268 216 Q352 218 344 300 Q336 368 250 368 Q166 366 160 300 Z" fill="#6FC3DF"/>
+    <!-- belly -->
+    <path d="M188 316 Q206 360 258 362 Q222 380 194 348 Z" fill="#BFE6F2" stroke="none"/>
+    <!-- lower wing (downbeat) -->
+    <path d="M240 300 Q206 388 118 408 Q150 336 200 272 Z" fill="#4E93B5"/>
+    <path d="M212 330 Q182 372 142 392" stroke-width="5" stroke="#3E7A96" fill="none"/>
+    <!-- head -->
+    <circle cx="176" cy="196" r="52" fill="#6FC3DF"/>
+    <!-- iridescent sheen -->
+    <path d="M204 232 Q226 250 244 254 Q218 266 200 250 Q196 240 204 232 Z" fill="#8F7FD8" stroke="none" opacity="0.9"/>
+    <path d="M236 262 Q256 276 268 278 Q248 288 234 276 Z" fill="#8F7FD8" stroke="none" opacity="0.6"/>
+    <!-- slender beak -->
+    <path d="M128 188 L70 196 L130 206 Q124 196 128 188 Z" fill="#3E4658"/>
+    <!-- eye determined -->
+    <circle cx="162" cy="186" r="13" fill="#FFF9EC"/>
+    <circle cx="166" cy="188" r="6.5" fill="#20242E" stroke="none"/>
+    <!-- motion swoosh -->
+    <path d="M84 258 Q120 250 148 262" stroke-width="6" fill="none" stroke="#9FB0CC" opacity="0.7"/>
+    <path d="M70 292 Q112 282 144 296" stroke-width="6" fill="none" stroke="#9FB0CC" opacity="0.45"/>
+  </g>
+</svg>

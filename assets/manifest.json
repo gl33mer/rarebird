@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "generator": "GLM-5.3 (MAX)",
+  "generated": "2026-10-24",
+  "themes": {
+    "dusk-birds": {
+      "label": "Dusk Birds",
+      "tiers": {
+        "PIGEON":     { "sprite": "themes/dusk-birds/tiers/pigeon.svg",     "flavor": "Pigeon" },
+        "SPARROW":    { "sprite": "themes/dusk-birds/tiers/sparrow.svg",    "flavor": "Sparrow" },
+        "STARLING":   { "sprite": "themes/dusk-birds/tiers/starling.svg",   "flavor": "Starling" },
+        "KINGFISHER": { "sprite": "themes/dusk-birds/tiers/kingfisher.svg", "flavor": "Kingfisher" },
+        "MEGA":       { "sprite": "themes/dusk-birds/tiers/mega.svg",       "flavor": "Mega" },
+        "RARE BIRD":  { "sprite": "themes/dusk-birds/tiers/rare-bird.svg",  "flavor": "Rare Bird" }
+      },
+      "ambient": {
+        "skyBands": "themes/dusk-birds/ambient/sky-bands.svg",
+        "clouds": ["themes/dusk-birds/ambient/dusk-clouds-1.svg", "themes/dusk-birds/ambient/dusk-clouds-2.svg"],
+        "groundLine": "themes/dusk-birds/ambient/tree-line.svg",
+        "countdown": "themes/dusk-birds/countdown/flock-silhouette.svg"
+      },
+      "podium": ["themes/dusk-birds/podium/perch-1.svg", "themes/dusk-birds/podium/perch-2.svg", "themes/dusk-birds/podium/perch-3.svg"],
+      "burst": "themes/dusk-birds/bursts/feather.svg",
+      "logo": "themes/dusk-birds/logo.svg",
+      "logoMark": "themes/dusk-birds/logo-mark.svg"
+    },
+    "cosmic-voyage": {
+      "label": "Cosmic Voyage",
+      "tiers": {
+        "PIGEON":     { "sprite": "themes/cosmic-voyage/tiers/low-orbit.svg",    "flavor": "Low orbit" },
+        "SPARROW":    { "sprite": "themes/cosmic-voyage/tiers/the-moon.svg",     "flavor": "The Moon" },
+        "STARLING":   { "sprite": "themes/cosmic-voyage/tiers/mars.svg",         "flavor": "Mars" },
+        "KINGFISHER": { "sprite": "themes/cosmic-voyage/tiers/jupiter.svg",      "flavor": "Jupiter" },
+        "MEGA":       { "sprite": "themes/cosmic-voyage/tiers/kuiper-belt.svg",  "flavor": "Kuiper Belt", "extraSprite": "themes/cosmic-voyage/tiers/aliens/alien-mega.svg" },
+        "RARE BIRD":  { "sprite": "themes/cosmic-voyage/tiers/interstellar.svg", "flavor": "Interstellar", "extraSprite": "themes/cosmic-voyage/tiers/aliens/alien-interstellar.svg" }
+      },
+      "ambient": {
+        "starfieldTile": "themes/cosmic-voyage/ambient/starfield-tile.svg",
+        "nebulas": ["themes/cosmic-voyage/ambient/nebula-1.svg", "themes/cosmic-voyage/ambient/nebula-2.svg"],
+        "earth": "themes/cosmic-voyage/ambient/earth.svg",
+        "sun": "themes/cosmic-voyage/ambient/sun.svg",
+        "countdown": "themes/cosmic-voyage/countdown/rocket.svg"
+      },
+      "podium": ["themes/cosmic-voyage/podium/launchpad-1.svg", "themes/cosmic-voyage/podium/launchpad-2.svg", "themes/cosmic-voyage/podium/launchpad-3.svg"],
+      "burst": "themes/cosmic-voyage/bursts/stardust.svg",
+      "logo": "themes/cosmic-voyage/logo.svg",
+      "logoMark": "themes/cosmic-voyage/logo-mark.svg"
+    }
+  },
+  "shared": {
+    "icons": {
+      "chat": "shared/icons/chat.svg",
+      "muteOn": "shared/icons/mute-on.svg",
+      "muteOff": "shared/icons/mute-off.svg",
+      "wager": "shared/icons/wager-dice.svg",
+      "share": "shared/icons/share.svg",
+      "report": "shared/icons/report-flag.svg",
+      "crown": "shared/icons/crown.svg"
+    },
+    "tierChip": "shared/chips/tier-chip.svg",
+    "emptyPerch": "shared/ui/empty-perch.svg",
+    "loadingBird": "shared/ui/loading-bird.svg",
+    "ogCover": "shared/og-cover.png"
+  }
+}

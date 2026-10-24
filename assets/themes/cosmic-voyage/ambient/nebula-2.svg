@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- RAREBIRD cosmic-voyage ambient: rose nebula -->
+  <defs>
+    <radialGradient id="nv2" cx="0.55" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#FF5D8F" stop-opacity="0.26"/>
+      <stop offset="0.55" stop-color="#FF5D8F" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FF5D8F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nv2b" cx="0.4" cy="0.4" r="0.3">
+      <stop offset="0" stop-color="#FF9EBB" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FF9EBB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g stroke="none">
+    <path d="M420 110 Q640 130 690 340 Q730 560 540 670 Q340 770 190 620 Q60 480 140 290 Q210 120 420 110 Z" fill="url(#nv2)"/>
+    <ellipse cx="320" cy="330" rx="190" ry="140" fill="url(#nv2b)"/>
+    <ellipse cx="500" cy="500" rx="160" ry="120" fill="url(#nv2b)" opacity="0.65"/>
+  </g>
+</svg>

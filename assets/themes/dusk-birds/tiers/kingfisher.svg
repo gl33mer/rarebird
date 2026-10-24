@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD dusk-birds KINGFISHER (60) — diving, electric teal, chestnut band. Tier #43D8B0 -->
+  <g stroke="#1D6B56" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- dive trail -->
+    <path d="M404 84 Q388 120 372 148" stroke-width="8" fill="none" stroke="#9FB0CC" opacity="0.6"/>
+    <path d="M428 116 Q414 148 400 172" stroke-width="8" fill="none" stroke="#9FB0CC" opacity="0.35"/>
+    <!-- raised tail -->
+    <path d="M356 210 L444 190 Q458 188 448 206 L392 268 Z" fill="#2AA385"/>
+    <!-- body: steep dive angle -->
+    <path d="M196 232 Q266 196 330 244 Q384 288 352 348 Q316 404 246 380 Q176 352 172 296 Q170 258 196 232 Z" fill="#43D8B0"/>
+    <!-- chestnut belly band -->
+    <path d="M212 306 Q262 356 332 336 Q318 372 262 372 Q222 356 212 306 Z" fill="#E76F51" stroke="none"/>
+    <!-- folded wing pointing down the dive -->
+    <path d="M268 268 Q330 288 340 344 Q296 368 250 336 Q248 300 268 268 Z" fill="#2AA385"/>
+    <path d="M286 292 L326 330" stroke-width="5" stroke="#1F8A6E" fill="none"/>
+    <!-- big head with crest -->
+    <path d="M148 176 Q142 116 204 110 Q262 108 262 168 Q260 222 202 228 Q152 226 148 176 Z" fill="#43D8B0"/>
+    <path d="M162 118 Q150 84 176 62 Q184 92 204 100 Q222 106 226 124 Z" fill="#2AA385"/>
+    <!-- white chin patch -->
+    <path d="M156 196 Q176 214 202 210 Q198 232 170 226 Q154 214 156 196 Z" fill="#F2FBF8" stroke="none"/>
+    <!-- dagger beak aimed down-left -->
+    <path d="M156 210 L96 268 L172 226 Q160 220 156 210 Z" fill="#3E4658"/>
+    <!-- eye fierce -->
+    <circle cx="196" cy="162" r="14" fill="#FFF9EC"/>
+    <circle cx="200" cy="164" r="7" fill="#20242E" stroke="none"/>
+    <path d="M182 150 Q198 142 212 150" stroke-width="6" fill="none"/>
+    <!-- feet tucked -->
+    <path d="M300 358 L322 376 M306 348 L330 360" stroke="#B0552F" stroke-width="8" fill="none"/>
+  </g>
+</svg>

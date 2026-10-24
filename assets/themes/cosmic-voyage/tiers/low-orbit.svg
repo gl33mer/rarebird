@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage PIGEON (10) — tired little satellite, low orbit. Tier #8D99AE -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- port solar panel -->
+    <path d="M96 236 L196 216 L208 282 L108 302 Z" fill="#4E6B8F"/>
+    <path d="M120 250 L206 234 M116 268 L204 252 M112 286 L202 270" stroke-width="4" stroke="#6F8CB0" fill="none"/>
+    <!-- starboard solar panel -->
+    <path d="M416 236 L316 216 L304 282 L404 302 Z" fill="#4E6B8F"/>
+    <path d="M392 250 L306 234 M396 268 L308 252 M400 286 L310 270" stroke-width="4" stroke="#6F8CB0" fill="none"/>
+    <!-- panel arms -->
+    <path d="M196 252 L216 252 M316 252 L296 252" stroke-width="9"/>
+    <!-- body: rounded bus -->
+    <rect x="212" y="216" width="88" height="112" rx="20" fill="#8D99AE"/>
+    <!-- grumpy little window -->
+    <circle cx="256" cy="258" r="20" fill="#1B2333"/>
+    <path d="M244 250 Q256 244 268 250" stroke-width="5" fill="none" stroke="#9FB0CC"/>
+    <!-- hatch + rivets -->
+    <circle cx="234" cy="306" r="5" fill="#C7CEDB" stroke="none"/>
+    <circle cx="256" cy="310" r="5" fill="#C7CEDB" stroke="none"/>
+    <circle cx="278" cy="306" r="5" fill="#C7CEDB" stroke="none"/>
+    <!-- antenna up + tiny blinking light -->
+    <path d="M256 216 L256 164" stroke-width="8"/>
+    <circle cx="256" cy="152" r="11" fill="#FF6B7A"/>
+    <!-- small dish -->
+    <path d="M300 320 Q332 336 336 368 Q308 364 292 344 Z" fill="#C7CEDB"/>
+  </g>
+  <!-- orbit arc hint -->
+  <path d="M60 400 Q256 470 452 400" stroke-width="6" fill="none" stroke="#9FB0CC" opacity="0.4" stroke-dasharray="4 18" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <!-- RAREBIRD shared: empty perch for NO SIGHTING (timed out) — the bird is "still migrating", dignified not sad -->
+  <g stroke="#3E4658" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- dashed perch -->
+    <path d="M60 176 Q160 150 264 168" stroke-width="10" fill="none" stroke="#8D99AE" stroke-dasharray="18 14"/>
+    <!-- ghost bird outline flying away -->
+    <g fill="none" stroke="#8D99AE" stroke-width="6" stroke-dasharray="10 9" opacity="0.85">
+      <path d="M196 84 Q210 56 244 54 Q276 56 282 84 Q286 108 262 122 Q232 134 210 118 Q196 104 196 84 Z"/>
+      <path d="M212 76 Q196 48 208 30 Q222 48 236 52"/>
+      <path d="M282 66 Q306 44 330 40 Q316 62 318 82"/>
+      <path d="M248 34 L242 18 M262 32 L268 16"/>
+      <path d="M188 96 L166 90 L190 106"/>
+    </g>
+    <!-- migration dotted path -->
+    <path d="M40 60 Q110 30 170 56" stroke="#9FB0CC" stroke-width="4" fill="none" stroke-dasharray="2 12" opacity="0.7"/>
+    <!-- little question spark -->
+    <path d="M150 148 Q146 132 160 126 Q176 120 172 108" stroke="#FFC53D" stroke-width="6" fill="none" opacity="0.9"/>
+    <circle cx="171" cy="98" r="4" fill="#FFC53D" stroke="none" opacity="0.9"/>
+  </g>
+</svg>

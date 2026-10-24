@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- RAREBIRD logo mark: rare-bird head/bust, legible at 16px -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M14 44 Q10 22 28 14 Q46 8 52 26 Q56 42 42 50 Q24 58 14 44 Z" fill="#FF5D8F"/>
+    <path d="M30 12 Q28 2 40 0 Q40 10 48 14 Z" fill="#FFD166"/>
+    <path d="M12 40 L0 46 L14 50 Z" fill="#5C2437"/>
+    <circle cx="36" cy="30" r="6.5" fill="#FFF9EC"/>
+    <circle cx="38" cy="31" r="3" fill="#2A2F3C"/>
+    <path d="M46 46 Q52 50 58 48" stroke="#E14A7C" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

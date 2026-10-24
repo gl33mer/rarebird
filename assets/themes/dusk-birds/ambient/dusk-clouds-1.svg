@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260">
+  <!-- RAREBIRD dusk-birds ambient: dusk cloud cluster A (blue-hour tint) -->
+  <g fill="#8FA3CC" opacity="0.20">
+    <ellipse cx="210" cy="150" rx="150" ry="52"/>
+    <ellipse cx="320" cy="120" rx="110" ry="46"/>
+    <ellipse cx="120" cy="128" rx="80" ry="38"/>
+  </g>
+  <g fill="#A9BBD9" opacity="0.16">
+    <ellipse cx="250" cy="140" rx="120" ry="40"/>
+    <ellipse cx="150" cy="112" rx="66" ry="28"/>
+    <ellipse cx="360" cy="142" rx="88" ry="32"/>
+  </g>
+  <g fill="#FFC53D" opacity="0.10">
+    <ellipse cx="290" cy="128" rx="90" ry="24"/>
+  </g>
+</svg>

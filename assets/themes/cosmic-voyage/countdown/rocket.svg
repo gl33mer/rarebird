@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 480">
+  <!-- RAREBIRD cosmic-voyage countdown: friendly rocket (app launches it on 3-2-1; 10% flame stretch space below) -->
+  <g stroke="#2E3D5C" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- body -->
+    <path d="M160 24 Q216 88 216 210 L104 210 Q104 88 160 24 Z" fill="#C7CEDB"/>
+    <!-- nose cone -->
+    <path d="M160 24 Q186 52 196 96 L124 96 Q134 52 160 24 Z" fill="#FF5D8F"/>
+    <!-- round window -->
+    <circle cx="160" cy="150" r="30" fill="#1B2333"/>
+    <circle cx="160" cy="150" r="21" fill="#9FC3FF"/>
+    <circle cx="152" cy="142" r="7" fill="#DCEBF5" stroke="none"/>
+    <!-- fins -->
+    <path d="M104 160 Q66 190 62 244 L104 226 Z" fill="#FF5D8F"/>
+    <path d="M216 160 Q254 190 258 244 L216 226 Z" fill="#FF5D8F"/>
+    <!-- engine band -->
+    <rect x="108" y="210" width="104" height="22" rx="8" fill="#8D99AE"/>
+    <!-- flame (app stretches this region via CSS) -->
+    <path d="M136 240 Q160 262 184 240 Q178 288 160 318 Q142 288 136 240 Z" fill="#FFC53D"/>
+    <path d="M148 244 Q160 258 172 244 Q168 280 160 296 Q152 280 148 244 Z" fill="#FFE9A8" stroke="none"/>
+  </g>
+  <!-- speed sparks -->
+  <g stroke="#9FB0CC" stroke-width="5" stroke-linecap="round" opacity="0.6">
+    <path d="M60 120 L28 120"/><path d="M70 160 L48 160"/><path d="M256 132 L286 132"/><path d="M248 172 L268 172"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD dusk-birds SPARROW (15) — round house sparrow, chirping, tail up. Tier #A4B787 -->
+  <g stroke="#4A5238" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tail up -->
+    <path d="M340 236 L436 170 Q450 162 444 180 L396 268 Z" fill="#7D8C64"/>
+    <!-- body: small & round -->
+    <path d="M158 312 Q158 228 258 224 Q356 224 356 310 Q354 376 254 382 Q160 384 158 312 Z" fill="#A4B787"/>
+    <!-- chest patch -->
+    <path d="M186 300 Q196 362 262 372 Q222 396 186 352 Q172 324 186 300 Z" fill="#E8E3C8" stroke="none"/>
+    <!-- wing -->
+    <path d="M238 252 Q318 244 340 306 Q318 342 264 344 Q228 314 238 252 Z" fill="#7D8C64"/>
+    <path d="M254 276 L324 300" stroke-width="5" stroke="#66744F" fill="none"/>
+    <!-- head -->
+    <circle cx="182" cy="190" r="54" fill="#A4B787"/>
+    <!-- cap -->
+    <path d="M136 172 Q150 118 212 128 Q226 132 224 146 Q186 138 148 176 Z" fill="#6E7A55" stroke="none"/>
+    <!-- cheek patch -->
+    <path d="M176 204 Q204 214 216 198 Q214 226 184 228 Z" fill="#E8E3C8" stroke="none"/>
+    <!-- open beak (chirping) -->
+    <path d="M132 180 L92 172 L130 194 Z" fill="#D9A066"/>
+    <path d="M130 196 L96 204 L132 208 Z" fill="#C4854E"/>
+    <!-- eye bright -->
+    <circle cx="170" cy="180" r="14" fill="#FFF9EC"/>
+    <circle cx="174" cy="182" r="7" fill="#2A2F3C" stroke="none"/>
+    <circle cx="170" cy="176" r="3" fill="#FFFFFF" stroke="none"/>
+    <!-- legs -->
+    <path d="M228 380 L224 424 M224 424 L208 436 M224 424 L226 440 M224 424 L242 434" fill="none" stroke="#B0552F" stroke-width="9"/>
+    <path d="M290 382 L290 426 M290 426 L274 438 M290 426 L292 442 M290 426 L308 436" fill="none" stroke="#B0552F" stroke-width="9"/>
+  </g>
+  <!-- chirp note -->
+  <path d="M96 128 q10 -18 24 -8 q-16 2 -14 20 a8 8 0 1 1 -10 -12 Z" fill="#FFC53D" opacity="0.9"/>
+</svg>

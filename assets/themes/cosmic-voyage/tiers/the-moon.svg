@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage SPARROW (15) — friendly crescent Moon. Tier #A4B787 -->
+  <g stroke="#4A5238" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- crescent body -->
+    <path d="M296 60 Q196 84 172 200 Q148 328 244 404 Q282 430 330 428 Q236 392 220 280 Q204 160 296 60 Z" fill="#A4B787"/>
+    <!-- lit rim -->
+    <path d="M296 60 Q330 84 338 140 Q346 210 322 274 Q346 208 338 136 Q332 92 308 66 Z" fill="#C9D8AC" stroke="none"/>
+    <!-- craters -->
+    <circle cx="246" cy="160" r="17" fill="#8FA06F"/>
+    <circle cx="222" cy="252" r="24" fill="#8FA06F"/>
+    <circle cx="252" cy="338" r="14" fill="#8FA06F"/>
+    <circle cx="286" cy="220" r="9" fill="#8FA06F"/>
+    <!-- subtle smile between craters -->
+    <path d="M244 296 Q262 310 282 300" stroke-width="6" fill="none"/>
+    <!-- tiny wink crater -->
+    <path d="M270 176 Q282 170 292 178" stroke-width="6" fill="none"/>
+  </g>
+  <!-- orbiting speck -->
+  <circle cx="392" cy="150" r="10" fill="#C9D8AC"/>
+  <path d="M356 118 Q398 100 420 142" stroke-width="5" fill="none" stroke="#9FB0CC" opacity="0.6"/>
+</svg>

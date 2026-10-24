@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200">
+  <!-- RAREBIRD cosmic wordmark: same geometry, orbit ring replaces the spark -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <g fill="none" stroke="#EEF3F7" stroke-width="14">
+      <path d="M42 168 L42 56 Q42 40 58 40 L86 40 Q104 40 104 60 Q104 78 86 80 L60 80 M60 80 L104 168"/>
+      <path d="M128 168 L128 40 L172 40 Q192 40 192 62 Q192 84 172 84 L128 84 M128 84 L192 168"/>
+      <path d="M216 168 L216 40 L272 40 M216 102 L258 102 M216 40 L216 168"/>
+      <path d="M296 40 L352 168 M352 40 L296 168 M306 116 L342 116"/>
+    </g>
+    <g fill="none" stroke="#FFC53D" stroke-width="14">
+      <path d="M400 40 L400 168 M400 40 L440 40 Q462 40 462 62 Q462 84 440 84 L400 84 M400 84 L462 168"/>
+      <path d="M488 40 L488 168 M488 40 L520 40 Q548 40 548 104 Q548 168 520 168 L488 168"/>
+      <path d="M574 168 L574 40 L604 40 Q626 40 626 104 Q626 168 604 168 Z"/>
+    </g>
+    <!-- orbit ring around a tiny rocket dot, above the BIRD -->
+    <ellipse cx="520" cy="26" rx="64" ry="16" fill="none" stroke="#6FC3DF" stroke-width="4" transform="rotate(-8 520 26)"/>
+    <path d="M468 22 q6 -10 16 -4 q-2 8 4 12 q-10 4 -18 -2 q-4 -4 -2 -6 Z" fill="#FF5D8F" stroke="none"/>
+  </g>
+</svg>

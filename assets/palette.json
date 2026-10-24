@@ -1,0 +1,34 @@
+{
+  "_readme": "Every colour used in the pack. Canonical tier hexes are fixed by the game UI; each sprite uses its tier hex as dominant accent plus documented neighbours. Warm accents (#D9A066 beaks, #B0552F legs, #E76F51 kingfisher belly) are deliberate recognizability choices — see NOTES.md.",
+  "canonical": {
+    "ink": "#EEF3F7", "dim": "#9FB0CC",
+    "PIGEON": "#8D99AE", "SPARROW": "#A4B787", "STARLING": "#6FC3DF",
+    "KINGFISHER": "#43D8B0", "MEGA": "#FFC53D", "RARE BIRD": "#FF5D8F"
+  },
+  "backgrounds": {
+    "dusk-birds": ["#05070F", "#0B1020", "#16213E", "#22355F", "#2B3A67", "#1A2338"],
+    "cosmic-voyage": ["#020208", "#050520", "#0A1030", "#101A3F"]
+  },
+  "dusk-birds": {
+    "pigeon": { "body": "#8D99AE", "wing": "#6B7689", "belly": "#C7CEDB", "line": "#3E4658", "beak": "#D9A066", "legs": "#B0552F", "neckSheen": "#7FB0A8" },
+    "sparrow": { "body": "#A4B787", "wing": "#7D8C64", "belly": "#E8E3C8", "cap": "#6E7A55", "line": "#4A5238", "beak": "#D9A066", "legs": "#B0552F", "chirp": "#FFC53D" },
+    "starling": { "body": "#6FC3DF", "wing": "#4E93B5", "belly": "#BFE6F2", "sheen": "#8F7FD8", "line": "#2F5A6E", "beak": "#3E4658" },
+    "kingfisher": { "body": "#43D8B0", "wing": "#2AA385", "bellyBand": "#E76F51", "chin": "#F2FBF8", "line": "#1D6B56", "beak": "#3E4658", "feet": "#B0552F" },
+    "mega": { "body": "#FFC53D", "wing": "#E8A020", "crest2": "#FF8A5C", "breast": "#8A2F3B", "line": "#8A5A16", "beak": "#5C3A10", "sparkle": "#FFF4D6", "legs": "#B0552F" },
+    "rare-bird": { "body": "#FF5D8F", "wing": "#E14A7C", "trail": "#FFD166", "breast": "#FFE3EC", "line": "#9C2E55", "beak": "#5C2437" }
+  },
+  "cosmic-voyage": {
+    "low-orbit": { "body": "#8D99AE", "panels": "#4E6B8F", "panelLine": "#6F8CB0", "detail": "#C7CEDB", "line": "#3E4658", "window": "#1B2333", "beacon": "#FF6B7A" },
+    "the-moon": { "body": "#A4B787", "rim": "#C9D8AC", "craters": "#8FA06F", "line": "#4A5238" },
+    "mars": { "body": "#C4573A", "shade": "#9E4128", "regions": "#A34629", "canyon": "#8F3A22", "cap": "#F4E9E2", "dust": "#E8B49A", "rim": "#6FC3DF", "line": "#5E2A18" },
+    "jupiter": { "bandsLight": "#E8CFA8", "bandsMid": "#D9A868", "bandsDark": "#C98F4E", "swirl": "#B57F3E", "spot": "#C4573A", "spotIn": "#E0704F", "spotCore": "#F2A088", "rim": "#6FC3DF", "moon": "#8D99AE", "line": "#5E4A22" },
+    "kuiper-belt": { "nucleus": "#DCEBF5", "craters": "#B8D8EC", "tailDust": "#FFC53D", "tailIon": "#DCEBF5", "line": "#2F5A6E" },
+    "interstellar": { "alien": "#FF5D8F", "saucerBody": "#8D99AE", "saucerTop": "#C7CEDB", "lights": "#FFD166", "eye": "#20242E", "line": "#5E2437", "sun": "#FFE9A8" },
+    "alien-mega": { "skin": "#B9A8E8", "shade": "#9C8BD1", "chart": "#FFF4D6", "accent": "#FFC53D", "line": "#3E3358" },
+    "alien-interstellar": { "alien1": "#FF5D8F", "alien2": "#B9A8E8", "rock": "#6B7689", "banner": "#FFD166", "line": "#5E2437" }
+  },
+  "shared": {
+    "iconStroke": "#9FB0CC", "iconAccent": "#FFC53D", "chipNotch": "tier-canonical",
+    "emptyPerch": "#8D99AE", "danger": "#FF6B7A", "good": "#3DDC97"
+  }
+}

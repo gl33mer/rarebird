@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD cosmic-voyage RARE BIRD (100) — friendly alien waving from a tiny saucer, sun glint. Tier #FF5D8F -->
+  <defs>
+    <radialGradient id="sungalaxy" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="0.55" stop-color="#FFC53D" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FFC53D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- distant sun glint -->
+  <circle cx="420" cy="96" r="64" fill="url(#sungalaxy)"/>
+  <circle cx="420" cy="96" r="22" fill="#FFE9A8"/>
+  <!-- star sparkle -->
+  <path d="M84 110 l6 15 15 6 -15 6 -6 15 -6 -15 -15 -6 15 -6 Z" fill="#DCEBF5"/>
+  <path d="M452 300 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z" fill="#DCEBF5" opacity="0.8"/>
+  <g stroke="#5E2437" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- alien: one big eye, antenna, waving -->
+    <path d="M232 210 Q226 158 258 142 Q294 128 306 168 Q314 200 292 220 Q260 236 232 210 Z" fill="#FF5D8F"/>
+    <!-- antenna -->
+    <path d="M262 146 Q256 112 268 96" stroke-width="7" fill="none"/>
+    <circle cx="270" cy="88" r="9" fill="#FFD166"/>
+    <!-- big eye -->
+    <ellipse cx="272" cy="184" rx="24" ry="26" fill="#F2FBF8"/>
+    <circle cx="274" cy="188" r="12" fill="#20242E" stroke="none"/>
+    <circle cx="266" cy="178" r="4.5" fill="#FFFFFF" stroke="none"/>
+    <!-- smile -->
+    <path d="M256 216 Q270 226 288 216" stroke-width="6" fill="none"/>
+    <!-- waving arm -->
+    <path d="M306 196 Q336 172 330 140" stroke-width="10" fill="none"/>
+    <circle cx="330" cy="132" r="12" fill="#FF5D8F"/>
+    <!-- other arm on saucer -->
+    <path d="M234 214 Q216 226 214 240" stroke-width="10" fill="none"/>
+    <!-- tiny saucer under -->
+    <ellipse cx="268" cy="266" rx="92" ry="26" fill="#8D99AE"/>
+    <ellipse cx="268" cy="256" rx="52" ry="16" fill="#C7CEDB"/>
+    <!-- saucer lights -->
+    <circle cx="196" cy="266" r="7" fill="#FFD166"/>
+    <circle cx="268" cy="280" r="7" fill="#FFD166"/>
+    <circle cx="340" cy="266" r="7" fill="#FFD166"/>
+    <!-- beam -->
+    <path d="M238 290 L298 290 L282 330 L254 330 Z" fill="#FFD166" opacity="0.35" stroke="none"/>
+  </g>
+</svg>

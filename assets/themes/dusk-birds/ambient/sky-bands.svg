@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <!-- RAREBIRD dusk-birds ambient: refined dusk sky bands, 1080x1920 (phone portrait) -->
+  <defs>
+    <linearGradient id="sb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070F"/>
+      <stop offset="0.18" stop-color="#0B1020"/>
+      <stop offset="0.42" stop-color="#16213E"/>
+      <stop offset="0.64" stop-color="#22355F"/>
+      <stop offset="0.84" stop-color="#2B3A67"/>
+      <stop offset="1" stop-color="#1A2338"/>
+    </linearGradient>
+    <radialGradient id="sunglow" cx="0.5" cy="0.86" r="0.5">
+      <stop offset="0" stop-color="#FFC53D" stop-opacity="0.30"/>
+      <stop offset="0.5" stop-color="#FF8A5C" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FF8A5C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="0.6" stop-color="#FFC53D" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFC53D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#sb)"/>
+  <!-- band hazing: soft separators -->
+  <g fill="#FFFFFF">
+    <rect y="336" width="1080" height="3" opacity="0.05"/>
+    <rect y="800" width="1080" height="3" opacity="0.05"/>
+    <rect y="1210" width="1080" height="3" opacity="0.06"/>
+    <rect y="1600" width="1080" height="3" opacity="0.05"/>
+  </g>
+  <!-- low sun on the horizon -->
+  <circle cx="540" cy="1652" r="560" fill="url(#sunglow)"/>
+  <circle cx="540" cy="1652" r="120" fill="url(#sun)"/>
+  <rect y="1690" width="1080" height="230" fill="#0B1020" opacity="0.55"/>
+  <!-- sparse high stars -->
+  <g fill="#EEF3F7">
+    <circle cx="120" cy="150" r="2.4" opacity="0.8"/><circle cx="310" cy="80" r="1.8" opacity="0.6"/>
+    <circle cx="520" cy="200" r="2" opacity="0.7"/><circle cx="760" cy="90" r="2.6" opacity="0.85"/>
+    <circle cx="920" cy="180" r="1.8" opacity="0.55"/><circle cx="180" cy="300" r="1.6" opacity="0.4"/>
+    <circle cx="640" cy="330" r="1.8" opacity="0.45"/><circle cx="880" cy="290" r="2.2" opacity="0.5"/>
+  </g>
+</svg>

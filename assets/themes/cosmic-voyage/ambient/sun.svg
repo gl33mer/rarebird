@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- RAREBIRD cosmic-voyage ambient: small warm sun for the far background -->
+  <defs>
+    <radialGradient id="sun2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="0.5" stop-color="#FFD166"/>
+      <stop offset="0.78" stop-color="#FFC53D" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FFC53D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="128" cy="128" r="118" fill="url(#sun2)"/>
+  <circle cx="128" cy="128" r="52" fill="#FFE9A8"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- RAREBIRD dusk-birds PIGEON (10) — plump city pigeon, unimpressed side-eye. Tier #8D99AE -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- tail -->
+    <path d="M352 268 L438 216 Q452 210 446 228 L408 300 Z" fill="#6B7689"/>
+    <path d="M360 292 L448 268 Q462 266 452 284 L402 330 Z" fill="#6B7689"/>
+    <!-- body -->
+    <path d="M150 300 Q148 212 250 206 Q356 204 366 296 Q370 372 262 384 Q158 392 150 300 Z" fill="#8D99AE"/>
+    <!-- belly patch -->
+    <path d="M188 330 Q214 386 268 380 Q232 400 196 372 Q180 352 188 330 Z" fill="#C7CEDB" stroke="none"/>
+    <!-- folded wing -->
+    <path d="M236 244 Q320 232 348 300 Q330 344 268 348 Q226 320 236 244 Z" fill="#6B7689"/>
+    <path d="M252 268 L330 296 M248 292 L322 316" stroke-width="5" fill="none" stroke="#59647A"/>
+    <!-- head -->
+    <circle cx="176" cy="182" r="58" fill="#8D99AE"/>
+    <!-- iridescent neck -->
+    <path d="M198 224 Q216 250 238 258 Q212 262 196 246 Z" fill="#7FB0A8" stroke="none" opacity="0.85"/>
+    <!-- beak with cere -->
+    <path d="M122 176 L84 188 L124 200 Q118 188 122 176 Z" fill="#D9A066"/>
+    <path d="M120 172 Q132 168 140 174 L138 182 Q128 180 120 182 Z" fill="#C7CEDB" stroke-width="5"/>
+    <!-- eye: side-eye with flat lid -->
+    <circle cx="164" cy="172" r="15" fill="#FFF6E8"/>
+    <circle cx="168" cy="174" r="7" fill="#2A2F3C" stroke="none"/>
+    <path d="M148 164 Q164 156 180 164" stroke-width="6" fill="none"/>
+    <!-- legs -->
+    <path d="M226 382 L222 424 M222 424 L204 436 M222 424 L224 440 M222 424 L240 434" fill="none" stroke="#B0552F" stroke-width="9"/>
+    <path d="M296 384 L296 426 M296 426 L278 438 M296 426 L298 442 M296 426 L314 436" fill="none" stroke="#B0552F" stroke-width="9"/>
+  </g>
+</svg>

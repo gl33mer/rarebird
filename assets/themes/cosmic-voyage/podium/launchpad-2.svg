@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420">
+  <!-- RAREBIRD cosmic-voyage podium 2nd: pad with service arms -->
+  <g stroke="#3E4658" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M76 340 L116 276 L284 276 L324 340 Z" fill="#4E6B8F"/>
+    <rect x="60" y="340" width="280" height="30" rx="12" fill="#8D99AE"/>
+    <!-- service arms -->
+    <path d="M60 300 L96 300 M100 300 Q116 286 134 288" stroke-width="9" fill="none" stroke="#8D99AE"/>
+    <path d="M340 300 L304 300 M300 300 Q284 286 266 288" stroke-width="9" fill="none" stroke="#8D99AE"/>
+    <!-- silver ring -->
+    <ellipse cx="200" cy="274" rx="76" ry="17" fill="none" stroke="#C7CEDB" stroke-width="9"/>
+    <circle cx="200" cy="274" r="18" fill="#C7CEDB" stroke="none"/>
+  </g>
+</svg>

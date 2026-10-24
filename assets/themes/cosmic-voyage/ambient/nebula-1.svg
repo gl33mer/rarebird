@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- RAREBIRD cosmic-voyage ambient: violet nebula (soft radial cloud, blurred-edge vectors) -->
+  <defs>
+    <radialGradient id="nv1" cx="0.45" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#7A4DFF" stop-opacity="0.34"/>
+      <stop offset="0.55" stop-color="#7A4DFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#7A4DFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nv1b" cx="0.62" cy="0.42" r="0.35">
+      <stop offset="0" stop-color="#B48CFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#B48CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g stroke="none">
+    <path d="M400 96 Q620 88 700 300 Q770 520 590 660 Q400 780 220 660 Q50 540 120 320 Q190 110 400 96 Z" fill="url(#nv1)"/>
+    <ellipse cx="500" cy="330" rx="200" ry="150" fill="url(#nv1b)"/>
+    <ellipse cx="300" cy="480" rx="170" ry="120" fill="url(#nv1b)" opacity="0.7"/>
+  </g>
+</svg>

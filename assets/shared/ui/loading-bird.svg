@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <!-- RAREBIRD shared: loading bird leaning forward, ready to fly (cosmos adds an orbit ring via CSS) -->
+  <g stroke="#3E4658" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M52 92 Q54 60 92 56 Q130 58 130 94 Q128 122 90 124 Q54 122 52 92 Z" fill="#FFC53D"/>
+    <!-- forward-leaning wing -->
+    <path d="M84 72 Q116 64 130 88 Q114 104 88 100 Q78 86 84 72 Z" fill="#E8A020"/>
+    <!-- head forward -->
+    <circle cx="58" cy="66" r="26" fill="#FFC53D"/>
+    <path d="M36 62 L14 66 L38 74 Q34 68 36 62 Z" fill="#5C3A10"/>
+    <circle cx="52" cy="60" r="7" fill="#FFF9EC"/>
+    <circle cx="54" cy="61" r="3.5" fill="#2A2F3C" stroke="none"/>
+    <!-- tail flicked up -->
+    <path d="M126 86 Q148 78 152 60 Q136 66 124 74 Z" fill="#E8A020"/>
+    <!-- motion lines behind -->
+    <path d="M30 96 Q44 100 56 100 M22 112 Q38 116 50 114" stroke="#9FB0CC" stroke-width="4" fill="none" opacity="0.7"/>
+  </g>
+</svg>
