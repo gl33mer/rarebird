@@ -35,3 +35,86 @@
 {"ts":"2026-10-24T08:56:11.655Z","promptId":"test-toppings","canonical":"Pineapple","tier":"PIGEON"}
 {"ts":"2026-10-24T08:56:44.394Z","promptId":"test-fruits","canonical":"Raspberry","tier":"SPARROW"}
 {"ts":"2026-10-24T08:56:49.390Z","promptId":"test-fruits","canonical":"Blueberry","tier":"SPARROW"}
+{"ts":"2026-10-24T09:23:26.781Z","promptId":"test-boardgames","canonical":"Antiquity","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:23:39.915Z","promptId":"test-sports","canonical":"Pesäpallo","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:23:53.030Z","promptId":"test-superheroes","canonical":"Mister Miracle","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:24:06.149Z","promptId":"life-dogbreeds","canonical":"Welsh Springer Spaniel","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:24:19.280Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:25:52.194Z","promptId":"tech-carbrands","canonical":"Omoda","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:26:05.210Z","promptId":"test-colors","canonical":"Cerise","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:26:18.226Z","promptId":"test-sports","canonical":"Pesäpallo","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:26:31.359Z","promptId":"geo-currencies","canonical":"European Monetary Unit","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:26:44.493Z","promptId":"test-animals","canonical":"Kakapo","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:27:00.574Z","promptId":"test-animals","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:27:38.242Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T09:27:38.642Z","promptId":"test-fruits","canonical":"Mangosteen","tier":"MEGA"}
+{"ts":"2026-10-24T09:27:39.056Z","promptId":"test-fruits","canonical":"Durian","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:27:52.140Z","promptId":"test-sports","canonical":"Tennis","tier":"PIGEON"}
+{"ts":"2026-10-24T09:27:52.560Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:27:52.973Z","promptId":"test-sports","canonical":"Fencing","tier":"STARLING"}
+{"ts":"2026-10-24T09:28:06.089Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T09:28:06.510Z","promptId":"test-colors","canonical":"Cerise","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:28:06.906Z","promptId":"test-colors","canonical":"Mauve","tier":"MEGA"}
+{"ts":"2026-10-24T09:29:55.272Z","promptId":"tech-carbrands","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:30:08.585Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T09:30:08.994Z","promptId":"test-fruits","canonical":"Mangosteen","tier":"MEGA"}
+{"ts":"2026-10-24T09:30:09.393Z","promptId":"test-fruits","canonical":"Durian","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:30:23.391Z","promptId":"test-toppings","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:32:08.522Z","promptId":"test-boardgames","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:32:22.497Z","promptId":"test-superheroes","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:32:35.656Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T09:32:36.069Z","promptId":"geo-countries","canonical":"Vanuatu","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:32:36.485Z","promptId":"geo-countries","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:34:24.896Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T09:34:25.305Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:34:25.753Z","promptId":"sci-elements","canonical":"Iron","tier":"PIGEON"}
+{"ts":"2026-10-24T09:34:39.714Z","promptId":"test-greekgods","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:34:52.890Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T09:34:53.314Z","promptId":"test-fruits","canonical":"Mangosteen","tier":"MEGA"}
+{"ts":"2026-10-24T09:34:53.758Z","promptId":"test-fruits","canonical":"Durian","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:35:19.205Z","promptId":"test-superheroes","canonical":"Squirrel Girl","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:35:32.642Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T09:35:33.110Z","promptId":"geo-countries","canonical":"Vanuatu","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:35:46.188Z","promptId":"test-sports","canonical":"Tennis","tier":"PIGEON"}
+{"ts":"2026-10-24T09:35:46.650Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:38:17.816Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T09:38:18.271Z","promptId":"test-animals","canonical":"Saiga","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:38:31.331Z","promptId":"test-toppings","canonical":"France","tier":"STARLING"}
+{"ts":"2026-10-24T09:38:31.781Z","promptId":"test-toppings","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:41:14.764Z","promptId":"life-dogbreeds","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:41:27.841Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T09:41:28.249Z","promptId":"test-animals","canonical":"Saiga","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:41:28.663Z","promptId":"test-animals","canonical":"Okapi","tier":"MEGA"}
+{"ts":"2026-10-24T09:41:41.829Z","promptId":"test-superheroes","canonical":"France","tier":"STARLING"}
+{"ts":"2026-10-24T09:41:42.249Z","promptId":"test-superheroes","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:41:42.685Z","promptId":"test-superheroes","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T09:42:04.909Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T09:42:05.357Z","promptId":"test-colors","canonical":"Cerise","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:42:18.423Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T09:42:18.873Z","promptId":"geo-countries","canonical":"Vanuatu","tier":"KINGFISHER"}
+{"ts":"2026-10-24T09:44:41.024Z","promptId":"test-colors","canonical":"Cerise","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:44:41.101Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T09:45:52.234Z","promptId":"test-fruits","canonical":"Miracle fruit","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:45:53.428Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T09:45:53.875Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:07.358Z","promptId":"geo-countries","canonical":"Saint Vincent and the Grenadines","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:46:07.732Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:08.082Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:21.161Z","promptId":"test-greekgods","canonical":"Zelus","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:46:21.553Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:21.926Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:45.735Z","promptId":"test-greekgods","canonical":"Zelus","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:46:46.907Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T09:46:47.302Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T09:47:00.684Z","promptId":"life-dogbreeds","canonical":"Welsh Springer Spaniel","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:47:01.048Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T09:47:01.396Z","promptId":"life-dogbreeds","canonical":"dachshund","tier":"PIGEON"}
+{"ts":"2026-10-24T09:47:14.440Z","promptId":"test-superheroes","canonical":"Mister Miracle","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:47:14.805Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T09:47:15.151Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T09:52:07.515Z","promptId":"test-toppings","canonical":"Gold leaf","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:52:20.531Z","promptId":"test-animals","canonical":"Kakapo","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:52:33.547Z","promptId":"test-boardgames","canonical":"Antiquity","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:52:53.843Z","promptId":"geo-currencies","canonical":"European Monetary Unit","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:53:06.860Z","promptId":"test-fruits","canonical":"Miracle fruit","tier":"RARE BIRD"}
+{"ts":"2026-10-24T09:53:19.876Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}

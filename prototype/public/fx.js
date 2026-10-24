@@ -6,13 +6,13 @@
 //   3. prefers-reduced-motion collapses to simple fades
 //   4. tier visuals come from one table (TIER_LADDER) so art can restyle globally
 export const TIER_LADDER = {
-  'NO SIGHTING': { alt: 0.03, color: '#8d99ae', emoji: '🫥' },
-  'PIGEON':      { alt: 0.10, color: '#8d99ae', emoji: '🕊️' },
-  'SPARROW':     { alt: 0.26, color: '#a4b787', emoji: '🐦' },
-  'STARLING':    { alt: 0.46, color: '#6fc3df', emoji: '✨' },
-  'KINGFISHER':  { alt: 0.66, color: '#43d8b0', emoji: '🦅' },
-  'MEGA':        { alt: 0.84, color: '#ffc53d', emoji: '🦉' },
-  'RARE BIRD':   { alt: 0.97, color: '#ff5d8f', emoji: '🦜' },
+  'NO SIGHTING': { alt: 0.03, color: '#8d99ae', emoji: '🫥', hue: 0 },
+  'PIGEON':      { alt: 0.10, color: '#8d99ae', emoji: '🕊️', hue: 0 },
+  'SPARROW':     { alt: 0.26, color: '#a4b787', emoji: '🐦', hue: 40 },
+  'STARLING':    { alt: 0.46, color: '#6fc3df', emoji: '✨', hue: 160 },
+  'KINGFISHER':  { alt: 0.66, color: '#43d8b0', emoji: '🦅', hue: 120 },
+  'MEGA':        { alt: 0.84, color: '#ffc53d', emoji: '🦉', hue: 0 },
+  'RARE BIRD':   { alt: 0.97, color: '#ff5d8f', emoji: '🦜', hue: 300 },
 };
 
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -80,7 +80,13 @@ export function setProgress(roundIndex, totalRounds) {
   const earth = document.getElementById('fx-earth');
   if (!earth) return;
   const t = totalRounds > 1 ? roundIndex / (totalRounds - 1) : 0;
-  earth.style.fontSize = `${Math.max(18, 64 - t * 46)}px`;
+  const img = earth.querySelector('img');
+  if (img) {
+    const px = Math.max(26, 96 - t * 70);
+    img.style.width = px + 'px'; img.style.height = px + 'px';
+  } else {
+    earth.style.fontSize = `${Math.max(18, 64 - t * 46)}px`;
+  }
   earth.style.opacity = String(Math.max(0.25, 1 - t * 0.7));
 }
 
@@ -111,7 +117,14 @@ export function burst(x, y, { tier = 'STARLING', count = 10 } = {}) {
     live++;
     const p = document.createElement('div');
     p.className = 'fx-particle';
-    p.textContent = i % 3 === 0 ? t.emoji : '·';
+    if (opts.sprite) { // art mode: sprite particle, tier-tinted via filter
+      p.style.backgroundImage = `url("${opts.sprite}")`;
+      p.style.backgroundSize = 'contain'; p.style.backgroundRepeat = 'no-repeat';
+      p.style.width = '18px'; p.style.height = '18px';
+      p.style.filter = `hue-rotate(${t.hue ?? 0}deg) saturate(1.15)`;
+    } else {
+      p.textContent = i % 3 === 0 ? t.emoji : '·';
+    }
     p.style.left = x + 'px'; p.style.top = y + 'px'; p.style.color = t.color;
     document.body.appendChild(p);
     const a = (Math.PI / 2) * (0.2 + Math.random() * 0.6) + (Math.random() - 0.5); // mostly upward
