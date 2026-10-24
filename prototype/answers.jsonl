@@ -599,3 +599,12 @@
 {"ts":"2026-10-24T18:20:42.984Z","promptId":"tech-carbrands","canonical":"Rimac Automobili","tier":"MEGA"}
 {"ts":"2026-10-24T18:20:55.696Z","promptId":"test-colors","canonical":"Mauve","tier":"MEGA"}
 {"ts":"2026-10-24T18:21:08.404Z","promptId":"consoles","canonical":"Handheld PC","tier":"MEGA"}
+{"ts":"2026-10-24T18:37:56.939Z","promptId":"sci-elements","canonical":"Berkelium","tier":"KINGFISHER"}
+{"ts":"2026-10-24T18:38:08.129Z","promptId":"sci-elements","canonical":"Sodium","tier":"PIGEON"}
+{"ts":"2026-10-24T18:38:13.004Z","promptId":"sci-elements","canonical":"Helium","tier":"PIGEON"}
+{"ts":"2026-10-24T18:38:41.342Z","promptId":"languages","canonical":"Aramaic","tier":"KINGFISHER"}
+{"ts":"2026-10-24T18:39:10.200Z","promptId":"languages","canonical":"Yiddish","tier":"KINGFISHER"}
+{"ts":"2026-10-24T18:39:47.655Z","promptId":"test-greekgods","canonical":"Hera","tier":"SPARROW"}
+{"ts":"2026-10-24T18:40:02.029Z","promptId":"test-greekgods","canonical":"Hestia","tier":"KINGFISHER"}
+{"ts":"2026-10-24T18:41:33.911Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
+{"ts":"2026-10-24T18:41:44.780Z","promptId":"olympic-events","canonical":"Breakdancing","tier":"STARLING"}
