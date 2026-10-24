@@ -28,7 +28,7 @@ const makeId = () => Math.random().toString(36).slice(2, 10);
 const now = () => Date.now();
 const cleanNick = s => (s ?? '').toString().replace(/\s+/g, ' ').trim().slice(0, 14) || 'Birder';
 
-const SETTINGS_DEFAULTS = { rounds: 5, roundMs: 30000, revealMs: 8000, theme: 'birds' }; // 5 rounds default (review: 3-round games too swingy)
+const SETTINGS_DEFAULTS = { rounds: 5, roundMs: 30000, revealMs: 8000, theme: 'birds', feathers: 'on' }; // 5 rounds default (review: 3-round games too swingy)
 const THEMES = new Set(['birds', 'cosmos']);
 // chat guardrails: kids + strangers-of-the-internet safety
 const CHAT = { maxLen: 100, perPlayerWindowMs: 10000, perPlayerMax: 5 };
@@ -50,7 +50,7 @@ const REJOIN_WINDOW = 120 * 1000;
 // so a stale cached HTML = old behaviours (field-observed: static countdown,
 // no ascent reveal). Clients announce their version; mismatches get an 'update'
 // nudge and are logged.
-const CLIENT_VERSION = 18;
+const CLIENT_VERSION = 19;
 
 const JUDGE_URL = process.env.LLM_JUDGE_URL || null;
 const JUDGE_TIMEOUT_MS = 2500;
@@ -132,6 +132,8 @@ function publicRoom(room, forPid) {
   return {
     code: room.code, phase: room.phase, settings: room.settings, locked: room.locked ?? false,
     freetextChat: process.env.RAREBIRD_FREETEXT_CHAT === '1',
+    feathersOn: room.settings.feathers === 'on',
+    feathers: room.feathers ? Object.fromEntries(room.feathers) : null,
     players, roundIndex: room.roundIndex, totalRounds: room.prompts.length,
     phaseEndsAt: (room.phase === 'writing' || room.phase === 'countdown') ? room.phaseEndsAt : null,
     serverNow: now(),
@@ -215,6 +217,13 @@ function endWriting(room, reason = 'timer') {
   const prompt = room.prompts[room.roundIndex];
   const validSubs = [...room.submissions.values()].filter(s => s.status === 'locked').map(s => ({ playerId: s.playerId, nickname: s.nickname, raw: s.confirmed ?? s.raw, submittedAtMs: s.atMs, wager: !!s.wager }));
   const computed = scoreRound(prompt, validSubs, room.settings.roundMs, { wagers: 'topcall', split: 'on' });
+  if (room.settings.feathers === 'on' && room.feathers) {
+    for (const row of computed) {
+      if (row.wagered && row.wagerOutcome === 'doubled' && room.feathers.has(row.playerId)) {
+        room.feathers.set(row.playerId, Math.min(9, (room.feathers.get(row.playerId) ?? 0) + 2)); // doubled refunds +2 (D-37)
+      }
+    }
+  }
   const timeoutRows = [...room.players.values()].filter(p => {
     const s = room.submissions.get(p.pid); return !s || s.status !== 'locked';
   }).map(p => ({ playerId: p.pid, nickname: p.nick, entry: null, typed: room.submissions.get(p.pid)?.raw ?? '', pts: 0, timedOut: true }));
@@ -260,6 +269,7 @@ function rematch(room) {
   clearTimers(room);
   clearTimeout(room.tEarly); room.tEarly = null;
   room.rounds = []; room.roundIndex = 0; room.standings = null; room.rematchVotes = new Set();
+  room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3]));
   room.prompts = pickPrompts(room.settings.rounds);
   startCountdown(room);
 }
@@ -425,6 +435,7 @@ wss.on('connection', (socket, req) => {
         if ([3, 5, 7].includes(+args.rounds)) room.settings.rounds = +args.rounds;
         if ([20000, 30000, 45000].includes(+args.roundMs)) room.settings.roundMs = +args.roundMs;
         if (THEMES.has(args.theme)) room.settings.theme = args.theme;
+        room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3])); // economy: 3/game (D-37)
         room.prompts = pickPrompts(room.settings.rounds);
         room.rounds = []; room.roundIndex = 0;
         glog('start', { room: room.code, by: me.nick, settings: room.settings });
@@ -529,6 +540,12 @@ wss.on('connection', (socket, req) => {
       }
       case 'wager': {
         if (room.phase !== 'writing' || !me) return;
+        if (room.settings.feathers === 'on') {
+          room.feathers ??= new Map([...room.players.values()].map(p => [p.pid, 3]));
+          const f = room.feathers.get(me.pid) ?? 3;
+          if (f <= 0) { sendTo(me, 'answerAck', { status: 'wager_no_feathers', msg: 'No feathers left!' }); return; }
+          room.feathers.set(me.pid, f - 1);
+        }
         const sub = room.submissions.get(me.pid);
         if (sub?.status !== 'locked') return;
         if (sub.wager) { sendTo(me, 'answerAck', { status: 'already_wagered' }); return; }

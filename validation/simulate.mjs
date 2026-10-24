@@ -25,6 +25,7 @@ const STRATS = {
   deep:      { pctRange: [0.90, 1.0], recallBase: 13 },
   random:    { pctRange: [0, 1],     recallBase: 6 },
   smartW:    { pctRange: [0.82, 0.95], recallBase: 8,  alwaysWager: true },  // Top Call every round
+  smartW3:   { pctRange: [0.82, 0.95], recallBase: 8,  alwaysWager: true, feathers: 3 }, // economy agent
   deepW:     { pctRange: [0.90, 1.0], recallBase: 13, alwaysWager: true },
   memo1:     { memorize: true },  // both memorizers pick the SAME rarest entry
   memo2:     { memorize: true },
@@ -66,6 +67,7 @@ function applyRoomRules(results) {
       if (!r.wager) continue;
       const isUniqueTop = atTop.length === 1 && atTop[0][0] === name;
       r.pts = isUniqueTop ? r.pts * 2 : Math.max(5, Math.floor(r.pts / 2));
+      if (r.feathersLeft !== undefined) r.feathersLeft = isUniqueTop ? r.feathersLeft + 2 : r.feathersLeft; // refund
     }
   }
 }
@@ -92,7 +94,10 @@ function playRound(cat, strats, timerSec, typoRate) {
       if (res.status === 'valid') pts = tierByName(res.entry.tier).pts;
       else { pts = 0; outcome = 'invalid'; }
     }
-    results[name] = { pts, outcome, tier: res?.entry?.tier ?? entry.tier, entry: res?.status === 'valid' ? res.entry : entry, wager: !!strat.alwaysWager && outcome === 'valid' };
+    const willWager = !!strat.alwaysWager && outcome === 'valid' && (strat.feathers ? (results[name]?.feathersLeft ?? strat.feathers) > 0 : true);
+    if (strat.feathers) results[name] = results[name] ?? { feathersLeft: strat.feathers };
+    if (willWager && strat.feathers) results[name].feathersLeft = (results[name].feathersLeft ?? strat.feathers) - 1;
+    results[name] = { ...results[name], pts, outcome, tier: res?.entry?.tier ?? entry.tier, entry: res?.status === 'valid' ? res.entry : entry, wager: willWager };
   }
   applyRoomRules(results);
   return results;

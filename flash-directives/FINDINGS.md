@@ -118,3 +118,24 @@ The gap has **closed substantially**: we now have a painted climb-ruler world wi
 1. Track B unimplemented (license gate + budget) — spec lives in directive 06.
 2. GD audio starts only from the lobby toggle; a round-level hint could raise opt-in.
 3. Dynamic fx import versioning (GD-4) should be folded into the version-bump checklist.
+
+---
+
+# Flash run 2026-10-24 — 3D Ascent (flash/w3d-v1) + Economy (flash/economy-v1)
+
+## RUN 1 — 3D Ascent (v18)
+- `w3d.js`: vendored three r152 (MIT, 633KB, lazy-loaded only when flagged); procedural scenes — birds: 3 hill layers + 20-boid flock (zero per-frame alloc) migrating with progress; cosmos: ringed planet + moon orbit + 900-pt starfield + 2 satellites; camera lerp; DPR 1.5 cap; fail-soft (no THREE → Track A); reduced-motion = static frame.
+- Defects: W3D-1 `new T.Matrix()` → Matrix4 (r152); W3D-2 test clicked lobby-only theme toggle pre-create; W3D-3 boids GC capped fps → hoisted temps (38→45); W3D-4 headless SwiftShader renders EVERY open context on CPU — fps suites must isolate browsers (cosmos 60 / birds 45 in isolation).
+- `verify-w3d.js` **11/11**; graphics 12/12; bold 16/16 unaffected.
+
+## RUN 2 — Feathers + Life List (v19)
+- Server: `room.feathers` Map (3/game init at start+rematch; lazy-init safety), wager costs 1 + rejects at 0 (`wager_no_feathers`), doubled refunds +2 (cap 9), `settings.feathers on/off`, `publicRoom` broadcasts feathers per player.
+- Client: theme-flavored HUD (🪶 Feathers / ⭐ Starlight, D-40), wager disabled at 0, refund pop. Life List: localStorage (dedupe promptId+canonical, cap 500), MEGA/RARE earn + card fly-in, results+lobby buttons, modal grid with manifest portraits, copy summary. Zero server involvement.
+- Defects: EC-1 feather HUD only updated in lobby phase → stale during rounds (fixed: all-phase update); EC-2 results-screen Life List button never wired (lobby one was) — fixed; EC-3 test bug: halved outcome affects points not feathers (3−1=2, not 1); EC-4 doubled refund arithmetic 3−1+2=4 (assertion corrected).
+- Economy verdict (sim, smartW3 feathers agent): 145.8 vs smartW 151.6 vs smart 273.8 — scarcity gates the *bleed rate* of a bad strategy without distorting balance.
+
+## Test results (exact numbers)
+rules **62/62** · verify-economy **4/4** · verify-lifelist **6/6** · verify-w3d **11/11** · graphics 12/12 · art 18/18 · chat-theme 12/12 · timers 8/8 · bold 16/16 · bold-perf 3/3 · security 16/16 · reconnect 5/5 · gd 9/9 · gd-perf 3/3.
+
+## Verdict
+Both runs ship. 3D is flag-gated (?w3d=1) pending owner eyeball; economy + life list default-on.

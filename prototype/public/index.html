@@ -256,7 +256,7 @@
 
   <!-- ROUND -->
   <section class="screen" id="s-round">
-    <div class="roundtop"><span id="round-count">Round 1</span><span class="lifelist" id="lifelist">🪶 0</span></div>
+    <div class="roundtop"><span id="round-count">Round 1</span><span style="display:flex;gap:12px;align-items:center;"><span class="lifelist" id="feathers" title="wager currency">🪶 3</span><span class="lifelist" id="lifelist">🪶 0</span></span></div>
     <div class="card big">
       <div class="prompt-wrap" id="prompt-wrap">
         <div class="domain" id="prompt-domain">🐦</div>
@@ -298,6 +298,7 @@
     <div class="podium" id="podium"></div>
     <div class="card best" id="best-card"></div>
     <div class="card"><table class="standings" id="standings"></table></div>
+    <button class="ghost" id="btn-lifelist" style="margin-bottom:10px;">🃏 Life List</button>
     <button id="btn-rematch">Rematch 🔁</button>
     <p class="banner" id="rematch-status"></p>
     <button class="ghost" id="btn-share-result">Copy result to share</button>
@@ -324,12 +325,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=18";
-import { ART } from "./art.js?v=18";
-import { BOLD } from "./bold.js?v=18";
-import { GD } from "./gd.js?v=18";
-import { W3D } from "./w3d.js?v=18";
-const V = 18; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=19";
+import { ART } from "./art.js?v=19";
+import { BOLD } from "./bold.js?v=19";
+import { GD } from "./gd.js?v=19";
+import { W3D } from "./w3d.js?v=19";
+const V = 19; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -425,6 +426,52 @@ function connect(cb) {
   };
 }
 const send = o => ws && ws.readyState === 1 && ws.send(JSON.stringify({ v: V, ...o }));
+// ---- Life List (local-only collection, D-37/D-30) ----
+const LIFELIST_KEY = 'rarebird-lifelist';
+function lifeListGet() { try { return JSON.parse(localStorage.getItem(LIFELIST_KEY) || '[]'); } catch { return []; } }
+function lifeListEarn(canonical, tier, promptId, promptText) {
+  if (tier !== 'MEGA' && tier !== 'RARE BIRD') return false;
+  const list = lifeListGet();
+  if (list.some(x => x.promptId === promptId && x.canonical === canonical)) return false;
+  list.push({ canonical, tier, promptId, text: promptText, ts: Date.now() });
+  localStorage.setItem(LIFELIST_KEY, JSON.stringify(list.slice(-500)));
+  return true;
+}
+function lifeListOpen() {
+  const list = lifeListGet().slice().reverse();
+  const modal = document.createElement('div');
+  modal.id = 'lifelist-modal';
+  modal.style.cssText = 'position:fixed;inset:0;z-index:75;background:rgba(5,7,15,.96);overflow-y:auto;padding:20px;';
+  const cards = list.length ? list.map(x => {
+    const t = TIERS[x.tier] ?? { color: 'var(--acc)', emoji: '🦜' };
+    const art = ART.enabled ? ART.tier(x.tier) : null;
+    return `<div style="background:var(--card2);border:2px solid ${t.color};border-radius:14px;padding:12px;text-align:center;min-width:130px;">
+      ${art ? `<img src="${art}" style="width:56px;height:56px;border-radius:10px;background:rgba(255,255,255,.9);padding:2px;">` : t.emoji}
+      <div style="font-weight:900;margin-top:4px;">${esc(x.canonical)}</div>
+      <div style="font-size:11px;color:${t.color};font-weight:800;">${x.tier}</div>
+      <div style="font-size:10px;color:var(--dim);">${esc(x.text)}</div>
+    </div>`;
+  }).join('') : '<p style="color:var(--dim)">No rare sightings yet — go find something extraordinary.</p>';
+  modal.innerHTML = `<div style="max-width:760px;margin:0 auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <h2 style="color:var(--acc);">🃏 Life List <span style="font-size:14px;color:var(--dim)">${list.length} cards</span></h2>
+      <div style="display:flex;gap:8px;">
+        <button class="ghost" id="ll-copy" style="width:auto;padding:8px 12px;font-size:13px;">Copy</button>
+        <button class="ghost" id="ll-close" style="width:auto;padding:8px 12px;font-size:13px;">Close</button>
+      </div>
+    </div>
+    <p class="banner">your rarest sightings, kept on this device only — nothing saved anywhere else</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;">${cards}</div>
+  </div>`;
+  document.body.appendChild(modal);
+  $('ll-close').onclick = () => modal.remove();
+  $('ll-copy').onclick = () => {
+    const txt = `RAREBIRD 🦜 life list — ${list.length} cards\n` + list.map(x => `• ${x.canonical} (${x.tier})`).join('\n');
+    navigator.clipboard?.writeText(txt).then(() => { $('ll-copy').textContent = 'Copied ✓'; });
+  };
+}
+
+const reducedMotionCheck = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const esc = s => (s ?? '').toString().replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function handle(m) {
@@ -533,6 +580,15 @@ function hideCountdown() { const ov = $('countdown-overlay'); if (ov) ov.classLi
 
 function renderState(room) {
   lastRoomState = room;
+  // economy HUD: every phase (round screen shows it live)
+  if (room.feathersOn && room.feathers && my.pid) {
+    const [icon, name] = theme.id === 'cosmos' ? ['⭐', 'Starlight'] : ['🪶', 'Feathers'];
+    const f = room.feathers[my.pid] ?? 3;
+    const fe = $('feathers');
+    if (fe) { fe.textContent = `${icon} ${f}`; fe.title = name; }
+    const w = $('btn-wager');
+    if (w) { w.disabled = f <= 0; w.style.opacity = f <= 0 ? 0.45 : 1; w.title = f <= 0 ? `No ${name.toLowerCase()} left` : ''; }
+  }
   if (room.phase === 'countdown' && room.phaseEndsAt) {
     showCountdown({ endsAt: room.phaseEndsAt, nextRound: room.roundIndex, totalRounds: room.totalRounds });
   }
@@ -542,6 +598,16 @@ function renderState(room) {
     $('lobby-players').innerHTML = room.players.map(p =>
       `<span class="pill ${p.isHost ? 'host' : ''} ${p.connected ? '' : 'off'}">${esc(p.nick)}${me0?.isHost && !p.isHost ? ` <a href="#" class="kick" data-nick="${esc(p.nick)}" style="color:var(--bad);text-decoration:none;font-weight:900;">×</a>` : ''}</span>`).join('');
     $('chat-freerow').style.display = room.freetextChat ? 'flex' : 'none';
+    // economy display (D-40: theme-flavored, protocol stays feathers)
+    if (room.feathersOn && room.feathers && my.pid) {
+      const [icon, name] = theme.id === 'cosmos' ? ['⭐', 'Starlight'] : ['🪶', 'Feathers'];
+      const f = room.feathers[my.pid] ?? 3;
+      $('feathers').textContent = `${icon} ${f}`;
+      $('feathers').title = name;
+      const w = $('btn-wager');
+      if (w && f <= 0) { w.disabled = true; w.style.opacity = 0.45; w.title = `No ${name.toLowerCase()} left`; }
+      else if (w) { w.disabled = false; w.style.opacity = 1; w.title = ''; }
+    }
     const me = me0;
     $('btn-lock').textContent = room.locked ? 'Room: locked 🔒' : 'Room: open 🔓';
     $('host-controls').style.display = me?.isHost ? 'block' : 'none';
@@ -608,6 +674,9 @@ function ack(m) {
     if ($('wager-chip')) { $('wager-chip').dataset.used = '1'; $('wager-chip').style.display = 'none'; }
     $('locked-msg').textContent = '🎯 Top Call placed — rarest in the room or bust!';
     chirp(1100, 0.12);
+  } else if (m.status === 'wager_no_feathers') {
+    $('answer-feedback').textContent = m.msg || 'No feathers left!';
+    chirp(280, 0.1, 0.03);
   } else if (m.status === 'checking') {
     $('answer-feedback').textContent = m.msg || 'Checking the field guide…';
     $('confirm-chip').style.display = 'none';
@@ -706,7 +775,20 @@ function renderReveal(m) {
       { transform: `translateY(${flyFrom * 0.25}px)`, opacity: 1, offset: .45 },
       { transform: 'translateY(0)', opacity: 1 },
     ], { duration: 950, delay, easing: 'cubic-bezier(.22,.9,.28,1)', fill: 'forwards' });
-    if (r.nickname === myNick) lifeList += r.pts;
+    if (r.nickname === myNick) {
+      lifeList += r.pts;
+      if (myNick != null && lifeListEarn(r.canonical, r.tier, lastPromptId, (document.getElementById('prompt-text')?.textContent ?? ''))) {
+        // card fly-in: small chip from the row toward the top-right corner
+        if (!reducedMotionCheck()) {
+          const fly = document.createElement('div');
+          fly.textContent = '🃏';
+          fly.style.cssText = `position:fixed;z-index:65;left:${innerWidth / 2 - 20}px;top:${innerHeight / 2}px;font-size:26px;transition:all .9s cubic-bezier(.2,.8,.3,1);pointer-events:none;`;
+          document.body.appendChild(fly);
+          requestAnimationFrame(() => { fly.style.left = (innerWidth - 50) + 'px'; fly.style.top = '16px'; fly.style.transform = 'scale(.5) rotate(20deg)'; fly.style.opacity = '0.4'; });
+          setTimeout(() => fly.remove(), 950);
+        }
+      }
+    }
     setTimeout(() => {
       chirpFor(r.tier);
       const rect = div.getBoundingClientRect();
@@ -772,12 +854,18 @@ function sendAnswer() { const raw = $('answer').value.trim(); if (raw) send({ ty
 $('btn-confirm').onclick = () => send({ type: 'answer', raw: pendingSuggest ?? $('answer').value, confirm: true });
 $('btn-keep').onclick = () => { $('confirm-chip').style.display = 'none'; $('answer-feedback').textContent = ''; $('answer').focus(); };
 if (ART.enabled && ART.icon('wager')) $('btn-wager').innerHTML = `<img class="iconImg" src="${ART.icon('wager')}" alt=""> Top Call — rarest answer in the room pays ×2, else ½`;
+else $('btn-wager').textContent = '🎯 Top Call — rarest answer in the room pays ×2, else ½';
 $('btn-wager').onclick = () => send({ type: 'wager' });
 $('btn-lock').onclick = () => { const el = $('btn-lock'); send({ type: 'lockRoom', locked: !/locked/.test(el.textContent) }); };
 $('btn-art').textContent = `🎨 Art: ${ART.enabled ? 'on' : 'off'}`;
 $('btn-bold').textContent = `✨ Bold: ${BOLD.enabled ? 'on' : 'off'}`;
 $('btn-audio').textContent = `🎵 Ambience: ${gdAudioOn ? 'on' : 'off'}`;
 $('btn-w3d').textContent = `🌐 3D: ${W3D.enabled ? 'on' : 'off'}`;
+const llBtn = document.createElement('button');
+llBtn.className = 'ghost'; llBtn.style.marginBottom = '10px';
+llBtn.textContent = `🃏 Life List (${lifeListGet().length})`;
+llBtn.onclick = lifeListOpen;
+$('host-controls').appendChild(llBtn);
 $('btn-w3d').onclick = () => {
   const on = localStorage.getItem('rarebird-w3d') === '1';
   localStorage.setItem('rarebird-w3d', on ? '0' : '1');
@@ -814,6 +902,7 @@ $('chat-presets').addEventListener('click', e => {
   const b = e.target.closest('[data-preset]');
   if (b) send({ type: 'chat', preset: b.dataset.preset });
 });
+$('btn-lifelist').onclick = lifeListOpen;
 $('btn-rematch').onclick = () => send({ type: 'rematch' });
 $('room-code').onclick = () => {
   const invite = `Join my RAREBIRD flock 🦜 ${location.origin} — code ${$('room-code').textContent}`;
