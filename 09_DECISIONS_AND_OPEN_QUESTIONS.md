@@ -5,10 +5,12 @@
 | ID | Decision | Rationale | Alternatives rejected | Status |
 |---|---|---|---|---|
 | D-01 | Concept: simultaneous hidden-answer rounds + synchronized tiered reveal in private rooms ("RAREBIRD") | Proven core loop (Krillion) + fills the no-downtime multiplayer slot (Puffer=turns, Jinxed=typing strain); fits 15-min breaks; lowest mechanic risk | 7 alternatives compared in `00` §2 | Final |
-| D-02 | 6 tiers, points 10/15/30/60/85/100, percentile bands within each catalogue | Matches reference game's proven ladder math with own identity; readable totals; sim shows clean separation | 5-tier ladder (less resolution at the top); continuous scoring (opaque) | Final |
+| D-02b | Ladder v2: 10/20/40/65/85/100 (2026-10-24) | Differentiate from reference's exact ladder | old ladder | Final |
+| D-02 | 6 tiers, percentile bands (points superseded by D-02b) | Matches reference game's proven ladder math with own identity; readable totals; sim shows clean separation | 5-tier ladder (less resolution at the top); continuous scoring (opaque) | Final |
 | D-03 | Tiers = rarity percentile within the prompt's finite catalogue; pageviews as evidence + mandatory editorial pass | Pageviews measure attention not answer-likelihood (Yemen trap, observed); finite catalogue = transparent + offline | Pure pageview automation; pure hand-tiering (unscalable, inconsistent) | Final |
 | D-04 | Validation: normalize → alias exact → unique-best fuzzy suggest-with-confirm → invalid retry | Krillion's validated UX pattern; avoids wrong-answer locking (confirm step), keeps clock pressure | Auto-accept fuzzy (locks wrong answers); no fuzzy (teens mistype constantly) | Final |
-| D-05 | TWINS = badge only, no score effect | Coincidence shouldn't punish (Jinxed) or reward herding (bonus); badge gives the social story; playtest may flip to `jinx` via config | jinx split (punitive); points bonus (herding incentive) | MVP; revisit post-playtest |
+| D-05b | SPLIT: identical answers split tier points (TWINS badge kept) | Review demanded room-relativity; sim-proven exploit kill | badge-only static tables | Final |
+| D-05 | TWINS = badge only (superseded for duplicates by D-05b) | Coincidence shouldn't punish (Jinxed) or reward herding (bonus); badge gives the social story; playtest may flip to `jinx` via config | jinx split (punitive); points bonus (herding incentive) | MVP; revisit post-playtest |
 | D-06 | Round timer default 30s; host can pick 20/45 | Sim: 20s → speed+judgment dominate (smart 67% win share); 30s → balanced tension (49% vs 49%); 45s → depth dominant (66%) | Fixed 25s (reference's solo number — but our rounds are simultaneous & social) | Final defaults |
 | D-07 | Transport: `ws` + JSON; Socket.IO only as fallback | Dependency-minimal; WSS proven through instabox-port. Socket.IO buys HTTP-polling fallback for school filters — unproven need | Socket.IO from day 1 (heavier, engine.io dep) | MVP; revisit if playtests hit blocked networks |
 | D-08 | One Node process, in-memory rooms, no DB | Audience size; privacy (minors); ops simplicity; rooms are ephemeral by nature | Redis/Postgres (unneeded; adds failure modes) | Final for MVP |
@@ -30,7 +32,8 @@
 | D-25 | Theme packs over one ruleset: Cosmic Voyage (distance-from-Earth) alongside Dusk Birds; host-selectable | Owner's space idea; validates the fx-layer scalability claim; tier names/points theme-invariant | Hardcoded single skin; per-theme forks of rules | Final |
 | D-26 | Fuzzy v2: Damerau + fuzzy-token subsets + confirm-gated phonetic suggestions | Real players are kids and non-native typists; every suggestion still requires a confirm tap so wrong-answer risk stays ~0; false-positive traps unit-tested (ZAF, mash) | Looser auto-accept (locks wrong answers); strict matching (frustration) | Final |
 | D-27 | Prompt generator + empirical ratings flywheel (generate-prompts.mjs / rate-catalogue.mjs / answers.jsonl) | Content velocity with human review; own play data is the compounding ratings edge no external API has | LLM-only generation without verification; static tiers forever | Final (tooling); tiers empirical at ≥100 obs |
-| D-23 | **Double or Nothing wager** (opt-in per round after locking: rare tiers ×2, common ½) as a field experiment | Owner asked for Hi/Lo-style betting; this shape fits simultaneous play (no turns), adds self-knowledge tension, one tap; measured via playtest before production default | Hi/Lo duels (turn-based — future mode); always-on for everyone (unwanted complexity for newcomers) | Experiment (prototype ON) |
+| D-23b | Top Call wager: unique-rarest-in-room ×2 else ½ (2026-10-24) | Review math: old double ≈ dominant tax; sim: always-wager loses now | tier-threshold double (superseded) | Final |
+| D-23 | **Double or Nothing wager** (superseded by D-23b) (opt-in per round after locking: rare tiers ×2, common ½) as a field experiment | Owner asked for Hi/Lo-style betting; this shape fits simultaneous play (no turns), adds self-knowledge tension, one tap; measured via playtest before production default | Hi/Lo duels (turn-based — future mode); always-on for everyone (unwanted complexity for newcomers) | Experiment (prototype ON) |
 
 ## 2. Rejected alternatives worth remembering (future modes)
 - **Hot-potato elimination** (Puffer-style) — different session shape, official comp exists; revisit as party-mode variant if group wants longer sessions.
@@ -50,6 +53,10 @@
 | Q-05 | What's the stranger story (public rooms/matchmaking)? | growth vs. moderation burden | defer until organic demand; requires content-moderation plan for minors |
 | Q-06 | Timer fairness across slow keyboards/autocorrect? | phones differ | measure lock-time distribution post-launch; consider 35s if p95 > 28s |
 | Q-07 | Should aliases ever be worth slightly less (discourage "USA"-spam)? | purity vs. friendliness | no evidence of problem; revisit if playtests show alias exploitation complaints |
+| Q-09 | Legal readiness for comms beyond presets | launch gate (07 §6b) | legal advice |
+| Q-10 | Surprisal-based absolute tiers + UNCHARTED band | deeper content-model fix | design spike |
+| Q-11 | Prediction layer for post-lock dead time | review's best design idea | spec next round |
+| Q-12 | Origin allowlist, token relocation, domain/real-IP | deploy-time bundle | domain move |
 | Q-08 | Art direction: lean into Wingspan-adjacent field-guide aesthetic? | Owner likes the idea; strong fit with the flock metaphor — but must stay mood-level inspiration (no copying Wingspan's art, cards or trade dress; it is a protected commercial game) | mood board + 2–3 style frames during M5 polish; decide before art production |
 
 ## 4. Assumptions (explicit, each labeled)

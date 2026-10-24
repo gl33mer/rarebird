@@ -83,11 +83,17 @@ Tiers by **rarity percentile within the prompt's catalogue** (how far from the m
 | **RARE BIRD** | top ~1–2% | **100** | pink |
 
 - Round score = tier points. **No other modifiers in MVP.**
-- **TWINS:** two or more players locking the same canonical answer → both rows show **TWINS ×n**; points unchanged (a story, not a punishment — deliberate contrast with Jinxed's split rule; revisit post-playtest via config flag `twinsPolicy`).
+- **SPLIT (D-05b, review-driven 2026-10-24):** identical answers **split their tier points** (floor, min 5 each) — rarity pays only if you're rare *and* uncommon in the room; reveal shows **SPLIT×n 👯**. Sim: two memorizers copying the 100-point answer drop 394→223 pts, 38%→3.5% win share — exploit dead, lone knower still wins on merit. Coincidental commons split cheaply (10→5) and keep the TWINS badge warmth. Config `split: 'on'|'off'`.
 - **Late answer** (arrives after deadline server-side): ignored (server clock is the only clock).
 - **Tie-break (final standings):** total points → **countback** most RARE BIRDs, then MEGAs, then KINGFISHERs → still tied: **shared place** (no sudden death in MVP).
 
-### 2.4b Double or Nothing (wager — field experiment, implemented in prototype)
+### 2.4b Top Call (wager v2, review-driven; replaces Double or Nothing)
+
+After locking, tap **🎯 Top Call** — "my answer is the rarest in this room": if your post-split tier is the *unique* highest in the room → **×2**; else → **½** (floor 5). Room-relative by construction; sim shows always-wagering now *loses* (143 vs 296 pts on the same base strategy) — a genuine read-the-room decision. Config `wagers: 'topcall' | 'off'`.
+
+### 2.4b-old Double or Nothing (superseded 2026-10-24)
+
+
 
 After your answer locks, you may tap **🎲 Double or nothing** (once per round, before the round ends):
 - KINGFISHER / MEGA / RARE BIRD → **×2 points**

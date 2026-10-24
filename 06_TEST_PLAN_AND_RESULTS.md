@@ -143,6 +143,12 @@ Reports: "second player never gets to join", "the 3 before a round never counts 
 
 Also added this round: the **altitude ascent reveal** (cards fly to tier altitude bands with a left-edge ruler; vision-QA'd through three iterations — final verdict "ship after padding guard"), ambient sky/clouds/stars, RARE BIRD glow + particle burst + shake, winner burst on the podium. Graphics built as the scalable `fx.js` layer (05 §0a).
 
+### Review round (2026-10-24): external security/design review → fixes
+
+Full triage in `REVIEW_RESPONSE.md`. Headlines (all verified): ladder v2 10/20/40/65/85/100; **SPLIT rule** (memorizer exploit 38%→3.5% win share, 20k sims w/ new memo agents); **Top Call** replaces double-or-nothing (always-wager now loses 143 vs 296); security hardening 16/16 probes (incl. two of our own first-draft bugs caught by probes: payload-cap crash, NAT-hostile backoff, plus a client maxlength-4 join input vs 5-char codes); strict typing (first draft broke normal answers — caught by timers suite); safety screen over packs.
+
+**Suites: unit 62/62 · security 16/16 · graphics 12/12 · chat+theme 12/12 · timers 8/8 · topcall 4/4.**
+
 ### Field feedback round 4 (2026-10-23, fourth play session — 3 players)
 
 Reports: "some clients don't get the fancy bird ladder / only the stuck 3 — maybe only the room creator?" Log showed the session was healthy server-side (3 joins, correct rounds/reveal/results; judge admitted two genuine fruits — carambola, pitango). Diagnosis: **stale cached clients** — the client is inline-scripted HTML served without cache control, so friends who still had the pre-graphics page (or a cached copy) ran the old behaviours, which match the reported symptoms exactly. Fixes (verified 18/18: 11 graphics-suite + 7 handshake/wager probes):

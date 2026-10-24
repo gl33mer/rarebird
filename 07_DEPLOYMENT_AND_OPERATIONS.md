@@ -63,6 +63,13 @@ Secrets: none needed at MVP (no third-party services). If a domain + TLS frontin
 - Players are minors-adjacent: **no chat, no free-text broadcast, no IPs in stored data** (transient in memory only), no analytics in MVP. If analytics are added later, aggregate events only (counts of rooms/rounds), no nicknames.
 - Answer catalogues are server-side secrets until reveal (anti-scraping, `03` §7).
 
+## 6b. Legal & launch gates (review — blockers for any public launch)
+
+1. Children's access + risk assessments (UK OSA); preset-only comms chosen partly for the limited-functionality exemption — get real legal advice.
+2. Privacy notice (nicknames, ephemeral comms, hashed room codes, LLM-judge disclosure) + retention policy.
+3. NCA reporting duty readiness (U2U since 2026-04-07); ICO Children's Code; COPPA check.
+4. Name clearance; real domain + filter-vendor submissions; pull competitor screenshots from any public repo.
+
 ## 7. Limits & future scalability
 - One process comfortably serves hundreds of concurrent rooms (`03` §9). Real constraint is operational (one box, restart-on-stop discipline), not compute.
 - Growth path (only if ever needed): move to a small VPS + Caddy TLS + systemd; rooms are process-local so horizontal scale would need a room→shard router or Redis pub/sub — explicitly out of scope until a Stranger Population exists (see `09` Q-05).

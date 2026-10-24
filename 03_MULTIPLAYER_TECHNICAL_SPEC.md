@@ -121,6 +121,10 @@ Client-visible room state (sent on every change; catalogue is **never** included
 | Nickname spoofing/abuse | dedup with numeric suffix, 14-char cap, escaping, denylist (content-side) |
 | Code guessing / ghosting | 4 chars from 31-symbol alphabet ≈ 923k codes; join refused mid-game; no public list in MVP |
 
+## 7b. Security hardening (review round 2026-10-24 — implemented & probed in prototype)
+
+maxPayload 1024B, no deflate · 10s unauth-socket timeout · 30s ping/pong reaping · per-IP socket cap 10 · **5-char codes** (~28.6M) · failed-join dampener (4 free misses → 5s/15s/60s/5min; **correct codes always pass** — NAT-friendly, a school group shares one IP) · `/log` token-gated · strict message typing (`raw` string, `confirm` boolean, whitelists) · display sanitising (Cc/Cf/Zl/Zp+bidi stripped server-side; canonical preferred; `<bdi>` client-side) · **preset-only chat** (free text behind `RAREBIRD_FREETEXT_CHAT=1`) · host lock/kick(+ban)/idle-migration · judge validity-only + cache · JSONL caps (2MB rotate) + daily-salted room hashes in reports · SIGTERM broadcast · `/healthz` stats {rooms, sockets, globalJoinFails, memMB, uptimeS}. Deferred: Origin allowlist, token relocation, real-IP header (with domain move), confusable-dedupe, age retention.
+
 ## 8. Server/client responsibility split
 | Server (authoritative) | Client (presentation) |
 |---|---|
