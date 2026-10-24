@@ -87,13 +87,20 @@ export function resolveAnswer(catalogue, raw) {
     }
   }
   const hit = byNorm.get(n) || byNorm.get(n.replace(/ /g, ''));
-  if (hit) return { status: 'valid', entry: hit };
+  if (hit) {
+    // alias collisions across DIFFERENT entries are ambiguous: let the player pick
+    const cands = catalogue.filter(e => e === hit ||
+      [e.canonical, ...(e.aliases || [])].some(a => { const f = normalize(a); return f === n || f.replace(/ /g, '') === n.replace(/ /g, ''); }));
+    const uniq = [...new Set(cands)];
+    if (uniq.length > 1) return { status: 'ambiguous', candidates: uniq, typed };
+    return { status: 'valid', entry: hit };
+  }
 
   // token-subset match: "saint kitts nevis" == "saint kitts and nevis"
   // (typed significant tokens must ALL appear in the entry, and there must be
   // at least 2 of them — single-token subsets are too ambiguous)
   const typedToks = tokens(n);
-  if (significant(n).length >= 2) {
+  if (significant(n).length >= 2 && typedToks.length <= 6) {
     // each typed token must match an entry token (or a filler word) exactly or
     // within the fuzzy budget — catches "teh netherlands", "saint kitts nevis"
     let subsetHit = null, ambiguous = false;
@@ -148,11 +155,15 @@ export function resolveAnswer(catalogue, raw) {
 export const TIERS = [
   { name: 'RARE BIRD', pts: 100, minPct: 99 },
   { name: 'MEGA',      pts: 85,  minPct: 95 },
-  { name: 'KINGFISHER',pts: 60,  minPct: 85 },
-  { name: 'STARLING',  pts: 30,  minPct: 60 },
-  { name: 'SPARROW',   pts: 15,  minPct: 30 },
+  { name: 'KINGFISHER',pts: 65,  minPct: 85 },
+  { name: 'STARLING',  pts: 40,  minPct: 60 },
+  { name: 'SPARROW',   pts: 20,  minPct: 30 },
   { name: 'PIGEON',    pts: 10,  minPct: 0  },
 ];
+// Ladder v2 (2026-10-24, review-driven): 10/20/40/65/85/100 — deliberately
+// distinct from the reference game's exact 10/15/30/60/85/100 (clone-visibility
+// critique). Percentile bands unchanged.
+export const TIER_ORDER = Object.fromEntries(TIERS.map((t, i) => [t.name, TIERS.length - 1 - i])); // higher = rarer
 export const tierByName = name => TIERS.find(t => t.name === name);
 
 // ---------------------------------------------------------------- round scoring
@@ -173,14 +184,9 @@ export function scoreRound(prompt, submissions, deadlineMs, config = {}) {
     const r = resolveAnswer(prompt.catalogue, s.raw);
     if (r.status === 'valid') {
       locked.add(s.playerId);
-      const base = tierByName(r.entry.tier).pts;
-      let pts = base, wagered = false, wagerOutcome = null;
-      if (cfg.wagers === 'double' && s.wager) {
-        wagered = true;
-        if (WAGER_RISK_TIERS.has(r.entry.tier)) { pts = base * 2; wagerOutcome = 'doubled'; }
-        else { pts = Math.max(5, Math.floor(base / 2)); wagerOutcome = 'halved'; }
-      }
-      rows.push({ playerId: s.playerId, nickname: s.nickname, entry: r.entry, typed: s.raw, pts, base, wagered, wagerOutcome, timedOut: false, late });
+      rows.push({ playerId: s.playerId, nickname: s.nickname, entry: r.entry, typed: s.raw, pts: tierByName(r.entry.tier).pts, base: tierByName(r.entry.tier).pts, wager: !!s.wager, wagered: false, wagerOutcome: null, timedOut: false, late, spooked: false });
+    } else if (r.status === 'ambiguous') {
+      rows.push({ playerId: s.playerId, nickname: s.nickname, entry: null, ambiguous: r.candidates, typed: s.raw, pts: 0, timedOut: false, late });
     } else if (r.status === 'suggest') {
       rows.push({ playerId: s.playerId, nickname: s.nickname, entry: null, typed: s.raw, suggest: r.entry, pts: 0, timedOut: false, late });
     } else {
@@ -190,7 +196,12 @@ export function scoreRound(prompt, submissions, deadlineMs, config = {}) {
   // players with no valid answer at deadline
   // (caller passes a row with timedOut: true for players who never locked one)
 
-  // twins detection over locked rows
+  // TWINS + SPLIT detection over locked rows (D-05b, review-driven):
+  // TWINS badge stays (a story, not a punishment). But identical answers SPLIT
+  // their tier points equally (floor, min 5): rarity pays only if you are rare
+  // AND uncommon in the room. Kills the memorize-the-same-rare-bird exploit —
+  // five players copying the 100-point answer bank 20 each, worse than one
+  // genuine 65-point Kingfisher. Sim-verified (validation/sim-results).
   const byCanonical = new Map();
   for (const row of rows) if (row.entry) {
     const k = row.entry.canonical;
@@ -199,10 +210,32 @@ export function scoreRound(prompt, submissions, deadlineMs, config = {}) {
   }
   for (const [, group] of byCanonical) {
     if (group.length > 1) {
-      for (const row of group) row.twins = group.length;
+      for (const row of group) {
+        row.twins = group.length;
+        if (cfg.split !== 'off') {
+          row.splitOf = group.length;
+          row.pts = Math.max(5, Math.floor(row.pts / group.length));
+        }
+      }
     }
   }
-  if (cfg.twinsPolicy === 'none') for (const row of rows) delete row.twins; // still computed above; policy gates future use
+  if (cfg.twinsPolicy === 'none') for (const row of rows) delete row.twins;
+
+  // TOP CALL wager (D-23 revision): "my answer is the rarest in this room".
+  // Pays x2 only if your (post-spook) tier is the UNIQUE highest; else halves.
+  // Room-relative by construction — not near-dominant like the old tier-threshold double.
+  if (cfg.wagers === 'topcall') {
+    const scored = rows.filter(r => r.entry);
+    const maxOrd = Math.max(-1, ...scored.map(r => TIER_ORDER[r.entry.tier]));
+    const atTop = scored.filter(r => TIER_ORDER[r.entry.tier] === maxOrd);
+    for (const row of rows) {
+      if (!row.entry || !row.wager) continue;
+      row.wagered = true;
+      const isUniqueTop = atTop.length === 1 && atTop[0] === row;
+      if (isUniqueTop) { row.pts = row.pts * 2; row.wagerOutcome = 'doubled'; }
+      else { row.pts = Math.max(5, Math.floor(row.pts / 2)); row.wagerOutcome = 'halved'; }
+    }
+  }
   // reveal order: fewest points first, drama last; ties alphabetical; no-answer at end
   rows.sort((a, b) => (a.entry ? 0 : 1) - (b.entry ? 0 : 1) || a.pts - b.pts || (a.nickname || '').localeCompare(b.nickname || ''));
   return rows;

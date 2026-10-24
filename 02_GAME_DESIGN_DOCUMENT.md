@@ -74,6 +74,8 @@ Tiers by **rarity percentile within the prompt's catalogue** (how far from the m
 | Tier | Rarity percentile (of valid answers) | Points | Colour |
 |---|---|---|---|
 | **PIGEON** | 0–29% (most common) | **10** | grey |
+
+*Ladder v2 (2026-10-24): points are 10/20/40/65/85/100 — deliberately distinct from the reference game's exact ladder (review: clone-visibility).*
 | **SPARROW** | 30–59% | **15** | sage |
 | **STARLING** | 60–84% | **30** | sky |
 | **KINGFISHER** | 85–94% | **60** | teal |

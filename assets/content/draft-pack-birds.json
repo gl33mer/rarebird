@@ -1,7 +1,7 @@
 {
  "id": "draft-birds-v1",
  "generated": "2026-10-24",
- "generator": "GLM-5.3 (MAX) — DRAFT, requires editorial pass per asset-directives/06",
+ "generator": "GLM-5.3 (MAX) \u2014 DRAFT, requires editorial pass per asset-directives/06",
  "theme": "dusk-birds",
  "prompts": [
   {
@@ -338,7 +338,7 @@
      "evidence": {
       "note": "LLM draft"
      },
-     "reviewFlag": "HAND LIST: verify tier (owls are raptors — teens say it)"
+     "reviewFlag": "HAND LIST: verify tier (owls are raptors \u2014 teens say it)"
     },
     {
      "canonical": "Falcon",
@@ -470,7 +470,7 @@
      ],
      "tier": "MEGA",
      "evidence": {
-      "note": "LLM draft; also a common word — with falcon qualifier risky, editorial check"
+      "note": "LLM draft; also a common word \u2014 with falcon qualifier risky, editorial check"
      }
     },
     {
@@ -480,7 +480,7 @@
      ],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; also wizard name — accept, teens know both"
+      "note": "LLM draft; also wizard name \u2014 accept, teens know both"
      }
     },
     {
@@ -539,7 +539,7 @@
      ],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; kingfisher family — editorial: is it 'prey'? yes, but tone fits"
+      "note": "LLM draft; kingfisher family \u2014 editorial: is it 'prey'? yes, but tone fits"
      }
     },
     {
@@ -616,7 +616,7 @@
      ],
      "tier": "SPARROW",
      "evidence": {
-      "note": "LLM draft; also fruit — cross-pack fine"
+      "note": "LLM draft; also fruit \u2014 cross-pack fine"
      }
     },
     {
@@ -656,13 +656,13 @@
      ],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; our RARE BIRD canon bird — fun"
+      "note": "LLM draft; our RARE BIRD canon bird \u2014 fun"
      }
     },
     {
      "canonical": "Takahe",
      "aliases": [
-      "takahē"
+      "takah\u0113"
      ],
      "tier": "RARE BIRD",
      "evidence": {
@@ -694,7 +694,7 @@
      ],
      "tier": "SPARROW",
      "evidence": {
-      "note": "LLM draft; extinct counts — editorial: keep, great stories"
+      "note": "LLM draft; extinct counts \u2014 editorial: keep, great stories"
      }
     },
     {
@@ -748,17 +748,17 @@
      ],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; alias of rhea — editorial: dedupe or keep as accepted alias under Rhea"
+      "note": "LLM draft; alias of rhea \u2014 editorial: dedupe or keep as accepted alias under Rhea"
      }
     },
     {
      "canonical": "Adelie penguin",
      "aliases": [
-      "Adélie penguin"
+      "Ad\u00e9lie penguin"
      ],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; specific penguin — with PIGEON penguin present this is the rare pick"
+      "note": "LLM draft; specific penguin \u2014 with PIGEON penguin present this is the rare pick"
      }
     }
    ]
@@ -1085,7 +1085,7 @@
      "aliases": [],
      "tier": "PIGEON",
      "evidence": {
-      "note": "LLM draft; duck = bird — editorial: keep? teens will say it"
+      "note": "LLM draft; duck = bird \u2014 editorial: keep? teens will say it"
      }
     },
     {
@@ -1163,7 +1163,7 @@
      "aliases": [],
      "tier": "STARLING",
      "evidence": {
-      "note": "LLM draft; Up's snipe — with example 'like Big Bird' it's guessable"
+      "note": "LLM draft; Up's snipe \u2014 with example 'like Big Bird' it's guessable"
      }
     },
     {
@@ -1189,7 +1189,7 @@
      "aliases": [],
      "tier": "RARE BIRD",
      "evidence": {
-      "note": "LLM draft; Rio villain — too generic a name alone? editorial: with Finding Nemo pelican collision — decide"
+      "note": "LLM draft; Rio villain \u2014 too generic a name alone? editorial: with Finding Nemo pelican collision \u2014 decide"
      }
     },
     {
@@ -1197,7 +1197,7 @@
      "aliases": [],
      "tier": "RARE BIRD",
      "evidence": {
-      "note": "LLM draft; unused — remove in editorial"
+      "note": "LLM draft; unused \u2014 remove in editorial"
      }
     },
     {
@@ -1213,11 +1213,11 @@
      "aliases": [],
      "tier": "KINGFISHER",
      "evidence": {
-      "note": "LLM draft; Final Fantasy — gamer teens know it"
+      "note": "LLM draft; Final Fantasy \u2014 gamer teens know it"
      }
     },
     {
-     "canonical": "Pokémon's Lugia",
+     "canonical": "Pok\u00e9mon's Lugia",
      "aliases": [
       "Lugia"
      ],
@@ -1300,7 +1300,7 @@
      ],
      "tier": "PIGEON",
      "evidence": {
-      "note": "LLM draft; verb prompt — catalogue of actions"
+      "note": "LLM draft; verb prompt \u2014 catalogue of actions"
      }
     },
     {
@@ -1524,7 +1524,7 @@
      ],
      "tier": "RARE BIRD",
      "evidence": {
-      "note": "LLM draft; steamer ducks/penguins belly-slide — editorial wording"
+      "note": "LLM draft; steamer ducks/penguins belly-slide \u2014 editorial wording"
      }
     },
     {
@@ -1544,7 +1544,7 @@
      ],
      "tier": "RARE BIRD",
      "evidence": {
-      "note": "LLM draft; bowerbirds decorate — editorial: rename 'decorate bowers'"
+      "note": "LLM draft; bowerbirds decorate \u2014 editorial: rename 'decorate bowers'"
      }
     },
     {
@@ -1589,9 +1589,10 @@
      }
     },
     {
-     "canonical": "Crack snails on stones",
+     "canonical": "Use anvil stones",
      "aliases": [
-      "use anvil stones"
+      "anvil stones",
+      "thrush anvil"
      ],
      "tier": "RARE BIRD",
      "evidence": {

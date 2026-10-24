@@ -7,3 +7,21 @@
 {"ts":"2026-10-23T23:25:17.637Z","promptId":"geo-countries","canonical":"Peru","tier":"STARLING"}
 {"ts":"2026-10-23T23:25:31.566Z","promptId":"life-dogbreeds","canonical":"Peru","tier":"STARLING"}
 {"ts":"2026-10-23T23:27:01.030Z","promptId":"tech-carbrands","canonical":"Lancia","tier":"RARE BIRD"}
+{"ts":"2026-10-24T08:19:21.494Z","promptId":"test-animals","canonical":"Pangolin","tier":"MEGA"}
+{"ts":"2026-10-24T08:19:21.495Z","promptId":"test-animals","canonical":"Pangolin","tier":"MEGA"}
+{"ts":"2026-10-24T08:19:41.221Z","promptId":"test-colors","canonical":"Mauve","tier":"MEGA"}
+{"ts":"2026-10-24T08:19:41.222Z","promptId":"test-colors","canonical":"Mauve","tier":"MEGA"}
+{"ts":"2026-10-24T08:39:52.072Z","promptId":"test-sports","canonical":"Tennis","tier":"PIGEON"}
+{"ts":"2026-10-24T08:39:52.520Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T08:42:40.613Z","promptId":"test-sports","canonical":"Tennis","tier":"PIGEON"}
+{"ts":"2026-10-24T08:42:41.014Z","promptId":"test-sports","canonical":"Curling","tier":"KINGFISHER"}
+{"ts":"2026-10-24T08:42:41.416Z","promptId":"test-sports","canonical":"Fencing","tier":"STARLING"}
+{"ts":"2026-10-24T08:42:54.504Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}
+{"ts":"2026-10-24T08:42:54.914Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
+{"ts":"2026-10-24T08:42:55.315Z","promptId":"sci-elements","canonical":"Iron","tier":"PIGEON"}
+{"ts":"2026-10-24T08:43:08.428Z","promptId":"test-capitals","canonical":"Paris","tier":"PIGEON"}
+{"ts":"2026-10-24T08:43:08.828Z","promptId":"test-capitals","canonical":"Vaduz","tier":"KINGFISHER"}
+{"ts":"2026-10-24T08:43:09.248Z","promptId":"test-capitals","canonical":"Tallinn","tier":"STARLING"}
+{"ts":"2026-10-24T08:43:26.321Z","promptId":"test-boardgames","canonical":"Ark Nova","tier":"MEGA"}
+{"ts":"2026-10-24T08:43:26.322Z","promptId":"test-boardgames","canonical":"Ark Nova","tier":"MEGA"}
+{"ts":"2026-10-24T08:45:14.118Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}

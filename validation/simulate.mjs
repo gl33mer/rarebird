@@ -24,8 +24,13 @@ const STRATS = {
   smart:     { pctRange: [0.82, 0.95], recallBase: 8 },
   deep:      { pctRange: [0.90, 1.0], recallBase: 13 },
   random:    { pctRange: [0, 1],     recallBase: 6 },
+  smartW:    { pctRange: [0.82, 0.95], recallBase: 8,  alwaysWager: true },  // Top Call every round
+  deepW:     { pctRange: [0.90, 1.0], recallBase: 13, alwaysWager: true },
+  memo1:     { memorize: true },  // both memorizers pick the SAME rarest entry
+  memo2:     { memorize: true },
 };
 function chooseEntry(cat, strat) {
+  if (strat.memorize) return cat[cat.length - 1]; // the single rarest entry, always
   const [lo, hi] = strat.pctRange;
   for (let tries = 0; tries < 50; tries++) {
     const idx = Math.floor(rand() * cat.length);
@@ -43,6 +48,27 @@ function typo(s) {
   return s.slice(0, i) + c + s.slice(i);                           // insert
 }
 // catalogues in pack are sorted most-popular-first (builder sorts desc by views)
+const TIER_PTS = { 'PIGEON': 10, 'SPARROW': 20, 'STARLING': 40, 'KINGFISHER': 65, 'MEGA': 85, 'RARE BIRD': 100 };
+const TIER_ORD = { 'PIGEON': 0, 'SPARROW': 1, 'STARLING': 2, 'KINGFISHER': 3, 'MEGA': 4, 'RARE BIRD': 5 };
+const tierAt = (cat, e) => e.tier ?? (TIER_ORD[e.tier] !== undefined ? e.tier : 'STARLING');
+function applyRoomRules(results) {
+  const locked = Object.entries(results).filter(([, r]) => r.outcome === 'valid' && r.entry);
+  const byCanon = new Map();
+  for (const [, r] of locked) byCanon.set(r.entry.canonical, (byCanon.get(r.entry.canonical) ?? 0) + 1);
+  for (const [, r] of locked) {
+    const n = byCanon.get(r.entry.canonical);
+    if (n > 1) r.pts = Math.max(5, Math.floor(r.pts / n)); // SPLIT rule (D-05b)
+  }
+  if (locked.length) {
+    const maxOrd = Math.max(...locked.map(([, r]) => TIER_ORD[r.tier]));
+    const atTop = locked.filter(([, r]) => TIER_ORD[r.tier] === maxOrd);
+    for (const [name, r] of locked) {
+      if (!r.wager) continue;
+      const isUniqueTop = atTop.length === 1 && atTop[0][0] === name;
+      r.pts = isUniqueTop ? r.pts * 2 : Math.max(5, Math.floor(r.pts / 2));
+    }
+  }
+}
 function playRound(cat, strats, timerSec, typoRate) {
   const results = {};
   for (const [name, strat] of Object.entries(strats)) {
@@ -59,14 +85,16 @@ function playRound(cat, strats, timerSec, typoRate) {
       if (r.status === 'suggest') t += 3;                       // confirm chip
       else { t += 6; raw = entry.canonical; }                   // retry corrected
     }
+    let res = null;
     if (t > timerSec) { pts = 0; outcome = 'timeout'; }
     else {
-      const r = resolveAnswer(cat, raw);
-      if (r.status === 'valid') pts = tierByName(r.entry.tier).pts;
+      res = resolveAnswer(cat, raw);
+      if (res.status === 'valid') pts = tierByName(res.entry.tier).pts;
       else { pts = 0; outcome = 'invalid'; }
     }
-    results[name] = { pts, outcome, tier: entry.tier };
+    results[name] = { pts, outcome, tier: res?.entry?.tier ?? entry.tier, entry: res?.status === 'valid' ? res.entry : entry, wager: !!strat.alwaysWager && outcome === 'valid' };
   }
+  applyRoomRules(results);
   return results;
 }
 function runGames({ games = 4000, rounds = 5, timerSec = 30, typoRate = 0.15, ladder = null, strats = STRATS }) {

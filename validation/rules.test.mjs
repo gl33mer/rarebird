@@ -63,7 +63,7 @@ const rows = scoreRound(prompt, subs, 30000);
 const byN = Object.fromEntries(rows.map(r => [r.nickname, r]));
 t('5 rows', rows.length === 5);
 t('twins detected both ways', byN['Ana'].twins === 2 && byN['Dan'].twins === 2);
-t('twins is badge-only (pts unchanged)', byN['Ana'].pts === 10 && byN['Dan'].pts === 10);
+t('twins split points under split rule (D-05b)', byN['Ana'].pts === 5 && byN['Dan'].pts === 5, JSON.stringify([byN['Ana'].pts, byN['Dan'].pts]));
 t('rare scores high', byN['Ben'].pts >= 60, String(byN['Ben'].pts));
 t('invalid scores 0', byN['Eve'].pts === 0 && !byN['Eve'].entry);
 t('reveal order: valid ascending, invalid last', rows[rows.length-1].nickname === 'Eve' && rows[0].nickname === 'Ana');
@@ -91,23 +91,70 @@ t('phonetic: Alamanka does not match Germany', resolveAnswer(cat, 'Alamanka').en
 t('transposed netherlands accepted', resolveAnswer(cat, 'teh netherlands').status === 'suggest' || resolveAnswer(cat, 'teh netherlands').status === 'valid', JSON.stringify(resolveAnswer(cat, 'teh netherlands')).slice(0, 80));
 t('plain nonsense still invalid', resolveAnswer(cat, 'qqqzzzxxx').status === 'invalid');
 
-console.log('== wagers (Double or Nothing) ==');
+console.log('== TOP CALL wager (room-relative, ladder v2) ==');
 {
+  // Vanuatu=KINGFISHER(65) unique top; Ben PIGEON(10); Cleo no wager
   const subsW = [
-    { playerId: 'p1', nickname: 'Ana', raw: 'Vanuatu', submittedAtMs: 3000, wager: true },       // KINGFISHER 60 -> 120
-    { playerId: 'p2', nickname: 'Ben', raw: 'United States', submittedAtMs: 3000, wager: true }, // PIGEON 10 -> 5
-    { playerId: 'p3', nickname: 'Cleo', raw: 'France', submittedAtMs: 3000 },                    // no wager
-    { playerId: 'p4', nickname: 'Dan', raw: 'wopper', submittedAtMs: 3000, wager: true },        // invalid: wager ignored
+    { playerId: 'p1', nickname: 'Ana', raw: 'Vanuatu', submittedAtMs: 3000, wager: true },
+    { playerId: 'p2', nickname: 'Ben', raw: 'United States', submittedAtMs: 3000, wager: true },
+    { playerId: 'p3', nickname: 'Cleo', raw: 'France', submittedAtMs: 3000 },
+    { playerId: 'p4', nickname: 'Dan', raw: 'wopper', submittedAtMs: 3000, wager: true },
   ];
-  const rowsW = scoreRound(prompt, subsW, 30000, { wagers: 'double' });
+  const rowsW = scoreRound(prompt, subsW, 30000, { wagers: 'topcall' });
   const w = Object.fromEntries(rowsW.map(r => [r.nickname, r]));
-  t('wager on rare tier doubles', w['Ana'].pts === 120 && w['Ana'].wagerOutcome === 'doubled', JSON.stringify(w['Ana'].pts));
-  t('wager on common tier halves (min 5)', w['Ben'].pts === 5 && w['Ben'].wagerOutcome === 'halved', JSON.stringify(w['Ben'].pts));
-  t('no wager keeps base', w['Cleo'].pts === tierByName(w['Cleo'].entry.tier).pts && !w['Cleo'].wagered);
+  t('unique-top wager doubles (65->130)', w['Ana'].pts === 130 && w['Ana'].wagerOutcome === 'doubled', JSON.stringify(w['Ana'].pts));
+  t('non-top wager halves (min 5)', w['Ben'].pts === 5 && w['Ben'].wagerOutcome === 'halved', JSON.stringify(w['Ben'].pts));
+  t('no wager keeps base', w['Cleo'].pts === w['Cleo'].base && !w['Cleo'].wagered);
   t('wager on invalid ignored', w['Dan'].pts === 0 && !w['Dan'].wagered);
-  const rowsOff = scoreRound(prompt, subsW, 30000); // default config: wagers off
+  // tied top: both wager, both halved
+  const subsT = [
+    { playerId: 'p1', nickname: 'Ana', raw: 'Vanuatu', submittedAtMs: 3000, wager: true },
+    { playerId: 'p2', nickname: 'Ben', raw: 'Chad', submittedAtMs: 3000, wager: true }, // also KINGFISHER-ish? use Peru STARLING vs...
+  ];
+  const kfs = cat.filter(e => e.tier === 'KINGFISHER').slice(0, 2).map(e => e.canonical);
+  const rowsT = scoreRound(prompt, [{ playerId: 'p1', nickname: 'Ana', raw: kfs[0], submittedAtMs: 3000, wager: true }, { playerId: 'p2', nickname: 'Ben', raw: kfs[1], submittedAtMs: 3000, wager: true }], 30000, { wagers: 'topcall' });
+  const wT = Object.fromEntries(rowsT.map(r => [r.nickname, r]));
+  t('tied top wagers both halved', wT['Ana'].wagerOutcome === 'halved' && wT['Ben'].wagerOutcome === 'halved', JSON.stringify([wT['Ana'].pts, wT['Ben'].pts]));
+  const rowsOff = scoreRound(prompt, subsW, 30000);
   const wOff = Object.fromEntries(rowsOff.map(r => [r.nickname, r]));
   t('wagers off ignores flags', wOff['Ana'].pts === wOff['Ana'].base);
+}
+
+console.log('== SPLIT rule (identical answers split tier points) ==');
+{
+  const subsS = [
+    { playerId: 'p1', nickname: 'Ana', raw: 'United States', submittedAtMs: 3000 },
+    { playerId: 'p2', nickname: 'Ben', raw: 'United States', submittedAtMs: 3000 },
+    { playerId: 'p3', nickname: 'Cleo', raw: 'Saint Vincent and the Grenadines', submittedAtMs: 3000 },
+    { playerId: 'p4', nickname: 'Dan', raw: 'Saint Vincent and the Grenadines', submittedAtMs: 3000 },
+  ];
+  const rowsS = scoreRound(prompt, subsS, 30000);
+  const wS = Object.fromEntries(rowsS.map(r => [r.nickname, r]));
+  t('pigeon twins split (10/2=5 each)', wS['Ana'].pts === 5 && wS['Ben'].pts === 5 && wS['Ana'].twins === 2, JSON.stringify(wS['Ana'].pts));
+  t('rare-bird twins split (100/2=50 each)', wS['Cleo'].pts === 50 && wS['Dan'].pts === 50, JSON.stringify(wS['Cleo'].pts));
+  const rowsOff = scoreRound(prompt, subsS, 30000, { split: 'off' });
+  const wOff = Object.fromEntries(rowsOff.map(r => [r.nickname, r]));
+  t('split off restores full points', wOff['Cleo'].pts === 100 && wOff['Ana'].pts === 10);
+  // five-way copy of the rarest answer is worse than one genuine kingfisher
+  const subs5 = ['p1','p2','p3','p4','p5'].map((p, i) => ({ playerId: p, nickname: 'N' + i, raw: 'Saint Vincent and the Grenadines', submittedAtMs: 3000 }));
+  const rows5 = scoreRound(prompt, subs5, 30000);
+  t('five-way copy banks 20 each (< lone kingfisher 65)', rows5.every(r => r.pts === 20));
+}
+
+console.log('== ambiguity (alias collisions) ==');
+{
+  const cat2 = [
+    { canonical: 'Republic of the Congo', aliases: ['Congo-Brazzaville', 'Congo'], tier: 'STARLING' },
+    { canonical: 'Democratic Republic of the Congo', aliases: ['Congo-Kinshasa', 'DRC', 'DR Congo', 'Congo'], tier: 'SPARROW' },
+    { canonical: 'France', aliases: [], tier: 'PIGEON' },
+  ];
+  const a1 = resolveAnswer(cat2, 'Congo');
+  t('colliding alias returns ambiguous with candidates', a1.status === 'ambiguous' && a1.candidates.length === 2, JSON.stringify(a1.status));
+  const a2 = resolveAnswer(cat2, 'DRC');
+  t('unique alias still valid', a2.status === 'valid' && a2.entry.canonical === 'Democratic Republic of the Congo');
+  // token stuffing: 8-token kitchen sink must not subset-match
+  const stuff = resolveAnswer(cat, 'republic democratic congo kinshasa brazzaville france united states zebra');
+  t('token-stuffed string rejected', stuff.status === 'invalid' || stuff.status === 'ambiguous', stuff.status);
 }
 
 console.log('== standings & tie-break ==');
