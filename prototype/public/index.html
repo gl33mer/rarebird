@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rarebird — spot the rarest answer</title>
+<style>
+  :root {
+    --bg0:#0b1020; --bg1:#16213e; --card:rgba(255,255,255,.06); --card2:rgba(255,255,255,.10);
+    --ink:#f2f6ff; --dim:#9fb0cc; --acc:#ffd166; --good:#3ddc97; --bad:#ff6b7a;
+    --pigeon:#8d99ae; --sparrow:#a4b787; --starling:#6fc3df; --kingfisher:#43d8b0; --mega:#ffc53d; --rarebird:#ff5d8f;
+  }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { height:100%; }
+  body {
+    margin:0; font:16px/1.45 system-ui,-apple-system,'Segoe UI',sans-serif; color:var(--ink);
+    background: radial-gradient(120% 80% at 50% -10%, #2b3a67 0%, var(--bg1) 45%, var(--bg0) 100%);
+    background-attachment: fixed; min-height:100dvh;
+  }
+  body::before { content:''; position:fixed; inset:0; pointer-events:none; opacity:.05; z-index:0;
+    background-image:radial-gradient(#fff 1px, transparent 1px); background-size:22px 22px; }
+  main { position:relative; z-index:1; max-width:470px; margin:0 auto; padding:14px 16px calc(20px + env(safe-area-inset-bottom)); }
+  .screen { display:none; } .screen.on { display:block; animation:fadein .25s; }
+  @keyframes fadein { from { opacity:0; transform:translateY(6px); } }
+  h1 { font-size:30px; margin:20px 0 2px; letter-spacing:2px; text-align:center; }
+  h1 .fly { color:var(--acc); }
+  .sub { color:var(--dim); text-align:center; margin:0 0 16px; font-size:14px; }
+  .card { background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:16px; margin:12px 0; backdrop-filter:blur(6px); }
+  input[type=text] { width:100%; padding:14px; font-size:18px; border-radius:12px; border:1px solid rgba(255,255,255,.18); background:rgba(0,0,0,.35); color:var(--ink); }
+  input::placeholder { color:#7487a8; }
+  button { width:100%; padding:14px; font-size:18px; font-weight:800; border:0; border-radius:12px; background:var(--acc); color:#1a1c2c; margin-top:10px; cursor:pointer; }
+  button:active { transform:scale(.98); }
+  button.ghost { background:var(--card2); color:var(--ink); border:1px solid rgba(255,255,255,.15); font-weight:600; }
+  .row { display:flex; gap:8px; } .row > * { flex:1; }
+  .code { font-size:46px; font-weight:900; letter-spacing:12px; text-align:center; color:var(--acc); margin:6px 0 2px; text-shadow:0 0 24px rgba(255,209,102,.35); }
+  .tapcopy { text-align:center; color:var(--dim); font-size:13px; }
+  .players { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; justify-content:center; }
+  .pill { background:rgba(0,0,0,.3); border:1px solid rgba(255,255,255,.14); border-radius:999px; padding:7px 13px; font-size:14px; }
+  .pill.host { border-color:var(--acc); }
+  .pill.host::after { content:" ★"; color:var(--acc); }
+  .pill.off { opacity:.4; text-decoration:line-through; }
+  .banner { text-align:center; color:var(--dim); font-size:13px; padding:6px; }
+  .err { color:var(--bad); min-height:20px; font-size:14px; margin-top:6px; text-align:center; }
+
+  /* round */
+  .roundtop { display:flex; justify-content:space-between; align-items:center; color:var(--dim); font-size:14px; }
+  .lifelist { font-weight:800; color:var(--ink); }
+  .prompt-wrap { text-align:center; padding:6px 0 2px; }
+  .domain { font-size:34px; }
+  .prompt-text { font-size:26px; font-weight:900; margin:6px 0 2px; }
+  .example { color:#b9c6dd; font-size:14px; }
+  .ringwrap { display:flex; justify-content:center; margin:10px 0; }
+  .timerwrap { position:relative; width:92px; height:92px; }
+  .timerwrap svg { transform:rotate(-90deg); }
+  .timernum { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:900; font-variant-numeric:tabular-nums; }
+  .timernum.warn { color:var(--bad); animation:pulse .5s infinite alternate; }
+  @keyframes pulse { to { transform:scale(1.12); } }
+  .locked { text-align:center; color:var(--good); min-height:24px; font-size:15px; }
+  .count { text-align:center; color:var(--dim); font-size:13px; }
+  .chiprow { display:flex; gap:8px; margin-top:10px; } .chiprow button { margin:0; }
+  .confirm { background:var(--good); }
+  .report { color:var(--dim); font-size:13px; text-decoration:underline; margin-left:6px; }
+
+  /* reveal */
+  .reveal-head { text-align:center; margin:4px 0 8px; }
+  .ladder { position:relative; margin:4px 0 10px; padding-left:0; }
+  .rrow { display:flex; align-items:center; gap:9px; padding:10px 12px; border-radius:12px; margin:7px 0; background:var(--card2); border-left:4px solid var(--pigeon);
+          opacity:0; transform:translateX(-24px); animation:flyin .4s cubic-bezier(.2,.8,.3,1) forwards; }
+  @keyframes flyin { to { opacity:1; transform:none; } }
+  .bird { font-size:22px; }
+  .tier { font-size:11px; font-weight:900; letter-spacing:.5px; min-width:84px; text-align:center; padding:4px 0; border-radius:7px; background:#0000; }
+  .nick { font-weight:800; }
+  .pts { margin-left:auto; font-weight:900; font-variant-numeric:tabular-nums; }
+  .twins { color:var(--acc); font-size:12px; font-weight:800; }
+  .rarityline { font-size:12px; color:var(--dim); text-align:center; margin:-2px 0 4px; }
+  .nosight { opacity:.65; }
+
+  /* results */
+  .podium { display:flex; align-items:flex-end; justify-content:center; gap:10px; margin:8px 0 4px; }
+  .perch { background:var(--card2); border:1px solid rgba(255,255,255,.14); border-radius:12px 12px 6px 6px; text-align:center; padding:10px 6px 8px; width:31%; }
+  .perch .pbird { font-size:28px; }
+  .perch .pnick { font-weight:800; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .perch .ppts { color:var(--acc); font-weight:900; }
+  .perch.p1 { height:120px; border-color:var(--acc); order:2; }
+  .perch.p2 { height:95px; order:1; } .perch.p3 { height:78px; order:3; }
+  table.standings { width:100%; border-collapse:collapse; }
+  table.standings td { padding:9px 6px; border-bottom:1px solid rgba(255,255,255,.09); font-size:16px; }
+  .place { font-weight:900; color:var(--acc); width:30px; }
+  .best { border:1px dashed var(--acc); text-align:center; }
+  .mute { position:fixed; top:10px; right:12px; z-index:5; background:var(--card2); border:1px solid rgba(255,255,255,.15); color:var(--ink); width:40px; height:40px; margin:0; border-radius:999px; font-size:17px; padding:0; }
+
+  /* ---- fx layer ---- */
+  #fx-sky { position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+  .fx-band { position:absolute; left:0; right:0; opacity:.85; }
+  .fx-stars { position:absolute; top:0; left:0; right:0; height:30%;
+    background-image:radial-gradient(#fff 1px, transparent 1.4px), radial-gradient(#ffd 1px, transparent 1.4px);
+    background-size:90px 70px, 140px 110px; opacity:.5; animation:twinkle 6s ease-in-out infinite alternate; }
+  @keyframes twinkle { to { opacity:.25; } }
+  .fx-cloud { position:absolute; font-size:26px; opacity:.16; animation:drift linear infinite; }
+  .fx-cloud.c1 { top:34%; animation-duration:75s; } .fx-cloud.c2 { top:58%; font-size:38px; animation-duration:110s; } .fx-cloud.c3 { top:22%; font-size:20px; animation-duration:90s; }
+  @keyframes drift { from { left:-12%; } to { left:112%; } }
+  .fx-flock { position:absolute; top:12%; left:-5%; color:var(--dim); opacity:.35; font-size:14px; letter-spacing:6px; animation:migrate 55s linear infinite; }
+  @keyframes migrate { from { transform:translateX(0) } to { transform:translateX(115vw) } }
+  .fx-particle { position:fixed; z-index:60; pointer-events:none; font-size:13px; font-weight:900; }
+  #countdown-overlay { position:fixed; inset:0; z-index:40; display:none; align-items:center; justify-content:center; flex-direction:column;
+    background:radial-gradient(90% 70% at 50% 40%, rgba(22,33,62,.92), rgba(5,7,15,.96)); text-align:center; }
+  #countdown-overlay.on { display:flex; }
+  .cd-round { color:var(--dim); letter-spacing:2px; font-size:14px; text-transform:uppercase; }
+  .cd-num { font-size:120px; font-weight:900; color:var(--acc); line-height:1; text-shadow:0 0 60px rgba(255,209,102,.45); }
+  .cd-num.tick { animation:cdpop .9s cubic-bezier(.2,.9,.3,1); }
+  @keyframes cdpop { 0% { transform:scale(1.6); opacity:.2; } 30% { transform:scale(1); opacity:1; } }
+  .cd-birds { font-size:22px; letter-spacing:14px; margin-top:6px; opacity:.8; }
+  .altitude-ruler { position:absolute; left:6px; top:0; bottom:0; width:46px; pointer-events:none; }
+  .altitude-ruler .mark { position:absolute; left:0; right:0; font-size:10.5px; font-weight:800; text-align:center; opacity:.75; padding:2px 0; border-radius:6px; color:#0d1322; }
+  .rrow { position:absolute; left:56px; right:6px; z-index:2; display:flex; align-items:center; gap:8px; padding:9px 10px; border-radius:12px;
+           background:var(--card2); border-left:4px solid var(--pigeon); box-shadow:0 4px 18px rgba(0,0,0,.35); }
+  .rrow.rare-glow { background:linear-gradient(90deg, rgba(255,93,143,.22), var(--card2) 55%); box-shadow:0 0 26px rgba(255,93,143,.35); }
+  .rrow .answrap { flex:1; min-width:0; } .rrow .subline { font-size:11px; color:var(--dim); margin-top:2px; }
+  #reveal-list { position:relative; padding:10px 0 52px 0; height:568px; }
+  .reveal-head { padding:0 46px 6px 0; margin-top:34px; }
+  .ans { color:var(--dim); overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-size:14px; line-height:1.25; }
+
+  /* ---- cosmic theme ---- */
+  .fx-stars2 { position:absolute; inset:0; }
+  .fx-stars2 i { position:absolute; width:2px; height:2px; border-radius:50%; background:#fff; animation:twinkle 5s ease-in-out infinite alternate; }
+  .fx-nebula { position:absolute; width:60vw; height:60vw; border-radius:50%; filter:blur(48px); opacity:.16; }
+  .fx-nebula.n1 { top:-12%; right:-18%; background:radial-gradient(circle,#7a4dff,transparent 65%); }
+  .fx-nebula.n2 { bottom:-16%; left:-20%; background:radial-gradient(circle,#ff5d8f,transparent 60%); opacity:.10; }
+  .fx-earth { position:absolute; bottom:4%; left:50%; transform:translateX(-50%); font-size:64px; transition:font-size 2s,opacity 2s; filter:drop-shadow(0 0 24px rgba(90,160,255,.55)); }
+  body[data-theme="cosmos"] .prompt-text { text-shadow:0 0 22px rgba(140,180,255,.35); }
+
+  /* ---- chat drawer (left) ---- */
+  #chat-toggle { position:fixed; left:12px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:45; width:52px; height:52px; margin:0; border-radius:999px; font-size:22px; padding:0; background:var(--card2); border:1px solid rgba(255,255,255,.18); color:var(--ink); }
+  #chat-toggle .badge { position:absolute; top:-4px; right:-4px; background:var(--acc); color:#141a2a; border-radius:999px; font-size:11px; font-weight:900; padding:2px 6px; }
+  #chat-drawer { position:fixed; top:0; bottom:0; left:0; width:min(80vw, 320px); z-index:50; background:rgba(8,11,22,.96); border-right:1px solid rgba(255,255,255,.12); display:flex; flex-direction:column; transform:translateX(-102%); transition:transform .25s ease; }
+  #chat-drawer.open { transform:none; }
+  #chat-drawer header { padding:12px 14px; font-weight:900; border-bottom:1px solid rgba(255,255,255,.1); display:flex; justify-content:space-between; }
+  #chat-drawer header button { width:auto; margin:0; background:none; color:var(--dim); font-size:20px; padding:0 4px; }
+  #chat-log { flex:1; overflow-y:auto; padding:10px 12px; font-size:14px; }
+  #chat-log .msg { margin:5px 0; word-wrap:break-word; }
+  #chat-log .msg b { color:var(--acc); }
+  #chat-log .msg.sys { color:var(--dim); font-style:italic; }
+  #chat-foot { display:flex; gap:8px; padding:10px; border-top:1px solid rgba(255,255,255,.1); }
+  #chat-foot input { flex:1; padding:10px; font-size:15px; }
+  #chat-foot button { width:auto; margin:0; padding:10px 14px; font-size:15px; }
+  #chat-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:49; display:none; }
+  #chat-backdrop.on { display:block; }
+
+  /* ---- larger prompt card ---- */
+  .card.big { padding:22px 18px; }
+  .prompt-text { font-size:31px; }
+  .domain { font-size:44px; }
+  .example { font-size:15px; }
+</style>
+</head>
+<body>
+<button class="mute" id="btn-mute" title="sound on/off">🔊</button>
+<main>
+
+  <!-- HOME -->
+  <section class="screen on" id="s-home">
+    <h1>RARE<span class="fly">BIRD</span> 🦜</h1>
+    <p class="sub">same question · same 30 seconds · the rarest right answer wins</p>
+    <div class="card">
+      <input type="text" id="nick" placeholder="Your nickname" maxlength="14" autocomplete="off">
+      <button id="btn-create">🪺 Create a room</button>
+      <div class="row" style="margin-top:10px;">
+        <input type="text" id="join-code" placeholder="CODE" maxlength="4" style="text-transform:uppercase;" autocomplete="off">
+        <button class="ghost" id="btn-join">Join</button>
+      </div>
+      <div class="err" id="home-err"></div>
+    </div>
+    <p class="banner">PIGEON 10 · SPARROW 15 · STARLING 30 · KINGFISHER 60 · MEGA 85 · RARE BIRD 100</p>
+    <p class="banner">no app · no account · just a code and a nickname</p>
+  </section>
+
+  <!-- LOBBY -->
+  <section class="screen" id="s-lobby">
+    <p class="sub" style="margin-top:14px;">room code — share it</p>
+    <div class="code" id="room-code">----</div>
+    <p class="tapcopy" id="tap-copy">tap the code to copy invite</p>
+    <div class="card">
+      <div class="players" id="lobby-players"></div>
+      <p class="banner" id="lobby-hint">Waiting…</p>
+      <div id="host-controls" style="display:none;">
+        <div class="row" style="margin-bottom:10px;">
+          <button class="ghost" id="btn-rounds">Rounds: 3</button>
+          <button class="ghost" id="btn-timer">30s rounds</button>
+        </div>
+        <button class="ghost" id="btn-theme" style="margin-bottom:10px;">Theme: Birds 🦜</button>
+        <button id="btn-start">▶ Start the flock</button>
+      </div>
+      <button class="ghost" id="btn-leave">Leave</button>
+    </div>
+  </section>
+
+  <!-- ROUND -->
+  <section class="screen" id="s-round">
+    <div class="roundtop"><span id="round-count">Round 1</span><span class="lifelist" id="lifelist">🪶 0</span></div>
+    <div class="card big">
+      <div class="prompt-wrap" id="prompt-wrap">
+        <div class="domain" id="prompt-domain">🐦</div>
+        <div class="prompt-text" id="prompt-text">…</div>
+        <div class="example" id="prompt-example"></div>
+      </div>
+      <div class="ringwrap">
+        <div class="timerwrap">
+          <svg width="92" height="92"><circle cx="46" cy="46" r="40" stroke="rgba(255,255,255,.12)" stroke-width="8" fill="none"/><circle id="ring" cx="46" cy="46" r="40" stroke="var(--acc)" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="0"/></svg>
+          <div class="timernum" id="timer">30</div>
+        </div>
+      </div>
+      <input type="text" id="answer" placeholder="type your answer…" maxlength="64" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <div class="chiprow"><button id="btn-send">Send</button></div>
+      <div class="err" id="answer-feedback"></div>
+      <div class="chiprow" id="confirm-chip" style="display:none;">
+        <button class="confirm" id="btn-confirm">Yes, submit</button>
+        <button class="ghost" id="btn-keep">Keep typing</button>
+      </div>
+      <div class="chiprow" id="wager-chip" style="display:none;">
+        <button class="ghost" id="btn-wager">🎲 Double or nothing — rare pays ×2, common pays ½</button>
+      </div>
+      <div class="locked" id="locked-msg"></div>
+      <div class="count" id="answered-count"></div>
+    </div>
+    <p class="banner">rarer answers fly higher · TWINS just means you think alike</p>
+  </section>
+
+  <!-- REVEAL -->
+  <section class="screen" id="s-reveal">
+    <div class="reveal-head"><div style="font-size:22px;font-weight:900" id="reveal-title">The flock answers</div><div class="banner" id="reveal-sub"></div></div>
+    <div class="ladder" id="reveal-list"></div>
+    <p class="banner" id="reveal-next">·</p>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="screen" id="s-results">
+    <h1 style="font-size:24px;">FLOCK RESULTS 🏆</h1>
+    <div class="podium" id="podium"></div>
+    <div class="card best" id="best-card"></div>
+    <div class="card"><table class="standings" id="standings"></table></div>
+    <button id="btn-rematch">Rematch 🔁</button>
+    <p class="banner" id="rematch-status"></p>
+    <button class="ghost" id="btn-share-result">Copy result to share</button>
+  </section>
+</main>
+<button id="chat-toggle" title="flock chat">💬</button>
+<div id="chat-backdrop"></div>
+<aside id="chat-drawer">
+  <header><span>FLOCK CHAT</span><button id="chat-close">×</button></header>
+  <div id="chat-log"></div>
+  <div id="chat-foot">
+    <input type="text" id="chat-input" placeholder="say something nice…" maxlength="100" autocomplete="off">
+    <button id="chat-send">Send</button>
+  </div>
+</aside>
+<div id="countdown-overlay">
+  <div class="cd-round" id="cd-round">Round 1 of 3</div>
+  <div class="cd-num" id="cd-num">3</div>
+  <div class="cd-birds">🐦 🐦 🐦 🐦</div>
+  <div class="banner" id="cd-hint">get ready to spot</div>
+</div>
+<script type="module">
+import * as FX from "./fx.js?v=7";
+const V = 7; // client version — must match server CLIENT_VERSION
+FX.ambient('birds');
+
+// ---- theme engine: canonical tier names stay; flavor/labels/scene swap ----
+const THEMES = {
+  birds: { id: 'birds', icon: '🦜', label: 'Birds', unit: 'altitude',
+    revealTitle: 'the flock ascends', rulerFull: false,
+    flavor: {} },
+  cosmos: { id: 'cosmos', icon: '🚀', label: 'Cosmos', unit: 'distance',
+    revealTitle: 'the crew breaks orbit', rulerFull: true,
+    flavor: { 'PIGEON': 'Low orbit', 'SPARROW': 'The Moon', 'STARLING': 'Mars', 'KINGFISHER': 'Jupiter', 'MEGA': 'Kuiper Belt', 'RARE BIRD': 'Interstellar' } },
+};
+let theme = THEMES.birds;
+const $ = id => document.getElementById(id);
+const screens = ['home','lobby','round','reveal','results'];
+const show = name => screens.forEach(s => $('s-'+s).classList.toggle('on', s === name));
+
+const TIERS = {
+  'PIGEON':    { pts:10,  emoji:'🕊️', color:'var(--pigeon)',    blurb:'everyone says it' },
+  'SPARROW':   { pts:15,  emoji:'🐦', color:'var(--sparrow)',   blurb:'a safe pick' },
+  'STARLING':  { pts:30,  emoji:'✨', color:'var(--starling)',  blurb:'nicely uncommon' },
+  'KINGFISHER':{ pts:60,  emoji:'🐠'.replace('🐠','🦅'), color:'var(--kingfisher)', blurb:'a proper deep cut' },
+  'MEGA':      { pts:85,  emoji:'🦉', color:'var(--mega)',      blurb:'how do you know that' },
+  'RARE BIRD': { pts:100, emoji:'🦜', color:'var(--rarebird)',  blurb:'one in a flock' },
+};
+const DOMAIN_ICON = { country:'🌍', 'chemical element':'⚗️', colour:'🎨', color:'🎨', animal:'🦊', fruit:'🍒', sport:'🏅', capital:'🏛️' };
+const domainIcon = t => { for (const [k, v] of Object.entries(DOMAIN_ICON)) if (t.toLowerCase().includes(k)) return v; return '🐦'; };
+
+let ws = null, pendingSuggest = null, timerHandle = null, roundEndsAt = 0, clockSkew = 0, lastPromptId = null, myNick = null, lifeList = 0, roundDuration = 30000;
+const my = JSON.parse(localStorage.getItem('rarebird') || 'null') || {};
+
+// ---------------- tiny webaudio chirps ----------------
+let muted = localStorage.getItem('rarebird-mute') === '1';
+const paintMute = () => { $('btn-mute').textContent = muted ? '🔇' : '🔊'; };
+paintMute();
+$('btn-mute').onclick = () => { muted = !muted; localStorage.setItem('rarebird-mute', muted ? '1' : '0'); paintMute(); };
+let actx = null;
+function chirp(freq = 1200, dur = 0.09, gain = 0.04) {
+  if (muted) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.type = 'sine'; o.frequency.setValueAtTime(freq, actx.currentTime);
+    o.frequency.exponentialRampToValueAtTime(freq * 1.6, actx.currentTime + dur);
+    g.gain.setValueAtTime(gain, actx.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.0001, actx.currentTime + dur);
+    o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime + dur);
+  } catch {}
+}
+const chirpFor = tier => chirp(tier === 'RARE BIRD' ? 2000 : tier === 'MEGA' ? 1700 : tier === 'KINGFISHER' ? 1400 : 950, tier === 'PIGEON' ? 0.07 : 0.13);
+
+function connect(cb) {
+  const resuming = !!(my.room && my.token);
+  const params = resuming ? `?room=${my.room}&token=${my.token}` : '';
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}${params}`);
+  // Only greet with 'resume' when there IS a session to resume — otherwise the
+  // server's "not_in_room" reply used to bounce fresh joiners back to Home.
+  ws.onopen = () => { if (resuming) ws.send(JSON.stringify({ type: 'resume' })); cb && cb(); };
+  ws.onmessage = e => handle(JSON.parse(e.data));
+  ws.onclose = () => setTimeout(() => connect(), 1500);
+}
+const send = o => ws && ws.readyState === 1 && ws.send(JSON.stringify({ v: V, ...o }));
+const esc = s => (s ?? '').toString().replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function handle(m) {
+  switch (m.type) {
+    case 'joined': my.room = m.code; my.pid = m.pid; my.token = m.token; localStorage.setItem('rarebird', JSON.stringify(my)); break;
+    case 'state': renderState(m.room); break;
+    case 'countdown': showCountdown(m); break;
+    case 'roundStart': hideCountdown(); applyTheme(m.theme); FX.setProgress(m.roundIndex, m.totalRounds || 3); startRound(m); break;
+    case 'answerAck': ack(m); break;
+    case 'reveal': hideCountdown(); renderReveal(m); break;
+    case 'results': renderResults(m); break;
+    case 'rematchVote': $('rematch-status').textContent = `${m.votes}/${m.total} want a rematch…`; break;
+    case 'update': showUpdateBanner(m.current); break;
+    case 'chat': appendChat(m); break;
+    case 'error':
+      if (m.code === 'no_room') {
+        localStorage.removeItem('rarebird');
+        if ($('s-home').classList.contains('on')) $('home-err').textContent = m.msg; // stale saved room: quiet reset
+      } else if ($('s-home').classList.contains('on')) {
+        $('home-err').textContent = m.msg; setTimeout(() => { if ($('home-err').textContent === m.msg) $('home-err').textContent = ''; }, 2500);
+      } else $('answer-feedback').textContent = m.msg;
+      break;
+  }
+}
+
+function applyTheme(id) {
+  theme = THEMES[id] ?? THEMES.birds;
+  document.body.dataset.theme = theme.id;
+  FX.setTheme(theme.id, my.room || 'rarebird');
+}
+
+let chatUnread = 0;
+function appendChat(m) {
+  const log = $('chat-log'); if (!log) return;
+  const div = document.createElement('div');
+  div.className = 'msg' + (m.sys ? ' sys' : '');
+  div.innerHTML = m.sys ? esc(m.text) : `<b>${esc(m.nick)}</b> ${esc(m.text)}`;
+  const nearBottom = log.scrollHeight - log.scrollTop - log.clientHeight < 80;
+  log.appendChild(div);
+  if (nearBottom) log.scrollTop = log.scrollHeight;
+  if (!$('chat-drawer').classList.contains('open') && !m.sys) {
+    chatUnread++; const b = $('chat-toggle');
+    b.innerHTML = `💬${chatUnread ? `<span class="badge">${chatUnread}</span>` : ''}`;
+    chirp(800, 0.05, 0.02);
+  }
+}
+function openChat(open) {
+  $('chat-drawer').classList.toggle('open', open);
+  $('chat-backdrop').classList.toggle('on', open);
+  if (open) { chatUnread = 0; $('chat-toggle').innerHTML = '💬'; $('chat-input').focus(); }
+}
+
+let cdHandle = null;
+function showCountdown(m) {
+  const ov = $('countdown-overlay');
+  if (!ov || !$('cd-num')) return;
+  const total = m.totalRounds ?? null;
+  $('cd-round').textContent = (m.nextRound != null && total) ? `Round ${m.nextRound + 1} of ${total}` : 'On its way';
+  ov.classList.add('on');
+  cdHandle?.cancel();
+  const remainSec = Math.max(1, Math.ceil(((m.endsAt ?? (Date.now() + 3000)) - Date.now()) / 1000));
+  cdHandle = FX.countdown($('cd-num'), Math.min(3, remainSec));
+  chirp(900, 0.08, 0.03);
+}
+function hideCountdown() { const ov = $('countdown-overlay'); if (ov) ov.classList.remove('on'); cdHandle?.cancel(); }
+
+function renderState(room) {
+  if (room.phase === 'countdown' && room.phaseEndsAt) {
+    showCountdown({ endsAt: room.phaseEndsAt, nextRound: room.roundIndex, totalRounds: room.totalRounds });
+  }
+  if (room.phase === 'lobby') {
+    $('room-code').textContent = room.code;
+    $('lobby-players').innerHTML = room.players.map(p =>
+      `<span class="pill ${p.isHost ? 'host' : ''} ${p.connected ? '' : 'off'}">${esc(p.nick)}</span>`).join('');
+    const me = room.players.find(p => p.pid === my.pid);
+    $('host-controls').style.display = me?.isHost ? 'block' : 'none';
+    $('lobby-hint').textContent = me?.isHost ? 'Pick settings, then start when everyone is in.' : 'Waiting for the host…';
+    show('lobby');
+  } else if (room.phase === 'results') {
+    /* stay on podium */
+  }
+}
+
+function startRound(m) {
+  show('round');
+  roundDuration = m.durationMs;
+  $('round-count').textContent = m.totalRounds ? `Round ${m.roundIndex + 1} of ${m.totalRounds}` : `Round ${m.roundIndex + 1}`;
+  $('prompt-domain').textContent = domainIcon(m.prompt.text);
+  $('prompt-text').textContent = m.prompt.text;
+  $('prompt-example').textContent = m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+  $('answer').value = ''; $('answer').disabled = false; $('answer-feedback').textContent = '';
+  $('confirm-chip').style.display = 'none'; pendingSuggest = null; $('locked-msg').textContent = '';
+  if ($('wager-chip')) { $('wager-chip').style.display = 'none'; delete $('wager-chip').dataset.used; }
+  $('btn-send').disabled = false;
+  lastPromptId = m.roundId;
+  roundEndsAt = m.endsAt;
+  clockSkew = m.serverNow - Date.now(); // snapshot ONCE per round
+  clearInterval(timerHandle);
+  const total = 251.3;
+  const tick = () => {
+    const leftMs = Math.max(0, roundEndsAt - (Date.now() + clockSkew));
+    const left = Math.ceil(leftMs / 1000);
+    const el = $('timer'); el.textContent = left; el.classList.toggle('warn', left <= 8);
+    $('ring').style.strokeDashoffset = String(total * (1 - leftMs / roundDuration));
+    $('ring').style.stroke = left <= 8 ? 'var(--bad)' : left <= 15 ? 'var(--mega)' : 'var(--acc)';
+    if (left <= 3 && left > 0) chirp(700 + (3 - left) * 150, 0.05, 0.02);
+  };
+  tick(); timerHandle = setInterval(tick, 250);
+  $('answer').focus();
+}
+
+function ack(m) {
+  if (m.status === 'locked') {
+    $('locked-msg').textContent = `✓ ${m.canonical} — locked in. Watch the sky…`;
+    $('answer').disabled = true; $('btn-send').disabled = true;
+    $('confirm-chip').style.display = 'none'; $('answer-feedback').textContent = '';
+    if ($('wager-chip') && !$('wager-chip').dataset.used) $('wager-chip').style.display = 'flex';
+    chirp(1500, 0.1);
+  } else if (m.status === 'wagered') {
+    if ($('wager-chip')) { $('wager-chip').dataset.used = '1'; $('wager-chip').style.display = 'none'; }
+    $('locked-msg').textContent = '🎲 Wager placed — double or nothing!';
+    chirp(1100, 0.12);
+  } else if (m.status === 'checking') {
+    $('answer-feedback').textContent = m.msg || 'Checking the field guide…';
+    $('confirm-chip').style.display = 'none';
+  } else if (m.status === 'suggest') {
+    pendingSuggest = m.suggestion;
+    $('btn-confirm').textContent = `Yes, submit “${m.suggestion}”`;
+    $('confirm-chip').style.display = 'flex';
+    $('answer-feedback').textContent = 'Close! Is this what you meant?';
+  } else if (m.status === 'invalid') {
+    $('answer-feedback').innerHTML = '';
+    $('answer-feedback').appendChild(document.createTextNode(m.msg || 'No echo! Try again.'));
+    const rep = document.createElement('a');
+    rep.href = '#'; rep.className = 'report'; rep.textContent = 'Report missing bird';
+    rep.onclick = ev => { ev.preventDefault(); rep.textContent = 'reported ✓'; send({ type: 'report', raw: $('answer').value.trim(), promptId: lastPromptId }); };
+    $('answer-feedback').appendChild(rep);
+    $('confirm-chip').style.display = 'none';
+    chirp(300, 0.08, 0.03);
+  }
+}
+
+function renderReveal(m) {
+  show('reveal');
+  clearInterval(timerHandle);
+    $('reveal-title').textContent = `Round ${m.roundIndex + 1} — ${theme.revealTitle}`;
+  $('reveal-sub').textContent = theme.id === 'cosmos' ? 'low orbit first — the rarest answers leave the solar system' : 'ground-dwellers first — the rare birds fly highest';
+  $('reveal-next').textContent = m.next === 'results' ? 'gathering the flock\u2019s results\u2026' : 'next round incoming\u2026';
+  const list = $('reveal-list'); list.innerHTML = '';
+  const H = list.clientHeight || 560;
+  const bandPad = 30, rowH = 54;
+  // left gutter altitude ruler
+  const ruler = document.createElement('div');
+  ruler.className = 'altitude-ruler';
+  for (const [name, cfg] of Object.entries(FX.TIER_LADDER)) {
+    if (name === 'NO SIGHTING') continue;
+    const mark = document.createElement('div');
+    mark.className = 'mark';
+    const flavor = theme.flavor[name];
+    mark.textContent = theme.rulerFull && flavor ? flavor : name.split(' ')[0];
+    mark.style.top = `calc(${(1 - cfg.alt) * 100}% - 8px)`; mark.style.background = cfg.color;
+    ruler.appendChild(mark);
+  }
+  list.appendChild(ruler);
+  // group rows by tier band (least rare animate first)
+  const rows = [...m.rows].sort((a, b) => (a.canonical ? 0 : 1) - (b.canonical ? 0 : 1) || a.pts - b.pts || a.nickname.localeCompare(b.nickname));
+  const slots = {}; let order = 0;
+  rows.forEach(r => {
+    const tier = r.tier ?? 'NO SIGHTING';
+    const t = TIERS[r.tier];
+    slots[tier] = slots[tier] || 0;
+    const alt = FX.TIER_LADDER[tier].alt;
+    const bandTop = (1 - alt) * (H - bandPad * 2) + bandPad;
+    const top = Math.min(H - rowH - 4, bandTop + slots[tier] * (rowH + 6));
+    slots[tier]++;
+    const div = document.createElement('div');
+    div.className = 'rrow' + (r.canonical ? '' : ' nosight') + (r.tier === 'RARE BIRD' ? ' rare-glow' : '');
+    div.style.borderLeftColor = t ? t.color : 'var(--pigeon)';
+    const sub = t && ['KINGFISHER','MEGA','RARE BIRD'].includes(r.tier)
+      ? `<div class="subline">${TIERS[r.tier].blurb}${r.rarityPct != null ? ` · rarer than ${r.rarityPct}% of answers` : ''}</div>` : '';
+    const tierHtml = t
+      ? `<span class="tier" style="background:${t.color};color:#141a2a">${t.emoji} ${r.tier}</span>`
+      : `<span class="tier" style="background:rgba(255,255,255,.12);color:var(--dim)">NO SIGHTING</span>`;
+    const wagerHtml = r.wagered ? `<span class="twins">${r.wagerOutcome === 'doubled' ? '×2!' : '½'}</span>` : '';
+    div.innerHTML = `${tierHtml}<span class="answrap"><b class="nick">${esc(r.nickname)}</b> <span class="ans">${esc(r.canonical ?? r.typed ?? '')}</span>${wagerHtml}${sub}</span>${r.twins > 1 ? `<span class="twins">TWINS×${r.twins}👯</span>` : ''}<span class="pts">+${r.pts}</span>`;
+    div.style.top = `${Math.max(0, top)}px`;
+    div.style.opacity = '0';
+    list.appendChild(div);
+    // ascent animation: fly from the bottom of the sky to this altitude
+    const delay = order * 480; order++;
+    const flyFrom = H - top;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setTimeout(() => { div.style.opacity = '1'; }, delay); }
+    else div.animate([
+      { transform: `translateY(${flyFrom}px)`, opacity: 0 },
+      { transform: `translateY(${flyFrom * 0.25}px)`, opacity: 1, offset: .45 },
+      { transform: 'translateY(0)', opacity: 1 },
+    ], { duration: 950, delay, easing: 'cubic-bezier(.22,.9,.28,1)', fill: 'forwards' });
+    if (r.nickname === myNick) lifeList += r.pts;
+    setTimeout(() => {
+      chirpFor(r.tier);
+      const rect = div.getBoundingClientRect();
+      if (r.tier === 'RARE BIRD') { FX.burst(rect.left + rect.width / 2, rect.top + 10, { tier: r.tier }); FX.shake(document.body); }
+      else if (r.tier === 'MEGA') FX.burst(rect.left + 40, rect.top + 8, { tier: r.tier, count: 6 });
+    }, delay + 600);
+  });
+  $('lifelist').textContent = `🪶 ${lifeList}`;
+}
+
+function renderResults(m) {
+  show('results');
+  const s = m.standings;
+  const podium = $('podium'); podium.innerHTML = '';
+  const medals = ['🥇','🥈','🥉'];
+  s.slice(0, 3).forEach((p, i) => {
+    const d = document.createElement('div');
+    d.className = `perch p${i + 1}`;
+    d.innerHTML = `<div class="pbird">${medals[i]}</div><div class="pnick">${esc(p.nick)}</div><div class="ppts">${p.pts}</div>`;
+    podium.appendChild(d);
+  });
+  $('standings').innerHTML = s.map(p =>
+    `<tr><td class="place">${p.place}</td><td>${esc(p.nick)}</td><td style="text-align:right;font-weight:800">${p.pts}</td></tr>`).join('');
+  $('best-card').innerHTML = m.bestAnswer
+    ? `🦜 <b>Best sighting</b> — ${esc(m.bestAnswer.nick)} spotted “${esc(m.bestAnswer.canonical)}” · ${esc(m.bestAnswer.tier)} +${m.bestAnswer.pts}` : '';
+  $('rematch-status').textContent = '';
+  chirp(1800, 0.3, 0.05);
+  const first = document.querySelector('.perch.p1');
+  if (first) setTimeout(() => { const rc = first.getBoundingClientRect(); FX.burst(rc.left + rc.width / 2, rc.top, { tier: 'RARE BIRD', count: 16 }); }, 350);
+}
+
+function showUpdateBanner(current) {
+  if ($('update-banner')) return;
+  const b = document.createElement('div');
+  b.id = 'update-banner';
+  b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:80;background:#ff5d8f;color:#141a2a;font-weight:800;font-size:14px;padding:10px;text-align:center;cursor:pointer';
+  b.textContent = `✨ A new version of RAREBIRD is out — tap to refresh (v${current})`;
+  b.onclick = () => location.reload(true);
+  document.body.appendChild(b);
+}
+
+// ---------------- wiring ----------------
+$('btn-create').onclick = () => { myNick = $('nick').value.trim() || 'Birder'; connect(() => send({ type: 'create', nickname: myNick, rounds, roundMs: timerOpt, theme: themeOpt })); };
+$('btn-join').onclick = () => {
+  const code = $('join-code').value.trim().toUpperCase();
+  if (code.length !== 4) { $('home-err').textContent = 'Code is 4 characters.'; return; }
+  myNick = $('nick').value.trim() || 'Birder';
+  connect(() => send({ type: 'join', code, nickname: myNick }));
+};
+let rounds = 3, timerOpt = 30000;
+$('btn-rounds').onclick = () => { rounds = rounds === 3 ? 5 : rounds === 5 ? 7 : 3; $('btn-rounds').textContent = `Rounds: ${rounds}`; };
+$('btn-timer').onclick = () => { timerOpt = timerOpt === 30000 ? 20000 : timerOpt === 20000 ? 45000 : 30000; $('btn-timer').textContent = `${timerOpt / 1000}s rounds`; };
+$('btn-start').onclick = () => send({ type: 'start', rounds, roundMs: timerOpt, theme: themeOpt });
+$('btn-leave').onclick = () => { send({ type: 'leave' }); localStorage.removeItem('rarebird'); location.reload(); };
+$('btn-send').onclick = sendAnswer;
+$('answer').addEventListener('keydown', e => { if (e.key === 'Enter') sendAnswer(); });
+function sendAnswer() { const raw = $('answer').value.trim(); if (raw) send({ type: 'answer', raw, confirm: false }); }
+$('btn-confirm').onclick = () => send({ type: 'answer', raw: pendingSuggest ?? $('answer').value, confirm: true });
+$('btn-keep').onclick = () => { $('confirm-chip').style.display = 'none'; $('answer-feedback').textContent = ''; $('answer').focus(); };
+$('btn-wager').onclick = () => send({ type: 'wager' });
+let themeOpt = 'birds';
+$('btn-theme').onclick = () => { themeOpt = themeOpt === 'birds' ? 'cosmos' : 'birds'; $('btn-theme').textContent = `Theme: ${themeOpt === 'birds' ? 'Birds 🦜' : 'Cosmos 🚀'}`; applyTheme(themeOpt); };
+$('chat-toggle').onclick = () => openChat(!$('chat-drawer').classList.contains('open'));
+$('chat-close').onclick = () => openChat(false);
+$('chat-backdrop').onclick = () => openChat(false);
+$('chat-send').onclick = sendChat;
+$('chat-input').addEventListener('keydown', e => { if (e.key === 'Enter') sendChat(); });
+function sendChat() { const t = $('chat-input').value.trim(); if (!t) return; $('chat-input').value = ''; send({ type: 'chat', text: t }); }
+$('btn-rematch').onclick = () => send({ type: 'rematch' });
+$('room-code').onclick = () => {
+  const invite = `Join my RAREBIRD flock 🦜 ${location.origin} — code ${$('room-code').textContent}`;
+  navigator.clipboard?.writeText(invite).then(() => { $('tap-copy').textContent = 'invite copied ✓'; chirp(1600, 0.08); }).catch(() => {});
+};
+$('btn-share-result').onclick = () => {
+  const rows = [...document.querySelectorAll('#standings tr')].map(tr => tr.textContent.replace(/\s+/g, ' ').trim()).join('\n');
+  navigator.clipboard?.writeText(`RAREBIRD 🦜 results\n${rows}`).then(() => { $('btn-share-result').textContent = 'copied ✓'; }).catch(() => {});
+};
+if ($('nick')) $('nick').value = localStorage.getItem('rarebird-nick') || '';
+$('nick').addEventListener('change', () => localStorage.setItem('rarebird-nick', $('nick').value));
+if (my.room && my.token) connect();
+</script>
+</body>
+</html>

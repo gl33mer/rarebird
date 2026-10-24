@@ -1,0 +1,4732 @@
+{
+ "id": "starter-pack-v1",
+ "generated": "2026-10-23",
+ "source": {
+  "wikidata": "CC0",
+  "pageviews": "2026-09 monthly, agent=user, via Wikimedia Pageviews API (CC0)"
+ },
+ "prompts": [
+  {
+   "id": "geo-countries",
+   "text": "Name a country.",
+   "example": "like France",
+   "catalogueSize": 197,
+   "catalogue": [
+    {
+     "canonical": "United States",
+     "aliases": [
+      "Merica",
+      "Murica",
+      "the USA",
+      "United States of America",
+      "US of America",
+      "US of A",
+      "U.S. of America",
+      "U. S. A.",
+      "U. S.",
+      "the US of America",
+      "the US of A",
+      "USA",
+      "US",
+      "America"
+     ],
+     "evidence": {
+      "viewsSept2026": 1520090,
+      "rarityPct": 0,
+      "wikidata": "Q30",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "United Kingdom",
+     "aliases": [
+      "United Kingdom of Great Britain and Northern Ireland",
+      "U K",
+      "Great Britain and Northern Ireland",
+      "G B",
+      "the UK",
+      "the United Kingdom of Great Britain and Northern Ireland",
+      "Great Britain",
+      "UK",
+      "U.K.",
+      "Britain",
+      "England"
+     ],
+     "evidence": {
+      "viewsSept2026": 540018,
+      "rarityPct": 1,
+      "wikidata": "Q145",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "India",
+     "aliases": [
+      "Tenjiku",
+      "Bharatvarsh",
+      "Al Hind",
+      "Hindoostan",
+      "Tianzhu",
+      "Bharata",
+      "Hindustan",
+      "Republic of India",
+      "Indostan",
+      "Bharat Ganarajya"
+     ],
+     "evidence": {
+      "viewsSept2026": 444280,
+      "rarityPct": 1,
+      "wikidata": "Q668",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "People's Republic of China",
+     "aliases": [
+      "The PRC",
+      "PR China",
+      "P.R.C.",
+      "China PR",
+      "Communist China",
+      "Red China",
+      "cn"
+     ],
+     "evidence": {
+      "viewsSept2026": 383030,
+      "rarityPct": 2,
+      "wikidata": "Q148",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Canada",
+     "aliases": [
+      "CAN",
+      "CA"
+     ],
+     "evidence": {
+      "viewsSept2026": 353830,
+      "rarityPct": 2,
+      "wikidata": "Q16",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Israel",
+     "aliases": [
+      "Yisrael",
+      "il",
+      "ISR",
+      "State of Israel"
+     ],
+     "evidence": {
+      "viewsSept2026": 353755,
+      "rarityPct": 3,
+      "wikidata": "Q801",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Russia",
+     "aliases": [
+      "Russian Federation"
+     ],
+     "evidence": {
+      "viewsSept2026": 345961,
+      "rarityPct": 3,
+      "wikidata": "Q159",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Germany",
+     "aliases": [
+      "DEU",
+      "DE",
+      "BRD",
+      "FRG",
+      "Federal Republic of Germany"
+     ],
+     "evidence": {
+      "viewsSept2026": 340312,
+      "rarityPct": 4,
+      "wikidata": "Q183",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Australia",
+     "aliases": [
+      "'Straya",
+      "The Commonwealth of Australia",
+      "Stralia",
+      "New Hollandia",
+      "Aussieland",
+      "Nova Hollandia",
+      "Straya",
+      "New Holland",
+      "Commonwealth of Australia",
+      "Stria",
+      "Oz",
+      "Down Under"
+     ],
+     "evidence": {
+      "viewsSept2026": 336749,
+      "rarityPct": 4,
+      "wikidata": "Q408",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Yemen",
+     "aliases": [
+      "Republic of Yemen",
+      "Rep. Yemen",
+      "ye"
+     ],
+     "evidence": {
+      "viewsSept2026": 322057,
+      "rarityPct": 5,
+      "wikidata": "Q805",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Japan",
+     "aliases": [
+      "Land of the Rising Sun",
+      "State of Japan",
+      "Nippon-koku",
+      "Nihon-koku",
+      "Land of Rising Sun",
+      "Iapon",
+      "Iapan"
+     ],
+     "evidence": {
+      "viewsSept2026": 312155,
+      "rarityPct": 5,
+      "wikidata": "Q17",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Singapore",
+     "aliases": [
+      "S'pore",
+      "Republic of Singapore",
+      "Singapore City",
+      "Lion City",
+      "sg",
+      "Garden City"
+     ],
+     "evidence": {
+      "viewsSept2026": 311074,
+      "rarityPct": 6,
+      "wikidata": "Q334",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Brazil",
+     "aliases": [
+      "Federative Republic of Brazil"
+     ],
+     "evidence": {
+      "viewsSept2026": 300449,
+      "rarityPct": 6,
+      "wikidata": "Q155",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Kazakhstan",
+     "aliases": [
+      "Qazaqstan",
+      "kz",
+      "Republic of Qazaqstan",
+      "Republic of Kazakhstan"
+     ],
+     "evidence": {
+      "viewsSept2026": 281409,
+      "rarityPct": 7,
+      "wikidata": "Q232",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Palestine",
+     "aliases": [
+      "PSE",
+      "State of Palestine"
+     ],
+     "evidence": {
+      "viewsSept2026": 261017,
+      "rarityPct": 7,
+      "wikidata": "Q219060",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "France",
+     "aliases": [
+      "French Republic"
+     ],
+     "evidence": {
+      "viewsSept2026": 256173,
+      "rarityPct": 8,
+      "wikidata": "Q142",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Turkey",
+     "aliases": [
+      "Republic of Türkiye",
+      "Republic of Turkey"
+     ],
+     "evidence": {
+      "viewsSept2026": 252874,
+      "rarityPct": 8,
+      "wikidata": "Q43",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Iran",
+     "aliases": [
+      "Islamic Republic of Iran",
+      "Islamic Rep. Iran",
+      "ir",
+      "IRI"
+     ],
+     "evidence": {
+      "viewsSept2026": 251863,
+      "rarityPct": 9,
+      "wikidata": "Q794",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Philippines",
+     "aliases": [
+      "Philippine Islands",
+      "Republic of the Philippines",
+      "RP"
+     ],
+     "evidence": {
+      "viewsSept2026": 246887,
+      "rarityPct": 9,
+      "wikidata": "Q928",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Saudi Arabia",
+     "aliases": [
+      "Saudi",
+      "Kingdom of Saudi Arabia"
+     ],
+     "evidence": {
+      "viewsSept2026": 245237,
+      "rarityPct": 10,
+      "wikidata": "Q851",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Mexico",
+     "aliases": [
+      "US of M",
+      "Mexican United States",
+      "Mexican Republic",
+      "United States of Mexico",
+      "MXN",
+      "mx",
+      "United Mexican States"
+     ],
+     "evidence": {
+      "viewsSept2026": 242295,
+      "rarityPct": 10,
+      "wikidata": "Q96",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Azerbaijan",
+     "aliases": [
+      "Republic of Azerbaijan",
+      "AZE"
+     ],
+     "evidence": {
+      "viewsSept2026": 240189,
+      "rarityPct": 11,
+      "wikidata": "Q227",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Taiwan",
+     "aliases": [
+      "Chinese Republic",
+      "China, Republic of",
+      "Nationalist China",
+      "Republic of China",
+      "TW",
+      "Republic of China (Taiwan)",
+      "TWN",
+      "Chinese Taipei",
+      "ROC",
+      "The ROC",
+      "Chunghwa Minkwo"
+     ],
+     "evidence": {
+      "viewsSept2026": 239987,
+      "rarityPct": 11,
+      "wikidata": "Q865",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Indonesia",
+     "aliases": [
+      "Republic of Indonesia",
+      "id"
+     ],
+     "evidence": {
+      "viewsSept2026": 239931,
+      "rarityPct": 12,
+      "wikidata": "Q252",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "United Arab Emirates",
+     "aliases": [
+      "U.A.E.",
+      "the UAE",
+      "the U.A.E.",
+      "the Emirates",
+      "ae",
+      "Emirates"
+     ],
+     "evidence": {
+      "viewsSept2026": 223172,
+      "rarityPct": 12,
+      "wikidata": "Q878",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Spain",
+     "aliases": [
+      "Kingdom of Spain"
+     ],
+     "evidence": {
+      "viewsSept2026": 221592,
+      "rarityPct": 13,
+      "wikidata": "Q29",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Afghanistan",
+     "aliases": [
+      "Afghaunistaun",
+      "Afghaunistan",
+      "Afghanisthan",
+      "Afghania",
+      "Affghaunistan",
+      "Affghanisthan",
+      "Affghanistan"
+     ],
+     "evidence": {
+      "viewsSept2026": 215585,
+      "rarityPct": 13,
+      "wikidata": "Q889",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Pakistan",
+     "aliases": [
+      "Tây Hồi",
+      "Hồi Quốc",
+      "Republic of Pakistan",
+      "Islamic Republic of Pakistan",
+      "pk"
+     ],
+     "evidence": {
+      "viewsSept2026": 214022,
+      "rarityPct": 14,
+      "wikidata": "Q843",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "New Zealand",
+     "aliases": [
+      "Aotearoa New Zealand",
+      "Dominion of New Zealand",
+      "nz"
+     ],
+     "evidence": {
+      "viewsSept2026": 212663,
+      "rarityPct": 14,
+      "wikidata": "Q664",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Netherlands",
+     "aliases": [
+      "Kingdom of Netherlands",
+      "Nederlanden",
+      "Holland"
+     ],
+     "evidence": {
+      "viewsSept2026": 212004,
+      "rarityPct": 15,
+      "wikidata": "Q29999",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Italy",
+     "aliases": [
+      "Republic of Italy",
+      "Italian Republic"
+     ],
+     "evidence": {
+      "viewsSept2026": 211186,
+      "rarityPct": 15,
+      "wikidata": "Q38",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Nepal",
+     "aliases": [
+      "Palpou",
+      "Paï-pou",
+      "Pai-pou",
+      "Pa-lo-pou",
+      "Pa-le-pou",
+      "Pa-eul-pou",
+      "Nipal",
+      "Niepal",
+      "Ni-po-louo",
+      "Ni-po-lo",
+      "Nercerri",
+      "Nepaul"
+     ],
+     "evidence": {
+      "viewsSept2026": 209050,
+      "rarityPct": 16,
+      "wikidata": "Q837",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "South Africa",
+     "aliases": [
+      "zaf",
+      "Republic of South Africa",
+      "R.S.A.",
+      "RSA",
+      "SA"
+     ],
+     "evidence": {
+      "viewsSept2026": 208199,
+      "rarityPct": 16,
+      "wikidata": "Q258",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Portugal",
+     "aliases": [
+      "Portuguese Republic",
+      "POR"
+     ],
+     "evidence": {
+      "viewsSept2026": 205985,
+      "rarityPct": 17,
+      "wikidata": "Q45",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Malaysia",
+     "aliases": [
+      "Malaysia Federation",
+      "Federation of Malaysia"
+     ],
+     "evidence": {
+      "viewsSept2026": 202584,
+      "rarityPct": 17,
+      "wikidata": "Q833",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Poland",
+     "aliases": [
+      "Republic of Poland"
+     ],
+     "evidence": {
+      "viewsSept2026": 199877,
+      "rarityPct": 18,
+      "wikidata": "Q36",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Czech Republic",
+     "aliases": [
+      "Czechia"
+     ],
+     "evidence": {
+      "viewsSept2026": 199872,
+      "rarityPct": 18,
+      "wikidata": "Q213",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Myanmar",
+     "aliases": [
+      "Union of Burma",
+      "Republic of the Union of Myanmar"
+     ],
+     "evidence": {
+      "viewsSept2026": 196793,
+      "rarityPct": 19,
+      "wikidata": "Q836",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Argentina",
+     "aliases": [
+      "Republica Argentina",
+      "Republic of Argentina",
+      "Argentine Republic"
+     ],
+     "evidence": {
+      "viewsSept2026": 193250,
+      "rarityPct": 19,
+      "wikidata": "Q414",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Kosovo",
+     "aliases": [
+      "XKX",
+      "RKS",
+      "Republic of Kosovo",
+      "Kosova",
+      "KV",
+      "XK",
+      "KOS"
+     ],
+     "evidence": {
+      "viewsSept2026": 191371,
+      "rarityPct": 20,
+      "wikidata": "Q1246",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Belarus",
+     "aliases": [
+      "White Ruthenia",
+      "Respublika Bielaruś",
+      "Respublika Belarus'",
+      "Republic of Belarus",
+      "Byelorussia",
+      "Byeloruss",
+      "Bielorussia",
+      "Bielaruś",
+      "Belorussia",
+      "White Russia",
+      "by"
+     ],
+     "evidence": {
+      "viewsSept2026": 190427,
+      "rarityPct": 20,
+      "wikidata": "Q184",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "North Korea",
+     "aliases": [
+      "N. Korea",
+      "DPRK",
+      "Democratic People's Republic of Korea",
+      "kp",
+      "DPR Korea"
+     ],
+     "evidence": {
+      "viewsSept2026": 190083,
+      "rarityPct": 21,
+      "wikidata": "Q423",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Sweden",
+     "aliases": [
+      "Swedish Kingdom",
+      "se",
+      "Kingdom of Sweden"
+     ],
+     "evidence": {
+      "viewsSept2026": 189070,
+      "rarityPct": 21,
+      "wikidata": "Q34",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Vietnam",
+     "aliases": [
+      "Việt Nam",
+      "Socialist Republic of Vietnam",
+      "Socialist Republic of Viet Nam",
+      "VIE",
+      "SRV",
+      "Viet Nam",
+      "VN",
+      "VNM"
+     ],
+     "evidence": {
+      "viewsSept2026": 187714,
+      "rarityPct": 22,
+      "wikidata": "Q881",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Mauritius",
+     "aliases": [
+      "Republic of Mauritius",
+      "Moris",
+      "MU",
+      "MRI",
+      "Maurice"
+     ],
+     "evidence": {
+      "viewsSept2026": 187066,
+      "rarityPct": 22,
+      "wikidata": "Q1027",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Switzerland",
+     "aliases": [
+      "Swiss Confederation",
+      "Confoederatio Helvetica",
+      "Swiss"
+     ],
+     "evidence": {
+      "viewsSept2026": 185587,
+      "rarityPct": 23,
+      "wikidata": "Q39",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Malta",
+     "aliases": [
+      "Republic of Malta"
+     ],
+     "evidence": {
+      "viewsSept2026": 183723,
+      "rarityPct": 23,
+      "wikidata": "Q233",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Kyrgyzstan",
+     "aliases": [
+      "Kyrgyz Republic",
+      "kg"
+     ],
+     "evidence": {
+      "viewsSept2026": 182876,
+      "rarityPct": 24,
+      "wikidata": "Q813",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Norway",
+     "aliases": [
+      "Kingdom of Norway"
+     ],
+     "evidence": {
+      "viewsSept2026": 181180,
+      "rarityPct": 24,
+      "wikidata": "Q20",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Ukraine",
+     "aliases": [
+      "Ukraïna",
+      "Ukr.",
+      "Ukraina",
+      "Ukrainia"
+     ],
+     "evidence": {
+      "viewsSept2026": 181098,
+      "rarityPct": 25,
+      "wikidata": "Q212",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Armenia",
+     "aliases": [
+      "Հայաստան",
+      "Republic of Armenia",
+      "Hayastani Hanrapetut’yun",
+      "Hayastan"
+     ],
+     "evidence": {
+      "viewsSept2026": 180784,
+      "rarityPct": 26,
+      "wikidata": "Q399",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Sri Lanka",
+     "aliases": [
+      "lke",
+      "lk",
+      "Lanka, Sri",
+      "Democratic Socialist Republic of Sri Lanka",
+      "Srilanka",
+      "sri",
+      "Taprobane",
+      "Serendib",
+      "ce",
+      "Ceylan",
+      "SRI"
+     ],
+     "evidence": {
+      "viewsSept2026": 180084,
+      "rarityPct": 26,
+      "wikidata": "Q854",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Georgia",
+     "aliases": [
+      "Georgia (Sakartvelo)",
+      "Republic of Georgia",
+      "Sakartvelo",
+      "Georgia (country)"
+     ],
+     "evidence": {
+      "viewsSept2026": 179751,
+      "rarityPct": 27,
+      "wikidata": "Q230",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Cyprus",
+     "aliases": [
+      "Greek Cypriot State",
+      "Greek Administration of Southern Cyprus",
+      "Republic of Cyprus"
+     ],
+     "evidence": {
+      "viewsSept2026": 176898,
+      "rarityPct": 27,
+      "wikidata": "Q229",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Bangladesh",
+     "aliases": [
+      "People's Republic of Bangladesh",
+      "Land of Bengal",
+      "Country of Bengal",
+      "Bangla Desh",
+      "bd"
+     ],
+     "evidence": {
+      "viewsSept2026": 174289,
+      "rarityPct": 28,
+      "wikidata": "Q902",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Ethiopia",
+     "aliases": [
+      "Federal Democratic Republic of Ethiopia",
+      "et"
+     ],
+     "evidence": {
+      "viewsSept2026": 170500,
+      "rarityPct": 28,
+      "wikidata": "Q115",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "South Korea",
+     "aliases": [
+      "S. Korea",
+      "Rep. Korea",
+      "Korea Republic",
+      "Daehanminguk",
+      "Daehan Minguk",
+      "Hanguk",
+      "Korea (South)",
+      "Choson",
+      "Silla",
+      "Republic of Korea"
+     ],
+     "evidence": {
+      "viewsSept2026": 169179,
+      "rarityPct": 29,
+      "wikidata": "Q884",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Monaco",
+     "aliases": [
+      "Principauté de Monaco",
+      "Prinçipatu de Mùnegu",
+      "Principatu de Mu̍negu",
+      "Principato di Monaco",
+      "Principality of Monaco",
+      "Principality and Diocese of Monaco",
+      "Mùnegu",
+      "Fort-Hercule",
+      "mc"
+     ],
+     "evidence": {
+      "viewsSept2026": 165426,
+      "rarityPct": 29,
+      "wikidata": "Q235",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Serbia",
+     "aliases": [
+      "Republic of Serbia",
+      "RS"
+     ],
+     "evidence": {
+      "viewsSept2026": 164946,
+      "rarityPct": 30,
+      "wikidata": "Q403",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Uzbekistan",
+     "aliases": [
+      "Republic of Uzbekistan"
+     ],
+     "evidence": {
+      "viewsSept2026": 164112,
+      "rarityPct": 30,
+      "wikidata": "Q265",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Albania",
+     "aliases": [
+      "Shqipërisë",
+      "Republika Popullore Socialiste e Shqiperise",
+      "Republika Popullore e Shqiperise",
+      "People's Socialist Republic of Albania",
+      "People's Republic of Albania",
+      "Republic of Albania"
+     ],
+     "evidence": {
+      "viewsSept2026": 163708,
+      "rarityPct": 31,
+      "wikidata": "Q222",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Thailand",
+     "aliases": [
+      "Thai",
+      "th",
+      "Ratcha-anachak Thai",
+      "Prathet Thai",
+      "The Kingdom of Thailand",
+      "The Kingdom of Siam",
+      "Kingdom of Thailand",
+      "Kingdom of Siam"
+     ],
+     "evidence": {
+      "viewsSept2026": 161106,
+      "rarityPct": 31,
+      "wikidata": "Q869",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Egypt",
+     "aliases": [
+      "Rep. Egypt",
+      "Arab Republic of Egypt",
+      "Arab Rep. Egypt",
+      "Republic of Egypt",
+      "Misr"
+     ],
+     "evidence": {
+      "viewsSept2026": 160634,
+      "rarityPct": 32,
+      "wikidata": "Q79",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Liechtenstein",
+     "aliases": [
+      "Principality of Liechtenstein",
+      "FL",
+      "li"
+     ],
+     "evidence": {
+      "viewsSept2026": 160475,
+      "rarityPct": 32,
+      "wikidata": "Q347",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Morocco",
+     "aliases": [
+      "Marocco",
+      "Maroc",
+      "Lmaġrib",
+      "Kingdom of Morocco",
+      "al-Maġrib"
+     ],
+     "evidence": {
+      "viewsSept2026": 156723,
+      "rarityPct": 33,
+      "wikidata": "Q1028",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Iceland",
+     "aliases": [
+      "Icelandic republic",
+      "Ysland",
+      "Republic of Iceland",
+      "Isl."
+     ],
+     "evidence": {
+      "viewsSept2026": 155507,
+      "rarityPct": 33,
+      "wikidata": "Q189",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Greece",
+     "aliases": [
+      "Hellas, Greece",
+      "Greek Republic",
+      "Ellada",
+      "Hellenic Republic",
+      "gr",
+      "el",
+      "Hellas"
+     ],
+     "evidence": {
+      "viewsSept2026": 155403,
+      "rarityPct": 34,
+      "wikidata": "Q41",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Croatia",
+     "aliases": [
+      "Republic of Croatia",
+      "HRV",
+      "RH",
+      "CRO",
+      "HR"
+     ],
+     "evidence": {
+      "viewsSept2026": 155402,
+      "rarityPct": 34,
+      "wikidata": "Q224",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Nigeria",
+     "aliases": [
+      "Naija",
+      "Federal Republic of Nigeria"
+     ],
+     "evidence": {
+      "viewsSept2026": 153555,
+      "rarityPct": 35,
+      "wikidata": "Q1033",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Democratic Republic of the Congo",
+     "aliases": [
+      "COD",
+      "D.R.C.",
+      "DRC",
+      "DR Congo",
+      "Democratic Republic of Congo",
+      "Dem. Republic of the Congo",
+      "Dem. Republic of Congo",
+      "Dem. Rep. Congo",
+      "Congo (Kinshasa)",
+      "cd"
+     ],
+     "evidence": {
+      "viewsSept2026": 150009,
+      "rarityPct": 35,
+      "wikidata": "Q974",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Montenegro",
+     "aliases": [
+      "Republic of Montenegro"
+     ],
+     "evidence": {
+      "viewsSept2026": 148746,
+      "rarityPct": 36,
+      "wikidata": "Q236",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Ireland",
+     "aliases": [
+      "Irish Republic",
+      "Southern Ireland",
+      "Republic of Ireland"
+     ],
+     "evidence": {
+      "viewsSept2026": 147566,
+      "rarityPct": 36,
+      "wikidata": "Q27",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Bosnia and Herzegovina",
+     "aliases": [
+      "Bosnia-Herzegovina",
+      "Bosnia and Hercegovina",
+      "Bosnia & Herzegovina",
+      "B&H",
+      "ba"
+     ],
+     "evidence": {
+      "viewsSept2026": 146546,
+      "rarityPct": 37,
+      "wikidata": "Q225",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Lithuania",
+     "aliases": [
+      "Republic of Lithuania"
+     ],
+     "evidence": {
+      "viewsSept2026": 146136,
+      "rarityPct": 37,
+      "wikidata": "Q37",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Belgium",
+     "aliases": [
+      "Kingdom of Belgium"
+     ],
+     "evidence": {
+      "viewsSept2026": 144834,
+      "rarityPct": 38,
+      "wikidata": "Q31",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Syria",
+     "aliases": [
+      "Syrian Arab Republic",
+      "Sūriyā"
+     ],
+     "evidence": {
+      "viewsSept2026": 143540,
+      "rarityPct": 38,
+      "wikidata": "Q858",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Papua New Guinea",
+     "aliases": [
+      "Independent State of Papua New Guinea"
+     ],
+     "evidence": {
+      "viewsSept2026": 142888,
+      "rarityPct": 39,
+      "wikidata": "Q691",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Denmark",
+     "aliases": [
+      "Realm of Denmark",
+      "Kunngeqarfik Danmarki",
+      "Kongsríki Danmarkar",
+      "Kongeriget Danmark",
+      "Danmarks Rige",
+      "Danmarkip Naalagaaffik",
+      "Danmarkar Ríki",
+      "Danish Realm",
+      "Danish Commonwealth"
+     ],
+     "evidence": {
+      "viewsSept2026": 142141,
+      "rarityPct": 39,
+      "wikidata": "Q756617",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Slovenia",
+     "aliases": [
+      "slo",
+      "Republic of Slovenia",
+      "Slovenija",
+      "svn",
+      "si"
+     ],
+     "evidence": {
+      "viewsSept2026": 142022,
+      "rarityPct": 40,
+      "wikidata": "Q215",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Romania",
+     "aliases": [
+      "Rumania",
+      "Roumania"
+     ],
+     "evidence": {
+      "viewsSept2026": 140760,
+      "rarityPct": 40,
+      "wikidata": "Q218",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Finland",
+     "aliases": [
+      "Suomen tasavalta",
+      "Republiken Finland",
+      "Republic of Finland",
+      "Land of Thousand Lakes",
+      "Finnia",
+      "fi"
+     ],
+     "evidence": {
+      "viewsSept2026": 139520,
+      "rarityPct": 41,
+      "wikidata": "Q33",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Austria",
+     "aliases": [
+      "Republic of Austria"
+     ],
+     "evidence": {
+      "viewsSept2026": 139472,
+      "rarityPct": 41,
+      "wikidata": "Q40",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Eritrea",
+     "aliases": [
+      "State of Eritrea",
+      "Iritriyā",
+      "Ertrā",
+      "er"
+     ],
+     "evidence": {
+      "viewsSept2026": 138803,
+      "rarityPct": 42,
+      "wikidata": "Q986",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Mongolia",
+     "aliases": [
+      "State of Mongolia",
+      "Mongol State"
+     ],
+     "evidence": {
+      "viewsSept2026": 138197,
+      "rarityPct": 42,
+      "wikidata": "Q711",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Nauru",
+     "aliases": [
+      "Republic of Naoero",
+      "Republic of Nauru",
+      "Naoero",
+      "Pleasant Island"
+     ],
+     "evidence": {
+      "viewsSept2026": 134798,
+      "rarityPct": 43,
+      "wikidata": "Q697",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Kiribati",
+     "aliases": [
+      "Republic of Kiribati",
+      "ki"
+     ],
+     "evidence": {
+      "viewsSept2026": 134611,
+      "rarityPct": 43,
+      "wikidata": "Q710",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Algeria",
+     "aliases": [
+      "People's Democratic Republic of Algeria",
+      "Dzayer",
+      "Djazaïr"
+     ],
+     "evidence": {
+      "viewsSept2026": 133496,
+      "rarityPct": 44,
+      "wikidata": "Q262",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Luxembourg",
+     "aliases": [
+      "Grand Duchy of Luxembourg"
+     ],
+     "evidence": {
+      "viewsSept2026": 132529,
+      "rarityPct": 44,
+      "wikidata": "Q32",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Colombia",
+     "aliases": [
+      "The Republic of Colombia",
+      "Republic of Colombia"
+     ],
+     "evidence": {
+      "viewsSept2026": 128861,
+      "rarityPct": 45,
+      "wikidata": "Q739",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Guyana",
+     "aliases": [
+      "gy",
+      "Republic of Guyana",
+      "Co-operative Republic of Guyana"
+     ],
+     "evidence": {
+      "viewsSept2026": 128335,
+      "rarityPct": 45,
+      "wikidata": "Q734",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Zimbabwe",
+     "aliases": [
+      "Zimbabwe Rhodesia",
+      "Southern Rhodesia",
+      "Rhodesia",
+      "Republic of Zimbabwe"
+     ],
+     "evidence": {
+      "viewsSept2026": 125629,
+      "rarityPct": 46,
+      "wikidata": "Q954",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Maldives",
+     "aliases": [
+      "Republic of Maldives",
+      "mv",
+      "MDV"
+     ],
+     "evidence": {
+      "viewsSept2026": 124848,
+      "rarityPct": 46,
+      "wikidata": "Q826",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Andorra",
+     "aliases": [
+      "Principality of the Valleys of Andorra",
+      "Principality of Andorra"
+     ],
+     "evidence": {
+      "viewsSept2026": 124283,
+      "rarityPct": 47,
+      "wikidata": "Q228",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Lebanon",
+     "aliases": [
+      "State of Lebanon",
+      "Republic of Lebanon",
+      "Lubnan",
+      "Lebanese Republic",
+      "lb"
+     ],
+     "evidence": {
+      "viewsSept2026": 123231,
+      "rarityPct": 47,
+      "wikidata": "Q822",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Cape Verde",
+     "aliases": [
+      "Republic of Cape Verde",
+      "Republic of Cabo Verde",
+      "Cape Verde Islands"
+     ],
+     "evidence": {
+      "viewsSept2026": 122801,
+      "rarityPct": 48,
+      "wikidata": "Q1011",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Slovakia",
+     "aliases": [
+      "Slovak Republic",
+      "SK",
+      "SVK"
+     ],
+     "evidence": {
+      "viewsSept2026": 122362,
+      "rarityPct": 48,
+      "wikidata": "Q214",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Suriname",
+     "aliases": [
+      "Surrinam",
+      "Republic of Suriname",
+      "Republic of Surinam",
+      "Dutch Guiana",
+      "Surinam",
+      "sr"
+     ],
+     "evidence": {
+      "viewsSept2026": 122353,
+      "rarityPct": 49,
+      "wikidata": "Q730",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Cuba",
+     "aliases": [
+      "cu",
+      "Republic of Cuba"
+     ],
+     "evidence": {
+      "viewsSept2026": 121475,
+      "rarityPct": 49,
+      "wikidata": "Q241",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Bulgaria",
+     "aliases": [
+      "Bulgarian Republic",
+      "Republic of Bulgaria"
+     ],
+     "evidence": {
+      "viewsSept2026": 121376,
+      "rarityPct": 50,
+      "wikidata": "Q219",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Madagascar",
+     "aliases": [
+      "Republic of Madagascar",
+      "mg",
+      "Malagaskar",
+      "Malagascar"
+     ],
+     "evidence": {
+      "viewsSept2026": 120942,
+      "rarityPct": 51,
+      "wikidata": "Q1019",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Burkina Faso",
+     "aliases": [
+      "Republic of Upper Volta (-1984)",
+      "Republic of Burkina Faso",
+      "bf"
+     ],
+     "evidence": {
+      "viewsSept2026": 120816,
+      "rarityPct": 51,
+      "wikidata": "Q965",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "North Macedonia",
+     "aliases": [
+      "Republic of North Macedonia",
+      "Republic of Macedonia",
+      "FYR Macedonia",
+      "Former Yugoslav Republic of Macedonia",
+      "MKD",
+      "Makedonia",
+      "MK",
+      "NM",
+      "Macedonia"
+     ],
+     "evidence": {
+      "viewsSept2026": 119487,
+      "rarityPct": 52,
+      "wikidata": "Q221",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Eswatini",
+     "aliases": [
+      "Umbuso weSwatini",
+      "sz",
+      "Kingdom of Swaziland",
+      "Kingdom of Eswatini",
+      "Swaziland"
+     ],
+     "evidence": {
+      "viewsSept2026": 119461,
+      "rarityPct": 52,
+      "wikidata": "Q1050",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Tanzania",
+     "aliases": [
+      "United Republic of Tanganyika and Zanzibar",
+      "tza",
+      "tz",
+      "Tanzania, United Republic of",
+      "United Republic of Tanzania"
+     ],
+     "evidence": {
+      "viewsSept2026": 118279,
+      "rarityPct": 53,
+      "wikidata": "Q924",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Turkmenistan",
+     "aliases": [
+      "Turkmenia",
+      "tm",
+      "TKM"
+     ],
+     "evidence": {
+      "viewsSept2026": 118266,
+      "rarityPct": 53,
+      "wikidata": "Q874",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Dominican Republic",
+     "aliases": [
+      "República Dominicana",
+      "Republica Dominicana",
+      "DomRep",
+      "Dominicana",
+      "RD"
+     ],
+     "evidence": {
+      "viewsSept2026": 118219,
+      "rarityPct": 54,
+      "wikidata": "Q786",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Estonia",
+     "aliases": [
+      "Republic of Estonia",
+      "Eesti Vabariik",
+      "Estland",
+      "ee"
+     ],
+     "evidence": {
+      "viewsSept2026": 117849,
+      "rarityPct": 54,
+      "wikidata": "Q191",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Hungary",
+     "aliases": [],
+     "evidence": {
+      "viewsSept2026": 116477,
+      "rarityPct": 55,
+      "wikidata": "Q28",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Latvia",
+     "aliases": [
+      "Republic of Latvia",
+      "Leţmо̄ Vabāmо̄",
+      "Leţmо̄",
+      "Latvijas Republika",
+      "Latvija",
+      "Latvian Republic",
+      "Latvejas Republika",
+      "Latveja",
+      "lv"
+     ],
+     "evidence": {
+      "viewsSept2026": 115751,
+      "rarityPct": 55,
+      "wikidata": "Q211",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Jordan",
+     "aliases": [
+      "State of Jordan",
+      "Kingdom of Jordan",
+      "ISO 3166-1:JO",
+      "Hashemite Kingdom of Jordan",
+      "Giordania",
+      "Yarden",
+      "HKJ"
+     ],
+     "evidence": {
+      "viewsSept2026": 113963,
+      "rarityPct": 56,
+      "wikidata": "Q810",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Iraq",
+     "aliases": [
+      "iq",
+      "Republic of Iraq"
+     ],
+     "evidence": {
+      "viewsSept2026": 113596,
+      "rarityPct": 56,
+      "wikidata": "Q796",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Oman",
+     "aliases": [
+      "Sultanate of Oman",
+      "omn",
+      "om",
+      "Uman"
+     ],
+     "evidence": {
+      "viewsSept2026": 113269,
+      "rarityPct": 57,
+      "wikidata": "Q842",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Chile",
+     "aliases": [
+      "Republic of Chile",
+      "CHI"
+     ],
+     "evidence": {
+      "viewsSept2026": 112759,
+      "rarityPct": 57,
+      "wikidata": "Q298",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Fiji",
+     "aliases": [
+      "Republic of the Fiji Islands",
+      "Republic of Fiji",
+      "Matanitu Tugalala o Viti",
+      "Fijī Gaṇarājya",
+      "fj",
+      "Viti"
+     ],
+     "evidence": {
+      "viewsSept2026": 111855,
+      "rarityPct": 58,
+      "wikidata": "Q712",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Bhutan",
+     "aliases": [
+      "Kingdom of Bhutan",
+      "BHU"
+     ],
+     "evidence": {
+      "viewsSept2026": 111501,
+      "rarityPct": 58,
+      "wikidata": "Q917",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Seychelles",
+     "aliases": [
+      "SEY",
+      "sc",
+      "Republic of Seychelles"
+     ],
+     "evidence": {
+      "viewsSept2026": 109431,
+      "rarityPct": 59,
+      "wikidata": "Q1042",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Vatican City",
+     "aliases": [
+      "Città del Vaticano",
+      "Papal State",
+      "Holy See",
+      "The Vatican",
+      "Vatican",
+      "Vatican City State",
+      "Status Civitatis Vaticanae",
+      "Stato della Città del Vaticano",
+      "State of Vatican City"
+     ],
+     "evidence": {
+      "viewsSept2026": 108238,
+      "rarityPct": 59,
+      "wikidata": "Q237",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Moldova",
+     "aliases": [
+      "Republica Moldova",
+      "Republic of Moldova",
+      "Moldavia"
+     ],
+     "evidence": {
+      "viewsSept2026": 108058,
+      "rarityPct": 60,
+      "wikidata": "Q217",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Uganda",
+     "aliases": [
+      "Ugandah",
+      "ug",
+      "The Republic of Uganda",
+      "Republic of Uganda",
+      "Pearl of Africa",
+      "Ouganda",
+      "+256"
+     ],
+     "evidence": {
+      "viewsSept2026": 107251,
+      "rarityPct": 60,
+      "wikidata": "Q1036",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Ghana",
+     "aliases": [],
+     "evidence": {
+      "viewsSept2026": 107031,
+      "rarityPct": 61,
+      "wikidata": "Q117",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "San Marino",
+     "aliases": [
+      "Most Serene Republic of San Marino",
+      "sm"
+     ],
+     "evidence": {
+      "viewsSept2026": 106907,
+      "rarityPct": 61,
+      "wikidata": "Q238",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Venezuela",
+     "aliases": [
+      "BR Venezuela",
+      "Bolivarian Republic of Venezuela",
+      "Republic of Venezuela"
+     ],
+     "evidence": {
+      "viewsSept2026": 106503,
+      "rarityPct": 62,
+      "wikidata": "Q717",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Jamaica",
+     "aliases": [
+      "Commonwealth of Jamaica",
+      "JA"
+     ],
+     "evidence": {
+      "viewsSept2026": 105145,
+      "rarityPct": 62,
+      "wikidata": "Q766",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Brunei",
+     "aliases": [
+      "Negara Brunei Darussalam",
+      "Nation of Brunei, the Abode of Peace",
+      "bn"
+     ],
+     "evidence": {
+      "viewsSept2026": 104913,
+      "rarityPct": 63,
+      "wikidata": "Q921",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "El Salvador",
+     "aliases": [
+      "Republic of El Salvador",
+      "sv",
+      "ESA",
+      "Salvador"
+     ],
+     "evidence": {
+      "viewsSept2026": 104206,
+      "rarityPct": 63,
+      "wikidata": "Q792",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Cambodia",
+     "aliases": [
+      "Kampuchea",
+      "Kambodzha",
+      "Campuchia",
+      "Camboya",
+      "kh",
+      "Kingdom of Cambodia",
+      "Kamboja"
+     ],
+     "evidence": {
+      "viewsSept2026": 103771,
+      "rarityPct": 64,
+      "wikidata": "Q424",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Equatorial Guinea",
+     "aliases": [
+      "Republic of Equatorial Guinea",
+      "gq",
+      "GEQ"
+     ],
+     "evidence": {
+      "viewsSept2026": 103589,
+      "rarityPct": 64,
+      "wikidata": "Q983",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Haiti",
+     "aliases": [
+      "Republic of Haiti",
+      "Haitian Republic",
+      "Ayiti",
+      "HAI",
+      "ht",
+      "Hayti"
+     ],
+     "evidence": {
+      "viewsSept2026": 100965,
+      "rarityPct": 65,
+      "wikidata": "Q790",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Sierra Leone",
+     "aliases": [
+      "SLE",
+      "sl",
+      "Republic of Sierra Leone"
+     ],
+     "evidence": {
+      "viewsSept2026": 100544,
+      "rarityPct": 65,
+      "wikidata": "Q1044",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Somalia",
+     "aliases": [
+      "Federal Republic of Somalia"
+     ],
+     "evidence": {
+      "viewsSept2026": 100180,
+      "rarityPct": 66,
+      "wikidata": "Q1045",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Liberia",
+     "aliases": [
+      "Republic of Liberia",
+      "lr",
+      "Liber"
+     ],
+     "evidence": {
+      "viewsSept2026": 99833,
+      "rarityPct": 66,
+      "wikidata": "Q1014",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Sudan",
+     "aliases": [
+      "SUD",
+      "Soudan",
+      "sd",
+      "Republic of the Sudan",
+      "Republic of Sudan",
+      "North Sudan",
+      "as-Sūdān",
+      "as-Sudan",
+      "al-Sudan"
+     ],
+     "evidence": {
+      "viewsSept2026": 99649,
+      "rarityPct": 67,
+      "wikidata": "Q1049",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Peru",
+     "aliases": [
+      "Republica del Peru",
+      "Republic of Peru",
+      "pe",
+      "per"
+     ],
+     "evidence": {
+      "viewsSept2026": 97426,
+      "rarityPct": 67,
+      "wikidata": "Q419",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Bahrain",
+     "aliases": [
+      "Mamlakat al-Baḥrayn",
+      "Kingdom of Bahrain",
+      "ISO 3166-1:BH",
+      "Dawlat al-Bahrain",
+      "Bahrein Islands",
+      "bh"
+     ],
+     "evidence": {
+      "viewsSept2026": 96960,
+      "rarityPct": 68,
+      "wikidata": "Q398",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Libya",
+     "aliases": [
+      "State of Libya",
+      "LBA",
+      "ly"
+     ],
+     "evidence": {
+      "viewsSept2026": 96871,
+      "rarityPct": 68,
+      "wikidata": "Q1016",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Qatar",
+     "aliases": [
+      "State of Qatar",
+      "qa",
+      "qat"
+     ],
+     "evidence": {
+      "viewsSept2026": 96181,
+      "rarityPct": 69,
+      "wikidata": "Q846",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Bolivia",
+     "aliases": [
+      "Republic of Bolivia",
+      "Plurinational State of Bolivia",
+      "Bolivia (Plurinational State of)"
+     ],
+     "evidence": {
+      "viewsSept2026": 95919,
+      "rarityPct": 69,
+      "wikidata": "Q750",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Belize",
+     "aliases": [
+      "bz"
+     ],
+     "evidence": {
+      "viewsSept2026": 94903,
+      "rarityPct": 70,
+      "wikidata": "Q242",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Djibouti",
+     "aliases": [
+      "Republic of Djibouti",
+      "Jībūtī",
+      "Gabuuti",
+      "Jabuuti",
+      "dj"
+     ],
+     "evidence": {
+      "viewsSept2026": 93676,
+      "rarityPct": 70,
+      "wikidata": "Q977",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Kenya",
+     "aliases": [
+      "Republic of Kenya",
+      "ke"
+     ],
+     "evidence": {
+      "viewsSept2026": 93665,
+      "rarityPct": 71,
+      "wikidata": "Q114",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Laos",
+     "aliases": [
+      "Lao People's Democratic Republic",
+      "Lao PDR",
+      "la"
+     ],
+     "evidence": {
+      "viewsSept2026": 93654,
+      "rarityPct": 71,
+      "wikidata": "Q819",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Namibia",
+     "aliases": [
+      "Republic of Namibia",
+      "na"
+     ],
+     "evidence": {
+      "viewsSept2026": 93050,
+      "rarityPct": 72,
+      "wikidata": "Q1030",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Rwanda",
+     "aliases": [
+      "The Land of a Thousand Hills",
+      "Republic of Rwanda"
+     ],
+     "evidence": {
+      "viewsSept2026": 91613,
+      "rarityPct": 72,
+      "wikidata": "Q1037",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Tunisia",
+     "aliases": [
+      "Tunisian Republic",
+      "Republic of Tunisia",
+      "tn"
+     ],
+     "evidence": {
+      "viewsSept2026": 91137,
+      "rarityPct": 73,
+      "wikidata": "Q948",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "The Bahamas",
+     "aliases": [
+      "Bahamas, The",
+      "Commonwealth of The Bahamas",
+      "Commonwealth of the Bahamas",
+      "Bahama Islands",
+      "bs"
+     ],
+     "evidence": {
+      "viewsSept2026": 91036,
+      "rarityPct": 73,
+      "wikidata": "Q778",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Tajikistan",
+     "aliases": [
+      "tj",
+      "Republic of Tajikistan"
+     ],
+     "evidence": {
+      "viewsSept2026": 89617,
+      "rarityPct": 74,
+      "wikidata": "Q863",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Guatemala",
+     "aliases": [
+      "Republic of Guatemala",
+      "gt",
+      "GTM",
+      "GT"
+     ],
+     "evidence": {
+      "viewsSept2026": 89428,
+      "rarityPct": 74,
+      "wikidata": "Q774",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Angola",
+     "aliases": [
+      "Republic of Angola",
+      "ao",
+      "Ngola"
+     ],
+     "evidence": {
+      "viewsSept2026": 88968,
+      "rarityPct": 75,
+      "wikidata": "Q916",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Kuwait",
+     "aliases": [
+      "State of Kuwait",
+      "kw"
+     ],
+     "evidence": {
+      "viewsSept2026": 88936,
+      "rarityPct": 76,
+      "wikidata": "Q817",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Uruguay",
+     "aliases": [
+      "Oriental Republic of Uruguay",
+      "Eastern Republic of Uruguay",
+      "URU",
+      "uy"
+     ],
+     "evidence": {
+      "viewsSept2026": 88693,
+      "rarityPct": 76,
+      "wikidata": "Q77",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "South Sudan",
+     "aliases": [
+      "Republic of South Sudan",
+      "Southern Sudan",
+      "SSD",
+      "ss"
+     ],
+     "evidence": {
+      "viewsSept2026": 88080,
+      "rarityPct": 77,
+      "wikidata": "Q958",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Mauritania",
+     "aliases": [
+      "Agawej",
+      "Murutaane",
+      "Muritanya",
+      "mr",
+      "Moritani",
+      "Mauretania",
+      "Islamic Republic of Mauritania",
+      "Gànnaar",
+      "Gannaar"
+     ],
+     "evidence": {
+      "viewsSept2026": 86349,
+      "rarityPct": 77,
+      "wikidata": "Q1025",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Trinidad and Tobago",
+     "aliases": [
+      "Trinidad & Tobago",
+      "tt",
+      "Republic of Trinidad and Tobago"
+     ],
+     "evidence": {
+      "viewsSept2026": 84538,
+      "rarityPct": 78,
+      "wikidata": "Q754",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Benin",
+     "aliases": [
+      "Republic of Benin"
+     ],
+     "evidence": {
+      "viewsSept2026": 83540,
+      "rarityPct": 78,
+      "wikidata": "Q962",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Timor-Leste",
+     "aliases": [
+      "Democratic Republic of Timor-Leste",
+      "TL",
+      "East Timor"
+     ],
+     "evidence": {
+      "viewsSept2026": 79824,
+      "rarityPct": 79,
+      "wikidata": "Q574",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Costa Rica",
+     "aliases": [
+      "Republic of Costa Rica",
+      "cr"
+     ],
+     "evidence": {
+      "viewsSept2026": 78643,
+      "rarityPct": 79,
+      "wikidata": "Q800",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Mozambique",
+     "aliases": [
+      "República de Moçambique",
+      "Republic of Mozambique",
+      "mz",
+      "Moçambique"
+     ],
+     "evidence": {
+      "viewsSept2026": 78623,
+      "rarityPct": 80,
+      "wikidata": "Q1029",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Palau",
+     "aliases": [
+      "Republic of Palau",
+      "Republic of Belau",
+      "Pelew islands",
+      "Pelew",
+      "Peeloo",
+      "Pellew",
+      "pw",
+      "Belau"
+     ],
+     "evidence": {
+      "viewsSept2026": 78334,
+      "rarityPct": 80,
+      "wikidata": "Q695",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Niger",
+     "aliases": [
+      "Republic of the Niger",
+      "Republic of Niger",
+      "Republic Niger",
+      "ne"
+     ],
+     "evidence": {
+      "viewsSept2026": 77521,
+      "rarityPct": 81,
+      "wikidata": "Q1032",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Burundi",
+     "aliases": [
+      "Republika y'Uburundi",
+      "Republic of Burundi",
+      "Gouvernement du Burundi",
+      "bi"
+     ],
+     "evidence": {
+      "viewsSept2026": 77502,
+      "rarityPct": 81,
+      "wikidata": "Q967",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Vanuatu",
+     "aliases": [
+      "vut",
+      "Republic of Vanuatu",
+      "vu",
+      "VAN",
+      "van"
+     ],
+     "evidence": {
+      "viewsSept2026": 77387,
+      "rarityPct": 82,
+      "wikidata": "Q686",
+      "tierFromData": "STARLING"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Barbados",
+     "aliases": [
+      "bb",
+      "Barbadoes",
+      "BAR"
+     ],
+     "evidence": {
+      "viewsSept2026": 77302,
+      "rarityPct": 82,
+      "wikidata": "Q244",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Ecuador",
+     "aliases": [
+      "Republic of Equator",
+      "The Ecuadorian State",
+      "Republic of the Equator",
+      "Republic of Ecuador"
+     ],
+     "evidence": {
+      "viewsSept2026": 76907,
+      "rarityPct": 83,
+      "wikidata": "Q736",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Ivory Coast",
+     "aliases": [
+      "Republic of the Ivory Coast",
+      "Republic of Ivory Coast",
+      "Republic of Côte d'Ivoire",
+      "Republic of Cote d'Ivoire",
+      "Côte-d'Ivoire",
+      "Cote-d'Ivoire",
+      "Cote Ivoire",
+      "Cote d'lvoire",
+      "Cote d'Ivoire",
+      "ci",
+      "Côte d’Ivoire"
+     ],
+     "evidence": {
+      "viewsSept2026": 76479,
+      "rarityPct": 83,
+      "wikidata": "Q1008",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Nicaragua",
+     "aliases": [
+      "Republic of Nicaragua",
+      "ni",
+      "NIC",
+      "NI",
+      "NCA"
+     ],
+     "evidence": {
+      "viewsSept2026": 76440,
+      "rarityPct": 84,
+      "wikidata": "Q811",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Botswana",
+     "aliases": [
+      "Republic of Botswana",
+      "Lefatshe la Botswana",
+      "bw"
+     ],
+     "evidence": {
+      "viewsSept2026": 75172,
+      "rarityPct": 84,
+      "wikidata": "Q963",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Mali",
+     "aliases": [
+      "Republic of Mali",
+      "ml"
+     ],
+     "evidence": {
+      "viewsSept2026": 72309,
+      "rarityPct": 85,
+      "wikidata": "Q912",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Cameroon",
+     "aliases": [
+      "Republic of Cameroon"
+     ],
+     "evidence": {
+      "viewsSept2026": 71275,
+      "rarityPct": 85,
+      "wikidata": "Q1009",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Lesotho",
+     "aliases": [
+      "The Mountain Kingdom",
+      "LES",
+      "Kingdom of Lesotho",
+      "ls"
+     ],
+     "evidence": {
+      "viewsSept2026": 70833,
+      "rarityPct": 86,
+      "wikidata": "Q1013",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Senegal",
+     "aliases": [
+      "Republic of Senegal"
+     ],
+     "evidence": {
+      "viewsSept2026": 69419,
+      "rarityPct": 86,
+      "wikidata": "Q1041",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Panama",
+     "aliases": [
+      "Republic of Panama",
+      "pa"
+     ],
+     "evidence": {
+      "viewsSept2026": 66554,
+      "rarityPct": 87,
+      "wikidata": "Q804",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Honduras",
+     "aliases": [
+      "Republic of Honduras",
+      "Honduran Republic",
+      "hn",
+      "HON"
+     ],
+     "evidence": {
+      "viewsSept2026": 66365,
+      "rarityPct": 87,
+      "wikidata": "Q783",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Central African Republic",
+     "aliases": [
+      "cf",
+      "Central Africa"
+     ],
+     "evidence": {
+      "viewsSept2026": 66149,
+      "rarityPct": 88,
+      "wikidata": "Q929",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "The Gambia",
+     "aliases": [
+      "Republic of the Gambia",
+      "Islamic Republic of the Gambia"
+     ],
+     "evidence": {
+      "viewsSept2026": 64986,
+      "rarityPct": 88,
+      "wikidata": "Q1005",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Chad",
+     "aliases": [
+      "Republic of Chad",
+      "td",
+      "CHA",
+      "GUM"
+     ],
+     "evidence": {
+      "viewsSept2026": 63481,
+      "rarityPct": 89,
+      "wikidata": "Q657",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Grenada",
+     "aliases": [
+      "gd",
+      "GRN"
+     ],
+     "evidence": {
+      "viewsSept2026": 61152,
+      "rarityPct": 89,
+      "wikidata": "Q769",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Paraguay",
+     "aliases": [
+      "Republic of Paraguay",
+      "Heart of South America"
+     ],
+     "evidence": {
+      "viewsSept2026": 60153,
+      "rarityPct": 90,
+      "wikidata": "Q733",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Saint Lucia",
+     "aliases": [
+      "lc",
+      "Iyonola",
+      "Hewanorra",
+      "lca",
+      "St. Lucia",
+      "St Lucia"
+     ],
+     "evidence": {
+      "viewsSept2026": 60141,
+      "rarityPct": 90,
+      "wikidata": "Q760",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Zambia",
+     "aliases": [
+      "Republic of Zambia",
+      "Zed"
+     ],
+     "evidence": {
+      "viewsSept2026": 60000,
+      "rarityPct": 91,
+      "wikidata": "Q953",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Samoa",
+     "aliases": [
+      "Independent State of Samoa",
+      "Western Samoa",
+      "SAM",
+      "ws"
+     ],
+     "evidence": {
+      "viewsSept2026": 57706,
+      "rarityPct": 91,
+      "wikidata": "Q683",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Tuvalu",
+     "aliases": [
+      "Ellice Islands",
+      "TUV",
+      "tv"
+     ],
+     "evidence": {
+      "viewsSept2026": 57599,
+      "rarityPct": 92,
+      "wikidata": "Q672",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Tonga",
+     "aliases": [
+      "Kingdom of Tonga",
+      "TGA",
+      "to",
+      "Friendly Islands",
+      "Tonga Islands"
+     ],
+     "evidence": {
+      "viewsSept2026": 56857,
+      "rarityPct": 92,
+      "wikidata": "Q678",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Malawi",
+     "aliases": [
+      "Republic of Malawi",
+      "mw",
+      "MAW"
+     ],
+     "evidence": {
+      "viewsSept2026": 56603,
+      "rarityPct": 93,
+      "wikidata": "Q1020",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "São Tomé and Príncipe",
+     "aliases": [
+      "st",
+      "São Tomé og Príncipe",
+      "Sao Tome & Principe",
+      "Democratic Republic of São Tomé and Príncipe"
+     ],
+     "evidence": {
+      "viewsSept2026": 55740,
+      "rarityPct": 93,
+      "wikidata": "Q1039",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Congo-Brazzaville",
+     "aliases": [
+      "République du Congo",
+      "Republique du Congo",
+      "Republic of Congo",
+      "Rep. Congo",
+      "Congo Republic",
+      "cg",
+      "CGO",
+      "Congo"
+     ],
+     "evidence": {
+      "viewsSept2026": 55566,
+      "rarityPct": 94,
+      "wikidata": "Q971",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Marshall Islands",
+     "aliases": [
+      "mh",
+      "Republic of the Marshall Islands"
+     ],
+     "evidence": {
+      "viewsSept2026": 54744,
+      "rarityPct": 94,
+      "wikidata": "Q709",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Dominica",
+     "aliases": [
+      "Wai‘tu kubuli",
+      "Wai'tu kubuli",
+      "The Commonwealth of Dominica",
+      "Island of Dominica",
+      "Commonwealth of Dominica",
+      "dm",
+      "DOM"
+     ],
+     "evidence": {
+      "viewsSept2026": 54532,
+      "rarityPct": 95,
+      "wikidata": "Q784",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Guinea",
+     "aliases": [
+      "Republic of Guinea",
+      "Guinea-Conakry",
+      "GUI",
+      "gn"
+     ],
+     "evidence": {
+      "viewsSept2026": 54345,
+      "rarityPct": 95,
+      "wikidata": "Q1006",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Guinea-Bissau",
+     "aliases": [
+      "Republic of Guinea-Bissau",
+      "gw",
+      "GBS"
+     ],
+     "evidence": {
+      "viewsSept2026": 52709,
+      "rarityPct": 96,
+      "wikidata": "Q1007",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Gabon",
+     "aliases": [
+      "République Gabonaise",
+      "Republique Gabonaise",
+      "Gabonese Republic",
+      "GAB",
+      "ga"
+     ],
+     "evidence": {
+      "viewsSept2026": 50538,
+      "rarityPct": 96,
+      "wikidata": "Q1000",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Togo",
+     "aliases": [
+      "Togolese Republic",
+      "tg"
+     ],
+     "evidence": {
+      "viewsSept2026": 50493,
+      "rarityPct": 97,
+      "wikidata": "Q945",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Saint Kitts and Nevis",
+     "aliases": [
+      "St. Kitts and Nevis",
+      "St. Kitts & Nevis",
+      "St Kitts and Nevis",
+      "St Kitts & Nevis",
+      "Saint Christopher and Nevis",
+      "Kitts and Nevis",
+      "Kitts & Nevis",
+      "Federation of Saint Kitts and Nevis",
+      "Federation of Saint Christopher and Nevis"
+     ],
+     "evidence": {
+      "viewsSept2026": 50189,
+      "rarityPct": 97,
+      "wikidata": "Q763",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Comoros",
+     "aliases": [
+      "Union of the Comoros",
+      "Union des Comores",
+      "Udzima wa Komori",
+      "ouvoimoja wakomori",
+      "Massiwa ya komori",
+      "Juzur al-Qumur",
+      "Juzur al-Qamar",
+      "al-Ittiḥād al-Qumurī",
+      "km"
+     ],
+     "evidence": {
+      "viewsSept2026": 49139,
+      "rarityPct": 98,
+      "wikidata": "Q970",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Solomon Islands",
+     "aliases": [
+      "sb",
+      "SOL"
+     ],
+     "evidence": {
+      "viewsSept2026": 46106,
+      "rarityPct": 98,
+      "wikidata": "Q685",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Saint Vincent and the Grenadines",
+     "aliases": [
+      "vct",
+      "St. Vincent and the Grenadines",
+      "St Vincent and the Grenadines",
+      "vc",
+      "Saint Vincent",
+      "St Vincent",
+      "St. Vincent"
+     ],
+     "evidence": {
+      "viewsSept2026": 42919,
+      "rarityPct": 99,
+      "wikidata": "Q757",
+      "tierFromData": "RARE BIRD"
+     },
+     "tier": "RARE BIRD"
+    },
+    {
+     "canonical": "Antigua and Barbuda",
+     "aliases": [
+      "Antigua–Barbuda",
+      "Antigua & Barbuda",
+      "Antigua-Barbuda"
+     ],
+     "evidence": {
+      "viewsSept2026": 40639,
+      "rarityPct": 99,
+      "wikidata": "Q781",
+      "tierFromData": "RARE BIRD"
+     },
+     "tier": "RARE BIRD"
+    },
+    {
+     "canonical": "Federated States of Micronesia",
+     "aliases": [
+      "Federated States of Micronesia, FSM",
+      "Fed. Sts. of Micronesia",
+      "Fed. Sts. Micronesia",
+      "fm",
+      "FSM",
+      "Micronesia"
+     ],
+     "evidence": {
+      "viewsSept2026": 37769,
+      "rarityPct": 100,
+      "wikidata": "Q702",
+      "tierFromData": "RARE BIRD"
+     },
+     "tier": "RARE BIRD"
+    }
+   ]
+  },
+  {
+   "id": "sci-elements",
+   "text": "Name a chemical element.",
+   "example": "like oxygen",
+   "catalogueSize": 118,
+   "catalogue": [
+    {
+     "canonical": "Gold",
+     "aliases": [
+      "Au"
+     ],
+     "evidence": {
+      "viewsSept2026": 66460,
+      "rarityPct": 0,
+      "wikidata": "Q897",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Mercury",
+     "aliases": [
+      "Hg"
+     ],
+     "evidence": {
+      "viewsSept2026": 54800,
+      "rarityPct": 1,
+      "wikidata": "Q925",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Aluminium",
+     "aliases": [
+      "Al"
+     ],
+     "evidence": {
+      "viewsSept2026": 53841,
+      "rarityPct": 2,
+      "wikidata": "Q663",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Silver",
+     "aliases": [
+      "Ag"
+     ],
+     "evidence": {
+      "viewsSept2026": 51679,
+      "rarityPct": 3,
+      "wikidata": "Q1090",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Hydrogen",
+     "aliases": [
+      "H"
+     ],
+     "evidence": {
+      "viewsSept2026": 49428,
+      "rarityPct": 3,
+      "wikidata": "Q556",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Tungsten",
+     "aliases": [
+      "W"
+     ],
+     "evidence": {
+      "viewsSept2026": 47809,
+      "rarityPct": 4,
+      "wikidata": "Q743",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Copper",
+     "aliases": [
+      "Cu"
+     ],
+     "evidence": {
+      "viewsSept2026": 47585,
+      "rarityPct": 5,
+      "wikidata": "Q753",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Plutonium",
+     "aliases": [
+      "Pu"
+     ],
+     "evidence": {
+      "viewsSept2026": 47481,
+      "rarityPct": 6,
+      "wikidata": "Q1102",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Oxygen",
+     "aliases": [
+      "O"
+     ],
+     "evidence": {
+      "viewsSept2026": 45933,
+      "rarityPct": 7,
+      "wikidata": "Q629",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Sulfur",
+     "aliases": [
+      "S"
+     ],
+     "evidence": {
+      "viewsSept2026": 44148,
+      "rarityPct": 8,
+      "wikidata": "Q682",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Iron",
+     "aliases": [
+      "Fe"
+     ],
+     "evidence": {
+      "viewsSept2026": 43034,
+      "rarityPct": 9,
+      "wikidata": "Q677",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Carbon",
+     "aliases": [
+      "C"
+     ],
+     "evidence": {
+      "viewsSept2026": 40139,
+      "rarityPct": 9,
+      "wikidata": "Q623",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Uranium",
+     "aliases": [
+      "U"
+     ],
+     "evidence": {
+      "viewsSept2026": 39043,
+      "rarityPct": 10,
+      "wikidata": "Q1098",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Lead",
+     "aliases": [
+      "Pb"
+     ],
+     "evidence": {
+      "viewsSept2026": 38520,
+      "rarityPct": 11,
+      "wikidata": "Q708",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Oganesson",
+     "aliases": [
+      "Og"
+     ],
+     "evidence": {
+      "viewsSept2026": 36872,
+      "rarityPct": 12,
+      "wikidata": "Q1307",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Potassium",
+     "aliases": [
+      "K"
+     ],
+     "evidence": {
+      "viewsSept2026": 35138,
+      "rarityPct": 13,
+      "wikidata": "Q703",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Silicon",
+     "aliases": [
+      "Si"
+     ],
+     "evidence": {
+      "viewsSept2026": 34207,
+      "rarityPct": 14,
+      "wikidata": "Q670",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Lithium",
+     "aliases": [
+      "Li"
+     ],
+     "evidence": {
+      "viewsSept2026": 34091,
+      "rarityPct": 15,
+      "wikidata": "Q568",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Platinum",
+     "aliases": [
+      "Pt"
+     ],
+     "evidence": {
+      "viewsSept2026": 34004,
+      "rarityPct": 15,
+      "wikidata": "Q880",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Nitrogen",
+     "aliases": [
+      "N"
+     ],
+     "evidence": {
+      "viewsSept2026": 33909,
+      "rarityPct": 16,
+      "wikidata": "Q627",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Bismuth",
+     "aliases": [
+      "Bi"
+     ],
+     "evidence": {
+      "viewsSept2026": 33701,
+      "rarityPct": 17,
+      "wikidata": "Q942",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Sodium",
+     "aliases": [
+      "Na"
+     ],
+     "evidence": {
+      "viewsSept2026": 33195,
+      "rarityPct": 18,
+      "wikidata": "Q658",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Tin",
+     "aliases": [
+      "Sn"
+     ],
+     "evidence": {
+      "viewsSept2026": 33181,
+      "rarityPct": 19,
+      "wikidata": "Q1096",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Krypton",
+     "aliases": [
+      "Kr"
+     ],
+     "evidence": {
+      "viewsSept2026": 32972,
+      "rarityPct": 20,
+      "wikidata": "Q888",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Helium",
+     "aliases": [
+      "He"
+     ],
+     "evidence": {
+      "viewsSept2026": 32905,
+      "rarityPct": 21,
+      "wikidata": "Q560",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Antimony",
+     "aliases": [
+      "Sb"
+     ],
+     "evidence": {
+      "viewsSept2026": 32873,
+      "rarityPct": 21,
+      "wikidata": "Q1099",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Cobalt",
+     "aliases": [
+      "Co"
+     ],
+     "evidence": {
+      "viewsSept2026": 30986,
+      "rarityPct": 22,
+      "wikidata": "Q740",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Titanium",
+     "aliases": [
+      "Ti"
+     ],
+     "evidence": {
+      "viewsSept2026": 30778,
+      "rarityPct": 23,
+      "wikidata": "Q716",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Phosphorus",
+     "aliases": [
+      "P"
+     ],
+     "evidence": {
+      "viewsSept2026": 29430,
+      "rarityPct": 24,
+      "wikidata": "Q674",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Arsenic",
+     "aliases": [
+      "As"
+     ],
+     "evidence": {
+      "viewsSept2026": 28416,
+      "rarityPct": 25,
+      "wikidata": "Q871",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Xenon",
+     "aliases": [
+      "Xe"
+     ],
+     "evidence": {
+      "viewsSept2026": 27961,
+      "rarityPct": 26,
+      "wikidata": "Q1106",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Chlorine",
+     "aliases": [
+      "Cl"
+     ],
+     "evidence": {
+      "viewsSept2026": 27879,
+      "rarityPct": 26,
+      "wikidata": "Q688",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Magnesium",
+     "aliases": [
+      "Mg"
+     ],
+     "evidence": {
+      "viewsSept2026": 27426,
+      "rarityPct": 27,
+      "wikidata": "Q660",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Actinium",
+     "aliases": [
+      "Ac"
+     ],
+     "evidence": {
+      "viewsSept2026": 27302,
+      "rarityPct": 28,
+      "wikidata": "Q1121",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Boron",
+     "aliases": [
+      "B"
+     ],
+     "evidence": {
+      "viewsSept2026": 27020,
+      "rarityPct": 29,
+      "wikidata": "Q618",
+      "tierFromData": "PIGEON"
+     },
+     "tier": "PIGEON"
+    },
+    {
+     "canonical": "Iodine",
+     "aliases": [
+      "I"
+     ],
+     "evidence": {
+      "viewsSept2026": 26778,
+      "rarityPct": 30,
+      "wikidata": "Q1103",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Zinc",
+     "aliases": [
+      "Zn"
+     ],
+     "evidence": {
+      "viewsSept2026": 26361,
+      "rarityPct": 31,
+      "wikidata": "Q758",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Astatine",
+     "aliases": [
+      "At"
+     ],
+     "evidence": {
+      "viewsSept2026": 26075,
+      "rarityPct": 32,
+      "wikidata": "Q999",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Selenium",
+     "aliases": [
+      "Se"
+     ],
+     "evidence": {
+      "viewsSept2026": 24803,
+      "rarityPct": 32,
+      "wikidata": "Q876",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Chromium",
+     "aliases": [
+      "Cr"
+     ],
+     "evidence": {
+      "viewsSept2026": 24027,
+      "rarityPct": 33,
+      "wikidata": "Q725",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Nickel",
+     "aliases": [
+      "Ni"
+     ],
+     "evidence": {
+      "viewsSept2026": 23906,
+      "rarityPct": 34,
+      "wikidata": "Q744",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Manganese",
+     "aliases": [
+      "Mn"
+     ],
+     "evidence": {
+      "viewsSept2026": 23770,
+      "rarityPct": 35,
+      "wikidata": "Q731",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Osmium",
+     "aliases": [
+      "Os"
+     ],
+     "evidence": {
+      "viewsSept2026": 23750,
+      "rarityPct": 36,
+      "wikidata": "Q751",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Radon",
+     "aliases": [
+      "Rn"
+     ],
+     "evidence": {
+      "viewsSept2026": 23232,
+      "rarityPct": 37,
+      "wikidata": "Q1133",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Palladium",
+     "aliases": [
+      "Pd"
+     ],
+     "evidence": {
+      "viewsSept2026": 23064,
+      "rarityPct": 38,
+      "wikidata": "Q1089",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Radium",
+     "aliases": [
+      "Ra"
+     ],
+     "evidence": {
+      "viewsSept2026": 23030,
+      "rarityPct": 38,
+      "wikidata": "Q1128",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Beryllium",
+     "aliases": [
+      "Be"
+     ],
+     "evidence": {
+      "viewsSept2026": 22733,
+      "rarityPct": 39,
+      "wikidata": "Q569",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Polonium",
+     "aliases": [
+      "Po"
+     ],
+     "evidence": {
+      "viewsSept2026": 22565,
+      "rarityPct": 40,
+      "wikidata": "Q979",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Iridium",
+     "aliases": [
+      "Ir"
+     ],
+     "evidence": {
+      "viewsSept2026": 21762,
+      "rarityPct": 41,
+      "wikidata": "Q877",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Molybdenum",
+     "aliases": [
+      "Mo"
+     ],
+     "evidence": {
+      "viewsSept2026": 21437,
+      "rarityPct": 42,
+      "wikidata": "Q1053",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Neon",
+     "aliases": [
+      "Ne"
+     ],
+     "evidence": {
+      "viewsSept2026": 21065,
+      "rarityPct": 43,
+      "wikidata": "Q654",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Bromine",
+     "aliases": [
+      "Br"
+     ],
+     "evidence": {
+      "viewsSept2026": 20980,
+      "rarityPct": 44,
+      "wikidata": "Q879",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Fluorine",
+     "aliases": [
+      "F"
+     ],
+     "evidence": {
+      "viewsSept2026": 20865,
+      "rarityPct": 44,
+      "wikidata": "Q650",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Technetium",
+     "aliases": [
+      "Tc"
+     ],
+     "evidence": {
+      "viewsSept2026": 20422,
+      "rarityPct": 45,
+      "wikidata": "Q1054",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Argon",
+     "aliases": [
+      "Ar"
+     ],
+     "evidence": {
+      "viewsSept2026": 20127,
+      "rarityPct": 46,
+      "wikidata": "Q696",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Calcium",
+     "aliases": [
+      "Ca"
+     ],
+     "evidence": {
+      "viewsSept2026": 19180,
+      "rarityPct": 47,
+      "wikidata": "Q706",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Vanadium",
+     "aliases": [
+      "V"
+     ],
+     "evidence": {
+      "viewsSept2026": 17145,
+      "rarityPct": 48,
+      "wikidata": "Q722",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Gallium",
+     "aliases": [
+      "Ga"
+     ],
+     "evidence": {
+      "viewsSept2026": 17013,
+      "rarityPct": 49,
+      "wikidata": "Q861",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Caesium",
+     "aliases": [
+      "Cs"
+     ],
+     "evidence": {
+      "viewsSept2026": 16162,
+      "rarityPct": 50,
+      "wikidata": "Q1108",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Thorium",
+     "aliases": [
+      "Th"
+     ],
+     "evidence": {
+      "viewsSept2026": 15080,
+      "rarityPct": 50,
+      "wikidata": "Q1115",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Cadmium",
+     "aliases": [
+      "Cd"
+     ],
+     "evidence": {
+      "viewsSept2026": 14985,
+      "rarityPct": 51,
+      "wikidata": "Q1091",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Tantalum",
+     "aliases": [
+      "Ta"
+     ],
+     "evidence": {
+      "viewsSept2026": 14366,
+      "rarityPct": 52,
+      "wikidata": "Q1123",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Germanium",
+     "aliases": [
+      "Ge"
+     ],
+     "evidence": {
+      "viewsSept2026": 13673,
+      "rarityPct": 53,
+      "wikidata": "Q867",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Rhodium",
+     "aliases": [
+      "Rh"
+     ],
+     "evidence": {
+      "viewsSept2026": 13255,
+      "rarityPct": 54,
+      "wikidata": "Q1087",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Francium",
+     "aliases": [
+      "Fr"
+     ],
+     "evidence": {
+      "viewsSept2026": 13155,
+      "rarityPct": 55,
+      "wikidata": "Q671",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Thallium",
+     "aliases": [
+      "Tl"
+     ],
+     "evidence": {
+      "viewsSept2026": 13140,
+      "rarityPct": 56,
+      "wikidata": "Q932",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Tennessine",
+     "aliases": [
+      "Ts"
+     ],
+     "evidence": {
+      "viewsSept2026": 13105,
+      "rarityPct": 56,
+      "wikidata": "Q1306",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Yttrium",
+     "aliases": [
+      "Y"
+     ],
+     "evidence": {
+      "viewsSept2026": 13077,
+      "rarityPct": 57,
+      "wikidata": "Q941",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Zirconium",
+     "aliases": [
+      "Zr"
+     ],
+     "evidence": {
+      "viewsSept2026": 13034,
+      "rarityPct": 58,
+      "wikidata": "Q1038",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Moscovium",
+     "aliases": [
+      "Mc"
+     ],
+     "evidence": {
+      "viewsSept2026": 12907,
+      "rarityPct": 59,
+      "wikidata": "Q1303",
+      "tierFromData": "SPARROW"
+     },
+     "tier": "SPARROW"
+    },
+    {
+     "canonical": "Californium",
+     "aliases": [
+      "Cf"
+     ],
+     "evidence": {
+      "viewsSept2026": 12895,
+      "rarityPct": 60,
+      "wikidata": "Q1888",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Niobium",
+     "aliases": [
+      "Nb"
+     ],
+     "evidence": {
+      "viewsSept2026": 12332,
+      "rarityPct": 61,
+      "wikidata": "Q1046",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Tellurium",
+     "aliases": [
+      "Te"
+     ],
+     "evidence": {
+      "viewsSept2026": 11590,
+      "rarityPct": 62,
+      "wikidata": "Q1100",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Neodymium",
+     "aliases": [
+      "Nd"
+     ],
+     "evidence": {
+      "viewsSept2026": 11477,
+      "rarityPct": 62,
+      "wikidata": "Q1388",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Americium",
+     "aliases": [
+      "Am"
+     ],
+     "evidence": {
+      "viewsSept2026": 11359,
+      "rarityPct": 63,
+      "wikidata": "Q1872",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Strontium",
+     "aliases": [
+      "Sr"
+     ],
+     "evidence": {
+      "viewsSept2026": 11264,
+      "rarityPct": 64,
+      "wikidata": "Q938",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Barium",
+     "aliases": [
+      "Ba"
+     ],
+     "evidence": {
+      "viewsSept2026": 10720,
+      "rarityPct": 65,
+      "wikidata": "Q1112",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Einsteinium",
+     "aliases": [
+      "Es"
+     ],
+     "evidence": {
+      "viewsSept2026": 10661,
+      "rarityPct": 66,
+      "wikidata": "Q1892",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Scandium",
+     "aliases": [
+      "Sc"
+     ],
+     "evidence": {
+      "viewsSept2026": 10555,
+      "rarityPct": 67,
+      "wikidata": "Q713",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Indium",
+     "aliases": [
+      "In"
+     ],
+     "evidence": {
+      "viewsSept2026": 10056,
+      "rarityPct": 68,
+      "wikidata": "Q1094",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Samarium",
+     "aliases": [
+      "Sm"
+     ],
+     "evidence": {
+      "viewsSept2026": 9637,
+      "rarityPct": 68,
+      "wikidata": "Q1819",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Ruthenium",
+     "aliases": [
+      "Ru"
+     ],
+     "evidence": {
+      "viewsSept2026": 9556,
+      "rarityPct": 69,
+      "wikidata": "Q1086",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Rubidium",
+     "aliases": [
+      "Rb"
+     ],
+     "evidence": {
+      "viewsSept2026": 9413,
+      "rarityPct": 70,
+      "wikidata": "Q895",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Gadolinium",
+     "aliases": [
+      "Gd"
+     ],
+     "evidence": {
+      "viewsSept2026": 9344,
+      "rarityPct": 71,
+      "wikidata": "Q1832",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Promethium",
+     "aliases": [
+      "Pm"
+     ],
+     "evidence": {
+      "viewsSept2026": 9290,
+      "rarityPct": 72,
+      "wikidata": "Q1809",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Neptunium",
+     "aliases": [
+      "Np"
+     ],
+     "evidence": {
+      "viewsSept2026": 9264,
+      "rarityPct": 73,
+      "wikidata": "Q1105",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Rhenium",
+     "aliases": [
+      "Re"
+     ],
+     "evidence": {
+      "viewsSept2026": 9034,
+      "rarityPct": 74,
+      "wikidata": "Q737",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Lanthanum",
+     "aliases": [
+      "La"
+     ],
+     "evidence": {
+      "viewsSept2026": 7952,
+      "rarityPct": 74,
+      "wikidata": "Q1801",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Curium",
+     "aliases": [
+      "Cm"
+     ],
+     "evidence": {
+      "viewsSept2026": 7918,
+      "rarityPct": 75,
+      "wikidata": "Q1876",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Hafnium",
+     "aliases": [
+      "Hf"
+     ],
+     "evidence": {
+      "viewsSept2026": 7536,
+      "rarityPct": 76,
+      "wikidata": "Q1119",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Holmium",
+     "aliases": [
+      "Ho"
+     ],
+     "evidence": {
+      "viewsSept2026": 7433,
+      "rarityPct": 77,
+      "wikidata": "Q1846",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Cerium",
+     "aliases": [
+      "Ce"
+     ],
+     "evidence": {
+      "viewsSept2026": 7377,
+      "rarityPct": 78,
+      "wikidata": "Q1385",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Nihonium",
+     "aliases": [
+      "Nh"
+     ],
+     "evidence": {
+      "viewsSept2026": 7082,
+      "rarityPct": 79,
+      "wikidata": "Q1301",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Ytterbium",
+     "aliases": [
+      "Yb"
+     ],
+     "evidence": {
+      "viewsSept2026": 7014,
+      "rarityPct": 79,
+      "wikidata": "Q1855",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Lutetium",
+     "aliases": [
+      "Lu"
+     ],
+     "evidence": {
+      "viewsSept2026": 6856,
+      "rarityPct": 80,
+      "wikidata": "Q1857",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Livermorium",
+     "aliases": [
+      "Lv"
+     ],
+     "evidence": {
+      "viewsSept2026": 6573,
+      "rarityPct": 81,
+      "wikidata": "Q1304",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Praseodymium",
+     "aliases": [
+      "Pr"
+     ],
+     "evidence": {
+      "viewsSept2026": 6345,
+      "rarityPct": 82,
+      "wikidata": "Q1386",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Dysprosium",
+     "aliases": [
+      "Dy"
+     ],
+     "evidence": {
+      "viewsSept2026": 6342,
+      "rarityPct": 83,
+      "wikidata": "Q1843",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Flerovium",
+     "aliases": [
+      "Fl"
+     ],
+     "evidence": {
+      "viewsSept2026": 6327,
+      "rarityPct": 84,
+      "wikidata": "Q1302",
+      "tierFromData": "STARLING"
+     },
+     "tier": "STARLING"
+    },
+    {
+     "canonical": "Berkelium",
+     "aliases": [
+      "Bk"
+     ],
+     "evidence": {
+      "viewsSept2026": 6198,
+      "rarityPct": 85,
+      "wikidata": "Q1882",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Copernicium",
+     "aliases": [
+      "Cn"
+     ],
+     "evidence": {
+      "viewsSept2026": 6048,
+      "rarityPct": 85,
+      "wikidata": "Q1278",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Protactinium",
+     "aliases": [
+      "Pa"
+     ],
+     "evidence": {
+      "viewsSept2026": 5919,
+      "rarityPct": 86,
+      "wikidata": "Q1109",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Europium",
+     "aliases": [
+      "Eu"
+     ],
+     "evidence": {
+      "viewsSept2026": 5620,
+      "rarityPct": 87,
+      "wikidata": "Q1396",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Roentgenium",
+     "aliases": [
+      "Rg"
+     ],
+     "evidence": {
+      "viewsSept2026": 5566,
+      "rarityPct": 88,
+      "wikidata": "Q1272",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Lawrencium",
+     "aliases": [
+      "Lr"
+     ],
+     "evidence": {
+      "viewsSept2026": 5402,
+      "rarityPct": 89,
+      "wikidata": "Q1905",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Seaborgium",
+     "aliases": [
+      "Sg"
+     ],
+     "evidence": {
+      "viewsSept2026": 5139,
+      "rarityPct": 90,
+      "wikidata": "Q1234",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Fermium",
+     "aliases": [
+      "Fm"
+     ],
+     "evidence": {
+      "viewsSept2026": 4895,
+      "rarityPct": 91,
+      "wikidata": "Q1896",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Rutherfordium",
+     "aliases": [
+      "Rf"
+     ],
+     "evidence": {
+      "viewsSept2026": 4696,
+      "rarityPct": 91,
+      "wikidata": "Q1226",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Erbium",
+     "aliases": [
+      "Er"
+     ],
+     "evidence": {
+      "viewsSept2026": 4521,
+      "rarityPct": 92,
+      "wikidata": "Q1849",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Hassium",
+     "aliases": [
+      "Hs"
+     ],
+     "evidence": {
+      "viewsSept2026": 4353,
+      "rarityPct": 93,
+      "wikidata": "Q1252",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Mendelevium",
+     "aliases": [
+      "Md"
+     ],
+     "evidence": {
+      "viewsSept2026": 4277,
+      "rarityPct": 94,
+      "wikidata": "Q1898",
+      "tierFromData": "KINGFISHER"
+     },
+     "tier": "KINGFISHER"
+    },
+    {
+     "canonical": "Terbium",
+     "aliases": [
+      "Tb"
+     ],
+     "evidence": {
+      "viewsSept2026": 4255,
+      "rarityPct": 95,
+      "wikidata": "Q1838",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Darmstadtium",
+     "aliases": [
+      "Ds"
+     ],
+     "evidence": {
+      "viewsSept2026": 4250,
+      "rarityPct": 96,
+      "wikidata": "Q1266",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Nobelium",
+     "aliases": [
+      "No"
+     ],
+     "evidence": {
+      "viewsSept2026": 4229,
+      "rarityPct": 97,
+      "wikidata": "Q1901",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Thulium",
+     "aliases": [
+      "Tm"
+     ],
+     "evidence": {
+      "viewsSept2026": 4147,
+      "rarityPct": 97,
+      "wikidata": "Q1853",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Meitnerium",
+     "aliases": [
+      "Mt"
+     ],
+     "evidence": {
+      "viewsSept2026": 4100,
+      "rarityPct": 98,
+      "wikidata": "Q1258",
+      "tierFromData": "MEGA"
+     },
+     "tier": "MEGA"
+    },
+    {
+     "canonical": "Dubnium",
+     "aliases": [
+      "Db"
+     ],
+     "evidence": {
+      "viewsSept2026": 3674,
+      "rarityPct": 99,
+      "wikidata": "Q1232",
+      "tierFromData": "RARE BIRD"
+     },
+     "tier": "RARE BIRD"
+    },
+    {
+     "canonical": "Bohrium",
+     "aliases": [
+      "Bh"
+     ],
+     "evidence": {
+      "viewsSept2026": 3651,
+      "rarityPct": 100,
+      "wikidata": "Q1249",
+      "tierFromData": "RARE BIRD"
+     },
+     "tier": "RARE BIRD"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "gen-name-an-ocean",
+ "text": "Name an ocean.",
+ "example": "like the Pacific",
+ "catalogueSize": 7,
+ "catalogue": [
+  {
+   "canonical": "Pacific Ocean",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "viewsSept2026": 76715,
+    "rarityPct": 0,
+    "wikidata": "Q98"
+   },
+   "reviewFlag": "TOP-VIEWS: verify teens would actually say this (news/attention bias?)"
+  },
+  {
+   "canonical": "Atlantic Ocean",
+   "aliases": [],
+   "tier": "PIGEON",
+   "evidence": {
+    "viewsSept2026": 62718,
+    "rarityPct": 17,
+    "wikidata": "Q97"
+   }
+  },
+  {
+   "canonical": "Indian Ocean",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "viewsSept2026": 36589,
+    "rarityPct": 33,
+    "wikidata": "Q1239"
+   }
+  },
+  {
+   "canonical": "Southern Ocean",
+   "aliases": [],
+   "tier": "SPARROW",
+   "evidence": {
+    "viewsSept2026": 27877,
+    "rarityPct": 50,
+    "wikidata": "Q7354"
+   }
+  },
+  {
+   "canonical": "Arctic Ocean",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "viewsSept2026": 22878,
+    "rarityPct": 67,
+    "wikidata": "Q788"
+   }
+  },
+  {
+   "canonical": "World Ocean",
+   "aliases": [],
+   "tier": "STARLING",
+   "evidence": {
+    "viewsSept2026": 2207,
+    "rarityPct": 83,
+    "wikidata": "Q715269"
+   }
+  },
+  {
+   "canonical": "South Pacific Ocean",
+   "aliases": [],
+   "tier": "RARE BIRD",
+   "evidence": {
+    "viewsSept2026": 1286,
+    "rarityPct": 100,
+    "wikidata": "Q12355425"
+   }
+  }
+ ],
+ "_draft": true
+}

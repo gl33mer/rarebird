@@ -1,0 +1,2203 @@
+[
+ {
+  "id": "Q889",
+  "label": "Afghanistan",
+  "aliases": [
+   "Afghaunistaun",
+   "Afghaunistan",
+   "Afghanisthan",
+   "Afghania",
+   "Affghaunistan",
+   "Affghanisthan",
+   "Affghanistan"
+  ],
+  "enTitle": "Afghanistan"
+ },
+ {
+  "id": "Q222",
+  "label": "Albania",
+  "aliases": [
+   "Shqipërisë",
+   "Republika Popullore Socialiste e Shqiperise",
+   "Republika Popullore e Shqiperise",
+   "People's Socialist Republic of Albania",
+   "People's Republic of Albania",
+   "Republic of Albania"
+  ],
+  "enTitle": "Albania"
+ },
+ {
+  "id": "Q262",
+  "label": "Algeria",
+  "aliases": [
+   "People's Democratic Republic of Algeria",
+   "Dzayer",
+   "Djazaïr"
+  ],
+  "enTitle": "Algeria"
+ },
+ {
+  "id": "Q228",
+  "label": "Andorra",
+  "aliases": [
+   "Principality of the Valleys of Andorra",
+   "Principality of Andorra"
+  ],
+  "enTitle": "Andorra"
+ },
+ {
+  "id": "Q916",
+  "label": "Angola",
+  "aliases": [
+   "Republic of Angola",
+   "ao",
+   "Ngola"
+  ],
+  "enTitle": "Angola"
+ },
+ {
+  "id": "Q781",
+  "label": "Antigua and Barbuda",
+  "aliases": [
+   "Antigua–Barbuda",
+   "Antigua & Barbuda",
+   "Antigua-Barbuda"
+  ],
+  "enTitle": "Antigua and Barbuda"
+ },
+ {
+  "id": "Q414",
+  "label": "Argentina",
+  "aliases": [
+   "Republica Argentina",
+   "Republic of Argentina",
+   "Argentine Republic"
+  ],
+  "enTitle": "Argentina"
+ },
+ {
+  "id": "Q399",
+  "label": "Armenia",
+  "aliases": [
+   "Հայաստան",
+   "Republic of Armenia",
+   "Hayastani Hanrapetut’yun",
+   "Hayastan"
+  ],
+  "enTitle": "Armenia"
+ },
+ {
+  "id": "Q408",
+  "label": "Australia",
+  "aliases": [
+   "'Straya",
+   "The Commonwealth of Australia",
+   "Stralia",
+   "New Hollandia",
+   "Aussieland",
+   "Nova Hollandia",
+   "Straya",
+   "New Holland",
+   "Commonwealth of Australia",
+   "Stria",
+   "Oz",
+   "Down Under"
+  ],
+  "enTitle": "Australia"
+ },
+ {
+  "id": "Q40",
+  "label": "Austria",
+  "aliases": [
+   "Republic of Austria"
+  ],
+  "enTitle": "Austria"
+ },
+ {
+  "id": "Q227",
+  "label": "Azerbaijan",
+  "aliases": [
+   "Republic of Azerbaijan",
+   "AZE"
+  ],
+  "enTitle": "Azerbaijan"
+ },
+ {
+  "id": "Q398",
+  "label": "Bahrain",
+  "aliases": [
+   "Mamlakat al-Baḥrayn",
+   "Kingdom of Bahrain",
+   "ISO 3166-1:BH",
+   "Dawlat al-Bahrain",
+   "Bahrein Islands",
+   "bh"
+  ],
+  "enTitle": "Bahrain"
+ },
+ {
+  "id": "Q902",
+  "label": "Bangladesh",
+  "aliases": [
+   "People's Republic of Bangladesh",
+   "Land of Bengal",
+   "Country of Bengal",
+   "Bangla Desh",
+   "bd"
+  ],
+  "enTitle": "Bangladesh"
+ },
+ {
+  "id": "Q244",
+  "label": "Barbados",
+  "aliases": [
+   "bb",
+   "Barbadoes",
+   "BAR"
+  ],
+  "enTitle": "Barbados"
+ },
+ {
+  "id": "Q184",
+  "label": "Belarus",
+  "aliases": [
+   "White Ruthenia",
+   "Respublika Bielaruś",
+   "Respublika Belarus'",
+   "Republic of Belarus",
+   "Byelorussia",
+   "Byeloruss",
+   "Bielorussia",
+   "Bielaruś",
+   "Belorussia",
+   "White Russia",
+   "by"
+  ],
+  "enTitle": "Belarus"
+ },
+ {
+  "id": "Q31",
+  "label": "Belgium",
+  "aliases": [
+   "Kingdom of Belgium"
+  ],
+  "enTitle": "Belgium"
+ },
+ {
+  "id": "Q242",
+  "label": "Belize",
+  "aliases": [
+   "bz"
+  ],
+  "enTitle": "Belize"
+ },
+ {
+  "id": "Q962",
+  "label": "Benin",
+  "aliases": [
+   "Republic of Benin"
+  ],
+  "enTitle": "Benin"
+ },
+ {
+  "id": "Q917",
+  "label": "Bhutan",
+  "aliases": [
+   "Kingdom of Bhutan",
+   "BHU"
+  ],
+  "enTitle": "Bhutan"
+ },
+ {
+  "id": "Q750",
+  "label": "Bolivia",
+  "aliases": [
+   "Republic of Bolivia",
+   "Plurinational State of Bolivia",
+   "Bolivia (Plurinational State of)"
+  ],
+  "enTitle": "Bolivia"
+ },
+ {
+  "id": "Q225",
+  "label": "Bosnia and Herzegovina",
+  "aliases": [
+   "Bosnia-Herzegovina",
+   "Bosnia and Hercegovina",
+   "Bosnia & Herzegovina",
+   "B&H",
+   "ba"
+  ],
+  "enTitle": "Bosnia and Herzegovina"
+ },
+ {
+  "id": "Q963",
+  "label": "Botswana",
+  "aliases": [
+   "Republic of Botswana",
+   "Lefatshe la Botswana",
+   "bw"
+  ],
+  "enTitle": "Botswana"
+ },
+ {
+  "id": "Q155",
+  "label": "Brazil",
+  "aliases": [
+   "Federative Republic of Brazil"
+  ],
+  "enTitle": "Brazil"
+ },
+ {
+  "id": "Q921",
+  "label": "Brunei",
+  "aliases": [
+   "Negara Brunei Darussalam",
+   "Nation of Brunei, the Abode of Peace",
+   "bn"
+  ],
+  "enTitle": "Brunei"
+ },
+ {
+  "id": "Q219",
+  "label": "Bulgaria",
+  "aliases": [
+   "Bulgarian Republic",
+   "Republic of Bulgaria"
+  ],
+  "enTitle": "Bulgaria"
+ },
+ {
+  "id": "Q965",
+  "label": "Burkina Faso",
+  "aliases": [
+   "Republic of Upper Volta (-1984)",
+   "Republic of Burkina Faso",
+   "bf"
+  ],
+  "enTitle": "Burkina Faso"
+ },
+ {
+  "id": "Q967",
+  "label": "Burundi",
+  "aliases": [
+   "Republika y'Uburundi",
+   "Republic of Burundi",
+   "Gouvernement du Burundi",
+   "bi"
+  ],
+  "enTitle": "Burundi"
+ },
+ {
+  "id": "Q424",
+  "label": "Cambodia",
+  "aliases": [
+   "Kampuchea",
+   "Kambodzha",
+   "Campuchia",
+   "Camboya",
+   "kh",
+   "Kingdom of Cambodia",
+   "Kamboja"
+  ],
+  "enTitle": "Cambodia"
+ },
+ {
+  "id": "Q1009",
+  "label": "Cameroon",
+  "aliases": [
+   "Republic of Cameroon"
+  ],
+  "enTitle": "Cameroon"
+ },
+ {
+  "id": "Q16",
+  "label": "Canada",
+  "aliases": [
+   "CAN",
+   "CA"
+  ],
+  "enTitle": "Canada"
+ },
+ {
+  "id": "Q1011",
+  "label": "Cape Verde",
+  "aliases": [
+   "Republic of Cape Verde",
+   "Republic of Cabo Verde",
+   "Cape Verde Islands"
+  ],
+  "enTitle": "Cape Verde"
+ },
+ {
+  "id": "Q929",
+  "label": "Central African Republic",
+  "aliases": [
+   "cf",
+   "Central Africa"
+  ],
+  "enTitle": "Central African Republic"
+ },
+ {
+  "id": "Q657",
+  "label": "Chad",
+  "aliases": [
+   "Republic of Chad",
+   "td",
+   "CHA",
+   "GUM"
+  ],
+  "enTitle": "Chad"
+ },
+ {
+  "id": "Q298",
+  "label": "Chile",
+  "aliases": [
+   "Republic of Chile",
+   "CHI"
+  ],
+  "enTitle": "Chile"
+ },
+ {
+  "id": "Q739",
+  "label": "Colombia",
+  "aliases": [
+   "The Republic of Colombia",
+   "Republic of Colombia",
+   "Colombiá"
+  ],
+  "enTitle": "Colombia"
+ },
+ {
+  "id": "Q970",
+  "label": "Comoros",
+  "aliases": [
+   "Union of the Comoros",
+   "Union des Comores",
+   "Udzima wa Komori",
+   "ouvoimoja wakomori",
+   "Massiwa ya komori",
+   "Juzur al-Qumur",
+   "Juzur al-Qamar",
+   "al-Ittiḥād al-Qumurī",
+   "km",
+   "the Comoros"
+  ],
+  "enTitle": "Comoros"
+ },
+ {
+  "id": "Q800",
+  "label": "Costa Rica",
+  "aliases": [
+   "Republic of Costa Rica",
+   "cr"
+  ],
+  "enTitle": "Costa Rica"
+ },
+ {
+  "id": "Q224",
+  "label": "Croatia",
+  "aliases": [
+   "Republic of Croatia",
+   "HRV",
+   "RH",
+   "CRO",
+   "HR"
+  ],
+  "enTitle": "Croatia"
+ },
+ {
+  "id": "Q241",
+  "label": "Cuba",
+  "aliases": [
+   "cu",
+   "Republic of Cuba"
+  ],
+  "enTitle": "Cuba"
+ },
+ {
+  "id": "Q229",
+  "label": "Cyprus",
+  "aliases": [
+   "Greek Cypriot State",
+   "Greek Administration of Southern Cyprus",
+   "Republic of Cyprus"
+  ],
+  "enTitle": "Cyprus"
+ },
+ {
+  "id": "Q213",
+  "label": "Czech Republic",
+  "aliases": [
+   "the Czech Republic",
+   "Czechia"
+  ],
+  "enTitle": "Czech Republic"
+ },
+ {
+  "id": "Q974",
+  "label": "Democratic Republic of the Congo",
+  "aliases": [
+   "COD",
+   "D.R.C.",
+   "DRC",
+   "DR Congo",
+   "Democratic Republic of Congo",
+   "Dem. Republic of the Congo",
+   "Dem. Republic of Congo",
+   "Dem. Rep. Congo",
+   "Congo (Kinshasa)",
+   "cd"
+  ],
+  "enTitle": "Democratic Republic of the Congo"
+ },
+ {
+  "id": "Q977",
+  "label": "Djibouti",
+  "aliases": [
+   "Republic of Djibouti",
+   "Jībūtī",
+   "Gabuuti",
+   "Jabuuti",
+   "dj"
+  ],
+  "enTitle": "Djibouti"
+ },
+ {
+  "id": "Q784",
+  "label": "Dominica",
+  "aliases": [
+   "Wai‘tu kubuli",
+   "Wai'tu kubuli",
+   "The Commonwealth of Dominica",
+   "Island of Dominica",
+   "Commonwealth of Dominica",
+   "dm",
+   "DOM"
+  ],
+  "enTitle": "Dominica"
+ },
+ {
+  "id": "Q786",
+  "label": "Dominican Republic",
+  "aliases": [
+   "República Dominicana",
+   "Republica Dominicana",
+   "DomRep",
+   "Dominicana",
+   "RD"
+  ],
+  "enTitle": "Dominican Republic"
+ },
+ {
+  "id": "Q736",
+  "label": "Ecuador",
+  "aliases": [
+   "Republic of Equator",
+   "The Ecuadorian State",
+   "Republic of the Equator",
+   "Republic of Ecuador"
+  ],
+  "enTitle": "Ecuador"
+ },
+ {
+  "id": "Q79",
+  "label": "Egypt",
+  "aliases": [
+   "Rep. Egypt",
+   "Arab Republic of Egypt",
+   "Arab Rep. Egypt",
+   "Republic of Egypt",
+   "Misr"
+  ],
+  "enTitle": "Egypt"
+ },
+ {
+  "id": "Q792",
+  "label": "El Salvador",
+  "aliases": [
+   "Republic of El Salvador",
+   "sv",
+   "ESA",
+   "Salvador"
+  ],
+  "enTitle": "El Salvador"
+ },
+ {
+  "id": "Q983",
+  "label": "Equatorial Guinea",
+  "aliases": [
+   "Republic of Equatorial Guinea",
+   "gq",
+   "GEQ"
+  ],
+  "enTitle": "Equatorial Guinea"
+ },
+ {
+  "id": "Q986",
+  "label": "Eritrea",
+  "aliases": [
+   "State of Eritrea",
+   "Iritriyā",
+   "Ertrā",
+   "er"
+  ],
+  "enTitle": "Eritrea"
+ },
+ {
+  "id": "Q191",
+  "label": "Estonia",
+  "aliases": [
+   "Republic of Estonia",
+   "Eesti Vabariik",
+   "Estland",
+   "ee"
+  ],
+  "enTitle": "Estonia"
+ },
+ {
+  "id": "Q1050",
+  "label": "Eswatini",
+  "aliases": [
+   "Umbuso weSwatini",
+   "sz",
+   "Kingdom of Swaziland",
+   "Kingdom of Eswatini",
+   "eSwatini",
+   "Swaziland"
+  ],
+  "enTitle": "Eswatini"
+ },
+ {
+  "id": "Q115",
+  "label": "Ethiopia",
+  "aliases": [
+   "Federal Democratic Republic of Ethiopia",
+   "et"
+  ],
+  "enTitle": "Ethiopia"
+ },
+ {
+  "id": "Q702",
+  "label": "Federated States of Micronesia",
+  "aliases": [
+   "Federated States of Micronesia, FSM",
+   "Fed. Sts. of Micronesia",
+   "Fed. Sts. Micronesia",
+   "fm",
+   "FSM",
+   "Micronesia"
+  ],
+  "enTitle": "Federated States of Micronesia"
+ },
+ {
+  "id": "Q712",
+  "label": "Fiji",
+  "aliases": [
+   "Republic of the Fiji Islands",
+   "Republic of Fiji",
+   "Matanitu Tugalala o Viti",
+   "Fijī Gaṇarājya",
+   "Fijī",
+   "fj",
+   "Viti"
+  ],
+  "enTitle": "Fiji"
+ },
+ {
+  "id": "Q33",
+  "label": "Finland",
+  "aliases": [
+   "Suomen tasavalta",
+   "Republiken Finland",
+   "Republic of Finland",
+   "Land of Thousand Lakes",
+   "Finnia",
+   "fi"
+  ],
+  "enTitle": "Finland"
+ },
+ {
+  "id": "Q142",
+  "label": "France",
+  "aliases": [
+   "French Republic"
+  ],
+  "enTitle": "France"
+ },
+ {
+  "id": "Q1000",
+  "label": "Gabon",
+  "aliases": [
+   "République Gabonaise",
+   "Republique Gabonaise",
+   "Gabonese Republic",
+   "GAB",
+   "ga"
+  ],
+  "enTitle": "Gabon"
+ },
+ {
+  "id": "Q230",
+  "label": "Georgia",
+  "aliases": [
+   "Georgia (Sakartvelo)",
+   "Republic of Georgia",
+   "Sakartvelo",
+   "Georgia (country)"
+  ],
+  "enTitle": "Georgia (country)"
+ },
+ {
+  "id": "Q183",
+  "label": "Germany",
+  "aliases": [
+   "DEU",
+   "DE",
+   "BRD",
+   "FRG",
+   "Federal Republic of Germany"
+  ],
+  "enTitle": "Germany"
+ },
+ {
+  "id": "Q117",
+  "label": "Ghana",
+  "aliases": [],
+  "enTitle": "Ghana"
+ },
+ {
+  "id": "Q41",
+  "label": "Greece",
+  "aliases": [
+   "Hellas, Greece",
+   "Greek Republic",
+   "Ellada",
+   "Hellenic Republic",
+   "gr",
+   "el",
+   "Hellas"
+  ],
+  "enTitle": "Greece"
+ },
+ {
+  "id": "Q769",
+  "label": "Grenada",
+  "aliases": [
+   "gd",
+   "GRN"
+  ],
+  "enTitle": "Grenada"
+ },
+ {
+  "id": "Q774",
+  "label": "Guatemala",
+  "aliases": [
+   "Republic of Guatemala",
+   "gt",
+   "GTM",
+   "GT"
+  ],
+  "enTitle": "Guatemala"
+ },
+ {
+  "id": "Q1006",
+  "label": "Guinea",
+  "aliases": [
+   "Republic of Guinea",
+   "Guinea-Conakry",
+   "GUI",
+   "gn"
+  ],
+  "enTitle": "Guinea"
+ },
+ {
+  "id": "Q1007",
+  "label": "Guinea-Bissau",
+  "aliases": [
+   "Republic of Guinea-Bissau",
+   "gw",
+   "GBS"
+  ],
+  "enTitle": "Guinea-Bissau"
+ },
+ {
+  "id": "Q734",
+  "label": "Guyana",
+  "aliases": [
+   "gy",
+   "Republic of Guyana",
+   "Co-operative Republic of Guyana"
+  ],
+  "enTitle": "Guyana"
+ },
+ {
+  "id": "Q790",
+  "label": "Haiti",
+  "aliases": [
+   "Republic of Haiti",
+   "Haitian Republic",
+   "Ayiti",
+   "HAI",
+   "ht",
+   "Hayti"
+  ],
+  "enTitle": "Haiti"
+ },
+ {
+  "id": "Q783",
+  "label": "Honduras",
+  "aliases": [
+   "Republic of Honduras",
+   "Honduran Republic",
+   "hn",
+   "HON"
+  ],
+  "enTitle": "Honduras"
+ },
+ {
+  "id": "Q28",
+  "label": "Hungary",
+  "aliases": [],
+  "enTitle": "Hungary"
+ },
+ {
+  "id": "Q189",
+  "label": "Iceland",
+  "aliases": [
+   "Icelandic republic",
+   "Ysland",
+   "Republic of Iceland",
+   "Isl."
+  ],
+  "enTitle": "Iceland"
+ },
+ {
+  "id": "Q668",
+  "label": "India",
+  "aliases": [
+   "Tenjiku",
+   "Bharatvarsh",
+   "Al Hind",
+   "Hindoostan",
+   "Tianzhu",
+   "Bharata",
+   "Hindustan",
+   "Republic of India",
+   "Indostan",
+   "Bharat Ganarajya"
+  ],
+  "enTitle": "India"
+ },
+ {
+  "id": "Q252",
+  "label": "Indonesia",
+  "aliases": [
+   "Republic of Indonesia",
+   "id"
+  ],
+  "enTitle": "Indonesia"
+ },
+ {
+  "id": "Q794",
+  "label": "Iran",
+  "aliases": [
+   "Islamic Republic of Iran",
+   "Islamic Rep. Iran",
+   "ir",
+   "IRI"
+  ],
+  "enTitle": "Iran"
+ },
+ {
+  "id": "Q796",
+  "label": "Iraq",
+  "aliases": [
+   "iq",
+   "Republic of Iraq"
+  ],
+  "enTitle": "Iraq"
+ },
+ {
+  "id": "Q27",
+  "label": "Ireland",
+  "aliases": [
+   "Irish Republic",
+   "Southern Ireland",
+   "Republic of Ireland"
+  ],
+  "enTitle": "Republic of Ireland"
+ },
+ {
+  "id": "Q801",
+  "label": "Israel",
+  "aliases": [
+   "Yisrael",
+   "il",
+   "ISR",
+   "State of Israel"
+  ],
+  "enTitle": "Israel"
+ },
+ {
+  "id": "Q38",
+  "label": "Italy",
+  "aliases": [
+   "Republic of Italy",
+   "Italian Republic"
+  ],
+  "enTitle": "Italy"
+ },
+ {
+  "id": "Q1008",
+  "label": "Ivory Coast",
+  "aliases": [
+   "The Ivory Coast",
+   "Republic of the Ivory Coast",
+   "Republic of Ivory Coast",
+   "Republic of Côte d'Ivoire",
+   "Republic of Cote d'Ivoire",
+   "Côte-d'Ivoire",
+   "Cote-d'Ivoire",
+   "Cote Ivoire",
+   "Cote d'lvoire",
+   "Cote d'Ivoire",
+   "ci"
+  ],
+  "enTitle": "Ivory Coast"
+ },
+ {
+  "id": "Q766",
+  "label": "Jamaica",
+  "aliases": [
+   "Commonwealth of Jamaica",
+   "JA"
+  ],
+  "enTitle": "Jamaica"
+ },
+ {
+  "id": "Q17",
+  "label": "Japan",
+  "aliases": [
+   "Land of the Rising Sun",
+   "State of Japan",
+   "Nippon-koku",
+   "Nihon-koku",
+   "Land of Rising Sun",
+   "Iapon",
+   "Iapan"
+  ],
+  "enTitle": "Japan"
+ },
+ {
+  "id": "Q810",
+  "label": "Jordan",
+  "aliases": [
+   "State of Jordan",
+   "Kingdom of Jordan",
+   "ISO 3166-1:JO",
+   "Hashemite Kingdom of Jordan",
+   "Giordania",
+   "Yarden",
+   "HKJ"
+  ],
+  "enTitle": "Jordan"
+ },
+ {
+  "id": "Q232",
+  "label": "Kazakhstan",
+  "aliases": [
+   "Qazaqstan",
+   "kz",
+   "Republic of Qazaqstan",
+   "Republic of Kazakhstan"
+  ],
+  "enTitle": "Kazakhstan"
+ },
+ {
+  "id": "Q114",
+  "label": "Kenya",
+  "aliases": [
+   "Republic of Kenya",
+   "ke"
+  ],
+  "enTitle": "Kenya"
+ },
+ {
+  "id": "Q756617",
+  "label": "Kingdom of Denmark",
+  "aliases": [
+   "Realm of Denmark",
+   "Kunngeqarfik Danmarki",
+   "Kongsríki Danmarkar",
+   "Kongeriget Danmark",
+   "Danmarks Rige",
+   "Danmarkip Naalagaaffik",
+   "Danmarkar Ríki",
+   "Danish Realm",
+   "Denmark",
+   "Danish Commonwealth"
+  ],
+  "enTitle": "Danish Realm"
+ },
+ {
+  "id": "Q29999",
+  "label": "Kingdom of the Netherlands",
+  "aliases": [
+   "Kingdom of Netherlands",
+   "Nederlanden",
+   "the Netherlands",
+   "Netherlands"
+  ],
+  "enTitle": "Kingdom of the Netherlands"
+ },
+ {
+  "id": "Q710",
+  "label": "Kiribati",
+  "aliases": [
+   "Republic of Kiribati",
+   "ki"
+  ],
+  "enTitle": "Kiribati"
+ },
+ {
+  "id": "Q1246",
+  "label": "Kosovo",
+  "aliases": [
+   "XKX",
+   "RKS",
+   "Republic of Kosovo",
+   "Kosova",
+   "KV",
+   "XK",
+   "KOS"
+  ],
+  "enTitle": "Kosovo"
+ },
+ {
+  "id": "Q817",
+  "label": "Kuwait",
+  "aliases": [
+   "State of Kuwait",
+   "kw"
+  ],
+  "enTitle": "Kuwait"
+ },
+ {
+  "id": "Q813",
+  "label": "Kyrgyzstan",
+  "aliases": [
+   "Kyrgyz Republic",
+   "kg"
+  ],
+  "enTitle": "Kyrgyzstan"
+ },
+ {
+  "id": "Q819",
+  "label": "Laos",
+  "aliases": [
+   "Lao People's Democratic Republic",
+   "Lao PDR",
+   "la"
+  ],
+  "enTitle": "Laos"
+ },
+ {
+  "id": "Q211",
+  "label": "Latvia",
+  "aliases": [
+   "Republic of Latvia",
+   "Leţmо̄ Vabāmо̄",
+   "Leţmо̄",
+   "Latvijas Republika",
+   "Latvija",
+   "Latvian Republic",
+   "Latvejas Republika",
+   "Latveja",
+   "lv"
+  ],
+  "enTitle": "Latvia"
+ },
+ {
+  "id": "Q822",
+  "label": "Lebanon",
+  "aliases": [
+   "State of Lebanon",
+   "Republic of Lebanon",
+   "Lubnan",
+   "Lebanese Republic",
+   "lb"
+  ],
+  "enTitle": "Lebanon"
+ },
+ {
+  "id": "Q1013",
+  "label": "Lesotho",
+  "aliases": [
+   "The Mountain Kingdom",
+   "LES",
+   "Kingdom of Lesotho",
+   "ls"
+  ],
+  "enTitle": "Lesotho"
+ },
+ {
+  "id": "Q1014",
+  "label": "Liberia",
+  "aliases": [
+   "Republic of Liberia",
+   "lr",
+   "Liber"
+  ],
+  "enTitle": "Liberia"
+ },
+ {
+  "id": "Q1016",
+  "label": "Libya",
+  "aliases": [
+   "State of Libya",
+   "LBA",
+   "ly"
+  ],
+  "enTitle": "Libya"
+ },
+ {
+  "id": "Q347",
+  "label": "Liechtenstein",
+  "aliases": [
+   "Principality of Liechtenstein",
+   "FL",
+   "li"
+  ],
+  "enTitle": "Liechtenstein"
+ },
+ {
+  "id": "Q37",
+  "label": "Lithuania",
+  "aliases": [
+   "Republic of Lithuania"
+  ],
+  "enTitle": "Lithuania"
+ },
+ {
+  "id": "Q32",
+  "label": "Luxembourg",
+  "aliases": [
+   "Grand Duchy of Luxembourg"
+  ],
+  "enTitle": "Luxembourg"
+ },
+ {
+  "id": "Q1019",
+  "label": "Madagascar",
+  "aliases": [
+   "Republic of Madagascar",
+   "mg",
+   "Malagaskar",
+   "Malagascar"
+  ],
+  "enTitle": "Madagascar"
+ },
+ {
+  "id": "Q1020",
+  "label": "Malawi",
+  "aliases": [
+   "Republic of Malawi",
+   "mw",
+   "MAW"
+  ],
+  "enTitle": "Malawi"
+ },
+ {
+  "id": "Q833",
+  "label": "Malaysia",
+  "aliases": [
+   "Malaysia Federation",
+   "Federation of Malaysia"
+  ],
+  "enTitle": "Malaysia"
+ },
+ {
+  "id": "Q826",
+  "label": "Maldives",
+  "aliases": [
+   "Republic of Maldives",
+   "mv",
+   "MDV"
+  ],
+  "enTitle": "Maldives"
+ },
+ {
+  "id": "Q912",
+  "label": "Mali",
+  "aliases": [
+   "Republic of Mali",
+   "ml"
+  ],
+  "enTitle": "Mali"
+ },
+ {
+  "id": "Q233",
+  "label": "Malta",
+  "aliases": [
+   "Republic of Malta"
+  ],
+  "enTitle": "Malta"
+ },
+ {
+  "id": "Q709",
+  "label": "Marshall Islands",
+  "aliases": [
+   "mh",
+   "Republic of the Marshall Islands"
+  ],
+  "enTitle": "Marshall Islands"
+ },
+ {
+  "id": "Q1025",
+  "label": "Mauritania",
+  "aliases": [
+   "Agawej",
+   "Murutaane",
+   "Muritanya",
+   "mr",
+   "Moritani",
+   "Mauretania",
+   "Islamic Republic of Mauritania",
+   "Gànnaar",
+   "Gannaar"
+  ],
+  "enTitle": "Mauritania"
+ },
+ {
+  "id": "Q1027",
+  "label": "Mauritius",
+  "aliases": [
+   "Republic of Mauritius",
+   "Moris",
+   "MU",
+   "MRI",
+   "Maurice"
+  ],
+  "enTitle": "Mauritius"
+ },
+ {
+  "id": "Q96",
+  "label": "Mexico",
+  "aliases": [
+   "US of M",
+   "Mexican United States",
+   "Mexican Republic",
+   "United States of Mexico",
+   "MXN",
+   "mx",
+   "United Mexican States"
+  ],
+  "enTitle": "Mexico"
+ },
+ {
+  "id": "Q217",
+  "label": "Moldova",
+  "aliases": [
+   "Republica Moldova",
+   "Republic of Moldova",
+   "Moldavia"
+  ],
+  "enTitle": "Moldova"
+ },
+ {
+  "id": "Q235",
+  "label": "Monaco",
+  "aliases": [
+   "Principauté de Monaco",
+   "Prinçipatu de Mùnegu",
+   "Principatu de Mu̍negu",
+   "Principato di Monaco",
+   "Principality of Monaco",
+   "Principality and Diocese of Monaco",
+   "Mùnegu",
+   "Fort-Hercule",
+   "mc"
+  ],
+  "enTitle": "Monaco"
+ },
+ {
+  "id": "Q711",
+  "label": "Mongolia",
+  "aliases": [
+   "State of Mongolia",
+   "Mongol State"
+  ],
+  "enTitle": "Mongolia"
+ },
+ {
+  "id": "Q236",
+  "label": "Montenegro",
+  "aliases": [
+   "Republic of Montenegro"
+  ],
+  "enTitle": "Montenegro"
+ },
+ {
+  "id": "Q1028",
+  "label": "Morocco",
+  "aliases": [
+   "Marocco",
+   "Maroc",
+   "Lmaġrib",
+   "Kingdom of Morocco",
+   "al-Maġrib"
+  ],
+  "enTitle": "Morocco"
+ },
+ {
+  "id": "Q1029",
+  "label": "Mozambique",
+  "aliases": [
+   "República de Moçambique",
+   "Republic of Mozambique",
+   "mz",
+   "Moçambique"
+  ],
+  "enTitle": "Mozambique"
+ },
+ {
+  "id": "Q836",
+  "label": "Myanmar",
+  "aliases": [
+   "Union of Burma",
+   "Republic of the Union of Myanmar"
+  ],
+  "enTitle": "Myanmar"
+ },
+ {
+  "id": "Q1030",
+  "label": "Namibia",
+  "aliases": [
+   "Republic of Namibia",
+   "na"
+  ],
+  "enTitle": "Namibia"
+ },
+ {
+  "id": "Q697",
+  "label": "Nauru",
+  "aliases": [
+   "Republic of Naoero",
+   "Republic of Nauru",
+   "Naoero",
+   "Pleasant Island"
+  ],
+  "enTitle": "Nauru"
+ },
+ {
+  "id": "Q837",
+  "label": "Nepal",
+  "aliases": [
+   "Palpou",
+   "Paï-pou",
+   "Pai-pou",
+   "Pa-lo-pou",
+   "Pa-le-pou",
+   "Pa-eul-pou",
+   "Nipal",
+   "Niepal",
+   "Ni-po-louo",
+   "Ni-po-lo",
+   "Nercerri",
+   "Nepaul"
+  ],
+  "enTitle": "Nepal"
+ },
+ {
+  "id": "Q664",
+  "label": "New Zealand",
+  "aliases": [
+   "Aotearoa New Zealand",
+   "Dominion of New Zealand",
+   "nz"
+  ],
+  "enTitle": "New Zealand"
+ },
+ {
+  "id": "Q811",
+  "label": "Nicaragua",
+  "aliases": [
+   "Republic of Nicaragua",
+   "ni",
+   "NIC",
+   "NI",
+   "NCA"
+  ],
+  "enTitle": "Nicaragua"
+ },
+ {
+  "id": "Q1032",
+  "label": "Niger",
+  "aliases": [
+   "The Niger",
+   "Republic of the Niger",
+   "Republic of Niger",
+   "Republic Niger",
+   "ne"
+  ],
+  "enTitle": "Niger"
+ },
+ {
+  "id": "Q1033",
+  "label": "Nigeria",
+  "aliases": [
+   "Naija",
+   "Federal Republic of Nigeria"
+  ],
+  "enTitle": "Nigeria"
+ },
+ {
+  "id": "Q423",
+  "label": "North Korea",
+  "aliases": [
+   "N. Korea",
+   "DPRK",
+   "Democratic People's Republic of Korea",
+   "kp",
+   "DPR Korea"
+  ],
+  "enTitle": "North Korea"
+ },
+ {
+  "id": "Q221",
+  "label": "North Macedonia",
+  "aliases": [
+   "Republic of North Macedonia",
+   "Republic of Macedonia",
+   "FYR Macedonia",
+   "Former Yugoslav Republic of Macedonia",
+   "MKD",
+   "Makedonia",
+   "MK",
+   "NM",
+   "Macedonia"
+  ],
+  "enTitle": "North Macedonia"
+ },
+ {
+  "id": "Q20",
+  "label": "Norway",
+  "aliases": [
+   "Kingdom of Norway"
+  ],
+  "enTitle": "Norway"
+ },
+ {
+  "id": "Q842",
+  "label": "Oman",
+  "aliases": [
+   "Sultanate of Oman",
+   "omn",
+   "om",
+   "Uman"
+  ],
+  "enTitle": "Oman"
+ },
+ {
+  "id": "Q843",
+  "label": "Pakistan",
+  "aliases": [
+   "Tây Hồi",
+   "Hồi Quốc",
+   "Republic of Pakistan",
+   "Islamic Republic of Pakistan",
+   "pk"
+  ],
+  "enTitle": "Pakistan"
+ },
+ {
+  "id": "Q695",
+  "label": "Palau",
+  "aliases": [
+   "Republic of Palau",
+   "Republic of Belau",
+   "Pelew islands",
+   "Pelew",
+   "Peeloo",
+   "Pellew",
+   "pw",
+   "Belau"
+  ],
+  "enTitle": "Palau"
+ },
+ {
+  "id": "Q219060",
+  "label": "Palestine",
+  "aliases": [
+   "PSE",
+   "State of Palestine"
+  ],
+  "enTitle": "Palestine"
+ },
+ {
+  "id": "Q804",
+  "label": "Panama",
+  "aliases": [
+   "Republic of Panama",
+   "pa"
+  ],
+  "enTitle": "Panama"
+ },
+ {
+  "id": "Q691",
+  "label": "Papua New Guinea",
+  "aliases": [
+   "Independent State of Papua New Guinea"
+  ],
+  "enTitle": "Papua New Guinea"
+ },
+ {
+  "id": "Q733",
+  "label": "Paraguay",
+  "aliases": [
+   "Republic of Paraguay",
+   "Heart of South America"
+  ],
+  "enTitle": "Paraguay"
+ },
+ {
+  "id": "Q148",
+  "label": "People's Republic of China",
+  "aliases": [
+   "The PRC",
+   "PR China",
+   "P.R.C.",
+   "China PR",
+   "Communist China",
+   "Red China",
+   "cn",
+   "the People's Republic of China"
+  ],
+  "enTitle": "China"
+ },
+ {
+  "id": "Q419",
+  "label": "Peru",
+  "aliases": [
+   "Republica del Peru",
+   "Republic of Peru",
+   "pe",
+   "per"
+  ],
+  "enTitle": "Peru"
+ },
+ {
+  "id": "Q928",
+  "label": "Philippines",
+  "aliases": [
+   "The Philippines",
+   "Philippine Islands",
+   "Republic of the Philippines",
+   "RP"
+  ],
+  "enTitle": "Philippines"
+ },
+ {
+  "id": "Q36",
+  "label": "Poland",
+  "aliases": [
+   "Republic of Poland"
+  ],
+  "enTitle": "Poland"
+ },
+ {
+  "id": "Q45",
+  "label": "Portugal",
+  "aliases": [
+   "Portuguese Republic",
+   "POR"
+  ],
+  "enTitle": "Portugal"
+ },
+ {
+  "id": "Q846",
+  "label": "Qatar",
+  "aliases": [
+   "State of Qatar",
+   "qa",
+   "qat"
+  ],
+  "enTitle": "Qatar"
+ },
+ {
+  "id": "Q971",
+  "label": "Republic of the Congo",
+  "aliases": [
+   "République du Congo",
+   "Republique du Congo",
+   "Republic of Congo",
+   "Rep. Congo",
+   "Congo-Brazzaville",
+   "Congo Republic",
+   "Congo (Brazzaville)",
+   "cg",
+   "CGO",
+   "Congo"
+  ],
+  "enTitle": "Republic of the Congo"
+ },
+ {
+  "id": "Q218",
+  "label": "Romania",
+  "aliases": [
+   "Rumania",
+   "Roumania"
+  ],
+  "enTitle": "Romania"
+ },
+ {
+  "id": "Q159",
+  "label": "Russia",
+  "aliases": [
+   "Russian Federation"
+  ],
+  "enTitle": "Russia"
+ },
+ {
+  "id": "Q1037",
+  "label": "Rwanda",
+  "aliases": [
+   "The Land of a Thousand Hills",
+   "Republic of Rwanda"
+  ],
+  "enTitle": "Rwanda"
+ },
+ {
+  "id": "Q763",
+  "label": "Saint Kitts and Nevis",
+  "aliases": [
+   "St. Kitts and Nevis",
+   "St. Kitts & Nevis",
+   "St Kitts and Nevis",
+   "St Kitts & Nevis",
+   "Saint Christopher and Nevis",
+   "Kitts and Nevis",
+   "Kitts & Nevis",
+   "Federation of Saint Kitts and Nevis",
+   "Federation of Saint Christopher and Nevis"
+  ],
+  "enTitle": "Saint Kitts and Nevis"
+ },
+ {
+  "id": "Q760",
+  "label": "Saint Lucia",
+  "aliases": [
+   "lc",
+   "Iyonola",
+   "Hewanorra",
+   "lca",
+   "St. Lucia",
+   "St Lucia"
+  ],
+  "enTitle": "Saint Lucia"
+ },
+ {
+  "id": "Q757",
+  "label": "Saint Vincent and the Grenadines",
+  "aliases": [
+   "vct",
+   "St. Vincent and the Grenadines",
+   "St Vincent and the Grenadines",
+   "vc",
+   "Saint Vincent",
+   "St Vincent",
+   "St. Vincent"
+  ],
+  "enTitle": "Saint Vincent and the Grenadines"
+ },
+ {
+  "id": "Q683",
+  "label": "Samoa",
+  "aliases": [
+   "Independent State of Samoa",
+   "Western Samoa",
+   "SAM",
+   "ws"
+  ],
+  "enTitle": "Samoa"
+ },
+ {
+  "id": "Q238",
+  "label": "San Marino",
+  "aliases": [
+   "Most Serene Republic of San Marino",
+   "sm"
+  ],
+  "enTitle": "San Marino"
+ },
+ {
+  "id": "Q1039",
+  "label": "São Tomé and Príncipe",
+  "aliases": [
+   "st",
+   "São Tomé og Príncipe",
+   "Sao Tome & Principe",
+   "Democratic Republic of São Tomé and Príncipe",
+   "Sao Tome and Principe"
+  ],
+  "enTitle": "São Tomé and Príncipe"
+ },
+ {
+  "id": "Q851",
+  "label": "Saudi Arabia",
+  "aliases": [
+   "Saudi",
+   "Kingdom of Saudi Arabia"
+  ],
+  "enTitle": "Saudi Arabia"
+ },
+ {
+  "id": "Q1041",
+  "label": "Senegal",
+  "aliases": [
+   "Republic of Senegal"
+  ],
+  "enTitle": "Senegal"
+ },
+ {
+  "id": "Q403",
+  "label": "Serbia",
+  "aliases": [
+   "Republic of Serbia",
+   "RS"
+  ],
+  "enTitle": "Serbia"
+ },
+ {
+  "id": "Q1042",
+  "label": "Seychelles",
+  "aliases": [
+   "SEY",
+   "sc",
+   "Republic of Seychelles"
+  ],
+  "enTitle": "Seychelles"
+ },
+ {
+  "id": "Q1044",
+  "label": "Sierra Leone",
+  "aliases": [
+   "SLE",
+   "sl",
+   "Republic of Sierra Leone"
+  ],
+  "enTitle": "Sierra Leone"
+ },
+ {
+  "id": "Q334",
+  "label": "Singapore",
+  "aliases": [
+   "S'pore",
+   "Republic of Singapore",
+   "Singapore City",
+   "Lion City",
+   "sg",
+   "Garden City"
+  ],
+  "enTitle": "Singapore"
+ },
+ {
+  "id": "Q214",
+  "label": "Slovakia",
+  "aliases": [
+   "Slovak Republic",
+   "SK",
+   "SVK"
+  ],
+  "enTitle": "Slovakia"
+ },
+ {
+  "id": "Q215",
+  "label": "Slovenia",
+  "aliases": [
+   "slo",
+   "Republic of Slovenia",
+   "Slovenija",
+   "svn",
+   "si"
+  ],
+  "enTitle": "Slovenia"
+ },
+ {
+  "id": "Q685",
+  "label": "Solomon Islands",
+  "aliases": [
+   "sb",
+   "SOL",
+   "the Solomon Islands"
+  ],
+  "enTitle": "Solomon Islands"
+ },
+ {
+  "id": "Q1045",
+  "label": "Somalia",
+  "aliases": [
+   "Federal Republic of Somalia"
+  ],
+  "enTitle": "Somalia"
+ },
+ {
+  "id": "Q258",
+  "label": "South Africa",
+  "aliases": [
+   "zaf",
+   "Republic of South Africa",
+   "R.S.A.",
+   "RSA",
+   "SA"
+  ],
+  "enTitle": "South Africa"
+ },
+ {
+  "id": "Q884",
+  "label": "South Korea",
+  "aliases": [
+   "S. Korea",
+   "Rep. Korea",
+   "Korea Republic",
+   "Daehanminguk",
+   "Daehan Minguk",
+   "Hanguk",
+   "Korea (South)",
+   "Choson",
+   "Silla",
+   "Republic of Korea"
+  ],
+  "enTitle": "South Korea"
+ },
+ {
+  "id": "Q958",
+  "label": "South Sudan",
+  "aliases": [
+   "Republic of South Sudan",
+   "Southern Sudan",
+   "SSD",
+   "ss"
+  ],
+  "enTitle": "South Sudan"
+ },
+ {
+  "id": "Q29",
+  "label": "Spain",
+  "aliases": [
+   "Kingdom of Spain"
+  ],
+  "enTitle": "Spain"
+ },
+ {
+  "id": "Q854",
+  "label": "Sri Lanka",
+  "aliases": [
+   "lke",
+   "lk",
+   "Lanka, Sri",
+   "Democratic Socialist Republic of Sri Lanka",
+   "Srilanka",
+   "sri",
+   "Taprobane",
+   "Serendib",
+   "ce",
+   "Ceylan",
+   "SRI"
+  ],
+  "enTitle": "Sri Lanka"
+ },
+ {
+  "id": "Q1049",
+  "label": "Sudan",
+  "aliases": [
+   "the Sudan",
+   "SUD",
+   "Soudan",
+   "sd",
+   "Republic of the Sudan",
+   "Republic of Sudan",
+   "North Sudan",
+   "as-Sūdān",
+   "as-Sudan",
+   "al-Sudan"
+  ],
+  "enTitle": "Sudan"
+ },
+ {
+  "id": "Q730",
+  "label": "Suriname",
+  "aliases": [
+   "Surrinam",
+   "Republic of Suriname",
+   "Republic of Surinam",
+   "Dutch Guiana",
+   "Surinam",
+   "sr"
+  ],
+  "enTitle": "Suriname"
+ },
+ {
+  "id": "Q34",
+  "label": "Sweden",
+  "aliases": [
+   "Swedish Kingdom",
+   "se",
+   "Kingdom of Sweden"
+  ],
+  "enTitle": "Sweden"
+ },
+ {
+  "id": "Q39",
+  "label": "Switzerland",
+  "aliases": [
+   "Swiss Confederation",
+   "Confoederatio Helvetica",
+   "Swiss"
+  ],
+  "enTitle": "Switzerland"
+ },
+ {
+  "id": "Q858",
+  "label": "Syria",
+  "aliases": [
+   "Syrian Arab Republic",
+   "Sūriyā"
+  ],
+  "enTitle": "Syria"
+ },
+ {
+  "id": "Q865",
+  "label": "Taiwan",
+  "aliases": [
+   "Chinese Republic",
+   "China, Republic of",
+   "Nationalist China",
+   "Republic of China",
+   "TW",
+   "Republic of China (Taiwan)",
+   "Taiwan",
+   "TWN",
+   "Chinese Taipei",
+   "ROC",
+   "The ROC",
+   "Chunghwa Minkwo"
+  ],
+  "enTitle": "Taiwan"
+ },
+ {
+  "id": "Q863",
+  "label": "Tajikistan",
+  "aliases": [
+   "tj",
+   "Republic of Tajikistan"
+  ],
+  "enTitle": "Tajikistan"
+ },
+ {
+  "id": "Q924",
+  "label": "Tanzania",
+  "aliases": [
+   "United Republic of Tanganyika and Zanzibar",
+   "tza",
+   "tz",
+   "Tanzania, United Republic of",
+   "United Republic of Tanzania"
+  ],
+  "enTitle": "Tanzania"
+ },
+ {
+  "id": "Q869",
+  "label": "Thailand",
+  "aliases": [
+   "Thai",
+   "th",
+   "Ratcha-anachak Thai",
+   "Prathet Thai",
+   "The Kingdom of Thailand",
+   "The Kingdom of Siam",
+   "Kingdom of Thailand",
+   "Kingdom of Siam"
+  ],
+  "enTitle": "Thailand"
+ },
+ {
+  "id": "Q778",
+  "label": "The Bahamas",
+  "aliases": [
+   "Bahamas, The",
+   "Commonwealth of The Bahamas",
+   "Commonwealth of the Bahamas",
+   "Bahama Islands",
+   "bs",
+   "Bahamas"
+  ],
+  "enTitle": "The Bahamas"
+ },
+ {
+  "id": "Q1005",
+  "label": "The Gambia",
+  "aliases": [
+   "Republic of the Gambia",
+   "Islamic Republic of the Gambia",
+   "Gambia"
+  ],
+  "enTitle": "The Gambia"
+ },
+ {
+  "id": "Q574",
+  "label": "Timor-Leste",
+  "aliases": [
+   "Democratic Republic of Timor-Leste",
+   "TL",
+   "East Timor"
+  ],
+  "enTitle": "Timor-Leste"
+ },
+ {
+  "id": "Q945",
+  "label": "Togo",
+  "aliases": [
+   "Togolese Republic",
+   "tg"
+  ],
+  "enTitle": "Togo"
+ },
+ {
+  "id": "Q678",
+  "label": "Tonga",
+  "aliases": [
+   "Kingdom of Tonga",
+   "TGA",
+   "to",
+   "Friendly Islands",
+   "Tonga Islands"
+  ],
+  "enTitle": "Tonga"
+ },
+ {
+  "id": "Q754",
+  "label": "Trinidad and Tobago",
+  "aliases": [
+   "Trinidad & Tobago",
+   "tt",
+   "Republic of Trinidad and Tobago"
+  ],
+  "enTitle": "Trinidad and Tobago"
+ },
+ {
+  "id": "Q948",
+  "label": "Tunisia",
+  "aliases": [
+   "Tunisian Republic",
+   "Republic of Tunisia",
+   "tn"
+  ],
+  "enTitle": "Tunisia"
+ },
+ {
+  "id": "Q43",
+  "label": "Turkey",
+  "aliases": [
+   "Republic of Türkiye",
+   "Republic of Turkey"
+  ],
+  "enTitle": "Turkey"
+ },
+ {
+  "id": "Q874",
+  "label": "Turkmenistan",
+  "aliases": [
+   "Turkmenia",
+   "tm",
+   "TKM"
+  ],
+  "enTitle": "Turkmenistan"
+ },
+ {
+  "id": "Q672",
+  "label": "Tuvalu",
+  "aliases": [
+   "Ellice Islands",
+   "TUV",
+   "tv"
+  ],
+  "enTitle": "Tuvalu"
+ },
+ {
+  "id": "Q1036",
+  "label": "Uganda",
+  "aliases": [
+   "Ugandah",
+   "ug",
+   "The Republic of Uganda",
+   "Republic of Uganda",
+   "Pearl of Africa",
+   "Ouganda",
+   "+256"
+  ],
+  "enTitle": "Uganda"
+ },
+ {
+  "id": "Q212",
+  "label": "Ukraine",
+  "aliases": [
+   "Ukraïna",
+   "Ukr.",
+   "Ukraina",
+   "Ukrainia"
+  ],
+  "enTitle": "Ukraine"
+ },
+ {
+  "id": "Q878",
+  "label": "United Arab Emirates",
+  "aliases": [
+   "U.A.E.",
+   "the UAE",
+   "the U.A.E.",
+   "the Emirates",
+   "the United Arab Emirates",
+   "ae",
+   "Emirates"
+  ],
+  "enTitle": "United Arab Emirates"
+ },
+ {
+  "id": "Q145",
+  "label": "United Kingdom",
+  "aliases": [
+   "United Kingdom of Great Britain and Northern Ireland",
+   "U K",
+   "Great Britain and Northern Ireland",
+   "G B",
+   "the United Kingdom",
+   "the UK",
+   "the United Kingdom of Great Britain and Northern Ireland",
+   "Great Britain"
+  ],
+  "enTitle": "United Kingdom"
+ },
+ {
+  "id": "Q30",
+  "label": "United States",
+  "aliases": [
+   "Merica",
+   "Murica",
+   "the USA",
+   "United States of America",
+   "the United States",
+   "US of America",
+   "US of A",
+   "U.S. of America",
+   "U. S. A.",
+   "U. S.",
+   "the US of America",
+   "the US of A"
+  ],
+  "enTitle": "United States"
+ },
+ {
+  "id": "Q77",
+  "label": "Uruguay",
+  "aliases": [
+   "Oriental Republic of Uruguay",
+   "Eastern Republic of Uruguay",
+   "URU",
+   "uy"
+  ],
+  "enTitle": "Uruguay"
+ },
+ {
+  "id": "Q265",
+  "label": "Uzbekistan",
+  "aliases": [
+   "Republic of Uzbekistan"
+  ],
+  "enTitle": "Uzbekistan"
+ },
+ {
+  "id": "Q686",
+  "label": "Vanuatu",
+  "aliases": [
+   "vut",
+   "Republic of Vanuatu",
+   "vu",
+   "VAN",
+   "van"
+  ],
+  "enTitle": "Vanuatu"
+ },
+ {
+  "id": "Q237",
+  "label": "Vatican City",
+  "aliases": [
+   "Città del Vaticano",
+   "Papal State",
+   "Holy See",
+   "The Vatican",
+   "Vatican",
+   "Vatican City State",
+   "Status Civitatis Vaticanae",
+   "Stato della Città del Vaticano",
+   "State of Vatican City"
+  ],
+  "enTitle": "Vatican City"
+ },
+ {
+  "id": "Q717",
+  "label": "Venezuela",
+  "aliases": [
+   "BR Venezuela",
+   "Bolivarian Republic of Venezuela",
+   "Republic of Venezuela"
+  ],
+  "enTitle": "Venezuela"
+ },
+ {
+  "id": "Q881",
+  "label": "Vietnam",
+  "aliases": [
+   "Việt Nam",
+   "Socialist Republic of Vietnam",
+   "Socialist Republic of Viet Nam",
+   "VIE",
+   "SRV",
+   "Viet Nam",
+   "VN",
+   "VNM"
+  ],
+  "enTitle": "Vietnam"
+ },
+ {
+  "id": "Q805",
+  "label": "Yemen",
+  "aliases": [
+   "Republic of Yemen",
+   "Rep. Yemen",
+   "ye"
+  ],
+  "enTitle": "Yemen"
+ },
+ {
+  "id": "Q953",
+  "label": "Zambia",
+  "aliases": [
+   "Republic of Zambia",
+   "Zed"
+  ],
+  "enTitle": "Zambia"
+ },
+ {
+  "id": "Q954",
+  "label": "Zimbabwe",
+  "aliases": [
+   "Zimbabwe Rhodesia",
+   "Southern Rhodesia",
+   "Rhodesia",
+   "Republic of Zimbabwe"
+  ],
+  "enTitle": "Zimbabwe"
+ }
+]

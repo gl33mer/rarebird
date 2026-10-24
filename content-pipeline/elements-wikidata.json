@@ -1,0 +1,986 @@
+[
+ {
+  "id": "Q1121",
+  "label": "actinium",
+  "symbol": "Ac",
+  "enTitle": "Actinium"
+ },
+ {
+  "id": "Q663",
+  "label": "aluminium",
+  "symbol": "Al",
+  "enTitle": "Aluminium"
+ },
+ {
+  "id": "Q1872",
+  "label": "americium",
+  "symbol": "Am",
+  "enTitle": "Americium"
+ },
+ {
+  "id": "Q1099",
+  "label": "antimony",
+  "symbol": "Sb",
+  "enTitle": "Antimony"
+ },
+ {
+  "id": "Q696",
+  "label": "argon",
+  "symbol": "Ar",
+  "enTitle": "Argon"
+ },
+ {
+  "id": "Q871",
+  "label": "arsenic",
+  "symbol": "As",
+  "enTitle": "Arsenic"
+ },
+ {
+  "id": "Q999",
+  "label": "astatine",
+  "symbol": "At",
+  "enTitle": "Astatine"
+ },
+ {
+  "id": "Q1112",
+  "label": "barium",
+  "symbol": "Ba",
+  "enTitle": "Barium"
+ },
+ {
+  "id": "Q1882",
+  "label": "berkelium",
+  "symbol": "Bk",
+  "enTitle": "Berkelium"
+ },
+ {
+  "id": "Q569",
+  "label": "beryllium",
+  "symbol": "Be",
+  "enTitle": "Beryllium"
+ },
+ {
+  "id": "Q942",
+  "label": "bismuth",
+  "symbol": "Bi",
+  "enTitle": "Bismuth"
+ },
+ {
+  "id": "Q1249",
+  "label": "bohrium",
+  "symbol": "Bh",
+  "enTitle": "Bohrium"
+ },
+ {
+  "id": "Q618",
+  "label": "boron",
+  "symbol": "B",
+  "enTitle": "Boron"
+ },
+ {
+  "id": "Q879",
+  "label": "bromine",
+  "symbol": "Br",
+  "enTitle": "Bromine"
+ },
+ {
+  "id": "Q1091",
+  "label": "cadmium",
+  "symbol": "Cd",
+  "enTitle": "Cadmium"
+ },
+ {
+  "id": "Q1108",
+  "label": "caesium",
+  "symbol": "Cs",
+  "enTitle": "Caesium"
+ },
+ {
+  "id": "Q706",
+  "label": "calcium",
+  "symbol": "Ca",
+  "enTitle": "Calcium"
+ },
+ {
+  "id": "Q1888",
+  "label": "californium",
+  "symbol": "Cf",
+  "enTitle": "Californium"
+ },
+ {
+  "id": "Q623",
+  "label": "carbon",
+  "symbol": "C",
+  "enTitle": "Carbon"
+ },
+ {
+  "id": "Q1385",
+  "label": "cerium",
+  "symbol": "Ce",
+  "enTitle": "Cerium"
+ },
+ {
+  "id": "Q688",
+  "label": "chlorine",
+  "symbol": "Cl",
+  "enTitle": "Chlorine"
+ },
+ {
+  "id": "Q725",
+  "label": "chromium",
+  "symbol": "Cr",
+  "enTitle": "Chromium"
+ },
+ {
+  "id": "Q740",
+  "label": "cobalt",
+  "symbol": "Co",
+  "enTitle": "Cobalt"
+ },
+ {
+  "id": "Q1278",
+  "label": "copernicium",
+  "symbol": "Cn",
+  "enTitle": "Copernicium"
+ },
+ {
+  "id": "Q753",
+  "label": "copper",
+  "symbol": "Cu",
+  "enTitle": "Copper"
+ },
+ {
+  "id": "Q1876",
+  "label": "curium",
+  "symbol": "Cm",
+  "enTitle": "Curium"
+ },
+ {
+  "id": "Q1266",
+  "label": "darmstadtium",
+  "symbol": "Ds",
+  "enTitle": "Darmstadtium"
+ },
+ {
+  "id": "Q1232",
+  "label": "dubnium",
+  "symbol": "Db",
+  "enTitle": "Dubnium"
+ },
+ {
+  "id": "Q1843",
+  "label": "dysprosium",
+  "symbol": "Dy",
+  "enTitle": "Dysprosium"
+ },
+ {
+  "id": "Q1892",
+  "label": "einsteinium",
+  "symbol": "Es",
+  "enTitle": "Einsteinium"
+ },
+ {
+  "id": "Q1849",
+  "label": "erbium",
+  "symbol": "Er",
+  "enTitle": "Erbium"
+ },
+ {
+  "id": "Q1396",
+  "label": "europium",
+  "symbol": "Eu",
+  "enTitle": "Europium"
+ },
+ {
+  "id": "Q1896",
+  "label": "fermium",
+  "symbol": "Fm",
+  "enTitle": "Fermium"
+ },
+ {
+  "id": "Q1302",
+  "label": "flerovium",
+  "symbol": "Fl",
+  "enTitle": "Flerovium"
+ },
+ {
+  "id": "Q650",
+  "label": "fluorine",
+  "symbol": "F",
+  "enTitle": "Fluorine"
+ },
+ {
+  "id": "Q671",
+  "label": "francium",
+  "symbol": "Fr",
+  "enTitle": "Francium"
+ },
+ {
+  "id": "Q1832",
+  "label": "gadolinium",
+  "symbol": "Gd",
+  "enTitle": "Gadolinium"
+ },
+ {
+  "id": "Q861",
+  "label": "gallium",
+  "symbol": "Ga",
+  "enTitle": "Gallium"
+ },
+ {
+  "id": "Q867",
+  "label": "germanium",
+  "symbol": "Ge",
+  "enTitle": "Germanium"
+ },
+ {
+  "id": "Q897",
+  "label": "gold",
+  "symbol": "Au",
+  "enTitle": "Gold"
+ },
+ {
+  "id": "Q1119",
+  "label": "hafnium",
+  "symbol": "Hf",
+  "enTitle": "Hafnium"
+ },
+ {
+  "id": "Q1252",
+  "label": "hassium",
+  "symbol": "Hs",
+  "enTitle": "Hassium"
+ },
+ {
+  "id": "Q560",
+  "label": "helium",
+  "symbol": "He",
+  "enTitle": "Helium"
+ },
+ {
+  "id": "Q1846",
+  "label": "holmium",
+  "symbol": "Ho",
+  "enTitle": "Holmium"
+ },
+ {
+  "id": "Q556",
+  "label": "hydrogen",
+  "symbol": "H",
+  "enTitle": "Hydrogen"
+ },
+ {
+  "id": "Q1094",
+  "label": "indium",
+  "symbol": "In",
+  "enTitle": "Indium"
+ },
+ {
+  "id": "Q1103",
+  "label": "iodine",
+  "symbol": "I",
+  "enTitle": "Iodine"
+ },
+ {
+  "id": "Q877",
+  "label": "iridium",
+  "symbol": "Ir",
+  "enTitle": "Iridium"
+ },
+ {
+  "id": "Q677",
+  "label": "iron",
+  "symbol": "Fe",
+  "enTitle": "Iron"
+ },
+ {
+  "id": "Q888",
+  "label": "krypton",
+  "symbol": "Kr",
+  "enTitle": "Krypton"
+ },
+ {
+  "id": "Q1801",
+  "label": "lanthanum",
+  "symbol": "La",
+  "enTitle": "Lanthanum"
+ },
+ {
+  "id": "Q1905",
+  "label": "lawrencium",
+  "symbol": "Lr",
+  "enTitle": "Lawrencium"
+ },
+ {
+  "id": "Q708",
+  "label": "lead",
+  "symbol": "Pb",
+  "enTitle": "Lead"
+ },
+ {
+  "id": "Q568",
+  "label": "lithium",
+  "symbol": "Li",
+  "enTitle": "Lithium"
+ },
+ {
+  "id": "Q1304",
+  "label": "livermorium",
+  "symbol": "Lv",
+  "enTitle": "Livermorium"
+ },
+ {
+  "id": "Q1857",
+  "label": "lutetium",
+  "symbol": "Lu",
+  "enTitle": "Lutetium"
+ },
+ {
+  "id": "Q660",
+  "label": "magnesium",
+  "symbol": "Mg",
+  "enTitle": "Magnesium"
+ },
+ {
+  "id": "Q731",
+  "label": "manganese",
+  "symbol": "Mn",
+  "enTitle": "Manganese"
+ },
+ {
+  "id": "Q1258",
+  "label": "meitnerium",
+  "symbol": "Mt",
+  "enTitle": "Meitnerium"
+ },
+ {
+  "id": "Q1898",
+  "label": "mendelevium",
+  "symbol": "Md",
+  "enTitle": "Mendelevium"
+ },
+ {
+  "id": "Q925",
+  "label": "mercury",
+  "symbol": "Hg",
+  "enTitle": "Mercury (element)"
+ },
+ {
+  "id": "Q1053",
+  "label": "molybdenum",
+  "symbol": "Mo",
+  "enTitle": "Molybdenum"
+ },
+ {
+  "id": "Q1303",
+  "label": "moscovium",
+  "symbol": "Mc",
+  "enTitle": "Moscovium"
+ },
+ {
+  "id": "Q1388",
+  "label": "neodymium",
+  "symbol": "Nd",
+  "enTitle": "Neodymium"
+ },
+ {
+  "id": "Q654",
+  "label": "neon",
+  "symbol": "Ne",
+  "enTitle": "Neon"
+ },
+ {
+  "id": "Q1105",
+  "label": "neptunium",
+  "symbol": "Np",
+  "enTitle": "Neptunium"
+ },
+ {
+  "id": "Q744",
+  "label": "nickel",
+  "symbol": "Ni",
+  "enTitle": "Nickel"
+ },
+ {
+  "id": "Q1301",
+  "label": "nihonium",
+  "symbol": "Nh",
+  "enTitle": "Nihonium"
+ },
+ {
+  "id": "Q1046",
+  "label": "niobium",
+  "symbol": "Nb",
+  "enTitle": "Niobium"
+ },
+ {
+  "id": "Q627",
+  "label": "nitrogen",
+  "symbol": "N",
+  "enTitle": "Nitrogen"
+ },
+ {
+  "id": "Q1901",
+  "label": "nobelium",
+  "symbol": "No",
+  "enTitle": "Nobelium"
+ },
+ {
+  "id": "Q1307",
+  "label": "oganesson",
+  "symbol": "Og",
+  "enTitle": "Oganesson"
+ },
+ {
+  "id": "Q751",
+  "label": "osmium",
+  "symbol": "Os",
+  "enTitle": "Osmium"
+ },
+ {
+  "id": "Q629",
+  "label": "oxygen",
+  "symbol": "O",
+  "enTitle": "Oxygen"
+ },
+ {
+  "id": "Q1089",
+  "label": "palladium",
+  "symbol": "Pd",
+  "enTitle": "Palladium"
+ },
+ {
+  "id": "Q674",
+  "label": "phosphorus",
+  "symbol": "P",
+  "enTitle": "Phosphorus"
+ },
+ {
+  "id": "Q880",
+  "label": "platinum",
+  "symbol": "Pt",
+  "enTitle": "Platinum"
+ },
+ {
+  "id": "Q1102",
+  "label": "plutonium",
+  "symbol": "Pu",
+  "enTitle": "Plutonium"
+ },
+ {
+  "id": "Q979",
+  "label": "polonium",
+  "symbol": "Po",
+  "enTitle": "Polonium"
+ },
+ {
+  "id": "Q703",
+  "label": "potassium",
+  "symbol": "K",
+  "enTitle": "Potassium"
+ },
+ {
+  "id": "Q1386",
+  "label": "praseodymium",
+  "symbol": "Pr",
+  "enTitle": "Praseodymium"
+ },
+ {
+  "id": "Q1809",
+  "label": "promethium",
+  "symbol": "Pm",
+  "enTitle": "Promethium"
+ },
+ {
+  "id": "Q1109",
+  "label": "protactinium",
+  "symbol": "Pa",
+  "enTitle": "Protactinium"
+ },
+ {
+  "id": "Q1128",
+  "label": "radium",
+  "symbol": "Ra",
+  "enTitle": "Radium"
+ },
+ {
+  "id": "Q1133",
+  "label": "radon",
+  "symbol": "Rn",
+  "enTitle": "Radon"
+ },
+ {
+  "id": "Q737",
+  "label": "rhenium",
+  "symbol": "Re",
+  "enTitle": "Rhenium"
+ },
+ {
+  "id": "Q1087",
+  "label": "rhodium",
+  "symbol": "Rh",
+  "enTitle": "Rhodium"
+ },
+ {
+  "id": "Q1272",
+  "label": "roentgenium",
+  "symbol": "Rg",
+  "enTitle": "Roentgenium"
+ },
+ {
+  "id": "Q895",
+  "label": "rubidium",
+  "symbol": "Rb",
+  "enTitle": "Rubidium"
+ },
+ {
+  "id": "Q1086",
+  "label": "ruthenium",
+  "symbol": "Ru",
+  "enTitle": "Ruthenium"
+ },
+ {
+  "id": "Q1226",
+  "label": "rutherfordium",
+  "symbol": "Rf",
+  "enTitle": "Rutherfordium"
+ },
+ {
+  "id": "Q1819",
+  "label": "samarium",
+  "symbol": "Sm",
+  "enTitle": "Samarium"
+ },
+ {
+  "id": "Q713",
+  "label": "scandium",
+  "symbol": "Sc",
+  "enTitle": "Scandium"
+ },
+ {
+  "id": "Q1234",
+  "label": "seaborgium",
+  "symbol": "Sg",
+  "enTitle": "Seaborgium"
+ },
+ {
+  "id": "Q876",
+  "label": "selenium",
+  "symbol": "Se",
+  "enTitle": "Selenium"
+ },
+ {
+  "id": "Q670",
+  "label": "silicon",
+  "symbol": "Si",
+  "enTitle": "Silicon"
+ },
+ {
+  "id": "Q1090",
+  "label": "silver",
+  "symbol": "Ag",
+  "enTitle": "Silver"
+ },
+ {
+  "id": "Q658",
+  "label": "sodium",
+  "symbol": "Na",
+  "enTitle": "Sodium"
+ },
+ {
+  "id": "Q938",
+  "label": "strontium",
+  "symbol": "Sr",
+  "enTitle": "Strontium"
+ },
+ {
+  "id": "Q682",
+  "label": "sulfur",
+  "symbol": "S",
+  "enTitle": "Sulfur"
+ },
+ {
+  "id": "Q1123",
+  "label": "tantalum",
+  "symbol": "Ta",
+  "enTitle": "Tantalum"
+ },
+ {
+  "id": "Q1054",
+  "label": "technetium",
+  "symbol": "Tc",
+  "enTitle": "Technetium"
+ },
+ {
+  "id": "Q1100",
+  "label": "tellurium",
+  "symbol": "Te",
+  "enTitle": "Tellurium"
+ },
+ {
+  "id": "Q1306",
+  "label": "tennessine",
+  "symbol": "Ts",
+  "enTitle": "Tennessine"
+ },
+ {
+  "id": "Q1838",
+  "label": "terbium",
+  "symbol": "Tb",
+  "enTitle": "Terbium"
+ },
+ {
+  "id": "Q932",
+  "label": "thallium",
+  "symbol": "Tl",
+  "enTitle": "Thallium"
+ },
+ {
+  "id": "Q1115",
+  "label": "thorium",
+  "symbol": "Th",
+  "enTitle": "Thorium"
+ },
+ {
+  "id": "Q1853",
+  "label": "thulium",
+  "symbol": "Tm",
+  "enTitle": "Thulium"
+ },
+ {
+  "id": "Q1096",
+  "label": "tin",
+  "symbol": "Sn",
+  "enTitle": "Tin"
+ },
+ {
+  "id": "Q716",
+  "label": "titanium",
+  "symbol": "Ti",
+  "enTitle": "Titanium"
+ },
+ {
+  "id": "Q743",
+  "label": "tungsten",
+  "symbol": "W",
+  "enTitle": "Tungsten"
+ },
+ {
+  "id": "Q7425",
+  "label": "unbibium",
+  "symbol": "Ubb",
+  "enTitle": "Unbibium"
+ },
+ {
+  "id": "Q428640",
+  "label": "unbiennium",
+  "symbol": "Ube",
+  "enTitle": "Unbiennium"
+ },
+ {
+  "id": "Q54377",
+  "label": "unbihexium",
+  "symbol": "Ubh",
+  "enTitle": "Unbihexium"
+ },
+ {
+  "id": "Q1146",
+  "label": "unbinilium",
+  "symbol": "Ubn",
+  "enTitle": "Unbinilium"
+ },
+ {
+  "id": "Q428703",
+  "label": "unbioctium",
+  "symbol": "Ubo",
+  "enTitle": "Unbioctium"
+ },
+ {
+  "id": "Q428685",
+  "label": "unbipentium",
+  "symbol": "Ubp",
+  "enTitle": "Unbipentium"
+ },
+ {
+  "id": "Q428741",
+  "label": "unbiquadium",
+  "symbol": "Ubq",
+  "enTitle": "Unbiquadium"
+ },
+ {
+  "id": "Q428692",
+  "label": "unbiseptium",
+  "symbol": "Ubs",
+  "enTitle": "Unbiseptium"
+ },
+ {
+  "id": "Q428758",
+  "label": "unbitrium",
+  "symbol": "Ubt",
+  "enTitle": "Unbitrium"
+ },
+ {
+  "id": "Q1466",
+  "label": "unbiunium",
+  "symbol": "Ubu",
+  "enTitle": "Unbiunium"
+ },
+ {
+  "id": "Q19599218",
+  "label": "unhexennium",
+  "symbol": "Uhe",
+  "enTitle": "Unhexennium"
+ },
+ {
+  "id": "Q16307168",
+  "label": "unhexoctium",
+  "symbol": "Uho",
+  "enTitle": "Unhexoctium"
+ },
+ {
+  "id": "Q16307178",
+  "label": "unhexpentium",
+  "symbol": "Uhp",
+  "enTitle": "Unhexpentium"
+ },
+ {
+  "id": "Q30929350",
+  "label": "unhexquadium",
+  "symbol": "Uhq",
+  "enTitle": "Unhexquadium"
+ },
+ {
+  "id": "Q16307173",
+  "label": "unhexseptium",
+  "symbol": "Uhs",
+  "enTitle": "Unhexseptium"
+ },
+ {
+  "id": "Q116976565",
+  "label": "unoctquadium",
+  "symbol": "Uoq",
+  "enTitle": "Unoctquadium"
+ },
+ {
+  "id": "Q3551918",
+  "label": "unpentbium",
+  "symbol": "Upb",
+  "enTitle": "Unpentbium"
+ },
+ {
+  "id": "Q91655950",
+  "label": "unpenthexium",
+  "symbol": "Uph",
+  "enTitle": "Unpenthexium"
+ },
+ {
+  "id": "Q3551919",
+  "label": "unpentnilium",
+  "symbol": "Upn",
+  "enTitle": "Unpentnilium"
+ },
+ {
+  "id": "Q22314315",
+  "label": "unpentpentium",
+  "symbol": "Upp",
+  "enTitle": "Unpentpentium"
+ },
+ {
+  "id": "Q22313918",
+  "label": "unpentquadium",
+  "symbol": "Upq",
+  "enTitle": "Unpentquadium"
+ },
+ {
+  "id": "Q3551924",
+  "label": "unpenttrium",
+  "symbol": "Upt",
+  "enTitle": "Unpenttrium"
+ },
+ {
+  "id": "Q3551921",
+  "label": "unpentunium",
+  "symbol": "Upu",
+  "enTitle": "Unpentunium"
+ },
+ {
+  "id": "Q3551927",
+  "label": "unquadbium",
+  "symbol": "Uqb",
+  "enTitle": "Unquadbium"
+ },
+ {
+  "id": "Q2399140",
+  "label": "unquadennium",
+  "symbol": "Uqe",
+  "enTitle": "Unquadennium"
+ },
+ {
+  "id": "Q3551926",
+  "label": "unquadhexium",
+  "symbol": "Uqh",
+  "enTitle": "Unquadhexium"
+ },
+ {
+  "id": "Q3029913",
+  "label": "unquadnilium",
+  "symbol": "Uqn",
+  "enTitle": "Unquadnilium"
+ },
+ {
+  "id": "Q3551928",
+  "label": "unquadoctium",
+  "symbol": "Uqo",
+  "enTitle": "Unquadoctium"
+ },
+ {
+  "id": "Q3551930",
+  "label": "unquadpentium",
+  "symbol": "Uqp",
+  "enTitle": "Unquadpentium"
+ },
+ {
+  "id": "Q3551931",
+  "label": "unquadquadium",
+  "symbol": "Uqq",
+  "enTitle": "Unquadquadium"
+ },
+ {
+  "id": "Q3551929",
+  "label": "unquadseptium",
+  "symbol": "Uqs",
+  "enTitle": "Unquadseptium"
+ },
+ {
+  "id": "Q3551933",
+  "label": "unquadtrium",
+  "symbol": "Uqt",
+  "enTitle": "Unquadtrium"
+ },
+ {
+  "id": "Q3551935",
+  "label": "unquadunium",
+  "symbol": "Uqu",
+  "enTitle": "Unquadunium"
+ },
+ {
+  "id": "Q16307164",
+  "label": "unseptbium",
+  "symbol": "Usb",
+  "enTitle": "Unseptbium"
+ },
+ {
+  "id": "Q11289368",
+  "label": "unsepttrium",
+  "symbol": "Ust",
+  "enTitle": "Unsepttrium"
+ },
+ {
+  "id": "Q428635",
+  "label": "untribium",
+  "symbol": "Utb",
+  "enTitle": "Untribium"
+ },
+ {
+  "id": "Q548592",
+  "label": "untriennium",
+  "symbol": "Ute",
+  "enTitle": "Untriennium"
+ },
+ {
+  "id": "Q868375",
+  "label": "untrihexium",
+  "symbol": "Uth",
+  "enTitle": "Untrihexium"
+ },
+ {
+  "id": "Q428648",
+  "label": "untrinilium",
+  "symbol": "Utn",
+  "enTitle": "Untrinilium"
+ },
+ {
+  "id": "Q869681",
+  "label": "untrioctium",
+  "symbol": "Uto",
+  "enTitle": "Untrioctium"
+ },
+ {
+  "id": "Q3552038",
+  "label": "untripentium",
+  "symbol": "Utp",
+  "enTitle": "Untripentium"
+ },
+ {
+  "id": "Q3552040",
+  "label": "untriquadium",
+  "symbol": "Utq",
+  "enTitle": "Untriquadium"
+ },
+ {
+  "id": "Q1366419",
+  "label": "untriseptium",
+  "symbol": "Uts",
+  "enTitle": "Untriseptium"
+ },
+ {
+  "id": "Q3552041",
+  "label": "untritrium",
+  "symbol": "Utt",
+  "enTitle": "Untritrium"
+ },
+ {
+  "id": "Q428629",
+  "label": "untriunium",
+  "symbol": "Utu",
+  "enTitle": "Untriunium"
+ },
+ {
+  "id": "Q1139",
+  "label": "ununennium",
+  "symbol": "Uue",
+  "enTitle": "Ununennium"
+ },
+ {
+  "id": "Q1098",
+  "label": "uranium",
+  "symbol": "U",
+  "enTitle": "Uranium"
+ },
+ {
+  "id": "Q722",
+  "label": "vanadium",
+  "symbol": "V",
+  "enTitle": "Vanadium"
+ },
+ {
+  "id": "Q1106",
+  "label": "xenon",
+  "symbol": "Xe",
+  "enTitle": "Xenon"
+ },
+ {
+  "id": "Q1855",
+  "label": "ytterbium",
+  "symbol": "Yb",
+  "enTitle": "Ytterbium"
+ },
+ {
+  "id": "Q941",
+  "label": "yttrium",
+  "symbol": "Y",
+  "enTitle": "Yttrium"
+ },
+ {
+  "id": "Q758",
+  "label": "zinc",
+  "symbol": "Zn",
+  "enTitle": "Zinc"
+ },
+ {
+  "id": "Q1038",
+  "label": "zirconium",
+  "symbol": "Zr",
+  "enTitle": "Zirconium"
+ }
+]

@@ -1,0 +1,722 @@
+[
+ {
+  "id": "Q29099",
+  "label": "dachshund",
+  "enTitle": "Dachshund",
+  "viewsSept2026": 88070
+ },
+ {
+  "id": "Q21082",
+  "label": "Cane Corso",
+  "enTitle": "Cane Corso",
+  "viewsSept2026": 68583
+ },
+ {
+  "id": "Q38686",
+  "label": "Golden Retriever",
+  "enTitle": "Golden Retriever",
+  "viewsSept2026": 62775
+ },
+ {
+  "id": "Q653",
+  "label": "Chihuahua",
+  "enTitle": "Chihuahua (dog breed)",
+  "viewsSept2026": 58081
+ },
+ {
+  "id": "Q38280",
+  "label": "German Shepherd",
+  "enTitle": "German Shepherd",
+  "viewsSept2026": 57447
+ },
+ {
+  "id": "Q39002",
+  "label": "Samoyed",
+  "enTitle": "Samoyed dog",
+  "viewsSept2026": 48578
+ },
+ {
+  "id": "Q38584",
+  "label": "dingo",
+  "enTitle": "Dingo",
+  "viewsSept2026": 47532
+ },
+ {
+  "id": "Q38508",
+  "label": "Kangal Shepherd Dog",
+  "enTitle": "Kangal Shepherd Dog",
+  "viewsSept2026": 46053
+ },
+ {
+  "id": "Q39093",
+  "label": "Rottweiler",
+  "enTitle": "Rottweiler",
+  "viewsSept2026": 44312
+ },
+ {
+  "id": "Q37595",
+  "label": "Australian Cattle Dog",
+  "enTitle": "Australian Cattle Dog",
+  "viewsSept2026": 38461
+ },
+ {
+  "id": "Q37710",
+  "label": "border collie",
+  "enTitle": "Border Collie",
+  "viewsSept2026": 36670
+ },
+ {
+  "id": "Q5570",
+  "label": "American Bully",
+  "enTitle": "American Bully",
+  "viewsSept2026": 35345
+ },
+ {
+  "id": "Q39026",
+  "label": "Rhodesian Ridgeback",
+  "enTitle": "Rhodesian Ridgeback",
+  "viewsSept2026": 33536
+ },
+ {
+  "id": "Q21102",
+  "label": "beagle",
+  "enTitle": "Beagle",
+  "viewsSept2026": 33264
+ },
+ {
+  "id": "Q5414",
+  "label": "Great Dane",
+  "enTitle": "Great Dane",
+  "viewsSept2026": 31828
+ },
+ {
+  "id": "Q38072",
+  "label": "Cavalier King Charles Spaniel",
+  "enTitle": "Cavalier King Charles Spaniel",
+  "viewsSept2026": 31434
+ },
+ {
+  "id": "Q38287",
+  "label": "Jack Russell Terrier",
+  "enTitle": "Jack Russell Terrier",
+  "viewsSept2026": 31222
+ },
+ {
+  "id": "Q37866",
+  "label": "Borzoi",
+  "enTitle": "Borzoi",
+  "viewsSept2026": 30904
+ },
+ {
+  "id": "Q29013",
+  "label": "Chow Chow",
+  "enTitle": "Chow Chow",
+  "viewsSept2026": 27206
+ },
+ {
+  "id": "Q29149",
+  "label": "French Bulldog",
+  "enTitle": "French Bulldog",
+  "viewsSept2026": 26426
+ },
+ {
+  "id": "Q38322",
+  "label": "Bull Terrier",
+  "enTitle": "Bull Terrier",
+  "viewsSept2026": 25254
+ },
+ {
+  "id": "Q29164",
+  "label": "Akita",
+  "enTitle": "Akita (dog breed)",
+  "viewsSept2026": 23683
+ },
+ {
+  "id": "Q37871",
+  "label": "Basenji",
+  "enTitle": "Basenji",
+  "viewsSept2026": 23656
+ },
+ {
+  "id": "Q37803",
+  "label": "Pyrenean Mountain Dog",
+  "enTitle": "Pyrenean Mountain Dog",
+  "viewsSept2026": 22381
+ },
+ {
+  "id": "Q38706",
+  "label": "Newfoundland dog",
+  "enTitle": "Newfoundland dog",
+  "viewsSept2026": 22123
+ },
+ {
+  "id": "Q37716",
+  "label": "basset hound",
+  "enTitle": "Basset Hound",
+  "viewsSept2026": 21226
+ },
+ {
+  "id": "Q21098",
+  "label": "bloodhound",
+  "enTitle": "Bloodhound",
+  "viewsSept2026": 21098
+ },
+ {
+  "id": "Q37589",
+  "label": "Boerboel",
+  "enTitle": "Boerboel",
+  "viewsSept2026": 20851
+ },
+ {
+  "id": "Q38571",
+  "label": "greyhound",
+  "enTitle": "Greyhound",
+  "viewsSept2026": 20786
+ },
+ {
+  "id": "Q38090",
+  "label": "St. Bernard",
+  "enTitle": "St. Bernard (dog breed)",
+  "viewsSept2026": 20742
+ },
+ {
+  "id": "Q17504",
+  "label": "Dalmatian",
+  "enTitle": "Dalmatian dog",
+  "viewsSept2026": 20529
+ },
+ {
+  "id": "Q38959",
+  "label": "Pekingese",
+  "enTitle": "Pekingese",
+  "viewsSept2026": 20524
+ },
+ {
+  "id": "Q21206",
+  "label": "Alaskan Malamute",
+  "enTitle": "Alaskan Malamute",
+  "viewsSept2026": 20366
+ },
+ {
+  "id": "Q38576",
+  "label": "Caucasian Shepherd Dog",
+  "enTitle": "Caucasian Shepherd Dog",
+  "viewsSept2026": 19011
+ },
+ {
+  "id": "Q37688",
+  "label": "American Staffordshire Terrier",
+  "enTitle": "American Staffordshire Terrier",
+  "viewsSept2026": 18365
+ },
+ {
+  "id": "Q38556",
+  "label": "Black Mouth Cur",
+  "enTitle": "Black Mouth Cur",
+  "viewsSept2026": 18107
+ },
+ {
+  "id": "Q39122",
+  "label": "Whippet",
+  "enTitle": "Whippet",
+  "viewsSept2026": 18004
+ },
+ {
+  "id": "Q38965",
+  "label": "Weimaraner",
+  "enTitle": "Weimaraner",
+  "viewsSept2026": 17746
+ },
+ {
+  "id": "Q21080",
+  "label": "Afghan Hound",
+  "enTitle": "Afghan Hound",
+  "viewsSept2026": 17353
+ },
+ {
+  "id": "Q38559",
+  "label": "Portuguese water dog",
+  "enTitle": "Portuguese Water Dog",
+  "viewsSept2026": 16898
+ },
+ {
+  "id": "Q38999",
+  "label": "Miniature Schnauzer",
+  "enTitle": "Miniature Schnauzer",
+  "viewsSept2026": 16509
+ },
+ {
+  "id": "Q38487",
+  "label": "Leonberger",
+  "enTitle": "Leonberger",
+  "viewsSept2026": 16206
+ },
+ {
+  "id": "Q37750",
+  "label": "Presa Canario",
+  "enTitle": "Presa Canario",
+  "viewsSept2026": 16059
+ },
+ {
+  "id": "Q38945",
+  "label": "mongrel",
+  "enTitle": "Mongrel",
+  "viewsSept2026": 14705
+ },
+ {
+  "id": "Q38152",
+  "label": "Alaskan Klee Kai",
+  "enTitle": "Alaskan Klee Kai",
+  "viewsSept2026": 14684
+ },
+ {
+  "id": "Q38496",
+  "label": "Boxer",
+  "enTitle": "Boxer (dog breed)",
+  "viewsSept2026": 14566
+ },
+ {
+  "id": "Q17510",
+  "label": "West Highland White Terrier",
+  "enTitle": "West Highland White Terrier",
+  "viewsSept2026": 14480
+ },
+ {
+  "id": "Q38972",
+  "label": "Shar Pei",
+  "enTitle": "Shar Pei",
+  "viewsSept2026": 14441
+ },
+ {
+  "id": "Q38084",
+  "label": "German Shorthaired Pointer",
+  "enTitle": "German Shorthaired Pointer",
+  "viewsSept2026": 14221
+ },
+ {
+  "id": "Q38533",
+  "label": "English Cocker Spaniel",
+  "enTitle": "English Cocker Spaniel",
+  "viewsSept2026": 13618
+ },
+ {
+  "id": "Q29022",
+  "label": "English Springer Spaniel",
+  "enTitle": "English Springer Spaniel",
+  "viewsSept2026": 13549
+ },
+ {
+  "id": "Q38650",
+  "label": "Rough Collie",
+  "enTitle": "Rough Collie",
+  "viewsSept2026": 12927
+ },
+ {
+  "id": "Q38503",
+  "label": "Italian Greyhound",
+  "enTitle": "Italian Greyhound",
+  "viewsSept2026": 12913
+ },
+ {
+  "id": "Q38080",
+  "label": "Bullmastiff",
+  "enTitle": "Bullmastiff",
+  "viewsSept2026": 12815
+ },
+ {
+  "id": "Q39035",
+  "label": "Scottish Terrier",
+  "enTitle": "Scottish Terrier",
+  "viewsSept2026": 12608
+ },
+ {
+  "id": "Q37888",
+  "label": "Cairn Terrier",
+  "enTitle": "Cairn Terrier",
+  "viewsSept2026": 12444
+ },
+ {
+  "id": "Q37720",
+  "label": "Beauceron",
+  "enTitle": "Beauceron",
+  "viewsSept2026": 12224
+ },
+ {
+  "id": "Q29114",
+  "label": "Dutch Shepherd",
+  "enTitle": "Dutch Shepherd",
+  "viewsSept2026": 12080
+ },
+ {
+  "id": "Q37721",
+  "label": "Carolina Dog",
+  "enTitle": "Carolina Dog",
+  "viewsSept2026": 11960
+ },
+ {
+  "id": "Q38990",
+  "label": "Miniature Pinscher",
+  "enTitle": "Miniature Pinscher",
+  "viewsSept2026": 11709
+ },
+ {
+  "id": "Q39058",
+  "label": "Shetland Sheepdog",
+  "enTitle": "Shetland Sheepdog",
+  "viewsSept2026": 11428
+ },
+ {
+  "id": "Q38132",
+  "label": "King Charles Spaniel",
+  "enTitle": "King Charles Spaniel",
+  "viewsSept2026": 11345
+ },
+ {
+  "id": "Q38295",
+  "label": "Coton de Tulear",
+  "enTitle": "Coton de Tulear",
+  "viewsSept2026": 11287
+ },
+ {
+  "id": "Q21074",
+  "label": "Abruzzo-Maremma Sheepdog",
+  "enTitle": "Maremmano-Abruzzese Sheepdog",
+  "viewsSept2026": 10706
+ },
+ {
+  "id": "Q38655",
+  "label": "German Spitz",
+  "enTitle": "German Spitz",
+  "viewsSept2026": 10498
+ },
+ {
+  "id": "Q37878",
+  "label": "Dogue de Bordeaux",
+  "enTitle": "Dogue de Bordeaux",
+  "viewsSept2026": 10363
+ },
+ {
+  "id": "Q39010",
+  "label": "Schipperke",
+  "enTitle": "Schipperke",
+  "viewsSept2026": 10076
+ },
+ {
+  "id": "Q38688",
+  "label": "Giant Schnauzer",
+  "enTitle": "Giant Schnauzer",
+  "viewsSept2026": 10057
+ },
+ {
+  "id": "Q38570",
+  "label": "Central Asian Shepherd Dog",
+  "enTitle": "Central Asian Shepherd Dog",
+  "viewsSept2026": 9484
+ },
+ {
+  "id": "Q38651",
+  "label": "Czechoslovakian Wolfdog",
+  "enTitle": "Czechoslovakian Wolfdog",
+  "viewsSept2026": 9456
+ },
+ {
+  "id": "Q37704",
+  "label": "Old English sheepdog",
+  "enTitle": "Old English Sheepdog",
+  "viewsSept2026": 9065
+ },
+ {
+  "id": "Q29200",
+  "label": "Flat-Coated Retriever",
+  "enTitle": "Flat-coated Retriever",
+  "viewsSept2026": 8737
+ },
+ {
+  "id": "Q38529",
+  "label": "Neapolitan Mastiff",
+  "enTitle": "Neapolitan Mastiff",
+  "viewsSept2026": 8475
+ },
+ {
+  "id": "Q37699",
+  "label": "American Eskimo Dog",
+  "enTitle": "American Eskimo Dog",
+  "viewsSept2026": 7708
+ },
+ {
+  "id": "Q37848",
+  "label": "Boykin Spaniel",
+  "enTitle": "Boykin Spaniel",
+  "viewsSept2026": 7708
+ },
+ {
+  "id": "Q37793",
+  "label": "German Pinscher",
+  "enTitle": "German Pinscher",
+  "viewsSept2026": 7453
+ },
+ {
+  "id": "Q7254",
+  "label": "Affenpinscher",
+  "enTitle": "Affenpinscher",
+  "viewsSept2026": 7404
+ },
+ {
+  "id": "Q38047",
+  "label": "Soft-coated Wheaten Terrier",
+  "enTitle": "Soft-coated Wheaten Terrier",
+  "viewsSept2026": 7223
+ },
+ {
+  "id": "Q38126",
+  "label": "Japanese Spitz",
+  "enTitle": "Japanese Spitz",
+  "viewsSept2026": 7179
+ },
+ {
+  "id": "Q37851",
+  "label": "Clumber Spaniel",
+  "enTitle": "Clumber Spaniel",
+  "viewsSept2026": 7170
+ },
+ {
+  "id": "Q37680",
+  "label": "Bully Kutta",
+  "enTitle": "Bully Kutta",
+  "viewsSept2026": 7017
+ },
+ {
+  "id": "Q38063",
+  "label": "American Cocker Spaniel",
+  "enTitle": "American Cocker Spaniel",
+  "viewsSept2026": 6718
+ },
+ {
+  "id": "Q29084",
+  "label": "Chesapeake Bay Retriever",
+  "enTitle": "Chesapeake Bay Retriever",
+  "viewsSept2026": 6658
+ },
+ {
+  "id": "Q29188",
+  "label": "Finnish Lapphund",
+  "enTitle": "Finnish Lapphund",
+  "viewsSept2026": 6522
+ },
+ {
+  "id": "Q37766",
+  "label": "Coonhound",
+  "enTitle": "Coonhound",
+  "viewsSept2026": 6373
+ },
+ {
+  "id": "Q29170",
+  "label": "Korean Jindo Dog",
+  "enTitle": "Korean Jindo",
+  "viewsSept2026": 6340
+ },
+ {
+  "id": "Q38510",
+  "label": "Bull and Terrier",
+  "enTitle": "Bull and terrier",
+  "viewsSept2026": 6262
+ },
+ {
+  "id": "Q38156",
+  "label": "Brittany",
+  "enTitle": "Brittany Spaniel",
+  "viewsSept2026": 6117
+ },
+ {
+  "id": "Q38175",
+  "label": "Akbash",
+  "enTitle": "Akbash",
+  "viewsSept2026": 5876
+ },
+ {
+  "id": "Q38634",
+  "label": "Black Russian Terrier",
+  "enTitle": "Black Russian Terrier",
+  "viewsSept2026": 5630
+ },
+ {
+  "id": "Q38115",
+  "label": "Papillon",
+  "enTitle": "Continental Toy Spaniel",
+  "viewsSept2026": 5579
+ },
+ {
+  "id": "Q38263",
+  "label": "Russkaya tsvetnaya bolonka",
+  "enTitle": "Bolonka",
+  "viewsSept2026": 5387
+ },
+ {
+  "id": "Q38336",
+  "label": "Dandie Dinmont Terrier",
+  "enTitle": "Dandie Dinmont Terrier",
+  "viewsSept2026": 5221
+ },
+ {
+  "id": "Q38255",
+  "label": "Bracco Italiano",
+  "enTitle": "Bracco Italiano",
+  "viewsSept2026": 5169
+ },
+ {
+  "id": "Q38515",
+  "label": "Greenland Dog",
+  "enTitle": "Greenland Dog",
+  "viewsSept2026": 5161
+ },
+ {
+  "id": "Q29040",
+  "label": "Canadian Eskimo Dog",
+  "enTitle": "Canadian Eskimo Dog",
+  "viewsSept2026": 5084
+ },
+ {
+  "id": "Q38121",
+  "label": "Greater Swiss Mountain Dog",
+  "enTitle": "Greater Swiss Mountain Dog",
+  "viewsSept2026": 5050
+ },
+ {
+  "id": "Q37811",
+  "label": "German Wirehaired Pointer",
+  "enTitle": "German Wirehaired Pointer",
+  "viewsSept2026": 4948
+ },
+ {
+  "id": "Q38951",
+  "label": "Koolie",
+  "enTitle": "Koolie",
+  "viewsSept2026": 4941
+ },
+ {
+  "id": "Q39075",
+  "label": "Swedish Vallhund",
+  "enTitle": "Swedish Vallhund",
+  "viewsSept2026": 4925
+ },
+ {
+  "id": "Q29127",
+  "label": "Danish Swedish Farmdog",
+  "enTitle": "Danish–Swedish Farmdog",
+  "viewsSept2026": 4904
+ },
+ {
+  "id": "Q38991",
+  "label": "Tosa",
+  "enTitle": "Tosa (dog breed)",
+  "viewsSept2026": 4869
+ },
+ {
+  "id": "Q37821",
+  "label": "Briard",
+  "enTitle": "Briard",
+  "viewsSept2026": 4856
+ },
+ {
+  "id": "Q37808",
+  "label": "Fila Brasileiro",
+  "enTitle": "Fila Brasileiro",
+  "viewsSept2026": 4830
+ },
+ {
+  "id": "Q38644",
+  "label": "Irish Terrier",
+  "enTitle": "Irish Terrier",
+  "viewsSept2026": 4784
+ },
+ {
+  "id": "Q29072",
+  "label": "Cardigan Welsh Corgi",
+  "enTitle": "Cardigan Welsh Corgi",
+  "viewsSept2026": 4719
+ },
+ {
+  "id": "Q38602",
+  "label": "Canaan Dog",
+  "enTitle": "Canaan Dog",
+  "viewsSept2026": 4508
+ },
+ {
+  "id": "Q38168",
+  "label": "Olde English Bulldogge",
+  "enTitle": "Olde English Bulldogge",
+  "viewsSept2026": 4434
+ },
+ {
+  "id": "Q39052",
+  "label": "Skye Terrier",
+  "enTitle": "Skye Terrier",
+  "viewsSept2026": 4391
+ },
+ {
+  "id": "Q38934",
+  "label": "Norwich Terrier",
+  "enTitle": "Norwich Terrier",
+  "viewsSept2026": 4237
+ },
+ {
+  "id": "Q37670",
+  "label": "Mudhol Hound",
+  "enTitle": "Mudhol Hound",
+  "viewsSept2026": 4206
+ },
+ {
+  "id": "Q39063",
+  "label": "Portuguese Podengo",
+  "enTitle": "Portuguese Podengo",
+  "viewsSept2026": 4163
+ },
+ {
+  "id": "Q39068",
+  "label": "Sealyham Terrier",
+  "enTitle": "Sealyham Terrier",
+  "viewsSept2026": 4158
+ },
+ {
+  "id": "Q37755",
+  "label": "Ibizan Hound",
+  "enTitle": "Ibizan Hound",
+  "viewsSept2026": 4085
+ },
+ {
+  "id": "Q37967",
+  "label": "Miniature Bull Terrier",
+  "enTitle": "Miniature Bull Terrier",
+  "viewsSept2026": 3963
+ },
+ {
+  "id": "Q38940",
+  "label": "Norfolk Terrier",
+  "enTitle": "Norfolk Terrier",
+  "viewsSept2026": 3879
+ },
+ {
+  "id": "Q38110",
+  "label": "Lakeland Terrier",
+  "enTitle": "Lakeland Terrier",
+  "viewsSept2026": 3723
+ },
+ {
+  "id": "Q38162",
+  "label": "Irish Water Spaniel",
+  "enTitle": "Irish Water Spaniel",
+  "viewsSept2026": 3663
+ },
+ {
+  "id": "Q39047",
+  "label": "Welsh Springer Spaniel",
+  "enTitle": "Welsh Springer Spaniel",
+  "viewsSept2026": 3640
+ },
+ {
+  "id": "Q38938",
+  "label": "Himalayan Sheepdog",
+  "enTitle": "Himalayan Sheepdog",
+  "viewsSept2026": 3529
+ }
+]

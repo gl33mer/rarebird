@@ -1,0 +1,1034 @@
+[
+ {
+  "id": "Q861690",
+  "label": "West African CFA franc",
+  "enTitle": "West African CFA franc",
+  "viewsSept2026": 157454
+ },
+ {
+  "id": "Q4917",
+  "label": "United States dollar",
+  "enTitle": "United States dollar",
+  "viewsSept2026": 76081
+ },
+ {
+  "id": "Q25224",
+  "label": "pound sterling",
+  "enTitle": "Pound sterling",
+  "viewsSept2026": 58043
+ },
+ {
+  "id": "Q39099",
+  "label": "renminbi",
+  "enTitle": "Renminbi",
+  "viewsSept2026": 44823
+ },
+ {
+  "id": "Q80524",
+  "label": "Indian rupee",
+  "enTitle": "Indian rupee",
+  "viewsSept2026": 35615
+ },
+ {
+  "id": "Q8146",
+  "label": "yen",
+  "enTitle": "Japanese yen",
+  "viewsSept2026": 28076
+ },
+ {
+  "id": "Q1104069",
+  "label": "Canadian dollar",
+  "enTitle": "Canadian dollar",
+  "viewsSept2026": 25286
+ },
+ {
+  "id": "Q131309",
+  "label": "new shekel",
+  "enTitle": "Israeli new shekel",
+  "viewsSept2026": 20763
+ },
+ {
+  "id": "Q25344",
+  "label": "Swiss franc",
+  "enTitle": "Swiss franc",
+  "viewsSept2026": 20205
+ },
+ {
+  "id": "Q41044",
+  "label": "Russian ruble",
+  "enTitle": "Russian ruble",
+  "viewsSept2026": 19864
+ },
+ {
+  "id": "Q200294",
+  "label": "United Arab Emirates dirham",
+  "enTitle": "United Arab Emirates dirham",
+  "viewsSept2026": 18252
+ },
+ {
+  "id": "Q123213",
+  "label": "złoty",
+  "enTitle": "Polish złoty",
+  "viewsSept2026": 17975
+ },
+ {
+  "id": "Q202040",
+  "label": "won",
+  "enTitle": "South Korean won",
+  "viewsSept2026": 17916
+ },
+ {
+  "id": "Q259502",
+  "label": "Australian dollar",
+  "enTitle": "Australian dollar",
+  "viewsSept2026": 17887
+ },
+ {
+  "id": "Q172872",
+  "label": "Turkish lira",
+  "enTitle": "Turkish lira",
+  "viewsSept2026": 16744
+ },
+ {
+  "id": "Q16068",
+  "label": "Deutsche Mark",
+  "enTitle": "Deutsche Mark",
+  "viewsSept2026": 15958
+ },
+ {
+  "id": "Q188608",
+  "label": "Iranian rial",
+  "enTitle": "Iranian rial",
+  "viewsSept2026": 14916
+ },
+ {
+  "id": "Q173117",
+  "label": "Brazilian real",
+  "enTitle": "Brazilian real",
+  "viewsSept2026": 14907
+ },
+ {
+  "id": "Q4730",
+  "label": "peso",
+  "enTitle": "Mexican peso",
+  "viewsSept2026": 14006
+ },
+ {
+  "id": "Q41588",
+  "label": "rupiah",
+  "enTitle": "Indonesian rupiah",
+  "viewsSept2026": 14006
+ },
+ {
+  "id": "Q122922",
+  "label": "Swedish krona",
+  "enTitle": "Swedish krona",
+  "viewsSept2026": 13880
+ },
+ {
+  "id": "Q199857",
+  "label": "Saudi riyal",
+  "enTitle": "Saudi riyal",
+  "viewsSept2026": 13683
+ },
+ {
+  "id": "Q177882",
+  "label": "baht",
+  "enTitle": "Thai baht",
+  "viewsSept2026": 13190
+ },
+ {
+  "id": "Q190951",
+  "label": "Singapore dollar",
+  "enTitle": "Singapore dollar",
+  "viewsSept2026": 13073
+ },
+ {
+  "id": "Q181907",
+  "label": "rand",
+  "enTitle": "South African rand",
+  "viewsSept2026": 13053
+ },
+ {
+  "id": "Q163712",
+  "label": "Malaysian ringgit",
+  "enTitle": "Malaysian ringgit",
+  "viewsSept2026": 12775
+ },
+ {
+  "id": "Q131016",
+  "label": "Czech koruna",
+  "enTitle": "Czech koruna",
+  "viewsSept2026": 12401
+ },
+ {
+  "id": "Q192090",
+  "label": "Vietnamese đồng",
+  "enTitle": "Vietnamese đồng",
+  "viewsSept2026": 12220
+ },
+ {
+  "id": "Q17193",
+  "label": "Philippine peso",
+  "enTitle": "Philippine peso",
+  "viewsSept2026": 10847
+ },
+ {
+  "id": "Q25417",
+  "label": "Danish krone",
+  "enTitle": "Danish krone",
+  "viewsSept2026": 9969
+ },
+ {
+  "id": "Q208526",
+  "label": "New Taiwan dollar",
+  "enTitle": "New Taiwan dollar",
+  "viewsSept2026": 9819
+ },
+ {
+  "id": "Q203567",
+  "label": "naira",
+  "enTitle": "Nigerian naira",
+  "viewsSept2026": 9793
+ },
+ {
+  "id": "Q193098",
+  "label": "Kuwaiti dinar",
+  "enTitle": "Kuwaiti dinar",
+  "viewsSept2026": 9745
+ },
+ {
+  "id": "Q199462",
+  "label": "Egyptian pound",
+  "enTitle": "Egyptian pound",
+  "viewsSept2026": 9695
+ },
+ {
+  "id": "Q31015",
+  "label": "Hong Kong dollar",
+  "enTitle": "Hong Kong dollar",
+  "viewsSept2026": 9628
+ },
+ {
+  "id": "Q47190",
+  "label": "forint",
+  "enTitle": "Hungarian forint",
+  "viewsSept2026": 9342
+ },
+ {
+  "id": "Q132643",
+  "label": "Norwegian krone",
+  "enTitle": "Norwegian krone",
+  "viewsSept2026": 9291
+ },
+ {
+  "id": "Q131645",
+  "label": "Romanian leu",
+  "enTitle": "Romanian leu",
+  "viewsSept2026": 9270
+ },
+ {
+  "id": "Q188289",
+  "label": "Pakistani rupee",
+  "enTitle": "Pakistani rupee",
+  "viewsSept2026": 9266
+ },
+ {
+  "id": "Q81893",
+  "label": "hryvnia",
+  "enTitle": "Ukrainian hryvnia",
+  "viewsSept2026": 9058
+ },
+ {
+  "id": "Q199578",
+  "label": "Argentine convertible peso",
+  "enTitle": "Argentine peso",
+  "viewsSept2026": 8917
+ },
+ {
+  "id": "Q173751",
+  "label": "Kazakhstani tenge",
+  "enTitle": "Kazakhstani tenge",
+  "viewsSept2026": 8363
+ },
+ {
+  "id": "Q1472704",
+  "label": "New Zealand dollar",
+  "enTitle": "New Zealand dollar",
+  "viewsSept2026": 7741
+ },
+ {
+  "id": "Q125352135",
+  "label": "Zimbabwe ZiG",
+  "enTitle": "Zimbabwe Gold",
+  "viewsSept2026": 7440
+ },
+ {
+  "id": "Q179620",
+  "label": "convertible mark",
+  "enTitle": "Bosnia and Herzegovina convertible mark",
+  "viewsSept2026": 7385
+ },
+ {
+  "id": "Q214393",
+  "label": "CFP Franc",
+  "enTitle": "CFP franc",
+  "viewsSept2026": 7009
+ },
+ {
+  "id": "Q106720",
+  "label": "North Korean won",
+  "enTitle": "North Korean won",
+  "viewsSept2026": 6884
+ },
+ {
+  "id": "Q847739",
+  "label": "Central African CFA franc",
+  "enTitle": "Central African CFA franc",
+  "viewsSept2026": 6621
+ },
+ {
+  "id": "Q199471",
+  "label": "afghani",
+  "enTitle": "Afghan afghani",
+  "viewsSept2026": 6551
+ },
+ {
+  "id": "Q193094",
+  "label": "Iraqi dinar",
+  "enTitle": "Iraqi dinar",
+  "viewsSept2026": 6531
+ },
+ {
+  "id": "Q202895",
+  "label": "Nepalese rupee",
+  "enTitle": "Nepalese rupee",
+  "viewsSept2026": 6365
+ },
+ {
+  "id": "Q26365",
+  "label": "Eastern Caribbean dollar",
+  "enTitle": "Eastern Caribbean dollar",
+  "viewsSept2026": 6352
+ },
+ {
+  "id": "Q131473",
+  "label": "Icelandic króna",
+  "enTitle": "Icelandic króna",
+  "viewsSept2026": 6084
+ },
+ {
+  "id": "Q1148329",
+  "label": "SUCRE",
+  "enTitle": "SUCRE",
+  "viewsSept2026": 6040
+ },
+ {
+  "id": "Q183530",
+  "label": "Ghana cedi",
+  "enTitle": "Ghanaian cedi",
+  "viewsSept2026": 5928
+ },
+ {
+  "id": "Q194453",
+  "label": "Bangladeshi taka",
+  "enTitle": "Bangladeshi taka",
+  "viewsSept2026": 5590
+ },
+ {
+  "id": "Q172540",
+  "label": "Bulgarian lev",
+  "enTitle": "Bulgarian lev",
+  "viewsSept2026": 5557
+ },
+ {
+  "id": "Q204656",
+  "label": "Nuevo sol",
+  "enTitle": "Peruvian sol",
+  "viewsSept2026": 5490
+ },
+ {
+  "id": "Q240468",
+  "label": "Syrian pound",
+  "enTitle": "Syrian pound",
+  "viewsSept2026": 5353
+ },
+ {
+  "id": "Q65067684",
+  "label": "Zimbabwean dollar",
+  "enTitle": "Zimbabwean dollar (2019–2024)",
+  "viewsSept2026": 5340
+ },
+ {
+  "id": "Q200192",
+  "label": "Moroccan dirham",
+  "enTitle": "Moroccan dirham",
+  "viewsSept2026": 5216
+ },
+ {
+  "id": "Q244819",
+  "label": "Colombian peso",
+  "enTitle": "Colombian peso",
+  "viewsSept2026": 5134
+ },
+ {
+  "id": "Q172524",
+  "label": "Serbian dinar",
+  "enTitle": "Serbian dinar",
+  "viewsSept2026": 5094
+ },
+ {
+  "id": "Q125999",
+  "label": "Albanian lek",
+  "enTitle": "Albanian lek",
+  "viewsSept2026": 4987
+ },
+ {
+  "id": "Q4608",
+  "label": "Georgian lari",
+  "enTitle": "Georgian lari",
+  "viewsSept2026": 4926
+ },
+ {
+  "id": "Q21531507",
+  "label": "Belarusian ruble",
+  "enTitle": "Belarusian ruble",
+  "viewsSept2026": 4891
+ },
+ {
+  "id": "Q272290",
+  "label": "Omani rial",
+  "enTitle": "Omani rial",
+  "viewsSept2026": 4862
+ },
+ {
+  "id": "Q241214",
+  "label": "Macanese pataca",
+  "enTitle": "Macanese pataca",
+  "viewsSept2026": 4842
+ },
+ {
+  "id": "Q183435",
+  "label": "Mongolian tögrög",
+  "enTitle": "Mongolian tögrög",
+  "viewsSept2026": 4760
+ },
+ {
+  "id": "Q200050",
+  "label": "Chilean peso",
+  "enTitle": "Chilean peso",
+  "viewsSept2026": 4737
+ },
+ {
+  "id": "Q330044",
+  "label": "Falkland Islands pound",
+  "enTitle": "Falkland Islands pound",
+  "viewsSept2026": 4622
+ },
+ {
+  "id": "Q206319",
+  "label": "Brunei dollar",
+  "enTitle": "Brunei dollar",
+  "viewsSept2026": 4528
+ },
+ {
+  "id": "Q483725",
+  "label": "Azerbaijani manat",
+  "enTitle": "Azerbaijani manat",
+  "viewsSept2026": 4504
+ },
+ {
+  "id": "Q130498",
+  "label": "Armenian dram",
+  "enTitle": "Armenian dram",
+  "viewsSept2026": 4495
+ },
+ {
+  "id": "Q201871",
+  "label": "Bahraini dinar",
+  "enTitle": "Bahraini dinar",
+  "viewsSept2026": 4353
+ },
+ {
+  "id": "Q201505",
+  "label": "Cuban peso",
+  "enTitle": "Cuban peso",
+  "viewsSept2026": 4347
+ },
+ {
+  "id": "Q202882",
+  "label": "Kenyan shilling",
+  "enTitle": "Kenyan shilling",
+  "viewsSept2026": 4345
+ },
+ {
+  "id": "Q210472",
+  "label": "Panamanian balboa",
+  "enTitle": "Panamanian balboa",
+  "viewsSept2026": 4303
+ },
+ {
+  "id": "Q203722",
+  "label": "Jordanian dinar",
+  "enTitle": "Jordanian dinar",
+  "viewsSept2026": 4252
+ },
+ {
+  "id": "Q204737",
+  "label": "riel",
+  "enTitle": "Cambodian riel",
+  "viewsSept2026": 4206
+ },
+ {
+  "id": "Q4596",
+  "label": "Sri Lankan rupee",
+  "enTitle": "Sri Lankan rupee",
+  "viewsSept2026": 4191
+ },
+ {
+  "id": "Q373429",
+  "label": "Yugoslav dinar",
+  "enTitle": "Yugoslav dinar",
+  "viewsSept2026": 4160
+ },
+ {
+  "id": "Q737779",
+  "label": "Caribbean guilder",
+  "enTitle": "Caribbean guilder",
+  "viewsSept2026": 4037
+ },
+ {
+  "id": "Q242915",
+  "label": "Costa Rican colón",
+  "enTitle": "Costa Rican colón",
+  "viewsSept2026": 4017
+ },
+ {
+  "id": "Q206386",
+  "label": "Qatari riyal",
+  "enTitle": "Qatari riyal",
+  "viewsSept2026": 3907
+ },
+ {
+  "id": "Q206243",
+  "label": "bir",
+  "enTitle": "Ethiopian birr",
+  "viewsSept2026": 3866
+ },
+ {
+  "id": "Q201799",
+  "label": "ngultrum",
+  "enTitle": "Bhutanese ngultrum",
+  "viewsSept2026": 3777
+ },
+ {
+  "id": "Q35881",
+  "label": "Kyrgyz som",
+  "enTitle": "Kyrgyz som",
+  "viewsSept2026": 3718
+ },
+ {
+  "id": "Q201875",
+  "label": "kyat",
+  "enTitle": "Myanmar kyat",
+  "viewsSept2026": 3672
+ },
+ {
+  "id": "Q201880",
+  "label": "Lebanese pound",
+  "enTitle": "Lebanese pound",
+  "viewsSept2026": 3421
+ },
+ {
+  "id": "Q207396",
+  "label": "quetzal",
+  "enTitle": "Guatemalan quetzal",
+  "viewsSept2026": 3383
+ },
+ {
+  "id": "Q4598",
+  "label": "Ugandan shilling",
+  "enTitle": "Ugandan shilling",
+  "viewsSept2026": 3360
+ },
+ {
+  "id": "Q209792",
+  "label": "Jamaican dollar",
+  "enTitle": "Jamaican dollar",
+  "viewsSept2026": 3354
+ },
+ {
+  "id": "Q177875",
+  "label": "Macedonian denar",
+  "enTitle": "Macedonian denar",
+  "viewsSept2026": 3265
+ },
+ {
+  "id": "Q194339",
+  "label": "Bahamian dollar",
+  "enTitle": "Bahamian dollar",
+  "viewsSept2026": 3169
+ },
+ {
+  "id": "Q4602",
+  "label": "Tunisian dinar",
+  "enTitle": "Tunisian dinar",
+  "viewsSept2026": 3147
+ },
+ {
+  "id": "Q487888",
+  "label": "Uzbek som",
+  "enTitle": "Uzbekistani sum",
+  "viewsSept2026": 3069
+ },
+ {
+  "id": "Q232270",
+  "label": "Aruban florin",
+  "enTitle": "Aruban florin",
+  "viewsSept2026": 3024
+ },
+ {
+  "id": "Q242922",
+  "label": "Dominican peso",
+  "enTitle": "Dominican peso",
+  "viewsSept2026": 3023
+ },
+ {
+  "id": "Q206600",
+  "label": "Maldivian rufiyaa",
+  "enTitle": "Maldivian rufiyaa",
+  "viewsSept2026": 3005
+ },
+ {
+  "id": "Q240512",
+  "label": "Yemeni rial",
+  "enTitle": "Yemeni rial",
+  "viewsSept2026": 2966
+ },
+ {
+  "id": "Q199674",
+  "label": "Algerian dinar",
+  "enTitle": "Algerian dinar",
+  "viewsSept2026": 2942
+ },
+ {
+  "id": "Q829043",
+  "label": "Salvadoran colón",
+  "enTitle": "Salvadoran colón",
+  "viewsSept2026": 2921
+ },
+ {
+  "id": "Q212967",
+  "label": "Mauritian rupee",
+  "enTitle": "Mauritian rupee",
+  "viewsSept2026": 2838
+ },
+ {
+  "id": "Q4589",
+  "label": "Tanzanian shilling",
+  "enTitle": "Tanzanian shilling",
+  "viewsSept2026": 2828
+ },
+ {
+  "id": "Q200055",
+  "label": "Lao kip",
+  "enTitle": "Lao kip",
+  "viewsSept2026": 2770
+ },
+ {
+  "id": "Q210478",
+  "label": "Bermudian dollar",
+  "enTitle": "Bermudian dollar",
+  "viewsSept2026": 2736
+ },
+ {
+  "id": "Q186794",
+  "label": "Botswana pula",
+  "enTitle": "Botswana pula",
+  "viewsSept2026": 2641
+ },
+ {
+  "id": "Q200737",
+  "label": "boliviano",
+  "enTitle": "Bolivian boliviano",
+  "viewsSept2026": 2631
+ },
+ {
+  "id": "Q4741",
+  "label": "Rwandan franc",
+  "enTitle": "Rwandan franc",
+  "viewsSept2026": 2611
+ },
+ {
+  "id": "Q4734",
+  "label": "Congolese franc",
+  "enTitle": "Congolese franc",
+  "viewsSept2026": 2595
+ },
+ {
+  "id": "Q4592",
+  "label": "Fijian dollar",
+  "enTitle": "Fijian dollar",
+  "viewsSept2026": 2577
+ },
+ {
+  "id": "Q41429",
+  "label": "Gibraltar pound",
+  "enTitle": "Gibraltar pound",
+  "viewsSept2026": 2552
+ },
+ {
+  "id": "Q4719",
+  "label": "Honduran lempira",
+  "enTitle": "Honduran lempira",
+  "viewsSept2026": 2503
+ },
+ {
+  "id": "Q200759",
+  "label": "kina",
+  "enTitle": "Papua New Guinean kina",
+  "viewsSept2026": 2469
+ },
+ {
+  "id": "Q207514",
+  "label": "Paraguayan guaraní",
+  "enTitle": "Paraguayan guaraní",
+  "viewsSept2026": 2443
+ },
+ {
+  "id": "Q4584",
+  "label": "ariary",
+  "enTitle": "Malagasy ariary",
+  "viewsSept2026": 2397
+ },
+ {
+  "id": "Q1584286",
+  "label": "silver as an investment",
+  "enTitle": "Silver as an investment",
+  "viewsSept2026": 2386
+ },
+ {
+  "id": "Q181129",
+  "label": "Moldovan leu",
+  "enTitle": "Moldovan leu",
+  "viewsSept2026": 2364
+ },
+ {
+  "id": "Q4603",
+  "label": "Somali shilling",
+  "enTitle": "Somali shilling",
+  "viewsSept2026": 2357
+ },
+ {
+  "id": "Q200337",
+  "label": "kwanza",
+  "enTitle": "Angolan kwanza",
+  "viewsSept2026": 2354
+ },
+ {
+  "id": "Q73408",
+  "label": "Zambian Kwacha",
+  "enTitle": "Zambian kwacha",
+  "viewsSept2026": 2351
+ },
+ {
+  "id": "Q203955",
+  "label": "gourde",
+  "enTitle": "Haitian gourde",
+  "viewsSept2026": 2306
+ },
+ {
+  "id": "Q207312",
+  "label": "Nicaraguan córdoba",
+  "enTitle": "Nicaraguan córdoba",
+  "viewsSept2026": 2291
+ },
+ {
+  "id": "Q374453",
+  "label": "Saint Helena pound",
+  "enTitle": "Saint Helena pound",
+  "viewsSept2026": 2271
+ },
+ {
+  "id": "Q4591",
+  "label": "Cape Verdean escudo",
+  "enTitle": "Cape Verdean escudo",
+  "viewsSept2026": 2163
+ },
+ {
+  "id": "Q319885",
+  "label": "Cayman Islands dollar",
+  "enTitle": "Cayman Islands dollar",
+  "viewsSept2026": 2161
+ },
+ {
+  "id": "Q242988",
+  "label": "Liberian dollar",
+  "enTitle": "Liberian dollar",
+  "viewsSept2026": 2020
+ },
+ {
+  "id": "Q194351",
+  "label": "Barbadian dollar",
+  "enTitle": "Barbadian dollar",
+  "viewsSept2026": 2013
+ },
+ {
+  "id": "Q275112",
+  "label": "Belize dollar",
+  "enTitle": "Belize dollar",
+  "viewsSept2026": 2003
+ },
+ {
+  "id": "Q202462",
+  "label": "Namibian dollar",
+  "enTitle": "Namibian dollar",
+  "viewsSept2026": 1999
+ },
+ {
+  "id": "Q171503",
+  "label": "nakfa",
+  "enTitle": "Eritrean nakfa",
+  "viewsSept2026": 1967
+ },
+ {
+  "id": "Q209272",
+  "label": "Uruguayan peso",
+  "enTitle": "Uruguayan peso",
+  "viewsSept2026": 1958
+ },
+ {
+  "id": "Q207024",
+  "label": "Mauritanian ouguiya",
+  "enTitle": "Mauritanian ouguiya",
+  "viewsSept2026": 1945
+ },
+ {
+  "id": "Q522701",
+  "label": "Netherlands Antillean guilder",
+  "enTitle": "Netherlands Antillean guilder",
+  "viewsSept2026": 1909
+ },
+ {
+  "id": "Q4823",
+  "label": "lilangeni",
+  "enTitle": "Swazi lilangeni",
+  "viewsSept2026": 1859
+ },
+ {
+  "id": "Q242890",
+  "label": "Trinidad and Tobago dollar",
+  "enTitle": "Trinidad and Tobago dollar",
+  "viewsSept2026": 1822
+ },
+ {
+  "id": "Q271206",
+  "label": "Sudanese pound",
+  "enTitle": "Sudanese pound",
+  "viewsSept2026": 1822
+ },
+ {
+  "id": "Q213005",
+  "label": "Guyanese dollar",
+  "enTitle": "Guyanese dollar",
+  "viewsSept2026": 1793
+ },
+ {
+  "id": "Q190699",
+  "label": "Libyan dinar",
+  "enTitle": "Libyan dinar",
+  "viewsSept2026": 1783
+ },
+ {
+  "id": "Q199886",
+  "label": "Tajikistani somoni",
+  "enTitle": "Tajikistani somoni",
+  "viewsSept2026": 1740
+ },
+ {
+  "id": "Q4587",
+  "label": "leone",
+  "enTitle": "Sierra Leonean leone",
+  "viewsSept2026": 1723
+ },
+ {
+  "id": "Q211694",
+  "label": "Malawian kwacha",
+  "enTitle": "Malawian kwacha",
+  "viewsSept2026": 1690
+ },
+ {
+  "id": "Q4595",
+  "label": "Seychellois rupee",
+  "enTitle": "Seychellois rupee",
+  "viewsSept2026": 1617
+ },
+ {
+  "id": "Q202885",
+  "label": "dalasi",
+  "enTitle": "Gambian dalasi",
+  "viewsSept2026": 1597
+ },
+ {
+  "id": "Q486637",
+  "label": "Turkmenistan new manat",
+  "enTitle": "Turkmen manat",
+  "viewsSept2026": 1552
+ },
+ {
+  "id": "Q244366",
+  "label": "South Sudanese pound",
+  "enTitle": "South Sudanese pound",
+  "viewsSept2026": 1533
+ },
+ {
+  "id": "Q4594",
+  "label": "Djiboutian franc",
+  "enTitle": "Djiboutian franc",
+  "viewsSept2026": 1484
+ },
+ {
+  "id": "Q200753",
+  "label": "Mozambican metical",
+  "enTitle": "Mozambican metical",
+  "viewsSept2026": 1479
+ },
+ {
+  "id": "Q202036",
+  "label": "Surinamese dollar",
+  "enTitle": "Surinamese dollar",
+  "viewsSept2026": 1476
+ },
+ {
+  "id": "Q238007",
+  "label": "Burundian franc",
+  "enTitle": "Burundian franc",
+  "viewsSept2026": 1389
+ },
+ {
+  "id": "Q207523",
+  "label": "Vanuatu vatus",
+  "enTitle": "Vanuatu vatu",
+  "viewsSept2026": 1333
+ },
+ {
+  "id": "Q103219993",
+  "label": "Czechoslovak koruna",
+  "enTitle": "Czechoslovak koruna",
+  "viewsSept2026": 1298
+ },
+ {
+  "id": "Q183354",
+  "label": "Vatican lira",
+  "enTitle": "Vatican lira",
+  "viewsSept2026": 1236
+ },
+ {
+  "id": "Q208039",
+  "label": "loti",
+  "enTitle": "Lesotho loti",
+  "viewsSept2026": 1235
+ },
+ {
+  "id": "Q193712",
+  "label": "São Tomé and Príncipe dobra",
+  "enTitle": "São Tomé and Príncipe dobra",
+  "viewsSept2026": 1212
+ },
+ {
+  "id": "Q4613",
+  "label": "Tongan paʻanga",
+  "enTitle": "Tongan paʻanga",
+  "viewsSept2026": 1113
+ },
+ {
+  "id": "Q267264",
+  "label": "Comorian franc",
+  "enTitle": "Comorian franc",
+  "viewsSept2026": 1087
+ },
+ {
+  "id": "Q4597",
+  "label": "Solomon Islands dollar",
+  "enTitle": "Solomon Islands dollar",
+  "viewsSept2026": 988
+ },
+ {
+  "id": "Q4588",
+  "label": "Samoan tālā",
+  "enTitle": "Samoan tālā",
+  "viewsSept2026": 931
+ },
+ {
+  "id": "Q213311",
+  "label": "Guinean franc",
+  "enTitle": "Guinean franc",
+  "viewsSept2026": 899
+ },
+ {
+  "id": "Q731350",
+  "label": "convertible peso",
+  "enTitle": "Cuban convertible peso",
+  "viewsSept2026": 856
+ },
+ {
+  "id": "Q1063029",
+  "label": "Sammarinese lira",
+  "enTitle": "Sammarinese lira",
+  "viewsSept2026": 722
+ },
+ {
+  "id": "Q1669450",
+  "label": "palladium as an investment",
+  "enTitle": "Palladium as an investment",
+  "viewsSept2026": 291
+ },
+ {
+  "id": "Q56349362",
+  "label": "sovereign bolivar",
+  "enTitle": "Sovereign Bolivar",
+  "viewsSept2026": 44
+ },
+ {
+  "id": "Q115123957",
+  "label": "European Composite Unit",
+  "enTitle": "European Composite Unit",
+  "viewsSept2026": 25
+ },
+ {
+  "id": "Q115124340",
+  "label": "European Unit of Account 17",
+  "enTitle": "European Unit of Account 17",
+  "viewsSept2026": 24
+ },
+ {
+  "id": "Q115124154",
+  "label": "European Unit of Account 9",
+  "enTitle": "European Unit of Account 9",
+  "viewsSept2026": 17
+ },
+ {
+  "id": "Q115124012",
+  "label": "European Monetary Unit",
+  "enTitle": "European Monetary Unit",
+  "viewsSept2026": 14
+ },
+ {
+  "id": "Q5731551",
+  "label": "MVDOL",
+  "enTitle": "MVDOL",
+  "viewsSept2026": 9
+ },
+ {
+  "id": "Q115124969",
+  "label": "Uruguay Peso en Unidades Indexadas",
+  "enTitle": "Uruguay peso en Unidades Indexadas",
+  "viewsSept2026": 3
+ },
+ {
+  "id": "Q107631325",
+  "label": "Unidad Previsional",
+  "enTitle": "Unidad Previsional",
+  "viewsSept2026": 1
+ }
+]

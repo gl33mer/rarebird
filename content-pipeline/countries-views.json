@@ -1,0 +1,2597 @@
+[
+ {
+  "id": "Q889",
+  "label": "Afghanistan",
+  "aliases": [
+   "Afghaunistaun",
+   "Afghaunistan",
+   "Afghanisthan",
+   "Afghania",
+   "Affghaunistan",
+   "Affghanisthan",
+   "Affghanistan"
+  ],
+  "enTitle": "Afghanistan",
+  "viewsSept2026": 215585,
+  "viewsErr": null
+ },
+ {
+  "id": "Q222",
+  "label": "Albania",
+  "aliases": [
+   "Shqip\u00ebris\u00eb",
+   "Republika Popullore Socialiste e Shqiperise",
+   "Republika Popullore e Shqiperise",
+   "People's Socialist Republic of Albania",
+   "People's Republic of Albania",
+   "Republic of Albania"
+  ],
+  "enTitle": "Albania",
+  "viewsSept2026": 163708,
+  "viewsErr": null
+ },
+ {
+  "id": "Q262",
+  "label": "Algeria",
+  "aliases": [
+   "People's Democratic Republic of Algeria",
+   "Dzayer",
+   "Djaza\u00efr"
+  ],
+  "enTitle": "Algeria",
+  "viewsSept2026": 133496,
+  "viewsErr": null
+ },
+ {
+  "id": "Q228",
+  "label": "Andorra",
+  "aliases": [
+   "Principality of the Valleys of Andorra",
+   "Principality of Andorra"
+  ],
+  "enTitle": "Andorra",
+  "viewsSept2026": 124283,
+  "viewsErr": null
+ },
+ {
+  "id": "Q916",
+  "label": "Angola",
+  "aliases": [
+   "Republic of Angola",
+   "ao",
+   "Ngola"
+  ],
+  "enTitle": "Angola",
+  "viewsSept2026": 88968,
+  "viewsErr": null
+ },
+ {
+  "id": "Q781",
+  "label": "Antigua and Barbuda",
+  "aliases": [
+   "Antigua\u2013Barbuda",
+   "Antigua & Barbuda",
+   "Antigua-Barbuda"
+  ],
+  "enTitle": "Antigua and Barbuda",
+  "viewsSept2026": 40639,
+  "viewsErr": null
+ },
+ {
+  "id": "Q414",
+  "label": "Argentina",
+  "aliases": [
+   "Republica Argentina",
+   "Republic of Argentina",
+   "Argentine Republic"
+  ],
+  "enTitle": "Argentina",
+  "viewsSept2026": 193250,
+  "viewsErr": null
+ },
+ {
+  "id": "Q399",
+  "label": "Armenia",
+  "aliases": [
+   "\u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576",
+   "Republic of Armenia",
+   "Hayastani Hanrapetut\u2019yun",
+   "Hayastan"
+  ],
+  "enTitle": "Armenia",
+  "viewsSept2026": 180784,
+  "viewsErr": null
+ },
+ {
+  "id": "Q408",
+  "label": "Australia",
+  "aliases": [
+   "'Straya",
+   "The Commonwealth of Australia",
+   "Stralia",
+   "New Hollandia",
+   "Aussieland",
+   "Nova Hollandia",
+   "Straya",
+   "New Holland",
+   "Commonwealth of Australia",
+   "Stria",
+   "Oz",
+   "Down Under"
+  ],
+  "enTitle": "Australia",
+  "viewsSept2026": 336749,
+  "viewsErr": null
+ },
+ {
+  "id": "Q40",
+  "label": "Austria",
+  "aliases": [
+   "Republic of Austria"
+  ],
+  "enTitle": "Austria",
+  "viewsSept2026": 139472,
+  "viewsErr": null
+ },
+ {
+  "id": "Q227",
+  "label": "Azerbaijan",
+  "aliases": [
+   "Republic of Azerbaijan",
+   "AZE"
+  ],
+  "enTitle": "Azerbaijan",
+  "viewsSept2026": 240189,
+  "viewsErr": null
+ },
+ {
+  "id": "Q398",
+  "label": "Bahrain",
+  "aliases": [
+   "Mamlakat al-Ba\u1e25rayn",
+   "Kingdom of Bahrain",
+   "ISO 3166-1:BH",
+   "Dawlat al-Bahrain",
+   "Bahrein Islands",
+   "bh"
+  ],
+  "enTitle": "Bahrain",
+  "viewsSept2026": 96960,
+  "viewsErr": null
+ },
+ {
+  "id": "Q902",
+  "label": "Bangladesh",
+  "aliases": [
+   "People's Republic of Bangladesh",
+   "Land of Bengal",
+   "Country of Bengal",
+   "Bangla Desh",
+   "bd"
+  ],
+  "enTitle": "Bangladesh",
+  "viewsSept2026": 174289,
+  "viewsErr": null
+ },
+ {
+  "id": "Q244",
+  "label": "Barbados",
+  "aliases": [
+   "bb",
+   "Barbadoes",
+   "BAR"
+  ],
+  "enTitle": "Barbados",
+  "viewsSept2026": 77302,
+  "viewsErr": null
+ },
+ {
+  "id": "Q184",
+  "label": "Belarus",
+  "aliases": [
+   "White Ruthenia",
+   "Respublika Bielaru\u015b",
+   "Respublika Belarus'",
+   "Republic of Belarus",
+   "Byelorussia",
+   "Byeloruss",
+   "Bielorussia",
+   "Bielaru\u015b",
+   "Belorussia",
+   "White Russia",
+   "by"
+  ],
+  "enTitle": "Belarus",
+  "viewsSept2026": 190427,
+  "viewsErr": null
+ },
+ {
+  "id": "Q31",
+  "label": "Belgium",
+  "aliases": [
+   "Kingdom of Belgium"
+  ],
+  "enTitle": "Belgium",
+  "viewsSept2026": 144834,
+  "viewsErr": null
+ },
+ {
+  "id": "Q242",
+  "label": "Belize",
+  "aliases": [
+   "bz"
+  ],
+  "enTitle": "Belize",
+  "viewsSept2026": 94903,
+  "viewsErr": null
+ },
+ {
+  "id": "Q962",
+  "label": "Benin",
+  "aliases": [
+   "Republic of Benin"
+  ],
+  "enTitle": "Benin",
+  "viewsSept2026": 83540,
+  "viewsErr": null
+ },
+ {
+  "id": "Q917",
+  "label": "Bhutan",
+  "aliases": [
+   "Kingdom of Bhutan",
+   "BHU"
+  ],
+  "enTitle": "Bhutan",
+  "viewsSept2026": 111501,
+  "viewsErr": null
+ },
+ {
+  "id": "Q750",
+  "label": "Bolivia",
+  "aliases": [
+   "Republic of Bolivia",
+   "Plurinational State of Bolivia",
+   "Bolivia (Plurinational State of)"
+  ],
+  "enTitle": "Bolivia",
+  "viewsSept2026": 95919,
+  "viewsErr": null
+ },
+ {
+  "id": "Q225",
+  "label": "Bosnia and Herzegovina",
+  "aliases": [
+   "Bosnia-Herzegovina",
+   "Bosnia and Hercegovina",
+   "Bosnia & Herzegovina",
+   "B&H",
+   "ba"
+  ],
+  "enTitle": "Bosnia and Herzegovina",
+  "viewsSept2026": 146546,
+  "viewsErr": null
+ },
+ {
+  "id": "Q963",
+  "label": "Botswana",
+  "aliases": [
+   "Republic of Botswana",
+   "Lefatshe la Botswana",
+   "bw"
+  ],
+  "enTitle": "Botswana",
+  "viewsSept2026": 75172,
+  "viewsErr": null
+ },
+ {
+  "id": "Q155",
+  "label": "Brazil",
+  "aliases": [
+   "Federative Republic of Brazil"
+  ],
+  "enTitle": "Brazil",
+  "viewsSept2026": 300449,
+  "viewsErr": null
+ },
+ {
+  "id": "Q921",
+  "label": "Brunei",
+  "aliases": [
+   "Negara Brunei Darussalam",
+   "Nation of Brunei, the Abode of Peace",
+   "bn"
+  ],
+  "enTitle": "Brunei",
+  "viewsSept2026": 104913,
+  "viewsErr": null
+ },
+ {
+  "id": "Q219",
+  "label": "Bulgaria",
+  "aliases": [
+   "Bulgarian Republic",
+   "Republic of Bulgaria"
+  ],
+  "enTitle": "Bulgaria",
+  "viewsSept2026": 121376,
+  "viewsErr": null
+ },
+ {
+  "id": "Q965",
+  "label": "Burkina Faso",
+  "aliases": [
+   "Republic of Upper Volta (-1984)",
+   "Republic of Burkina Faso",
+   "bf"
+  ],
+  "enTitle": "Burkina Faso",
+  "viewsSept2026": 120816,
+  "viewsErr": null
+ },
+ {
+  "id": "Q967",
+  "label": "Burundi",
+  "aliases": [
+   "Republika y'Uburundi",
+   "Republic of Burundi",
+   "Gouvernement du Burundi",
+   "bi"
+  ],
+  "enTitle": "Burundi",
+  "viewsSept2026": 77502,
+  "viewsErr": null
+ },
+ {
+  "id": "Q424",
+  "label": "Cambodia",
+  "aliases": [
+   "Kampuchea",
+   "Kambodzha",
+   "Campuchia",
+   "Camboya",
+   "kh",
+   "Kingdom of Cambodia",
+   "Kamboja"
+  ],
+  "enTitle": "Cambodia",
+  "viewsSept2026": 103771,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1009",
+  "label": "Cameroon",
+  "aliases": [
+   "Republic of Cameroon"
+  ],
+  "enTitle": "Cameroon",
+  "viewsSept2026": 71275,
+  "viewsErr": null
+ },
+ {
+  "id": "Q16",
+  "label": "Canada",
+  "aliases": [
+   "CAN",
+   "CA"
+  ],
+  "enTitle": "Canada",
+  "viewsSept2026": 353830,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1011",
+  "label": "Cape Verde",
+  "aliases": [
+   "Republic of Cape Verde",
+   "Republic of Cabo Verde",
+   "Cape Verde Islands"
+  ],
+  "enTitle": "Cape Verde",
+  "viewsSept2026": 122801,
+  "viewsErr": null
+ },
+ {
+  "id": "Q929",
+  "label": "Central African Republic",
+  "aliases": [
+   "cf",
+   "Central Africa"
+  ],
+  "enTitle": "Central African Republic",
+  "viewsSept2026": 66149,
+  "viewsErr": null
+ },
+ {
+  "id": "Q657",
+  "label": "Chad",
+  "aliases": [
+   "Republic of Chad",
+   "td",
+   "CHA",
+   "GUM"
+  ],
+  "enTitle": "Chad",
+  "viewsSept2026": 63481,
+  "viewsErr": null
+ },
+ {
+  "id": "Q298",
+  "label": "Chile",
+  "aliases": [
+   "Republic of Chile",
+   "CHI"
+  ],
+  "enTitle": "Chile",
+  "viewsSept2026": 112759,
+  "viewsErr": null
+ },
+ {
+  "id": "Q739",
+  "label": "Colombia",
+  "aliases": [
+   "The Republic of Colombia",
+   "Republic of Colombia",
+   "Colombi\u00e1"
+  ],
+  "enTitle": "Colombia",
+  "viewsSept2026": 128861,
+  "viewsErr": null
+ },
+ {
+  "id": "Q970",
+  "label": "Comoros",
+  "aliases": [
+   "Union of the Comoros",
+   "Union des Comores",
+   "Udzima wa Komori",
+   "ouvoimoja wakomori",
+   "Massiwa ya komori",
+   "Juzur al-Qumur",
+   "Juzur al-Qamar",
+   "al-Itti\u1e25\u0101d al-Qumur\u012b",
+   "km",
+   "the Comoros"
+  ],
+  "enTitle": "Comoros",
+  "viewsSept2026": 49139,
+  "viewsErr": null
+ },
+ {
+  "id": "Q800",
+  "label": "Costa Rica",
+  "aliases": [
+   "Republic of Costa Rica",
+   "cr"
+  ],
+  "enTitle": "Costa Rica",
+  "viewsSept2026": 78643,
+  "viewsErr": null
+ },
+ {
+  "id": "Q224",
+  "label": "Croatia",
+  "aliases": [
+   "Republic of Croatia",
+   "HRV",
+   "RH",
+   "CRO",
+   "HR"
+  ],
+  "enTitle": "Croatia",
+  "viewsSept2026": 155402,
+  "viewsErr": null
+ },
+ {
+  "id": "Q241",
+  "label": "Cuba",
+  "aliases": [
+   "cu",
+   "Republic of Cuba"
+  ],
+  "enTitle": "Cuba",
+  "viewsSept2026": 121475,
+  "viewsErr": null
+ },
+ {
+  "id": "Q229",
+  "label": "Cyprus",
+  "aliases": [
+   "Greek Cypriot State",
+   "Greek Administration of Southern Cyprus",
+   "Republic of Cyprus"
+  ],
+  "enTitle": "Cyprus",
+  "viewsSept2026": 176898,
+  "viewsErr": null
+ },
+ {
+  "id": "Q213",
+  "label": "Czech Republic",
+  "aliases": [
+   "the Czech Republic",
+   "Czechia"
+  ],
+  "enTitle": "Czech Republic",
+  "viewsSept2026": 199872,
+  "viewsErr": null
+ },
+ {
+  "id": "Q974",
+  "label": "Democratic Republic of the Congo",
+  "aliases": [
+   "COD",
+   "D.R.C.",
+   "DRC",
+   "DR Congo",
+   "Democratic Republic of Congo",
+   "Dem. Republic of the Congo",
+   "Dem. Republic of Congo",
+   "Dem. Rep. Congo",
+   "Congo (Kinshasa)",
+   "cd"
+  ],
+  "enTitle": "Democratic Republic of the Congo",
+  "viewsSept2026": 150009,
+  "viewsErr": null
+ },
+ {
+  "id": "Q977",
+  "label": "Djibouti",
+  "aliases": [
+   "Republic of Djibouti",
+   "J\u012bb\u016bt\u012b",
+   "Gabuuti",
+   "Jabuuti",
+   "dj"
+  ],
+  "enTitle": "Djibouti",
+  "viewsSept2026": 93676,
+  "viewsErr": null
+ },
+ {
+  "id": "Q784",
+  "label": "Dominica",
+  "aliases": [
+   "Wai\u2018tu kubuli",
+   "Wai'tu kubuli",
+   "The Commonwealth of Dominica",
+   "Island of Dominica",
+   "Commonwealth of Dominica",
+   "dm",
+   "DOM"
+  ],
+  "enTitle": "Dominica",
+  "viewsSept2026": 54532,
+  "viewsErr": null
+ },
+ {
+  "id": "Q786",
+  "label": "Dominican Republic",
+  "aliases": [
+   "Rep\u00fablica Dominicana",
+   "Republica Dominicana",
+   "DomRep",
+   "Dominicana",
+   "RD"
+  ],
+  "enTitle": "Dominican Republic",
+  "viewsSept2026": 118219,
+  "viewsErr": null
+ },
+ {
+  "id": "Q736",
+  "label": "Ecuador",
+  "aliases": [
+   "Republic of Equator",
+   "The Ecuadorian State",
+   "Republic of the Equator",
+   "Republic of Ecuador"
+  ],
+  "enTitle": "Ecuador",
+  "viewsSept2026": 76907,
+  "viewsErr": null
+ },
+ {
+  "id": "Q79",
+  "label": "Egypt",
+  "aliases": [
+   "Rep. Egypt",
+   "Arab Republic of Egypt",
+   "Arab Rep. Egypt",
+   "Republic of Egypt",
+   "Misr"
+  ],
+  "enTitle": "Egypt",
+  "viewsSept2026": 160634,
+  "viewsErr": null
+ },
+ {
+  "id": "Q792",
+  "label": "El Salvador",
+  "aliases": [
+   "Republic of El Salvador",
+   "sv",
+   "ESA",
+   "Salvador"
+  ],
+  "enTitle": "El Salvador",
+  "viewsSept2026": 104206,
+  "viewsErr": null
+ },
+ {
+  "id": "Q983",
+  "label": "Equatorial Guinea",
+  "aliases": [
+   "Republic of Equatorial Guinea",
+   "gq",
+   "GEQ"
+  ],
+  "enTitle": "Equatorial Guinea",
+  "viewsSept2026": 103589,
+  "viewsErr": null
+ },
+ {
+  "id": "Q986",
+  "label": "Eritrea",
+  "aliases": [
+   "State of Eritrea",
+   "Iritriy\u0101",
+   "Ertr\u0101",
+   "er"
+  ],
+  "enTitle": "Eritrea",
+  "viewsSept2026": 138803,
+  "viewsErr": null
+ },
+ {
+  "id": "Q191",
+  "label": "Estonia",
+  "aliases": [
+   "Republic of Estonia",
+   "Eesti Vabariik",
+   "Estland",
+   "ee"
+  ],
+  "enTitle": "Estonia",
+  "viewsSept2026": 117849,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1050",
+  "label": "Eswatini",
+  "aliases": [
+   "Umbuso weSwatini",
+   "sz",
+   "Kingdom of Swaziland",
+   "Kingdom of Eswatini",
+   "eSwatini",
+   "Swaziland"
+  ],
+  "enTitle": "Eswatini",
+  "viewsSept2026": 119461,
+  "viewsErr": null
+ },
+ {
+  "id": "Q115",
+  "label": "Ethiopia",
+  "aliases": [
+   "Federal Democratic Republic of Ethiopia",
+   "et"
+  ],
+  "enTitle": "Ethiopia",
+  "viewsSept2026": 170500,
+  "viewsErr": null
+ },
+ {
+  "id": "Q702",
+  "label": "Federated States of Micronesia",
+  "aliases": [
+   "Federated States of Micronesia, FSM",
+   "Fed. Sts. of Micronesia",
+   "Fed. Sts. Micronesia",
+   "fm",
+   "FSM",
+   "Micronesia"
+  ],
+  "enTitle": "Federated States of Micronesia",
+  "viewsSept2026": 37769,
+  "viewsErr": null
+ },
+ {
+  "id": "Q712",
+  "label": "Fiji",
+  "aliases": [
+   "Republic of the Fiji Islands",
+   "Republic of Fiji",
+   "Matanitu Tugalala o Viti",
+   "Fij\u012b Ga\u1e47ar\u0101jya",
+   "Fij\u012b",
+   "fj",
+   "Viti"
+  ],
+  "enTitle": "Fiji",
+  "viewsSept2026": 111855,
+  "viewsErr": null
+ },
+ {
+  "id": "Q33",
+  "label": "Finland",
+  "aliases": [
+   "Suomen tasavalta",
+   "Republiken Finland",
+   "Republic of Finland",
+   "Land of Thousand Lakes",
+   "Finnia",
+   "fi"
+  ],
+  "enTitle": "Finland",
+  "viewsSept2026": 139520,
+  "viewsErr": null
+ },
+ {
+  "id": "Q142",
+  "label": "France",
+  "aliases": [
+   "French Republic"
+  ],
+  "enTitle": "France",
+  "viewsSept2026": 256173,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1000",
+  "label": "Gabon",
+  "aliases": [
+   "R\u00e9publique Gabonaise",
+   "Republique Gabonaise",
+   "Gabonese Republic",
+   "GAB",
+   "ga"
+  ],
+  "enTitle": "Gabon",
+  "viewsSept2026": 50538,
+  "viewsErr": null
+ },
+ {
+  "id": "Q230",
+  "label": "Georgia",
+  "aliases": [
+   "Georgia (Sakartvelo)",
+   "Republic of Georgia",
+   "Sakartvelo",
+   "Georgia (country)"
+  ],
+  "enTitle": "Georgia (country)",
+  "viewsSept2026": 179751,
+  "viewsErr": null
+ },
+ {
+  "id": "Q183",
+  "label": "Germany",
+  "aliases": [
+   "DEU",
+   "DE",
+   "BRD",
+   "FRG",
+   "Federal Republic of Germany"
+  ],
+  "enTitle": "Germany",
+  "viewsSept2026": 340312,
+  "viewsErr": null
+ },
+ {
+  "id": "Q117",
+  "label": "Ghana",
+  "aliases": [],
+  "enTitle": "Ghana",
+  "viewsSept2026": 107031,
+  "viewsErr": null
+ },
+ {
+  "id": "Q41",
+  "label": "Greece",
+  "aliases": [
+   "Hellas, Greece",
+   "Greek Republic",
+   "Ellada",
+   "Hellenic Republic",
+   "gr",
+   "el",
+   "Hellas"
+  ],
+  "enTitle": "Greece",
+  "viewsSept2026": 155403,
+  "viewsErr": null
+ },
+ {
+  "id": "Q769",
+  "label": "Grenada",
+  "aliases": [
+   "gd",
+   "GRN"
+  ],
+  "enTitle": "Grenada",
+  "viewsSept2026": 61152,
+  "viewsErr": null
+ },
+ {
+  "id": "Q774",
+  "label": "Guatemala",
+  "aliases": [
+   "Republic of Guatemala",
+   "gt",
+   "GTM",
+   "GT"
+  ],
+  "enTitle": "Guatemala",
+  "viewsSept2026": 89428,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1006",
+  "label": "Guinea",
+  "aliases": [
+   "Republic of Guinea",
+   "Guinea-Conakry",
+   "GUI",
+   "gn"
+  ],
+  "enTitle": "Guinea",
+  "viewsSept2026": 54345,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1007",
+  "label": "Guinea-Bissau",
+  "aliases": [
+   "Republic of Guinea-Bissau",
+   "gw",
+   "GBS"
+  ],
+  "enTitle": "Guinea-Bissau",
+  "viewsSept2026": 52709,
+  "viewsErr": null
+ },
+ {
+  "id": "Q734",
+  "label": "Guyana",
+  "aliases": [
+   "gy",
+   "Republic of Guyana",
+   "Co-operative Republic of Guyana"
+  ],
+  "enTitle": "Guyana",
+  "viewsSept2026": 128335,
+  "viewsErr": null
+ },
+ {
+  "id": "Q790",
+  "label": "Haiti",
+  "aliases": [
+   "Republic of Haiti",
+   "Haitian Republic",
+   "Ayiti",
+   "HAI",
+   "ht",
+   "Hayti"
+  ],
+  "enTitle": "Haiti",
+  "viewsSept2026": 100965,
+  "viewsErr": null
+ },
+ {
+  "id": "Q783",
+  "label": "Honduras",
+  "aliases": [
+   "Republic of Honduras",
+   "Honduran Republic",
+   "hn",
+   "HON"
+  ],
+  "enTitle": "Honduras",
+  "viewsSept2026": 66365,
+  "viewsErr": null
+ },
+ {
+  "id": "Q28",
+  "label": "Hungary",
+  "aliases": [],
+  "enTitle": "Hungary",
+  "viewsSept2026": 116477,
+  "viewsErr": null
+ },
+ {
+  "id": "Q189",
+  "label": "Iceland",
+  "aliases": [
+   "Icelandic republic",
+   "Ysland",
+   "Republic of Iceland",
+   "Isl."
+  ],
+  "enTitle": "Iceland",
+  "viewsSept2026": 155507,
+  "viewsErr": null
+ },
+ {
+  "id": "Q668",
+  "label": "India",
+  "aliases": [
+   "Tenjiku",
+   "Bharatvarsh",
+   "Al Hind",
+   "Hindoostan",
+   "Tianzhu",
+   "Bharata",
+   "Hindustan",
+   "Republic of India",
+   "Indostan",
+   "Bharat Ganarajya"
+  ],
+  "enTitle": "India",
+  "viewsSept2026": 444280,
+  "viewsErr": null
+ },
+ {
+  "id": "Q252",
+  "label": "Indonesia",
+  "aliases": [
+   "Republic of Indonesia",
+   "id"
+  ],
+  "enTitle": "Indonesia",
+  "viewsSept2026": 239931,
+  "viewsErr": null
+ },
+ {
+  "id": "Q794",
+  "label": "Iran",
+  "aliases": [
+   "Islamic Republic of Iran",
+   "Islamic Rep. Iran",
+   "ir",
+   "IRI"
+  ],
+  "enTitle": "Iran",
+  "viewsSept2026": 251863,
+  "viewsErr": null
+ },
+ {
+  "id": "Q796",
+  "label": "Iraq",
+  "aliases": [
+   "iq",
+   "Republic of Iraq"
+  ],
+  "enTitle": "Iraq",
+  "viewsSept2026": 113596,
+  "viewsErr": null
+ },
+ {
+  "id": "Q27",
+  "label": "Ireland",
+  "aliases": [
+   "Irish Republic",
+   "Southern Ireland",
+   "Republic of Ireland"
+  ],
+  "enTitle": "Republic of Ireland",
+  "viewsSept2026": 147566,
+  "viewsErr": null
+ },
+ {
+  "id": "Q801",
+  "label": "Israel",
+  "aliases": [
+   "Yisrael",
+   "il",
+   "ISR",
+   "State of Israel"
+  ],
+  "enTitle": "Israel",
+  "viewsSept2026": 353755,
+  "viewsErr": null
+ },
+ {
+  "id": "Q38",
+  "label": "Italy",
+  "aliases": [
+   "Republic of Italy",
+   "Italian Republic"
+  ],
+  "enTitle": "Italy",
+  "viewsSept2026": 211186,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1008",
+  "label": "Ivory Coast",
+  "aliases": [
+   "The Ivory Coast",
+   "Republic of the Ivory Coast",
+   "Republic of Ivory Coast",
+   "Republic of C\u00f4te d'Ivoire",
+   "Republic of Cote d'Ivoire",
+   "C\u00f4te-d'Ivoire",
+   "Cote-d'Ivoire",
+   "Cote Ivoire",
+   "Cote d'lvoire",
+   "Cote d'Ivoire",
+   "ci"
+  ],
+  "enTitle": "Ivory Coast",
+  "viewsSept2026": 76479,
+  "viewsErr": null
+ },
+ {
+  "id": "Q766",
+  "label": "Jamaica",
+  "aliases": [
+   "Commonwealth of Jamaica",
+   "JA"
+  ],
+  "enTitle": "Jamaica",
+  "viewsSept2026": 105145,
+  "viewsErr": null
+ },
+ {
+  "id": "Q17",
+  "label": "Japan",
+  "aliases": [
+   "Land of the Rising Sun",
+   "State of Japan",
+   "Nippon-koku",
+   "Nihon-koku",
+   "Land of Rising Sun",
+   "Iapon",
+   "Iapan"
+  ],
+  "enTitle": "Japan",
+  "viewsSept2026": 312155,
+  "viewsErr": null
+ },
+ {
+  "id": "Q810",
+  "label": "Jordan",
+  "aliases": [
+   "State of Jordan",
+   "Kingdom of Jordan",
+   "ISO 3166-1:JO",
+   "Hashemite Kingdom of Jordan",
+   "Giordania",
+   "Yarden",
+   "HKJ"
+  ],
+  "enTitle": "Jordan",
+  "viewsSept2026": 113963,
+  "viewsErr": null
+ },
+ {
+  "id": "Q232",
+  "label": "Kazakhstan",
+  "aliases": [
+   "Qazaqstan",
+   "kz",
+   "Republic of Qazaqstan",
+   "Republic of Kazakhstan"
+  ],
+  "enTitle": "Kazakhstan",
+  "viewsSept2026": 281409,
+  "viewsErr": null
+ },
+ {
+  "id": "Q114",
+  "label": "Kenya",
+  "aliases": [
+   "Republic of Kenya",
+   "ke"
+  ],
+  "enTitle": "Kenya",
+  "viewsSept2026": 93665,
+  "viewsErr": null
+ },
+ {
+  "id": "Q756617",
+  "label": "Denmark",
+  "aliases": [
+   "Realm of Denmark",
+   "Kunngeqarfik Danmarki",
+   "Kongsr\u00edki Danmarkar",
+   "Kongeriget Danmark",
+   "Danmarks Rige",
+   "Danmarkip Naalagaaffik",
+   "Danmarkar R\u00edki",
+   "Danish Realm",
+   "Denmark",
+   "Danish Commonwealth"
+  ],
+  "enTitle": "Denmark",
+  "viewsSept2026": 142141,
+  "viewsErr": null
+ },
+ {
+  "id": "Q29999",
+  "label": "Netherlands",
+  "aliases": [
+   "Kingdom of Netherlands",
+   "Nederlanden",
+   "the Netherlands",
+   "Netherlands"
+  ],
+  "enTitle": "Netherlands",
+  "viewsSept2026": 212004,
+  "viewsErr": null
+ },
+ {
+  "id": "Q710",
+  "label": "Kiribati",
+  "aliases": [
+   "Republic of Kiribati",
+   "ki"
+  ],
+  "enTitle": "Kiribati",
+  "viewsSept2026": 134611,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1246",
+  "label": "Kosovo",
+  "aliases": [
+   "XKX",
+   "RKS",
+   "Republic of Kosovo",
+   "Kosova",
+   "KV",
+   "XK",
+   "KOS"
+  ],
+  "enTitle": "Kosovo",
+  "viewsSept2026": 191371,
+  "viewsErr": null
+ },
+ {
+  "id": "Q817",
+  "label": "Kuwait",
+  "aliases": [
+   "State of Kuwait",
+   "kw"
+  ],
+  "enTitle": "Kuwait",
+  "viewsSept2026": 88936,
+  "viewsErr": null
+ },
+ {
+  "id": "Q813",
+  "label": "Kyrgyzstan",
+  "aliases": [
+   "Kyrgyz Republic",
+   "kg"
+  ],
+  "enTitle": "Kyrgyzstan",
+  "viewsSept2026": 182876,
+  "viewsErr": null
+ },
+ {
+  "id": "Q819",
+  "label": "Laos",
+  "aliases": [
+   "Lao People's Democratic Republic",
+   "Lao PDR",
+   "la"
+  ],
+  "enTitle": "Laos",
+  "viewsSept2026": 93654,
+  "viewsErr": null
+ },
+ {
+  "id": "Q211",
+  "label": "Latvia",
+  "aliases": [
+   "Republic of Latvia",
+   "Le\u0163m\u043e\u0304 Vab\u0101m\u043e\u0304",
+   "Le\u0163m\u043e\u0304",
+   "Latvijas Republika",
+   "Latvija",
+   "Latvian Republic",
+   "Latvejas Republika",
+   "Latveja",
+   "lv"
+  ],
+  "enTitle": "Latvia",
+  "viewsSept2026": 115751,
+  "viewsErr": null
+ },
+ {
+  "id": "Q822",
+  "label": "Lebanon",
+  "aliases": [
+   "State of Lebanon",
+   "Republic of Lebanon",
+   "Lubnan",
+   "Lebanese Republic",
+   "lb"
+  ],
+  "enTitle": "Lebanon",
+  "viewsSept2026": 123231,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1013",
+  "label": "Lesotho",
+  "aliases": [
+   "The Mountain Kingdom",
+   "LES",
+   "Kingdom of Lesotho",
+   "ls"
+  ],
+  "enTitle": "Lesotho",
+  "viewsSept2026": 70833,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1014",
+  "label": "Liberia",
+  "aliases": [
+   "Republic of Liberia",
+   "lr",
+   "Liber"
+  ],
+  "enTitle": "Liberia",
+  "viewsSept2026": 99833,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1016",
+  "label": "Libya",
+  "aliases": [
+   "State of Libya",
+   "LBA",
+   "ly"
+  ],
+  "enTitle": "Libya",
+  "viewsSept2026": 96871,
+  "viewsErr": null
+ },
+ {
+  "id": "Q347",
+  "label": "Liechtenstein",
+  "aliases": [
+   "Principality of Liechtenstein",
+   "FL",
+   "li"
+  ],
+  "enTitle": "Liechtenstein",
+  "viewsSept2026": 160475,
+  "viewsErr": null
+ },
+ {
+  "id": "Q37",
+  "label": "Lithuania",
+  "aliases": [
+   "Republic of Lithuania"
+  ],
+  "enTitle": "Lithuania",
+  "viewsSept2026": 146136,
+  "viewsErr": null
+ },
+ {
+  "id": "Q32",
+  "label": "Luxembourg",
+  "aliases": [
+   "Grand Duchy of Luxembourg"
+  ],
+  "enTitle": "Luxembourg",
+  "viewsSept2026": 132529,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1019",
+  "label": "Madagascar",
+  "aliases": [
+   "Republic of Madagascar",
+   "mg",
+   "Malagaskar",
+   "Malagascar"
+  ],
+  "enTitle": "Madagascar",
+  "viewsSept2026": 120942,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1020",
+  "label": "Malawi",
+  "aliases": [
+   "Republic of Malawi",
+   "mw",
+   "MAW"
+  ],
+  "enTitle": "Malawi",
+  "viewsSept2026": 56603,
+  "viewsErr": null
+ },
+ {
+  "id": "Q833",
+  "label": "Malaysia",
+  "aliases": [
+   "Malaysia Federation",
+   "Federation of Malaysia"
+  ],
+  "enTitle": "Malaysia",
+  "viewsSept2026": 202584,
+  "viewsErr": null
+ },
+ {
+  "id": "Q826",
+  "label": "Maldives",
+  "aliases": [
+   "Republic of Maldives",
+   "mv",
+   "MDV"
+  ],
+  "enTitle": "Maldives",
+  "viewsSept2026": 124848,
+  "viewsErr": null
+ },
+ {
+  "id": "Q912",
+  "label": "Mali",
+  "aliases": [
+   "Republic of Mali",
+   "ml"
+  ],
+  "enTitle": "Mali",
+  "viewsSept2026": 72309,
+  "viewsErr": null
+ },
+ {
+  "id": "Q233",
+  "label": "Malta",
+  "aliases": [
+   "Republic of Malta"
+  ],
+  "enTitle": "Malta",
+  "viewsSept2026": 183723,
+  "viewsErr": null
+ },
+ {
+  "id": "Q709",
+  "label": "Marshall Islands",
+  "aliases": [
+   "mh",
+   "Republic of the Marshall Islands"
+  ],
+  "enTitle": "Marshall Islands",
+  "viewsSept2026": 54744,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1025",
+  "label": "Mauritania",
+  "aliases": [
+   "Agawej",
+   "Murutaane",
+   "Muritanya",
+   "mr",
+   "Moritani",
+   "Mauretania",
+   "Islamic Republic of Mauritania",
+   "G\u00e0nnaar",
+   "Gannaar"
+  ],
+  "enTitle": "Mauritania",
+  "viewsSept2026": 86349,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1027",
+  "label": "Mauritius",
+  "aliases": [
+   "Republic of Mauritius",
+   "Moris",
+   "MU",
+   "MRI",
+   "Maurice"
+  ],
+  "enTitle": "Mauritius",
+  "viewsSept2026": 187066,
+  "viewsErr": null
+ },
+ {
+  "id": "Q96",
+  "label": "Mexico",
+  "aliases": [
+   "US of M",
+   "Mexican United States",
+   "Mexican Republic",
+   "United States of Mexico",
+   "MXN",
+   "mx",
+   "United Mexican States"
+  ],
+  "enTitle": "Mexico",
+  "viewsSept2026": 242295,
+  "viewsErr": null
+ },
+ {
+  "id": "Q217",
+  "label": "Moldova",
+  "aliases": [
+   "Republica Moldova",
+   "Republic of Moldova",
+   "Moldavia"
+  ],
+  "enTitle": "Moldova",
+  "viewsSept2026": 108058,
+  "viewsErr": null
+ },
+ {
+  "id": "Q235",
+  "label": "Monaco",
+  "aliases": [
+   "Principaut\u00e9 de Monaco",
+   "Prin\u00e7ipatu de M\u00f9negu",
+   "Principatu de Mu\u030dnegu",
+   "Principato di Monaco",
+   "Principality of Monaco",
+   "Principality and Diocese of Monaco",
+   "M\u00f9negu",
+   "Fort-Hercule",
+   "mc"
+  ],
+  "enTitle": "Monaco",
+  "viewsSept2026": 165426,
+  "viewsErr": null
+ },
+ {
+  "id": "Q711",
+  "label": "Mongolia",
+  "aliases": [
+   "State of Mongolia",
+   "Mongol State"
+  ],
+  "enTitle": "Mongolia",
+  "viewsSept2026": 138197,
+  "viewsErr": null
+ },
+ {
+  "id": "Q236",
+  "label": "Montenegro",
+  "aliases": [
+   "Republic of Montenegro"
+  ],
+  "enTitle": "Montenegro",
+  "viewsSept2026": 148746,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1028",
+  "label": "Morocco",
+  "aliases": [
+   "Marocco",
+   "Maroc",
+   "Lma\u0121rib",
+   "Kingdom of Morocco",
+   "al-Ma\u0121rib"
+  ],
+  "enTitle": "Morocco",
+  "viewsSept2026": 156723,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1029",
+  "label": "Mozambique",
+  "aliases": [
+   "Rep\u00fablica de Mo\u00e7ambique",
+   "Republic of Mozambique",
+   "mz",
+   "Mo\u00e7ambique"
+  ],
+  "enTitle": "Mozambique",
+  "viewsSept2026": 78623,
+  "viewsErr": null
+ },
+ {
+  "id": "Q836",
+  "label": "Myanmar",
+  "aliases": [
+   "Union of Burma",
+   "Republic of the Union of Myanmar"
+  ],
+  "enTitle": "Myanmar",
+  "viewsSept2026": 196793,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1030",
+  "label": "Namibia",
+  "aliases": [
+   "Republic of Namibia",
+   "na"
+  ],
+  "enTitle": "Namibia",
+  "viewsSept2026": 93050,
+  "viewsErr": null
+ },
+ {
+  "id": "Q697",
+  "label": "Nauru",
+  "aliases": [
+   "Republic of Naoero",
+   "Republic of Nauru",
+   "Naoero",
+   "Pleasant Island"
+  ],
+  "enTitle": "Nauru",
+  "viewsSept2026": 134798,
+  "viewsErr": null
+ },
+ {
+  "id": "Q837",
+  "label": "Nepal",
+  "aliases": [
+   "Palpou",
+   "Pa\u00ef-pou",
+   "Pai-pou",
+   "Pa-lo-pou",
+   "Pa-le-pou",
+   "Pa-eul-pou",
+   "Nipal",
+   "Niepal",
+   "Ni-po-louo",
+   "Ni-po-lo",
+   "Nercerri",
+   "Nepaul"
+  ],
+  "enTitle": "Nepal",
+  "viewsSept2026": 209050,
+  "viewsErr": null
+ },
+ {
+  "id": "Q664",
+  "label": "New Zealand",
+  "aliases": [
+   "Aotearoa New Zealand",
+   "Dominion of New Zealand",
+   "nz"
+  ],
+  "enTitle": "New Zealand",
+  "viewsSept2026": 212663,
+  "viewsErr": null
+ },
+ {
+  "id": "Q811",
+  "label": "Nicaragua",
+  "aliases": [
+   "Republic of Nicaragua",
+   "ni",
+   "NIC",
+   "NI",
+   "NCA"
+  ],
+  "enTitle": "Nicaragua",
+  "viewsSept2026": 76440,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1032",
+  "label": "Niger",
+  "aliases": [
+   "The Niger",
+   "Republic of the Niger",
+   "Republic of Niger",
+   "Republic Niger",
+   "ne"
+  ],
+  "enTitle": "Niger",
+  "viewsSept2026": 77521,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1033",
+  "label": "Nigeria",
+  "aliases": [
+   "Naija",
+   "Federal Republic of Nigeria"
+  ],
+  "enTitle": "Nigeria",
+  "viewsSept2026": 153555,
+  "viewsErr": null
+ },
+ {
+  "id": "Q423",
+  "label": "North Korea",
+  "aliases": [
+   "N. Korea",
+   "DPRK",
+   "Democratic People's Republic of Korea",
+   "kp",
+   "DPR Korea"
+  ],
+  "enTitle": "North Korea",
+  "viewsSept2026": 190083,
+  "viewsErr": null
+ },
+ {
+  "id": "Q221",
+  "label": "North Macedonia",
+  "aliases": [
+   "Republic of North Macedonia",
+   "Republic of Macedonia",
+   "FYR Macedonia",
+   "Former Yugoslav Republic of Macedonia",
+   "MKD",
+   "Makedonia",
+   "MK",
+   "NM",
+   "Macedonia"
+  ],
+  "enTitle": "North Macedonia",
+  "viewsSept2026": 119487,
+  "viewsErr": null
+ },
+ {
+  "id": "Q20",
+  "label": "Norway",
+  "aliases": [
+   "Kingdom of Norway"
+  ],
+  "enTitle": "Norway",
+  "viewsSept2026": 181180,
+  "viewsErr": null
+ },
+ {
+  "id": "Q842",
+  "label": "Oman",
+  "aliases": [
+   "Sultanate of Oman",
+   "omn",
+   "om",
+   "Uman"
+  ],
+  "enTitle": "Oman",
+  "viewsSept2026": 113269,
+  "viewsErr": null
+ },
+ {
+  "id": "Q843",
+  "label": "Pakistan",
+  "aliases": [
+   "T\u00e2y H\u1ed3i",
+   "H\u1ed3i Qu\u1ed1c",
+   "Republic of Pakistan",
+   "Islamic Republic of Pakistan",
+   "pk"
+  ],
+  "enTitle": "Pakistan",
+  "viewsSept2026": 214022,
+  "viewsErr": null
+ },
+ {
+  "id": "Q695",
+  "label": "Palau",
+  "aliases": [
+   "Republic of Palau",
+   "Republic of Belau",
+   "Pelew islands",
+   "Pelew",
+   "Peeloo",
+   "Pellew",
+   "pw",
+   "Belau"
+  ],
+  "enTitle": "Palau",
+  "viewsSept2026": 78334,
+  "viewsErr": null
+ },
+ {
+  "id": "Q219060",
+  "label": "Palestine",
+  "aliases": [
+   "PSE",
+   "State of Palestine"
+  ],
+  "enTitle": "Palestine",
+  "viewsSept2026": 261017,
+  "viewsErr": null
+ },
+ {
+  "id": "Q804",
+  "label": "Panama",
+  "aliases": [
+   "Republic of Panama",
+   "pa"
+  ],
+  "enTitle": "Panama",
+  "viewsSept2026": 66554,
+  "viewsErr": null
+ },
+ {
+  "id": "Q691",
+  "label": "Papua New Guinea",
+  "aliases": [
+   "Independent State of Papua New Guinea"
+  ],
+  "enTitle": "Papua New Guinea",
+  "viewsSept2026": 142888,
+  "viewsErr": null
+ },
+ {
+  "id": "Q733",
+  "label": "Paraguay",
+  "aliases": [
+   "Republic of Paraguay",
+   "Heart of South America"
+  ],
+  "enTitle": "Paraguay",
+  "viewsSept2026": 60153,
+  "viewsErr": null
+ },
+ {
+  "id": "Q148",
+  "label": "People's Republic of China",
+  "aliases": [
+   "The PRC",
+   "PR China",
+   "P.R.C.",
+   "China PR",
+   "Communist China",
+   "Red China",
+   "cn",
+   "the People's Republic of China"
+  ],
+  "enTitle": "China",
+  "viewsSept2026": 383030,
+  "viewsErr": null
+ },
+ {
+  "id": "Q419",
+  "label": "Peru",
+  "aliases": [
+   "Republica del Peru",
+   "Republic of Peru",
+   "pe",
+   "per"
+  ],
+  "enTitle": "Peru",
+  "viewsSept2026": 97426,
+  "viewsErr": null
+ },
+ {
+  "id": "Q928",
+  "label": "Philippines",
+  "aliases": [
+   "The Philippines",
+   "Philippine Islands",
+   "Republic of the Philippines",
+   "RP"
+  ],
+  "enTitle": "Philippines",
+  "viewsSept2026": 246887,
+  "viewsErr": null
+ },
+ {
+  "id": "Q36",
+  "label": "Poland",
+  "aliases": [
+   "Republic of Poland"
+  ],
+  "enTitle": "Poland",
+  "viewsSept2026": 199877,
+  "viewsErr": null
+ },
+ {
+  "id": "Q45",
+  "label": "Portugal",
+  "aliases": [
+   "Portuguese Republic",
+   "POR"
+  ],
+  "enTitle": "Portugal",
+  "viewsSept2026": 205985,
+  "viewsErr": null
+ },
+ {
+  "id": "Q846",
+  "label": "Qatar",
+  "aliases": [
+   "State of Qatar",
+   "qa",
+   "qat"
+  ],
+  "enTitle": "Qatar",
+  "viewsSept2026": 96181,
+  "viewsErr": null
+ },
+ {
+  "id": "Q971",
+  "label": "Republic of the Congo",
+  "aliases": [
+   "R\u00e9publique du Congo",
+   "Republique du Congo",
+   "Republic of Congo",
+   "Rep. Congo",
+   "Congo-Brazzaville",
+   "Congo Republic",
+   "Congo (Brazzaville)",
+   "cg",
+   "CGO",
+   "Congo"
+  ],
+  "enTitle": "Republic of the Congo",
+  "viewsSept2026": 55566,
+  "viewsErr": null
+ },
+ {
+  "id": "Q218",
+  "label": "Romania",
+  "aliases": [
+   "Rumania",
+   "Roumania"
+  ],
+  "enTitle": "Romania",
+  "viewsSept2026": 140760,
+  "viewsErr": null
+ },
+ {
+  "id": "Q159",
+  "label": "Russia",
+  "aliases": [
+   "Russian Federation"
+  ],
+  "enTitle": "Russia",
+  "viewsSept2026": 345961,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1037",
+  "label": "Rwanda",
+  "aliases": [
+   "The Land of a Thousand Hills",
+   "Republic of Rwanda"
+  ],
+  "enTitle": "Rwanda",
+  "viewsSept2026": 91613,
+  "viewsErr": null
+ },
+ {
+  "id": "Q763",
+  "label": "Saint Kitts and Nevis",
+  "aliases": [
+   "St. Kitts and Nevis",
+   "St. Kitts & Nevis",
+   "St Kitts and Nevis",
+   "St Kitts & Nevis",
+   "Saint Christopher and Nevis",
+   "Kitts and Nevis",
+   "Kitts & Nevis",
+   "Federation of Saint Kitts and Nevis",
+   "Federation of Saint Christopher and Nevis"
+  ],
+  "enTitle": "Saint Kitts and Nevis",
+  "viewsSept2026": 50189,
+  "viewsErr": null
+ },
+ {
+  "id": "Q760",
+  "label": "Saint Lucia",
+  "aliases": [
+   "lc",
+   "Iyonola",
+   "Hewanorra",
+   "lca",
+   "St. Lucia",
+   "St Lucia"
+  ],
+  "enTitle": "Saint Lucia",
+  "viewsSept2026": 60141,
+  "viewsErr": null
+ },
+ {
+  "id": "Q757",
+  "label": "Saint Vincent and the Grenadines",
+  "aliases": [
+   "vct",
+   "St. Vincent and the Grenadines",
+   "St Vincent and the Grenadines",
+   "vc",
+   "Saint Vincent",
+   "St Vincent",
+   "St. Vincent"
+  ],
+  "enTitle": "Saint Vincent and the Grenadines",
+  "viewsSept2026": 42919,
+  "viewsErr": null
+ },
+ {
+  "id": "Q683",
+  "label": "Samoa",
+  "aliases": [
+   "Independent State of Samoa",
+   "Western Samoa",
+   "SAM",
+   "ws"
+  ],
+  "enTitle": "Samoa",
+  "viewsSept2026": 57706,
+  "viewsErr": null
+ },
+ {
+  "id": "Q238",
+  "label": "San Marino",
+  "aliases": [
+   "Most Serene Republic of San Marino",
+   "sm"
+  ],
+  "enTitle": "San Marino",
+  "viewsSept2026": 106907,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1039",
+  "label": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+  "aliases": [
+   "st",
+   "S\u00e3o Tom\u00e9 og Pr\u00edncipe",
+   "Sao Tome & Principe",
+   "Democratic Republic of S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+   "Sao Tome and Principe"
+  ],
+  "enTitle": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+  "viewsSept2026": 55740,
+  "viewsErr": null
+ },
+ {
+  "id": "Q851",
+  "label": "Saudi Arabia",
+  "aliases": [
+   "Saudi",
+   "Kingdom of Saudi Arabia"
+  ],
+  "enTitle": "Saudi Arabia",
+  "viewsSept2026": 245237,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1041",
+  "label": "Senegal",
+  "aliases": [
+   "Republic of Senegal"
+  ],
+  "enTitle": "Senegal",
+  "viewsSept2026": 69419,
+  "viewsErr": null
+ },
+ {
+  "id": "Q403",
+  "label": "Serbia",
+  "aliases": [
+   "Republic of Serbia",
+   "RS"
+  ],
+  "enTitle": "Serbia",
+  "viewsSept2026": 164946,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1042",
+  "label": "Seychelles",
+  "aliases": [
+   "SEY",
+   "sc",
+   "Republic of Seychelles"
+  ],
+  "enTitle": "Seychelles",
+  "viewsSept2026": 109431,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1044",
+  "label": "Sierra Leone",
+  "aliases": [
+   "SLE",
+   "sl",
+   "Republic of Sierra Leone"
+  ],
+  "enTitle": "Sierra Leone",
+  "viewsSept2026": 100544,
+  "viewsErr": null
+ },
+ {
+  "id": "Q334",
+  "label": "Singapore",
+  "aliases": [
+   "S'pore",
+   "Republic of Singapore",
+   "Singapore City",
+   "Lion City",
+   "sg",
+   "Garden City"
+  ],
+  "enTitle": "Singapore",
+  "viewsSept2026": 311074,
+  "viewsErr": null
+ },
+ {
+  "id": "Q214",
+  "label": "Slovakia",
+  "aliases": [
+   "Slovak Republic",
+   "SK",
+   "SVK"
+  ],
+  "enTitle": "Slovakia",
+  "viewsSept2026": 122362,
+  "viewsErr": null
+ },
+ {
+  "id": "Q215",
+  "label": "Slovenia",
+  "aliases": [
+   "slo",
+   "Republic of Slovenia",
+   "Slovenija",
+   "svn",
+   "si"
+  ],
+  "enTitle": "Slovenia",
+  "viewsSept2026": 142022,
+  "viewsErr": null
+ },
+ {
+  "id": "Q685",
+  "label": "Solomon Islands",
+  "aliases": [
+   "sb",
+   "SOL",
+   "the Solomon Islands"
+  ],
+  "enTitle": "Solomon Islands",
+  "viewsSept2026": 46106,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1045",
+  "label": "Somalia",
+  "aliases": [
+   "Federal Republic of Somalia"
+  ],
+  "enTitle": "Somalia",
+  "viewsSept2026": 100180,
+  "viewsErr": null
+ },
+ {
+  "id": "Q258",
+  "label": "South Africa",
+  "aliases": [
+   "zaf",
+   "Republic of South Africa",
+   "R.S.A.",
+   "RSA",
+   "SA"
+  ],
+  "enTitle": "South Africa",
+  "viewsSept2026": 208199,
+  "viewsErr": null
+ },
+ {
+  "id": "Q884",
+  "label": "South Korea",
+  "aliases": [
+   "S. Korea",
+   "Rep. Korea",
+   "Korea Republic",
+   "Daehanminguk",
+   "Daehan Minguk",
+   "Hanguk",
+   "Korea (South)",
+   "Choson",
+   "Silla",
+   "Republic of Korea"
+  ],
+  "enTitle": "South Korea",
+  "viewsSept2026": 169179,
+  "viewsErr": null
+ },
+ {
+  "id": "Q958",
+  "label": "South Sudan",
+  "aliases": [
+   "Republic of South Sudan",
+   "Southern Sudan",
+   "SSD",
+   "ss"
+  ],
+  "enTitle": "South Sudan",
+  "viewsSept2026": 88080,
+  "viewsErr": null
+ },
+ {
+  "id": "Q29",
+  "label": "Spain",
+  "aliases": [
+   "Kingdom of Spain"
+  ],
+  "enTitle": "Spain",
+  "viewsSept2026": 221592,
+  "viewsErr": null
+ },
+ {
+  "id": "Q854",
+  "label": "Sri Lanka",
+  "aliases": [
+   "lke",
+   "lk",
+   "Lanka, Sri",
+   "Democratic Socialist Republic of Sri Lanka",
+   "Srilanka",
+   "sri",
+   "Taprobane",
+   "Serendib",
+   "ce",
+   "Ceylan",
+   "SRI"
+  ],
+  "enTitle": "Sri Lanka",
+  "viewsSept2026": 180084,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1049",
+  "label": "Sudan",
+  "aliases": [
+   "the Sudan",
+   "SUD",
+   "Soudan",
+   "sd",
+   "Republic of the Sudan",
+   "Republic of Sudan",
+   "North Sudan",
+   "as-S\u016bd\u0101n",
+   "as-Sudan",
+   "al-Sudan"
+  ],
+  "enTitle": "Sudan",
+  "viewsSept2026": 99649,
+  "viewsErr": null
+ },
+ {
+  "id": "Q730",
+  "label": "Suriname",
+  "aliases": [
+   "Surrinam",
+   "Republic of Suriname",
+   "Republic of Surinam",
+   "Dutch Guiana",
+   "Surinam",
+   "sr"
+  ],
+  "enTitle": "Suriname",
+  "viewsSept2026": 122353,
+  "viewsErr": null
+ },
+ {
+  "id": "Q34",
+  "label": "Sweden",
+  "aliases": [
+   "Swedish Kingdom",
+   "se",
+   "Kingdom of Sweden"
+  ],
+  "enTitle": "Sweden",
+  "viewsSept2026": 189070,
+  "viewsErr": null
+ },
+ {
+  "id": "Q39",
+  "label": "Switzerland",
+  "aliases": [
+   "Swiss Confederation",
+   "Confoederatio Helvetica",
+   "Swiss"
+  ],
+  "enTitle": "Switzerland",
+  "viewsSept2026": 185587,
+  "viewsErr": null
+ },
+ {
+  "id": "Q858",
+  "label": "Syria",
+  "aliases": [
+   "Syrian Arab Republic",
+   "S\u016briy\u0101"
+  ],
+  "enTitle": "Syria",
+  "viewsSept2026": 143540,
+  "viewsErr": null
+ },
+ {
+  "id": "Q865",
+  "label": "Taiwan",
+  "aliases": [
+   "Chinese Republic",
+   "China, Republic of",
+   "Nationalist China",
+   "Republic of China",
+   "TW",
+   "Republic of China (Taiwan)",
+   "Taiwan",
+   "TWN",
+   "Chinese Taipei",
+   "ROC",
+   "The ROC",
+   "Chunghwa Minkwo"
+  ],
+  "enTitle": "Taiwan",
+  "viewsSept2026": 239987,
+  "viewsErr": null
+ },
+ {
+  "id": "Q863",
+  "label": "Tajikistan",
+  "aliases": [
+   "tj",
+   "Republic of Tajikistan"
+  ],
+  "enTitle": "Tajikistan",
+  "viewsSept2026": 89617,
+  "viewsErr": null
+ },
+ {
+  "id": "Q924",
+  "label": "Tanzania",
+  "aliases": [
+   "United Republic of Tanganyika and Zanzibar",
+   "tza",
+   "tz",
+   "Tanzania, United Republic of",
+   "United Republic of Tanzania"
+  ],
+  "enTitle": "Tanzania",
+  "viewsSept2026": 118279,
+  "viewsErr": null
+ },
+ {
+  "id": "Q869",
+  "label": "Thailand",
+  "aliases": [
+   "Thai",
+   "th",
+   "Ratcha-anachak Thai",
+   "Prathet Thai",
+   "The Kingdom of Thailand",
+   "The Kingdom of Siam",
+   "Kingdom of Thailand",
+   "Kingdom of Siam"
+  ],
+  "enTitle": "Thailand",
+  "viewsSept2026": 161106,
+  "viewsErr": null
+ },
+ {
+  "id": "Q778",
+  "label": "The Bahamas",
+  "aliases": [
+   "Bahamas, The",
+   "Commonwealth of The Bahamas",
+   "Commonwealth of the Bahamas",
+   "Bahama Islands",
+   "bs",
+   "Bahamas"
+  ],
+  "enTitle": "The Bahamas",
+  "viewsSept2026": 91036,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1005",
+  "label": "The Gambia",
+  "aliases": [
+   "Republic of the Gambia",
+   "Islamic Republic of the Gambia",
+   "Gambia"
+  ],
+  "enTitle": "The Gambia",
+  "viewsSept2026": 64986,
+  "viewsErr": null
+ },
+ {
+  "id": "Q574",
+  "label": "Timor-Leste",
+  "aliases": [
+   "Democratic Republic of Timor-Leste",
+   "TL",
+   "East Timor"
+  ],
+  "enTitle": "Timor-Leste",
+  "viewsSept2026": 79824,
+  "viewsErr": null
+ },
+ {
+  "id": "Q945",
+  "label": "Togo",
+  "aliases": [
+   "Togolese Republic",
+   "tg"
+  ],
+  "enTitle": "Togo",
+  "viewsSept2026": 50493,
+  "viewsErr": null
+ },
+ {
+  "id": "Q678",
+  "label": "Tonga",
+  "aliases": [
+   "Kingdom of Tonga",
+   "TGA",
+   "to",
+   "Friendly Islands",
+   "Tonga Islands"
+  ],
+  "enTitle": "Tonga",
+  "viewsSept2026": 56857,
+  "viewsErr": null
+ },
+ {
+  "id": "Q754",
+  "label": "Trinidad and Tobago",
+  "aliases": [
+   "Trinidad & Tobago",
+   "tt",
+   "Republic of Trinidad and Tobago"
+  ],
+  "enTitle": "Trinidad and Tobago",
+  "viewsSept2026": 84538,
+  "viewsErr": null
+ },
+ {
+  "id": "Q948",
+  "label": "Tunisia",
+  "aliases": [
+   "Tunisian Republic",
+   "Republic of Tunisia",
+   "tn"
+  ],
+  "enTitle": "Tunisia",
+  "viewsSept2026": 91137,
+  "viewsErr": null
+ },
+ {
+  "id": "Q43",
+  "label": "Turkey",
+  "aliases": [
+   "Republic of T\u00fcrkiye",
+   "Republic of Turkey"
+  ],
+  "enTitle": "Turkey",
+  "viewsSept2026": 252874,
+  "viewsErr": null
+ },
+ {
+  "id": "Q874",
+  "label": "Turkmenistan",
+  "aliases": [
+   "Turkmenia",
+   "tm",
+   "TKM"
+  ],
+  "enTitle": "Turkmenistan",
+  "viewsSept2026": 118266,
+  "viewsErr": null
+ },
+ {
+  "id": "Q672",
+  "label": "Tuvalu",
+  "aliases": [
+   "Ellice Islands",
+   "TUV",
+   "tv"
+  ],
+  "enTitle": "Tuvalu",
+  "viewsSept2026": 57599,
+  "viewsErr": null
+ },
+ {
+  "id": "Q1036",
+  "label": "Uganda",
+  "aliases": [
+   "Ugandah",
+   "ug",
+   "The Republic of Uganda",
+   "Republic of Uganda",
+   "Pearl of Africa",
+   "Ouganda",
+   "+256"
+  ],
+  "enTitle": "Uganda",
+  "viewsSept2026": 107251,
+  "viewsErr": null
+ },
+ {
+  "id": "Q212",
+  "label": "Ukraine",
+  "aliases": [
+   "Ukra\u00efna",
+   "Ukr.",
+   "Ukraina",
+   "Ukrainia"
+  ],
+  "enTitle": "Ukraine",
+  "viewsSept2026": 181098,
+  "viewsErr": null
+ },
+ {
+  "id": "Q878",
+  "label": "United Arab Emirates",
+  "aliases": [
+   "U.A.E.",
+   "the UAE",
+   "the U.A.E.",
+   "the Emirates",
+   "the United Arab Emirates",
+   "ae",
+   "Emirates"
+  ],
+  "enTitle": "United Arab Emirates",
+  "viewsSept2026": 223172,
+  "viewsErr": null
+ },
+ {
+  "id": "Q145",
+  "label": "United Kingdom",
+  "aliases": [
+   "United Kingdom of Great Britain and Northern Ireland",
+   "U K",
+   "Great Britain and Northern Ireland",
+   "G B",
+   "the United Kingdom",
+   "the UK",
+   "the United Kingdom of Great Britain and Northern Ireland",
+   "Great Britain"
+  ],
+  "enTitle": "United Kingdom",
+  "viewsSept2026": 540018,
+  "viewsErr": null
+ },
+ {
+  "id": "Q30",
+  "label": "United States",
+  "aliases": [
+   "Merica",
+   "Murica",
+   "the USA",
+   "United States of America",
+   "the United States",
+   "US of America",
+   "US of A",
+   "U.S. of America",
+   "U. S. A.",
+   "U. S.",
+   "the US of America",
+   "the US of A"
+  ],
+  "enTitle": "United States",
+  "viewsSept2026": 1520090,
+  "viewsErr": null
+ },
+ {
+  "id": "Q77",
+  "label": "Uruguay",
+  "aliases": [
+   "Oriental Republic of Uruguay",
+   "Eastern Republic of Uruguay",
+   "URU",
+   "uy"
+  ],
+  "enTitle": "Uruguay",
+  "viewsSept2026": 88693,
+  "viewsErr": null
+ },
+ {
+  "id": "Q265",
+  "label": "Uzbekistan",
+  "aliases": [
+   "Republic of Uzbekistan"
+  ],
+  "enTitle": "Uzbekistan",
+  "viewsSept2026": 164112,
+  "viewsErr": null
+ },
+ {
+  "id": "Q686",
+  "label": "Vanuatu",
+  "aliases": [
+   "vut",
+   "Republic of Vanuatu",
+   "vu",
+   "VAN",
+   "van"
+  ],
+  "enTitle": "Vanuatu",
+  "viewsSept2026": 77387,
+  "viewsErr": null
+ },
+ {
+  "id": "Q237",
+  "label": "Vatican City",
+  "aliases": [
+   "Citt\u00e0 del Vaticano",
+   "Papal State",
+   "Holy See",
+   "The Vatican",
+   "Vatican",
+   "Vatican City State",
+   "Status Civitatis Vaticanae",
+   "Stato della Citt\u00e0 del Vaticano",
+   "State of Vatican City"
+  ],
+  "enTitle": "Vatican City",
+  "viewsSept2026": 108238,
+  "viewsErr": null
+ },
+ {
+  "id": "Q717",
+  "label": "Venezuela",
+  "aliases": [
+   "BR Venezuela",
+   "Bolivarian Republic of Venezuela",
+   "Republic of Venezuela"
+  ],
+  "enTitle": "Venezuela",
+  "viewsSept2026": 106503,
+  "viewsErr": null
+ },
+ {
+  "id": "Q881",
+  "label": "Vietnam",
+  "aliases": [
+   "Vi\u1ec7t Nam",
+   "Socialist Republic of Vietnam",
+   "Socialist Republic of Viet Nam",
+   "VIE",
+   "SRV",
+   "Viet Nam",
+   "VN",
+   "VNM"
+  ],
+  "enTitle": "Vietnam",
+  "viewsSept2026": 187714,
+  "viewsErr": null
+ },
+ {
+  "id": "Q805",
+  "label": "Yemen",
+  "aliases": [
+   "Republic of Yemen",
+   "Rep. Yemen",
+   "ye"
+  ],
+  "enTitle": "Yemen",
+  "viewsSept2026": 322057,
+  "viewsErr": null
+ },
+ {
+  "id": "Q953",
+  "label": "Zambia",
+  "aliases": [
+   "Republic of Zambia",
+   "Zed"
+  ],
+  "enTitle": "Zambia",
+  "viewsSept2026": 60000,
+  "viewsErr": null
+ },
+ {
+  "id": "Q954",
+  "label": "Zimbabwe",
+  "aliases": [
+   "Zimbabwe Rhodesia",
+   "Southern Rhodesia",
+   "Rhodesia",
+   "Republic of Zimbabwe"
+  ],
+  "enTitle": "Zimbabwe",
+  "viewsSept2026": 125629,
+  "viewsErr": null
+ }
+]

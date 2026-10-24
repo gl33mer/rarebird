@@ -1,0 +1,542 @@
+[
+ {
+  "id": "Q97439162",
+  "label": "Stellantis",
+  "enTitle": "Stellantis",
+  "viewsSept2026": 102647
+ },
+ {
+  "id": "Q26678",
+  "label": "BMW",
+  "enTitle": "BMW",
+  "viewsSept2026": 83299
+ },
+ {
+  "id": "Q27423",
+  "label": "BYD Auto",
+  "enTitle": "BYD Auto",
+  "viewsSept2026": 76132
+ },
+ {
+  "id": "Q53268",
+  "label": "Toyota",
+  "enTitle": "Toyota",
+  "viewsSept2026": 71611
+ },
+ {
+  "id": "Q44294",
+  "label": "Ford Motor Company",
+  "enTitle": "Ford Motor Company",
+  "viewsSept2026": 71531
+ },
+ {
+  "id": "Q81965",
+  "label": "General Motors",
+  "enTitle": "General Motors",
+  "viewsSept2026": 69626
+ },
+ {
+  "id": "Q246",
+  "label": "Volkswagen",
+  "enTitle": "Volkswagen",
+  "viewsSept2026": 60556
+ },
+ {
+  "id": "Q36008",
+  "label": "Mercedes-Benz",
+  "enTitle": "Mercedes-Benz",
+  "viewsSept2026": 60318
+ },
+ {
+  "id": "Q156578",
+  "label": "Volkswagen Group",
+  "enTitle": "Volkswagen Group",
+  "viewsSept2026": 59657
+ },
+ {
+  "id": "Q27586",
+  "label": "Ferrari",
+  "enTitle": "Ferrari",
+  "viewsSept2026": 52711
+ },
+ {
+  "id": "Q35886",
+  "label": "Lamborghini",
+  "enTitle": "Lamborghini",
+  "viewsSept2026": 50180
+ },
+ {
+  "id": "Q40993",
+  "label": "Porsche",
+  "enTitle": "Porsche",
+  "viewsSept2026": 49920
+ },
+ {
+  "id": "Q739000",
+  "label": "Geely",
+  "enTitle": "Geely",
+  "viewsSept2026": 48223
+ },
+ {
+  "id": "Q7338847",
+  "label": "Rivian Automotive",
+  "enTitle": "Rivian",
+  "viewsSept2026": 47079
+ },
+ {
+  "id": "Q9584",
+  "label": "Honda",
+  "enTitle": "Honda",
+  "viewsSept2026": 46943
+ },
+ {
+  "id": "Q27401",
+  "label": "Bugatti",
+  "enTitle": "Bugatti",
+  "viewsSept2026": 46185
+ },
+ {
+  "id": "Q30055",
+  "label": "Jaguar Cars",
+  "enTitle": "Jaguar Cars",
+  "viewsSept2026": 44667
+ },
+ {
+  "id": "Q29637",
+  "label": "Škoda Auto",
+  "enTitle": "Škoda Auto",
+  "viewsSept2026": 43665
+ },
+ {
+  "id": "Q4047174",
+  "label": "Polestar",
+  "enTitle": "Polestar",
+  "viewsSept2026": 42412
+ },
+ {
+  "id": "Q591001",
+  "label": "Chery",
+  "enTitle": "Chery",
+  "viewsSept2026": 42411
+ },
+ {
+  "id": "Q23317",
+  "label": "Audi AG",
+  "enTitle": "Audi",
+  "viewsSept2026": 40508
+ },
+ {
+  "id": "Q215293",
+  "label": "Volvo Cars",
+  "enTitle": "Volvo Cars",
+  "viewsSept2026": 40239
+ },
+ {
+  "id": "Q55931",
+  "label": "Hyundai Motor Company",
+  "enTitle": "Hyundai Motor Company",
+  "viewsSept2026": 39165
+ },
+ {
+  "id": "Q35349",
+  "label": "Kia",
+  "enTitle": "Kia",
+  "viewsSept2026": 38872
+ },
+ {
+  "id": "Q20165",
+  "label": "Nissan",
+  "enTitle": "Nissan",
+  "viewsSept2026": 38420
+ },
+ {
+  "id": "Q27074",
+  "label": "Aston Martin Lagonda",
+  "enTitle": "Aston Martin",
+  "viewsSept2026": 36841
+ },
+ {
+  "id": "Q35919",
+  "label": "Lexus",
+  "enTitle": "Lexus",
+  "viewsSept2026": 36681
+ },
+ {
+  "id": "Q35907",
+  "label": "Land Rover",
+  "enTitle": "Land Rover",
+  "viewsSept2026": 36419
+ },
+ {
+  "id": "Q35996",
+  "label": "Mazda",
+  "enTitle": "Mazda",
+  "viewsSept2026": 36100
+ },
+ {
+  "id": "Q172741",
+  "label": "Subaru",
+  "enTitle": "Subaru",
+  "viewsSept2026": 34514
+ },
+ {
+  "id": "Q29570",
+  "label": "Chevrolet",
+  "enTitle": "Chevrolet",
+  "viewsSept2026": 34276
+ },
+ {
+  "id": "Q35989",
+  "label": "Maybach",
+  "enTitle": "Maybach",
+  "viewsSept2026": 33876
+ },
+ {
+  "id": "Q181114",
+  "label": "Stellantis North America",
+  "enTitle": "Chrysler",
+  "viewsSept2026": 33857
+ },
+ {
+  "id": "Q6686",
+  "label": "Renault",
+  "enTitle": "Renault",
+  "viewsSept2026": 33598
+ },
+ {
+  "id": "Q1351854",
+  "label": "McLaren Automotive",
+  "enTitle": "McLaren Automotive",
+  "viewsSept2026": 33552
+ },
+ {
+  "id": "Q27436",
+  "label": "Cadillac",
+  "enTitle": "Cadillac",
+  "viewsSept2026": 32352
+ },
+ {
+  "id": "Q30113",
+  "label": "Jeep",
+  "enTitle": "Jeep",
+  "viewsSept2026": 30681
+ },
+ {
+  "id": "Q48957",
+  "label": "Saab Automobile",
+  "enTitle": "Saab Automobile",
+  "viewsSept2026": 30404
+ },
+ {
+  "id": "Q28027517",
+  "label": "Lucid Motors",
+  "enTitle": "Lucid Motors",
+  "viewsSept2026": 30306
+ },
+ {
+  "id": "Q35935",
+  "label": "Lotus Cars",
+  "enTitle": "Lotus Cars",
+  "viewsSept2026": 28729
+ },
+ {
+  "id": "Q27564",
+  "label": "Dodge",
+  "enTitle": "Dodge",
+  "viewsSept2026": 28551
+ },
+ {
+  "id": "Q8352675",
+  "label": "Cupra",
+  "enTitle": "Cupra (marque)",
+  "viewsSept2026": 28472
+ },
+ {
+  "id": "Q26921",
+  "label": "Alfa Romeo",
+  "enTitle": "Alfa Romeo",
+  "viewsSept2026": 28030
+ },
+ {
+  "id": "Q27224",
+  "label": "Bentley",
+  "enTitle": "Bentley",
+  "viewsSept2026": 27914
+ },
+ {
+  "id": "Q106621124",
+  "label": "Zeekr",
+  "enTitle": "Zeekr",
+  "viewsSept2026": 27899
+ },
+ {
+  "id": "Q1881443",
+  "label": "MG Motor",
+  "enTitle": "MG Motor",
+  "viewsSept2026": 27873
+ },
+ {
+  "id": "Q40966",
+  "label": "Opel",
+  "enTitle": "Opel",
+  "viewsSept2026": 27822
+ },
+ {
+  "id": "Q679888",
+  "label": "Rolls-Royce Limited",
+  "enTitle": "Rolls-Royce Limited",
+  "viewsSept2026": 27501
+ },
+ {
+  "id": "Q234803",
+  "label": "Rolls-Royce Motor Cars",
+  "enTitle": "Rolls-Royce Motor Cars",
+  "viewsSept2026": 27449
+ },
+ {
+  "id": "Q181642",
+  "label": "Suzuki Motor Corporation",
+  "enTitle": "Suzuki",
+  "viewsSept2026": 27078
+ },
+ {
+  "id": "Q35962",
+  "label": "Maserati",
+  "enTitle": "Maserati",
+  "viewsSept2026": 26318
+ },
+ {
+  "id": "Q35594",
+  "label": "Koenigsegg",
+  "enTitle": "Koenigsegg",
+  "viewsSept2026": 25807
+ },
+ {
+  "id": "Q27530",
+  "label": "Mercedes-Benz Group",
+  "enTitle": "Mercedes-Benz Group",
+  "viewsSept2026": 25735
+ },
+ {
+  "id": "Q6746",
+  "label": "Citroën",
+  "enTitle": "Citroën",
+  "viewsSept2026": 25201
+ },
+ {
+  "id": "Q36033",
+  "label": "Mitsubishi Motors",
+  "enTitle": "Mitsubishi Motors",
+  "viewsSept2026": 24608
+ },
+ {
+  "id": "Q59187",
+  "label": "Vauxhall",
+  "enTitle": "Vauxhall Motors",
+  "viewsSept2026": 24521
+ },
+ {
+  "id": "Q21451523",
+  "label": "Genesis Motor",
+  "enTitle": "Genesis Motor",
+  "viewsSept2026": 24394
+ },
+ {
+  "id": "Q27415",
+  "label": "Buick",
+  "enTitle": "Buick",
+  "viewsSept2026": 24357
+ },
+ {
+  "id": "Q848059",
+  "label": "Mahindra & Mahindra",
+  "enTitle": "Mahindra & Mahindra",
+  "viewsSept2026": 24329
+ },
+ {
+  "id": "Q27597",
+  "label": "Fiat",
+  "enTitle": "Fiat",
+  "viewsSept2026": 24059
+ },
+ {
+  "id": "Q963718",
+  "label": "Maruti Suzuki",
+  "enTitle": "Maruti Suzuki",
+  "viewsSept2026": 23294
+ },
+ {
+  "id": "Q188217",
+  "label": "SEAT",
+  "enTitle": "SEAT",
+  "viewsSept2026": 23221
+ },
+ {
+  "id": "Q27460",
+  "label": "Dacia",
+  "enTitle": "Automobile Dacia",
+  "viewsSept2026": 22978
+ },
+ {
+  "id": "Q40990",
+  "label": "Pontiac",
+  "enTitle": "Pontiac (automobile)",
+  "viewsSept2026": 22526
+ },
+ {
+  "id": "Q749239",
+  "label": "Pagani Automobili",
+  "enTitle": "Pagani Automobili",
+  "viewsSept2026": 21874
+ },
+ {
+  "id": "Q26966",
+  "label": "Mercedes-AMG",
+  "enTitle": "Mercedes-AMG",
+  "viewsSept2026": 20035
+ },
+ {
+  "id": "Q204327",
+  "label": "Oldsmobile",
+  "enTitle": "Oldsmobile",
+  "viewsSept2026": 19933
+ },
+ {
+  "id": "Q29803",
+  "label": "Isuzu",
+  "enTitle": "Isuzu",
+  "viewsSept2026": 19699
+ },
+ {
+  "id": "Q215657",
+  "label": "KTM",
+  "enTitle": "KTM",
+  "viewsSept2026": 19553
+ },
+ {
+  "id": "Q99510294",
+  "label": "Leapmotor",
+  "enTitle": "Leapmotor",
+  "viewsSept2026": 19375
+ },
+ {
+  "id": "Q35676",
+  "label": "Lada",
+  "enTitle": "Lada",
+  "viewsSept2026": 19145
+ },
+ {
+  "id": "Q202708",
+  "label": "American Motors Corporation",
+  "enTitle": "American Motors Corporation",
+  "viewsSept2026": 18948
+ },
+ {
+  "id": "Q216796",
+  "label": "Lincoln Motor Company",
+  "enTitle": "Lincoln Motor Company",
+  "viewsSept2026": 18655
+ },
+ {
+  "id": "Q116232",
+  "label": "Mini",
+  "enTitle": "Mini (marque)",
+  "viewsSept2026": 18287
+ },
+ {
+  "id": "Q63035278",
+  "label": "XPeng",
+  "enTitle": "XPeng",
+  "viewsSept2026": 18085
+ },
+ {
+  "id": "Q28993",
+  "label": "GMC",
+  "enTitle": "GMC (automobile)",
+  "viewsSept2026": 18033
+ },
+ {
+  "id": "Q107424384",
+  "label": "Bugatti Rimac",
+  "enTitle": "Bugatti Rimac",
+  "viewsSept2026": 18032
+ },
+ {
+  "id": "Q29281",
+  "label": "Holden",
+  "enTitle": "Holden",
+  "viewsSept2026": 17845
+ },
+ {
+  "id": "Q156490",
+  "label": "smart",
+  "enTitle": "Smart (marque)",
+  "viewsSept2026": 17533
+ },
+ {
+  "id": "Q53097",
+  "label": "Acura",
+  "enTitle": "Acura",
+  "viewsSept2026": 17426
+ },
+ {
+  "id": "Q165708",
+  "label": "Ram Trucks",
+  "enTitle": "Ram Trucks",
+  "viewsSept2026": 17344
+ },
+ {
+  "id": "Q98145436",
+  "label": "Jetour",
+  "enTitle": "Jetour",
+  "viewsSept2026": 17154
+ },
+ {
+  "id": "Q26944",
+  "label": "Alpine",
+  "enTitle": "Automobiles Alpine",
+  "viewsSept2026": 16067
+ },
+ {
+  "id": "Q938876",
+  "label": "Studebaker",
+  "enTitle": "Studebaker",
+  "viewsSept2026": 15980
+ },
+ {
+  "id": "Q1117001",
+  "label": "Great Wall Motor",
+  "enTitle": "Great Wall Motor",
+  "viewsSept2026": 15506
+ },
+ {
+  "id": "Q7334368",
+  "label": "Rimac Automobili",
+  "enTitle": "Rimac Automobili",
+  "viewsSept2026": 15456
+ },
+ {
+  "id": "Q29714",
+  "label": "Infiniti",
+  "enTitle": "Infiniti",
+  "viewsSept2026": 15376
+ },
+ {
+  "id": "Q29366",
+  "label": "Changan Automobile",
+  "enTitle": "Changan Automobile",
+  "viewsSept2026": 15374
+ },
+ {
+  "id": "Q118646009",
+  "label": "Omoda",
+  "enTitle": "Omoda",
+  "viewsSept2026": 15208
+ },
+ {
+  "id": "Q35896",
+  "label": "Lancia",
+  "enTitle": "Lancia",
+  "viewsSept2026": 15007
+ }
+]

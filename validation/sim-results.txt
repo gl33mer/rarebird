@@ -1,0 +1,60 @@
+
+=== baseline: 30s timer, 15% typo rate (4000 games x 5 rounds) ===
+┌─────────┬──────────────┬─────────┬──────────┐
+│ (index) │ strat        │ mean    │ winShare │
+├─────────┼──────────────┼─────────┼──────────┤
+│ 0       │ 'deep'       │ '302.3' │ '48.6%'  │
+│ 1       │ 'smart'      │ '294.8' │ '49.3%'  │
+│ 2       │ 'random'     │ '145.6' │ '2.0%'   │
+│ 3       │ 'mainstream' │ '113.6' │ '0.0%'   │
+│ 4       │ 'obvious'    │ '48.0'  │ '0.0%'   │
+└─────────┴──────────────┴─────────┴──────────┘
+head-to-head (wins): obvious>mainstream: 199-3783  obvious>smart: 0-4000  obvious>deep: 18-3982  obvious>random: 180-3784  mainstream>smart: 38-3961  mainstream>deep: 162-3820  mainstream>random: 1430-2444  smart>deep: 2009-1937  smart>random: 3689-275  deep>random: 3531-451
+
+=== fast: 20s timer (4000 games x 5 rounds) ===
+┌─────────┬──────────────┬─────────┬──────────┐
+│ (index) │ strat        │ mean    │ winShare │
+├─────────┼──────────────┼─────────┼──────────┤
+│ 0       │ 'smart'      │ '245.2' │ '66.9%'  │
+│ 1       │ 'deep'       │ '166.3' │ '20.9%'  │
+│ 2       │ 'random'     │ '139.0' │ '11.5%'  │
+│ 3       │ 'mainstream' │ '113.6' │ '0.1%'   │
+│ 4       │ 'obvious'    │ '48.0'  │ '0.5%'   │
+└─────────┴──────────────┴─────────┴──────────┘
+head-to-head (wins): obvious>mainstream: 199-3783  obvious>smart: 18-3982  obvious>deep: 344-3656  obvious>random: 216-3748  mainstream>smart: 218-3763  mainstream>deep: 1107-2803  mainstream>random: 1538-2336  smart>deep: 3025-938  smart>random: 3364-581  deep>random: 2369-1559
+
+=== relaxed: 45s timer (4000 games x 5 rounds) ===
+┌─────────┬──────────────┬─────────┬──────────┐
+│ (index) │ strat        │ mean    │ winShare │
+├─────────┼──────────────┼─────────┼──────────┤
+│ 0       │ 'deep'       │ '353.5' │ '66.1%'  │
+│ 1       │ 'smart'      │ '300.7' │ '33.0%'  │
+│ 2       │ 'random'     │ '145.6' │ '0.9%'   │
+│ 3       │ 'mainstream' │ '113.6' │ '0.0%'   │
+│ 4       │ 'obvious'    │ '48.0'  │ '0.0%'   │
+└─────────┴──────────────┴─────────┴──────────┘
+head-to-head (wins): obvious>mainstream: 199-3783  obvious>smart: 0-4000  obvious>deep: 0-4000  obvious>random: 180-3784  mainstream>smart: 38-3961  mainstream>deep: 0-4000  mainstream>random: 1430-2444  smart>deep: 1282-2628  smart>random: 3689-275  deep>random: 3890-110
+
+=== clean typists: 5% typo rate (4000 games x 5 rounds) ===
+┌─────────┬──────────────┬─────────┬──────────┐
+│ (index) │ strat        │ mean    │ winShare │
+├─────────┼──────────────┼─────────┼──────────┤
+│ 0       │ 'deep'       │ '337.4' │ '54.3%'  │
+│ 1       │ 'smart'      │ '333.0' │ '44.4%'  │
+│ 2       │ 'random'     │ '171.9' │ '1.3%'   │
+│ 3       │ 'mainstream' │ '134.5' │ '0.0%'   │
+│ 4       │ 'obvious'    │ '49.1'  │ '0.0%'   │
+└─────────┴──────────────┴─────────┴──────────┘
+head-to-head (wins): obvious>mainstream: 1-3981  obvious>smart: 0-4000  obvious>deep: 18-3982  obvious>random: 35-3965  mainstream>smart: 0-4000  mainstream>deep: 104-3896  mainstream>random: 1144-2734  smart>deep: 1775-2155  smart>random: 3807-192  deep>random: 3600-383
+
+=== sloppy: 30% typo rate (4000 games x 5 rounds) ===
+┌─────────┬──────────────┬─────────┬──────────┐
+│ (index) │ strat        │ mean    │ winShare │
+├─────────┼──────────────┼─────────┼──────────┤
+│ 0       │ 'smart'      │ '248.5' │ '58.3%'  │
+│ 1       │ 'deep'       │ '245.3' │ '39.3%'  │
+│ 2       │ 'random'     │ '109.6' │ '2.4%'   │
+│ 3       │ 'mainstream' │ '95.1'  │ '0.0%'   │
+│ 4       │ 'obvious'    │ '40.7'  │ '0.0%'   │
+└─────────┴──────────────┴─────────┴──────────┘
+head-to-head (wins): obvious>mainstream: 380-3620  obvious>smart: 0-4000  obvious>deep: 0-4000  obvious>random: 382-3524  mainstream>smart: 191-3809  mainstream>deep: 192-3714  mainstream>random: 1618-2287  smart>deep: 2284-1620  smart>random: 3902-97  deep>random: 3143-857
