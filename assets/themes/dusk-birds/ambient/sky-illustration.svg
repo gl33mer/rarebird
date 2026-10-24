@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04060e"/><stop offset="0.3" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#16213e"/><stop offset="0.78" stop-color="#24365f"/>
+      <stop offset="1" stop-color="#2b3a67"/>
+    </linearGradient>
+    <radialGradient id="dmoon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f4ecd8"/><stop offset="0.7" stop-color="#e8dfc8" stop-opacity="0.9"/><stop offset="1" stop-color="#e8dfc8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#dsky)"/>
+  <circle cx="820" cy="300" r="150" fill="url(#dmoon)"/>
+  <circle cx="820" cy="300" r="58" fill="#f4ecd8"/>
+  <circle cx="800" cy="285" r="10" fill="#d8cfb5"/><circle cx="838" cy="312" r="7" fill="#d8cfb5"/>
+  <g fill="#eef3f7">
+    <circle cx="120" cy="120" r="2.5"/><circle cx="300" cy="200" r="1.8" opacity="0.7"/><circle cx="480" cy="90" r="2.2"/>
+    <circle cx="650" cy="160" r="1.5" opacity="0.6"/><circle cx="980" cy="110" r="2"/><circle cx="80" cy="420" r="1.6" opacity="0.5"/>
+    <circle cx="420" cy="360" r="1.9" opacity="0.7"/><circle cx="720" cy="430" r="1.4" opacity="0.5"/><circle cx="1000" cy="380" r="1.7" opacity="0.6"/>
+    <path d="M200 320 l5 12 12 5 -12 5 -5 12 -5 -12 -12 -5 12 -5 Z" opacity="0.9"/>
+    <path d="M560 260 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z" opacity="0.7"/>
+  </g>
+  <g fill="#1a2745">
+    <path d="M0 700 Q160 640 340 672 Q520 700 700 664 Q880 636 1080 676 L1080 760 L0 760 Z" opacity="0.5"/>
+    <path d="M0 900 Q200 850 400 880 Q620 912 820 872 Q960 848 1080 880 L1080 980 L0 980 Z" opacity="0.35"/>
+  </g>
+  <g fill="#c9d8ec" opacity="0.16">
+    <ellipse cx="280" cy="1060" rx="200" ry="46"/><ellipse cx="700" cy="1120" rx="240" ry="52"/><ellipse cx="520" cy="1180" rx="180" ry="40"/>
+  </g>
+  <g fill="#ffd166" opacity="0.2">
+    <ellipse cx="540" cy="1640" rx="420" ry="120"/>
+  </g>
+</svg>

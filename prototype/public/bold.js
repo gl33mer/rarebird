@@ -38,12 +38,16 @@ export const BOLD = {
     const u = rel => this._art.url(rel);
     const layers = themeId === 'cosmos'
       ? [
+          { src: u('themes/cosmic-voyage/ambient/nebula-scene.svg'), depth: 0.12, top: 0, h: '100%', op: 1, cover: true }, // illustrated base (art density)
           { src: u('themes/cosmic-voyage/ambient/nebula-1.svg'), depth: 0.25, top: '-4%', h: '46%', op: 0.55 },
           { src: u('themes/cosmic-voyage/ambient/planet-surface.svg'), depth: 0.85, top: 'auto', h: '15%', op: 1 },
+          { src: u('themes/cosmic-voyage/ambient/moon-surface.svg'), depth: 0.92, top: 'auto', h: '10%', op: 1 },
           { src: u('themes/cosmic-voyage/ambient/starfield-tile.svg'), depth: 0.5, top: 0, h: '100%', op: 0.9, tile: true },
         ]
       : [
+          { src: u('themes/dusk-birds/ambient/sky-illustration.svg'), depth: 0.12, top: 0, h: '100%', op: 1, cover: true }, // illustrated base (art density)
           { src: u('themes/dusk-birds/ambient/hills-far.svg'), depth: 0.55, top: 'auto', h: '19%', op: 1 },
+          { src: u('themes/dusk-birds/ambient/meadow-near.svg'), depth: 0.78, top: 'auto', h: '11%', op: 1 },
           { src: u('themes/dusk-birds/ambient/hills-near.svg'), depth: 0.9, top: 'auto', h: '13%', op: 1 },
           { src: u('themes/dusk-birds/ambient/tree-line.svg'), depth: 0.7, top: 'auto', h: '9%', op: 1 },
         ];
@@ -53,7 +57,7 @@ export const BOLD = {
       img.className = 'bold-layer';
       img.src = L.src; img.alt = '';
       img.style.opacity = String(L.op);
-      if (L.tile) img.style.cssText += 'width:100%;height:100%;object-fit:cover;';
+      if (L.tile || L.cover) img.style.cssText += 'width:100%;height:100%;object-fit:cover;';
       else {
         img.style.cssText += `left:0;right:0;width:100%;${L.top === 'auto' ? `bottom:0;height:${L.h};object-fit:fill;` : `top:${L.top};height:${L.h};object-fit:cover;`}`;
         img.style.animation = `boldDrift${Math.ceil(L.depth * 3)} ${(46 - L.depth * 22).toFixed(0)}s ease-in-out infinite alternate`;

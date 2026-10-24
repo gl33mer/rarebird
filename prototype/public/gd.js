@@ -76,11 +76,22 @@ export const GD = {
       px.style.bottom = '-160px';
       sky.appendChild(px);
       setTimeout(() => { px.style.bottom = '6%'; }, 400);
+      if (!reduced()) { // astronaut drift (art density actor variety)
+        const astro = document.createElement('img');
+        astro.className = 'gd-actor gd-astro'; astro.src = u('themes/cosmic-voyage/ambient/actors/astronaut.svg'); astro.alt = '';
+        astro.style.cssText = 'top:38%;left:-70px;width:52px;opacity:.9;';
+        sky.appendChild(astro);
+        astro.animate([{ transform: 'translateX(0) translateY(0) rotate(-8deg)' }, { transform: 'translateX(560px) translateY(-60px) rotate(10deg)' }], { duration: 42000, easing: 'linear' });
+      }
     } else {
       const balloon = document.createElement('img');
       balloon.className = 'gd-actor gd-balloon'; balloon.src = u('themes/dusk-birds/ambient/actors/balloon.svg'); balloon.alt = '';
       balloon.style.top = '30%';
       sky.appendChild(balloon);
+      const balloon2 = document.createElement('img');
+      balloon2.className = 'gd-actor gd-balloon'; balloon2.src = u('themes/dusk-birds/ambient/actors/balloon.svg'); balloon2.alt = '';
+      balloon2.style.cssText = 'top:44%;right:14%;left:auto;width:42px;opacity:.85;animation-duration:18s;';
+      sky.appendChild(balloon2);
       const lh = document.createElement('img');
       lh.className = 'gd-actor gd-lighthouse'; lh.src = u('themes/dusk-birds/ambient/actors/lighthouse.svg'); lh.alt = '';
       sky.appendChild(lh);

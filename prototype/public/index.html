@@ -272,6 +272,7 @@
   <!-- ROUND -->
   <section class="screen" id="s-round">
     <div class="roundtop"><span id="round-count">Round 1</span><span style="display:flex;gap:12px;align-items:center;"><span class="lifelist" id="feathers" title="wager currency">🪶 3</span><span class="lifelist" id="lifelist">🪶 0</span></span></div>
+    <p class="banner" id="modifier-chip" style="display:none;color:var(--acc);font-weight:800;"></p>
     <div class="card big">
       <div class="prompt-wrap" id="prompt-wrap">
         <div class="domain" id="prompt-domain">🐦</div>
@@ -341,12 +342,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=20";
-import { ART } from "./art.js?v=20";
-import { BOLD } from "./bold.js?v=20";
-import { GD } from "./gd.js?v=20";
-import { W3D } from "./w3d.js?v=20";
-const V = 20; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=21";
+import { ART } from "./art.js?v=21";
+import { BOLD } from "./bold.js?v=21";
+import { GD } from "./gd.js?v=21";
+import { W3D } from "./w3d.js?v=21";
+const V = 21; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -664,7 +665,17 @@ function startRound(m) {
   $('prompt-domain').textContent = domainIcon(m.prompt.text);
   $('prompt-text').textContent = m.prompt.text;
   window.__lastSize = m.prompt.size;
-  $('prompt-example').textContent = m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+  const chip = $('modifier-chip');
+  if (m.modifier) {
+    chip.style.display = 'block';
+    chip.textContent = m.modifier.type === 'blind' ? '🎲 BLIND ROUND — no hints, no counts'
+      : m.modifier.type === 'doublefeathers' ? '🎲 DOUBLE FEATHERS — doubled refund on doubled calls'
+      : `🎲 BLACKLIST — ${m.modifier.banned} is grounded!`;
+    $('prompt-example').textContent = m.modifier.type === 'blind' ? '🎲 blind round — trust your instincts' : m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+  } else {
+    chip.style.display = 'none';
+    $('prompt-example').textContent = m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+  }
   $('answer').value = ''; $('answer').disabled = false; $('answer-feedback').textContent = '';
   $('confirm-chip').style.display = 'none'; pendingSuggest = null; $('locked-msg').textContent = '';
   $('confirm-chip').innerHTML = '<button class="confirm" id="btn-confirm">Yes, submit</button><button class="ghost" id="btn-keep">Keep typing</button>';

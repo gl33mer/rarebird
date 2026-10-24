@@ -175,3 +175,20 @@ Both runs ship. 3D is flag-gated (?w3d=1) pending owner eyeball; economy + life 
 
 ## Verdict
 The world now breathes Krillion-style: no still frames, phase-reactive speed, shockwaves and camera pulls at the moments that matter. Recommend the owner views `?bold=1` (now default-on) after this merge; the remaining gap is illustrated art density, which is an asset investment, not a code one.
+
+---
+
+# Flash run 2026-10-24 — art density + mystery modifiers (flash/art-density-v1)
+
+## What I did
+- **Art density:** 6 new illustrated SVGs (~7KB total): full-viewport painted scenes per theme (`sky-illustration.svg` with moon+stars+clouds+haze; `nebula-scene.svg` with 3 nebula gradients+star clusters), illustrated foregrounds (`meadow-near.svg`, `moon-surface.svg`), and actor variety (balloon twin, drifting astronaut). Wired as base+foreground layers in BOLD.buildParallax — the flat-gradient era is over; every altitude band sits inside a painted scene.
+- **Mystery modifiers (D-41, 08_FUN_IDEAS §✅4):** exactly one random non-first round per game: **Blind** (example + catalogue size stripped server-side, chip "🎲 BLIND ROUND"), **Double feathers** (doubled-call refund +4), **Blacklist** (a random PIGEON answer grounded; answering it → "🕊️ X is grounded this round!" + retry). Server-authoritative; reset per game/rematch; announced in roundStart.
+
+## Test results (exact numbers)
+- Art density: 7/7 browser assertions (base+foreground layers both themes, balloon twins, astronaut) · all new SVGs ≤2.1KB.
+- Modifiers: blacklist grounded-rejection **verified live**; blind example-strip **verified live**; doublefeathers wager path **verified live**; all 3 types observed across 4 protocol games.
+- Full battery: rules 62/62 · playtest-fixes 15/15 · graphics 12/12 · art 18/18 · chat-theme 12/12 · timers 8/8 · bold 16/16 · w3d 11/11 · security 16/16 · reconnect 5/5 · gd 9/9.
+- Defects: AD-1 ✅ (theme toggle clicked pre-create in test — test fixed); AD-2 ✅ (hints/answer `prompt` scope — fixed same-run, see playtest entry).
+
+## Verdict
+Both ship. The scene now has illustrated depth (the biggest visual step since The Ascent) and the modifier system adds repeat-game variety without new rules to learn. Ready for MAX merge → v21 live → playtest round 2.

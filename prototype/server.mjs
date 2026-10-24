@@ -197,11 +197,25 @@ function startWriting(room) {
   for (const p of room.players.values()) p.answered = false;
   room.phaseEndsAt = now() + room.settings.roundMs;
   const prompt = room.prompts[room.roundIndex];
-  glog('roundStart', { room: room.code, round: room.roundIndex, promptId: prompt.id, prompt: prompt.text, durationMs: room.settings.roundMs });
+  // mystery modifier (D-41): exactly one non-first round
+  let modifier = null;
+  if (room.roundIndex === room.modifierRound) {
+    modifier = room.modifierType;
+    if (modifier === 'blacklist') {
+      const pigeons = prompt.catalogue.filter(e => e.tier === 'PIGEON');
+      if (pigeons.length) room.bannedAnswer = pigeons[Math.floor(Math.random() * pigeons.length)].canonical;
+      else modifier = null;
+    }
+  }
+  room.activeModifier = modifier;
+  const view = promptView(prompt);
+  if (modifier === 'blind') { delete view.example; view.size = 0; view.blind = true; }
+  glog('roundStart', { room: room.code, round: room.roundIndex, promptId: prompt.id, prompt: prompt.text, durationMs: room.settings.roundMs, modifier });
   broadcast(room, 'roundStart', {
-    roundIndex: room.roundIndex, roundId: prompt.id, prompt: promptView(prompt),
+    roundIndex: room.roundIndex, roundId: prompt.id, prompt: view,
     durationMs: room.settings.roundMs, endsAt: room.phaseEndsAt, serverNow: now(),
     totalRounds: room.prompts.length, theme: room.settings.theme,
+    modifier: modifier ? { type: modifier, banned: modifier === 'blacklist' ? room.bannedAnswer : null } : null,
   });
   broadcast(room, 'state', { room: publicRoom(room) });
   room.tRound = setTimeout(() => {
@@ -222,7 +236,8 @@ function endWriting(room, reason = 'timer') {
   if (room.settings.feathers === 'on' && room.feathers) {
     for (const row of computed) {
       if (row.wagered && row.wagerOutcome === 'doubled' && room.feathers.has(row.playerId)) {
-        room.feathers.set(row.playerId, Math.min(9, (room.feathers.get(row.playerId) ?? 0) + 2)); // doubled refunds +2 (D-37)
+        const refund = room.activeModifier === 'doublefeathers' ? 4 : 2; // mystery modifier (D-41)
+        room.feathers.set(row.playerId, Math.min(9, (room.feathers.get(row.playerId) ?? 0) + refund));
       }
     }
   }
@@ -275,6 +290,9 @@ function rematch(room) {
   room.rounds = []; room.roundIndex = 0; room.standings = null; room.rematchVotes = new Set();
   room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3]));
   room.prompts = pickPrompts(room.settings.rounds);
+  room.modifierRound = room.settings.rounds > 1 ? 1 + Math.floor(Math.random() * (room.settings.rounds - 1)) : -1;
+  room.modifierType = ['blind', 'doublefeathers', 'blacklist'][Math.floor(Math.random() * 3)];
+  room.bannedAnswer = null;
   startCountdown(room);
 }
 
@@ -446,6 +464,11 @@ wss.on('connection', (socket, req) => {
         room.feathers = new Map([...room.players.values()].map(p => [p.pid, 3])); // economy: 3/game (D-37)
         room.ready = new Set();
         room.prompts = pickPrompts(room.settings.rounds);
+        // mystery modifier: exactly one random non-first round (D-41)
+        const mods = ['blind', 'doublefeathers', 'blacklist'];
+        room.modifierRound = room.settings.rounds > 1 ? 1 + Math.floor(Math.random() * (room.settings.rounds - 1)) : -1;
+        room.modifierType = mods[Math.floor(Math.random() * mods.length)];
+        room.bannedAnswer = null;
         room.rounds = []; room.roundIndex = 0;
         glog('start', { room: room.code, by: me.nick, settings: room.settings });
         startCountdown(room);
@@ -460,6 +483,12 @@ wss.on('connection', (socket, req) => {
         const atMs = Math.min(room.settings.roundMs, Math.max(0, now() - (room.phaseEndsAt - room.settings.roundMs)));
         if (!raw) return;
         const r = resolveAnswer(prompt.catalogue, raw);
+        if (r.status === 'valid' && room.activeModifier === 'blacklist' && room.bannedAnswer &&
+            r.entry.canonical.toLowerCase() === room.bannedAnswer.toLowerCase()) {
+          glog('grounded', { room: room.code, round: room.roundIndex, nick: me.nick, raw });
+          sendTo(me, 'answerAck', { status: 'invalid', msg: `🕊️ ${room.bannedAnswer} is grounded this round!` });
+          return;
+        }
         glog('answer', { room: room.code, round: room.roundIndex, nick: me.nick, promptId: prompt.id, raw, status: r.status, match: r.entry?.canonical ?? null, msLeft: Math.max(0, room.phaseEndsAt - now()) });
         if (r.status === 'valid') {
           room.submissions.set(me.pid, { playerId: me.pid, nickname: me.nick, raw, confirmed: r.entry.canonical, atMs, status: 'locked' });
