@@ -118,9 +118,13 @@ export const GD = {
     } else if (tier === 'PIGEON') {
       const r = rowEl.getBoundingClientRect();
       this._art && 0;
-      import('./fx.js?v=18').then(FX => FX.burst(r.left + r.width / 2, Math.min(innerHeight - 20, r.bottom + 6), { tier: 'PIGEON', count: 3 }));
+      import('./fx.js?v=22').then(FX => FX.burst(r.left + r.width / 2, Math.min(innerHeight - 20, r.bottom + 6), { tier: 'PIGEON', count: 3 }));
     } else if (tier === 'MEGA' || tier === 'KINGFISHER') {
       this.stinger('mid');
+    } else if (tier === 'STARLING') {
+      this.stinger('starling'); // rising two-note (QA2-8)
+    } else {
+      this.stinger('soft'); // tiny tick for SPARROW/PIGEON (QA2-8)
     }
   },
 
@@ -129,9 +133,9 @@ export const GD = {
     this.setPhase('results');
     const sky = document.getElementById('fx-sky');
     if (sky && !reduced()) {
-      for (let i = 0; i < 3; i++) setTimeout(() => {
-        import('./fx.js?v=18').then(FX => FX.burst(80 + Math.random() * (innerWidth - 160), 120 + Math.random() * 200, { tier: i === 0 ? 'RARE BIRD' : 'MEGA', count: 8 }));
-      }, i * 500);
+      for (let i = 0; i < 6; i++) setTimeout(() => {
+        import('./fx.js?v=22').then(FX => FX.burst(80 + Math.random() * (innerWidth - 160), 120 + Math.random() * 220, { tier: i % 3 === 0 ? 'RARE BIRD' : i % 3 === 1 ? 'MEGA' : 'KINGFISHER', count: 12 }));
+      }, i * 420);
     }
   },
 
@@ -193,12 +197,13 @@ export const GD = {
       },
       stinger(kind) {
         if (!running || muted) return;
-        const notes = kind === 'rare' ? [660, 880, 1320] : kind === 'mid' ? [520, 700] : [180];
+        const notes = kind === 'rare' ? [660, 880, 1320] : kind === 'starling' ? [520, 780] : kind === 'mid' ? [420, 560] : kind === 'soft' ? [300] : [180];
+        const vol = kind === 'soft' ? 0.05 : 0.12;
         notes.forEach((f, i) => {
           const o = ctx.createOscillator(), g = ctx.createGain();
           o.type = 'sine'; o.frequency.value = f;
           g.gain.setValueAtTime(0.001, ctx.currentTime + i * 0.09);
-          g.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + i * 0.09 + 0.02);
+          g.gain.exponentialRampToValueAtTime(vol, ctx.currentTime + i * 0.09 + 0.02);
           g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + i * 0.09 + 0.5);
           o.connect(g).connect(ctx.destination);
           o.start(ctx.currentTime + i * 0.09); o.stop(ctx.currentTime + i * 0.09 + 0.55);

@@ -13,14 +13,17 @@ const BASE = 'http://127.0.0.1:3100';
   await p.goto(BASE + '/?art=1&bold=1', { waitUntil: 'domcontentloaded' });
   await sleep(1100);
   t('gd enabled by default (bold on)', await p.evaluate(() => document.querySelectorAll('.gd-actor').length >= 1));
-  t('birds actors: balloon + lighthouse', (await p.locator('.gd-balloon').count()) === 1 && (await p.locator('.gd-lighthouse').count()) === 1);
+  t('birds actors: balloon twins + lighthouse', (await p.locator('.gd-balloon').count()) === 2 && (await p.locator('.gd-lighthouse').count()) === 1);
   t('lighthouse beam sweeping', (await p.locator('.gd-beam').count()) === 1);
   t('no AudioContext before gesture/opt-in', await p.evaluate(() => !window.__gdAudioRunning));
 
   // lobby → cosmos theme → actors swap
   await p.locator('#nick').fill('GDBot');
-  await p.locator('#btn-create').click(); await sleep(1300);
+  await p.locator('#btn-create').click();
+  await p.locator('#btn-audio').waitFor({ state: 'visible', timeout: 8000 }).catch(() => {});
+  await sleep(600);
   t('host sees 🎵 Ambience toggle (off default)', /off/.test(await p.locator('#btn-audio').textContent()));
+  await p.locator('#chat-close').click(); await sleep(400); // drawer covers lobby controls — close first
   await p.locator('#btn-theme').click(); await sleep(900);
   t('cosmos actors: ISS + planet-x', (await p.locator('.gd-iss').count()) === 1 && (await p.locator('.gd-planetx').count()) === 1);
   await p.locator('#btn-rounds').click(); await sleep(150); await p.locator('#btn-rounds').click(); await sleep(150);

@@ -608,3 +608,58 @@
 {"ts":"2026-10-24T18:40:02.029Z","promptId":"test-greekgods","canonical":"Hestia","tier":"KINGFISHER"}
 {"ts":"2026-10-24T18:41:33.911Z","promptId":"olympic-events","canonical":"100m sprint","tier":"PIGEON"}
 {"ts":"2026-10-24T18:41:44.780Z","promptId":"olympic-events","canonical":"Breakdancing","tier":"STARLING"}
+{"ts":"2026-10-24T19:26:47.452Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T19:26:47.806Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T19:26:48.132Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T19:26:48.464Z","promptId":"test-fruits","canonical":"Apple","tier":"PIGEON"}
+{"ts":"2026-10-24T19:27:28.442Z","promptId":"compounds","canonical":"Apple","tier":"STARLING"}
+{"ts":"2026-10-24T19:27:28.713Z","promptId":"compounds","canonical":"Apple","tier":"STARLING"}
+{"ts":"2026-10-24T19:27:28.999Z","promptId":"compounds","canonical":"Apple","tier":"STARLING"}
+{"ts":"2026-10-24T19:27:29.268Z","promptId":"compounds","canonical":"Apple","tier":"STARLING"}
+{"ts":"2026-10-24T19:28:52.659Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T19:28:52.986Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T19:28:53.312Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T19:28:53.631Z","promptId":"norse-gods","canonical":"Thor","tier":"PIGEON"}
+{"ts":"2026-10-24T19:29:33.510Z","promptId":"cheeses","canonical":"Thor","tier":"STARLING"}
+{"ts":"2026-10-24T19:29:33.782Z","promptId":"cheeses","canonical":"Thor","tier":"STARLING"}
+{"ts":"2026-10-24T19:29:34.058Z","promptId":"cheeses","canonical":"Thor","tier":"STARLING"}
+{"ts":"2026-10-24T19:29:34.348Z","promptId":"cheeses","canonical":"Thor","tier":"STARLING"}
+{"ts":"2026-10-24T19:32:22.905Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T19:32:23.236Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T19:32:23.557Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T19:32:23.875Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
+{"ts":"2026-10-24T19:33:03.826Z","promptId":"test-fruits","canonical":"Spider-Man","tier":"STARLING"}
+{"ts":"2026-10-24T19:33:04.093Z","promptId":"test-fruits","canonical":"Spider-Man","tier":"STARLING"}
+{"ts":"2026-10-24T19:33:04.372Z","promptId":"test-fruits","canonical":"Spider-Man","tier":"STARLING"}
+{"ts":"2026-10-24T19:33:04.661Z","promptId":"test-fruits","canonical":"Spider-Man","tier":"STARLING"}
+{"ts":"2026-10-24T19:33:43.297Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T19:33:43.632Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T19:33:43.963Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T19:33:44.294Z","promptId":"test-greekgods","canonical":"Zeus","tier":"PIGEON"}
+{"ts":"2026-10-24T19:34:24.217Z","promptId":"tech-carbrands","canonical":"Zeus","tier":"STARLING"}
+{"ts":"2026-10-24T19:34:24.490Z","promptId":"tech-carbrands","canonical":"Zeus","tier":"STARLING"}
+{"ts":"2026-10-24T19:34:24.763Z","promptId":"tech-carbrands","canonical":"Zeus","tier":"STARLING"}
+{"ts":"2026-10-24T19:34:25.038Z","promptId":"tech-carbrands","canonical":"Zeus","tier":"STARLING"}
+{"ts":"2026-10-24T19:59:00.962Z","promptId":"cheeses","canonical":"Caciocavallo","tier":"RARE BIRD"}
+{"ts":"2026-10-24T19:59:14.038Z","promptId":"test-boardgames","canonical":"The Campaign for North Africa","tier":"RARE BIRD"}
+{"ts":"2026-10-24T19:59:27.079Z","promptId":"test-colors","canonical":"Gamboge","tier":"RARE BIRD"}
+{"ts":"2026-10-24T20:00:08.471Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T20:00:08.819Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T20:00:09.147Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T20:00:09.468Z","promptId":"compounds","canonical":"Water","tier":"PIGEON"}
+{"ts":"2026-10-24T20:00:49.469Z","promptId":"test-boardgames","canonical":"Water","tier":"STARLING"}
+{"ts":"2026-10-24T20:00:49.743Z","promptId":"test-boardgames","canonical":"Water","tier":"STARLING"}
+{"ts":"2026-10-24T20:00:50.012Z","promptId":"test-boardgames","canonical":"Water","tier":"STARLING"}
+{"ts":"2026-10-24T20:00:50.284Z","promptId":"test-boardgames","canonical":"Water","tier":"STARLING"}
+{"ts":"2026-10-24T20:14:49.729Z","promptId":"test-colors","canonical":"Mauve","tier":"MEGA"}
+{"ts":"2026-10-24T20:14:50.189Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:03.241Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:03.695Z","promptId":"storms","canonical":"hurricane","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:16.731Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:17.195Z","promptId":"tech-carbrands","canonical":"BMW","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:36.634Z","promptId":"trees","canonical":"oak","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:37.091Z","promptId":"trees","canonical":"silk oak","tier":"MEGA"}
+{"ts":"2026-10-24T20:15:50.140Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T20:15:50.592Z","promptId":"geo-countries","canonical":"United States","tier":"PIGEON"}
+{"ts":"2026-10-24T20:16:03.639Z","promptId":"sci-elements","canonical":"Terbium","tier":"MEGA"}
+{"ts":"2026-10-24T20:16:04.092Z","promptId":"sci-elements","canonical":"Gold","tier":"PIGEON"}

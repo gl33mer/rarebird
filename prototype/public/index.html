@@ -200,7 +200,7 @@
   /* ---- chat drawer (left) ---- */
   #chat-toggle { position:fixed; left:12px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:45; width:52px; height:52px; margin:0; border-radius:999px; font-size:22px; padding:0; background:var(--card2); border:1px solid rgba(255,255,255,.18); color:var(--ink); }
   #chat-toggle .badge { position:absolute; top:-4px; right:-4px; background:var(--acc); color:#141a2a; border-radius:999px; font-size:11px; font-weight:900; padding:2px 6px; }
-  #chat-drawer { position:fixed; top:0; bottom:0; left:0; width:min(80vw, 320px); z-index:50; background:rgba(8,11,22,.96); border-right:1px solid rgba(255,255,255,.12); display:flex; flex-direction:column; transform:translateX(-102%); transition:transform .25s ease; }
+  #chat-drawer { position:fixed; top:0; bottom:150px; left:0; width:min(80vw, 320px); z-index:50; background:rgba(8,11,22,.96); border-right:1px solid rgba(255,255,255,.12); display:flex; flex-direction:column; transform:translateX(-102%); transition:transform .25s ease; }
   #chat-drawer.open { transform:none; }
   #chat-drawer header { padding:12px 14px; font-weight:900; border-bottom:1px solid rgba(255,255,255,.1); display:flex; justify-content:space-between; }
   #chat-drawer header button { width:auto; margin:0; background:none; color:var(--dim); font-size:20px; padding:0 4px; }
@@ -252,18 +252,22 @@
     <p class="banner" id="last-winner" style="color:var(--acc)"></p>
     <button class="ghost" id="btn-ready" style="display:none;margin-bottom:10px;">✓ I'm ready</button>
       <p class="banner" id="lobby-hint">Waiting…</p>
+      <p class="banner" style="margin-bottom:2px;opacity:.7;">ROOM — host decides</p>
       <div id="host-controls" style="display:none;">
         <div class="row" style="margin-bottom:10px;">
           <button class="ghost" id="btn-rounds">Rounds: 5</button>
           <button class="ghost" id="btn-timer">30s rounds</button>
         </div>
         <button class="ghost" id="btn-theme" style="margin-bottom:10px;">Theme: Birds 🦜</button>
-        <button class="ghost" id="btn-art" style="margin-bottom:10px;">🎨 Art</button>
         <button class="ghost" id="btn-bold" style="margin-bottom:10px;">✨ Bold</button>
-        <button class="ghost" id="btn-audio" style="margin-bottom:10px;">🎵 Ambience</button>
-        <button class="ghost" id="btn-w3d" style="margin-bottom:10px;">🌐 3D</button>
         <button class="ghost" id="btn-lock" style="margin-bottom:10px;">Room: open 🔓</button>
         <button id="btn-start">▶ Start the flock</button>
+      </div>
+      <p class="banner" style="margin-bottom:2px;opacity:.7;">YOURS — just for you</p>
+      <div id="player-settings">
+        <button class="ghost" id="btn-art" style="margin-bottom:10px;">🎨 Art</button>
+        <button class="ghost" id="btn-w3d" style="margin-bottom:10px;">🌐 3D</button>
+        <button class="ghost" id="btn-audio" style="margin-bottom:10px;">🎵 Ambience</button>
       </div>
       <button class="ghost" id="btn-leave">Leave</button>
     </div>
@@ -273,6 +277,7 @@
   <section class="screen" id="s-round">
     <div class="roundtop"><span id="round-count">Round 1</span><span style="display:flex;gap:12px;align-items:center;"><span class="lifelist" id="feathers" title="wager currency">🪶 3</span><span class="lifelist" id="lifelist">🪶 0</span></span></div>
     <p class="banner" id="modifier-chip" style="display:none;color:var(--acc);font-weight:800;"></p>
+    <p class="banner" id="modifier-instructions" style="display:none;color:#b9c6dd;"></p>
     <div class="card big">
       <div class="prompt-wrap" id="prompt-wrap">
         <div class="domain" id="prompt-domain">🐦</div>
@@ -342,12 +347,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=21";
-import { ART } from "./art.js?v=21";
-import { BOLD } from "./bold.js?v=21";
-import { GD } from "./gd.js?v=21";
-import { W3D } from "./w3d.js?v=21";
-const V = 21; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=22";
+import { ART } from "./art.js?v=22";
+import { BOLD } from "./bold.js?v=22";
+import { GD } from "./gd.js?v=22";
+import { W3D } from "./w3d.js?v=22";
+const V = 22; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -496,9 +501,15 @@ function handle(m) {
     case 'joined': my.room = m.code; my.pid = m.pid; my.token = m.token; localStorage.setItem('rarebird', JSON.stringify(my)); break;
     case 'state': renderState(m.room); break;
     case 'countdown': showCountdown(m); break;
-    case 'roundStart': hideCountdown(); applyTheme(m.theme); FX.setProgress(m.roundIndex, m.totalRounds || 3); BOLD.setProgress(m.roundIndex, m.totalRounds || 3); GD.setPhase('writing', m.totalRounds ? m.roundIndex === m.totalRounds - 1 : false); startRound(m); break;
+    case 'roundStart': hideCountdown(); applyTheme(m.theme); FX.setProgress(m.roundIndex, m.totalRounds || 3); BOLD.setProgress(m.roundIndex, m.totalRounds || 3); GD.setPhase('writing', m.totalRounds ? m.roundIndex === m.totalRounds - 1 : false);
+      if (localStorage.getItem('rarebird-chatopen') !== '0') openChat(false); // writing phase: dock must be clear (QA2-2)
+      startRound(m); break;
     case 'answerAck': ack(m); break;
-    case 'reveal': hideCountdown(); renderReveal(m); break;
+    case 'reveal': hideCountdown();
+      if (localStorage.getItem('rarebird-chatopen') !== '0') openChat(true); // reveal = banter time (QA2-2)
+      renderReveal(m); break;
+    case 'results':
+      if (localStorage.getItem('rarebird-chatopen') !== '0') openChat(true); // banter on the podium
     case 'results': renderResults(m); break;
     case 'rematchVote': $('rematch-status').textContent = `${m.votes}/${m.total} want a rematch…`; break;
     case 'update': showUpdateBanner(m.current); break;
@@ -567,6 +578,7 @@ function appendChat(m) {
   }
 }
 function openChat(open) {
+  localStorage.setItem('rarebird-chatopen', open ? '1' : '0'); // persist (QA2-2)
   $('chat-drawer').classList.toggle('open', open);
   $('chat-backdrop').classList.toggle('on', open);
   if (open) {
@@ -630,6 +642,7 @@ function renderState(room) {
     const me = me0;
     $('btn-lock').textContent = room.locked ? 'Room: locked 🔒' : 'Room: open 🔓';
     $('host-controls').style.display = me?.isHost ? 'block' : 'none';
+    $('player-settings').style.display = 'block';
     const majority = readySet.size >= Math.ceil(room.players.length / 2);
     if (me?.isHost) {
       $('btn-start').disabled = !!room.lastWinner && !majority;
@@ -666,15 +679,22 @@ function startRound(m) {
   $('prompt-text').textContent = m.prompt.text;
   window.__lastSize = m.prompt.size;
   const chip = $('modifier-chip');
+  const instr = $('modifier-instructions');
+  const modLines = {
+    blind: ['🎲 BLIND ROUND', 'No hints, no counts — say the first true thing you believe.'],
+    doublefeathers: ['🎲 DOUBLE FEATHERS', 'Doubled Top Calls refund double feathers this round.'],
+    blacklist: [`🎲 BLACKLIST — ${m.modifier ? m.modifier.banned : ''} is grounded!`, `Anyone who says ${m.modifier ? m.modifier.banned : 'it'} scores nothing this round.`],
+  };
   if (m.modifier) {
     chip.style.display = 'block';
-    chip.textContent = m.modifier.type === 'blind' ? '🎲 BLIND ROUND — no hints, no counts'
-      : m.modifier.type === 'doublefeathers' ? '🎲 DOUBLE FEATHERS — doubled refund on doubled calls'
-      : `🎲 BLACKLIST — ${m.modifier.banned} is grounded!`;
-    $('prompt-example').textContent = m.modifier.type === 'blind' ? '🎲 blind round — trust your instincts' : m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+    const [head, body] = modLines[m.modifier.type] ?? ['🎲 SPECIAL ROUND', ''];
+    chip.textContent = head;
+    instr.style.display = 'block';
+    instr.textContent = body;
+    $('prompt-example').textContent = m.modifier.type === 'blind' ? '🎲 blind round — trust your instincts' : m.prompt.example ? `(${m.prompt.example})` : '';
   } else {
     chip.style.display = 'none';
-    $('prompt-example').textContent = m.prompt.example ? `${m.prompt.example} · ${m.prompt.size} valid answers out there` : `${m.prompt.size} valid answers out there`;
+    instr.style.display = 'none';
   }
   $('answer').value = ''; $('answer').disabled = false; $('answer-feedback').textContent = '';
   $('confirm-chip').style.display = 'none'; pendingSuggest = null; $('locked-msg').textContent = '';
@@ -741,7 +761,7 @@ function ack(m) {
     $('answer-feedback').textContent = 'Close! Is this what you meant?';
   } else if (m.status === 'invalid') {
     $('answer-feedback').innerHTML = '';
-    $('answer-feedback').appendChild(document.createTextNode((m.msg || 'No echo! Try again.') + (window.__lastSize ? ` — ${window.__lastSize} answers out there.` : '')));
+    $('answer-feedback').appendChild(document.createTextNode(m.msg || 'No echo! Try again.'));
     const rep = document.createElement('a');
     rep.href = '#'; rep.className = 'report'; rep.textContent = 'Report missing bird';
     rep.onclick = ev => { ev.preventDefault(); rep.textContent = 'reported ✓'; send({ type: 'report', raw: $('answer').value.trim(), promptId: lastPromptId }); };
@@ -800,35 +820,55 @@ function renderReveal(m) {
   list.appendChild(ruler);
   // group rows by tier band (least rare animate first)
   const rows = [...m.rows].sort((a, b) => (a.canonical ? 0 : 1) - (b.canonical ? 0 : 1) || a.pts - b.pts || a.nickname.localeCompare(b.nickname));
-  const slots = {}; let order = 0;
-  rows.forEach(r => {
-    const tier = r.tier ?? 'NO SIGHTING';
-    const t = TIERS[r.tier];
-    slots[tier] = slots[tier] || 0;
-    const alt = FX.TIER_LADDER[tier].alt;
-    const bandTop = (1 - alt) * (H - bandPad * 2) + bandPad;
-    const top = Math.min(H - rowH - 4, bandTop + slots[tier] * (rowH + 6));
-    slots[tier]++;
+  let order = 0;
+  // QA2-1: band-proportional stacking — per-tier groups centered on their altitude,
+  // spacing compressed to the gap between adjacent bands so counts never overlap.
+  const ladder = ['NO SIGHTING', 'PIGEON', 'SPARROW', 'STARLING', 'KINGFISHER', 'MEGA', 'RARE BIRD'];
+  const byTier = {};
+  rows.forEach(r => { const tier = r.tier ?? 'NO SIGHTING'; (byTier[tier] ??= []).push(r); });
+  const centers = {};
+  ladder.forEach(name => { centers[name] = (1 - FX.TIER_LADDER[name].alt) * (H - bandPad * 2) + bandPad; });
+  const topFor = {};
+  ladder.forEach((name, li) => {
+    const group = byTier[name] ?? [];
+    if (!group.length) return;
+    const c = centers[name];
+    const prevC = li > 0 ? centers[ladder[li - 1]] : -rowH;
+    const nextC = li < ladder.length - 1 ? centers[ladder[li + 1]] : H + rowH;
+    const avail = Math.max(nextC - c, c - prevC, rowH + 8) * 0.92;
+    const spacing = Math.min(rowH + 6, avail / group.length);
+    const start = c - (spacing * (group.length - 1)) / 2 - rowH / 2;
+    group.forEach((r, gi) => { topFor[r.nickname + '|' + r.pts + '|' + (r.canonical ?? '')] = Math.max(0, Math.min(H - rowH - 4, start + gi * spacing)); });
+  });
+  ladder.forEach(name => {
+    const group = byTier[name] ?? [];
+    if (!group.length) return;
+    const t = TIERS[name];
+    const first = group[0];
+    const top = Math.max(0, Math.min(H - rowH - 4, centers[name] - rowH / 2));
     const div = document.createElement('div');
-    div.className = 'rrow' + (r.canonical ? '' : ' nosight') + (r.tier === 'RARE BIRD' ? ' rare-glow' : '');
+    const isCluster = group.length > 1 && name !== 'NO SIGHTING';
+    div.className = 'rrow' + (first.canonical ? '' : ' nosight') + (name === 'RARE BIRD' ? ' rare-glow' : '') + (isCluster ? ' cluster' : '');
     div.style.borderLeftColor = t ? t.color : 'var(--pigeon)';
-    const sub = t && ['KINGFISHER','MEGA','RARE BIRD'].includes(r.tier)
-      ? `<div class="subline">${TIERS[r.tier].blurb}${r.rarityPct != null ? ` · rarer than ${r.rarityPct}% of answers` : ''}</div>` : '';
+    const nicks = group.map(x => esc(x.nickname)).join(', ');
+    const shown = first.canonical ?? first.typed ?? '';
+    const sub = t && ['KINGFISHER','MEGA','RARE BIRD'].includes(name)
+      ? `<div class="subline">${TIERS[name].blurb}${first.rarityPct != null ? ` · rarer than ${first.rarityPct}% of answers` : ''}</div>` : '';
     const tierHtml = t
-      ? `<span class="tier" style="background:${t.color};color:#141a2a">${ART.enabled ? `<img class="chipArt" src="${ART.tier(r.tier)}" alt="">` : t.emoji} ${r.tier}</span>`
+      ? `<span class="tier" style="background:${t.color};color:#141a2a">${ART.enabled ? `<img class="chipArt" src="${ART.tier(name)}" alt="">` : t.emoji} ${name}</span>`
       : `<span class="tier" style="background:rgba(255,255,255,.12);color:var(--dim)">${ART.enabled ? `<img class="chipArt" src="${ART.emptyPerch()}" alt="">` : ''}NO SIGHTING</span>`;
-    const wagerHtml = r.wagered ? `<span class="twins">${r.wagerOutcome === 'doubled' ? '×2!' : '½'}</span>` : '';
-    const shown = r.canonical ?? r.typed ?? '';
-    const twinsHtml = r.twins > 1 ? `<span class="twins">${r.splitOf > 1 ? `SPLIT×${r.splitOf}👯` : `TWINS×${r.twins}👯`}</span>` : '';
-    const art = ART.enabled ? `<img class="rowArt" src="${r.canonical ? ART.tier(r.tier ?? '') : ART.emptyPerch()}" alt="">` : '';
-    div.innerHTML = `${tierHtml}<span class="answrap"><b class="nick"><bdi>${esc(r.nickname)}</bdi></b> <span class="ans"><bdi>${esc(shown)}</bdi></span>${wagerHtml}${sub}</span>${twinsHtml}${art}<span class="pts">+${r.pts}</span>`;
-    div.style.top = `${Math.max(0, top)}px`;
+    const totalPts = group.reduce((a, x) => a + x.pts, 0);
+    const wagerHtml = group.some(x => x.wagered) ? `<span class="twins">${group.every(x => x.wagerOutcome === 'doubled') ? '×2!' : group.some(x => x.wagerOutcome === 'doubled') ? '×2 mixed' : '½'}</span>` : '';
+    const twinsHtml = isCluster ? `<span class="twins">FLOCK×${group.length}👯</span>` : '';
+    const art = ART.enabled ? `<img class="rowArt" src="${first.canonical ? ART.tier(name) : ART.emptyPerch()}" alt="">` : '';
+    div.innerHTML = `${tierHtml}<span class="answrap"><b class="nick"><bdi>${nicks}</bdi></b> <span class="ans"><bdi>${esc(shown)}</bdi></span>${wagerHtml}${sub}</span>${twinsHtml}${art}<span class="pts">+${totalPts}${isCluster ? ` <span style="font-size:10px;color:var(--dim)">(${group.length}×${first.pts})</span>` : ''}</span>`;
+    div.style.top = `${top}px`;
     div.style.opacity = '0';
     list.appendChild(div);
     // ascent animation: bold = curved flight path; standard = straight rise
     const delay = order * 480; order++;
     const flyFrom = H - top;
-    if (BOLD.enabled && BOLD.flyIn(div, r.tier ?? '', delay)) {
+    if (BOLD.enabled && BOLD.flyIn(div, name, delay)) {
       div.style.animationDelay = `${delay}ms`;
     } else if (matchMedia('(prefers-reduced-motion: reduce)').matches) { setTimeout(() => { div.style.opacity = '1'; }, delay); }
     else div.animate([
@@ -836,34 +876,31 @@ function renderReveal(m) {
       { transform: `translateY(${flyFrom * 0.25}px)`, opacity: 1, offset: .45 },
       { transform: 'translateY(0)', opacity: 1 },
     ], { duration: 950, delay, easing: 'cubic-bezier(.22,.9,.28,1)', fill: 'forwards' });
-    if (r.nickname === myNick) {
-      lifeList += r.pts;
-      if (myNick != null && lifeListEarn(r.canonical, r.tier, lastPromptId, (document.getElementById('prompt-text')?.textContent ?? ''))) {
-        // card fly-in: small chip from the row toward the top-right corner
-        if (!reducedMotionCheck()) {
-          const fly = document.createElement('div');
-          fly.textContent = '🃏';
-          fly.style.cssText = `position:fixed;z-index:65;left:${innerWidth / 2 - 20}px;top:${innerHeight / 2}px;font-size:26px;transition:all .9s cubic-bezier(.2,.8,.3,1);pointer-events:none;`;
-          document.body.appendChild(fly);
-          requestAnimationFrame(() => { fly.style.left = (innerWidth - 50) + 'px'; fly.style.top = '16px'; fly.style.transform = 'scale(.5) rotate(20deg)'; fly.style.opacity = '0.4'; });
-          setTimeout(() => fly.remove(), 950);
-        }
+    for (const x of group) if (x.nickname === myNick) {
+      lifeList += x.pts;
+      if (lifeListEarn(first.canonical, name, lastPromptId, (document.getElementById('prompt-text')?.textContent ?? '')) && !reducedMotionCheck()) {
+        const fly = document.createElement('div');
+        fly.textContent = '🃏';
+        fly.style.cssText = `position:fixed;z-index:65;left:${innerWidth / 2 - 20}px;top:${innerHeight / 2}px;font-size:26px;transition:all .9s cubic-bezier(.2,.8,.3,1);pointer-events:none;`;
+        document.body.appendChild(fly);
+        requestAnimationFrame(() => { fly.style.left = (innerWidth - 50) + 'px'; fly.style.top = '16px'; fly.style.transform = 'scale(.5) rotate(20deg)'; fly.style.opacity = '0.4'; });
+        setTimeout(() => fly.remove(), 950);
       }
     }
     setTimeout(() => {
-      chirpFor(r.tier);
+      chirpFor(name);
       const rect = div.getBoundingClientRect();
       const sprite = ART.enabled ? ART.burstArt() : null;
-      if (r.tier === 'RARE BIRD') { FX.burst(rect.left + rect.width / 2, rect.top + 10, { tier: r.tier, sprite }); FX.shake(document.body); }
-      else if (r.tier === 'MEGA') FX.burst(rect.left + 40, rect.top + 8, { tier: r.tier, count: 6, sprite });
-      if (['KINGFISHER','MEGA','RARE BIRD'].includes(r.tier) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (name === 'RARE BIRD') { FX.burst(rect.left + rect.width / 2, rect.top + 10, { tier: name, sprite }); FX.shake(document.body); }
+      else if (name === 'MEGA') FX.burst(rect.left + 40, rect.top + 8, { tier: name, count: 6, sprite });
+      if (['KINGFISHER','MEGA','RARE BIRD'].includes(name) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const w = document.createElement('div');
         w.className = 'bold-shockwave';
         w.style.cssText = `left:${rect.left + rect.width / 2 - 60}px;top:${rect.top + rect.height / 2 - 60}px;width:120px;height:120px;`;
         document.body.appendChild(w);
         setTimeout(() => w.remove(), 800);
       }
-      GD.revealSpectacle(r.tier, div);
+      GD.revealSpectacle(name, div);
     }, delay + 600);
   });
   $('lifelist').textContent = `🪶 ${lifeList}`;
