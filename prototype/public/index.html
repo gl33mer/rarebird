@@ -246,6 +246,7 @@
         <button class="ghost" id="btn-art" style="margin-bottom:10px;">🎨 Art</button>
         <button class="ghost" id="btn-bold" style="margin-bottom:10px;">✨ Bold</button>
         <button class="ghost" id="btn-audio" style="margin-bottom:10px;">🎵 Ambience</button>
+        <button class="ghost" id="btn-w3d" style="margin-bottom:10px;">🌐 3D</button>
         <button class="ghost" id="btn-lock" style="margin-bottom:10px;">Room: open 🔓</button>
         <button id="btn-start">▶ Start the flock</button>
       </div>
@@ -323,11 +324,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=17";
-import { ART } from "./art.js?v=17";
-import { BOLD } from "./bold.js?v=17";
-import { GD } from "./gd.js?v=17";
-const V = 17; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=18";
+import { ART } from "./art.js?v=18";
+import { BOLD } from "./bold.js?v=18";
+import { GD } from "./gd.js?v=18";
+import { W3D } from "./w3d.js?v=18";
+const V = 18; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -336,6 +338,9 @@ const BOLD_ON = new URLSearchParams(location.search).get('bold') !== '0' && (new
 await BOLD.init(BOLD_ON, ART);
 const GD_ON = BOLD.enabled && localStorage.getItem('rarebird-audio') !== '0'; // gd rides bold; audio opt-in via its own toggle
 await GD.init(GD_ON, ART);
+// 3D Ascent: ?w3d=1 / localStorage rarebird-w3d=1 (🌐 lobby toggle); ?w3d=0 escapes
+const W3D_ON = new URLSearchParams(location.search).get('w3d') === '1' || (localStorage.getItem('rarebird-w3d') === '1' && new URLSearchParams(location.search).get('w3d') !== '0');
+await W3D.init(W3D_ON);
 FX.ambient('birds');
 
 // ---- theme engine: canonical tier names stay; flavor/labels/scene swap ----
@@ -476,6 +481,7 @@ function applyTheme(id) {
   applyAmbientArt();
   BOLD.buildParallax(theme.id);
   GD.buildActors(theme.id);
+  W3D.buildScene(theme.id);
 }
 
 if (ART.enabled && ART.icon('chat')) $('chat-toggle').innerHTML = `<img class="iconImg" src="${ART.icon('chat')}" alt="chat">`;
@@ -570,6 +576,7 @@ function startRound(m) {
   $('btn-send').disabled = false;
   lastPromptId = m.roundId;
   BOLD.setProgress(m.roundIndex, m.totalRounds ?? 5);
+  W3D.setProgress(m.roundIndex, m.totalRounds ?? 5);
   if (BOLD.enabled) { // camera glide: the climb-ruler world shifts down as we climb
     const t = Math.min(1, (m.roundIndex ?? 0) / Math.max(1, (m.totalRounds ?? 5) - 1));
     document.getElementById('fx-sky')?.style.setProperty('transform', `translateY(${(t * 16).toFixed(1)}%)`);
@@ -770,6 +777,12 @@ $('btn-lock').onclick = () => { const el = $('btn-lock'); send({ type: 'lockRoom
 $('btn-art').textContent = `🎨 Art: ${ART.enabled ? 'on' : 'off'}`;
 $('btn-bold').textContent = `✨ Bold: ${BOLD.enabled ? 'on' : 'off'}`;
 $('btn-audio').textContent = `🎵 Ambience: ${gdAudioOn ? 'on' : 'off'}`;
+$('btn-w3d').textContent = `🌐 3D: ${W3D.enabled ? 'on' : 'off'}`;
+$('btn-w3d').onclick = () => {
+  const on = localStorage.getItem('rarebird-w3d') === '1';
+  localStorage.setItem('rarebird-w3d', on ? '0' : '1');
+  location.reload();
+};
 $('btn-audio').onclick = () => {
   gdAudioOn = !gdAudioOn;
   localStorage.setItem('rarebird-audio', gdAudioOn ? '1' : '0');
@@ -814,6 +827,7 @@ if ($('nick')) $('nick').value = localStorage.getItem('rarebird-nick') || '';
 applyAmbientArt(); // startup theme (art layers) — re-applied on every applyTheme
 BOLD.buildParallax(theme.id);
 GD.buildActors(theme.id);
+W3D.buildScene(theme.id);
 GD.ambience(gdAudioOn, muted, theme.id);
 $('nick').addEventListener('change', () => localStorage.setItem('rarebird-nick', $('nick').value));
 if (my.room && my.token) connect();

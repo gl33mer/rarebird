@@ -252,3 +252,9 @@
 {"ts":"2026-10-24T14:24:26.246Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}
 {"ts":"2026-10-24T14:26:56.641Z","promptId":"trees","canonical":"katsura","tier":"RARE BIRD"}
 {"ts":"2026-10-24T14:27:07.820Z","promptId":"test-boardgames","canonical":"Antiquity","tier":"RARE BIRD"}
+{"ts":"2026-10-24T15:04:46.241Z","promptId":"test-animals","canonical":"Dog","tier":"PIGEON"}
+{"ts":"2026-10-24T15:04:46.652Z","promptId":"test-animals","canonical":"Saiga","tier":"RARE BIRD"}
+{"ts":"2026-10-24T15:04:47.081Z","promptId":"test-animals","canonical":"Okapi","tier":"MEGA"}
+{"ts":"2026-10-24T15:05:00.997Z","promptId":"life-dogbreeds","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T15:05:15.040Z","promptId":"test-boardgames","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T15:05:42.817Z","promptId":"sci-elements","canonical":"Dubnium","tier":"RARE BIRD"}

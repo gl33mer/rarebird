@@ -107,7 +107,7 @@ export const GD = {
     } else if (tier === 'PIGEON') {
       const r = rowEl.getBoundingClientRect();
       this._art && 0;
-      import('./fx.js?v=17').then(FX => FX.burst(r.left + r.width / 2, Math.min(innerHeight - 20, r.bottom + 6), { tier: 'PIGEON', count: 3 }));
+      import('./fx.js?v=18').then(FX => FX.burst(r.left + r.width / 2, Math.min(innerHeight - 20, r.bottom + 6), { tier: 'PIGEON', count: 3 }));
     } else if (tier === 'MEGA' || tier === 'KINGFISHER') {
       this.stinger('mid');
     }
@@ -119,7 +119,7 @@ export const GD = {
     const sky = document.getElementById('fx-sky');
     if (sky && !reduced()) {
       for (let i = 0; i < 3; i++) setTimeout(() => {
-        import('./fx.js?v=17').then(FX => FX.burst(80 + Math.random() * (innerWidth - 160), 120 + Math.random() * 200, { tier: i === 0 ? 'RARE BIRD' : 'MEGA', count: 8 }));
+        import('./fx.js?v=18').then(FX => FX.burst(80 + Math.random() * (innerWidth - 160), 120 + Math.random() * 200, { tier: i === 0 ? 'RARE BIRD' : 'MEGA', count: 8 }));
       }, i * 500);
     }
   },
