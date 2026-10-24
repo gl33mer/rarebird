@@ -347,12 +347,12 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=22";
-import { ART } from "./art.js?v=22";
-import { BOLD } from "./bold.js?v=22";
-import { GD } from "./gd.js?v=22";
-import { W3D } from "./w3d.js?v=22";
-const V = 22; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=23";
+import { ART } from "./art.js?v=23";
+import { BOLD } from "./bold.js?v=23";
+import { GD } from "./gd.js?v=23";
+import { W3D } from "./w3d.js?v=23";
+const V = 23; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
