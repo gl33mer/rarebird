@@ -50,7 +50,7 @@ const REJOIN_WINDOW = 120 * 1000;
 // so a stale cached HTML = old behaviours (field-observed: static countdown,
 // no ascent reveal). Clients announce their version; mismatches get an 'update'
 // nudge and are logged.
-const CLIENT_VERSION = 15;
+const CLIENT_VERSION = 16;
 
 const JUDGE_URL = process.env.LLM_JUDGE_URL || null;
 const JUDGE_TIMEOUT_MS = 2500;
@@ -131,6 +131,7 @@ function publicRoom(room, forPid) {
   }));
   return {
     code: room.code, phase: room.phase, settings: room.settings, locked: room.locked ?? false,
+    freetextChat: process.env.RAREBIRD_FREETEXT_CHAT === '1',
     players, roundIndex: room.roundIndex, totalRounds: room.prompts.length,
     phaseEndsAt: (room.phase === 'writing' || room.phase === 'countdown') ? room.phaseEndsAt : null,
     serverNow: now(),

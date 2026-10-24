@@ -308,6 +308,10 @@
 <aside id="chat-drawer">
   <header><span>FLOCK CHAT</span><button id="chat-close">×</button></header>
   <div id="chat-log"></div>
+  <div id="chat-freerow" style="display:none;gap:8px;padding:10px 10px 0;">
+    <input type="text" id="chat-freetext" placeholder="say something nice…" maxlength="100" autocomplete="off" style="flex:1;">
+    <button id="chat-freesend" style="width:auto;margin:0;padding:10px 14px;font-size:15px;">Send</button>
+  </div>
   <div id="chat-presets" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px;border-top:1px solid rgba(255,255,255,.1);"></div>
   <div class="banner" style="padding:6px 10px 10px;">quick reactions only — keeps everyone safe 🐦</div>
 </aside>
@@ -318,10 +322,10 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=15";
-import { ART } from "./art.js?v=15";
-import { BOLD } from "./bold.js?v=15";
-const V = 15; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=16";
+import { ART } from "./art.js?v=16";
+import { BOLD } from "./bold.js?v=16";
+const V = 16; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
@@ -524,6 +528,7 @@ function renderState(room) {
     const me0 = room.players.find(p => p.pid === my.pid);
     $('lobby-players').innerHTML = room.players.map(p =>
       `<span class="pill ${p.isHost ? 'host' : ''} ${p.connected ? '' : 'off'}">${esc(p.nick)}${me0?.isHost && !p.isHost ? ` <a href="#" class="kick" data-nick="${esc(p.nick)}" style="color:var(--bad);text-decoration:none;font-weight:900;">×</a>` : ''}</span>`).join('');
+    $('chat-freerow').style.display = room.freetextChat ? 'flex' : 'none';
     const me = me0;
     $('btn-lock').textContent = room.locked ? 'Room: locked 🔒' : 'Room: open 🔓';
     $('host-controls').style.display = me?.isHost ? 'block' : 'none';
@@ -772,6 +777,9 @@ $('chat-toggle').onclick = () => openChat(!$('chat-drawer').classList.contains('
 $('chat-close').onclick = () => openChat(false);
 $('chat-backdrop').onclick = () => openChat(false);
 const CHAT_PRESETS = ['gg! 🎉','nice one 😮','no way 😂','TWINS! 👯','rare bird!! 🦜','you what?! 🤯','oof 😬','lucky! 🍀','again again 🔁','🫡','🦐','🚀🚀🚀'];
+$('chat-freesend').onclick = sendFreeChat;
+$('chat-freetext').addEventListener('keydown', e => { if (e.key === 'Enter') sendFreeChat(); });
+function sendFreeChat() { const i = $('chat-freetext'); const t = i.value.trim(); if (!t) return; i.value = ''; send({ type: 'chat', text: t }); }
 $('chat-presets').innerHTML = CHAT_PRESETS.map(p => `<button class="ghost" style="margin:0;font-size:14px;padding:9px 4px;" data-preset="${esc(p)}">${esc(p)}</button>`).join('');
 $('chat-presets').addEventListener('click', e => {
   const b = e.target.closest('[data-preset]');
