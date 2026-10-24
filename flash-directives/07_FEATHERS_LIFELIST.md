@@ -6,7 +6,7 @@
 Two owner proposals, both good when session-scoped: **(1) Splendor-style spendable tokens** — solves a real flaw: Top Call is currently free to press, so pressing it when confident is a no-brainer. A scarce stake makes it a decision. **(2) Card collection** — the review's "life list" retention idea (D-30); **no login ever** (privacy posture for minors is a hard constraint) — localStorage only. If either feature wants an account to "work properly", cut the feature instead.
 
 ## Feature 1 — Feathers (session economy, server-authoritative)
-- Each player starts **3 feathers** per game (not per round; reset on rematch). Shown as 🪶 count next to the life-list score in the round HUD and in the lobby pill row.
+- Each player starts **3 feathers** per game (not per round; reset on rematch). **Display is theme-flavored (D-40): 🪶 "Feathers" in Dusk Birds, ⭐ "Starlight" in Cosmic Voyage — one client map `{birds:['🪶','Feathers'],cosmos:['⭐','Starlight']}`, server state/protocol stays `feathers`.** Shown as count next to the life-list score in the round HUD and in the lobby pill row.
 - **Top Call now costs 1 feather**: the 🎯 button shows the cost and is disabled at 0. Server rejects `wager` when the player has 0 feathers (`answerAck {status:'wager_no_feathers'}`).
 - Resolution (in `endWriting` scoring): doubled outcome → **+2 feathers back** (net +1); halved outcome → stake stays lost. Feathers persist across rounds within the game.
 - Server state: `room.feathers: Map<pid, int>`; include `feathers` per player in `publicRoom`; deduct on accepted wager; credit on 'doubled' at scoring; reset in `startCountdown` (game start) and rematch.
