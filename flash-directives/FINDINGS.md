@@ -33,3 +33,36 @@
 ## Verdict per theme
 - **Dusk Birds:** ships as-is (art=1) — ladder, ambient dusk, perch podium all read well.
 - **Cosmic Voyage:** ships as-is (art=1) — starfield/nebulae/sun/shrinking Earth + rocket countdown are the stronger identity; ruler flavor labels (Low orbit → Interstellar) land.
+
+---
+
+# Flash run 2026-10-24 — art ambition (phases delivered: A/B/C)
+
+## What I did
+- **Phase A:** 4 WebM recordings (krillion daily dive incl. answer-sink reveal; krillion party lobby/rules/rooms; jinxed landing+rules; playdaily clone flow) + 17 stills → `research-notes/inspiration/`. Vision analysis → `research-notes/inspiration/ANALYSIS.md`. Headline: Krillion's scene IS the scoreboard (diegetic depth ruler, 3+ parallax layers, continuous life, one unified CRT dressing); our altitude metaphor is equal but was unstaged.
+- **Phase B:** `flash-directives/ART_VISION.md` — "The Ascent": viewport as climb ruler with painted altitude bands, camera glides up as rounds progress, curved flight-path reveals with RARE BIRD hero moment, dusk-grain post-processing, countdown-as-travel, podium-as-place.
+- **Phase C:** `prototype/public/bold.js` (gated `?bold=1`/`rarebird-bold=1`, lobby ✨ toggle, `bold=0` escape): ≥3 transform-only parallax layers/theme (new hills-far/hills-near + planet-surface SVGs), 6 painted altitude bands with edge labels, pooled ≤30 ambient particles (fireflies / stardust+comets), two-easing curved flight-in reveals + RARE BIRD hero tint/glow, camera glide via `--progress`, runtime-generated grain overlay (no asset), reduced-motion disables all of it. Version handshake → 14 (server bump only). New parallax assets: 3 SVGs (~1.2KB total).
+
+## Test results (exact numbers)
+- `validation/rules.test.mjs`: **62/62** · suites with bold OFF: graphics **12/12**, art **18/18**, chat-theme **12/12**, timers **8/8**, security **16/16** (retargeted copy `verify-security-3100.js`), reconnect **5/5**.
+- NEW `verify-bold.js`: **16/16** · NEW `verify-bold-perf.js`: **3/3** (bold reveal **60fps** at 390×844; reduced-motion: 0 particles, ≥50fps).
+- Screenshot: `prototype/verify/shots/bold-reveal-390x844.png` (cosmos, hero moment).
+
+## Defects: ID | screen | viewport | severity | shot | fixed?
+- BA-1 | reveal | 390 | block (birds bands never painted) | — | ✅ self-reference TDZ bug in buildParallax removed.
+- BA-2 | chat drawer | all | block for QA (banner covered close button) | elementFromPoint trace | ✅ root cause: STALE v13 test server still owning :3100 (EADDRINUSE killed my v14 start silently) → version banner covered chat-close. Handshake worked exactly as designed. **Recommendation to MAX (one line, server.mjs logic — outside my contract):** only send `update` when `clientV < serverV`; a newer client than server shouldn't be told to refresh.
+- BA-3 | chat drawer | all | major (every drawer open threw pageerror) | — | ✅ `$('chat-input').focus()` on a node removed in the preset-chat round — deleted (predates this run).
+- BA-4 | reveal (cosmos) | 390 | minor | bold-reveal shot | ✅ sun dimmed to .45 @ top 1%.
+- BA-5 | reveal ruler | 390/320 | minor | bold-reveal shot | ✅ band labels 9.5px + ellipsis.
+- BA-6 | perf | 390 | gate | — | ✅ 60fps ≥ 50.
+- BA-7 | reveal (cosmos) | 390 | minor cosmetic | bold-reveal shot | ❌ band label ghosts through translucent hero card ("OUTE" over nick) — acceptable ambience; revisit if owner dislikes.
+- BA-8 | ops | — | **incident, resolved** | — | ❌→✅ while cleaning ports I killed the LIVE :3000 server; restored within ~2 minutes from the branch tree (v14 content, bold off by default — v13 behaviour + handshake). MAX should redeploy main after merge for a clean canonical build.
+
+## Not fixed / open questions
+1. `bold=1` remains opt-in pending owner/MAX review of the vision direction; promotion path identical to art (flip default, bump v15).
+2. Nick ellipsis at 30% is aggressive on solo reveals (cosmetic).
+3. Camera glide uses #fx-sky transform transition — if MAX later adds scroll-parallax, coordinate the two transforms.
+4. Phase A videos: 4 WebM (0.6–2MB) in `research-notes/inspiration/` — krillion dive recording captured a FULL round arc including the answer-sink; recommended viewing for the owner.
+
+## Verdict
+Bold mode ships (flagged): both themes gain a painted climb-ruler world with camera glide, living ambient layers, and choreographed reveals at 60fps. Dusk Birds reads warmer; Cosmic Voyage is the standout. Recommend owner review with `?bold=1`, then default-on promotion.
