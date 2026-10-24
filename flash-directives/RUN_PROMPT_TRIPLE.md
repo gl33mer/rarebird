@@ -1,0 +1,19 @@
+# RUN PROMPT — paste to GLM-5.3 Flash (three-run session: 3D, Economy, Fun Pack)
+
+You are GLM-5.3 Flash executing three sequential production runs on the RAREBIRD project. Work in `/data/workspace/rarebird-design` (git repo; gh authed as gl33mer). Stop rule per run: 15 min stuck → `flash-directives/FINDINGS.md` → end that run and continue with the next. Never touch the live :3000 server; your server is :3100 (`cd prototype && RAREBIRD_LOG_TOKEN=flashtest LLM_JUDGE_URL=http://127.0.0.1:8787/judge PORT=3100 node server.mjs`).
+
+## THE SESSION
+- **RUN 1 — 3D ASCENT** (branch `flash/w3d-v1`, version 17→18): directive `flash-directives/06_GRAPHICS_DEPTH.md` Track B — license gate RESOLVED (CC-BY-4.0 accepted per D-39, credits required; procedural-first). `?w3d=1` + lobby 🌐 toggle: three.js lazy canvas (vendor ≤2MB), birds = hill layers ×3 + boids flock migrating with progress; cosmos = planet + moon + instanced stars + satellites; camera lerp per round. Gates: NEW `verify-w3d.js` (≥45fps flagged; zero three.js requests unflagged), reduced-motion static, `w3d=0` → Track A exactly, all suites green.
+- **RUN 2 — FEATHERS + LIFE LIST** (branch `flash/economy-v1`, 18→19): directive `flash-directives/07_FEATHERS_LIFELIST.md` in full + the **D-40 theme-flavor amendment** (🪶 Feathers / ⭐ Starlight — client map only, protocol stays `feathers`). Server-authoritative feathers (3/game, Top Call costs 1, doubled refunds +2, reject at 0, config), Life List local-only collection (cards, fly-in, modal, copy). NEW `verify-economy.js`, `verify-lifelist.js`, sim extension (smartW3).
+- **RUN 3 — FUN PACK** (branch `flash/fun-v1`, 19→20): directive `flash-directives/08_FUN_IDEAS.md` §✅ — implement exactly these four: **Read the Flock** (post-lock prediction micro-bet: pick whose answer flies highest; correct = +25 +1 feather; server resolves at reveal; 🔮 row in reveal), **Sudden-death tiebreak** (top-two tie after final round → one extra 20s round, feathers off), **Emoji share grid** (Copy result → `RAREBIRD 🦜 3/3 — 🕊️🦅🦜…` Wordle-style line), **Mystery modifiers** (one random non-first round: Blind / Double feathers / Blacklist — small gates on existing fields). NEW `verify-fun.js` (all four, incl. 3-player prediction flow and tiebreak trigger) + one sim addition (prediction bonus doesn't distort smartW vs smart materially).
+
+## REQUIRED READING (each run, before code)
+That run's directive + `00_ENVIRONMENT_AND_RULES.md` + `flash-directives/08_FUN_IDEAS.md` (run 3) + the layers you extend (`prototype/public/{fx,art,bold,gd}.js`, `index.html`, `server.mjs` message surface) + `prototype/verify/verify-*-3100.js` patterns. `validation/rules-engine.mjs` is READ-ONLY.
+
+## HARD RULES (every run)
+Branch per run, push `-u origin`, never merge to main, never force-push. Version handshake bumps BOTH sides every run (17→18→19→20; server.mjs logic changes allowed ONLY where a directive explicitly says so — economy + fun pack DO require server logic, 3D does not). Do NOT modify: `validation/rules-engine.mjs` scoreRound semantics beyond what directive 08 specifies for prediction/modifiers (add new pure functions where possible), `prototype/pack.json`, docs 00-09 (FINDINGS + new docs fine), `answers.jsonl`/`reports.jsonl`, `assets/manifest.json` (asset files fine). `prefers-reduced-motion` respected everywhere. All suites green at the end of each run: rules 62/62+ · graphics 12/12 · art 18/18 · chat-theme 12/12 · timers 8/8 · bold 16/16 · bold-perf 3/3 · reconnect 5/5 · security 16/16 · gd 9/9 · gd-perf 3/3 + new suites.
+
+## DELIVERABLES (per run)
+Code on the run's branch (pushed), new verify scripts, version bumps both sides, FINDINGS entry appended (defect IDs per run: W3D-/EC-/FUN-). Final message of the session: one summary line per run (branch, tests, verdict).
+
+Begin with RUN 1 required reading. Good hunting.
