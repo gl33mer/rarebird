@@ -90,3 +90,31 @@ Bold mode ships (flagged): both themes gain a painted climb-ruler world with cam
 
 ## Verdict
 The MoLab generator path works end-to-end: notebook LLM → validated drafts in our schema. 818 draft entries await editorial merge. Recommend MAX merges the clean 15 and schedules a small editorial pass on the flagged aliases + histogram skews.
+
+---
+
+# Flash run 2026-10-24 — graphics depth (tracks delivered: A; B license-gated)
+
+## What I did
+- **Track A — Living Scene (full):** new `prototype/public/gd.js` + 4 actor SVGs (`assets/themes/*/ambient/actors/`: balloon, lighthouse+beam, ISS, ringed planet-x). Scene actors per theme (balloon drift + lighthouse beam sweep / ISS transit + planet-x rising with progress); phase-reactive world (`body.phase-writing`, `body.endgame` tint per theme, `body.podium` with bobbing perches); reveal spectacle (top-down light shaft on RARE BIRD landings, altitude-band label pulse, stingers); podium bursts. **Synth ambience** (GD.ambience): WebAudio drone+filtered-wind/shimmer per theme, reveal stingers (rare arpeggio / pigeon thud), gesture-safe (starts via lobby 🎵 Ambience toggle, default off), mute-wired, zero assets. Version handshake → **17**.
+- **Side-by-side:** `research-notes/inspiration/ours-ascent-*.webm` (our 3-round arc: bands, actors, hero reveal) vs `rec-krillion-dive.webm`.
+
+## Test results (exact numbers)
+- `verify-gd.js` **9/9** (actors per theme, phase classes, beam, audio gate default-off, podium scene, no page errors) · `verify-gd-perf.js` **3/3** (60fps with actors live) · full battery: rules 62/62 · graphics 12/12 · art 18/18 · chat-theme 12/12 · timers 8/8 · security 16/16 · bold 16/16 · bold-perf 3/3 · reconnect 5/5.
+
+## Defects: ID | screen | viewport | severity | fixed?
+- GD-1 | all | block-for-QA | ✅ **pre-existing product bug surfaced:** `fx.burst()` referenced undefined `opts.sprite` — every reveal burst since the art merge silently threw (pageerror swallowed by the game). Fixed (destructuring now includes `sprite`). Found by my strict pageerror capture.
+- GD-2 | lobby | all | block | ✅ TDZ: `gdAudioOn` declared after first use → whole module aborted (nothing wired). Declaration moved up.
+- GD-3 | reveal (cosmos) | 390 | minor | ❌ caption/sun-glow overlap + band label truncation persist (known BA-class cosmetics).
+- GD-4 | reveal | 390 | minor | ✅ dynamic `import('./fx.js')` inside GD used a hardcoded ?v — burst still worked; noted for the version-bump checklist (MAX: grep dynamic imports on bump).
+
+## License verdict (Track B gate)
+`scenario-labs/3d-collection` = **CC-BY-4.0** (verified via HF API `tags: license:cc-by-4.0`). Per the directive gate (CC0/MIT only) it is **NOT used**. Owner may amend the allowlist to accept CC-BY with attribution — it's 1,342 AI-generated 3D assets, 39GB; Kenney/Quaternius (CC0) and procedural geometry remain the default sources. Track B implementation deferred to a follow-up run (honest A-only per directive).
+
+## Ambience-gap verdict (side-by-side)
+The gap has **closed substantially**: we now have a painted climb-ruler world with actors, phase-reactive tension, and choreographed reveals; Krillion still leads on pixel-art charm density and the sinking-tag diegesis, but the scene now feels inhabited rather than gradient-only. Remaining lever if the owner wants more: illustrated (non-silhouette) band backdrops.
+
+## Not fixed / open questions
+1. Track B unimplemented (license gate + budget) — spec lives in directive 06.
+2. GD audio starts only from the lobby toggle; a round-level hint could raise opt-in.
+3. Dynamic fx import versioning (GD-4) should be folded into the version-bump checklist.

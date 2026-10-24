@@ -110,15 +110,15 @@ export function ascend(el, tierName, { container, delay = 0 } = {}) {
 
 // ---------------------------------------------------------------- bursts
 const POOL_MAX = 60; let live = 0;
-export function burst(x, y, { tier = 'STARLING', count = 10 } = {}) {
+export function burst(x, y, { tier = 'STARLING', count = 10, sprite = null } = {}) {
   if (reducedMotion()) return;
   const t = TIER_LADDER[tier];
   for (let i = 0; i < count && live < POOL_MAX; i++) {
     live++;
     const p = document.createElement('div');
     p.className = 'fx-particle';
-    if (opts.sprite) { // art mode: sprite particle, tier-tinted via filter
-      p.style.backgroundImage = `url("${opts.sprite}")`;
+    if (sprite) { // art mode: sprite particle, tier-tinted via filter
+      p.style.backgroundImage = `url("${sprite}")`;
       p.style.backgroundSize = 'contain'; p.style.backgroundRepeat = 'no-repeat';
       p.style.width = '18px'; p.style.height = '18px';
       p.style.filter = `hue-rotate(${t.hue ?? 0}deg) saturate(1.15)`;

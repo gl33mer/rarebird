@@ -245,6 +245,7 @@
         <button class="ghost" id="btn-theme" style="margin-bottom:10px;">Theme: Birds 🦜</button>
         <button class="ghost" id="btn-art" style="margin-bottom:10px;">🎨 Art</button>
         <button class="ghost" id="btn-bold" style="margin-bottom:10px;">✨ Bold</button>
+        <button class="ghost" id="btn-audio" style="margin-bottom:10px;">🎵 Ambience</button>
         <button class="ghost" id="btn-lock" style="margin-bottom:10px;">Room: open 🔓</button>
         <button id="btn-start">▶ Start the flock</button>
       </div>
@@ -322,16 +323,19 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=16";
-import { ART } from "./art.js?v=16";
-import { BOLD } from "./bold.js?v=16";
-const V = 16; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=17";
+import { ART } from "./art.js?v=17";
+import { BOLD } from "./bold.js?v=17";
+import { GD } from "./gd.js?v=17";
+const V = 17; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
 // bold layer: ?bold=1 / localStorage rarebird-bold=1; ?bold=0 escapes
 const BOLD_ON = new URLSearchParams(location.search).get('bold') !== '0' && (new URLSearchParams(location.search).get('bold') === '1' || localStorage.getItem('rarebird-bold') !== '0'); // bold DEFAULT since v15
 await BOLD.init(BOLD_ON, ART);
+const GD_ON = BOLD.enabled && localStorage.getItem('rarebird-audio') !== '0'; // gd rides bold; audio opt-in via its own toggle
+await GD.init(GD_ON, ART);
 FX.ambient('birds');
 
 // ---- theme engine: canonical tier names stay; flavor/labels/scene swap ----
@@ -366,9 +370,11 @@ const my = JSON.parse(localStorage.getItem('rarebird') || 'null') || {};
 
 // ---------------- tiny webaudio chirps ----------------
 let muted = localStorage.getItem('rarebird-mute') === '1';
+let gdAudioOn = localStorage.getItem('rarebird-audio') === '1';
 const paintMute = () => {
   if (ART.enabled && ART.icon(muted ? 'muteOff' : 'muteOn')) $('btn-mute').innerHTML = `<img class="iconImg" src="${ART.icon(muted ? 'muteOff' : 'muteOn')}" alt="sound">`;
   else $('btn-mute').textContent = muted ? '🔇' : '🔊';
+  GD.setMuted(muted);
 };
 paintMute();
 $('btn-mute').onclick = () => { muted = !muted; localStorage.setItem('rarebird-mute', muted ? '1' : '0'); paintMute(); };
@@ -421,7 +427,7 @@ function handle(m) {
     case 'joined': my.room = m.code; my.pid = m.pid; my.token = m.token; localStorage.setItem('rarebird', JSON.stringify(my)); break;
     case 'state': renderState(m.room); break;
     case 'countdown': showCountdown(m); break;
-    case 'roundStart': hideCountdown(); applyTheme(m.theme); FX.setProgress(m.roundIndex, m.totalRounds || 3); BOLD.setProgress(m.roundIndex, m.totalRounds || 3); startRound(m); break;
+    case 'roundStart': hideCountdown(); applyTheme(m.theme); FX.setProgress(m.roundIndex, m.totalRounds || 3); BOLD.setProgress(m.roundIndex, m.totalRounds || 3); GD.setPhase('writing', m.totalRounds ? m.roundIndex === m.totalRounds - 1 : false); startRound(m); break;
     case 'answerAck': ack(m); break;
     case 'reveal': hideCountdown(); renderReveal(m); break;
     case 'results': renderResults(m); break;
@@ -469,6 +475,7 @@ function applyTheme(id) {
   FX.ambient(theme.id, my.room || 'rarebird');
   applyAmbientArt();
   BOLD.buildParallax(theme.id);
+  GD.buildActors(theme.id);
 }
 
 if (ART.enabled && ART.icon('chat')) $('chat-toggle').innerHTML = `<img class="iconImg" src="${ART.icon('chat')}" alt="chat">`;
@@ -699,6 +706,7 @@ function renderReveal(m) {
       const sprite = ART.enabled ? ART.burstArt() : null;
       if (r.tier === 'RARE BIRD') { FX.burst(rect.left + rect.width / 2, rect.top + 10, { tier: r.tier, sprite }); FX.shake(document.body); }
       else if (r.tier === 'MEGA') FX.burst(rect.left + 40, rect.top + 8, { tier: r.tier, count: 6, sprite });
+      GD.revealSpectacle(r.tier, div);
     }, delay + 600);
   });
   $('lifelist').textContent = `🪶 ${lifeList}`;
@@ -706,6 +714,7 @@ function renderReveal(m) {
 
 function renderResults(m) {
   show('results');
+  GD.podiumScene();
   const s = m.standings;
   const podium = $('podium'); podium.innerHTML = '';
   const medals = ['🥇','🥈','🥉'];
@@ -760,6 +769,13 @@ $('btn-wager').onclick = () => send({ type: 'wager' });
 $('btn-lock').onclick = () => { const el = $('btn-lock'); send({ type: 'lockRoom', locked: !/locked/.test(el.textContent) }); };
 $('btn-art').textContent = `🎨 Art: ${ART.enabled ? 'on' : 'off'}`;
 $('btn-bold').textContent = `✨ Bold: ${BOLD.enabled ? 'on' : 'off'}`;
+$('btn-audio').textContent = `🎵 Ambience: ${gdAudioOn ? 'on' : 'off'}`;
+$('btn-audio').onclick = () => {
+  gdAudioOn = !gdAudioOn;
+  localStorage.setItem('rarebird-audio', gdAudioOn ? '1' : '0');
+  $('btn-audio').textContent = `🎵 Ambience: ${gdAudioOn ? 'on' : 'off'}`;
+  GD.ambience(gdAudioOn, muted, theme.id);
+};
 $('btn-bold').onclick = () => {
   const on = localStorage.getItem('rarebird-bold') === '1';
   localStorage.setItem('rarebird-bold', on ? '0' : '1');
@@ -797,6 +813,8 @@ $('btn-share-result').onclick = () => {
 if ($('nick')) $('nick').value = localStorage.getItem('rarebird-nick') || '';
 applyAmbientArt(); // startup theme (art layers) — re-applied on every applyTheme
 BOLD.buildParallax(theme.id);
+GD.buildActors(theme.id);
+GD.ambience(gdAudioOn, muted, theme.id);
 $('nick').addEventListener('change', () => localStorage.setItem('rarebird-nick', $('nick').value));
 if (my.room && my.token) connect();
 window.__closeSocket = () => { try { ws && ws.close(); } catch {} }; // test hook: simulate connection drop
