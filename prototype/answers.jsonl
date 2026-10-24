@@ -322,3 +322,13 @@
 {"ts":"2026-10-24T15:57:03.926Z","promptId":"test-superheroes","canonical":"Moon Knight","tier":"KINGFISHER"}
 {"ts":"2026-10-24T15:57:05.036Z","promptId":"test-superheroes","canonical":"Spider-Man","tier":"PIGEON"}
 {"ts":"2026-10-24T15:57:31.224Z","promptId":"languages","canonical":"Peru","tier":"STARLING"}
+{"ts":"2026-10-24T16:31:20.197Z","promptId":"test-colors","canonical":"Maroon","tier":"STARLING"}
+{"ts":"2026-10-24T16:31:25.310Z","promptId":"test-colors","canonical":"Red","tier":"PIGEON"}
+{"ts":"2026-10-24T16:31:28.257Z","promptId":"test-colors","canonical":"Blue","tier":"PIGEON"}
+{"ts":"2026-10-24T16:31:52.892Z","promptId":"utensils","canonical":"can opener","tier":"PIGEON"}
+{"ts":"2026-10-24T16:32:57.958Z","promptId":"insects","canonical":"grasshopper","tier":"PIGEON"}
+{"ts":"2026-10-24T16:33:30.951Z","promptId":"trees","canonical":"spruce","tier":"PIGEON"}
+{"ts":"2026-10-24T16:33:42.145Z","promptId":"trees","canonical":"pine","tier":"PIGEON"}
+{"ts":"2026-10-24T16:33:45.421Z","promptId":"trees","canonical":"oak","tier":"PIGEON"}
+{"ts":"2026-10-24T16:35:04.226Z","promptId":"consoles","canonical":"Nintendo Entertainment System","tier":"STARLING"}
+{"ts":"2026-10-24T16:38:49.697Z","promptId":"tech-carbrands","canonical":"Renault","tier":"SPARROW"}
