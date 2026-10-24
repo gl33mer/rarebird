@@ -71,7 +71,7 @@ const t = (n, c, d = '') => { if (c) { pass++; console.log(`  ok  ${n}`); } else
   // ---------- art=0 fallback ----------
   const ctxB = await browser.newContext({ viewport: { width: 390, height: 844 } });
   const B = await ctxB.newPage();
-  await B.goto(BASE + '/', { waitUntil: 'domcontentloaded' });
+  await B.goto(BASE + '/?art=0', { waitUntil: 'domcontentloaded' }); // art is DEFAULT since v12 — escape hatch is explicit
   await sleep(900);
   t('art=0: no ambient art imgs', (await B.locator('#fx-sky img[src*="/assets/themes/"]').count()) === 0);
   t('art=0: mute stays emoji', (await B.locator('#btn-mute img').count()) === 0);
