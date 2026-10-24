@@ -157,3 +157,21 @@ Both runs ship. 3D is flag-gated (?w3d=1) pending owner eyeball; economy + life 
 ## Not fixed / open questions
 - ready-vote UX could auto-ready players who voted on the results screen (currently the vote IS the ready) — fine as built.
 - Modifiers (Blind/Double feathers/Blacklist) from 08 FUN_IDEAS remain unimplemented — next run candidate.
+
+---
+
+# Flash run 2026-10-24 — Graphics Dynamics II (flash/playtest-fixes-v1, second half)
+
+## What I did
+- **Deeper inspiration pass:** recorded krillion.io/unlimited (continuous ambient motion) + joined and recorded a **live public party match** (`rec-krillion-party-match.webm`; the join bounced once when the room filled — retried into another). Built the **motion inventory table** in `research-notes/inspiration/ANALYSIS-II.md`: Krillion never has a still frame — ≥4 layers always moving, all slow (2–25s cycles), ambient-first.
+- **Implemented the top 5 gap-closers** (GFX2): continuous world drift during WRITING (60s loop, disabled under w3d where the 3D supplies motion); tier-landing **shockwave** rings (KINGFISHER+); reveal **camera pull** (#fx-sky scale 1.04→1.0); answer-row **trailing streak** during flight; **phase speed-up** of ambient particles during WRITING. All transform/opacity, reduced-motion off.
+
+## Test results (exact numbers)
+`verify-gfx2-perf.js` **3/3** (fps with all closers live: 50+; drift keyframes present) · verify-w3d **11/11 × 3 consecutive runs** (birds 46-47fps after drift/w3d exclusivity fix — the CSS drift competed with the 3D canvas in software rendering) · playtest-fixes **15/15** · graphics 12/12 · art 18/18 · chat-theme 12/12 · timers 8/8 · bold 16/16 · security 16/16 · reconnect 5/5 · gd 9/9 · rules 62/62.
+
+## Defects: ID | fixed?
+- GFX2-1 ❌→✅ CSS world-drift vs w3d canvas CPU contention (birds fps flake 43-47) → drift disabled under `.w3d`; 3 stable runs after.
+- GFX2-2 ❌ known BA-class cosmetics remain (caption/sun overlap, band label truncation) — unchanged.
+
+## Verdict
+The world now breathes Krillion-style: no still frames, phase-reactive speed, shockwaves and camera pulls at the moments that matter. Recommend the owner views `?bold=1` (now default-on) after this merge; the remaining gap is illustrated art density, which is an asset investment, not a code one.

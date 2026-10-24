@@ -131,10 +131,23 @@
   @keyframes boldTint { from { opacity:1; } to { opacity:0; } }
   body.bold #fx-sky { transition: transform 1.4s cubic-bezier(.3,.8,.3,1); }
   body.bold #fx-sky > * { transition: transform 1.4s cubic-bezier(.3,.8,.3,1); }
+  /* ---- GFX2 closers: living-world motion ---- */
+  body.bold.phase-writing:not(.w3d) #fx-sky { animation: gdWorldDrift 60s ease-in-out infinite alternate; }
+  @keyframes gdWorldDrift { from { margin-top: 0; } to { margin-top: -1.8%; } }
+  body.bold #fx-sky { transition: transform 1.2s cubic-bezier(.3,.8,.3,1); }
+  body.bold #s-reveal.on ~ #fx-sky, body.bold.reveal-pull #fx-sky { transform: scale(1.04); }
+  .bold-shockwave { position:fixed; z-index:36; pointer-events:none; border:2px solid rgba(255,209,102,.7); border-radius:50%; animation: gdWave .7s ease-out both; }
+  @keyframes gdWave { from { transform:scale(.2); opacity:.9; } to { transform:scale(2.6); opacity:0; } }
+  body.bold .rrow.bold-fly::after { content:''; position:absolute; right:-40%; top:40%; width:40%; height:3px;
+    background:linear-gradient(90deg, transparent, rgba(255,255,255,.5)); animation: gdTrail 1.1s ease-out both; }
+  @keyframes gdTrail { from { opacity:.9; } to { opacity:0; } }
+  body.bold.phase-writing .bold-particle { animation-duration: 70% !important; }
   @media (prefers-reduced-motion: reduce) {
     body.bold .bold-particle, body.bold .bold-heroTint { display:none !important; }
     body.bold #fx-sky img.bold-layer, body.bold #fx-sky { animation:none !important; transition:none !important; }
     body.bold .rrow.bold-fly { animation:none; opacity:1; transform:none; }
+    body.bold .rrow.bold-fly::after { display:none; }
+    .bold-shockwave { display:none; }
   }
   #reconnect-banner { position:fixed; top:0; left:0; right:0; z-index:70; background:#FF6B7A; color:#141a2a; font-weight:800; font-size:14px; padding:10px; text-align:center; display:none; animation:pulse2 1.2s infinite alternate; }
   #reconnect-banner.on { display:block; }
@@ -744,6 +757,10 @@ function ack(m) {
 function renderReveal(m) {
   show('reveal');
   clearInterval(timerHandle);
+  if (BOLD.enabled && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.body.classList.add('reveal-pull');
+    setTimeout(() => document.body.classList.remove('reveal-pull'), 1300);
+  }
     $('reveal-title').textContent = `Round ${m.roundIndex + 1} — ${theme.revealTitle}`;
   $('reveal-sub').textContent = theme.id === 'cosmos' ? 'low orbit first — the rarest answers leave the solar system' : 'ground-dwellers first — the rare birds fly highest';
   $('reveal-next').textContent = m.next === 'results' ? 'gathering the flock\u2019s results\u2026' : 'next round incoming\u2026';
@@ -828,6 +845,13 @@ function renderReveal(m) {
       const sprite = ART.enabled ? ART.burstArt() : null;
       if (r.tier === 'RARE BIRD') { FX.burst(rect.left + rect.width / 2, rect.top + 10, { tier: r.tier, sprite }); FX.shake(document.body); }
       else if (r.tier === 'MEGA') FX.burst(rect.left + 40, rect.top + 8, { tier: r.tier, count: 6, sprite });
+      if (['KINGFISHER','MEGA','RARE BIRD'].includes(r.tier) && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const w = document.createElement('div');
+        w.className = 'bold-shockwave';
+        w.style.cssText = `left:${rect.left + rect.width / 2 - 60}px;top:${rect.top + rect.height / 2 - 60}px;width:120px;height:120px;`;
+        document.body.appendChild(w);
+        setTimeout(() => w.remove(), 800);
+      }
       GD.revealSpectacle(r.tier, div);
     }, delay + 600);
   });
