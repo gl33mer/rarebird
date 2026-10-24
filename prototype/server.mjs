@@ -50,7 +50,7 @@ const REJOIN_WINDOW = 120 * 1000;
 // so a stale cached HTML = old behaviours (field-observed: static countdown,
 // no ascent reveal). Clients announce their version; mismatches get an 'update'
 // nudge and are logged.
-const CLIENT_VERSION = 14;
+const CLIENT_VERSION = 15;
 
 const JUDGE_URL = process.env.LLM_JUDGE_URL || null;
 const JUDGE_TIMEOUT_MS = 2500;
@@ -609,7 +609,7 @@ wss.on('connection', (socket, req) => {
       if (data.text !== undefined && typeof data.text !== 'string') return;
       if (data.nickname !== undefined && typeof data.nickname !== 'string') return;
     }
-    if (socket._clientV != null && socket._clientV !== CLIENT_VERSION) {
+    if (socket._clientV != null && socket._clientV < CLIENT_VERSION) { // newer client than server: no nudge (Flash BA-2 finding)
       // once per mismatch per socket version
       if (socket._warnedV !== socket._clientV) {
         socket._warnedV = socket._clientV;

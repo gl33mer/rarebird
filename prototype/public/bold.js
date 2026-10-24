@@ -2,7 +2,7 @@
 // Parallax climb-ruler world, ambient life, flight-path reveals, grain dressing.
 // Gated by ?bold=1 / localStorage rarebird-bold=1. Fail-soft: null URLs and missing
 // nodes are skipped; with bold off the client is byte-identical in behavior.
-import { ART } from './art.js?v=14';
+// ART is injected via init(enabled, art) — importing it here would create a second module instance
 
 const V = new URL(import.meta.url).searchParams.get('v') || '0';
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -11,10 +11,11 @@ let live = 0; const POOL_MAX = 30;
 export const BOLD = {
   enabled: false,
 
-  init(enabled) {
+  init(enabled, art) {
     this.enabled = !!enabled;
     if (!this.enabled) return false;
-    if (!ART.enabled) { this.enabled = false; return false; } // bold builds on the art pack
+    this._art = art;
+    if (!art?.enabled) { this.enabled = false; return false; } // bold builds on the art pack
     document.body.classList.add('bold');
     this.buildGrain();
     return true;
@@ -34,7 +35,7 @@ export const BOLD = {
     if (live) { live = 0; }
     const sky = document.getElementById('fx-sky');
     if (!sky) return;
-    const u = rel => ART.url(rel);
+    const u = rel => this._art.url(rel);
     const layers = themeId === 'cosmos'
       ? [
           { src: u('themes/cosmic-voyage/ambient/nebula-1.svg'), depth: 0.25, top: '-4%', h: '46%', op: 0.55 },

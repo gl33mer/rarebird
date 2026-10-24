@@ -318,16 +318,16 @@
   <div class="banner" id="cd-hint">get ready to spot</div>
 </div>
 <script type="module">
-import * as FX from "./fx.js?v=14";
-import { ART } from "./art.js?v=14";
-import { BOLD } from "./bold.js?v=14";
-const V = 14; // client version — must match server CLIENT_VERSION
+import * as FX from "./fx.js?v=15";
+import { ART } from "./art.js?v=15";
+import { BOLD } from "./bold.js?v=15";
+const V = 15; // client version — must match server CLIENT_VERSION
 // art flag: ?art=1 or localStorage rarebird-art=1 (🎨 lobby toggle); ?art=0 forces off
 const ART_ON = new URLSearchParams(location.search).get('art') !== '0' && (new URLSearchParams(location.search).get('art') === '1' || localStorage.getItem('rarebird-art') !== '0'); // art DEFAULT ON since v12; ?art=0 or rarebird-art=0 escapes to emoji
 await ART.init(ART_ON);
 // bold layer: ?bold=1 / localStorage rarebird-bold=1; ?bold=0 escapes
-const BOLD_ON = new URLSearchParams(location.search).get('bold') === '1' || (localStorage.getItem('rarebird-bold') === '1' && new URLSearchParams(location.search).get('bold') !== '0');
-await BOLD.init(BOLD_ON);
+const BOLD_ON = new URLSearchParams(location.search).get('bold') !== '0' && (new URLSearchParams(location.search).get('bold') === '1' || localStorage.getItem('rarebird-bold') !== '0'); // bold DEFAULT since v15
+await BOLD.init(BOLD_ON, ART);
 FX.ambient('birds');
 
 // ---- theme engine: canonical tier names stay; flavor/labels/scene swap ----
